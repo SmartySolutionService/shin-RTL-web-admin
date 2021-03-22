@@ -7,7 +7,4 @@
 ![Web Admin Template](screenshot.png)
 
 ### Contact
-* live:sunrise0717 (skype)
-* sunrise0717@outlook.com (outlook)
-* sunrise07172710@gmail.com (gmail)
-* royal2710 (github)
+* live:.cid.4138a976227638ac (skype)
