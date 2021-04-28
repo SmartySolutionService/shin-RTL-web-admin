@@ -1499,6 +1499,22 @@ body {
             background-image: url(../img/buttons/btn-print-hover.png);
         }
     }
+    &.btn-email {
+        background-image: url(../img/buttons/btn-email.png);
+        &:hover {
+            background-image: url(../img/buttons/btn-email.png);
+        }
+    }&.btn-message {
+        background-image: url(../img/buttons/btn-message.png);
+        &:hover {
+            background-image: url(../img/buttons/btn-message.png);
+        }
+    }&.btn-trash {
+        background-image: url(../img/buttons/btn-trash.png);
+        &:hover {
+            background-image: url(../img/buttons/btn-trash.png);
+        }
+    }
     &.btn-close {
         background-image: url(../img/buttons/btn-close.png);
         &:hover {
@@ -1531,6 +1547,12 @@ body {
         background-image: url(../img/buttons/btn-new-customer.png);
         &:hover {
             background-image: url(../img/buttons/btn-new-customer-hover.png);
+        }
+    }
+    &.btn-search {
+        background-image: url(../img/buttons/btn-search.png);
+        &:hover {
+            background-image: url(../img/buttons/btn-search.png);
         }
     }
     &.btn-save {
@@ -1670,6 +1692,15 @@ body {
     }
     &.ic-account-balance-wallet {
         background-image: url(../img/icons/ic_account_balance_wallet.png);
+    }
+    &.ic-bookmark {
+        background-image: url(../img/icons/ic_bookmark.png);
+    }
+    &.ic-chevron_left {
+        background-image: url(../img/icons/ic_chevron_left.png);
+    }
+    &.ic-chevron_right {
+        background-image: url(../img/icons/ic_chevron_right.png);
     }
     &.ic-trash {
         background-image: url(../img/icons/ic_trash.png);
@@ -3737,6 +3768,43 @@ table {
             box-shadow: none;
         }
     }
+}
+
+// common scss
+.fc-h50 {
+    height: 50px;
+}
+
+.pagination {
+    justify-content: center;
+    .btn-pagination {
+        width: 50px;
+        height: 50px;
+        border-radius: 5px;
+        font-size: 22px;
+        text-align: center;
+        padding-top: 8px;
+        &.active {
+            background-color: #7ABBFC;
+            color: #ffffff;
+        }
+        &.btn-prev {
+            background-image: url(../img/icons/ic_chevron_right.png);
+            background-size: 10px 16px;
+            background-position: center center;
+            background-repeat: no-repeat;
+        }
+        &.btn-next {
+            background-image: url(../img/icons/ic_chevron_left.png);
+            background-size: 10px 16px;
+            background-position: center center;
+            background-repeat: no-repeat;
+        }
+    }
+}
+
+.rate-color-bar {
+    width: 70%;
 }
 
 @media (min-width: 1600px) and (max-width: 1919px) {
