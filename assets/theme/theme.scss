@@ -1520,6 +1520,12 @@ body {
         &:hover {
             background-image: url(../img/buttons/btn-close.png);
         }
+        &.dark {
+            background-image: url(../img/buttons/btn-close-dark.png);
+            &:hover {
+                background-image: url(../img/buttons/btn-close-dark.png);
+            }
+        }
     }
     &.btn-add {
         background-image: url(../img/buttons/btn-add.png);
@@ -1583,6 +1589,12 @@ body {
         background-image: url(../img/buttons/btn-save-modal.png);
         &:hover {
             background-image: url(../img/buttons/btn-save-modal.png);
+        }
+        &.btn-success {
+            background-image: url(../img/buttons/btn-save-green.png);
+            &:hover {
+                background-image: url(../img/buttons/btn-save-green.png);
+            }
         }
     }
 }
@@ -3805,6 +3817,23 @@ table {
 
 .rate-color-bar {
     width: 70%;
+}
+
+#newCustomerModal {
+    .modal-dialog {
+        width: 100%;
+        .modal-content {
+            border-right: none;
+            .modal-header {
+                .btn-close {
+                    position: absolute;
+                    top: 35px;
+                    left: 20px;
+                    right: auto;
+                }
+            }
+        }
+    }
 }
 
 @media (min-width: 1600px) and (max-width: 1919px) {

@@ -8246,6 +8246,10 @@ body {
     background-image: url(../img/buttons/btn-close.png); }
     .cs-btn-icon.btn-close:hover {
       background-image: url(../img/buttons/btn-close.png); }
+    .cs-btn-icon.btn-close.dark {
+      background-image: url(../img/buttons/btn-close-dark.png); }
+      .cs-btn-icon.btn-close.dark:hover {
+        background-image: url(../img/buttons/btn-close-dark.png); }
   .cs-btn-icon.btn-add {
     background-image: url(../img/buttons/btn-add.png); }
   .cs-btn-icon.btn-delete {
@@ -8291,6 +8295,10 @@ body {
     background-image: url(../img/buttons/btn-save-modal.png); }
     .cs-btn-img.btn-save-modal:hover {
       background-image: url(../img/buttons/btn-save-modal.png); }
+    .cs-btn-img.btn-save-modal.btn-success {
+      background-image: url(../img/buttons/btn-save-green.png); }
+      .cs-btn-img.btn-save-modal.btn-success:hover {
+        background-image: url(../img/buttons/btn-save-green.png); }
 
 .cs-icon {
   display: inline-flex;
@@ -10147,3 +10155,13 @@ table th, table td {
 
 .rate-color-bar {
   width: 70%; }
+
+#newCustomerModal .modal-dialog {
+  width: 100%; }
+  #newCustomerModal .modal-dialog .modal-content {
+    border-right: none; }
+    #newCustomerModal .modal-dialog .modal-content .modal-header .btn-close {
+      position: absolute;
+      top: 35px;
+      left: 20px;
+      right: auto; }
