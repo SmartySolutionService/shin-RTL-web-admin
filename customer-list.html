@@ -350,11 +350,6 @@
       </div>
     </div>
     <div class="app-body">
-      <div class="app-filter-tags">
-        <div class="filter-tag">סינון<div class="cs-icon ic-times"></div></div>
-        <div class="filter-tag">סינון<div class="cs-icon ic-times"></div></div>
-        <div class="filter-tag">סינון<div class="cs-icon ic-times"></div></div>
-      </div>
       <div class="app-card-list pb-5">
         <div class="card customer-card">
           <div class="card-header">
@@ -663,18 +658,6 @@
   });
 </script>
 <script>
-  // filter tags control
-  $(document).on('click', '.app-filter-tags .filter-tag .ic-times', function() {
-    $parent = $(this).parent('.filter-tag').remove();
-    console.log('removed tag: ', $parent.text());
-  });
-  $(document).on('keyup', '.input-search', function(e) {
-    if(e.keyCode == 13 && e.target.value) {
-      tag = '<div class="filter-tag">'+ e.target.value +'<div class="cs-icon ic-times"></div></div>';
-      $('.app-filter-tags').append(tag);
-      $(this).val('');
-    }
-  });
   // mana company tag
   $(document).on('keyup', 'input[name=tag-input]', function(e) {
     if($(this).val() != '' && e.keyCode == 13) {
