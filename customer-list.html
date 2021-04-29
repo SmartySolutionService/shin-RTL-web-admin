@@ -80,30 +80,24 @@
 <div class="main">
   <div class="filter-bar">
     <div class="filter-header">
+      <div class="row">
         <button class="filter-button filter-toggle">
-            <div class="cs-icon ic-filter-result"></div>
+          <div class="cs-icon ic-gear"></div>
         </button>
-        <button class="filter-button open-show filter-settings">
-            <div class="cs-icon ic-settings"></div>
+        <button class="filter-button open-show cs-btn-icon btn-close dark filter-close"></button>
+      </div>
+      <div class="row filter-options">
+        <button class="filter-button open-show filter-variable-mana">
+          <div class="cs-icon ic-gear"></div>
+          ניהול פרמטרים
         </button>
-        <button class="filter-button open-show cs-btn-icon btn-close filter-close"></button>
+        <button class="filter-button filter-variable-reset">
+          איפוס פרמטרים
+        </button>
+      </div>
     </div>
     <div class="filter-body open-show">
-      <form class="filter-form">
-        <div class="name-wrapper">
-          <div class="row form-group mx-0">
-            <label>שם פרטי</label>
-            <input type="text" class="form-control" placeholder="TEXT" />
-          </div>
-          <div class="row form-group mx-0">
-            <label>שם משפחה</label>
-            <input type="text" class="form-control" placeholder="TEXT" />
-          </div>
-        </div>
-        <div class="form-group">
-          <label>ת.ז \ ח.פ \ ח.צ</label>
-          <input type="text" class="form-control" placeholder="NUM" />
-        </div>
+      <div class="filter-form">
         <div class="form-group gender-group">
           <label>מגדר</label>
           <div class="row mx-0">
@@ -181,226 +175,18 @@
           />
         </div>
         <div class="form-group">
-          <a class="collapse-menu" data-toggle="collapse" href="#collapse-managing-company" role="button" aria-expanded="true" aria-controls="collapse-managing-company">
-            <label>חברה מנהלת</label> 
-          </a>
-          <div class="collapse show" id="collapse-managing-company">
-            <div class="custom-control custom-checkbox company-checkbox">
-              <input type="checkbox" class="custom-control-input" id="company1">
-              <label class="custom-control-label checkbox-right" for="company1">
-                חברה מנהלת
-              </label>
+          <div class="tag-container">
+            <h5>חברה מנהלת</h5>
+            <div class="tag-wrapper">
+              <div class="tag">חברה מנהלת <span class="tag-remove">&times;</span></div>
             </div>
-            <div class="custom-control custom-checkbox company-checkbox">
-              <input type="checkbox" class="custom-control-input" id="company2">
-              <label class="custom-control-label checkbox-right" for="company2">
-                חברה מנהלת
-              </label>
-            </div>
-            <div class="custom-control custom-checkbox company-checkbox">
-              <input type="checkbox" class="custom-control-input" id="company3">
-              <label class="custom-control-label checkbox-right" for="company3">
-                חברה מנהלת
-              </label>
-            </div>
+            <input type="text" class="form-control mt-3" name="tag-input" placeholder="בחר חברה מנהלת" />
+          </div>
+          <div class="row mx-0 mt-3">
+            <button class="btn btn-primary btn-clear-mana-company mr-auto">נקה חברה מנהלת</button>
           </div>
         </div>
-        <div class="form-group">
-          <label class="w-100">סטטוס</label>
-          <input type="checkbox" name="status" value="1" class="lcs_check" autocomplete="off" checked />
-        </div>
-        <div class="form-group">
-          <a class="collapse-menu" data-toggle="collapse" href="#collapse-customer-type" role="button" aria-expanded="true" aria-controls="collapse-customer-type">
-            <label>סטטוס</label>
-          </a>
-          <div class="collapse show" id="collapse-customer-type">
-            <div class="custom-control custom-checkbox customer-type-checkbox">
-              <input type="checkbox" class="custom-control-input" id="customer-type1">
-              <label class="custom-control-label checkbox-right" for="customer-type1">
-                סוג לקוח
-              </label>
-            </div>
-            <div class="custom-control custom-checkbox customer-type-checkbox">
-              <input type="checkbox" class="custom-control-input" id="customer-type2">
-              <label class="custom-control-label checkbox-right" for="customer-type2">
-                סוג לקוח
-              </label>
-            </div>
-            <div class="custom-control custom-checkbox customer-type-checkbox">
-              <input type="checkbox" class="custom-control-input" id="customer-type3">
-              <label class="custom-control-label checkbox-right" for="customer-type3">
-                סוג לקוח
-              </label>
-            </div>
-          </div>
-        </div>
-        <div class="form-group">
-          <a class="collapse-menu" data-toggle="collapse" href="#collapse-product-type" role="button" aria-expanded="true" aria-controls="collapse-product-type">
-            <label>סוג מוצר</label>  
-          </a>
-          <div class="collapse show" id="collapse-product-type">
-            <div class="custom-control custom-checkbox product-type-checkbox">
-              <input type="checkbox" class="custom-control-input" id="product-type1">
-              <label class="custom-control-label checkbox-right" for="product-type1">
-                סוג מוצר
-              </label>
-            </div>
-            <div class="custom-control custom-checkbox product-type-checkbox">
-              <input type="checkbox" class="custom-control-input" id="product-type2">
-              <label class="custom-control-label checkbox-right" for="product-type2">
-                סוג מוצר
-              </label>
-            </div>
-            <div class="custom-control custom-checkbox product-type-checkbox">
-              <input type="checkbox" class="custom-control-input" id="product-type3">
-              <label class="custom-control-label checkbox-right" for="product-type3">
-                סוג מוצר
-              </label>
-            </div>
-          </div>
-        </div>
-        <div class="form-group">
-          <label>שם מוצר</label>
-          <select class="form-control">
-            <option>מוצר</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label>מספר אוצר /מ"ה</label>
-          <input type="text" class="form-control" placeholder="NUM" />
-        </div>
-        <div class="form-group">
-          <label>עיר מגורים</label>
-          <select class="form-control">
-            <option>עיר</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <a class="collapse-menu" data-toggle="collapse" href="#collapse-caring-staff" role="button" aria-expanded="true" aria-controls="collapse-caring-staff">
-            <label>צוות מטפל</label>  
-          </a>
-          <div class="collapse show" id="collapse-caring-staff">
-            <div class="custom-control custom-checkbox caring-staff-checkbox">
-              <input type="checkbox" class="custom-control-input" id="caring-staff1">
-              <label class="custom-control-label checkbox-right" for="caring-staff1">
-                צוות מטפל
-              </label>
-            </div>
-            <div class="custom-control custom-checkbox caring-staff-checkbox">
-              <input type="checkbox" class="custom-control-input" id="caring-staff2">
-              <label class="custom-control-label checkbox-right" for="caring-staff2">
-                צוות מטפל
-              </label>
-            </div>
-            <div class="custom-control custom-checkbox caring-staff-checkbox">
-              <input type="checkbox" class="custom-control-input" id="caring-staff3">
-              <label class="custom-control-label checkbox-right" for="caring-staff3">
-                צוות מטפל
-              </label>
-            </div>
-          </div>
-        </div>
-        <div class="form-group">
-          <a class="collapse-menu" data-toggle="collapse" href="#collapse-agent-therapist" role="button" aria-expanded="true" aria-controls="collapse-agent-therapist">
-            <label>מתכנן (סוכן) מטפל</label>
-          </a>
-          <div class="collapse show" id="collapse-agent-therapist">
-            <div class="custom-control custom-checkbox agent-therapist-checkbox">
-              <input type="checkbox" class="custom-control-input" id="agent-therapist1">
-              <label class="custom-control-label checkbox-right" for="agent-therapist1">
-                מתכנן (סוכן) מטפל
-              </label>
-            </div>
-            <div class="custom-control custom-checkbox agent-therapist-checkbox">
-              <input type="checkbox" class="custom-control-input" id="agent-therapist2">
-              <label class="custom-control-label checkbox-right" for="agent-therapist2">
-                מתכנן (סוכן) מטפל
-              </label>
-            </div>
-            <div class="custom-control custom-checkbox agent-therapist-checkbox">
-              <input type="checkbox" class="custom-control-input" id="agent-therapist3">
-              <label class="custom-control-label checkbox-right" for="agent-therapist3">
-                מתכנן (סוכן) מטפל
-              </label>
-            </div>
-          </div>
-        </div>
-        <div class="form-group">
-          <a class="collapse-menu" data-toggle="collapse" href="#collapse-family-status" role="button" aria-expanded="true" aria-controls="collapse-family-status">
-            <label>סטוס משפחתי</label>
-          </a>
-          <div class="collapse show" id="collapse-family-status">
-            <div class="custom-control custom-checkbox family-status-checkbox">
-              <input type="checkbox" class="custom-control-input" id="family-status1">
-              <label class="custom-control-label checkbox-right" for="family-status1">
-                סטוס משפחתי
-              </label>
-            </div>
-            <div class="custom-control custom-checkbox family-status-checkbox">
-              <input type="checkbox" class="custom-control-input" id="family-status2">
-              <label class="custom-control-label checkbox-right" for="family-status2">
-                סטוס משפחתי
-              </label>
-            </div>
-            <div class="custom-control custom-checkbox family-status-checkbox">
-              <input type="checkbox" class="custom-control-input" id="family-status3">
-              <label class="custom-control-label checkbox-right" for="family-status3">
-                סטוס משפחתי
-              </label>
-            </div>
-          </div>
-        </div>
-        <div class="form-group">
-          <a class="collapse-menu" data-toggle="collapse" href="#collapse-type-deals" role="button" aria-expanded="true" aria-controls="collapse-type-deals">
-            <label>סוג עוסק</label>
-          </a>
-          <div class="collapse show" id="collapse-type-deals">
-            <div class="custom-control custom-checkbox type-deals-checkbox">
-              <input type="checkbox" class="custom-control-input" id="type-deals1">
-              <label class="custom-control-label checkbox-right" for="type-deals1">
-                סוג עוסק
-              </label>
-            </div>
-            <div class="custom-control custom-checkbox type-deals-checkbox">
-              <input type="checkbox" class="custom-control-input" id="type-deals2">
-              <label class="custom-control-label checkbox-right" for="type-deals2">
-                סוג עוסק
-              </label>
-            </div>
-            <div class="custom-control custom-checkbox type-deals-checkbox">
-              <input type="checkbox" class="custom-control-input" id="type-deals3">
-              <label class="custom-control-label checkbox-right" for="type-deals3">
-                סוג עוסק
-              </label>
-            </div>
-          </div>
-        </div>
-        <div class="form-group">
-          <a class="collapse-menu" data-toggle="collapse" href="#collapse-status" role="button" aria-expanded="true" aria-controls="collapse-status">
-            <label>מעמד</label>
-          </a>
-          <div class="collapse show" id="collapse-status">
-            <div class="custom-control custom-checkbox status-checkbox">
-              <input type="checkbox" class="custom-control-input" id="status1">
-              <label class="custom-control-label checkbox-right" for="status1">
-                מעמד
-              </label>
-            </div>
-            <div class="custom-control custom-checkbox status-checkbox">
-              <input type="checkbox" class="custom-control-input" id="status2">
-              <label class="custom-control-label checkbox-right" for="status2">
-                מעמד
-              </label>
-            </div>
-            <div class="custom-control custom-checkbox status-checkbox">
-              <input type="checkbox" class="custom-control-input" id="status3">
-              <label class="custom-control-label checkbox-right" for="status3">
-                מעמד
-              </label>
-            </div>
-          </div>
-        </div>
-      </form>
+      </div>
       <!-- settings form -->
       <form class="settings-form">
         <div class="custom-control custom-checkbox settings-checkbox">
@@ -847,18 +633,33 @@
 </script>
 <!-- script -->
 <script>
+  $(function() {
+    $('.filter-variable-reset').hide();
+    $('.filter-variable-mana').hide();
+  });
   $(document).on('click', '.filter-toggle', function() {
     $('.main').addClass('open-filter');
     $('.settings-form').removeClass('open');
     $('.filter-form').addClass('open');
+    $('.filter-toggle').hide();
+    $('.filter-variable-reset').show();
+    $('.filter-variable-mana').show();
   });
-  $(document).on('click', '.filter-settings', function() {
+  $(document).on('click', '.filter-variable-reset', function() {
+    $('.main').addClass('open-filter');
+    $('.settings-form').removeClass('open');
+    $('.filter-form').addClass('open');
+  });
+  $(document).on('click', '.filter-variable-mana', function() {
     $('.main').addClass('open-filter');
     $('.filter-form').removeClass('open');
     $('.settings-form').addClass('open');
   });
   $(document).on('click', '.filter-close', function() {
     $('.main').removeClass('open-filter');
+    $('.filter-toggle').show();
+    $('.filter-variable-reset').hide();
+    $('.filter-variable-mana').hide();
   });
 </script>
 <script>
@@ -873,6 +674,20 @@
       $('.app-filter-tags').append(tag);
       $(this).val('');
     }
+  });
+  // mana company tag
+  $(document).on('keyup', 'input[name=tag-input]', function(e) {
+    if($(this).val() != '' && e.keyCode == 13) {
+      $('.tag-wrapper').append('<div class="tag">' + e.target.value + '<span class="tag-remove">&times;</span></div>');
+      $(this).val('');
+    }
+  });
+  $(document).on('click', '.tag-remove', function() {
+    $(this).closest('.tag').remove();
+  });
+  $(document).on('click', '.btn-clear-mana-company', function() {
+    $('.tag-wrapper').empty();
+    $('input[name=tag-input]').val('');
   });
 </script>
 <!-- ./script -->

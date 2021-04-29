@@ -1196,7 +1196,7 @@ body {
             overflow: auto;
             -webkit-box-shadow: 0px 3px 6px rgba(0,0,0,0.16); 
             box-shadow: 0px 3px 6px rgba(0,0,0,0.16);
-            background-color: #D7DDE9;
+            background-color: #FFFFFF;
             z-index: 10;
             transition: width 0.45s;
             .filter-header {
@@ -1215,6 +1215,14 @@ body {
                         &:hover {
                             background-color: #78849E;
                         }
+                    }
+                    &.filter-variable-reset {
+                        width: 150px;
+                        height: 50px;
+                    }
+                    &.filter-variable-mana {
+                        width: 150px;
+                        height: 50px;
                     }
                 }
             }
@@ -1365,15 +1373,55 @@ body {
                             left: 90px;
                         }
                         &.filter-close {
-                            top: 15px;
-                            right: 23px;
+                            top: 20px;
+                            left: 0px;
                             width: 32px;
                             height: 32px;
                         }
                     }
+                    .filter-options {
+                        margin: 0;
+                        padding: 10px 10px 10px 50px;
+                        .filter-variable-reset {
+                            position: relative;
+                            width: calc(50% - 10px);
+                            height: 50px;
+                            border-radius: 25px;
+                            display: flex;
+                            border: solid 1px;
+                            margin-left: 10px;
+                            background-color: #1E87F0;
+                            color: #ffffff;
+                            justify-content: center;
+                            align-items: center;
+                            padding: 0;
+                        }
+                        .filter-variable-mana {
+                            position: relative;
+                            width: calc(50% - 10px);
+                            height: 50px;
+                            border-radius: 25px;
+                            display: flex;
+                            border: solid 1px;
+                            margin-left: 10px;
+                            justify-content: center;
+                            align-items: center;
+                            padding: 0;
+                            background-color: #FFFFFF;
+                            .cs-icon {
+                                background-color: #1E87F0;
+                                width: 30px;
+                                height: 30px;
+                                padding: 5px;
+                                border-radius: 50%;
+                                &.ic-gear {
+                                    background-size: 20px 20px;
+                                }
+                            }
+                        }
+                    }
                 }
                 .filter-body {
-                    margin-top: 100px;
                     padding: 25px;
                     overflow: auto;
                     .filter-form, .settings-form {
@@ -1381,6 +1429,7 @@ body {
                         line-height: 27px;
                         color: #485272;
                         display: none;
+                        background-color: #ffffff;
                         &.open {
                             display: block;
                         }
@@ -1811,6 +1860,9 @@ body {
     &.ic-trash-blue {
       background-image: url(../img/icons/ic_trash_blue.png);
     }
+    &.ic-gear {
+        background-image: url(../img/icons/ic_gear.png);
+    }
 }
 
 /* width */
@@ -1988,7 +2040,7 @@ button:focus {
   }
   
   input[type=text] {
-    background-color: #f1f1f1;
+    // background-color: #f1f1f1;
     width: 100%;
   }
   
@@ -3834,6 +3886,35 @@ table {
             }
         }
     }
+}
+
+.tag-container {
+    border: solid 1px #BFC5D2;
+    border-radius: 11px;
+    padding: 10px;
+    .tag-wrapper {
+        display: inline-block;
+        .tag {
+            width: max-content;
+            display: inline-block;
+            border: solid 1px #BFC5D2;
+            border-radius: 4px;
+            margin-bottom: 10px;
+            margin-left: 10px;
+            padding: 0 10px;
+            .tag-remove {
+                padding-right: 4px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.btn-clear-mana-company {
+    background-color: #1E87F0;
+    color: #FFFFFF;
+    height: 50px;
+    border-radius: 8px;
 }
 
 @media (min-width: 1600px) and (max-width: 1919px) {
