@@ -7338,7 +7338,7 @@ body {
             -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
             box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16); }
             body .main .app .app-header .app-header-bottom .card .card-header {
-              height: 28px;
+              height: 18px;
               background-color: #0288D1;
               padding: 5px 20px 5px 10px; }
               body .main .app .app-header .app-header-bottom .card .card-header.header-green {
@@ -7380,6 +7380,10 @@ body {
               @media (max-width: 1359px) {
                 body .main .app .app-header .app-header-bottom .card.info-card .card-body label {
                   font-size: 11px; } }
+            body .main .app .app-header .app-header-bottom .card.info-card .card-body .link-edit .cs-icon {
+              position: absolute;
+              left: 10px;
+              bottom: 10px; }
             body .main .app .app-header .app-header-bottom .card.value-card .card-body {
               padding-top: 45px;
               padding-bottom: 25px; }
@@ -8293,6 +8297,12 @@ body {
         background-image: url(../img/buttons/btn-close-dark.png); }
   .cs-btn-icon.btn-add {
     background-image: url(../img/buttons/btn-add.png); }
+  .cs-btn-icon.btn-add-green {
+    background-image: url(../img/buttons/btn-add-green.png); }
+  .cs-btn-icon.btn-flopy {
+    background-image: url(../img/buttons/btn-flopy.png); }
+  .cs-btn-icon.btn-back-circle {
+    background-image: url(../img/buttons/btn-back-circle.png); }
   .cs-btn-icon.btn-delete {
     background-image: url(../img/buttons/btn-delete.png); }
   .cs-btn-icon.btn-close-transparent {
@@ -8390,6 +8400,8 @@ body {
     background-image: url(../img/icons/ic_square.png); }
   .cs-icon.ic-pencil {
     background-image: url(../img/icons/ic_pencil.png); }
+  .cs-icon.ic-pencil-gray {
+    background-image: url(../img/icons/ic_pencil_gray.png); }
   .cs-icon.ic-female {
     background-image: url(../img/icons/ic_female.png); }
   .cs-icon.ic-male {
@@ -8454,6 +8466,8 @@ body {
     background-image: url(../img/icons/ic_trash_blue.png); }
   .cs-icon.ic-pencil-blue {
     background-image: url(../img/icons/ic_pencil_blue.png); }
+  .cs-icon.ic-pencil-gray {
+    background-image: url(../img/icons/ic_pencil_gray.png); }
   .cs-icon.ic-times-outline-red {
     background-image: url(../img/icons/ic_times_outline_red.png); }
   .cs-icon.ic-checked-outline-green {
@@ -9640,11 +9654,9 @@ input[type=submit] {
       border-radius: 8px; } }
 
 #nav-contacts table tbody tr th:first-child {
-  width: 40px;
   min-width: 40px; }
 
 #nav-contacts table tbody tr td:first-child {
-  width: 40px;
   min-width: 40px;
   text-align: center; }
 
@@ -10231,3 +10243,28 @@ table th, table td {
   color: #FFFFFF;
   height: 50px;
   border-radius: 8px; }
+
+.max-w-100 {
+  max-width: 100% !important; }
+
+#nav-list-of-relatives th:first-child, #nav-list-of-relatives td:first-child,
+#nav-related-businesses th:first-child,
+#nav-related-businesses td:first-child,
+#nav-contacts th:first-child,
+#nav-contacts td:first-child {
+  text-align: right; }
+  #nav-list-of-relatives th:first-child .btn-icon, #nav-list-of-relatives td:first-child .btn-icon,
+  #nav-related-businesses th:first-child .btn-icon,
+  #nav-related-businesses td:first-child .btn-icon,
+  #nav-contacts th:first-child .btn-icon,
+  #nav-contacts td:first-child .btn-icon {
+    border-right: 0;
+    border-left: solid 1px #BFC5D2; }
+
+#nav-list-of-relatives th:last-child, #nav-list-of-relatives td:last-child,
+#nav-related-businesses th:last-child,
+#nav-related-businesses td:last-child,
+#nav-contacts th:last-child,
+#nav-contacts td:last-child {
+  justify-content: center;
+  text-align: center; }

@@ -313,7 +313,7 @@ body {
                         -webkit-box-shadow: 0px 3px 6px rgba(0,0,0,0.16); 
                         box-shadow: 0px 3px 6px rgba(0,0,0,0.16);
                         .card-header {
-                            height: 28px;
+                            height: 18px;
                             background-color: #0288D1;
                             padding: 5px 20px 5px 10px;
                             &.header-green {
@@ -375,6 +375,14 @@ body {
                                     }
                                     @media (max-width: 1359px) {
                                         font-size: 11px;
+                                    }
+                                }
+                                .link-edit {
+                                    
+                                    .cs-icon {
+                                        position: absolute;
+                                        left: 10px;
+                                        bottom: 10px;
                                     }
                                 }
                             }
@@ -1580,6 +1588,15 @@ body {
     &.btn-add {
         background-image: url(../img/buttons/btn-add.png);
     }
+    &.btn-add-green {
+        background-image: url(../img/buttons/btn-add-green.png);
+    }
+    &.btn-flopy {
+        background-image: url(../img/buttons/btn-flopy.png);
+    }
+    &.btn-back-circle {
+        background-image: url(../img/buttons/btn-back-circle.png);
+    }
     &.btn-delete {
         background-image: url(../img/buttons/btn-delete.png);
     }
@@ -1716,6 +1733,9 @@ body {
     &.ic-pencil {
         background-image: url(../img/icons/ic_pencil.png);
     }
+    &.ic-pencil-gray {
+        background-image: url(../img/icons/ic_pencil_gray.png);
+    }
     &.ic-female {
         background-image: url(../img/icons/ic_female.png);
     }
@@ -1812,6 +1832,9 @@ body {
     }
     &.ic-pencil-blue {
         background-image: url(../img/icons/ic_pencil_blue.png);
+    }
+    &.ic-pencil-gray {
+        background-image: url(../img/icons/ic_pencil_gray.png);
     }
     &.ic-times-outline-red {
         background-image: url(../img/icons/ic_times_outline_red.png);
@@ -3120,13 +3143,13 @@ button:focus {
             tr {
                 th {
                     &:first-child {
-                        width: 40px;
+                        // width: 40px;
                         min-width: 40px;
                     }
                 }
                 td {
                     &:first-child {
-                        width: 40px;
+                        // width: 40px;
                         min-width: 40px;
                         text-align: center;
                     }
@@ -3916,6 +3939,28 @@ table {
     color: #FFFFFF;
     height: 50px;
     border-radius: 8px;
+}
+
+.max-w-100 {
+    max-width: 100% !important;
+}
+
+#nav-list-of-relatives, 
+#nav-related-businesses,
+#nav-contacts {
+    th, td {
+        &:first-child {
+            text-align: right;
+            .btn-icon {
+                border-right: 0;
+                border-left: solid 1px #BFC5D2;
+            }
+        }
+        &:last-child {
+            justify-content: center;
+            text-align: center;
+        }
+    }
 }
 
 @media (min-width: 1600px) and (max-width: 1919px) {

@@ -136,13 +136,17 @@
     <div class="app-header">
       <div class="row app-header-top">
         <div class="col-xl-4 col-lg-3 col-md-3 col-sm-4 col-4">
-          <span class="title">פרטי לקוח</span>
+          <span class="title float-right">פרטי לקוח</span>
+          <button class="cs-btn-img btn-questionnaire float-right mr-5" data-toggle="modal" data-target="#newQuestionnaireModal"></button>
         </div>
-        <div class="col-xl-8 col-lg-9 col-md-9 col-sm-8 col-8">
-          <button class="cs-btn-img btn-options"></button>
-          <button class="cs-btn-img btn-back"></button>
-          <button class="cs-btn-img btn-save"></button>
-          <button class="cs-btn-img btn-questionnaire" data-toggle="modal" data-target="#newQuestionnaireModal"></button>
+        <div class="col-xl-8 col-lg-9 col-md-9 col-sm-8 col-8 text-left">
+          <a class="cs-btn-icon btn-flopy" href="javascript:void(0)"></a>
+          <a class="cs-btn-icon btn-xls" href="javascript:void(0)"></a>
+          <a class="cs-btn-icon btn-print" href="javascript:void(0)"></a>
+          <a class="cs-btn-icon btn-email" href="javascript:void(0)"></a>
+          <a class="cs-btn-icon btn-message" href="javascript:void(0)"></a>
+          <a class="cs-btn-icon btn-back-circle" href="javascript:void(0)"></a>
+          <a class="cs-btn-icon btn-trash ml-0" href="javascript:void(0)"></a>
         </div>
       </div>
       <div class="row app-header-bottom">
@@ -150,17 +154,9 @@
           <div class="row">
             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
               <div class="card info-card">
-                <div class="card-header">
-                  <a href="#" class="float-right"><div class="cs-icon ic-pencil"></div></a>
-                  <a href="customer-info.html" class="float-left"><div class="cs-icon ic-trash-white"></div></a>
-                </div>
+                <div class="card-header"></div>
                 <div class="card-body pl-5 py-2">
                   <div class="row py-1">
-                    <div class="action-group">
-                      <a href="#" class="float-left btn-action"><div class="cs-icon ic-person-add"></div></a>
-                      <a href="#" class="float-left btn-action"><div class="cs-icon ic-sms"></div></a>
-                      <a href="#" class="float-left btn-action"><div class="cs-icon ic-email-blue"></div></a>
-                    </div>
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 pr-4 text-primary">
                       <label>שם פרטי</label>
                     </div>
@@ -192,6 +188,7 @@
                       <label>פרטי/חברה בע"מ</label>
                     </div>
                   </div>
+                  <a href="#" class="float-left link-edit"><div class="cs-icon ic-pencil-gray"></div></a>
                 </div>
               </div>
             </div>
@@ -271,12 +268,7 @@
       </div>
     </div>
     <div class="app-body">
-      <div class="w-100 text-left pl-2">
-        <a class="cs-btn-icon btn-exit" href="javascript:void(0)"></a>
-        <a class="cs-btn-icon btn-xls" href="javascript:void(0)"></a>
-        <a class="cs-btn-icon btn-print" href="javascript:void(0)"></a>
-      </div>
-      <div class="app-tab">
+      <div class="app-tab mt-5">
         <nav>
           <div class="nav nav-tabs xl-tabs" id="nav-tab" role="tablist">
             <a class="nav-item nav-link active" id="nav-customer-detail-tab" data-toggle="tab" href="#nav-customer-detail" role="tab" aria-controls="nav-customer-detail" aria-selected="true"><div class="cs-icon ic-user"></div>פרטי לקוח</a>
@@ -554,9 +546,9 @@
                 </div>
               </div>
             </form>
-            <div class="row m-0 pt-3">
+            <!-- <div class="row m-0 pt-3">
               <a class="cs-btn-icon btn-add m-0" href="javascript:duplicateEmployerRow()"></a>
-            </div>
+            </div> -->
           </div>
           <div class="tab-pane fade" id="nav-partner" role="tabpanel" aria-labelledby="nav-partner-tab">
             <form class="form-partner">
@@ -689,7 +681,7 @@
                   </div>
                 </div>
                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
-                  <div class="form-group">
+                  <div class="form-group max-w-100">
                     <label>הערות</label>
                     <input type="text" class="form-control w-100" placeholder="TEXT" />
                   </div>
@@ -697,9 +689,21 @@
               </div>
               <div class="row">
                 <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3">
-                  <div class="form-group">
-                    <label>חשבון שונה</label>
-                    <input type="checkbox" id="partner-additional-toggle" name="status" value="1" class="lcs_check" autocomplete="off" checked />
+                  <div class="row">
+                    <div class="col-12 mb-3">
+                      <div class="form-group">
+                        <label>חשבון שונה</label>
+                        <input type="checkbox" id="partner-additional-toggle" name="status" value="1" class="lcs_check" autocomplete="off" checked />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="form-group">
+                        <label>IBAN</label>
+                        <input type="text" class="form-control" placeholder="NOMERIC" />
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9 col-9" id="partner-additional-rows">
@@ -724,14 +728,8 @@
                     </div>
                   </div>
                   <div class="row">
-                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4">
-                      <div class="form-group">
-                        <label>IBAN</label>
-                        <input type="text" class="form-control" placeholder="NOMERIC" />
-                      </div>
-                    </div>
-                    <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-8">
-                      <div class="form-group">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                      <div class="form-group max-w-100">
                         <label>כתובת סניף</label>
                         <input type="text" class="form-control w-100" placeholder="TEXT" />
                       </div>
@@ -745,25 +743,19 @@
             <table class="customer-table relatives-table">
               <thead>
                 <tr>
-                  <th>שם פרטי</th>
-                  <th>שם משפחה</th>
-                  <th>מספר זהות / ח.פ</th>
+                  <th class="text-right ">
+                    <a class="cs-btn-icon btn-add-green m-2" href="javascript:void(0)"></a>
+                  </th>
+                  <th class="text-right">שם פרטי</th>
+                  <th class="text-right">שם משפחה</th>
+                  <th class="text-right">מספר זהות / ח.פ</th>
                   <th>קרבה</th>
                   <th> תיק  מקושר</th>
                   <th>שווי תיק</th>
-                  <th>
-                    <a class="cs-btn-icon btn-add m-0" href="javascript:void(0)"></a>
-                  </th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td>טקסט</td>
-                  <td>טקסט</td>
-                  <td>000000000</td>
-                  <td>טקסט</td>
-                  <td>000000000</td>
-                  <td>000000000</td>
                   <td>
                     <a class="btn-icon" href="javascript:void(0)" data-toggle="modal" data-target="#relativesEditModal">
                       <div class="cs-icon ic-pencil-blue"></div>
@@ -772,14 +764,14 @@
                       <div class="cs-icon ic-trash-blue"></div>
                     </a>
                   </td>
+                  <td class="text-right">טקסט</td>
+                  <td class="text-right">טקסט</td>
+                  <td class="text-right">000000000</td>
+                  <td>טקסט</td>
+                  <td>000000000</td>
+                  <td>000000000</td>
                 </tr>
                 <tr>
-                  <td>טקסט</td>
-                  <td>טקסט</td>
-                  <td>000000000</td>
-                  <td>טקסט</td>
-                  <td>000000000</td>
-                  <td>000000000</td>
                   <td>
                     <a class="btn-icon" href="javascript:void(0)" data-toggle="modal" data-target="#relativesEditModal">
                       <div class="cs-icon ic-pencil-blue"></div>
@@ -788,14 +780,14 @@
                       <div class="cs-icon ic-trash-blue"></div>
                     </a>
                   </td>
+                  <td class="text-right">טקסט</td>
+                  <td class="text-right">טקסט</td>
+                  <td class="text-right">000000000</td>
+                  <td>טקסט</td>
+                  <td>000000000</td>
+                  <td>000000000</td>
                 </tr>
                 <tr>
-                  <td>טקסט</td>
-                  <td>טקסט</td>
-                  <td>000000000</td>
-                  <td>טקסט</td>
-                  <td>000000000</td>
-                  <td>000000000</td>
                   <td>
                     <a class="btn-icon" href="javascript:void(0)" data-toggle="modal" data-target="#relativesEditModal">
                       <div class="cs-icon ic-pencil-blue"></div>
@@ -804,14 +796,14 @@
                       <div class="cs-icon ic-trash-blue"></div>
                     </a>
                   </td>
+                  <td class="text-right">טקסט</td>
+                  <td class="text-right">טקסט</td>
+                  <td class="text-right">000000000</td>
+                  <td>טקסט</td>
+                  <td>000000000</td>
+                  <td>000000000</td>
                 </tr>
                 <tr>
-                  <td>טקסט</td>
-                  <td>טקסט</td>
-                  <td>000000000</td>
-                  <td>טקסט</td>
-                  <td>000000000</td>
-                  <td>000000000</td>
                   <td>
                     <a class="btn-icon" href="javascript:void(0)" data-toggle="modal" data-target="#relativesEditModal">
                       <div class="cs-icon ic-pencil-blue"></div>
@@ -820,6 +812,12 @@
                       <div class="cs-icon ic-trash-blue"></div>
                     </a>
                   </td>
+                  <td class="text-right">טקסט</td>
+                  <td class="text-right">טקסט</td>
+                  <td class="text-right">000000000</td>
+                  <td>טקסט</td>
+                  <td>000000000</td>
+                  <td>000000000</td>
                 </tr>
               </tbody>
             </table>
@@ -843,7 +841,7 @@
                   </div>
                 </div>
                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
-                  <div class="form-group">
+                  <div class="form-group max-w-100">
                     <label>כתובת סניף</label>
                     <input type="text" class="form-control" placeholder="TEXT" />
                   </div>
@@ -932,33 +930,23 @@
             <table class="customer-table related-businesses-table">
               <thead>
                 <tr>
-                  <th>שם העסק</th>
-                  <th>ח.פ</th>
-                  <th>איש הקשר</th>
-                  <th>טלפון</th>
+                  <th class="text-right">
+                    <a class="cs-btn-icon btn-add-green m-2" href="javascript:void(0)" data-toggle="modal" data-target="#relatedBusinessAddModal"></a>
+                  </th>
+                  <th class="text-right">שם העסק</th>
+                  <th class="text-right">ח.פ</th>
+                  <th class="text-right">איש הקשר</th>
+                  <th class="text-right">טלפון</th>
                   <th>כתובת</th>
                   <th>ישוב</th>
                   <th>אימייל</th>
                   <th>תחום עיסוק </th>
                   <th>בעלים</th>
                   <th>תפקיד</th>
-                  <th>
-                    <a class="cs-btn-icon btn-add m-0" href="javascript:void(0)" data-toggle="modal" data-target="#relatedBusinessAddModal"></a>
-                  </th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td class="font-weight-bold">טקסט</td>
-                  <td>NOMERIC</td>
-                  <td>טקסט</td>
-                  <td>NOMERIC</td>
-                  <td>טקסט</td>
-                  <td>טקסט</td>
-                  <td>טקסט</td>
-                  <td>טקסט</td>
-                  <td>טקסט</td>
-                  <td>טקסט</td>
                   <td>
                     <a class="btn-icon" href="javascript:void(0)">
                       <div class="cs-icon ic-pencil-blue"></div>
@@ -967,18 +955,18 @@
                       <div class="cs-icon ic-trash-blue"></div>
                     </a>
                   </td>
+                  <td class="font-weight-bold text-right">טקסט</td>
+                  <td class="text-right">NOMERIC</td>
+                  <td class="text-right">טקסט</td>
+                  <td class="text-right">NOMERIC</td>
+                  <td>טקסט</td>
+                  <td>טקסט</td>
+                  <td>טקסט</td>
+                  <td>טקסט</td>
+                  <td>טקסט</td>
+                  <td>טקסט</td>
                 </tr>
                 <tr>
-                  <td class="font-weight-bold">טקסט</td>
-                  <td>NOMERIC</td>
-                  <td>טקסט</td>
-                  <td>NOMERIC</td>
-                  <td>טקסט</td>
-                  <td>טקסט</td>
-                  <td>טקסט</td>
-                  <td>טקסט</td>
-                  <td>טקסט</td>
-                  <td>טקסט</td>
                   <td>
                     <a class="btn-icon" href="javascript:void(0)">
                       <div class="cs-icon ic-pencil-blue"></div>
@@ -987,18 +975,18 @@
                       <div class="cs-icon ic-trash-blue"></div>
                     </a>
                   </td>
+                  <td class="font-weight-bold text-right">טקסט</td>
+                  <td class="text-right">NOMERIC</td>
+                  <td class="text-right">טקסט</td>
+                  <td class="text-right">NOMERIC</td>
+                  <td>טקסט</td>
+                  <td>טקסט</td>
+                  <td>טקסט</td>
+                  <td>טקסט</td>
+                  <td>טקסט</td>
+                  <td>טקסט</td>
                 </tr>
                 <tr>
-                  <td class="font-weight-bold">טקסט</td>
-                  <td>NOMERIC</td>
-                  <td>טקסט</td>
-                  <td>NOMERIC</td>
-                  <td>טקסט</td>
-                  <td>טקסט</td>
-                  <td>טקסט</td>
-                  <td>טקסט</td>
-                  <td>טקסט</td>
-                  <td>טקסט</td>
                   <td>
                     <a class="btn-icon" href="javascript:void(0)">
                       <div class="cs-icon ic-pencil-blue"></div>
@@ -1007,6 +995,16 @@
                       <div class="cs-icon ic-trash-blue"></div>
                     </a>
                   </td>
+                  <td class="font-weight-bold text-right">טקסט</td>
+                  <td class="text-right">NOMERIC</td>
+                  <td class="text-right">טקסט</td>
+                  <td class="text-right">NOMERIC</td>
+                  <td>טקסט</td>
+                  <td>טקסט</td>
+                  <td>טקסט</td>
+                  <td>טקסט</td>
+                  <td>טקסט</td>
+                  <td>טקסט</td>
                 </tr>
               </tbody>
             </table>
@@ -1015,24 +1013,19 @@
             <table class="customer-table contacts-table">
               <thead>
                 <tr>
-                  <th>שם איש קשר</th>
-                  <th>סוג הקשר</th>
+                  <th class="text-right">
+                    <a class="cs-btn-icon btn-add-green m-2" href="javascript:void(0)" data-toggle="modal" data-target="#contactsAddModal"></a>
+                  </th>
+                  <th class="text-right">שם איש קשר</th>
+                  <th class="text-right">סוג הקשר</th>
                   <th>ישוב</th>
                   <th>טלפון</th>
                   <th>אימייל</th>
-                  <th>
-                    <a class="cs-btn-icon btn-add m-0" href="javascript:void(0)" data-toggle="modal" data-target="#contactsAddModal"></a>
-                  </th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td>טקסט</td>
-                  <td>טקסט</td>
-                  <td>טקסט</td>
-                  <td>NUMERIC</td>
-                  <td>טקסט</td>
-                  <td>
+                  <td class="text-right">
                     <a class="btn-icon" href="javascript:void(0)">
                       <div class="cs-icon ic-pencil-blue"></div>
                     </a>
@@ -1040,14 +1033,14 @@
                       <div class="cs-icon ic-trash-blue"></div>
                     </a>
                   </td>
+                  <td class="text-right">טקסט</td>
+                  <td class="text-right">טקסט</td>
+                  <td>טקסט</td>
+                  <td>NUMERIC</td>
+                  <td>טקסט</td>
                 </tr>
                 <tr>
-                  <td>טקסט</td>
-                  <td>טקסט</td>
-                  <td>טקסט</td>
-                  <td>NUMERIC</td>
-                  <td>טקסט</td>
-                  <td>
+                  <td class="text-right">
                     <a class="btn-icon" href="javascript:void(0)">
                       <div class="cs-icon ic-pencil-blue"></div>
                     </a>
@@ -1055,14 +1048,14 @@
                       <div class="cs-icon ic-trash-blue"></div>
                     </a>
                   </td>
+                  <td class="text-right">טקסט</td>
+                  <td class="text-right">טקסט</td>
+                  <td>טקסט</td>
+                  <td>NUMERIC</td>
+                  <td>טקסט</td>
                 </tr>
                 <tr>
-                  <td>טקסט</td>
-                  <td>טקסט</td>
-                  <td>טקסט</td>
-                  <td>NUMERIC</td>
-                  <td>טקסט</td>
-                  <td>
+                  <td class="text-right">
                     <a class="btn-icon" href="javascript:void(0)">
                       <div class="cs-icon ic-pencil-blue"></div>
                     </a>
@@ -1070,6 +1063,11 @@
                       <div class="cs-icon ic-trash-blue"></div>
                     </a>
                   </td>
+                  <td class="text-right">טקסט</td>
+                  <td class="text-right">טקסט</td>
+                  <td>טקסט</td>
+                  <td>NUMERIC</td>
+                  <td>טקסט</td>
                 </tr>
               </tbody>
             </table>
