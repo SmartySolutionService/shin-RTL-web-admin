@@ -8570,6 +8570,8 @@ button:focus {
       transition: opacity 0.35s;
       transition: left 0.35s; }
       .modal-open .modal.show .modal-dialog .modal-content {
+        height: 100vh;
+        overflow-y: auto;
         min-height: 100%;
         background-color: rgba(244, 246, 252, 0.8);
         border-radius: 0px;
@@ -8586,10 +8588,11 @@ button:focus {
           height: 80px;
           border-bottom: 0; }
           .modal-open .modal.show .modal-dialog .modal-content .modal-header button.close {
+            position: absolute;
             width: 32px;
             height: 32px;
-            top: 25px;
-            right: 60px; }
+            top: 40px;
+            left: 25px; }
         .modal-open .modal.show .modal-dialog .modal-content .modal-body {
           padding: 30px 50px 30px 30px; }
           .modal-open .modal.show .modal-dialog .modal-content .modal-body .form-group {
@@ -8686,8 +8689,7 @@ input[type=submit] {
   width: 630px; }
 
 #contactsAddModal .modal-body, #contactsAddModal .modal-footer {
-  margin-right: 120px;
-  margin-left: 45px; }
+  margin-left: 120px; }
   #contactsAddModal .modal-body .form-group, #contactsAddModal .modal-footer .form-group {
     width: 300px; }
 
@@ -9468,60 +9470,64 @@ input[type=submit] {
   width: 100%;
   height: 100%;
   overflow: auto; }
-  #documentAddModal .modal-dialog .modal-content .modal-body .form-group,
-  #contactAddModal .modal-dialog .modal-content .modal-body .form-group {
-    width: 300px;
-    margin-bottom: 20px; }
-    #documentAddModal .modal-dialog .modal-content .modal-body .form-group label,
-    #contactAddModal .modal-dialog .modal-content .modal-body .form-group label {
-      color: #3ACCE1;
-      font-size: 18px;
-      width: 100%;
-      text-align: right; }
-    #documentAddModal .modal-dialog .modal-content .modal-body .form-group .form-textarea,
-    #contactAddModal .modal-dialog .modal-content .modal-body .form-group .form-textarea {
-      max-width: 298px;
-      width: 298px;
-      height: 290px; }
-    #documentAddModal .modal-dialog .modal-content .modal-body .form-group .file-upload,
-    #contactAddModal .modal-dialog .modal-content .modal-body .form-group .file-upload {
-      background-color: #3ACCE1;
-      border: solid 2px #E9E9E9;
-      border-radius: 10px;
-      width: 298px;
-      height: 125px;
-      color: #FFFFFF;
-      padding: 15px;
-      cursor: pointer; }
-      #documentAddModal .modal-dialog .modal-content .modal-body .form-group .file-upload .cs-icon,
-      #contactAddModal .modal-dialog .modal-content .modal-body .form-group .file-upload .cs-icon {
-        position: relative;
-        display: block;
-        margin-right: auto;
-        margin-left: auto;
-        width: 42px;
-        height: 27px; }
-      #documentAddModal .modal-dialog .modal-content .modal-body .form-group .file-upload .upload-text,
-      #contactAddModal .modal-dialog .modal-content .modal-body .form-group .file-upload .upload-text {
+  #documentAddModal .modal-dialog .modal-content,
+  #contactAddModal .modal-dialog .modal-content {
+    height: 100vh;
+    overflow-y: auto; }
+    #documentAddModal .modal-dialog .modal-content .modal-body .form-group,
+    #contactAddModal .modal-dialog .modal-content .modal-body .form-group {
+      width: 300px;
+      margin-bottom: 20px; }
+      #documentAddModal .modal-dialog .modal-content .modal-body .form-group label,
+      #contactAddModal .modal-dialog .modal-content .modal-body .form-group label {
+        color: #3ACCE1;
+        font-size: 18px;
         width: 100%;
-        font-size: 8px;
+        text-align: right; }
+      #documentAddModal .modal-dialog .modal-content .modal-body .form-group .form-textarea,
+      #contactAddModal .modal-dialog .modal-content .modal-body .form-group .form-textarea {
+        max-width: 298px;
+        width: 298px;
+        height: 290px; }
+      #documentAddModal .modal-dialog .modal-content .modal-body .form-group .file-upload,
+      #contactAddModal .modal-dialog .modal-content .modal-body .form-group .file-upload {
+        background-color: #3ACCE1;
+        border: solid 2px #E9E9E9;
+        border-radius: 10px;
+        width: 298px;
+        height: 125px;
         color: #FFFFFF;
-        text-align: center;
-        margin-top: 10px; }
-      #documentAddModal .modal-dialog .modal-content .modal-body .form-group .file-upload .btn-upload,
-      #contactAddModal .modal-dialog .modal-content .modal-body .form-group .file-upload .btn-upload {
-        position: relative;
-        display: block;
-        width: 71px;
-        height: 17px;
-        font-size: 8px;
-        color: #7ABBFC;
-        border-radius: 4px;
-        background-color: #FFF;
-        padding: 0;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 25px; }
+        padding: 15px;
+        cursor: pointer; }
+        #documentAddModal .modal-dialog .modal-content .modal-body .form-group .file-upload .cs-icon,
+        #contactAddModal .modal-dialog .modal-content .modal-body .form-group .file-upload .cs-icon {
+          position: relative;
+          display: block;
+          margin-right: auto;
+          margin-left: auto;
+          width: 42px;
+          height: 27px; }
+        #documentAddModal .modal-dialog .modal-content .modal-body .form-group .file-upload .upload-text,
+        #contactAddModal .modal-dialog .modal-content .modal-body .form-group .file-upload .upload-text {
+          width: 100%;
+          font-size: 8px;
+          color: #FFFFFF;
+          text-align: center;
+          margin-top: 10px; }
+        #documentAddModal .modal-dialog .modal-content .modal-body .form-group .file-upload .btn-upload,
+        #contactAddModal .modal-dialog .modal-content .modal-body .form-group .file-upload .btn-upload {
+          position: relative;
+          display: block;
+          width: 71px;
+          height: 17px;
+          font-size: 8px;
+          color: #7ABBFC;
+          border-radius: 4px;
+          background-color: #FFF;
+          padding: 0;
+          margin-left: auto;
+          margin-right: auto;
+          margin-top: 25px; }
 
 #contactAddModal .form-control {
   margin-bottom: 33px; }
@@ -9709,6 +9715,8 @@ input[type=submit] {
 #newQuestionnaireModal .modal-dialog {
   width: 100%; }
   #newQuestionnaireModal .modal-dialog .modal-content {
+    height: 100vh;
+    overflow-y: auto;
     border: 0; }
     #newQuestionnaireModal .modal-dialog .modal-content .modal-header .btn-close {
       top: 28px;
@@ -10213,6 +10221,8 @@ table th, table td {
 #newCustomerModal .modal-dialog {
   width: 100%; }
   #newCustomerModal .modal-dialog .modal-content {
+    height: 100vh;
+    overflow-y: auto;
     border-right: none; }
     #newCustomerModal .modal-dialog .modal-content .modal-header .btn-close {
       position: absolute;

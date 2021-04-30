@@ -1971,6 +1971,8 @@ button:focus {
                 transition: opacity 0.35s;
                 transition: left 0.35s;
                 .modal-content {
+                    height: 100vh;
+                    overflow-y: auto;
                     @media (max-width: 1279px) {
                         width: max-content;    
                     }
@@ -1988,10 +1990,11 @@ button:focus {
                         height: 80px;
                         border-bottom: 0;
                         button.close {
+                            position: absolute;
                             width: 32px;
                             height: 32px;
-                            top: 25px;
-                            right: 60px;
+                            top: 40px;
+                            left: 25px;
                         }
                     }
                     .modal-body {
@@ -2135,8 +2138,7 @@ button:focus {
 
 #contactsAddModal {
     .modal-body, .modal-footer {
-        margin-right: 120px;
-        margin-left: 45px;
+        margin-left: 120px;
         .form-group {
             width: 300px;
         }
@@ -2958,6 +2960,8 @@ button:focus {
         height: 100%;
         overflow: auto;
         .modal-content {
+            height: 100vh;
+            overflow-y: auto;
             .modal-body {
                 .form-group {
                     width: 300px;
@@ -3237,6 +3241,8 @@ button:focus {
   .modal-dialog {
     width: 100%;
     .modal-content {
+        height: 100vh;
+        overflow-y: auto;
       border: 0;
       .modal-header {
         .btn-close {
@@ -3899,6 +3905,8 @@ table {
     .modal-dialog {
         width: 100%;
         .modal-content {
+            height: 100vh;
+            overflow-y: auto;
             border-right: none;
             .modal-header {
                 .btn-close {
