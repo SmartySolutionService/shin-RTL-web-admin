@@ -8580,7 +8580,7 @@ button:focus {
         height: 100vh;
         overflow-y: auto;
         min-height: 100%;
-        background-color: rgba(244, 246, 252, 0.8);
+        background-color: #F4F6FC;
         border-radius: 0px;
         border-top: 0;
         border-bottom: 0;
