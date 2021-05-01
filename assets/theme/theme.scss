@@ -994,6 +994,14 @@ body {
                         @media (min-width: 1600px) {
                             min-height: 180px;
                         }
+                        .gradient-semi-chart-item {
+                            width: 50%;
+                            bottom: 0;
+                            margin-top: 20px;
+                            margin-bottom: 20px;
+                            margin-left: auto;
+                            margin-right: auto;
+                        }
                         .label {
                             width: 100%;
                             text-align: center;
