@@ -7986,7 +7986,7 @@ body {
           transition: padding-bottom 1.5s; }
     body .main .filter-bar {
       width: 75px;
-      height: auto;
+      height: calc(100vh - 155px);
       overflow: auto;
       -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
       box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
