@@ -9732,29 +9732,27 @@ input[type=submit] {
 
 #nav-beneficiaries table thead th {
   vertical-align: middle; }
-  #nav-beneficiaries table thead th:last-child {
-    padding: 0;
-    text-align: left; }
 
 #nav-beneficiaries table tbody tr td {
   vertical-align: middle; }
   #nav-beneficiaries table tbody tr td:last-child {
-    justify-content: flex-end;
-    padding-left: 0; }
+    justify-content: flex-end; }
   #nav-beneficiaries table tbody tr td .btn-icon {
     width: 55px;
     height: 40px;
     display: inline-block;
     padding: 10px 17px;
-    border-right: solid 1px #BFC5D2; }
+    border-left: solid 1px #BFC5D2; }
 
-#newBeneficiaryModal .modal-body .form-group {
-  margin-bottom: 30px;
-  max-width: 200px; }
-  #newBeneficiaryModal .modal-body .form-group label {
-    color: #7ABBFC; }
-  #newBeneficiaryModal .modal-body .form-group .form-control {
-    max-width: 190px; }
+#newBeneficiaryModal .modal-content {
+  max-width: 750px; }
+  #newBeneficiaryModal .modal-content .modal-body .form-group {
+    margin-bottom: 30px;
+    max-width: 200px; }
+    #newBeneficiaryModal .modal-content .modal-body .form-group label {
+      color: #7ABBFC; }
+    #newBeneficiaryModal .modal-content .modal-body .form-group .form-control {
+      max-width: 190px; }
 
 #newQuestionnaireModal .modal-dialog {
   width: 100%; }

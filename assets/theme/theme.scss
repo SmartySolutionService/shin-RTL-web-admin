@@ -3256,10 +3256,6 @@ button:focus {
     thead {
       th {
             vertical-align: middle;
-            &:last-child {
-            padding: 0;
-            text-align: left;
-            }
       }
     }
     tbody {
@@ -3268,14 +3264,13 @@ button:focus {
             vertical-align: middle;
           &:last-child {
             justify-content: flex-end;
-            padding-left: 0;
           }
           .btn-icon {
             width: 55px;
             height: 40px;
             display: inline-block;
             padding: 10px 17px;
-            border-right: solid 1px #BFC5D2;
+            border-left: solid 1px #BFC5D2;
           }
         }
       }
@@ -3285,18 +3280,21 @@ button:focus {
 }
 
 #newBeneficiaryModal {
-  .modal-body {
-    .form-group {
-      margin-bottom: 30px;
-      max-width: 200px;
-      label {
-        color: #7ABBFC;
-      }
-      .form-control {
-        max-width: 190px;
-      }
+    .modal-content {
+        max-width: 750px;
+        .modal-body {
+            .form-group {
+                margin-bottom: 30px;
+                max-width: 200px;
+                label {
+                    color: #7ABBFC;
+                }
+                .form-control {
+                    max-width: 190px;
+                }
+            }
+        }
     }
-  }
 }
 
 #newQuestionnaireModal {
