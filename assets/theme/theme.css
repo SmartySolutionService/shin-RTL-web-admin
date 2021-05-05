@@ -9423,28 +9423,35 @@ input[type=submit] {
 
 #nisCapitalMarketAlternativeProductsModal .modal-dialog {
   width: 100%;
-  max-width: 1380px; }
-  #nisCapitalMarketAlternativeProductsModal .modal-dialog .modal-body .nav-tabs .nav-item {
-    background-color: #BFC5D2;
-    height: 44px;
-    border-radius: 35px;
-    color: #FFFFFF;
-    font-size: 20px;
-    font-weight: bold;
-    font-family: "Heebo";
-    padding-left: 40px;
-    padding-right: 40px;
-    margin-left: 40px;
-    border: 0; }
-    #nisCapitalMarketAlternativeProductsModal .modal-dialog .modal-body .nav-tabs .nav-item.active {
-      background-color: #7ABBFC;
+  max-width: 950px; }
+  #nisCapitalMarketAlternativeProductsModal .modal-dialog .modal-content {
+    overflow-x: hidden; }
+  #nisCapitalMarketAlternativeProductsModal .modal-dialog .modal-body .nav-tabs {
+    border-top: solid 1px #A3A0FB;
+    border-bottom: solid 1px #A3A0FB; }
+    #nisCapitalMarketAlternativeProductsModal .modal-dialog .modal-body .nav-tabs .nav-item {
+      background-color: #BFC5D2;
+      height: 44px;
+      border-radius: 35px;
+      color: #FFFFFF;
+      font-size: 20px;
+      font-weight: bold;
+      font-family: "Heebo";
+      padding-left: 40px;
+      padding-right: 40px;
+      margin-left: 40px;
       border: 0; }
+      #nisCapitalMarketAlternativeProductsModal .modal-dialog .modal-body .nav-tabs .nav-item.active {
+        background-color: #7ABBFC;
+        border: 0; }
   #nisCapitalMarketAlternativeProductsModal .modal-dialog .modal-body .tab-content .form-group label {
     width: 100%; }
 
 #nisProductsInProcessModal .modal-dialog {
   width: 100%;
-  max-width: 950px; }
+  max-width: 750px; }
+  #nisProductsInProcessModal .modal-dialog .modal-content {
+    overflow-x: hidden; }
 
 #nav-documents table thead .input-search-wrapper {
   position: relative;

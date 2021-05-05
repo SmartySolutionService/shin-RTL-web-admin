@@ -2886,9 +2886,14 @@ button:focus {
 #nisCapitalMarketAlternativeProductsModal {
     .modal-dialog {
         width: 100%;
-        max-width: 1380px;
+        max-width: 950px;
+        .modal-content {
+            overflow-x: hidden;
+        }
         .modal-body {
             .nav-tabs {
+                border-top: solid 1px #A3A0FB;
+                border-bottom: solid 1px #A3A0FB;
                 .nav-item {
                     background-color: #BFC5D2;
                     height: 44px;
@@ -2921,7 +2926,10 @@ button:focus {
 #nisProductsInProcessModal {
     .modal-dialog {
         width: 100%;
-        max-width: 950px;
+        max-width: 750px;
+        .modal-content {
+            overflow-x: hidden;
+        }
     }
 }
 
