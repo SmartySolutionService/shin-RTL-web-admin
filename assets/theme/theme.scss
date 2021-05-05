@@ -437,6 +437,9 @@ body {
                                     top: 50%;
                                     right: 50%;
                                     transform: translate(50%, -50%);
+                                    @media (max-width: 1599px) {
+                                        display: contents;
+                                    }
                                     .chart-group {
                                         position: relative;
                                         width: 100%;
@@ -1168,6 +1171,7 @@ body {
                     bottom: 0;
                     right: 0;
                     padding-right: 324px;
+                    width: 100%;
                     .app-alert {
                         height: 72px;
                         width: 100%;
@@ -1536,7 +1540,7 @@ body {
     height: 50px;
     border-radius: 50%;
     padding: 15px;
-    margin-left: 20px;
+    margin-left: 10px;
     background-size: contain;
     @media (min-width: 1360px) and (max-width: 1919px) {
         width: 40px;
@@ -1568,17 +1572,17 @@ body {
     &.btn-email {
         background-image: url(../img/buttons/btn-email.png);
         &:hover {
-            background-image: url(../img/buttons/btn-email.png);
+            background-image: url(../img/buttons/btn-email-hover.png);
         }
     }&.btn-message {
         background-image: url(../img/buttons/btn-message.png);
         &:hover {
-            background-image: url(../img/buttons/btn-message.png);
+            background-image: url(../img/buttons/btn-message-hover.png);
         }
     }&.btn-trash {
         background-image: url(../img/buttons/btn-trash.png);
         &:hover {
-            background-image: url(../img/buttons/btn-trash.png);
+            background-image: url(../img/buttons/btn-trash-hover.png);
         }
     }
     &.btn-close {
@@ -1595,15 +1599,24 @@ body {
     }
     &.btn-add {
         background-image: url(../img/buttons/btn-add.png);
+        &:hover {
+            background-image: url(../img/buttons/btn-add-hover.png);
+        }
     }
     &.btn-add-green {
         background-image: url(../img/buttons/btn-add-green.png);
     }
     &.btn-flopy {
         background-image: url(../img/buttons/btn-flopy.png);
+        &:hover {
+            background-image: url(../img/buttons/btn-flopy-hover.png);
+        }
     }
     &.btn-back-circle {
         background-image: url(../img/buttons/btn-back-circle.png);
+        &:hover {
+            background-image: url(../img/buttons/btn-back-circle-hover.png);
+        }
     }
     &.btn-delete {
         background-image: url(../img/buttons/btn-delete.png);

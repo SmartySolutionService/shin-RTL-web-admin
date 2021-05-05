@@ -7425,6 +7425,9 @@ body {
               top: 50%;
               right: 50%;
               transform: translate(50%, -50%); }
+              @media (max-width: 1599px) {
+                body .main .app .app-header .app-header-bottom .card.chart-card .card-body .chart-group-container {
+                  display: contents; } }
               body .main .app .app-header .app-header-bottom .card.chart-card .card-body .chart-group-container .chart-group {
                 position: relative;
                 width: 100%;
@@ -7960,7 +7963,8 @@ body {
           display: flex;
           bottom: 0;
           right: 0;
-          padding-right: 324px; }
+          padding-right: 324px;
+          width: 100%; }
           body .main .app .app-body .app-alert-wrapper .app-alert {
             height: 72px;
             width: 100%;
@@ -8260,7 +8264,7 @@ body {
   height: 50px;
   border-radius: 50%;
   padding: 15px;
-  margin-left: 20px;
+  margin-left: 10px;
   background-size: contain; }
   @media (min-width: 1360px) and (max-width: 1919px) {
     .cs-btn-icon {
@@ -8285,15 +8289,15 @@ body {
   .cs-btn-icon.btn-email {
     background-image: url(../img/buttons/btn-email.png); }
     .cs-btn-icon.btn-email:hover {
-      background-image: url(../img/buttons/btn-email.png); }
+      background-image: url(../img/buttons/btn-email-hover.png); }
   .cs-btn-icon.btn-message {
     background-image: url(../img/buttons/btn-message.png); }
     .cs-btn-icon.btn-message:hover {
-      background-image: url(../img/buttons/btn-message.png); }
+      background-image: url(../img/buttons/btn-message-hover.png); }
   .cs-btn-icon.btn-trash {
     background-image: url(../img/buttons/btn-trash.png); }
     .cs-btn-icon.btn-trash:hover {
-      background-image: url(../img/buttons/btn-trash.png); }
+      background-image: url(../img/buttons/btn-trash-hover.png); }
   .cs-btn-icon.btn-close {
     background-image: url(../img/buttons/btn-close.png); }
     .cs-btn-icon.btn-close:hover {
@@ -8304,12 +8308,18 @@ body {
         background-image: url(../img/buttons/btn-close-dark.png); }
   .cs-btn-icon.btn-add {
     background-image: url(../img/buttons/btn-add.png); }
+    .cs-btn-icon.btn-add:hover {
+      background-image: url(../img/buttons/btn-add-hover.png); }
   .cs-btn-icon.btn-add-green {
     background-image: url(../img/buttons/btn-add-green.png); }
   .cs-btn-icon.btn-flopy {
     background-image: url(../img/buttons/btn-flopy.png); }
+    .cs-btn-icon.btn-flopy:hover {
+      background-image: url(../img/buttons/btn-flopy-hover.png); }
   .cs-btn-icon.btn-back-circle {
     background-image: url(../img/buttons/btn-back-circle.png); }
+    .cs-btn-icon.btn-back-circle:hover {
+      background-image: url(../img/buttons/btn-back-circle-hover.png); }
   .cs-btn-icon.btn-delete {
     background-image: url(../img/buttons/btn-delete.png); }
   .cs-btn-icon.btn-close-transparent {
