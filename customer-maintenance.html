@@ -12,6 +12,8 @@
   <link rel="stylesheet" type="text/css" href="assets/plugins/DataTables/datatables.css"/>
   <link rel="stylesheet" href="node_modules/chart.js/dist/Chart.min.css" />
   <link rel="stylesheet" href="assets/plugins/signature-pad/assets/jquery.signaturepad.css">
+  <!-- Custom Plugin CSS -->
+  <link rel="stylesheet" href="assets/custom/gradient-semi-chart/gradient-semi-chart.css">
 
   <script src="assets/jquery/jquery.min.js"></script>
   <script src="assets/plugins/popper/popper.min.js"></script>
@@ -138,13 +140,17 @@
     <div class="app-header">
       <div class="row app-header-top">
         <div class="col-xl-4 col-lg-3 col-md-3 col-sm-4 col-4">
-          <span class="title">פרטי לקוח</span>
+          <span class="title float-right">פרטי לקוח</span>
+          <button class="cs-btn-img btn-questionnaire float-right mr-5" data-toggle="modal" data-target="#newQuestionnaireModal"></button>
         </div>
-        <div class="col-xl-8 col-lg-9 col-md-9 col-sm-8 col-8">
-          <button class="cs-btn-img btn-options"></button>
-          <button class="cs-btn-img btn-back"></button>
-          <button class="cs-btn-img btn-save"></button>
-          <button class="cs-btn-img btn-questionnaire" data-toggle="modal" data-target="#newQuestionnaireModal"></button>
+        <div class="col-xl-8 col-lg-9 col-md-9 col-sm-8 col-8 text-left">
+          <a class="cs-btn-icon btn-flopy" href="javascript:void(0)"></a>
+          <a class="cs-btn-icon btn-xls" href="javascript:void(0)"></a>
+          <a class="cs-btn-icon btn-print" href="javascript:void(0)"></a>
+          <a class="cs-btn-icon btn-email" href="javascript:void(0)"></a>
+          <a class="cs-btn-icon btn-message" href="javascript:void(0)"></a>
+          <a class="cs-btn-icon btn-back-circle" href="javascript:void(0)"></a>
+          <a class="cs-btn-icon btn-trash ml-0" href="javascript:void(0)"></a>
         </div>
       </div>
       <div class="row app-header-bottom">
@@ -152,17 +158,9 @@
           <div class="row">
             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
               <div class="card info-card">
-                <div class="card-header">
-                  <a href="#" class="float-right"><div class="cs-icon ic-pencil"></div></a>
-                  <a href="customer-info.html" class="float-left"><div class="cs-icon ic-trash-white"></div></a>
-                </div>
+                <div class="card-header"></div>
                 <div class="card-body pl-5 py-2">
                   <div class="row py-1">
-                    <div class="action-group">
-                      <a href="#" class="float-left btn-action"><div class="cs-icon ic-person-add"></div></a>
-                      <a href="#" class="float-left btn-action"><div class="cs-icon ic-sms"></div></a>
-                      <a href="#" class="float-left btn-action"><div class="cs-icon ic-email-blue"></div></a>
-                    </div>
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 pr-4 text-primary">
                       <label>שם פרטי</label>
                     </div>
@@ -194,6 +192,7 @@
                       <label>פרטי/חברה בע"מ</label>
                     </div>
                   </div>
+                  <a href="#" class="float-left link-edit"><div class="cs-icon ic-pencil-gray"></div></a>
                 </div>
               </div>
             </div>
@@ -203,26 +202,14 @@
                 <div class="card-body p-0">
                   <div class="chart-group-container">
                     <div class="chart-group">
-                      <div class="col-mxl-4 col-cxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4 px-2">
-                        <div class="semi-donut" style="--percentage : 50; --fill: #20CC02;">
-                          6
-                          <span class="semi-caption">5</span>
-                        </div>
-                        <div class="label">רמת סיכון</div>
+                      <div class="col-mxl-4 col-cxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4 px-0">
+                        <div class="gradient-semi-chart" data-value="2" data-caption="רמת חשיפה"></div>
                       </div>
-                      <div class="col-mxl-4 col-cxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4 px-2">
-                        <div class="semi-donut" style="--percentage : 40; --fill: #20CC02;">
-                          9
-                          <span class="semi-caption">4</span>
-                        </div>
-                        <div class="label">רמת מינוף</div>
+                      <div class="col-mxl-4 col-cxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4 px-0">
+                        <div class="gradient-semi-chart" data-value="3" data-caption="רמת חשיפה"></div>
                       </div>
-                      <div class="col-mxl-4 col-cxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4 px-2">
-                        <div class="semi-donut" style="--percentage : 20; --fill: #20CC02;">
-                          7
-                          <span class="semi-caption">2</span>
-                        </div>
-                        <div class="label">רמת חשיפה</div>
+                      <div class="col-mxl-4 col-cxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4 px-0">
+                        <div class="gradient-semi-chart" data-value="4" data-caption="רמת חשיפה"></div>
                       </div>
                     </div>
                   </div>
@@ -2976,6 +2963,7 @@
 <script src="assets/plugins/signature-pad/assets/json2.min.js"></script>
 <script src="assets/js/questionnaire.js" type="text/javascript"></script>
 <script src="assets/js/form-validation.js" type="text/javascript"></script>
+<script src="assets/custom/gradient-semi-chart/gradient-semi-chart.js" type="text/javascript"></script>
 
 <script>
   // datepicker init
