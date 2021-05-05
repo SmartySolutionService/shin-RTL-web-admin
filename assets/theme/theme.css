@@ -9674,7 +9674,7 @@ input[type=submit] {
           height: 40px;
           padding: 10px;
           text-align: center;
-          border-right: solid 1px #BFC5D2; }
+          border-left: solid 1px #BFC5D2; }
     #nav-list-of-relatives .collapse-container .collapse-item .collapse, #nav-list-of-relatives .collapse-container .collapse-item .collapsing,
     #nav-related-businesses .collapse-container .collapse-item .collapse,
     #nav-related-businesses .collapse-container .collapse-item .collapsing,
@@ -9699,25 +9699,22 @@ input[type=submit] {
   min-width: 40px;
   text-align: center; }
 
-#nav-contacts table tbody tr td .details-control .cs-icon {
-  width: 15px;
-  height: 15px; }
-  #nav-contacts table tbody tr td .details-control .cs-icon.ic-collapse-pm {
-    background-image: url(../img/icons/ic_plus_blue.png); }
+#nav-contacts table tbody tr td .details-control {
+  border: none !important; }
+  #nav-contacts table tbody tr td .details-control .cs-icon {
+    width: 15px;
+    height: 15px; }
+    #nav-contacts table tbody tr td .details-control .cs-icon.ic-collapse-pm {
+      background-image: url(../img/icons/ic_plus_blue.png); }
+  #nav-contacts table tbody tr td .details-control.shown .ic-collapse-pm {
+    background-image: url(../img/icons/ic_minus_blue.png); }
 
-#nav-contacts table tbody tr td .details-control.shown .ic-collapse-pm {
-  background-image: url(../img/icons/ic_minus_blue.png); }
-
-#nav-contacts table tbody tr td:last-child {
-  min-width: 100px;
-  padding-left: 0;
-  display: block; }
-  #nav-contacts table tbody tr td:last-child a {
-    display: inline-flex;
-    width: 50px;
-    height: 40px;
-    border-right: solid 1px #BFC5D2;
-    padding: 10px 15px; }
+#nav-contacts table tbody tr td:first-child a {
+  display: inline-flex;
+  width: 50px;
+  height: 40px;
+  border-left: solid 1px #BFC5D2;
+  padding: 10px 15px; }
 
 #nav-beneficiaries table thead th {
   vertical-align: middle; }

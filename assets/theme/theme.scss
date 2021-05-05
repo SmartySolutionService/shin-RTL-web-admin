@@ -3168,7 +3168,7 @@ button:focus {
                         height: 40px;
                         padding: 10px;
                         text-align: center;
-                        border-right: solid 1px #BFC5D2;
+                        border-left: solid 1px #BFC5D2;
                     }
                 }
             }
@@ -3206,6 +3206,7 @@ button:focus {
                         text-align: center;
                     }
                     .details-control {
+                        border: none !important;
                         .cs-icon {
                             width: 15px;
                             height: 15px;
@@ -3219,15 +3220,12 @@ button:focus {
                             }
                         }
                     }
-                    &:last-child {
-                        min-width: 100px;
-                        padding-left: 0;
-                        display: block;
+                    &:first-child {
                         a {
                             display: inline-flex;
                             width: 50px;
                             height: 40px;
-                            border-right: solid 1px #BFC5D2;
+                            border-left: solid 1px #BFC5D2;
                             padding: 10px 15px;
                         }
                     }
