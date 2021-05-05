@@ -592,50 +592,58 @@
     <div class="modal-content">
       <!-- Modal Header -->
       <div class="modal-header">
-        <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+        <h4 class="pr-4 mt-2">הוספת מסמך</h4>
         <button type="button" class="cs-btn-icon btn-close close dark" data-dismiss="modal"></button>
       </div>
       <!-- Modal body -->
       <div class="modal-body">
         <div class="row">
-          <div class="form-group">
-            <label>הוספת מסמך</label>
-            <input type="file" id="file_doc" class="form-control hidden" />
-            <div class="file-upload" onClick="$('#file_doc').click();">
-              <div class="cs-icon ic-upload"></div>
-              <div class="upload-text">גרור ושחרר קובץ כאן</div>
-              <button type="button" class="btn btn-upload">בחר קובץ</button>
+          <div class="col-12 pl-4">
+            <div class="form-group max-w-100 w-100">
+              <label>הוספת מסמך</label>
+              <input type="file" id="file_doc" class="form-control hidden" />
+              <div class="file-upload w-100" onClick="$('#file_doc').click();">
+                <div class="cs-icon ic-upload"></div>
+                <div class="upload-text">גרור ושחרר קובץ כאן</div>
+                <button type="button" class="btn btn-upload">בחר קובץ</button>
+              </div>
             </div>
           </div>
         </div>
         <div class="row">
-          <div class="form-group">
-            <label>שם המסמך</label>
-            <input type="text" class="form-control" placeholder="TEXT" />
+          <div class="col-6">
+            <div class="form-group">
+              <label>שם המסמך</label>
+              <input type="text" class="form-control" placeholder="TEXT" />
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="form-group">
+              <label>סוג המסמך</label>
+              <input type="text" class="form-control" placeholder="TEXT" />
+            </div>
           </div>
         </div>
         <div class="row">
-          <div class="form-group">
-            <label>סוג המסמך</label>
-            <input type="text" class="form-control" placeholder="TEXT" />
+          <div class="col-6">
+            <div class="form-group">
+              <label>מס' חשבון</label>
+              <input type="text" class="form-control" placeholder="TEXT" />
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="form-group">
+              <label>הועלה על"י</label>
+              <input type="text" class="form-control" placeholder="TEXT" />
+            </div>
           </div>
         </div>
         <div class="row">
-          <div class="form-group">
-            <label>מס' חשבון</label>
-            <input type="text" class="form-control" placeholder="TEXT" />
-          </div>
-        </div>
-        <div class="row">
-          <div class="form-group">
-            <label>הועלה על"י</label>
-            <input type="text" class="form-control" placeholder="TEXT" />
-          </div>
-        </div>
-        <div class="row">
-          <div class="form-group">
-            <label>תאור מסמך</label>
-            <textarea class="form-textarea" placeholder="TEXT"></textarea>
+          <div class="col-12 pl-4">
+            <div class="form-group max-w-100 w-100">
+              <label>תאור מסמך</label>
+              <textarea class="form-textarea max-w-100 w-100" placeholder="TEXT"></textarea>
+            </div>
           </div>
         </div>
       </div>

@@ -9499,7 +9499,7 @@ input[type=submit] {
 
 #documentAddModal .modal-dialog,
 #contactAddModal .modal-dialog {
-  max-width: 440px;
+  max-width: 750px;
   width: 100%;
   height: 100%;
   overflow: auto; }
