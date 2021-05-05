@@ -9009,8 +9009,7 @@ input[type=submit] {
     display: block;
     width: 50px;
     height: 40px;
-    border-right: solid 1px #BFC5D2;
-    float: left; }
+    border-right: solid 1px #BFC5D2; }
   #nav-holding-portfolio tfoot,
   #nav-capital-market tfoot,
   #nav-holdings-alternative tfoot,
@@ -9296,8 +9295,20 @@ input[type=submit] {
       .dataTables_wrapper tr td {
         font-size: 12px;
         padding: 10px 5px; } }
+    .dataTables_wrapper tr td:first-child .btn-view-detail {
+      position: relative;
+      width: 50px;
+      height: 40px;
+      border-left: solid 1px #BFC5D2;
+      border-right: none !important;
+      text-align: center;
+      margin-right: auto;
+      padding-top: 7px;
+      float: right !important; }
+      .dataTables_wrapper tr td:first-child .btn-view-detail .cs-icon {
+        width: 27px;
+        height: 27px; }
     .dataTables_wrapper tr td:last-child {
-      display: flex;
       padding-top: 16px;
       padding-bottom: 16px; }
       .dataTables_wrapper tr td:last-child span {
@@ -9478,7 +9489,6 @@ input[type=submit] {
   width: 50px;
   height: 40px;
   border-right: solid 1px #BFC5D2;
-  float: left;
   padding-top: 10px; }
 
 #documentAddModal .modal-dialog,

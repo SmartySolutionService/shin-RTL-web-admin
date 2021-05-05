@@ -2415,7 +2415,7 @@ button:focus {
             width: 50px;
             height: 40px;
             border-right: solid 1px #BFC5D2;
-            float: left;
+            // float: left;
         }
     }
     tfoot {
@@ -2716,8 +2716,25 @@ button:focus {
                 font-size: 12px;
                 padding: 10px 5px;
             }
+            &:first-child {
+                .btn-view-detail {
+                    position: relative;
+                    width: 50px;
+                    height: 40px;
+                    border-left: solid 1px #BFC5D2;
+                    border-right: none !important;
+                    text-align: center;
+                    margin-right: auto;
+                    padding-top: 7px;
+                    float: right !important;
+                    .cs-icon {
+                        width: 27px;
+                        height: 27px;
+                    }
+                }
+            }
             &:last-child {
-                display: flex;
+                // display: flex;
                 padding-top: 16px;
                 padding-bottom: 16px;
                 span {
@@ -2966,7 +2983,7 @@ button:focus {
                 width: 50px;
                 height: 40px;
                 border-right: solid 1px #BFC5D2;
-                float: left;
+                // float: left;
                 padding-top: 10px;
             }
         }
