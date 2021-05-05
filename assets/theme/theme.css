@@ -9010,6 +9010,16 @@ input[type=submit] {
     width: 50px;
     height: 40px;
     border-right: solid 1px #BFC5D2; }
+  #nav-holding-portfolio tbody tr td:first-child span,
+  #nav-capital-market tbody tr td:first-child span,
+  #nav-holdings-alternative tbody tr td:first-child span,
+  #nav-sustainability-loan tbody tr td:first-child span,
+  #nav-potential-loans tbody tr td:first-child span,
+  #nav-list-of-reports tbody tr td:first-child span,
+  #nav-aggregation tbody tr td:first-child span {
+    position: relative;
+    display: inline-block;
+    padding: 8px 15px; }
   #nav-holding-portfolio tfoot,
   #nav-capital-market tfoot,
   #nav-holdings-alternative tfoot,
@@ -9308,6 +9318,10 @@ input[type=submit] {
       .dataTables_wrapper tr td:first-child .btn-view-detail .cs-icon {
         width: 27px;
         height: 27px; }
+    .dataTables_wrapper tr td:first-child span {
+      position: relative;
+      display: inline-block;
+      padding: 8px 15px; }
     .dataTables_wrapper tr td:last-child {
       padding-top: 16px;
       padding-bottom: 16px; }

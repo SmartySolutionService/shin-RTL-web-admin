@@ -2417,6 +2417,17 @@ button:focus {
             border-right: solid 1px #BFC5D2;
             // float: left;
         }
+        tr {
+            td {
+                &:first-child {
+                    span {
+                        position: relative;
+                        display: inline-block;
+                        padding: 8px 15px;
+                    }
+                }
+            }
+        }
     }
     tfoot {
         background-color: #78849E;
@@ -2731,6 +2742,11 @@ button:focus {
                         width: 27px;
                         height: 27px;
                     }
+                }
+                span {
+                    position: relative;
+                    display: inline-block;
+                    padding: 8px 15px;
                 }
             }
             &:last-child {
