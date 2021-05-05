@@ -9010,13 +9010,13 @@ input[type=submit] {
     width: 50px;
     height: 40px;
     border-right: solid 1px #BFC5D2; }
-  #nav-holding-portfolio tbody tr td:first-child span,
-  #nav-capital-market tbody tr td:first-child span,
-  #nav-holdings-alternative tbody tr td:first-child span,
-  #nav-sustainability-loan tbody tr td:first-child span,
-  #nav-potential-loans tbody tr td:first-child span,
-  #nav-list-of-reports tbody tr td:first-child span,
-  #nav-aggregation tbody tr td:first-child span {
+  #nav-holding-portfolio tbody tr td:first-child .span-text,
+  #nav-capital-market tbody tr td:first-child .span-text,
+  #nav-holdings-alternative tbody tr td:first-child .span-text,
+  #nav-sustainability-loan tbody tr td:first-child .span-text,
+  #nav-potential-loans tbody tr td:first-child .span-text,
+  #nav-list-of-reports tbody tr td:first-child .span-text,
+  #nav-aggregation tbody tr td:first-child .span-text {
     position: relative;
     display: inline-block;
     padding: 8px 15px; }
@@ -9318,7 +9318,7 @@ input[type=submit] {
       .dataTables_wrapper tr td:first-child .btn-view-detail .cs-icon {
         width: 27px;
         height: 27px; }
-    .dataTables_wrapper tr td:first-child span {
+    .dataTables_wrapper tr td:first-child .span-text {
       position: relative;
       display: inline-block;
       padding: 8px 15px; }

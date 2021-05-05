@@ -2420,7 +2420,7 @@ button:focus {
         tr {
             td {
                 &:first-child {
-                    span {
+                    .span-text {
                         position: relative;
                         display: inline-block;
                         padding: 8px 15px;
@@ -2743,7 +2743,7 @@ button:focus {
                         height: 27px;
                     }
                 }
-                span {
+                .span-text {
                     position: relative;
                     display: inline-block;
                     padding: 8px 15px;
