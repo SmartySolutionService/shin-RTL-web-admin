@@ -8309,7 +8309,7 @@ body {
   .cs-btn-icon.btn-add {
     background-image: url(../img/buttons/btn-add.png); }
     .cs-btn-icon.btn-add:hover {
-      background-image: url(../img/buttons/btn-add-hover.png); }
+      background-image: url(../img/buttons/btn-add.png); }
   .cs-btn-icon.btn-add-green {
     background-image: url(../img/buttons/btn-add-green.png); }
   .cs-btn-icon.btn-flopy {
@@ -9484,12 +9484,18 @@ input[type=submit] {
   width: 20px;
   height: 25px; }
 
-#nav-documents table tbody .btn-view-detail {
+#nav-documents table tbody .btn-view-detail, #nav-documents table tbody .btn-remove {
   display: block;
   width: 50px;
   height: 40px;
-  border-right: solid 1px #BFC5D2;
-  padding-top: 10px; }
+  border-left: solid 1px #BFC5D2;
+  padding-top: 10px;
+  text-align: center; }
+
+#nav-documents table tbody tr td > span {
+  position: relative;
+  padding: 20px;
+  top: -10px; }
 
 #documentAddModal .modal-dialog,
 #contactAddModal .modal-dialog {
