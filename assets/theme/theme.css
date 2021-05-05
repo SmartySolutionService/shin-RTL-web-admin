@@ -9513,7 +9513,7 @@ input[type=submit] {
       margin-bottom: 20px; }
       #documentAddModal .modal-dialog .modal-content .modal-body .form-group label,
       #contactAddModal .modal-dialog .modal-content .modal-body .form-group label {
-        color: #3ACCE1;
+        color: #7ABBFC;
         font-size: 18px;
         width: 100%;
         text-align: right; }
@@ -9524,7 +9524,7 @@ input[type=submit] {
         height: 290px; }
       #documentAddModal .modal-dialog .modal-content .modal-body .form-group .file-upload,
       #contactAddModal .modal-dialog .modal-content .modal-body .form-group .file-upload {
-        background-color: #3ACCE1;
+        background-color: #7ABBFC;
         border: solid 2px #E9E9E9;
         border-radius: 10px;
         width: 298px;
@@ -9741,7 +9741,7 @@ input[type=submit] {
   margin-bottom: 30px;
   max-width: 200px; }
   #newBeneficiaryModal .modal-body .form-group label {
-    color: #3ACCE1; }
+    color: #7ABBFC; }
   #newBeneficiaryModal .modal-body .form-group .form-control {
     max-width: 190px; }
 
