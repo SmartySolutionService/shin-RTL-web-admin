@@ -2313,7 +2313,7 @@ button:focus {
                 height: 23px;
                 border-radius: 4px;
                 padding: 0 10px;
-                font-size: 10px;
+                font-size: 14px;
                 line-height: 20px;
                 color: #4D4F5C;
                 font-family: "Heebo";
@@ -2354,7 +2354,7 @@ button:focus {
                     margin: 0;
                     padding: 5px 10px;
                     text-align: right;
-                    font-size: 10px;
+                    font-size: 14px;
                     color: #4D4F5C;
                     font-family: "Heebo";
                     @media (min-width: 1360px) and (max-width: 1439px) {
@@ -2364,6 +2364,7 @@ button:focus {
                         float: left;
                     }
                     .cs-checkbox-container {
+                        top: 4px;
                         float: left;
                         padding-right: 15px;
                     }
