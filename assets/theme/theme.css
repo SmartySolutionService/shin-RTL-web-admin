@@ -7374,12 +7374,18 @@ body {
             body .main .app .app-header .app-header-bottom .card.info-card .card-body label {
               font-size: 14px;
               margin-bottom: 0px; }
-              @media (min-width: 1360px) and (max-width: 1439px) {
+              @media (min-width: 1800px) {
                 body .main .app .app-header .app-header-bottom .card.info-card .card-body label {
-                  font-size: 12px; } }
+                  font-size: 18px; } }
+              @media (min-width: 1680px) and (max-width: 1799px) {
+                body .main .app .app-header .app-header-bottom .card.info-card .card-body label {
+                  font-size: 16px; } }
+              @media (min-width: 1360px) and (max-width: 1599px) {
+                body .main .app .app-header .app-header-bottom .card.info-card .card-body label {
+                  font-size: 24px; } }
               @media (max-width: 1359px) {
                 body .main .app .app-header .app-header-bottom .card.info-card .card-body label {
-                  font-size: 11px; } }
+                  font-size: 20px; } }
             body .main .app .app-header .app-header-bottom .card.info-card .card-body .link-edit .cs-icon {
               position: absolute;
               left: 10px;
