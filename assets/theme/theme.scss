@@ -4054,12 +4054,33 @@ table {
         height: 30px;
         display: none;
     }
+    #btn_toggle_edit_app_header_form {
+        .ic-pencil-gray {
+            display: block;
+        }
+        .fa-check {
+            display: none;
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            width: 20px;
+            height: 20px;
+        }
+    }
     &.editable {
         label {
             display: none;
         }
         input {
             display: block;
+        }
+        #btn_toggle_edit_app_header_form {
+            .ic-pencil-gray {
+                display: none;
+            }
+            .fa-check {
+                display: block;
+            }
         }
     }
 }

@@ -10340,10 +10340,27 @@ table th, table td {
   height: 30px;
   display: none; }
 
+#app_header_form #btn_toggle_edit_app_header_form .ic-pencil-gray {
+  display: block; }
+
+#app_header_form #btn_toggle_edit_app_header_form .fa-check {
+  display: none;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  width: 20px;
+  height: 20px; }
+
 #app_header_form.editable label {
   display: none; }
 
 #app_header_form.editable input {
+  display: block; }
+
+#app_header_form.editable #btn_toggle_edit_app_header_form .ic-pencil-gray {
+  display: none; }
+
+#app_header_form.editable #btn_toggle_edit_app_header_form .fa-check {
   display: block; }
 
 .dataTable .sorting:before, .dataTable .sorting:after, .dataTable .sorting_desc:before, .dataTable .sorting_desc:after, .dataTable .sorting_asc:before, .dataTable .sorting_asc:after {

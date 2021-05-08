@@ -9,6 +9,7 @@
   <!-- plugins css -->
   <link rel="stylesheet" href="assets/plugins/sliding-toggle-switch/lc_switch.css">
   <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="assets/plugins/signature-pad/assets/jquery.signaturepad.css">
   <!-- Custom Plugin CSS -->
   <link rel="stylesheet" href="assets/custom/gradient-semi-chart/gradient-semi-chart.css">
@@ -199,7 +200,10 @@
                       <input type="text" class="form-control" value='פרטי/חברה בע"מ' />
                     </div>
                   </div>
-                  <a href="#" class="float-left link-edit" onclick="toggleEditAppHeaderForm()"><div class="cs-icon ic-pencil-gray"></div></a>
+                  <a href="#" class="float-left link-edit" id="btn_toggle_edit_app_header_form">
+                    <div class="cs-icon ic-pencil-gray"></div>
+                    <i class="fa fa-check"></i>
+                  </a>
                 </div>
               </div>
             </div>
