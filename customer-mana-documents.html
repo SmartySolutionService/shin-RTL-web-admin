@@ -369,8 +369,13 @@
                     </div>
                   </td>
                   <td>
-                    <div class="input-group-dropdown">
-                      <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">סוג מוצר</button>
+                    <input id="datepicker8" 
+                      class="form-control" 
+                      value="05/09/2021"
+                      style="width: 120px; height: 50px; border-radius: 8px; background-color: #f9f9f9; color: #485272;" 
+                    />
+                    <!-- <div class="input-group-dropdown"> -->
+                      <!-- <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">סוג מוצר</button>
                       <div class="dropdown-menu">
                         <li class="dropdown-item">קופות גמל 
                           <label class="cs-checkbox-container checkbox-small m-0">
@@ -390,8 +395,8 @@
                             <span class="checkmark"></span>
                           </label>
                         </li>
-                      </div>
-                    </div>
+                      </div> -->
+                    <!-- </div> -->
                   </td>
                   <td class="text-center">
                     <div class="input-group-dropdown">
@@ -2407,6 +2412,7 @@
   $('#datepicker5').datepicker({ uiLibrary: 'bootstrap4' });
   $('#datepicker6').datepicker({ uiLibrary: 'bootstrap4' });
   $('#datepicker7').datepicker({ uiLibrary: 'bootstrap4' });
+  $('#datepicker8').datepicker({ uiLibrary: 'bootstrap4' });
   // datatable init
   $(document).ready(function() {
     $('.datatable').DataTable({

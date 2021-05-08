@@ -3222,6 +3222,32 @@ button:focus {
         }
     }
     table {
+        thead {
+            .input-search-wrapper {
+                position: relative;
+                width: 180px;
+                height: 50px;
+                .input-search {
+                    width: 100%;
+                    height: 100%;
+                    background-color: #FFFFFF;
+                    border: solid 2px #E9E9E9;
+                    color: #485272;
+                    font-weight: 500;
+                    border-radius: 8px;
+                    padding: 10px;
+                    &::placeholder {
+                        color: #485272;
+                        font-weight: 500;
+                    }
+                }
+                .cs-icon {
+                    position: absolute;
+                    top: 15px;
+                    left: 15px;
+                }
+            }
+        }
         tbody {
             tr {
                 th {
@@ -4091,6 +4117,14 @@ table {
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
+        }
+    }
+}
+
+table {
+    .gj-datepicker {
+        .input-group-append {
+            display: none;
         }
     }
 }

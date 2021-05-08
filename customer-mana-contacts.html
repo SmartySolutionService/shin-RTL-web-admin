@@ -286,10 +286,14 @@
                 <th style="width: 170px;">
                   <a class="cs-btn-icon btn-add-green" href="javascript:void(0)"  data-toggle="modal" data-target="#contactAddModal"></a>
                 </th>
-                <th>
-                  <select class="form-control">
+                <th style="width: 150px;">
+                  <div class="input-search-wrapper">
+                    <input type="text" class="input-search" placeholder="שם המסמך" />
+                    <div class="cs-icon ic-search"></div>
+                  </div>
+                  <!-- <select class="form-control">
                     <option>מגע</option>
-                  </select>
+                  </select> -->
                 </th>
                 <th>
                   <select class="form-control">
@@ -317,13 +321,42 @@
                   </select>
                 </th>
                 <th>
-                  <select class="form-control">
+                  <input id="datepicker8" 
+                    class="form-control" 
+                    value="05/09/2021"
+                    style="width: 80px;" 
+                  />
+                  <!-- <select class="form-control">
                     <option>מגע</option>
-                  </select>
+                  </select> -->
                 </th>
-                <th>
+                <th style="max-width: 100px;">
                   <select class="form-control">
                     <option>מגע</option>
+                    <option>12:00 AM</option>
+                    <option>01:00 AM</option>
+                    <option>02:00 AM</option>
+                    <option>03:00 AM</option>
+                    <option>04:00 AM</option>
+                    <option>05:00 AM</option>
+                    <option>06:00 AM</option>
+                    <option>07:00 AM</option>
+                    <option>08:00 AM</option>
+                    <option>09:00 AM</option>
+                    <option>10:00 AM</option>
+                    <option>11:00 AM</option>
+                    <option>12:00 PM</option>
+                    <option>01:00 PM</option>
+                    <option>02:00 PM</option>
+                    <option>03:00 PM</option>
+                    <option>04:00 PM</option>
+                    <option>05:00 PM</option>
+                    <option>06:00 PM</option>
+                    <option>07:00 PM</option>
+                    <option>08:00 PM</option>
+                    <option>09:00 PM</option>
+                    <option>10:00 PM</option>
+                    <option>11:00 PM</option>
                   </select>
                 </th>
               </thead>
@@ -2219,6 +2252,7 @@
   $('#datepicker5').datepicker({ uiLibrary: 'bootstrap4' });
   $('#datepicker6').datepicker({ uiLibrary: 'bootstrap4' });
   $('#datepicker7').datepicker({ uiLibrary: 'bootstrap4' });
+  $('#datepicker8').datepicker({ uiLibrary: 'bootstrap4' });
   // datatable init
   $(document).ready(function() {
     $('.datatable').DataTable({
