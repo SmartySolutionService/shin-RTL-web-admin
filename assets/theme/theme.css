@@ -10333,3 +10333,16 @@ table th, table td {
 #nav-contacts td:last-child {
   justify-content: center;
   text-align: center; }
+
+#app_header_form label {
+  display: block; }
+
+#app_header_form input {
+  height: 30px;
+  display: none; }
+
+#app_header_form.editable label {
+  display: none; }
+
+#app_header_form.editable input {
+  display: block; }

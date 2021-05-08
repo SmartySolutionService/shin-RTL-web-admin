@@ -4045,6 +4045,24 @@ table {
     }
 }
 
+#app_header_form {
+    label {
+        display: block;
+    }
+    input {
+        height: 30px;
+        display: none;
+    }
+    &.editable {
+        label {
+            display: none;
+        }
+        input {
+            display: block;
+        }
+    }
+}
+
 @media (min-width: 1600px) and (max-width: 1919px) {
     
 }
