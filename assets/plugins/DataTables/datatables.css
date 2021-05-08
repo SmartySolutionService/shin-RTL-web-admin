@@ -107,9 +107,11 @@ table.dataTable thead .sorting_asc_disabled:after,
 table.dataTable thead .sorting_desc_disabled:before,
 table.dataTable thead .sorting_desc_disabled:after {
   position: absolute;
-  bottom: 0.9em;
+  /* bottom: 0.9em; */
   display: block;
   opacity: 0.3;
+  top: 50%;
+  transform: translateY(-50%);
 }
 table.dataTable thead .sorting:before,
 table.dataTable thead .sorting_asc:before,

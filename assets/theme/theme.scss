@@ -4064,6 +4064,16 @@ table {
     }
 }
 
+.dataTable {
+    .sorting, .sorting_desc, .sorting_asc {
+        &:before, &:after {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+}
+
 @media (min-width: 1600px) and (max-width: 1919px) {
     
 }

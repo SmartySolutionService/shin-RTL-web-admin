@@ -10347,3 +10347,8 @@ table th, table td {
 
 #app_header_form.editable input {
   display: block; }
+
+.dataTable .sorting:before, .dataTable .sorting:after, .dataTable .sorting_desc:before, .dataTable .sorting_desc:after, .dataTable .sorting_asc:before, .dataTable .sorting_asc:after {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%); }
