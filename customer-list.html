@@ -180,7 +180,9 @@
             <div class="tag-wrapper">
               <div class="tag">חברה מנהלת <span class="tag-remove">&times;</span></div>
             </div>
-            <input type="text" class="form-control mt-3" name="tag-input" placeholder="בחר חברה מנהלת" />
+            <div class="autocomplete">
+              <input type="text" class="form-control mt-3" name="tag-input" id="_tag_input" placeholder="בחר חברה מנהלת" />
+            </div>
           </div>
           <div class="row mx-0 mt-3">
             <button class="btn btn-primary btn-clear-mana-company mr-auto">נקה חברה מנהלת</button>
@@ -599,6 +601,9 @@
   autocomplete(document.getElementById("_caring_staff"), countries);
   autocomplete(document.getElementById("_agent"), countries);
   autocomplete(document.getElementById("_phone_num_2"), countries);
+  // tag input
+  var tags = ["tag1", "tag2", "tag3", "tag4", "tag5"];
+  autocomplete(document.getElementById("_tag_input"), tags);
 </script>
 <script type="text/javascript">
   $(document).ready(function(e) {
