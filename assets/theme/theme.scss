@@ -4073,7 +4073,7 @@ table {
 }
 
 #app_header_form {
-    label {
+    .edit-label {
         display: block;
     }
     input {
@@ -4094,7 +4094,7 @@ table {
         }
     }
     &.editable {
-        label {
+        .edit-label {
             display: none;
         }
         input {

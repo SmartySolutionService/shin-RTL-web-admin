@@ -10354,7 +10354,7 @@ table th, table td {
   justify-content: center;
   text-align: center; }
 
-#app_header_form label {
+#app_header_form .edit-label {
   display: block; }
 
 #app_header_form input {
@@ -10372,7 +10372,7 @@ table th, table td {
   width: 20px;
   height: 20px; }
 
-#app_header_form.editable label {
+#app_header_form.editable .edit-label {
   display: none; }
 
 #app_header_form.editable input {
