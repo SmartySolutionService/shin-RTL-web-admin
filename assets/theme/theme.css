@@ -9718,6 +9718,27 @@ input[type=submit] {
       height: 50px;
       border-radius: 8px; } }
 
+#nav-contacts table thead .input-search-wrapper {
+  position: relative;
+  width: 180px;
+  height: 50px; }
+  #nav-contacts table thead .input-search-wrapper .input-search {
+    width: 100%;
+    height: 100%;
+    background-color: #FFFFFF;
+    border: solid 2px #E9E9E9;
+    color: #485272;
+    font-weight: 500;
+    border-radius: 8px;
+    padding: 10px; }
+    #nav-contacts table thead .input-search-wrapper .input-search::placeholder {
+      color: #485272;
+      font-weight: 500; }
+  #nav-contacts table thead .input-search-wrapper .cs-icon {
+    position: absolute;
+    top: 15px;
+    left: 15px; }
+
 #nav-contacts table tbody tr th:first-child {
   min-width: 40px; }
 
@@ -10333,20 +10354,40 @@ table th, table td {
   justify-content: center;
   text-align: center; }
 
-#app_header_form label {
+#app_header_form .edit-label {
   display: block; }
 
 #app_header_form input {
   height: 30px;
   display: none; }
 
-#app_header_form.editable label {
+#app_header_form #btn_toggle_edit_app_header_form .ic-pencil-gray {
+  display: block; }
+
+#app_header_form #btn_toggle_edit_app_header_form .fa-check {
+  display: none;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  width: 20px;
+  height: 20px; }
+
+#app_header_form.editable .edit-label {
   display: none; }
 
 #app_header_form.editable input {
+  display: block; }
+
+#app_header_form.editable #btn_toggle_edit_app_header_form .ic-pencil-gray {
+  display: none; }
+
+#app_header_form.editable #btn_toggle_edit_app_header_form .fa-check {
   display: block; }
 
 .dataTable .sorting:before, .dataTable .sorting:after, .dataTable .sorting_desc:before, .dataTable .sorting_desc:after, .dataTable .sorting_asc:before, .dataTable .sorting_asc:after {
   position: absolute;
   top: 50%;
   transform: translateY(-50%); }
+
+table .gj-datepicker .input-group-append {
+  display: none; }
