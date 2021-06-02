@@ -108,4 +108,66 @@
   width: 190px;
 }
 
+/*******************************************************/
+/********** *** Simulator Compare Products *** *********/
+/*******************************************************/
+.simulator-compare-products .filter-app {
+  width: 100% !important;
+}
+.simulator-compare-products .filter-app .app-header {
+  border-bottom: none !important;
+}
+.simulator-compare-products .filter-app .app-header .app-header-top .btn-add-product {
+  width: 190px;
+}
+.simulator-compare-products .filter-app .app-header .app-header-top .cs-btn-group {
+  display: inline-block;
+}
+.simulator-compare-products .filter-app .app-header .app-header-top .cs-btn-group .cs-btn-icon {
+  display: block;
+  margin: 0;
+}
+.simulator-compare-products .filter-app .app-header .app-header-top .cs-btn-group label {
+  display: block;
+  text-align: center;
+  font-size: 12px;
+  margin-top: 5px;
+  font-weight: 600;
+}
+.simulator-compare-products .filter-app .app-body table thead {
+  background-color: #7ABCFF;
+}
+.simulator-compare-products .filter-app .app-body table thead tr th {
+  position: relative;
+  color: #485272;
+}
+.simulator-compare-products .filter-app .app-body table thead tr th .cs-icon {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+.simulator-compare-products .filter-app .app-body table thead tr th .cs-btn-icon {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  opacity: 1;
+}
+.simulator-compare-products .filter-app .app-body table thead tr th a {
+  color: #485272;
+}
+.simulator-compare-products .filter-app .app-body table thead tr th a:hover {
+  color: #001553;
+}
+.simulator-compare-products .filter-app .app-body table tbody tr td {
+  position: relative;
+}
+.simulator-compare-products .filter-app .app-body table tbody tr td .cs-icon {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
 /*# sourceMappingURL=simulator.css.map */

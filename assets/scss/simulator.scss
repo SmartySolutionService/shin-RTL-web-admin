@@ -122,3 +122,79 @@
         width: 190px;
     }
 }
+
+/*******************************************************/ 
+/********** *** Simulator Compare Products *** *********/ 
+/*******************************************************/ 
+.simulator-compare-products {
+    .filter-app {
+        width: 100% !important;
+        .app-header {
+            border-bottom: none !important;
+            .app-header-top {
+                .btn-add-product {
+                    width: 190px;
+                }
+                .cs-btn-group {
+                    display: inline-block;
+                    .cs-btn-icon {
+                        display: block;
+                        margin: 0;
+                    }
+                    label {
+                        display: block;
+                        text-align: center;
+                        font-size: 12px;
+                        margin-top: 5px;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+        .app-body {
+            table {
+                thead {
+                    background-color: #7ABCFF;
+                    tr {
+                        th {
+                            position: relative;
+                            color: #485272;
+                            .cs-icon {
+                                position: absolute;
+                                top: 15px;
+                                right: 15px;
+                            }
+                            .cs-btn-icon {
+                                position: absolute;
+                                left: 10px;
+                                top: 10px;
+                                width: 20px;
+                                height: 20px;
+                                margin: 0;
+                                opacity: 1;
+                            }
+                            a {
+                                color: #485272;
+                                &:hover {
+                                    color: #001553;
+                                }
+                            }
+                        }
+                    }
+                }
+                tbody {
+                    tr {
+                        td {
+                            position: relative;
+                            .cs-icon {
+                                position: absolute;
+                                top: 15px;
+                                right: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
