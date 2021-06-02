@@ -1,0 +1,124 @@
+.simulator {
+    .filter-options {
+        .filter-button {
+            width: 170px !important;
+        }
+    }
+    .filter-app {
+        padding-left: 30px !important;
+        padding-right: 30px !important;
+    }
+    &.open-filter {
+        .filter-bar {
+            width: 590px !important;
+        }
+        .filter-app {
+            padding-right: 30px !important;
+        }
+    }
+    .filter-form {
+        .filter-group-item {
+            border-bottom: solid 2px #D7DDE9;
+            padding: 15px 0;
+            .cs-btn-icon {
+                width: 20px;
+                height: 20px;
+                outline: none;
+                border: none;
+                margin-left: 0;
+                padding: 0;
+                &.btn-quiz {
+                    width: 15px;
+                    height: 15px;
+                }
+            }
+        }
+    }
+    .cs-btn-img {
+        width: 191px;
+    }
+    table {
+        thead {
+            tr {
+                background-color: #7abbfc;
+                th {
+                    color: #fff;
+                }
+            }
+        }
+    }
+    .search-result {
+        position: absolute;
+        color: #1a70c6;
+    }
+    
+}
+
+#filterSettingsModal {
+    margin-top: 155px;
+    &.show {
+        .modal-dialog {
+            right: 0 !important;
+            margin: 0 0 0 auto !important;
+            transition: right 0.35s !important;
+        }
+    }
+    .modal-dialog {
+        right: -100% !important;
+        margin: 0 0 0 auto !important;
+        transition: right 0.35s !important;
+        .modal-content {
+            border-right: 0;
+            border-left: solid 16px #7ABBFC;
+            .grid-container {
+                display: grid;
+                grid-template-columns: 20% 20% 20% 20% 20%;
+            }
+            .grid-item {
+                padding: 10px 0 10px 10px;
+                text-align: center;
+                width: 240px;
+                .text-title {
+                    color: #7ABBFC;
+                    text-align: right;
+                    margin-bottom: 20px;
+                }
+                .cs-checkbox-container {
+                    margin: 3px 10px 0 0;
+                    padding-right: 40px;
+                    [type=checkbox] {
+                        width: 20px;
+                        height: 20px;
+                    }
+                    .checkmark {
+                        width: 20px;
+                        height: 20px;
+                        border-radius: 4px;
+                        &:after {
+                            right: 5px;
+                            top: 2px;
+                            width: 6px;
+                            height: 10px;
+                        }
+                    }
+                }
+            }
+        }
+        .btn-close {
+            opacity: 1;
+        }
+    }
+    .btn-clear {
+        position: absolute;
+        top: 75px;
+        right: 40px;
+        padding: 10px 20px;
+        border-radius: 50px;
+        height: 45px;
+        width: 120px;
+        font-size: 14px;
+    }
+    .btn-send-green {
+        width: 190px;
+    }
+}

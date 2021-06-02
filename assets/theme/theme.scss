@@ -1632,7 +1632,10 @@ body {
       &:hover {
           background-image: url(../img/buttons/btn-close-transparent.png);
       }
-  }
+    }
+    &.btn-quiz {
+        background-image: url(../img/buttons/btn-quiz.png);
+    }
 }
 
 .cs-btn-img {
@@ -1659,6 +1662,24 @@ body {
         background-image: url(../img/buttons/btn-save.png);
         &:hover {
             background-image: url(../img/buttons/btn-save-hover.png);
+        }
+    }
+    &.btn-compare-marked {
+        background-image: url(../img/buttons/btn-compare-marked.png);
+        &:hover {
+            background-image: url(../img/buttons/btn-compare-marked-hover.png);
+        }
+    }
+    &.btn-send {
+        background-image: url(../img/buttons/btn-send.png);
+        &:hover {
+            background-image: url(../img/buttons/btn-send-hover.png);
+        }
+    }
+    &.btn-send-green {
+        background-image: url(../img/buttons/btn-send-green.png);
+        &:hover {
+            background-image: url(../img/buttons/btn-send-green-hover.png);
         }
     }
     &.btn-questionnaire {
@@ -1913,6 +1934,9 @@ body {
     }
     &.ic-gear {
         background-image: url(../img/icons/ic_gear.png);
+    }
+    &.ic-menu {
+        background-image: url(../img/icons/ic_menu.png);
     }
 }
 

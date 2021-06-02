@@ -6,7 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- <link rel="stylesheet" href="../assets/bootstrap-4.3.1-dist/css/bootstrap.min.css"> -->
   <link rel="stylesheet" href="../assets/theme/theme.css">
+  <link rel="stylesheet" href="../assets/scss/simulator.css">
   <!-- plugin css -->
+  <link rel="stylesheet" type="text/css" href="../assets/plugins/DataTables/datatables.css"/>
   <link rel='stylesheet' href='../assets/plugins/addSlider/src/addSlider.css' />
   <link rel="stylesheet" href="../assets/plugins/sliding-toggle-switch/lc_switch.css">
   <link rel="stylesheet" href="../assets/custom/square-rater/square-rater.css">
@@ -77,18 +79,18 @@
   </div>
 </header>
   
-<div class="main">
+<div class="main simulator">
   <div class="filter-bar">
     <div class="filter-header">
       <div class="row">
         <button class="filter-button filter-toggle">
-          <div class="cs-icon ic-gear"></div>
+          <div class="cs-icon ic-menu"></div>
         </button>
         <button class="filter-button open-show cs-btn-icon btn-close dark filter-close"></button>
       </div>
       <div class="row filter-options">
-        <button class="filter-button open-show filter-variable-mana">
-          <div class="cs-icon ic-gear"></div>
+        <button class="filter-button open-show filter-variable-mana" data-toggle="modal" data-target="#filterSettingsModal">
+          <div class="cs-icon ic-gear ml-2"></div>
           ניהול פרמטרים
         </button>
         <button class="filter-button filter-variable-reset">
@@ -98,333 +100,261 @@
     </div>
     <div class="filter-body open-show">
       <div class="filter-form">
-        <div class="form-group gender-group">
-          <label>מגדר</label>
-          <div class="row mx-0">
-            <div class="custom-control custom-checkbox male-checkbox">
-              <input type="checkbox" class="custom-control-input" id="male">
-              <label class="custom-control-label" for="male">
-                <div class="cs-icon ic-male"></div>
-              </label>
+        <div class="form-group row filter-group-item mx-0">
+          <div class="col-4 p-0">
+            <label class="mt-1">סוג מוצר</label>
+          </div>
+          <div class="col-8 p-0">
+            <select class="form-control">
+              <option>בחר סוג מוצר</optoin>
+            </select>
+          </div>
+        </div>
+        <div class="filter-group-item">
+          <div class="form-group row mx-0">
+            <div class="col-8 p-0">
+              <label>1. שויי שוק (מיל' ש"ח)</label>
+              <button class="cs-btn-icon btn-quiz" data-toggle="tooltip" data-placement="top" title="Tooltip on top"></button>
             </div>
-            <div class="custom-control custom-checkbox female-checkbox">
-              <input type="checkbox" class="custom-control-input" id="female">
-              <label class="custom-control-label" for="female">
-                <div class="cs-icon ic-female"></div>
-              </label>
+            <div class="col-4 p-0 d-block text-left">
+              <button class="cs-btn-icon btn-close dark"></button>
+              <a href="#" class="d-block">הסר</a>
+            </div>
+          </div>
+          <div class="form-group row mx-0">
+            <div class="col-3 p-0">
+              <input type="number" class="form-control" value="5.8" />
+              <label class="w-100 text-center pt-2">מקסימום</label>
+            </div>
+            <div class="col-6">
+              <div class="text-center">
+                <img src="../assets/img/bg/wave1.png" alt="" />
+              </div>
+              <div class="w-100">
+                <input
+                  class="m-0 w-100"
+                  data-name='age'
+                  data-addui='slider'
+                  data-fontsize='0'
+                  data-step='1'
+                  data-min='0'
+                  data-max='100'
+                  data-range='true'
+                  value='0,100'
+                />
+              </div>
+            </div>
+            <div class="col-3 p-0">
+              <input type="number" class="form-control" value="5.8" />
+              <label class="w-100 text-center pt-2">מינימום</label>
             </div>
           </div>
         </div>
-        <div class="form-group">
-          <label>שם מעסיק</label>
-          <input type="text" class="form-control" placeholder="TEXT" />
-        </div>
-        <div class="form-group">
-          <label>גיל</label>
-          <input
-            data-name='age'
-            data-addui='slider'
-            data-fontsize='12'
-            data-step='1'
-            data-min='0'
-            data-max='100'
-            data-range='true'
-            value='18,67'
-          />
-        </div>
-        <div class="form-group">
-          <label>אחזקות</label>
-          <input
-            data-name='holdings'
-            data-addui='slider'
-            data-fontsize='12'
-            data-step='1'
-            data-formatter='usd'
-            data-min='0'
-            data-max='15000'
-            data-range='true'
-            value='0,10000'
-          />
-        </div>
-        <div class="form-group">
-          <label>דמי ניהול מצבירה</label>
-          <input
-            data-name='management-fee'
-            data-addui='slider'
-            data-fontsize='12'
-            data-step='1'
-            data-formatter='percent'
-            data-min='0'
-            data-max='100'
-            data-range='true'
-            value='0,10'
-          />
-        </div>
-        <div class="form-group">
-          <label>דמי ניהול מפרמיה - טווח ערכים</label>
-          <input
-            data-name='premium-mamagement-fee'
-            data-addui='slider'
-            data-fontsize='12'
-            data-step='1'
-            data-formatter='percent'
-            data-min='0'
-            data-max='100'
-            data-range='true'
-            value='0,10'
-          />
-        </div>
-        <div class="form-group">
-          <div class="tag-container">
-            <h5>חברה מנהלת</h5>
-            <div class="tag-wrapper">
-              <div class="tag">חברה מנהלת <span class="tag-remove">&times;</span></div>
+        <div class="filter-group-item">
+          <div class="form-group row mx-0">
+            <div class="col-8 p-0">
+              <label>1. שויי שוק (מיל' ש"ח)</label>
+              <button class="cs-btn-icon btn-quiz" data-toggle="tooltip" data-placement="top" title="Tooltip on top"></button>
             </div>
-            <div class="autocomplete">
-              <input type="text" class="form-control mt-3" name="tag-input" id="_tag_input" placeholder="בחר חברה מנהלת" />
+            <div class="col-4 p-0 d-block text-left">
+              <button class="cs-btn-icon btn-close dark"></button>
+              <a href="#" class="d-block">הסר</a>
             </div>
           </div>
-          <div class="row mx-0 mt-3">
-            <button class="btn btn-primary btn-clear-mana-company mr-auto">נקה חברה מנהלת</button>
+          <div class="form-group row mx-0">
+            <div class="col-3 p-0">
+              <input type="number" class="form-control" value="5.8" />
+              <label class="w-100 text-center pt-2">מקסימום</label>
+            </div>
+            <div class="col-6">
+              <div class="text-center">
+                <img src="../assets/img/bg/wave2.png" alt="" />
+              </div>
+              <div class="w-100">
+                <input
+                  class="m-0 w-100"
+                  data-name='age'
+                  data-addui='slider'
+                  data-fontsize='0'
+                  data-step='1'
+                  data-min='0'
+                  data-max='100'
+                  data-range='true'
+                  value='0,100'
+                />
+              </div>
+            </div>
+            <div class="col-3 p-0">
+              <input type="number" class="form-control" value="5.8" />
+              <label class="w-100 text-center pt-2">מינימום</label>
+            </div>
           </div>
         </div>
+        <div class="filter-group-item">
+          <div class="form-group row mx-0">
+            <div class="col-8 p-0">
+              <label>1. שויי שוק (מיל' ש"ח)</label>
+              <button class="cs-btn-icon btn-quiz" data-toggle="tooltip" data-placement="top" title="Tooltip on top"></button>
+            </div>
+            <div class="col-4 p-0 d-block text-left">
+              <button class="cs-btn-icon btn-close dark"></button>
+              <a href="#" class="d-block">הסר</a>
+            </div>
+          </div>
+          <div class="form-group row mx-0">
+            <div class="col-3 p-0">
+              <input type="number" class="form-control" value="5.8" />
+              <label class="w-100 text-center pt-2">מקסימום</label>
+            </div>
+            <div class="col-6">
+              <div class="text-center">
+                <img src="../assets/img/bg/wave2.png" alt="" />
+              </div>
+              <div class="w-100">
+                <input
+                  class="m-0 w-100"
+                  data-name='age'
+                  data-addui='slider'
+                  data-fontsize='0'
+                  data-step='1'
+                  data-min='0'
+                  data-max='100'
+                  data-range='true'
+                  value='0,100'
+                />
+              </div>
+            </div>
+            <div class="col-3 p-0">
+              <input type="number" class="form-control" value="5.8" />
+              <label class="w-100 text-center pt-2">מינימום</label>
+            </div>
+          </div>
+        </div>
+        <div class="filter-group-item">
+          <div class="form-group row mx-0">
+            <div class="col-8 p-0">
+              <label>1. שויי שוק (מיל' ש"ח)</label>
+              <button class="cs-btn-icon btn-quiz" data-toggle="tooltip" data-placement="top" title="Tooltip on top"></button>
+            </div>
+            <div class="col-4 p-0 d-block text-left">
+              <button class="cs-btn-icon btn-close dark"></button>
+              <a href="#" class="d-block">הסר</a>
+            </div>
+          </div>
+          <div class="form-group row mx-0">
+            <div class="col-3 p-0">
+              <input type="number" class="form-control" value="5.8" />
+              <label class="w-100 text-center pt-2">מקסימום</label>
+            </div>
+            <div class="col-6">
+              <div class="text-center">
+                <img src="../assets/img/bg/wave1.png" alt="" />
+              </div>
+              <div class="w-100">
+                <input
+                  class="m-0 w-100"
+                  data-name='age'
+                  data-addui='slider'
+                  data-fontsize='0'
+                  data-step='1'
+                  data-min='0'
+                  data-max='100'
+                  data-range='true'
+                  value='0,100'
+                />
+              </div>
+            </div>
+            <div class="col-3 p-0">
+              <input type="number" class="form-control" value="5.8" />
+              <label class="w-100 text-center pt-2">מינימום</label>
+            </div>
+          </div>
+        </div>
+        <button class="cs-btn-img btn-send ml-0 mt-3 mr-auto d-block"></button>
       </div>
       <!-- settings form -->
       <form class="settings-form">
-        <!-- <div class="custom-control custom-checkbox settings-checkbox">
-          <input type="checkbox" class="custom-control-input" id="name">
-          <label class="custom-control-label checkbox-left" for="name">
-            שם פרטי
-          </label>
-        </div>
-        <div class="custom-control custom-checkbox settings-checkbox">
-          <input type="checkbox" class="custom-control-input" id="last_name">
-          <label class="custom-control-label checkbox-left" for="last_name">
-            שם משפחה
-          </label>
-        </div>
-        <div class="custom-control custom-checkbox settings-checkbox">
-          <input type="checkbox" class="custom-control-input" id="dob">
-          <label class="custom-control-label checkbox-left" for="dob">
-            ת.ז \ ח.פ \ ח.צ
-          </label>
-        </div> -->
-        <div class="custom-control custom-checkbox settings-checkbox">
-          <input type="checkbox" class="custom-control-input" id="name_of_employer">
-          <label class="custom-control-label checkbox-left" for="name_of_employer">
-            שם מעסיק
-          </label>
-        </div>
-        <div class="custom-control custom-checkbox settings-checkbox">
-          <input type="checkbox" class="custom-control-input" id="age">
-          <label class="custom-control-label checkbox-left" for="age">
-            גיל
-          </label>
-        </div>
-        <div class="custom-control custom-checkbox settings-checkbox">
-          <input type="checkbox" class="custom-control-input" id="holdings">
-          <label class="custom-control-label checkbox-left" for="holdings">
-            אחזקות
-          </label>
-        </div>
-        <div class="custom-control custom-checkbox settings-checkbox">
-          <input type="checkbox" class="custom-control-input" id="management_fee">
-          <label class="custom-control-label checkbox-left" for="management_fee">
-            דמי ניהול מצבירה
-          </label>
-        </div>
-        <div class="custom-control custom-checkbox settings-checkbox">
-          <input type="checkbox" class="custom-control-input" id="premium_management_fee">
-          <label class="custom-control-label checkbox-left" for="premium_management_fee">
-            דמי ניהול מפרמיה - טווח ערכים
-          </label>
-        </div>
-        <div class="custom-control custom-checkbox settings-checkbox">
-          <input type="checkbox" class="custom-control-input" id="managing_company">
-          <label class="custom-control-label checkbox-left" for="managing_company">
-            חברה מנהלת
-          </label>
-        </div>
-        <div class="custom-control custom-checkbox settings-checkbox">
-          <input type="checkbox" class="custom-control-input" id="status">
-          <label class="custom-control-label checkbox-left" for="status">
-            סטטוס 
-          </label>
-        </div>
-        <div class="custom-control custom-checkbox settings-checkbox">
-          <input type="checkbox" class="custom-control-input" id="product_type">
-          <label class="custom-control-label checkbox-left" for="product_type">
-            סוג מוצר
-          </label>
-        </div>
-        <div class="custom-control custom-checkbox settings-checkbox">
-          <input type="checkbox" class="custom-control-input" id="product_name">
-          <label class="custom-control-label checkbox-left" for="product_name">
-            שם מוצר
-          </label>
-        </div>
-        <div class="custom-control custom-checkbox settings-checkbox">
-          <input type="checkbox" class="custom-control-input" id="treasury_number">
-          <label class="custom-control-label checkbox-left" for="treasury_number">
-            מספר אוצר /מ"ה
-          </label>
-        </div>
-        <div class="custom-control custom-checkbox settings-checkbox">
-          <input type="checkbox" class="custom-control-input" id="hometown">
-          <label class="custom-control-label checkbox-left" for="hometown">
-            עיר מגורים
-          </label>
-        </div>
-        <div class="custom-control custom-checkbox settings-checkbox">
-          <input type="checkbox" class="custom-control-input" id="balances">
-          <label class="custom-control-label checkbox-left" for="balances">
-            יתרות
-          </label>
-        </div>
-        <div class="custom-control custom-checkbox settings-checkbox">
-          <input type="checkbox" class="custom-control-input" id="caring_staff">
-          <label class="custom-control-label checkbox-left" for="caring_staff">
-            צוות מטפל
-          </label>
-        </div>
-        <div class="custom-control custom-checkbox settings-checkbox">
-          <input type="checkbox" class="custom-control-input" id="agent_therapist">
-          <label class="custom-control-label checkbox-left" for="agent_therapist">
-            מתכנן (סוכן) מטפל
-          </label>
-        </div>
-        <div class="custom-control custom-checkbox settings-checkbox">
-          <input type="checkbox" class="custom-control-input" id="family_status">
-          <label class="custom-control-label checkbox-left" for="family_status">
-            סטטוס משפחתי
-          </label>
-        </div>
-        <div class="custom-control custom-checkbox settings-checkbox">
-          <input type="checkbox" class="custom-control-input" id="type_deals">
-          <label class="custom-control-label checkbox-left" for="type_deals">
-            סוג עוסק
-          </label>
-        </div>
-        <div class="custom-control custom-checkbox settings-checkbox">
-          <input type="checkbox" class="custom-control-input" id="status">
-          <label class="custom-control-label checkbox-left" for="status">
-            מעמד
-          </label>
-        </div>
       </form>
     </div>
   </div>
   <div class="filter-app">
     <div class="app-header pl-0">
-      <div class="row app-header-top">
-        <div class="col-xl-7 col-lg-7 col-md-7 col-sm-7 col-7">
-          <span class="title">רשימת לקוחות</span>
-          <button class="cs-btn-img btn-new-customer mr-5" style="top: 15px" data-toggle="modal" data-target="#newCustomerModal"></button>
-        </div>
-        <div class="col-xl-5 col-lg-5 col-md-5 col-sm-5 col-5 text-left">
-          <a class="cs-btn-icon btn-xls" href="javascript:void(0)"></a>
-          <a class="cs-btn-icon btn-print" href="javascript:void(0)"></a>
-          <a class="cs-btn-icon btn-email" href="javascript:void(0)"></a>
-          <a class="cs-btn-icon btn-message" href="javascript:void(0)"></a>
-          <a class="cs-btn-icon btn-trash ml-0" href="javascript:void(0)"></a>
-        </div>
+      <div class="row app-header-top mb-0">
+        <span class="title">תוצאות החיפוש</span>
       </div>
       <div class="row app-header-bottom">
-        <div class="col-mxl-8 col-cxl-8 col-xl-10 col-lg-10 col-md-10 col-sm-8 col-8 d-inline-flex">
-          <div class="row">
-            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3">
-              <input type="text" class="form-control bg-white fc-h50 w-100" id="input_search" placeholder="שם פרטי" />
-            </div>
-            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3">
-              <input type="text" class="form-control bg-white fc-h50 w-100" id="input_search" placeholder="שם משפחה" />
-            </div>
-            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3">
-              <input type="text" class="form-control bg-white fc-h50 w-100" id="input_search" placeholder="מספר ת.ז./ח.פ." />
-            </div>
-            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3 pr-0">
-              <button class="cs-btn-img btn-search"></button>
-            </div>
-          </div>
-        </div>
-        <div class="col-mxl-4 col-cxl-4 col-xl-2 col-lg-2 col-md-2 col-sm-4 col-4 text-left">
-          <select class="form-control select-sort-by mr-auto ml-0">
-            <option>מיון לפי</option>
-          </select>
-        </div>
+        <button class="cs-btn-img btn-compare-marked" style="top: 15px"></button>
       </div>
     </div>
     <div class="app-body">
       <div class="app-card-list pb-5">
-        <div class="card customer-card">
-          <div class="card-header">
-            <div class="float-right ml-4">
-              <div class="cs-checkbox-container checkbox-medium m-0">
-                <input type="checkbox" checked="checked" />
-                <span class="checkmark"></span>
-              </div>
-            </div>
-            <a class="text-white font-weight-bold" href="customer-info.html">שם לקוח</a>
-            <!-- <a href="customer-info.html" class="float-left"><div class="cs-icon ic-pencil"></div></a> -->
+        <div class="card">
+          <div class="card-body p-0">
+            <table class="table datatable w-100 m-0">
+              <thead>
+                <tr>
+                  <th>בחר</th>
+                  <th>שם קופה</th>
+                  <th>מספר קופה</th>
+                  <th>חברה מנהלת</th>
+                  <th>שווי שוק</th>
+                  <th>מכפיל רווח</th>
+                  <th>תשואה על ההון  </th>
+                  <th>רווח למניה </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <label class="cs-checkbox-container m-0 mr-3 mt-2">
+                      <input type="checkbox" />
+                      <span class="checkmark"></span>
+                    </label>
+                  </td>
+                  <td class="font-weight-bold">אנליסט השתלמות כללי </td>
+                  <td>NUMERIC</td>
+                  <td>TEXT </td>
+                  <td>250,000 ש"ח</td>
+                  <td>NUMERIC </td>
+                  <td>NUMERIC</td>
+                  <td>NUMERIC</td>
+                </tr>
+                <tr>
+                  <td>
+                    <label class="cs-checkbox-container m-0 mr-3 mt-2">
+                      <input type="checkbox" />
+                      <span class="checkmark"></span>
+                    </label>
+                  </td>
+                  <td class="font-weight-bold">אנליסט השתלמות כללי </td>
+                  <td>NUMERIC</td>
+                  <td>TEXT </td>
+                  <td>250,000 ש"ח</td>
+                  <td>NUMERIC </td>
+                  <td>NUMERIC</td>
+                  <td>NUMERIC</td>
+                </tr>
+                <tr>
+                  <td>
+                    <label class="cs-checkbox-container m-0 mr-3 mt-2">
+                      <input type="checkbox" />
+                      <span class="checkmark"></span>
+                    </label>
+                  </td>
+                  <td class="font-weight-bold">אנליסט השתלמות כללי </td>
+                  <td>NUMERIC</td>
+                  <td>TEXT </td>
+                  <td>250,000 ש"ח</td>
+                  <td>NUMERIC </td>
+                  <td>NUMERIC</td>
+                  <td>NUMERIC</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
-          <div class="card-body">
-            <div class="row py-2">
-              <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6">
-                <div class="cs-icon ic-chrome-reader"></div>031327387
-              </div>
-              <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6">
-                <div class="cs-icon ic-call"></div>000000000
-              </div>
-              <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6">
-                <div class="cs-icon ic-folder-shared-gray"></div>סטטוס לקוח
-              </div>
-              <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 d-flex">
-                <div class="row w-100">
-                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 p-0"> רמת מינוף(4) </div>
-                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 p-0">
-                    <div class="rate-color-bar w-100" data-value="1"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row py-2">
-              <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6">
-                <div class="cs-icon ic-account-balance-wallet"></div>2,476,231$
-              </div>
-              <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6">
-                <div class="cs-icon ic-room"></div>צוות מטפל
-              </div>
-              <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6">
-                <div class="cs-icon ic-people"></div>צוות מטפל
-              </div>
-              <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 d-flex">
-                <div class="row w-100">
-                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 p-0"> רמת מינוף(3) </div>
-                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 p-0">
-                    <div class="rate-color-bar w-100" data-value="3"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row py-2">
-              <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6">
-                <div class="cs-icon ic-bookmark"></div>סוג לקוח
-              </div>
-              <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6">
-                <div class="cs-icon ic-email"></div>email@email.com
-              </div>
-              <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6">
-                <div class="cs-icon ic-record-voice"></div>מתכנן
-              </div>
-              <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 d-flex">
-                <div class="row w-100">
-                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 p-0"> רמת מינוף(5) </div>
-                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 p-0">
-                    <div class="rate-color-bar w-100" data-value="5"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+        </div>
+        <div class="search-result">
+          נמצאו <strong>23</strong> מוצרים
         </div>
         <!-- pagination -->
         <div class="pagination">
@@ -442,128 +372,285 @@
 </div>
 
 <!-- New Customer Modal -->
-<div class="modal" id="newCustomerModal">
+<div class="modal" id="filterSettingsModal">
   <div class="modal-dialog">
     <div class="modal-content">
       <!-- Modal Header -->
       <div class="modal-header">
-        <h4 class="pr-4 mt-2">לקוח חדש</h4>
+        <h4 class="pr-4 mt-2">ניהול פילטרים</h4>
+        <button type="button" class="btn btn-primary btn-clear">נקה הכל</button>
         <button type="button" class="cs-btn-icon btn-close close dark mr-auto" data-dismiss="modal"></button>
       </div>
       <!-- Modal body -->
-      <div class="modal-body">
-        <form style="width: 75%">
-          <div class="row">
-            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3">
-              <div class="form-group">
-                <label>שם פרטי</label>
-                <div class="autocomplete">
-                  <input type="text" id="_f_name" class="form-control" placeholder="TEXT" />
-                </div>
+      <div class="modal-body mt-4">
+        <form>
+          <div class="grid-container">
+            <div class="grid-item">
+              <h6 class="text-title">אפיקי השקעה עיקריים</h6>
+              <div class="row">
+                <label class="cs-checkbox-container">
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+                <label>חשיפה למניות </label>
+              </div>
+              <div class="row">
+                <label class="cs-checkbox-container">
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+                <label>חשיפה לאגח ממשלתי </label>
+              </div>
+              <div class="row">
+                <label class="cs-checkbox-container">
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+                <label>חשיפה לאגח קונצרני </label>
+              </div>
+              <div class="row">
+                <label class="cs-checkbox-container">
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+                <label>חשיפה לחו"ל </label>
+              </div>
+              <div class="row">
+                <label class="cs-checkbox-container">
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+                <label>חשיפה למט"ח </label>
+              </div>
+              <div class="row">
+                <label class="cs-checkbox-container">
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+                <label>חשיפה נטו </label>
               </div>
             </div>
-            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3">
-              <div class="form-group">
-                <label>שם משפחה</label>
-                <div class="autocomplete">
-                  <input type="text" id="_l_name" class="form-control" placeholder="TEXT" />
-                </div>
+            <div class="grid-item">
+              <h6 class="text-title">אפיקי השקעה עיקריים</h6>
+              <div class="row">
+                <label class="cs-checkbox-container">
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+                <label>חודש אחרון  </label>
+              </div>
+              <div class="row">
+                <label class="cs-checkbox-container">
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+                <label>רבעון אחרון  </label>
+              </div>
+              <div class="row">
+                <label class="cs-checkbox-container">
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+                <label>חציון אחרון </label>
+              </div>
+              <div class="row">
+                <label class="cs-checkbox-container">
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+                <label>12 חודשים </label>
+              </div>
+              <div class="row">
+                <label class="cs-checkbox-container">
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+                <label>24 חודשים </label>
+              </div>
+              <div class="row">
+                <label class="cs-checkbox-container">
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+                <label>36 חודשים </label>
+              </div>
+              <div class="row">
+                <label class="cs-checkbox-container">
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+                <label>60 חודשים</label>
+              </div>
+              <div class="row">
+                <label class="cs-checkbox-container">
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+                <label>ממוצע 36 חודשים </label>
+              </div>
+              <div class="row">
+                <label class="cs-checkbox-container">
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+                <label>ממוצע 60 חודשים </label>
+              </div>
+              <div class="row">
+                <label class="cs-checkbox-container">
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+                <label>בחירה לפי טווח </label>
+              </div>
+              <div class="row">
+                <label class="cs-checkbox-container">
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+                <label>תשואות לפי שנים</label>
               </div>
             </div>
-            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3">
-              <div class="form-group">
-                <label>מגדר</label>
-                <div class="autocomplete">
-                  <input type="text" id="_gender" class="form-control" placeholder="TEXT" />
-                </div>
+            <div class="grid-item">
+              <h6 class="text-title">אפיקי השקעה עיקריים</h6>
+              <div class="row">
+                <label class="cs-checkbox-container">
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+                <label>דירוג </label>
+              </div>
+              <div class="row">
+                <label class="cs-checkbox-container">
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+                <label>אלפא</label>
+              </div>
+              <div class="row">
+                <label class="cs-checkbox-container">
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+                <label>שארפ</label>
+              </div>
+              <div class="row">
+                <label class="cs-checkbox-container">
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+                <label>RECOVERY</label>
+              </div>
+              <div class="row">
+                <label class="cs-checkbox-container">
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+                <label>עקביות 36</label>
+              </div>
+              <div class="row">
+                <label class="cs-checkbox-container">
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+                <label>עקביות 12</label>
+              </div>
+              <div class="row">
+                <label class="cs-checkbox-container">
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+                <label>צבירה 12 </label>
               </div>
             </div>
-            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3">
-              <div class="form-group">
-                <label>ת.ז</label>
-                <div class="autocomplete">
-                  <input type="text" id="_id_num" class="form-control" placeholder="TEXT" />
-                </div>
+            <div class="grid-item">
+              <h6 class="text-title">אפיקי השקעה עיקריים</h6>
+              <div class="row">
+                <label class="cs-checkbox-container">
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+                <label>יתרת נכסים </label>
+              </div>
+              <div class="row">
+                <label class="cs-checkbox-container">
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+                <label>וותק</label>
+              </div>
+              <div class="row">
+                <label class="cs-checkbox-container">
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+                <label>מסלול השקעה</label>
+              </div>
+              <div class="row">
+                <label class="cs-checkbox-container">
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+                <label>התמחות ראשית</label>
+              </div>
+              <div class="row">
+                <label class="cs-checkbox-container">
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+                <label>רמת סיכון </label>
+              </div>
+            </div>
+            <div class="grid-item">
+              <h6 class="text-title">אפיקי השקעה עיקריים</h6>
+              <div class="row">
+                <label class="cs-checkbox-container">
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+                <label>סטיית תקן</label>
+              </div>
+              <div class="row">
+                <label class="cs-checkbox-container">
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+                <label>בתא</label>
+              </div>
+              <div class="row">
+                <label class="cs-checkbox-container">
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+                <label>DOWNTRADE</label>
+              </div>
+              <div class="row">
+                <label class="cs-checkbox-container">
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+                <label>WORSTRADE</label>
+              </div>
+              <div class="row">
+                <label class="cs-checkbox-container">
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+                <label>WORSTYEAR</label>
+              </div>
+              <div class="row">
+                <label class="cs-checkbox-container">
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+                <label>POSITIVE MONTHS</label>
               </div>
             </div>
           </div>
-          <div class="row">
-            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3">
-              <div class="form-group">
-                <label>סוג עוסק</label>
-                <div class="autocomplete">
-                  <input type="text" id="_type_deals" class="form-control" placeholder="TEXT" />
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3">
-              <div class="form-group">
-                <label>מעמד</label>
-                <div class="autocomplete">
-                  <input type="text" id="_status" class="form-control" placeholder="TEXT" />
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3">
-              <div class="form-group">
-                <label>כתובת</label>
-                <div class="autocomplete">
-                  <input type="text" id="_address" class="form-control" placeholder="TEXT" />
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3">
-              <div class="form-group">
-                <label>ישוב</label>
-                <div class="autocomplete">
-                  <input type="text" id="_settlement" class="form-control" placeholder="TEXT" />
-                </div>
-              </div>
-            </div>
+          <div class="row font-weight-bold mt-4 mx-0">
+            נבחרו <strong class="text-primary px-1">3</strong> פורמטיים מתוך 6 אפשריים
           </div>
-          <div class="row">
-            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3">
-              <div class="form-group">
-                <label>טלפון</label>
-                <div class="autocomplete">
-                  <input type="text" id="_phone_num" class="form-control" placeholder="NUM" />
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3">
-              <div class="form-group invalid">
-                <label>טלפון</label>
-                <div class="autocomplete">
-                  <input type="text" id="_phone_num_2" class="form-control" placeholder="NUM" />
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3">
-              <div class="form-group">
-                <label>אימייל</label>
-                <div class="autocomplete">
-                  <input type="text" id="_email" class="form-control" placeholder="TEXT" />
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3">
-              <div class="form-group">
-                <label>צוות מטפל</label>
-                <div class="autocomplete">
-                  <input type="text" id="_caring_staff" class="form-control" placeholder="TEXT" />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3">
-              <div class="form-group">
-                <label>מתכנן (סוכן) מטפל</label>
-                <div class="autocomplete">
-                  <input type="text" id="_agent" class="form-control" placeholder="TEXT" />
-                </div>
-              </div>
-            </div>
+          <div class="row mx-0">
+            <button class="cs-btn-img btn-send-green mt-4"></button>
           </div>
         </form>
       </div>
@@ -577,17 +664,28 @@
 </div>
 
 <!-- plugin js -->
+<script type="text/javascript" src="../assets/plugins/DataTables/datatables.min.js"></script>
 <script src="../assets/plugins/bar-rating/jquery.barrating.js"></script>
 <script src='../assets/plugins/addSlider/res/Obj.min.js'></script>
 <script src='../assets/plugins/addSlider/src/addSlider.js'></script>
 <script src="../assets/plugins/sliding-toggle-switch/lc_switch.js" type="text/javascript"></script>
 <script src="../assets/js/autocomplete.js" type="text/javascript"></script>
 <script src="../assets/js/form-validation.js" type="text/javascript"></script>
+<script src="../assets/js/common.js" type="text/javascript"></script>
 <script src="../assets/custom/square-rater/square-rater.js" type="text/javascript"></script>
 <script src="../assets/custom/rate-color-bar/rate-color-bar.js" type="text/javascript"></script>
 
 <!-- ./plugin js -->
 <script>
+  // datatable init
+  $(document).ready(function() {
+    $('.datatable').DataTable({
+      paging: false,
+      // scrollY: 400,
+      searching: false
+      // ordering:  false
+    });
+  } );
   // autocomplete form-control proximity
   autocomplete(document.getElementById("_f_name"), countries);
   autocomplete(document.getElementById("_l_name"), countries);
@@ -664,11 +762,11 @@
     $('.settings-form').removeClass('open');
     $('.filter-form').addClass('open');
   });
-  $(document).on('click', '.filter-variable-mana', function() {
-    $('.main').addClass('open-filter');
-    $('.filter-form').removeClass('open');
-    $('.settings-form').addClass('open');
-  });
+  // $(document).on('click', '.filter-variable-mana', function() {
+  //   $('.main').addClass('open-filter');
+  //   $('.filter-form').removeClass('open');
+  //   $('.settings-form').addClass('open');
+  // });
   $(document).on('click', '.filter-close', function() {
     $('.main').removeClass('open-filter');
     $('.filter-toggle').show();
