@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <title>Admin</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- <link rel="stylesheet" href="../assets/bootstrap-4.3.1-dist/css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="../assets/theme/theme.css">
+  <link rel="stylesheet" href="../assets/scss/simulator.css">
+  <!-- plugin css -->
+  <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" type="text/css" href="../assets/plugins/DataTables/datatables.css"/>
+  <link rel='stylesheet' href='../assets/plugins/addSlider/src/addSlider.css' />
+  <link rel="stylesheet" href="../assets/plugins/sliding-toggle-switch/lc_switch.css">
+  <link rel="stylesheet" href="../node_modules/chart.js/dist/Chart.min.css">
+  <!-- js -->
+  <script src="../assets/jquery/jquery.min.js"></script>
+  <script src="../assets/plugins/popper/popper.min.js"></script>
+  <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="../node_modules/chart.js/dist/Chart.min.js"></script>
+</head>
+<body>
+
+<header class="header">
+  <div class="header-top">
+    <div class="dropdown">
+      <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <div class="avatar-container">
+          <img src="../assets/img/icons/ic_account_circle.png" alt="avatar" class="header-avatar" />
+        </div>
+        שם משתמש
+      </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" href="#">Action</a>
+        <a class="dropdown-item" href="#">Another action</a>
+        <a class="dropdown-item" href="#">Something else here</a>
+      </div>
+    </div>
+  </div>
+  <div class="header-nav">
+    <nav class="nav">
+      <div class="header-logo">
+        <a href="#" class="logo-text">LOGO</a>
+      </div>
+      <ul>
+        <li class="">
+          <a href="../Customer/customer-list.html">לקוחות</a>
+        </li>
+        <li class="active">
+          <a class="dropdown-toggle" href="../Simulator/simulator-main.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">סימולטור</a>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <div class="dropdown-block">
+              <h6 class="block-title"><span class="cs-icon ic-assessment ml-2"></span>השוואה וניתוח</h6>
+              <ul>
+                <li><a href="#">סינון מוצרים</a></li>
+                <li><a href="#">השוואת מוצרים</a></li>
+                <li><a href="#">מגמות</a></li>
+                <li><a href="#">אלוקציה וניתוח</a></li>
+              </ul>
+            </div>
+            <div class="dropdown-block">
+              <h6 class="block-title"><span class="cs-icon ic-pan-tool ml-2"></span>מוצרים נבחרים</h6>
+              <ul>
+                <li><a href="#">TOP 5</a></li>
+                <li><a href="#">TOP 10</a></li>
+              </ul>
+            </div>
+            <div class="dropdown-block">
+              <h6 class="block-title"><span class="cs-icon ic-library-add ml-2"></span>הוספת מוצר</h6>
+              <ul>
+                <li><a href="#">קרן P2P</a></li>
+                <li><a href="#">קרן חוב</a></li>
+                <li><a href="#">קרן גידור</a></li>
+                <li><a href="#">השקעות נדל"ן</a></li>
+                <li><a href="#">קרן רייט</a></li>
+                <li><a href="#">קרו אלגו</a></li>
+                <li><a href="#">ביטוח</a></li>
+              </ul>
+            </div>
+            <div class="dropdown-block">
+              <h6 class="block-title"><span class="cs-icon ic-library-books ml-2"></span>מוצר משולב</h6>
+              <ul>
+                <li><a href="#">הוספת מוצר משולב</a></li>
+              </ul>
+            </div>
+            <div class="dropdown-block">
+              <h6 class="block-title"><span class="cs-icon ic-keyboard ml-2"></span>מחשבונים</h6>
+              <ul>
+                <li><a href="#">מינוף רגיל</a></li>
+                <li><a href="#">מינוף כפול</a></li>
+                <li><a href="#">IRR</a></li>
+                <li><a href="#">חסכון ליצירת קצבח</a></li>
+                <li><a href="#">תוצאות מינוף</a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="">
+          <a href="#">CRM</a>
+        </li>
+        <li class="">
+          <a href="#">מעקב ביצוע</a>
+        </li>
+        <li class="">
+          <a href="#">ניהול וקליטת נתונים</a>
+        </li>
+        <li class="">
+          <a href="#">דוחות</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+  
+<div class="main simulator-product-detail">
+  <div class="filter-app">
+    <h2 class="title my-4">דף מוצר</h2>
+    <div class="app-body">
+      <div class="app-tab my-5">
+        <nav>
+          <div class="nav nav-tabs" id="nav-tab" role="tablist">
+            <a class="nav-item nav-link active" id="nav-product-details-tab" data-toggle="tab" href="#nav-product-details" role="tab" aria-controls="nav-product-details" aria-selected="true"><div class="cs-icon ic-assignment2"></div>פרטים</a>
+            <a class="nav-item nav-link" id="nav-product-composition-tab" data-toggle="tab" href="#nav-product-composition" role="tab" aria-controls="nav-product-composition" aria-selected="false"><div class="cs-icon ic-dashboard"></div>הרכב</a>
+          </div>
+        </nav>
+        <div class="tab-content" id="nav-tabContent">
+          <div class="tab-pane fade show active" id="nav-product-details" role="tabpanel" aria-labelledby="nav-product-details-tab">
+            <div class="pane-body card p-3 pb-5">
+              <div class="row">
+                <div class="col-3 border-left">
+                  <h6 class="text-primary">כללים</h6>
+                  <div class="row py-1">
+                    <div class="col-4 font-weight-bold pl-0">שם  המוצר</div>
+                    <div class="col-8">הראל אגח עד 25% מניות</div>
+                  </div>
+                  <div class="row py-1">
+                    <div class="col-4 font-weight-bold pl-0">נכסים מנוהלים</div>
+                    <div class="col-8"> (במיליוני שקלים)10,569.36</div>
+                  </div>
+                  <div class="row py-1">
+                    <div class="col-4 font-weight-bold pl-0">סוג המוצר</div>
+                    <div class="col-8">תגמול ואישית לפיצויים</div>
+                  </div>
+                  <div class="row py-1">
+                    <div class="col-4 font-weight-bold pl-0">רמת סיכון</div>
+                    <div class="col-8">מאוזן</div>
+                  </div>
+                  <div class="row py-1">
+                    <div class="col-4 font-weight-bold pl-0">מספר באוצר</div>
+                    <div class="col-8">101</div>
+                  </div>
+                  <div class="row py-1">
+                    <div class="col-4 font-weight-bold pl-0">וותק בשנים</div>
+                    <div class="col-8">41</div>
+                  </div>
+                  <div class="row py-1">
+                    <div class="col-4 font-weight-bold pl-0">חברה מנהלת</div>
+                    <div class="col-8">הראל פנסיה וגמל</div>
+                  </div>
+                  <div class="row py-1">
+                    <div class="col-4 font-weight-bold pl-0">דירוג מוצר</div>
+                    <div class="col-8">AA</div>
+                  </div>
+                </div>
+                <div class="col-3 border-left">
+                  <h6 class="text-primary">תשואות ומדדים</h6>
+                  <div class="row py-1">
+                    <div class="col-8 font-weight-bold pl-0">תשואה 12 חודשים אחרונים</div>
+                    <div class="col-4">9.32%</div>
+                  </div>
+                  <div class="row py-1">
+                    <div class="col-8 font-weight-bold pl-0">תשואה 36 חודשים אחרונים</div>
+                    <div class="col-4">9.32%</div>
+                  </div>
+                  <div class="row py-1">
+                    <div class="col-8 font-weight-bold pl-0">תשואה 60 חודשים אחרונים</div>
+                    <div class="col-4">9.32%</div>
+                  </div>
+                  <div class="row py-1">
+                    <div class="col-8 font-weight-bold pl-0">מדדי עקביות 36 חודשים</div>
+                    <div class="col-4">9.32%</div>
+                  </div>
+                  <div class="row py-1">
+                    <div class="col-8 font-weight-bold pl-0">סטיות תקן 36 חודשים</div>
+                    <div class="col-4">9.32%</div>
+                  </div>
+                  <div class="row py-1">
+                    <div class="col-8 font-weight-bold pl-0">מדד צמיחה</div>
+                    <div class="col-4">9.32%</div>
+                  </div>
+                  <div class="row py-1">
+                    <div class="col-8 font-weight-bold pl-0">חשיפה להפסד</div>
+                    <div class="col-4">9.32%</div>
+                  </div>
+                </div>
+                <div class="col-3 border-left">
+                  <h6 class="text-primary">אפיקי השקעה</h6>
+                  <div class="row py-1">
+                    <div class="col-8 font-weight-bold pl-0">מזומנים ושווה מזומנים</div>
+                    <div class="col-4">9.32%</div>
+                  </div>
+                  <div class="row py-1">
+                    <div class="col-8 font-weight-bold pl-0">אג"ח ממשלתי סחיר</div>
+                    <div class="col-4">9.32%</div>
+                  </div>
+                  <div class="row py-1">
+                    <div class="col-8 font-weight-bold pl-0">אג"ח מיועדות</div>
+                    <div class="col-4">9.32%</div>
+                  </div>
+                  <div class="row py-1">
+                    <div class="col-8 font-weight-bold pl-0">אג"ח קונצרני</div>
+                    <div class="col-4">9.32%</div>
+                  </div>
+                  <div class="row py-1">
+                    <div class="col-8 font-weight-bold pl-0">אג"ח קונצרני לא מדורג</div>
+                    <div class="col-4">9.32%</div>
+                  </div>
+                  <div class="row py-1">
+                    <div class="col-8 font-weight-bold pl-0">חשיפה למניות</div>
+                    <div class="col-4">9.32%</div>
+                  </div>
+                  <div class="row py-1">
+                    <div class="col-8 font-weight-bold pl-0">חשיפה לחו"ל</div>
+                    <div class="col-4">9.32%</div>
+                  </div>
+                </div>
+                <div class="col-3">
+                  <h6 class="text-primary">מדדי איכות</h6>
+                  <div class="row py-1">
+                    <div class="col-8 font-weight-bold pl-0">אלפא</div>
+                    <div class="col-4">NUM</div>
+                  </div>
+                  <div class="row py-1">
+                    <div class="col-8 font-weight-bold pl-0">שארפ</div>
+                    <div class="col-4">NUM</div>
+                  </div>
+                  <div class="row py-1">
+                    <div class="col-8 font-weight-bold pl-0">RECOVERY</div>
+                    <div class="col-4">NUM</div>
+                  </div>
+                  <div class="row py-1">
+                    <div class="col-8 font-weight-bold pl-0">עקביות 36</div>
+                    <div class="col-4">NUM</div>
+                  </div>
+                  <div class="row py-1">
+                    <div class="col-8 font-weight-bold pl-0">סטטיסטיקה</div>
+                    <div class="col-4">NUM</div>
+                  </div>
+                  <div class="row py-1">
+                    <div class="col-8 font-weight-bold pl-0">סטיית תקן</div>
+                    <div class="col-4">NUM</div>
+                  </div>
+                  <div class="row py-1">
+                    <div class="col-8 font-weight-bold pl-0">בטא</div>
+                    <div class="col-4">NUM</div>
+                  </div>
+                  <div class="row py-1">
+                    <div class="col-8 font-weight-bold pl-0">DOWNTRADE</div>
+                    <div class="col-4">NUM</div>
+                  </div>
+                  <div class="row py-1">
+                    <div class="col-8 font-weight-bold pl-0">WORSTYEAR</div>
+                    <div class="col-4">NUM</div>
+                  </div>
+                </div>
+              </div>
+              <div class="row-divider"></div>
+              <div class="row">
+                <div class="col-6 border-left">
+                  <div class="row mx-0">
+                    <h6 class="text-primary pt-2">תשואה מצטברת לתקופה</h6>
+                    <div class="datepicker-wrapper mr-4">
+                      <input id="datepicker" class="form-control" placeholder="תקוםה" />
+                    </div>
+                  </div>
+                  <div class="chartWrapper mt-4">
+                    <canvas id="myChart1" style="height: 200px;"></canvas>
+                  </div>
+                </div>
+                <div class="col-3 border-left">
+                  <div class="row mx-0">
+                    <h6 class="text-primary pt-2">אפיקי השקעה</h6>
+                    <div class="row w-100 py-4" style="margin-top: 100px;">
+                      <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12">
+                        <div class="doughnut-wrapper">
+                          <canvas class="doughnut"></canvas>
+                        </div>
+                      </div>
+                      <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12">
+                        <div class="donut-captions">
+                          <div class="row">
+                            <label><span class="dount-caption-icon" style="--bgColor : #7ABBFC"></span>אלגו </label>
+                          </div>
+                          <div class="row">
+                            <label><span class="dount-caption-icon" style="--bgColor : #3ACCE1"></span>נדל"ן יזמי </label>
+                          </div>
+                          <div class="row">
+                            <label><span class="dount-caption-icon" style="--bgColor : #32D296"></span>נדל"ן מניב </label>
+                          </div>
+                          <div class="row">
+                            <label><span class="dount-caption-icon" style="--bgColor : #7ABBFC"></span>ריט </label>
+                          </div>
+                          <div class="row">
+                            <label><span class="dount-caption-icon" style="--bgColor : #3ACCE1"></span>אשראי עסקי </label>
+                          </div>
+                          <div class="row">
+                            <label><span class="dount-caption-icon" style="--bgColor : #32D296"></span>אשראי צרכני </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3">
+                  <div class="row mx-0">
+                    <h6 class="w-100 text-primary pt-2">הרכב נכסים</h6>
+                    <div class="row w-100 py-4" style="margin-top: 100px;">
+                      <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12">
+                        <div class="doughnut-wrapper">
+                          <canvas class="doughnut"></canvas>
+                        </div>
+                      </div>
+                      <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12">
+                        <div class="donut-captions">
+                          <div class="row">
+                            <label><span class="dount-caption-icon" style="--bgColor : #7ABBFC"></span>אלגו </label>
+                          </div>
+                          <div class="row">
+                            <label><span class="dount-caption-icon" style="--bgColor : #3ACCE1"></span>נדל"ן יזמי </label>
+                          </div>
+                          <div class="row">
+                            <label><span class="dount-caption-icon" style="--bgColor : #32D296"></span>נדל"ן מניב </label>
+                          </div>
+                          <div class="row">
+                            <label><span class="dount-caption-icon" style="--bgColor : #7ABBFC"></span>ריט </label>
+                          </div>
+                          <div class="row">
+                            <label><span class="dount-caption-icon" style="--bgColor : #3ACCE1"></span>אשראי עסקי </label>
+                          </div>
+                          <div class="row">
+                            <label><span class="dount-caption-icon" style="--bgColor : #32D296"></span>אשראי צרכני </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="tab-pane fade" id="nav-product-composition" role="tabpanel" aria-labelledby="nav-product-composition-tab">
+            <div class="pane-body card p-3 pb-5">
+              <div class="row">
+                <div class="col-4">
+                  <h6 class="text-primary">פירוט מלא</h6>
+                  <div class="row py-1">
+                    <div class="col-8 font-weight-bold pl-0">אג"ח סחירות ממשלתית לא צמודות</div>
+                    <div class="col-4">9.32%</div>
+                  </div>
+                  <div class="row py-1">
+                    <div class="col-8 font-weight-bold pl-0">יתרות מזומנים ועוש בשקלים חדשים</div>
+                    <div class="col-4">9.32%</div>
+                  </div>
+                  <div class="row py-1">
+                    <div class="col-8 font-weight-bold pl-0">מניות לא סחירות</div>
+                    <div class="col-4">9.32%</div>
+                  </div>
+                  <div class="row py-1">
+                    <div class="col-8 font-weight-bold pl-0">מניות השייכות למדד תא 25/35</div>
+                    <div class="col-4">9.32%</div>
+                  </div>
+                  <div class="row py-1">
+                    <div class="col-8 font-weight-bold pl-0">מניות היתר</div>
+                    <div class="col-4">9.32%</div>
+                  </div>
+                  <div class="row py-1">
+                    <div class="col-8 font-weight-bold pl-0">מניות היתר</div>
+                    <div class="col-4">9.32%</div>
+                  </div>
+                  <div class="row py-1">
+                    <div class="col-8 font-weight-bold pl-0">מניות היתר</div>
+                    <div class="col-4">9.32%</div>
+                  </div>
+                  <div class="row py-1">
+                    <div class="col-8 font-weight-bold pl-0">מניות היתר</div>
+                    <div class="col-4">9.32%</div>
+                  </div>
+                  <div class="row py-1">
+                    <div class="col-8 font-weight-bold pl-0">מניות היתר</div>
+                    <div class="col-4">9.32%</div>
+                  </div>
+                  <div class="row py-1">
+                    <div class="col-8 font-weight-bold pl-0">מניות היתר</div>
+                    <div class="col-4">9.32%</div>
+                  </div>
+                  <div class="row py-1">
+                    <div class="col-8 font-weight-bold pl-0">מניות היתר</div>
+                    <div class="col-4">9.32%</div>
+                  </div>
+                  <div class="row py-1">
+                    <div class="col-8 font-weight-bold pl-0">מניות היתר</div>
+                    <div class="col-4">9.32%</div>
+                  </div>
+                  <div class="row py-1">
+                    <div class="col-8 font-weight-bold pl-0">מניות היתר</div>
+                    <div class="col-4">9.32%</div>
+                  </div>
+                  <div class="row py-1">
+                    <div class="col-8 font-weight-bold pl-0">מניות היתר</div>
+                    <div class="col-4">9.32%</div>
+                  </div>
+                  <div class="row py-1">
+                    <div class="col-8 font-weight-bold pl-0">מניות היתר</div>
+                    <div class="col-4">9.32%</div>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <h6 class="text-primary">קבוצות ראשיות</h6>
+                  <div class="row py-1">
+                    <div class="col-8 font-weight-bold pl-0">יתרות מזומנים ועוש בשקלים חדשים</div>
+                    <div class="col-4">9.32%</div>
+                  </div>
+                  <div class="row py-1">
+                    <div class="col-8 font-weight-bold pl-0">מניות לא סחירות</div>
+                    <div class="col-4">9.32%</div>
+                  </div>
+                  <div class="row py-1">
+                    <div class="col-8 font-weight-bold pl-0">מניות השייכות למדד תא 25/35</div>
+                    <div class="col-4">9.32%</div>
+                  </div>
+                  <div class="row py-1">
+                    <div class="col-8 font-weight-bold pl-0">מניות היתר</div>
+                    <div class="col-4">9.32%</div>
+                  </div>
+                  <div class="row py-1">
+                    <div class="col-8 font-weight-bold pl-0">מניות היתר</div>
+                    <div class="col-4">9.32%</div>
+                  </div>
+                  <div class="row py-1">
+                    <div class="col-8 font-weight-bold pl-0">מניות היתר</div>
+                    <div class="col-4">9.32%</div>
+                  </div>
+                  <div class="row py-1">
+                    <div class="col-8 font-weight-bold pl-0">מניות היתר</div>
+                    <div class="col-4">9.32%</div>
+                  </div>
+                  <div class="row py-1">
+                    <div class="col-8 font-weight-bold pl-0">מניות היתר</div>
+                    <div class="col-4">9.32%</div>
+                  </div>
+                  <div class="row-divider"></div>
+                  <h6 class="text-primary">סחירים/לא סחירים</h6>
+                  <div class="row py-1">
+                    <div class="col-8 font-weight-bold pl-0">יתרות מזומנים ועוש בשקלים חדשים</div>
+                    <div class="col-4">9.32%</div>
+                  </div>
+                  <div class="row py-1">
+                    <div class="col-8 font-weight-bold pl-0">מניות לא סחירות</div>
+                    <div class="col-4">9.32%</div>
+                  </div>
+                  <div class="row-divider"></div>
+                  <h6 class="text-primary">בארץ/חוץ לארץ</h6>
+                  <div class="row py-1">
+                    <div class="col-8 font-weight-bold pl-0">יתרות מזומנים ועוש בשקלים חדשים</div>
+                    <div class="col-4">9.32%</div>
+                  </div>
+                  <div class="row py-1">
+                    <div class="col-8 font-weight-bold pl-0">מניות לא סחירות</div>
+                    <div class="col-4">9.32%</div>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <h6 class="text-primary">רמת סיכון</h6>
+                  <div class="row py-1">
+                    <div class="col-8 font-weight-bold pl-0">יתרות מזומנים ועוש בשקלים חדשים</div>
+                    <div class="col-4">9.32%</div>
+                  </div>
+                  <div class="row py-1">
+                    <div class="col-8 font-weight-bold pl-0">מניות לא סחירות</div>
+                    <div class="col-4">9.32%</div>
+                  </div>
+                  <div class="row py-1">
+                    <div class="col-8 font-weight-bold pl-0">מניות השייכות למדד תא 25/35</div>
+                    <div class="col-4">9.32%</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- plugin js -->
+<script type="text/javascript" src="../assets/plugins/DataTables/datatables.min.js"></script>
+<script src="../assets/plugins/bar-rating/jquery.barrating.js"></script>
+<script src='../assets/plugins/addSlider/res/Obj.min.js'></script>
+<script src='../assets/plugins/addSlider/src/addSlider.js'></script>
+<script src="../assets/plugins/sliding-toggle-switch/lc_switch.js" type="text/javascript"></script>
+<script src="../assets/js/autocomplete.js" type="text/javascript"></script>
+<script src="../assets/js/form-validation.js" type="text/javascript"></script>
+<script src="../assets/js/common.js" type="text/javascript"></script>
+<script src="../assets/custom/square-rater/square-rater.js" type="text/javascript"></script>
+<script src="../assets/custom/rate-color-bar/rate-color-bar.js" type="text/javascript"></script>
+<script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+
+<!-- ./plugin js -->
+<!-- script -->
+<script>
+  // datepicker init
+  $('#datepicker').datepicker({ uiLibrary: 'bootstrap4' });
+  // === Chart 1
+  var data2 = {
+      labels: ["יולי", "ספטמבר", "נובמבר", "יוני", "מרץ", "מאי"],
+      datasets: [
+        {
+          label: ' הפועלים -   15.58% ', 
+          data: [20, -5, 22, -8, 8, 6, 12],
+          borderColor: '#B202D1',
+          backgroundColor: '#ffffff00',
+          tension: 0,
+          pointRadius: 0
+        }
+      ]
+    }
+  var configChart = {
+    type: 'line',
+    data: data2,
+    options: {
+      legend: {
+        display: false
+      },
+      responsive: true,
+      plugins: {
+        legend: {
+          position: 'top',
+        },
+        title: {
+          display: false,
+          text: ''
+        }
+      }
+    },
+  };
+  // === ./Chart 1
+  // === Chart 2
+  var ctx = document.getElementById("myChart1");
+  var myChart1 = new Chart(ctx, configChart);
+  // === ./Chart 2
+</script>
+<script>
+  function drawDoughnutCharts(chartEle) {
+    var ctx = chartEle.getContext('2d');
+    var myChart = new Chart(ctx, {
+      type: 'doughnut',
+      data: {
+          labels: ['Red', 'Yellow', 'Blue', 'Red', 'Yellow', 'Blue'],
+          datasets: [{
+              label: '# of Votes',
+              data: [25, 25, 25, 25, 25, 25],
+              backgroundColor: ['#bcddfd', '#9ce5f0', '#98e8ca', '#bcddfd', '#9ce5f0', '#98e8ca'],
+              // borderColor: '#A3A0FB',
+              borderWidth: 1,
+            }]
+      },
+      options: {
+        legend: {
+            display: false
+        },
+        responsive: true,
+        maintainAspectRatio: false,
+        cutoutPercentage: 60,
+        plugins: {
+          labels: {
+            render: 'percentage',
+            fontColor: ['#FFFFFF', '#FFFFFF', '#FFFFFF'],
+            precision: 2
+          }
+        }
+      }
+    });
+  }
+
+  var chartEles = document.getElementsByClassName('doughnut');
+  for(var i = 0; i < chartEles.length; i++) {
+    drawDoughnutCharts(chartEles[i]);
+  }
+</script>
+<!-- ./script -->
+</body>
+</html>

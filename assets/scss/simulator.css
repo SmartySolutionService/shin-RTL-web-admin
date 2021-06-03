@@ -288,4 +288,97 @@
   color: #1E87F0 !important;
 }
 
+/*******************************************************/
+/*********** *** Simulator Product Detail *** **********/
+/*******************************************************/
+.simulator-product-detail .filter-app {
+  width: 100% !important;
+}
+.simulator-product-detail .app-tab .nav-tabs {
+  border-bottom: solid 16px #7ABBFC;
+}
+.simulator-product-detail .app-tab .nav-tabs .nav-item {
+  background-color: transparent;
+  color: #485272;
+  min-width: 190px;
+  text-align: center;
+}
+.simulator-product-detail .app-tab .nav-tabs .nav-item .cs-icon {
+  position: relative;
+  margin: 0 10px;
+  width: 20px;
+  height: 20px;
+  top: 4px;
+}
+.simulator-product-detail .app-tab .nav-tabs .nav-item .ic-assignment2 {
+  background-image: url(../img/icons/ic_assignment2_blue.png);
+}
+.simulator-product-detail .app-tab .nav-tabs .nav-item .ic-dashboard {
+  background-image: url(../img/icons/ic_dashboard_blue.png);
+}
+.simulator-product-detail .app-tab .nav-tabs .nav-item:hover {
+  border-color: transparent;
+}
+.simulator-product-detail .app-tab .nav-tabs .nav-item.active {
+  background-color: #7ABBFC;
+  color: #FFFFFF;
+  border: 0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  font-weight: bold;
+}
+.simulator-product-detail .app-tab .nav-tabs .nav-item.active .ic-assignment2 {
+  background-image: url(../img/icons/ic_assignment2_white.png);
+}
+.simulator-product-detail .app-tab .nav-tabs .nav-item.active .ic-dashboard {
+  background-image: url(../img/icons/ic_dashboard_white.png);
+}
+.simulator-product-detail .app-tab .tab-pane .pane-body .border-left {
+  border-left: solid 1px #78849E !important;
+}
+.simulator-product-detail .app-tab .tab-pane .pane-body .row-divider {
+  width: 100%;
+  height: 1px;
+  background-color: #78849E;
+  margin: 30px 0;
+}
+.simulator-product-detail .app-tab .tab-pane .pane-body .datepicker-wrapper {
+  width: 220px;
+}
+.simulator-product-detail .app-tab .tab-pane .pane-body .datepicker-wrapper input {
+  border-radius: 8px;
+}
+.simulator-product-detail .app-tab .tab-pane .pane-body .datepicker-wrapper .gj-icon {
+  top: 10px;
+}
+.simulator-product-detail .text-primary {
+  color: #7ABBFC;
+}
+.simulator-product-detail .donut-captions {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.simulator-product-detail .donut-captions .dount-caption-icon {
+  position: relative;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border-radius: 10px;
+  margin-left: 20px;
+  top: 3px;
+  background: var(--bgColor);
+}
+.simulator-product-detail .donut-captions .dount-caption-icon::after {
+  content: "";
+  background: #FFFFFF;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  border-radius: 50%;
+  display: block;
+}
+
 /*# sourceMappingURL=simulator.css.map */
