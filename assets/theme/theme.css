@@ -11562,6 +11562,12 @@ body .main.open-filter .filter-app {
 .cs-btn-img.btn-add-product:hover {
   background-image: url(../img/buttons/btn-add-product-hover.png);
 }
+.cs-btn-img.btn-clear-selection {
+  background-image: url(../img/buttons/btn-clear-selection.png);
+}
+.cs-btn-img.btn-clear-selection:hover {
+  background-image: url(../img/buttons/btn-clear-selection-hover.png);
+}
 .cs-btn-img.btn-send-green {
   background-image: url(../img/buttons/btn-send-green.png);
 }
@@ -11810,6 +11816,9 @@ body .main.open-filter .filter-app {
 .cs-icon.ic-search {
   background-image: url(../img/icons/ic_search.png);
 }
+.cs-icon.ic-search-blue {
+  background-image: url(../img/icons/ic_search_blue.png);
+}
 .cs-icon.ic-upload {
   background-image: url(../img/icons/ic_upload.png);
 }
@@ -11845,6 +11854,9 @@ body .main.open-filter .filter-app {
 }
 .cs-icon.ic-trending-bar {
   background-image: url(../img/icons/ic_trending_bar.png);
+}
+.cs-icon.ic-clear {
+  background-image: url(../img/icons/ic_clear.png);
 }
 
 /* width */

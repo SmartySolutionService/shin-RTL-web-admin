@@ -176,11 +176,13 @@
 #addProductModal .modal-dialog {
   margin: 0;
   width: 100%;
+  overflow: hidden;
 }
 #addProductModal .modal-dialog .modal-content {
   position: relative;
   border-right: none !important;
   border-top: solid 16px #7ABBFC;
+  display: flex;
 }
 #addProductModal .modal-dialog .modal-content .btn-close {
   position: absolute;
@@ -199,31 +201,88 @@
 #addProductModal .modal-dialog .modal-content .modal-right-bar .bar-item {
   padding: 2px 0;
 }
-#addProductModal .modal-dialog .modal-content .modal-right-bar .bar-item .cs-checkbox-container {
-  height: 20px;
-  line-height: 20px;
-  margin-top: 3px !important;
-}
-#addProductModal .modal-dialog .modal-content .modal-right-bar .bar-item .cs-checkbox-container [type=checkbox] {
-  width: 20px;
-  height: 20px;
-}
-#addProductModal .modal-dialog .modal-content .modal-right-bar .bar-item .cs-checkbox-container .checkmark {
-  width: 20px;
-  height: 20px;
-  border-radius: 4px;
-}
-#addProductModal .modal-dialog .modal-content .modal-right-bar .bar-item .cs-checkbox-container .checkmark:after {
-  right: 5px;
-  top: 1px;
-  width: 7px;
-  height: 11px;
-}
 #addProductModal .modal-dialog .modal-content .modal-right-bar .bar-divider {
   width: 100%;
   height: 1px;
   background-color: #BFC5D2;
   margin: 15px 0;
+}
+#addProductModal .modal-dialog .modal-content .modal-left-bar {
+  width: calc(100% - 270px);
+  height: calc(100% - 100px);
+  display: block;
+  padding: 20px 30px;
+  overflow-y: auto;
+  padding-left: 60px;
+}
+#addProductModal .modal-dialog .modal-content .modal-left-bar .list-card {
+  border: solid 1px #A3A0FB;
+  background-color: transparent;
+  -webkit-box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.3);
+  height: 350px;
+  overflow-y: auto;
+}
+#addProductModal .modal-dialog .modal-content .modal-left-bar .list-card .card-header {
+  background: transparent;
+  border-bottom: solid 1px #A3A0FB;
+}
+#addProductModal .modal-dialog .modal-content .modal-left-bar .list-card .card-body ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+#addProductModal .modal-dialog .modal-content .modal-left-bar table thead {
+  background-color: #7abbfc;
+}
+#addProductModal .modal-dialog .modal-content .modal-left-bar table thead tr th {
+  color: #fff;
+}
+#addProductModal .modal-dialog .modal-content .modal-left-bar table thead tr th:first-child {
+  width: 50px;
+}
+#addProductModal .modal-dialog .modal-content .modal-left-bar table tbody tr td {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+#addProductModal .modal-dialog .modal-content .modal-left-bar table tbody tr td:first-child {
+  width: 50px;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+#addProductModal .modal-dialog .modal-content .modal-left-bar table tbody tr td .cs-icon {
+  position: absolute;
+  left: 10px;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+}
+#addProductModal .modal-dialog .modal-content .modal-left-bar .ic-search-blue {
+  position: absolute;
+  top: 12px;
+  left: 28px;
+  width: 15px;
+  height: 15px;
+}
+#addProductModal .modal-dialog .modal-content .cs-checkbox-container {
+  height: 20px;
+  line-height: 20px;
+  margin-top: 3px !important;
+}
+#addProductModal .modal-dialog .modal-content .cs-checkbox-container [type=checkbox] {
+  width: 20px;
+  height: 20px;
+}
+#addProductModal .modal-dialog .modal-content .cs-checkbox-container .checkmark {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+}
+#addProductModal .modal-dialog .modal-content .cs-checkbox-container .checkmark:after {
+  right: 5px;
+  top: 1px;
+  width: 7px;
+  height: 11px;
 }
 #addProductModal .text-primary {
   color: #1E87F0 !important;

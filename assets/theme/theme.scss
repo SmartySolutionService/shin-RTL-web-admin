@@ -1724,6 +1724,12 @@ body {
             background-image: url(../img/buttons/btn-add-product-hover.png);
         }
     }
+    &.btn-clear-selection {
+        background-image: url(../img/buttons/btn-clear-selection.png);
+        &:hover {
+            background-image: url(../img/buttons/btn-clear-selection-hover.png);
+        }
+    }
     &.btn-send-green {
         background-image: url(../img/buttons/btn-send-green.png);
         &:hover {
@@ -1971,6 +1977,9 @@ body {
     &.ic-search {
         background-image: url(../img/icons/ic_search.png);
     }
+    &.ic-search-blue {
+        background-image: url(../img/icons/ic_search_blue.png);
+    }
     &.ic-upload {
         background-image: url(../img/icons/ic_upload.png);
     }
@@ -2006,6 +2015,9 @@ body {
     }
     &.ic-trending-bar {
         background-image: url(../img/icons/ic_trending_bar.png);
+    }
+    &.ic-clear {
+        background-image: url(../img/icons/ic_clear.png);
     }
 }
 

@@ -1034,69 +1034,199 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <button type="button" class="cs-btn-icon btn-close close dark mr-auto" data-dismiss="modal"></button>
-      <div class="modal-right-bar">
-        <h6 class="text-primary text-right">רמת סיכון</h6>
-        <div class="bar-item row mx-0">
-          <label class="cs-checkbox-container m-0">
-            <input type="checkbox" />
-            <span class="checkmark"></span>
-          </label>
-          <label class="mb-0 px-2">1</label>
-        </div>
-        <div class="bar-item row mx-0">
-          <label class="cs-checkbox-container m-0">
-            <input type="checkbox" />
-            <span class="checkmark"></span>
-          </label>
-          <label class="mb-0 px-2">2</label>
-        </div>
-        <div class="bar-item row mx-0">
-          <label class="cs-checkbox-container m-0">
-            <input type="checkbox" />
-            <span class="checkmark"></span>
-          </label>
-          <label class="mb-0 px-2">3</label>
-        </div>
-        <div class="bar-divider"></div>
-        <h6 class="text-primary text-right">מסלולים</h6>
-        <div class="bar-item row mx-0">
-          <label class="cs-checkbox-container m-0">
-            <input type="checkbox" />
-            <span class="checkmark"></span>
-          </label>
-          <label class="mb-0 px-2">לבני 50 ומטה</label>
-        </div>
-        <div class="bar-item row mx-0">
-          <label class="cs-checkbox-container m-0">
-            <input type="checkbox" />
-            <span class="checkmark"></span>
-          </label>
-          <label class="mb-0 px-2">לבני 50 - 60</label>
-        </div>
-        <div class="bar-item row mx-0">
-          <label class="cs-checkbox-container m-0">
-            <input type="checkbox" />
-            <span class="checkmark"></span>
-          </label>
-          <label class="mb-0 px-2">לבני 60 ומעלה</label>
-        </div>
-        <div class="bar-divider"></div>
-        <div class="form-group">
-          <div class="tag-container text-right">
-            <h6 class="text-primary">חברה מנהלת</h6>
-            <div class="tag-wrapper">
-              <div class="tag">חברה מנהלת <span class="tag-remove">&times;</span></div>
+      <div class="row mx-0 h-100 text-right">
+        <div class="modal-right-bar">
+          <h6 class="text-primary text-right">רמת סיכון</h6>
+          <div class="bar-item row mx-0">
+            <label class="cs-checkbox-container m-0">
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="mb-0 px-2">1</label>
+          </div>
+          <div class="bar-item row mx-0">
+            <label class="cs-checkbox-container m-0">
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="mb-0 px-2">2</label>
+          </div>
+          <div class="bar-item row mx-0">
+            <label class="cs-checkbox-container m-0">
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="mb-0 px-2">3</label>
+          </div>
+          <div class="bar-divider"></div>
+          <h6 class="text-primary text-right">מסלולים</h6>
+          <div class="bar-item row mx-0">
+            <label class="cs-checkbox-container m-0">
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="mb-0 px-2">לבני 50 ומטה</label>
+          </div>
+          <div class="bar-item row mx-0">
+            <label class="cs-checkbox-container m-0">
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="mb-0 px-2">לבני 50 - 60</label>
+          </div>
+          <div class="bar-item row mx-0">
+            <label class="cs-checkbox-container m-0">
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="mb-0 px-2">לבני 60 ומעלה</label>
+          </div>
+          <div class="bar-divider"></div>
+          <div class="form-group">
+            <div class="tag-container text-right">
+              <h6 class="text-primary">חברה מנהלת</h6>
+              <div class="tag-wrapper">
+                <div class="tag">חברה מנהלת <span class="tag-remove">&times;</span></div>
+              </div>
+              <div class="autocomplete">
+                <input type="text" class="form-control mt-3" name="tag-input" id="_tag_input" placeholder="בחר חברה מנהלת" />
+              </div>
             </div>
-            <div class="autocomplete">
-              <input type="text" class="form-control mt-3" name="tag-input" id="_tag_input" placeholder="בחר חברה מנהלת" />
+            <div class="row mx-0 mt-3">
+              <button class="btn btn-primary btn-clear-mana-company mr-auto">נקה חברה מנהלת</button>
             </div>
           </div>
-          <div class="row mx-0 mt-3">
-            <button class="btn btn-primary btn-clear-mana-company mr-auto">נקה חברה מנהלת</button>
+        </div>
+        <div class="modal-left-bar">
+          <h5>בחר מוצר להשוואה</h5>
+          <div class="row mt-4">
+            <div class="col-5">
+              <div class="row">
+                <div class="col-6">
+                  <div class="card list-card">
+                    <div class="card-header text-primary text-right font-weight-bold">נושא ראשי</div>
+                    <div class="card-body">
+                      <ul>
+                        <li>גמל</li>
+                        <li>השתלמות</li>
+                        <li>פיצויים</li>
+                        <li>מדדי השוק</li>
+                        <li>מניות ואגח ישראל</li>
+                        <li>מניות ואגח חו"ל</li>
+                        <li>קרנות נאמנות ישראל</li>
+                        <li>קרנות נאמנות חו"ל</li>
+                        <li>תמהילי מוצרים</li>
+                        <li>פוליסות חיסכון</li>
+                        <li>קרנות פנסיה</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="card list-card">
+                    <div class="card-header text-primary text-right font-weight-bold">תת נושא</div>
+                    <div class="card-body">
+                      <ul>
+                        <li>כל התקופות </li>
+                        <li>קרנות השתלמות</li>
+                        <li>קופות גימל</li>
+                        <li>קופות פיצויים</li>
+                        <li>גמל השקעות</li>
+                        <li>חסכון לכל ילד</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-7">
+              <div class="card list-card">
+                <div class="card-header text-primary text-right font-weight-bold">רשימת מוצרים</div>
+                <div class="card-body">
+                  <ul>
+                    <li>רשימת מוצרים</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-5">
+              <h5 class="my-2">מוצרים שנבחרו להוספה</h5>
+            </div>
+            <div class="col-7">
+              <div class="form-group">
+                <input type="text" class="form-control w-100" placeholder="חפש מוצר ברשימה" />
+                <span class="cs-icon ic-search-blue"></span>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="card">
+                <div class="card-body p-0">
+                  <table class="table datatable w-100 m-0">
+                    <thead>
+                      <tr>
+                        <th></th>
+                        <th>בחר</th>
+                        <th>שם קופה</th>
+                        <th>מספר קופה</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <label class="cs-checkbox-container m-0 mr-3 mt-2">
+                            <input type="checkbox" />
+                            <span class="checkmark"></span>
+                          </label>
+                        </td>
+                        <td class="font-weight-bold">מוצר 1</td>
+                        <td>TEXT</td>
+                        <td>
+                          TEXT
+                          <span class="cs-icon ic-clear"></span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <label class="cs-checkbox-container m-0 mr-3 mt-2">
+                            <input type="checkbox" />
+                            <span class="checkmark"></span>
+                          </label>
+                        </td>
+                        <td class="font-weight-bold">מוצר 2</td>
+                        <td>TEXT</td>
+                        <td>
+                          TEXT
+                          <span class="cs-icon ic-clear"></span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <label class="cs-checkbox-container m-0 mr-3 mt-2">
+                            <input type="checkbox" />
+                            <span class="checkmark"></span>
+                          </label>
+                        </td>
+                        <td class="font-weight-bold">מוצר 3</td>
+                        <td>TEXT</td>
+                        <td>
+                          TEXT
+                          <span class="cs-icon ic-clear"></span>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row my-4 mx-0">
+            <button class="cs-btn-img btn-add-product"></button>
+            <button class="cs-btn-img btn-clear-selection"></button>
           </div>
         </div>
       </div>
-      <div class="modal-left-bar"></div>
     </div>
   </div>
 </div>
