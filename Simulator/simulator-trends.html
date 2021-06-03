@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <title>Admin</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- <link rel="stylesheet" href="../assets/bootstrap-4.3.1-dist/css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="../assets/theme/theme.css">
+  <link rel="stylesheet" href="../assets/scss/simulator.css">
+  <!-- plugin css -->
+  <link rel="stylesheet" type="text/css" href="../assets/plugins/DataTables/datatables.css"/>
+  <link rel='stylesheet' href='../assets/plugins/addSlider/src/addSlider.css' />
+  <link rel="stylesheet" href="../assets/plugins/sliding-toggle-switch/lc_switch.css">
+  <link rel="stylesheet" href="../node_modules/chart.js/dist/Chart.min.css">
+  <!-- js -->
+  <script src="../assets/jquery/jquery.min.js"></script>
+  <script src="../assets/plugins/popper/popper.min.js"></script>
+  <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="../node_modules/chart.js/dist/Chart.min.js"></script>
+  <script>
+    function usd(x){
+      if(isNaN(parseInt(x)))
+        return "0$";
+      var dollars = Math.floor(x);
+      return dollars+"$";
+    }
+    function percent(x){
+      if(isNaN(parseInt(x)))
+        return "0%";
+      var percents = Math.floor(x);
+      return percents+"%";
+    }
+  </script>
+</head>
+<body>
+
+<header class="header">
+  <div class="header-top">
+    <div class="dropdown">
+      <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <div class="avatar-container">
+          <img src="../assets/img/icons/ic_account_circle.png" alt="avatar" class="header-avatar" />
+        </div>
+        שם משתמש
+      </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" href="#">Action</a>
+        <a class="dropdown-item" href="#">Another action</a>
+        <a class="dropdown-item" href="#">Something else here</a>
+      </div>
+    </div>
+  </div>
+  <div class="header-nav">
+    <nav class="nav">
+      <div class="header-logo">
+        <a href="#" class="logo-text">LOGO</a>
+      </div>
+      <ul>
+        <li class="">
+          <a href="../Customer/customer-list.html">לקוחות</a>
+        </li>
+        <li class="active">
+          <a class="dropdown-toggle" href="../Simulator/simulator-main.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">סימולטור</a>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <div class="dropdown-block">
+              <h6 class="block-title"><span class="cs-icon ic-assessment ml-2"></span>השוואה וניתוח</h6>
+              <ul>
+                <li><a href="#">סינון מוצרים</a></li>
+                <li><a href="#">השוואת מוצרים</a></li>
+                <li><a href="simulator-trends.html">מגמות</a></li>
+                <li><a href="#">אלוקציה וניתוח</a></li>
+              </ul>
+            </div>
+            <div class="dropdown-block">
+              <h6 class="block-title"><span class="cs-icon ic-pan-tool ml-2"></span>מוצרים נבחרים</h6>
+              <ul>
+                <li><a href="simulator-top5.html">TOP 5</a></li>
+                <li><a href="simulator-top10.html">TOP 10</a></li>
+              </ul>
+            </div>
+            <div class="dropdown-block">
+              <h6 class="block-title"><span class="cs-icon ic-library-add ml-2"></span>הוספת מוצר</h6>
+              <ul>
+                <li><a href="#">קרן P2P</a></li>
+                <li><a href="#">קרן חוב</a></li>
+                <li><a href="#">קרן גידור</a></li>
+                <li><a href="#">השקעות נדל"ן</a></li>
+                <li><a href="#">קרן רייט</a></li>
+                <li><a href="#">קרו אלגו</a></li>
+                <li><a href="#">ביטוח</a></li>
+              </ul>
+            </div>
+            <div class="dropdown-block">
+              <h6 class="block-title"><span class="cs-icon ic-library-books ml-2"></span>מוצר משולב</h6>
+              <ul>
+                <li><a href="#">הוספת מוצר משולב</a></li>
+              </ul>
+            </div>
+            <div class="dropdown-block">
+              <h6 class="block-title"><span class="cs-icon ic-keyboard ml-2"></span>מחשבונים</h6>
+              <ul>
+                <li><a href="#">מינוף רגיל</a></li>
+                <li><a href="#">מינוף כפול</a></li>
+                <li><a href="#">IRR</a></li>
+                <li><a href="#">חסכון ליצירת קצבח</a></li>
+                <li><a href="#">תוצאות מינוף</a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="">
+          <a href="#">CRM</a>
+        </li>
+        <li class="">
+          <a href="#">מעקב ביצוע</a>
+        </li>
+        <li class="">
+          <a href="#">ניהול וקליטת נתונים</a>
+        </li>
+        <li class="">
+          <a href="#">דוחות</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+  
+<div class="main simulator-trends">
+  <div class="filter-app">
+    <div class="app-header px-0 m-0">
+      <div class="row app-header-top">
+        <div class="col-xl-7 col-lg-7 col-md-7 col-sm-7 col-7">
+          <span class="title">מגמות</span>
+        </div>
+        <div class="col-xl-5 col-lg-5 col-md-5 col-sm-5 col-5 text-left">
+          <div class="cs-btn-group ml-3">
+            <a class="cs-btn-icon btn-print" href="javascript:void(0)"></a>
+            <label>הדפס</label>
+          </div>
+          <div class="cs-btn-group ml-0">
+            <a class="cs-btn-icon btn-email" href="javascript:void(0)"></a>
+            <label>אימייל</label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="app-body mb-5">
+        <div class="pane-chart p-0" id="customer-management-chart">
+            <div class="chart-header">
+                <div class="row m-0">
+                    <div class="label pt-1">מוצרים</div>
+                    <div class="chart-tags-group">
+                        <div class="chart-tag tag-blue-magenta" data-value="IRA- TCA">IRA- TCA<div class="cs-icon ic-times"></div></div>
+                        <div class="chart-tag tag-caparol" data-value="IRA- PRESTIGE">IRA- PRESTIGE<div class="cs-icon ic-times"></div></div>
+                        <div class="chart-tag tag-purple" data-value="IRA- MONTEUX">IRA- MONTEUX<div class="cs-icon ic-times"></div></div>
+                        <div class="chart-tag tag-pantone" data-value="IRA- TCA">IRA- TCA<div class="cs-icon ic-times"></div></div>
+                    </div>
+                    <button class="cs-btn-img btn-add-product-dark mr-3" data-toggle="modal" data-target="#addProductModal"></button>
+                </div>
+                <div class="row mt-4 mx-0">
+                    <div class="col-mxl-6 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                        <div class="row mb-3">
+                            <div class="label pt-2">בחר תקופה</div>
+                            <div class="days-group">
+                                <button class="btn btn-day active" data-value="monday">חודש</button>
+                                <button class="btn btn-day" data-value="tuesday">רבעון</button>
+                                <button class="btn btn-day" data-value="wendesday">חצי שנתי</button>
+                                <button class="btn btn-day" data-value="thursday">שנה</button>
+                                <button class="btn btn-day" data-value="friday">שנתיים</button>
+                                <button class="btn btn-day" data-value="saturday">שלוש שנים</button>
+                                <button class="btn btn-day" data-value="sunday">חמש שנים</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-mxl-6 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                        <div class="row filter-options mb-3">
+                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 dropdown-wrapper">
+                                <select class="form-control">
+                                    <option>אחזקות</option>
+                                </select>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 dropdown-wrapper">
+                                <div class="input-group-prepend multiple-dropdown m-0">
+                                    <input class="btn btn-outline-secondary dropdown-toggle" type="text" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" placeholder="מדדי איכות" />
+                                    <div class="dropdown-menu">
+                                        <li class="dropdown-item">קופות גמל 
+                                            <label class="cs-checkbox-container checkbox-small m-0">
+                                            <input type="checkbox" />
+                                            <span class="checkmark"></span>
+                                            </label>
+                                        </li>
+                                        <li class="dropdown-item">קרנות השתלמות 
+                                            <label class="cs-checkbox-container checkbox-small m-0">
+                                            <input type="checkbox" />
+                                            <span class="checkmark"></span>
+                                            </label>
+                                        </li>
+                                        <li class="dropdown-item">קרנות פנסיה 
+                                            <label class="cs-checkbox-container checkbox-small m-0">
+                                            <input type="checkbox" />
+                                            <span class="checkmark"></span>
+                                            </label>
+                                        </li>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 dropdown-wrapper">
+                                <div class="input-group-prepend multiple-dropdown m-0">
+                                    <input class="btn btn-outline-secondary dropdown-toggle" type="text" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" placeholder="סטטיסטיקה" />
+                                    <div class="dropdown-menu">
+                                        <li class="dropdown-item">קופות גמל 
+                                            <label class="cs-checkbox-container checkbox-small m-0">
+                                            <input type="checkbox" />
+                                            <span class="checkmark"></span>
+                                            </label>
+                                        </li>
+                                        <li class="dropdown-item">קרנות השתלמות 
+                                            <label class="cs-checkbox-container checkbox-small m-0">
+                                            <input type="checkbox" />
+                                            <span class="checkmark"></span>
+                                            </label>
+                                        </li>
+                                        <li class="dropdown-item">קרנות פנסיה 
+                                            <label class="cs-checkbox-container checkbox-small m-0">
+                                            <input type="checkbox" />
+                                            <span class="checkmark"></span>
+                                            </label>
+                                        </li>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="chart-body">
+                <canvas id="myChart"></canvas>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Add Product Modal -->
+<div class="modal" id="addProductModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <button type="button" class="cs-btn-icon btn-close close dark mr-auto" data-dismiss="modal"></button>
+      <div class="row mx-0 h-100 text-right">
+        <div class="modal-right-bar">
+          <h6 class="text-primary text-right">רמת סיכון</h6>
+          <div class="bar-item row mx-0">
+            <label class="cs-checkbox-container m-0">
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="mb-0 px-2">1</label>
+          </div>
+          <div class="bar-item row mx-0">
+            <label class="cs-checkbox-container m-0">
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="mb-0 px-2">2</label>
+          </div>
+          <div class="bar-item row mx-0">
+            <label class="cs-checkbox-container m-0">
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="mb-0 px-2">3</label>
+          </div>
+          <div class="bar-divider"></div>
+          <h6 class="text-primary text-right">מסלולים</h6>
+          <div class="bar-item row mx-0">
+            <label class="cs-checkbox-container m-0">
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="mb-0 px-2">לבני 50 ומטה</label>
+          </div>
+          <div class="bar-item row mx-0">
+            <label class="cs-checkbox-container m-0">
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="mb-0 px-2">לבני 50 - 60</label>
+          </div>
+          <div class="bar-item row mx-0">
+            <label class="cs-checkbox-container m-0">
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="mb-0 px-2">לבני 60 ומעלה</label>
+          </div>
+          <div class="bar-divider"></div>
+          <div class="form-group">
+            <div class="tag-container text-right">
+              <h6 class="text-primary">חברה מנהלת</h6>
+              <div class="tag-wrapper">
+                <div class="tag">חברה מנהלת <span class="tag-remove">&times;</span></div>
+              </div>
+              <div class="autocomplete">
+                <input type="text" class="form-control mt-3" name="tag-input" id="_tag_input" placeholder="בחר חברה מנהלת" />
+              </div>
+            </div>
+            <div class="row mx-0 mt-3">
+              <button class="btn btn-primary btn-clear-mana-company mr-auto">נקה חברה מנהלת</button>
+            </div>
+          </div>
+        </div>
+        <div class="modal-left-bar">
+          <h5>בחר מוצר להשוואה</h5>
+          <div class="row mt-4">
+            <div class="col-5">
+              <div class="row">
+                <div class="col-6">
+                  <div class="card list-card">
+                    <div class="card-header text-primary text-right font-weight-bold">נושא ראשי</div>
+                    <div class="card-body">
+                      <ul>
+                        <li>גמל</li>
+                        <li>השתלמות</li>
+                        <li>פיצויים</li>
+                        <li>מדדי השוק</li>
+                        <li>מניות ואגח ישראל</li>
+                        <li>מניות ואגח חו"ל</li>
+                        <li>קרנות נאמנות ישראל</li>
+                        <li>קרנות נאמנות חו"ל</li>
+                        <li>תמהילי מוצרים</li>
+                        <li>פוליסות חיסכון</li>
+                        <li>קרנות פנסיה</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="card list-card">
+                    <div class="card-header text-primary text-right font-weight-bold">תת נושא</div>
+                    <div class="card-body">
+                      <ul>
+                        <li>כל התקופות </li>
+                        <li>קרנות השתלמות</li>
+                        <li>קופות גימל</li>
+                        <li>קופות פיצויים</li>
+                        <li>גמל השקעות</li>
+                        <li>חסכון לכל ילד</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-7">
+              <div class="card list-card">
+                <div class="card-header text-primary text-right font-weight-bold">רשימת מוצרים</div>
+                <div class="card-body">
+                  <ul>
+                    <li>רשימת מוצרים</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-5">
+              <h5 class="my-2">מוצרים שנבחרו להוספה</h5>
+            </div>
+            <div class="col-7">
+              <div class="form-group">
+                <input type="text" class="form-control w-100" placeholder="חפש מוצר ברשימה" />
+                <span class="cs-icon ic-search-blue"></span>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="card">
+                <div class="card-body p-0">
+                  <table class="table datatable w-100 m-0">
+                    <thead>
+                      <tr>
+                        <th></th>
+                        <th>בחר</th>
+                        <th>שם קופה</th>
+                        <th>מספר קופה</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <label class="cs-checkbox-container m-0 mr-3 mt-2">
+                            <input type="checkbox" />
+                            <span class="checkmark"></span>
+                          </label>
+                        </td>
+                        <td class="font-weight-bold">מוצר 1</td>
+                        <td>TEXT</td>
+                        <td>
+                          TEXT
+                          <span class="cs-icon ic-clear"></span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <label class="cs-checkbox-container m-0 mr-3 mt-2">
+                            <input type="checkbox" />
+                            <span class="checkmark"></span>
+                          </label>
+                        </td>
+                        <td class="font-weight-bold">מוצר 2</td>
+                        <td>TEXT</td>
+                        <td>
+                          TEXT
+                          <span class="cs-icon ic-clear"></span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <label class="cs-checkbox-container m-0 mr-3 mt-2">
+                            <input type="checkbox" />
+                            <span class="checkmark"></span>
+                          </label>
+                        </td>
+                        <td class="font-weight-bold">מוצר 3</td>
+                        <td>TEXT</td>
+                        <td>
+                          TEXT
+                          <span class="cs-icon ic-clear"></span>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row my-4 mx-0">
+            <button class="cs-btn-img btn-add-product"></button>
+            <button class="cs-btn-img btn-clear-selection"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- plugin js -->
+<script type="text/javascript" src="../assets/plugins/DataTables/datatables.min.js"></script>
+<script src="../assets/plugins/bar-rating/jquery.barrating.js"></script>
+<script src='../assets/plugins/addSlider/res/Obj.min.js'></script>
+<script src='../assets/plugins/addSlider/src/addSlider.js'></script>
+<script src="../assets/plugins/sliding-toggle-switch/lc_switch.js" type="text/javascript"></script>
+<script src="../assets/js/autocomplete.js" type="text/javascript"></script>
+<script src="../assets/js/form-validation.js" type="text/javascript"></script>
+<script src="../assets/js/common.js" type="text/javascript"></script>
+<script src="../assets/custom/square-rater/square-rater.js" type="text/javascript"></script>
+<script src="../assets/custom/rate-color-bar/rate-color-bar.js" type="text/javascript"></script>
+
+<!-- ./plugin js -->
+<script>
+  // datatable init
+  $(document).ready(function() {
+    $('.datatable').DataTable({
+      paging: false,
+      // scrollY: 400,
+      searching: false
+      // ordering:  false
+    });
+  } );
+  // tag input
+  var tags = ["tag1", "tag2", "tag3", "tag4", "tag5"];
+  autocomplete(document.getElementById("_tag_input"), tags);
+</script>
+<script type="text/javascript">
+  $(document).ready(function(e) {
+      $('input.lcs_check').lc_switch('פעיל', 'deactive');
+  
+      // triggered each time a field changes status
+      $(document).on('lcs-statuschange', '.lcs_check', function() {
+          var status 	= ($(this).is(':checked')) ? 'checked' : 'unchecked',
+      subj 	= ($(this).attr('type') == 'radio') ? 'radio #' : 'checkbox #',
+      num		= $(this).val(); 
+          
+    $('#third_div ul').prepend('<li><em>[lcs-statuschange]</em>'+ subj + num +' changed status: '+ status +'</li>');
+      });
+      
+      
+      // triggered each time a field is checked
+      $(document).on('lcs-on', '.lcs_check', function() {
+    var subj 	= ($(this).attr('type') == 'radio') ? 'radio #' : 'checkbox #',
+      num		= $(this).val(); 
+    
+    $('#third_div ul').prepend('<li><em>[lcs-on]</em>'+ subj + num +' is checked</li>');
+      });
+      
+      
+      // triggered each time a is unchecked
+      $(document).on('lcs-off', '.lcs_check', function() {
+          var subj 	= ($(this).attr('type') == 'radio') ? 'radio #' : 'checkbox #',
+      num		= $(this).val(); 
+    
+    $('#third_div ul').prepend('<li><em>[lcs-off]</em>'+ subj + num +' is unchecked</li>');
+      });
+  });
+
+
+  // clean events log
+  $('#third_div small').click(function() {
+    $('#third_div ul').empty();
+  });
+</script>
+<!-- script -->
+<script>
+  $(function() {
+    $('.filter-variable-reset').hide();
+    $('.filter-variable-mana').hide();
+  });
+  $(document).on('click', '.filter-toggle', function() {
+    $('.main').addClass('open-filter');
+    $('.settings-form').removeClass('open');
+    $('.filter-form').addClass('open');
+    $('.filter-toggle').hide();
+    $('.filter-variable-reset').show();
+    $('.filter-variable-mana').show();
+  });
+  $(document).on('click', '.filter-variable-reset', function() {
+    $('.main').addClass('open-filter');
+    $('.settings-form').removeClass('open');
+    $('.filter-form').addClass('open');
+  });
+  // $(document).on('click', '.filter-variable-mana', function() {
+  //   $('.main').addClass('open-filter');
+  //   $('.filter-form').removeClass('open');
+  //   $('.settings-form').addClass('open');
+  // });
+  $(document).on('click', '.filter-close', function() {
+    $('.main').removeClass('open-filter');
+    $('.filter-toggle').show();
+    $('.filter-variable-reset').hide();
+    $('.filter-variable-mana').hide();
+  });
+</script>
+<script>
+  // mana company tag
+  $(document).on('keyup', 'input[name=tag-input]', function(e) {
+    if($(this).val() != '' && e.keyCode == 13) {
+      $('.tag-wrapper').append('<div class="tag">' + e.target.value + '<span class="tag-remove">&times;</span></div>');
+      $(this).val('');
+    }
+  });
+  $(document).on('click', '.tag-remove', function() {
+    $(this).closest('.tag').remove();
+  });
+  $(document).on('click', '.btn-clear-mana-company', function() {
+    $('.tag-wrapper').empty();
+    $('input[name=tag-input]').val('');
+  });
+</script>
+<script>
+  var ctx = document.getElementById('myChart').getContext('2d');
+  var myChart = new Chart(ctx, {
+      type: 'line',
+      data: {
+          labels: ['', 'תקופה 1', 'תקופה 2', 'תקופה 3', 'תקופה 4', ''],
+          datasets: [
+            {
+              label: '# of Votes',
+              data: [12, 19, 3, 5, 2, 3],
+              backgroundColor: '#FFFFFF',
+              borderColor: '#A3A0FB',
+              borderWidth: 2,
+              lineTension: 0,
+              fill: false,
+              showLine: true
+          },
+          {
+              label: '# of Votes',
+              data: [19, 3, 5, 2, 3, 12],
+              backgroundColor: '#FFFFFF',
+              borderColor: '#21D102',
+              borderWidth: 2,
+              lineTension: 0,
+              fill: false,
+              showLine: true
+          }
+          ,
+          {
+              label: '# of Votes',
+              data: [3, 5, 2, 3, 12, 19],
+              backgroundColor: '#FFFFFF',
+              borderColor: '#B202D1',
+              borderWidth: 2,
+              lineTension: 0,
+              fill: false,
+              showLine: true
+          }
+          ,
+          {
+              label: '# of Votes',
+              data: [5, 2, 3, 12, 19, 3],
+              backgroundColor: '#FFFFFF',
+              borderColor: '#32D296',
+              borderWidth: 2,
+              lineTension: 0,
+              fill: false,
+              showLine: true
+          }
+        ]
+      },
+      options: {
+        legend: {
+            display: false
+        },
+        responsive: true,
+        maintainAspectRatio: false,
+        scales: {
+          yAxes: [{
+              ticks: {
+                  beginAtZero: true,
+                  stepSize: 5,
+                  callback: function(value, index, values) {
+                      return value + "%";
+                  }
+              }
+          }]
+        }
+      }
+  });
+</script>
+<script>
+  // days group control
+  $(document).on('click', '.btn-day', function() {
+    $('.btn-day').removeClass('active');
+    $(this).addClass('active');
+    console.log('selected day: ', $(this).data('value'));
+  });
+  // chart-tags group control
+  $(document).on('click', '.chart-tags-group .chart-tag .ic-times', function() {
+    $parent = $(this).parent('.chart-tag').remove();
+    console.log("removed item: ", $parent.data('value'));
+  });
+  var default_chart_tags;
+  $(function() {
+    default_chart_tags = $('.chart-tags-group').html();
+  })
+  $(document).on('click', '.btn-chart-tag-add', function() {
+    $('.chart-tags-group').html(default_chart_tags);
+  });
+</script>
+<!-- ./script -->
+</body>
+</html>

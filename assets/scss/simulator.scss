@@ -431,7 +431,7 @@
 /*******************************************************/ 
 /*************** *** Simulator Top 10  *** *************/ 
 /*******************************************************/ 
-.simulator-top10 {
+.simulator-top10, .simulator-top5 {
     .filter-app {
         width: 100% !important;
         .app-header {
@@ -563,6 +563,82 @@
                                         top: 1px;
                                         width: 8px;
                                         height: 12px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*******************************************************/ 
+/*************** *** Simulator Trends  *** *************/ 
+/*******************************************************/ 
+.simulator-trends {
+    .filter-app {
+        width: 100% !important;
+        .app-header {
+            border-bottom: none !important;
+            height: 150px !important;
+            .app-header-top {
+                .btn-add-product {
+                    width: 190px;
+                }
+                .cs-btn-group {
+                    display: inline-block;
+                    .cs-btn-icon {
+                        display: block;
+                        margin: 0;
+                    }
+                    label {
+                        display: block;
+                        text-align: center;
+                        font-size: 12px;
+                        margin-top: 5px;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+        .app-body {
+            .chart-header {
+                .chart-tags-group {
+                    border-left: solid 1px #485272;
+                    padding-left: 20px;
+                }
+                .chart-tag {
+                    height: 27px !important;
+                    border-radius: 27px !important;
+                    font-size: 11px !important;
+                }
+                .cs-btn-img {
+                    width: 105px;
+                    height: 27px;
+                }
+                .filter-options {
+                    .dropdown-wrapper {
+                        .input-group-prepend {
+                            width: 100% !important;
+                            &:before {
+                                top: 17px !important;
+                            }
+                            .dropdown-toggle {
+                                width: 100% !important;
+                                height: 100% !important;
+                                font-size: 16px !important;
+                            }
+                            .dropdown-menu {
+                                width: 100% !important;
+                                .dropdown-item {
+                                    width: 100% !important;
+                                    font-size: 16px;
+                                    .cs-checkbox-container {
+                                        top: 5px;
+                                        width: 15px !important;
+                                        height: 15px !important;
                                     }
                                 }
                             }

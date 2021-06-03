@@ -11568,6 +11568,12 @@ body .main.open-filter .filter-app {
 .cs-btn-img.btn-add-product:hover {
   background-image: url(../img/buttons/btn-add-product-hover.png);
 }
+.cs-btn-img.btn-add-product-dark {
+  background-image: url(../img/buttons/btn-add-product-dark.png);
+}
+.cs-btn-img.btn-add-product-dark:hover {
+  background-image: url(../img/buttons/btn-add-product-dark-hover.png);
+}
 .cs-btn-img.btn-clear-selection {
   background-image: url(../img/buttons/btn-clear-selection.png);
 }

@@ -1730,6 +1730,12 @@ body {
             background-image: url(../img/buttons/btn-add-product-hover.png);
         }
     }
+    &.btn-add-product-dark {
+        background-image: url(../img/buttons/btn-add-product-dark.png);
+        &:hover {
+            background-image: url(../img/buttons/btn-add-product-dark-hover.png);
+        }
+    }
     &.btn-clear-selection {
         background-image: url(../img/buttons/btn-clear-selection.png);
         &:hover {
