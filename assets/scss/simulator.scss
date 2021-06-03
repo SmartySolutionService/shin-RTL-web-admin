@@ -400,30 +400,31 @@
     .text-primary {
         color: #7ABBFC;
     }
-    .donut-captions {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        .dount-caption-icon {
-            position: relative;
-            display: inline-block;
-            width: 16px;
-            height: 16px;
-            border-radius: 10px;
-            margin-left: 20px;
+}
+
+.donut-captions {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    .dount-caption-icon {
+        position: relative;
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        border-radius: 10px;
+        margin-left: 20px;
+        top: 3px;
+        background: var(--bgColor);
+        &::after {
+            content: "";
+            background: #FFFFFF;
+            width: 10px;
+            height: 10px;
+            position: absolute;
             top: 3px;
-            background: var(--bgColor);
-            &::after {
-                content: "";
-                background: #FFFFFF;
-                width: 10px;
-                height: 10px;
-                position: absolute;
-                top: 3px;
-                right: 3px;
-                border-radius: 50%;
-                display: block;
-            }
+            right: 3px;
+            border-radius: 50%;
+            display: block;
         }
     }
 }
@@ -431,7 +432,7 @@
 /*******************************************************/ 
 /*************** *** Simulator Top 10  *** *************/ 
 /*******************************************************/ 
-.simulator-top10, .simulator-top5 {
+.simulator-top10, .simulator-top5, .simulator-allocation-and-analysis {
     .filter-app {
         width: 100% !important;
         .app-header {
@@ -647,5 +648,77 @@
                 }
             }
         }
+    }
+}
+
+/*******************************************************/ 
+/***** *** Simulator Allocation and Analysis  *** ******/ 
+/*******************************************************/ 
+.simulator-allocation-and-analysis {
+    .cs-btn-img {
+        &.btn-send {
+            width: 190px;
+        }
+        &.btn-save-green {
+            width: 169px;
+        }
+        &.btn-add-product-for-comparison {
+            width: 239px;
+        }
+        &.btn-copy-client-file {
+            width: 191px;
+        }
+    }
+    .table {
+        tr {
+            td {
+                &.bg-danger {
+                    background-color: #DE0101 !important;
+                }
+                &:first-child {
+                    padding-right: 20px !important;
+                    .details-control {
+                        display: inline-flex;
+                        width: 50px;
+                        height: 40px;
+                        padding: 10px 15px;
+                        border: none !important;
+                        .cs-icon {
+                            width: 15px;
+                            height: 15px;
+                            top: 25px;
+                            &.ic-collapse-pm {
+                                background-image: url(../img/icons/ic_plus_blue.png);
+                            }
+                        }
+                        &.shown {
+                            .ic-collapse-pm {
+                                background-image: url(../img/icons/ic_minus_blue.png);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        tfoot {
+            tr {
+                background-color: #485272;
+                td {
+                    color: #ffffff;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    .card {
+        &.card-border-top {
+            border-top: solid 16px #7ABBFC;
+        }
+        .border-left {
+            border-left: solid 1px #78849E;
+        }
+    }
+    .form-control {
+        max-width: 220px;
     }
 }

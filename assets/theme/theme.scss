@@ -1706,6 +1706,12 @@ body {
             background-image: url(../img/buttons/btn-save-hover.png);
         }
     }
+    &.btn-save-green {
+        background-image: url(../img/buttons/btn-save-green.png);
+        &:hover {
+            background-image: url(../img/buttons/btn-save-green-hover.png);
+        }
+    }
     &.btn-compare-marked {
         background-image: url(../img/buttons/btn-compare-marked.png);
         &:hover {
@@ -1716,6 +1722,18 @@ body {
         background-image: url(../img/buttons/btn-send.png);
         &:hover {
             background-image: url(../img/buttons/btn-send-hover.png);
+        }
+    }
+    &.btn-add-product-for-comparison {
+        background-image: url(../img/buttons/btn-add-product-for-comparison.png);
+        &:hover {
+            background-image: url(../img/buttons/btn-add-product-for-comparison-hover.png);
+        }
+    }   
+    &.btn-copy-client-file {
+        background-image: url(../img/buttons/btn-copy-client-file.png);
+        &:hover {
+            background-image: url(../img/buttons/btn-copy-client-file-hover.png);
         }
     }
      &.btn-show-results {
