@@ -1718,6 +1718,12 @@ body {
             background-image: url(../img/buttons/btn-send-hover.png);
         }
     }
+     &.btn-show-results {
+        background-image: url(../img/buttons/btn-show-results.png);
+        &:hover {
+            background-image: url(../img/buttons/btn-show-results-hover.png);
+        }
+    }
     &.btn-add-product {
         background-image: url(../img/buttons/btn-add-product.png);
         &:hover {

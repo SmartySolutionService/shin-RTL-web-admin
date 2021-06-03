@@ -427,3 +427,149 @@
         }
     }
 }
+
+/*******************************************************/ 
+/*************** *** Simulator Top 10  *** *************/ 
+/*******************************************************/ 
+.simulator-top10 {
+    .filter-app {
+        width: 100% !important;
+        .app-header {
+            border-bottom: none !important;
+            .app-header-top {
+                .btn-add-product {
+                    width: 190px;
+                }
+                .cs-btn-group {
+                    display: inline-block;
+                    .cs-btn-icon {
+                        display: block;
+                        margin: 0;
+                    }
+                    label {
+                        display: block;
+                        text-align: center;
+                        font-size: 12px;
+                        margin-top: 5px;
+                        font-weight: 600;
+                    }
+                }
+            }
+            .app-header-bottom {
+                .btn-show-results {
+                    width: 190px;
+                }
+                .input-group-prepend {
+                    width: 100%;
+                    &:before {
+                        top: 22px;
+                    }
+                    .dropdown-toggle {
+                        width: 100%;
+                        height: 45px;
+                        font-size: 16px;
+                    }
+                    .dropdown-menu {
+                        width: 100% !important;
+                        .dropdown-item {
+                            width: 100% !important;
+                            font-size: 16px;
+                            padding-right: 30px;
+                            .cs-checkbox-container {
+                                float: right;
+                                width: 18px;
+                                height: 18px;
+                                top: 3px;
+                                right: -10px;
+                                [type=checkbox] {
+                                    width: 18px;
+                                    height: 18px;
+                                }
+                                .checkmark {
+                                    width: 18px;
+                                    height: 18px;
+                                    &:after {
+                                        right: 5px;
+                                        top: 2px;
+                                        width: 6px;
+                                        height: 11px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .app-body {
+            table {
+                thead {
+                    background-color: #7ABCFF;
+                    tr {
+                        th {
+                            position: relative;
+                            color: #ffffff;
+                            .cs-icon {
+                                position: absolute;
+                                top: 15px;
+                                right: 15px;
+                            }
+                            .cs-btn-icon {
+                                position: absolute;
+                                left: 10px;
+                                top: 10px;
+                                width: 20px;
+                                height: 20px;
+                                margin: 0;
+                                opacity: 1;
+                            }
+                            a {
+                                color: #485272;
+                                &:hover {
+                                    color: #001553;
+                                }
+                            }
+                        }
+                    }
+                }
+                tbody {
+                    tr {
+                        td {
+                            position: relative;
+                            padding-right: 20px;
+                            padding-left: 20px;
+                            &:first-child {
+                                padding-right: 0;
+                                padding-left: 0;
+                            }
+                            .cs-icon {
+                                position: absolute;
+                                top: 15px;
+                                right: 15px;
+                            }
+                            .cs-checkbox-container {
+                                height: 20px;
+                                line-height: 20px;
+                                [type=checkbox] {
+                                    width: 20px;
+                                    height: 20px;
+                                }
+                                .checkmark {
+                                    width: 20px;
+                                    height: 20px;
+                                    border-radius: 4px;
+                                    &:after {
+                                        right: 4px;
+                                        top: 1px;
+                                        width: 8px;
+                                        height: 12px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

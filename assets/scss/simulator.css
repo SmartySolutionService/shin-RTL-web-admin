@@ -381,4 +381,134 @@
   display: block;
 }
 
+/*******************************************************/
+/*************** *** Simulator Top 10  *** *************/
+/*******************************************************/
+.simulator-top10 .filter-app {
+  width: 100% !important;
+}
+.simulator-top10 .filter-app .app-header {
+  border-bottom: none !important;
+}
+.simulator-top10 .filter-app .app-header .app-header-top .btn-add-product {
+  width: 190px;
+}
+.simulator-top10 .filter-app .app-header .app-header-top .cs-btn-group {
+  display: inline-block;
+}
+.simulator-top10 .filter-app .app-header .app-header-top .cs-btn-group .cs-btn-icon {
+  display: block;
+  margin: 0;
+}
+.simulator-top10 .filter-app .app-header .app-header-top .cs-btn-group label {
+  display: block;
+  text-align: center;
+  font-size: 12px;
+  margin-top: 5px;
+  font-weight: 600;
+}
+.simulator-top10 .filter-app .app-header .app-header-bottom .btn-show-results {
+  width: 190px;
+}
+.simulator-top10 .filter-app .app-header .app-header-bottom .input-group-prepend {
+  width: 100%;
+}
+.simulator-top10 .filter-app .app-header .app-header-bottom .input-group-prepend:before {
+  top: 22px;
+}
+.simulator-top10 .filter-app .app-header .app-header-bottom .input-group-prepend .dropdown-toggle {
+  width: 100%;
+  height: 45px;
+  font-size: 16px;
+}
+.simulator-top10 .filter-app .app-header .app-header-bottom .input-group-prepend .dropdown-menu {
+  width: 100% !important;
+}
+.simulator-top10 .filter-app .app-header .app-header-bottom .input-group-prepend .dropdown-menu .dropdown-item {
+  width: 100% !important;
+  font-size: 16px;
+  padding-right: 30px;
+}
+.simulator-top10 .filter-app .app-header .app-header-bottom .input-group-prepend .dropdown-menu .dropdown-item .cs-checkbox-container {
+  float: right;
+  width: 18px;
+  height: 18px;
+  top: 3px;
+  right: -10px;
+}
+.simulator-top10 .filter-app .app-header .app-header-bottom .input-group-prepend .dropdown-menu .dropdown-item .cs-checkbox-container [type=checkbox] {
+  width: 18px;
+  height: 18px;
+}
+.simulator-top10 .filter-app .app-header .app-header-bottom .input-group-prepend .dropdown-menu .dropdown-item .cs-checkbox-container .checkmark {
+  width: 18px;
+  height: 18px;
+}
+.simulator-top10 .filter-app .app-header .app-header-bottom .input-group-prepend .dropdown-menu .dropdown-item .cs-checkbox-container .checkmark:after {
+  right: 5px;
+  top: 2px;
+  width: 6px;
+  height: 11px;
+}
+.simulator-top10 .filter-app .app-body table thead {
+  background-color: #7ABCFF;
+}
+.simulator-top10 .filter-app .app-body table thead tr th {
+  position: relative;
+  color: #ffffff;
+}
+.simulator-top10 .filter-app .app-body table thead tr th .cs-icon {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+.simulator-top10 .filter-app .app-body table thead tr th .cs-btn-icon {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  opacity: 1;
+}
+.simulator-top10 .filter-app .app-body table thead tr th a {
+  color: #485272;
+}
+.simulator-top10 .filter-app .app-body table thead tr th a:hover {
+  color: #001553;
+}
+.simulator-top10 .filter-app .app-body table tbody tr td {
+  position: relative;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.simulator-top10 .filter-app .app-body table tbody tr td:first-child {
+  padding-right: 0;
+  padding-left: 0;
+}
+.simulator-top10 .filter-app .app-body table tbody tr td .cs-icon {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+.simulator-top10 .filter-app .app-body table tbody tr td .cs-checkbox-container {
+  height: 20px;
+  line-height: 20px;
+}
+.simulator-top10 .filter-app .app-body table tbody tr td .cs-checkbox-container [type=checkbox] {
+  width: 20px;
+  height: 20px;
+}
+.simulator-top10 .filter-app .app-body table tbody tr td .cs-checkbox-container .checkmark {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+}
+.simulator-top10 .filter-app .app-body table tbody tr td .cs-checkbox-container .checkmark:after {
+  right: 4px;
+  top: 1px;
+  width: 8px;
+  height: 12px;
+}
+
 /*# sourceMappingURL=simulator.css.map */
