@@ -170,4 +170,63 @@
   right: 15px;
 }
 
+#addProductModal {
+  padding: 50px !important;
+}
+#addProductModal .modal-dialog {
+  margin: 0;
+  width: 100%;
+}
+#addProductModal .modal-dialog .modal-content {
+  position: relative;
+  border-right: none !important;
+  border-top: solid 16px #7ABBFC;
+}
+#addProductModal .modal-dialog .modal-content .btn-close {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 30px;
+  height: 30px;
+  opacity: 1;
+}
+#addProductModal .modal-dialog .modal-content .modal-right-bar {
+  border-left: solid 1px #78849E;
+  width: 270px;
+  height: 100%;
+  padding: 20px;
+}
+#addProductModal .modal-dialog .modal-content .modal-right-bar .bar-item {
+  padding: 2px 0;
+}
+#addProductModal .modal-dialog .modal-content .modal-right-bar .bar-item .cs-checkbox-container {
+  height: 20px;
+  line-height: 20px;
+  margin-top: 3px !important;
+}
+#addProductModal .modal-dialog .modal-content .modal-right-bar .bar-item .cs-checkbox-container [type=checkbox] {
+  width: 20px;
+  height: 20px;
+}
+#addProductModal .modal-dialog .modal-content .modal-right-bar .bar-item .cs-checkbox-container .checkmark {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+}
+#addProductModal .modal-dialog .modal-content .modal-right-bar .bar-item .cs-checkbox-container .checkmark:after {
+  right: 5px;
+  top: 1px;
+  width: 7px;
+  height: 11px;
+}
+#addProductModal .modal-dialog .modal-content .modal-right-bar .bar-divider {
+  width: 100%;
+  height: 1px;
+  background-color: #BFC5D2;
+  margin: 15px 0;
+}
+#addProductModal .text-primary {
+  color: #1E87F0 !important;
+}
+
 /*# sourceMappingURL=simulator.css.map */

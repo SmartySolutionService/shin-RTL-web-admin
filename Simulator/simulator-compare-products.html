@@ -11,12 +11,12 @@
   <link rel="stylesheet" type="text/css" href="../assets/plugins/DataTables/datatables.css"/>
   <link rel='stylesheet' href='../assets/plugins/addSlider/src/addSlider.css' />
   <link rel="stylesheet" href="../assets/plugins/sliding-toggle-switch/lc_switch.css">
-  <link rel="stylesheet" href="../assets/custom/square-rater/square-rater.css">
-  <link rel="stylesheet" href="../assets/custom/rate-color-bar/rate-color-bar.css">
+  <link rel="stylesheet" href="../node_modules/chart.js/dist/Chart.min.css">
   <!-- js -->
   <script src="../assets/jquery/jquery.min.js"></script>
   <script src="../assets/plugins/popper/popper.min.js"></script>
   <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="../node_modules/chart.js/dist/Chart.min.js"></script>
   <script>
     function usd(x){
       if(isNaN(parseInt(x)))
@@ -131,7 +131,7 @@
       <div class="row app-header-top">
         <div class="col-xl-7 col-lg-7 col-md-7 col-sm-7 col-7">
           <span class="title">השוואת מוצרים</span>
-          <button class="cs-btn-img btn-add-product mr-5" style="top: 15px" data-toggle="modal" data-target="#newCustomerModal"></button>
+          <button class="cs-btn-img btn-add-product mr-5" style="top: 15px" data-toggle="modal" data-target="#addProductModal"></button>
         </div>
         <div class="col-xl-5 col-lg-5 col-md-5 col-sm-5 col-5 text-left">
           <div class="cs-btn-group ml-3">
@@ -309,7 +309,16 @@
             </table>
           </div>
         </div>
-        <div class="col-5">Chart 1 </div>
+        <div class="col-5">
+          <div class="card h-100">
+            <h6 class="p-3">
+              מדד אלפא
+            </h6>
+            <div class="card-body">
+              <canvas id="myChart1" width="100%" height="100%"></canvas>
+            </div>
+          </div>
+        </div>
       </div>
       <!-- Row 3 -->
       <div class="row mb-5">
@@ -377,7 +386,16 @@
             </table>
           </div>
         </div>
-        <div class="col-5">Chart 2 </div>
+        <div class="col-5">
+          <div class="card h-100">
+            <h6 class="p-3">
+              מדד אלפא
+            </h6>
+            <div class="card-body">
+              <canvas id="myChart2" width="100%" height="100%"></canvas>
+            </div>
+          </div>
+        </div>
       </div>
       <!-- Row 4 -->
       <div class="row mb-5">
@@ -445,7 +463,16 @@
             </table>
           </div>
         </div>
-        <div class="col-5">Chart 3 </div>
+        <div class="col-5">
+          <div class="card h-100">
+            <h6 class="p-3">
+              מדד אלפא
+            </h6>
+            <div class="card-body">
+              <canvas id="myChart3" width="100%" height="100%"></canvas>
+            </div>
+          </div>
+        </div>
       </div>
       <!-- Row 5 -->
       <div class="row mb-5">
@@ -525,7 +552,16 @@
             </table>
           </div>
         </div>
-        <div class="col-5">Chart 4 </div>
+        <div class="col-5">
+          <div class="card h-100">
+            <h6 class="p-3">
+              מדד אלפא
+            </h6>
+            <div class="card-body">
+              <canvas id="myChart4" width="100%" height="100%"></canvas>
+            </div>
+          </div>
+        </div>
       </div>
       <!-- Row 6 -->
       <div class="row mb-5">
@@ -587,7 +623,16 @@
             </table>
           </div>
         </div>
-        <div class="col-5">Chart 5 </div>
+        <div class="col-5">
+          <div class="card h-100">
+            <h6 class="p-3">
+              מדד אלפא
+            </h6>
+            <div class="card-body">
+              <canvas id="myChart5" width="100%" height="100%"></canvas>
+            </div>
+          </div>
+        </div>
       </div>
       <!-- Row 7 -->
       <div class="row mb-5">
@@ -649,7 +694,16 @@
             </table>
           </div>
         </div>
-        <div class="col-5">Chart 6 </div>
+        <div class="col-5">
+          <div class="card h-100">
+            <h6 class="p-3">
+              מדד אלפא
+            </h6>
+            <div class="card-body">
+              <canvas id="myChart6" width="100%" height="100%"></canvas>
+            </div>
+          </div>
+        </div>
       </div>
       <!-- Row 8 -->
       <div class="row mb-5">
@@ -705,7 +759,16 @@
             </table>
           </div>
         </div>
-        <div class="col-5">Chart 7 </div>
+        <div class="col-5">
+          <div class="card h-100">
+            <h6 class="p-3">
+              מדד אלפא
+            </h6>
+            <div class="card-body">
+              <canvas id="myChart7" width="100%" height="100%"></canvas>
+            </div>
+          </div>
+        </div>
       </div>
       <!-- Row 9 -->
       <div class="row mb-5">
@@ -791,7 +854,16 @@
             </table>
           </div>
         </div>
-        <div class="col-5">Chart 8 </div>
+        <div class="col-5">
+          <div class="card h-100">
+            <h6 class="p-3">
+              מדד אלפא
+            </h6>
+            <div class="card-body">
+              <canvas id="myChart8" width="100%" height="100%"></canvas>
+            </div>
+          </div>
+        </div>
       </div>
       <!-- Row 10 -->
       <div class="row mb-5">
@@ -835,7 +907,16 @@
             </table>
           </div>
         </div>
-        <div class="col-5">Chart 9 </div>
+        <div class="col-5">
+          <div class="card h-100">
+            <h6 class="p-3">
+              מדד אלפא
+            </h6>
+            <div class="card-body">
+              <canvas id="myChart9" width="100%" height="100%"></canvas>
+            </div>
+          </div>
+        </div>
       </div>
       <!-- Row 11 -->
       <div class="row mb-5">
@@ -933,300 +1014,89 @@
             </table>
           </div>
         </div>
-        <div class="col-5">Chart 10 </div>
+        <div class="col-5">
+          <div class="card h-100">
+            <h6 class="p-3">
+              מדד אלפא
+            </h6>
+            <div class="card-body">
+              <canvas id="myChart10" width="100%" height="100%"></canvas>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </div>
 
 <!-- New Customer Modal -->
-<div class="modal" id="filterSettingsModal">
+<div class="modal" id="addProductModal">
   <div class="modal-dialog">
     <div class="modal-content">
-      <!-- Modal Header -->
-      <div class="modal-header">
-        <h4 class="pr-4 mt-2">ניהול פילטרים</h4>
-        <button type="button" class="btn btn-primary btn-clear">נקה הכל</button>
-        <button type="button" class="cs-btn-icon btn-close close dark mr-auto" data-dismiss="modal"></button>
-      </div>
-      <!-- Modal body -->
-      <div class="modal-body mt-4">
-        <form>
-          <div class="grid-container">
-            <div class="grid-item">
-              <h6 class="text-title">אפיקי השקעה עיקריים</h6>
-              <div class="row">
-                <label class="cs-checkbox-container">
-                  <input type="checkbox" />
-                  <span class="checkmark"></span>
-                </label>
-                <label>חשיפה למניות </label>
-              </div>
-              <div class="row">
-                <label class="cs-checkbox-container">
-                  <input type="checkbox" />
-                  <span class="checkmark"></span>
-                </label>
-                <label>חשיפה לאגח ממשלתי </label>
-              </div>
-              <div class="row">
-                <label class="cs-checkbox-container">
-                  <input type="checkbox" />
-                  <span class="checkmark"></span>
-                </label>
-                <label>חשיפה לאגח קונצרני </label>
-              </div>
-              <div class="row">
-                <label class="cs-checkbox-container">
-                  <input type="checkbox" />
-                  <span class="checkmark"></span>
-                </label>
-                <label>חשיפה לחו"ל </label>
-              </div>
-              <div class="row">
-                <label class="cs-checkbox-container">
-                  <input type="checkbox" />
-                  <span class="checkmark"></span>
-                </label>
-                <label>חשיפה למט"ח </label>
-              </div>
-              <div class="row">
-                <label class="cs-checkbox-container">
-                  <input type="checkbox" />
-                  <span class="checkmark"></span>
-                </label>
-                <label>חשיפה נטו </label>
-              </div>
+      <button type="button" class="cs-btn-icon btn-close close dark mr-auto" data-dismiss="modal"></button>
+      <div class="modal-right-bar">
+        <h6 class="text-primary text-right">רמת סיכון</h6>
+        <div class="bar-item row mx-0">
+          <label class="cs-checkbox-container m-0">
+            <input type="checkbox" />
+            <span class="checkmark"></span>
+          </label>
+          <label class="mb-0 px-2">1</label>
+        </div>
+        <div class="bar-item row mx-0">
+          <label class="cs-checkbox-container m-0">
+            <input type="checkbox" />
+            <span class="checkmark"></span>
+          </label>
+          <label class="mb-0 px-2">2</label>
+        </div>
+        <div class="bar-item row mx-0">
+          <label class="cs-checkbox-container m-0">
+            <input type="checkbox" />
+            <span class="checkmark"></span>
+          </label>
+          <label class="mb-0 px-2">3</label>
+        </div>
+        <div class="bar-divider"></div>
+        <h6 class="text-primary text-right">מסלולים</h6>
+        <div class="bar-item row mx-0">
+          <label class="cs-checkbox-container m-0">
+            <input type="checkbox" />
+            <span class="checkmark"></span>
+          </label>
+          <label class="mb-0 px-2">לבני 50 ומטה</label>
+        </div>
+        <div class="bar-item row mx-0">
+          <label class="cs-checkbox-container m-0">
+            <input type="checkbox" />
+            <span class="checkmark"></span>
+          </label>
+          <label class="mb-0 px-2">לבני 50 - 60</label>
+        </div>
+        <div class="bar-item row mx-0">
+          <label class="cs-checkbox-container m-0">
+            <input type="checkbox" />
+            <span class="checkmark"></span>
+          </label>
+          <label class="mb-0 px-2">לבני 60 ומעלה</label>
+        </div>
+        <div class="bar-divider"></div>
+        <div class="form-group">
+          <div class="tag-container text-right">
+            <h6 class="text-primary">חברה מנהלת</h6>
+            <div class="tag-wrapper">
+              <div class="tag">חברה מנהלת <span class="tag-remove">&times;</span></div>
             </div>
-            <div class="grid-item">
-              <h6 class="text-title">אפיקי השקעה עיקריים</h6>
-              <div class="row">
-                <label class="cs-checkbox-container">
-                  <input type="checkbox" />
-                  <span class="checkmark"></span>
-                </label>
-                <label>חודש אחרון  </label>
-              </div>
-              <div class="row">
-                <label class="cs-checkbox-container">
-                  <input type="checkbox" />
-                  <span class="checkmark"></span>
-                </label>
-                <label>רבעון אחרון  </label>
-              </div>
-              <div class="row">
-                <label class="cs-checkbox-container">
-                  <input type="checkbox" />
-                  <span class="checkmark"></span>
-                </label>
-                <label>חציון אחרון </label>
-              </div>
-              <div class="row">
-                <label class="cs-checkbox-container">
-                  <input type="checkbox" />
-                  <span class="checkmark"></span>
-                </label>
-                <label>12 חודשים </label>
-              </div>
-              <div class="row">
-                <label class="cs-checkbox-container">
-                  <input type="checkbox" />
-                  <span class="checkmark"></span>
-                </label>
-                <label>24 חודשים </label>
-              </div>
-              <div class="row">
-                <label class="cs-checkbox-container">
-                  <input type="checkbox" />
-                  <span class="checkmark"></span>
-                </label>
-                <label>36 חודשים </label>
-              </div>
-              <div class="row">
-                <label class="cs-checkbox-container">
-                  <input type="checkbox" />
-                  <span class="checkmark"></span>
-                </label>
-                <label>60 חודשים</label>
-              </div>
-              <div class="row">
-                <label class="cs-checkbox-container">
-                  <input type="checkbox" />
-                  <span class="checkmark"></span>
-                </label>
-                <label>ממוצע 36 חודשים </label>
-              </div>
-              <div class="row">
-                <label class="cs-checkbox-container">
-                  <input type="checkbox" />
-                  <span class="checkmark"></span>
-                </label>
-                <label>ממוצע 60 חודשים </label>
-              </div>
-              <div class="row">
-                <label class="cs-checkbox-container">
-                  <input type="checkbox" />
-                  <span class="checkmark"></span>
-                </label>
-                <label>בחירה לפי טווח </label>
-              </div>
-              <div class="row">
-                <label class="cs-checkbox-container">
-                  <input type="checkbox" />
-                  <span class="checkmark"></span>
-                </label>
-                <label>תשואות לפי שנים</label>
-              </div>
-            </div>
-            <div class="grid-item">
-              <h6 class="text-title">אפיקי השקעה עיקריים</h6>
-              <div class="row">
-                <label class="cs-checkbox-container">
-                  <input type="checkbox" />
-                  <span class="checkmark"></span>
-                </label>
-                <label>דירוג </label>
-              </div>
-              <div class="row">
-                <label class="cs-checkbox-container">
-                  <input type="checkbox" />
-                  <span class="checkmark"></span>
-                </label>
-                <label>אלפא</label>
-              </div>
-              <div class="row">
-                <label class="cs-checkbox-container">
-                  <input type="checkbox" />
-                  <span class="checkmark"></span>
-                </label>
-                <label>שארפ</label>
-              </div>
-              <div class="row">
-                <label class="cs-checkbox-container">
-                  <input type="checkbox" />
-                  <span class="checkmark"></span>
-                </label>
-                <label>RECOVERY</label>
-              </div>
-              <div class="row">
-                <label class="cs-checkbox-container">
-                  <input type="checkbox" />
-                  <span class="checkmark"></span>
-                </label>
-                <label>עקביות 36</label>
-              </div>
-              <div class="row">
-                <label class="cs-checkbox-container">
-                  <input type="checkbox" />
-                  <span class="checkmark"></span>
-                </label>
-                <label>עקביות 12</label>
-              </div>
-              <div class="row">
-                <label class="cs-checkbox-container">
-                  <input type="checkbox" />
-                  <span class="checkmark"></span>
-                </label>
-                <label>צבירה 12 </label>
-              </div>
-            </div>
-            <div class="grid-item">
-              <h6 class="text-title">אפיקי השקעה עיקריים</h6>
-              <div class="row">
-                <label class="cs-checkbox-container">
-                  <input type="checkbox" />
-                  <span class="checkmark"></span>
-                </label>
-                <label>יתרת נכסים </label>
-              </div>
-              <div class="row">
-                <label class="cs-checkbox-container">
-                  <input type="checkbox" />
-                  <span class="checkmark"></span>
-                </label>
-                <label>וותק</label>
-              </div>
-              <div class="row">
-                <label class="cs-checkbox-container">
-                  <input type="checkbox" />
-                  <span class="checkmark"></span>
-                </label>
-                <label>מסלול השקעה</label>
-              </div>
-              <div class="row">
-                <label class="cs-checkbox-container">
-                  <input type="checkbox" />
-                  <span class="checkmark"></span>
-                </label>
-                <label>התמחות ראשית</label>
-              </div>
-              <div class="row">
-                <label class="cs-checkbox-container">
-                  <input type="checkbox" />
-                  <span class="checkmark"></span>
-                </label>
-                <label>רמת סיכון </label>
-              </div>
-            </div>
-            <div class="grid-item">
-              <h6 class="text-title">אפיקי השקעה עיקריים</h6>
-              <div class="row">
-                <label class="cs-checkbox-container">
-                  <input type="checkbox" />
-                  <span class="checkmark"></span>
-                </label>
-                <label>סטיית תקן</label>
-              </div>
-              <div class="row">
-                <label class="cs-checkbox-container">
-                  <input type="checkbox" />
-                  <span class="checkmark"></span>
-                </label>
-                <label>בתא</label>
-              </div>
-              <div class="row">
-                <label class="cs-checkbox-container">
-                  <input type="checkbox" />
-                  <span class="checkmark"></span>
-                </label>
-                <label>DOWNTRADE</label>
-              </div>
-              <div class="row">
-                <label class="cs-checkbox-container">
-                  <input type="checkbox" />
-                  <span class="checkmark"></span>
-                </label>
-                <label>WORSTRADE</label>
-              </div>
-              <div class="row">
-                <label class="cs-checkbox-container">
-                  <input type="checkbox" />
-                  <span class="checkmark"></span>
-                </label>
-                <label>WORSTYEAR</label>
-              </div>
-              <div class="row">
-                <label class="cs-checkbox-container">
-                  <input type="checkbox" />
-                  <span class="checkmark"></span>
-                </label>
-                <label>POSITIVE MONTHS</label>
-              </div>
+            <div class="autocomplete">
+              <input type="text" class="form-control mt-3" name="tag-input" id="_tag_input" placeholder="בחר חברה מנהלת" />
             </div>
           </div>
-          <div class="row font-weight-bold mt-4 mx-0">
-            נבחרו <strong class="text-primary px-1">3</strong> פורמטיים מתוך 6 אפשריים
+          <div class="row mx-0 mt-3">
+            <button class="btn btn-primary btn-clear-mana-company mr-auto">נקה חברה מנהלת</button>
           </div>
-          <div class="row mx-0">
-            <button class="cs-btn-img btn-send-green mt-4"></button>
-          </div>
-        </form>
+        </div>
       </div>
-      <!-- Modal footer -->
-      <div class="modal-footer">
-        <button class="cs-btn-img btn-save-modal btn-success" data-dismiss="modal"></button>
-      </div>
-      
+      <div class="modal-left-bar"></div>
     </div>
   </div>
 </div>
@@ -1357,6 +1227,121 @@
     $('.tag-wrapper').empty();
     $('input[name=tag-input]').val('');
   });
+</script>
+<script>
+  // Our labels along the x-axis
+  var years = [1500,1600,1700,1750,1800,1850,1900,1950,1999,2050];
+  // For drawing the lines
+  var africa = [86,114,106,106,107,111,133,221,783,2478];
+  // === Chart 1
+  var data1 = {
+      labels: ["מוצר 3", "מוצר 2", "מוצר 1"],
+      datasets: [
+        {
+          label: 'Dataset 1', 
+          data: [28, 0, 0],
+          backgroundColor: '#F37A00'
+        },{ 
+          label: 'Dataset 2', 
+          data: [0, -32, 0],
+          backgroundColor: '#1A70C6'
+        },{ 
+          label: 'Dataset 3', 
+          data: [0, 0, 12],
+          backgroundColor: '#3ACCE1'
+        }
+      ]
+    }
+  var configChart1 = {
+    type: 'bar',
+    data: data1,
+    options: {
+      responsive: true,
+      plugins: {
+        legend: {
+          position: 'top',
+        },
+        title: {
+          display: false,
+          text: ''
+        }
+      }
+    },
+  };
+  // ---
+  var data2 = {
+      labels: ["יולי", "ספטמבר", "נובמבר", "יוני", "מרץ", "מאי"],
+      datasets: [
+        {
+          label: ' הפועלים -   15.58% ', 
+          data: [20, -5, 22, -8, 8, 6, 12],
+          borderColor: '#F37A00',
+          backgroundColor: '#ffffff00',
+          tension: 0,
+          pointRadius: 0
+        },{ 
+          label: ' לאומי - 21.17%', 
+          data: [12, -8, 15, -2, 0, 9, 22],
+          borderColor: '#1A70C6',
+          backgroundColor: '#ffffff00',
+          tension: 0,
+          pointRadius: 0
+        },{ 
+          label: ' דיסקונט - 22.92%', 
+          data: [0, -15, 12, -18, 18, 16, 2],
+          borderColor: '#2CA01C',
+          backgroundColor: '#ffffff00',
+          tension: 0,
+          pointRadius: 0
+        },{ 
+          label: 'בנלאומי - 11.20%', 
+          data: [2, -25, 7, 9, 15, -6, -12],
+          borderColor: '#3ACCE1',
+          backgroundColor: '#ffffff00',
+          tension: 0,
+          pointRadius: 0
+        }
+      ]
+    }
+  var configChart2 = {
+    type: 'line',
+    data: data2,
+    options: {
+      responsive: true,
+      plugins: {
+        legend: {
+          position: 'top',
+        },
+        title: {
+          display: false,
+          text: ''
+        }
+      }
+    },
+  };
+  // === ./Chart 1
+  // === Chart 2
+  var ctx = document.getElementById("myChart1");
+  var myChart1 = new Chart(ctx, configChart1);
+  var ctx = document.getElementById("myChart2");
+  var myChart2 = new Chart(ctx, configChart1);
+  var ctx = document.getElementById("myChart3");
+  var myChart3 = new Chart(ctx, configChart2);
+  var ctx = document.getElementById("myChart4");
+  var myChart4 = new Chart(ctx, configChart2);
+  var ctx = document.getElementById("myChart5");
+  var myChart5 = new Chart(ctx, configChart1);
+  var ctx = document.getElementById("myChart6");
+  var myChart6 = new Chart(ctx, configChart1);
+  var ctx = document.getElementById("myChart7");
+  var myChart7 = new Chart(ctx, configChart1);
+  var ctx = document.getElementById("myChart8");
+  var myChart8 = new Chart(ctx, configChart1);
+  var ctx = document.getElementById("myChart9");
+  var myChart9 = new Chart(ctx, configChart1);
+  var ctx = document.getElementById("myChart10");
+  var myChart10 = new Chart(ctx, configChart1);
+  // === ./Chart 2
 </script>
 <!-- ./script -->
 </body>
