@@ -432,7 +432,10 @@
 /*******************************************************/ 
 /*************** *** Simulator Top 10  *** *************/ 
 /*******************************************************/ 
-.simulator-top10, .simulator-top5, .simulator-allocation-and-analysis {
+.simulator-top10, 
+.simulator-top5, 
+.simulator-allocation-and-analysis, 
+.simulator-leverage-results {
     .filter-app {
         width: 100% !important;
         .app-header {
@@ -726,7 +729,8 @@
 /*******************************************************/ 
 /*** *** Simulator Saving For Creating Butcher  *** ****/ 
 /*******************************************************/ 
-.simulator-saving-for-creating-butcher {
+.simulator-saving-for-creating-butcher, 
+.simulator-leverage-results {
     .card {
         .card-body {
             padding: 0;
@@ -747,5 +751,23 @@
     }
     .btn-accountant {
         width: 191px;
+    }
+}
+
+/*******************************************************/ 
+/********* *** Simulator Leverage Results  *** *********/ 
+/*******************************************************/ 
+.simulator-leverage-results {
+    .filter-app {
+        .app-header {
+            height: 120px !important;
+        }
+        .app-body {
+            .card {
+                .last-row {
+                    background-color: #7ABBFC;
+                }
+            }
+        }
     }
 }

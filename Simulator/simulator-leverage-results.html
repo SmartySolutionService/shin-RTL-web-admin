@@ -112,73 +112,86 @@
   </div>
 </header>
   
-<div class="main simulator-saving-for-creating-butcher">
+<div class="main simulator-leverage-results">
   <div class="filter-app">
-    <h2 class="title my-5">חיסכון שוטף לטובת קצבה בפרישה</h2>
+    <div class="app-header px-0 m-0">
+      <div class="row app-header-top">
+        <div class="col-xl-7 col-lg-7 col-md-7 col-sm-7 col-7">
+          <span class="title">תוצאות מינוף</span>
+        </div>
+        <div class="col-xl-5 col-lg-5 col-md-5 col-sm-5 col-5 text-left">
+          <div class="cs-btn-group ml-3">
+            <a class="cs-btn-icon btn-email" href="javascript:void(0)"></a>
+            <label>אימייל</label>
+          </div>
+          <div class="cs-btn-group ml-3">
+            <a class="cs-btn-icon btn-xls" href="javascript:void(0)"></a>
+            <label>אקסל</label>
+          </div>
+          <div class="cs-btn-group ml-3">
+            <a class="cs-btn-icon btn-print" href="javascript:void(0)"></a>
+            <label>הדפס</label>
+          </div>
+          <div class="cs-btn-group ml-0">
+            <a class="cs-btn-icon btn-back-circle" href="javascript:void(0)"></a>
+            <label>חזור</label>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="app-body mb-5">
         <div class="row">
             <div class="col-8">
                 <div class="row">
                     <div class="col-7">
-                        <h6 class="text-primary">הנחות קצבה / מקדמים והפקדות</h6>
+                        <h6 class="text-primary">כדאיות ותוצאות מינוף</h6>
                         <div class="card mt-3">
                             <div class="card-body">
                                 <div class="row">
-                                    <div class="col-6 font-weight-bold">קצבה מבוקשת</div>
-                                    <div class="col-6"><input type="number" class="form-control" /></div>
+                                    <div class="col-6 font-weight-bold">סכום המינוף </div>
+                                    <div class="col-6 text-center">NUMERIC $</div>
                                 </div>
                                 <div class="row">
-                                    <div class="col-6 font-weight-bold">הפקדה חודשית</div>
-                                    <div class="col-6"><input type="number" class="form-control" /></div>
+                                    <div class="col-6 font-weight-bold">מוצר כנגדו נלקח המינוף</div>
+                                    <div class="col-6 text-center">NUMERIC $</div>
                                 </div>
                                 <div class="row">
-                                    <div class="col-6 font-weight-bold">הפקדה חד פעמית</div>
-                                    <div class="col-6"><input type="number" class="form-control" /></div>
+                                    <div class="col-6 font-weight-bold">תשואה המוצר הממונף לתקופה</div>
+                                    <div class="col-6 text-center">NUMERIC $</div>
                                 </div>
                                 <div class="row">
-                                    <div class="col-6 font-weight-bold">גיל נוכחי</div>
-                                    <div class="col-6"><input type="number" class="form-control" /></div>
+                                    <div class="col-6 font-weight-bold">ריבית על המינוף </div>
+                                    <div class="col-6 text-center">NUMERIC $</div>
                                 </div>
                                 <div class="row">
-                                    <div class="col-6 font-weight-bold">גיל קבלה הקצבה</div>
-                                    <div class="col-6"><input type="number" class="form-control" /></div>
+                                    <div class="col-6 font-weight-bold">ריבית ששולמה לתקופה</div>
+                                    <div class="col-6 text-center">NUMERIC $</div>
                                 </div>
                                 <div class="row">
-                                    <div class="col-6 font-weight-bold">מקדם צפוי</div>
-                                    <div class="col-6"><input type="number" class="form-control" /></div>
+                                    <div class="col-6 font-weight-bold">המוצר שנרכש מכספי המינוף </div>
+                                    <div class="col-6 text-center">NUMERIC $</div>
                                 </div>
                                 <div class="row">
-                                    <div class="col-6 font-weight-bold">צבירה חזויה</div>
-                                    <div class="col-6"><input type="number" class="form-control" /></div>
+                                    <div class="col-6 font-weight-bold">תשואת טריא לתקופה</div>
+                                    <div class="col-6 text-center">NUMERIC $</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6 font-weight-bold">הפרש תשואה </div>
+                                    <div class="col-6 text-center">NUMERIC $</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6 font-weight-bold">תשואת טריא בשקלים</div>
+                                    <div class="col-6 text-center">NUMERIC $</div>
+                                </div>
+                                <div class="row last-row">
+                                    <div class="col-6 font-weight-bold">רווח נקי כתוצאה מהמינוף </div>
+                                    <div class="col-6 font-weight-bold text-center">NUMERIC ש"ח</div>
                                 </div>
                             </div>
                             <div class="card-footer">
                                 <div class="row">
-                                    <div class="col-6">קצבה צפויה</div>
-                                    <div class="col-6">1,700,000 ש"ח</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-5">
-                        <h6 class="text-primary">הנחות תשואה ועלויות ניהול </h6>
-                        <div class="card mt-3">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-6 font-weight-bold">דמי ניהול מצבירה</div>
-                                    <div class="col-6"><input type="number" class="form-control" /></div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-6 font-weight-bold">דמי ניהול מפרמיה</div>
-                                    <div class="col-6"><input type="number" class="form-control" /></div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-6 font-weight-bold">תשואה שנתית ברוטו</div>
-                                    <div class="col-6"><input type="number" class="form-control" /></div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-6 font-weight-bold">תשואה שנתית נטו</div>
-                                    <div class="col-6"><input type="number" class="form-control" /></div>
+                                    <div class="col-6" style="padding-right: 30px;">תרומת המינוף להון העצמי</div>
+                                    <div class="col-6 text-center">% NUMERIC</div>
                                 </div>
                             </div>
                         </div>
