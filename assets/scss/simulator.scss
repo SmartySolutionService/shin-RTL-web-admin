@@ -795,10 +795,14 @@
             max-width: 700px;
             table {
                 max-width: 700px !important;
+                .form-control {
+                    max-width: 100px;
+                }
                 tfoot {
                     tr {
                         td {
                             color: #ffffff;
+                            font-weight: bold;
                         }
                     }
                 }

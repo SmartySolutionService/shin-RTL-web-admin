@@ -812,8 +812,12 @@
 .simulator-irr-calculator .app-body .card table {
   max-width: 700px !important;
 }
+.simulator-irr-calculator .app-body .card table .form-control {
+  max-width: 100px;
+}
 .simulator-irr-calculator .app-body .card table tfoot tr td {
   color: #ffffff;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=simulator.css.map */
