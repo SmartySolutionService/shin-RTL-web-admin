@@ -905,3 +905,28 @@
         border-top: solid 1px #78849E;
     }
 }
+
+/*******************************************************/ 
+/********* *** Simulator P2P Foundation  *** ***********/ 
+/*******************************************************/
+.simulator-p2p-foundation {
+    .app-header {
+        border-bottom: none !important;
+    }
+    .card {
+        border-top: solid 16px #7ABBFC;
+        label {
+            margin-top: 20px;
+        }
+    }
+    label {
+        font-weight: bold;
+    }
+    .text-primary {
+        color: #7ABBFC;
+    }
+    .form-control {
+        height: 50px;
+        border-radius: 10px;
+    }
+}

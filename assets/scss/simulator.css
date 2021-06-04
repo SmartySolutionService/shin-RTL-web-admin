@@ -936,4 +936,27 @@
   border-top: solid 1px #78849E;
 }
 
+/*******************************************************/
+/********* *** Simulator P2P Foundation  *** ***********/
+/*******************************************************/
+.simulator-p2p-foundation .app-header {
+  border-bottom: none !important;
+}
+.simulator-p2p-foundation .card {
+  border-top: solid 16px #7ABBFC;
+}
+.simulator-p2p-foundation .card label {
+  margin-top: 20px;
+}
+.simulator-p2p-foundation label {
+  font-weight: bold;
+}
+.simulator-p2p-foundation .text-primary {
+  color: #7ABBFC;
+}
+.simulator-p2p-foundation .form-control {
+  height: 50px;
+  border-radius: 10px;
+}
+
 /*# sourceMappingURL=simulator.css.map */
