@@ -12,12 +12,10 @@
   <link rel="stylesheet" type="text/css" href="../assets/plugins/DataTables/datatables.css"/>
   <link rel='stylesheet' href='../assets/plugins/addSlider/src/addSlider.css' />
   <link rel="stylesheet" href="../assets/plugins/sliding-toggle-switch/lc_switch.css">
-  <link rel="stylesheet" href="../node_modules/chart.js/dist/Chart.min.css">
   <!-- js -->
   <script src="../assets/jquery/jquery.min.js"></script>
   <script src="../assets/plugins/popper/popper.min.js"></script>
   <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-  <script src="../node_modules/chart.js/dist/Chart.min.js"></script>
 </head>
 <body>
 
@@ -112,71 +110,150 @@
   </div>
 </header>
   
-<div class="main simulator-irr-calculator">
+<div class="main simulator-real-estate-investments">
   <div class="filter-app">
     <div class="app-header px-0 m-0">
       <div class="row app-header-top">
-        <div class="col-xl-7 col-lg-7 col-md-7 col-sm-7 col-7">
-          <span class="title">מחשבון IRR</span>
+        <span class="title">הוספת מוצר השקעת נדל"ן</span>
+      </div>
+      <div class="row app-header-bottom">
+        <div class="col-8">
+            <div class="row">
+                <div class="col-4">
+                    <div class="form-group">
+                        <label class="text-primary">שם מוצר</label>
+                        <input type="text" class="form-control" />
+                    </div>
+                </div>
+            </div>
         </div>
       </div>
     </div>
-    <div class="app-body mb-5">
+    <div class="app-body my-5">
         <div class="card">
-            <table class="table datatable table-bordered m-0">
-                <thead>
-                    <tr>
-                        <th class="">נתונים כספיים</th>
-                        <th class="text-center"></th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class="font-weight-bold pr-5">השקעה ראשונית</td>
-                        <td class="text-center"><input type="number" class="form-control" /></td>
-                    </tr>
-                    <tr>
-                        <td class="font-weight-bold pr-5">תזרים שנה 1</td>
-                        <td class="text-center"><input type="number" class="form-control" /></td>
-                    </tr>
-                    <tr>
-                        <td class="font-weight-bold pr-5">תזרים שנה 2</td>
-                        <td class="text-center"><input type="number" class="form-control" /></td>
-                    </tr>
-                    <tr>
-                        <td class="font-weight-bold pr-5">תזרים שנה 3</td>
-                        <td class="text-center"><input type="number" class="form-control" /></td>
-                    </tr>
-                    <tr>
-                        <td class="font-weight-bold pr-5">תזרים שנה 4</td>
-                        <td class="text-center"><input type="number" class="form-control" /></td>
-                    </tr>
-                    <tr>
-                        <td class="font-weight-bold pr-5">תזרים שנה 5</td>
-                        <td class="text-center"><input type="number" class="form-control" /></td>
-                    </tr>
-                    <tr>
-                        <td class="font-weight-bold pr-5">תזרים שנה 6</td>
-                        <td class="text-center"><input type="number" class="form-control" /></td>
-                    </tr>
-                    <tr>
-                        <td class="font-weight-bold pr-5">תזרים שנה 7</td>
-                        <td class="text-center"><input type="number" class="form-control" /></td>
-                    </tr>
-                    <tr>
-                        <td class="font-weight-bold pr-5">תקבול תום תקופה</td>
-                        <td class="text-center"><input type="number" class="form-control" /></td>
-                    </tr>
-                </tbody>
-                <tfoot>
-                    <tr>
-                        <td class="pr-5">IRR</td>
-                        <td class="">% 12</td>
-                    </tr>
-                </tfoot>
-            </table>
+            <div class="card-body">
+                <!-- 1 -->
+                <div class="row">
+                    <div class="col-3">
+                        <div class="form-group">
+                            <label class="text-primary">שם חברה</label>
+                            <input type="text" class="form-control" placeholder="TEXT" />
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="form-group">
+                            <label class="text-primary">וותק פעילות החברה</label>
+                            <input type="text" class="form-control" placeholder="NUM" />
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="form-group">
+                            <label class="text-primary">היקף נכסי החברה</label>
+                            <input type="text" class="form-control" placeholder="NUM" />
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="form-group">
+                            <label class="text-primary">שם הפרוייקט</label>
+                            <input type="text" class="form-control" placeholder="TEXT" />
+                        </div>
+                    </div>
+                </div>
+                <!-- 2 -->
+                <div class="row">
+                    <div class="col-3">
+                        <div class="form-group">
+                            <label class="text-primary">מיקום הפרויקט</label>
+                            <input type="text" class="form-control" placeholder="TEXT" />
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="form-group">
+                            <label class="text-primary">אסטרטגיית ההשקעה</label>
+                            <input type="text" class="form-control" placeholder="NUM" />
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="form-group">
+                            <label class="text-primary">תקופת השקעה צפויה</label>
+                            <input type="text" class="form-control" placeholder="DATE" />
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="form-group">
+                            <label class="text-primary">מטבע / קלאס</label>
+                            <select class="form-control">
+                                <option>ILS</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <!-- 3 -->
+                <div class="row">
+                    <div class="col-3">
+                        <div class="form-group">
+                            <label class="text-primary">אתר החברה</label>
+                            <input type="text" class="form-control" placeholder="TEXT" />
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="form-group">
+                            <label class="text-primary">רמת סיכון </label>
+                            <input type="text" class="form-control" placeholder="NUM" />
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="form-group">
+                            <label class="text-primary">חשיפה נטו </label>
+                            <select class="form-control">
+                                <option>NUM</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="form-group">
+                            <label class="text-primary">קישור לעלון מידע</label>
+                            <input type="text" class="form-control" placeholder="TEXT" />
+                        </div>
+                    </div>
+                </div>
+                <!-- 4 -->
+                <div class="row">
+                    <div class="col-3">
+                        <div class="form-group">
+                            <label class="text-primary">IRR צפוי </label>
+                            <input type="text" class="form-control" placeholder="NUM" />
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="form-group">
+                            <label class="text-primary">COC- צפוי </label>
+                            <input type="text" class="form-control" placeholder="NUM" />
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="form-group">
+                            <label class="text-primary">מכפיל הון צפוי</label>
+                            <select class="form-control">
+                                <option>NUM</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <!-- 5 -->
+                <div class="row">
+                    <div class="col-12">
+                        <div class="form-group w-100">
+                            <label class="text-primary">הערות</label>
+                            <input type="text" class="form-control w-100" placeholder="TEXT" />
+                        </div>
+                    </div>
+                </div>
+                <div class="row mx-0 mt-5 border-top">
+                    <button class="cs-btn-img btn-save-green ml-auto mr-0 mt-4"></button>
+                </div>
+            </div>
         </div>
-        <button class="cs-btn-img btn-accountant mr-0 ml-auto mt-5"></button>
     </div>
   </div>
 </div>
@@ -206,84 +283,6 @@
       // ordering:  false
     });
   } );
-  // datepicker init
-  $('#datepicker').datepicker({ uiLibrary: 'bootstrap4' });
-  // === Chart 1
-  var data2 = {
-      labels: ["יולי", "ספטמבר", "נובמבר", "יוני", "מרץ", "מאי"],
-      datasets: [
-        {
-          label: ' הפועלים -   15.58% ', 
-          data: [20, -5, 22, -8, 8, 6, 12],
-          borderColor: '#B202D1',
-          backgroundColor: '#ffffff00',
-          tension: 0,
-          pointRadius: 0
-        }
-      ]
-    }
-  var configChart = {
-    type: 'line',
-    data: data2,
-    options: {
-      legend: {
-        display: false
-      },
-      responsive: true,
-      plugins: {
-        legend: {
-          position: 'top',
-        },
-        title: {
-          display: false,
-          text: ''
-        }
-      }
-    },
-  };
-  // === ./Chart 1
-  // === Chart 2
-  var ctx = document.getElementById("myChart1");
-  var myChart1 = new Chart(ctx, configChart);
-  // === ./Chart 2
-</script>
-<script>
-  function drawDoughnutCharts(chartEle) {
-    var ctx = chartEle.getContext('2d');
-    var myChart = new Chart(ctx, {
-      type: 'doughnut',
-      data: {
-          labels: ['Red', 'Yellow', 'Blue', 'Red', 'Yellow', 'Blue'],
-          datasets: [{
-              label: '# of Votes',
-              data: [25, 25, 25, 25, 25, 25],
-              backgroundColor: ['#bcddfd', '#9ce5f0', '#98e8ca', '#bcddfd', '#9ce5f0', '#98e8ca'],
-              // borderColor: '#A3A0FB',
-              borderWidth: 1,
-            }]
-      },
-      options: {
-        legend: {
-            display: false
-        },
-        responsive: true,
-        maintainAspectRatio: false,
-        cutoutPercentage: 60,
-        plugins: {
-          labels: {
-            render: 'percentage',
-            fontColor: ['#FFFFFF', '#FFFFFF', '#FFFFFF'],
-            precision: 2
-          }
-        }
-      }
-    });
-  }
-
-  var chartEles = document.getElementsByClassName('doughnut');
-  for(var i = 0; i < chartEles.length; i++) {
-    drawDoughnutCharts(chartEles[i]);
-  }
 </script>
 <!-- ./script -->
 </body>

@@ -941,32 +941,38 @@
 /*******************************************************/
 .simulator-p2p-foundation .app-header,
 .simulator-debt-fund .app-header,
-.simulator-hedge-fund .app-header {
+.simulator-hedge-fund .app-header,
+.simulator-real-estate-investments .app-header {
   border-bottom: none !important;
 }
 .simulator-p2p-foundation .card,
 .simulator-debt-fund .card,
-.simulator-hedge-fund .card {
+.simulator-hedge-fund .card,
+.simulator-real-estate-investments .card {
   border-top: solid 16px #7ABBFC;
 }
 .simulator-p2p-foundation .card label,
 .simulator-debt-fund .card label,
-.simulator-hedge-fund .card label {
+.simulator-hedge-fund .card label,
+.simulator-real-estate-investments .card label {
   margin-top: 20px;
 }
 .simulator-p2p-foundation label,
 .simulator-debt-fund label,
-.simulator-hedge-fund label {
+.simulator-hedge-fund label,
+.simulator-real-estate-investments label {
   font-weight: bold;
 }
 .simulator-p2p-foundation .text-primary,
 .simulator-debt-fund .text-primary,
-.simulator-hedge-fund .text-primary {
+.simulator-hedge-fund .text-primary,
+.simulator-real-estate-investments .text-primary {
   color: #7ABBFC;
 }
 .simulator-p2p-foundation .form-control,
 .simulator-debt-fund .form-control,
-.simulator-hedge-fund .form-control {
+.simulator-hedge-fund .form-control,
+.simulator-real-estate-investments .form-control {
   height: 50px;
   border-radius: 10px;
 }
