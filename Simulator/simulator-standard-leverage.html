@@ -112,12 +112,12 @@
   </div>
 </header>
   
-<div class="main simulator-double-leverage">
+<div class="main simulator-standard-leverage">
   <div class="filter-app">
     <div class="app-header px-0 m-0">
       <div class="row app-header-top">
         <div class="col-xl-7 col-lg-7 col-md-7 col-sm-7 col-7">
-          <span class="title">מחשבון מינוף כפול</span>
+          <span class="title">מחשבון מינוף</span>
         </div>
       </div>
     </div>
@@ -214,81 +214,7 @@
                 </div>
             </div>
         </div>
-        <div class="row mt-4">
-            <div class="col-4">
-                <div class="card">
-                    <table class="table m-0">
-                        <tbody>
-                            <tr>
-                                <td class="font-weight-bold">כספים נזילים</td>
-                                <td><input type="number" class="form-control" /></td>
-                            </tr>
-                            <tr>
-                                <td class="font-weight-bold">שיעור מינוף 1 / הלוואה</td>
-                                <td><input type="number" class="form-control" /></td>
-                            </tr>
-                            <tr>
-                                <td class="font-weight-bold">סכום מינוף / הלוואה</td>
-                                <td><input type="number" class="form-control" /></td>
-                            </tr>
-                            <tr>
-                                <td class="font-weight-bold">תקופת מינוף בשנים</td>
-                                <td><input type="number" class="form-control" /></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-            <div class="col-4">
-                <div class="card">
-                    <table class="table m-0">
-                        <tbody>
-                            <tr>
-                                <td class="font-weight-bold">ריבית פריים</td>
-                                <td><input type="number" class="form-control" /></td>
-                            </tr>
-                            <tr>
-                                <td class="font-weight-bold">תוספת ריבית לפריים </td>
-                                <td><input type="number" class="form-control" /></td>
-                            </tr>
-                            <tr>
-                                <td class="font-weight-bold">ריבית הלוואה מסלול פריים</td>
-                                <td><input type="number" class="form-control" /></td>
-                            </tr>
-                            <tr>
-                                <td class="font-weight-bold">ריבית פריים</td>
-                                <td><input type="number" class="form-control" /></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-            <div class="col-4">
-                <div class="card">
-                    <table class="table m-0">
-                        <tbody>
-                            <tr>
-                                <td class="font-weight-bold">תשואה נטו מוצר ממונף</td>
-                                <td><input type="number" class="form-control" /></td>
-                            </tr>
-                            <tr>
-                                <td class="font-weight-bold">תשואה  כספי מינוף </td>
-                                <td><input type="number" class="form-control" /></td>
-                            </tr>
-                            <tr>
-                                <td class="font-weight-bold">ריבית הלוואה / מינוף</td>
-                                <td><input type="number" class="form-control" /></td>
-                            </tr>
-                            <tr>
-                                <td class="font-weight-bold">תשואה נטו כספי מינוף </td>
-                                <td><input type="number" class="form-control" /></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
-        <div class="row row-foot mx-0 mt-4">
+        <div class="row row-foot mx-0">
             <div class="col-2">סה"כ סכום מושקע</div>
             <div class="col-2">1,700,000 ש"ח</div>
         </div>
@@ -331,42 +257,14 @@
                         <td>NUMERIC %</td>
                     </tr>
                 </tbody>
-            </table>
-        </div>
-        <div class="card mt-4">
-            <table class="table datatable m-0">
-                <thead>
+                <tfoot>
                     <tr>
-                        <th>מינוף 2</th>
-                        <th>קרן</th>
-                        <th>שערוך </th>
-                        <th>רווח / ריבית</th>
-                        <th>שיעור רווח</th>
+                        <td colspan="2">סה"כ סכום מושקע</td>
+                        <td>1,700,000 ש"ח</td>
+                        <td>1,700,000 ש"ח</td>
+                        <td>40 %</td>
                     </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class="font-weight-bold">סכום קרן מקורית בתום התקופה</td>
-                        <td>NUMERIC ש"ח</td>
-                        <td>NUMERIC ש"ח</td>
-                        <td>NUMERIC ש"ח</td>
-                        <td>NUMERIC %</td>
-                    </tr>
-                    <tr>
-                        <td class="font-weight-bold">סכום כספי המינוף  בתום התקופה</td>
-                        <td>NUMERIC ש"ח</td>
-                        <td>NUMERIC ש"ח</td>
-                        <td>NUMERIC ש"ח</td>
-                        <td>NUMERIC %</td>
-                    </tr>
-                    <tr>
-                        <td class="font-weight-bold">ריבית ששולמה לתקופה בגין המינוף 2</td>
-                        <td>NUMERIC ש"ח</td>
-                        <td>NUMERIC ש"ח</td>
-                        <td>NUMERIC ש"ח</td>
-                        <td>NUMERIC %</td>
-                    </tr>
-                </tbody>
+                </tfoot>
             </table>
         </div>
         <div class="row mt-4">
@@ -375,11 +273,7 @@
                     <table class="table m-0">
                         <tbody>
                             <tr>
-                                <td class="font-weight-bold">רווח נטו מהמינוף  1</td>
-                                <td class="text-primary font-weight-bold">1,700,000 ש"ח</td>
-                            </tr>
-                            <tr>
-                                <td class="font-weight-bold">רווח נטו מהמינוף  2</td>
+                                <td class="font-weight-bold">רווח נטו מהמינוף </td>
                                 <td class="text-primary font-weight-bold">1,700,000 ש"ח</td>
                             </tr>
                             <tr>

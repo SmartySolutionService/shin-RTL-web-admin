@@ -761,7 +761,8 @@
 /*******************************************************/ 
 .simulator-leverage-results, 
 .simulator-irr-calculator, 
-.simulator-double-leverage {
+.simulator-double-leverage, 
+.simulator-standard-leverage {
     .filter-app {
         .app-header {
             height: 120px !important;
@@ -816,7 +817,8 @@
 /*******************************************************/ 
 /********** *** Simulator Double Leverage  *** *********/ 
 /*******************************************************/
-.simulator-double-leverage {
+.simulator-double-leverage, 
+.simulator-standard-leverage {
     .dataTables_wrapper {
         min-width: 300px !important;
     }
@@ -857,5 +859,21 @@
     }
     .btn-show-leverage-results {
         width: 235px;
+    }
+}
+
+/*******************************************************/ 
+/********* *** Simulator Standard Leverage  *** ********/ 
+/*******************************************************/
+.simulator-standard-leverage {
+    table {
+        tfoot {
+            tr {
+                td {
+                    color: #ffffff;
+                    font-weight: bold;
+                }
+            }
+        }
     }
 }
