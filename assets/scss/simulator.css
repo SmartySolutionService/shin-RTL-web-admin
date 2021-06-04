@@ -944,7 +944,8 @@
 .simulator-hedge-fund .app-header,
 .simulator-real-estate-investments .app-header,
 .simulator-reit-foundation .app-header,
-.simulator-algo-beam .app-header {
+.simulator-algo-beam .app-header,
+.simulator-insurance-product-risk .app-header {
   border-bottom: none !important;
 }
 .simulator-p2p-foundation .card,
@@ -952,7 +953,8 @@
 .simulator-hedge-fund .card,
 .simulator-real-estate-investments .card,
 .simulator-reit-foundation .card,
-.simulator-algo-beam .card {
+.simulator-algo-beam .card,
+.simulator-insurance-product-risk .card {
   border-top: solid 16px #7ABBFC;
 }
 .simulator-p2p-foundation .card label,
@@ -960,7 +962,8 @@
 .simulator-hedge-fund .card label,
 .simulator-real-estate-investments .card label,
 .simulator-reit-foundation .card label,
-.simulator-algo-beam .card label {
+.simulator-algo-beam .card label,
+.simulator-insurance-product-risk .card label {
   margin-top: 20px;
 }
 .simulator-p2p-foundation label,
@@ -968,7 +971,8 @@
 .simulator-hedge-fund label,
 .simulator-real-estate-investments label,
 .simulator-reit-foundation label,
-.simulator-algo-beam label {
+.simulator-algo-beam label,
+.simulator-insurance-product-risk label {
   font-weight: bold;
 }
 .simulator-p2p-foundation .text-primary,
@@ -976,7 +980,8 @@
 .simulator-hedge-fund .text-primary,
 .simulator-real-estate-investments .text-primary,
 .simulator-reit-foundation .text-primary,
-.simulator-algo-beam .text-primary {
+.simulator-algo-beam .text-primary,
+.simulator-insurance-product-risk .text-primary {
   color: #7ABBFC;
 }
 .simulator-p2p-foundation .form-control,
@@ -984,7 +989,8 @@
 .simulator-hedge-fund .form-control,
 .simulator-real-estate-investments .form-control,
 .simulator-reit-foundation .form-control,
-.simulator-algo-beam .form-control {
+.simulator-algo-beam .form-control,
+.simulator-insurance-product-risk .form-control {
   height: 50px;
   border-radius: 10px;
 }
