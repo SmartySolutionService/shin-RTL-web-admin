@@ -436,7 +436,8 @@
 .simulator-top5, 
 .simulator-allocation-and-analysis, 
 .simulator-leverage-results, 
-.simulator-irr-calculator {
+.simulator-irr-calculator, 
+.simulator-adding-integrated-product {
     .filter-app {
         width: 100% !important;
         .app-header {
@@ -875,5 +876,32 @@
                 }
             }
         }
+    }
+}
+
+
+/*******************************************************/ 
+/**** *** Simulator Adding Integrated Product  *** *****/ 
+/*******************************************************/
+.simulator-adding-integrated-product {
+    table {
+        th, td {
+            padding: 12px 30px !important;
+            &:first-child {
+                width: 350px;
+            }
+        }
+        .form-control {
+            max-width: 100px;
+        }
+        .slider-wrapper {
+            width: 350px;
+            .addui-slider {
+                margin: 0 !important;
+            }
+        }
+    }
+    .border-top {
+        border-top: solid 1px #78849E;
     }
 }

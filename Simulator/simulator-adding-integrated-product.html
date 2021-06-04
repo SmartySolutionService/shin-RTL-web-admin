@@ -12,12 +12,10 @@
   <link rel="stylesheet" type="text/css" href="../assets/plugins/DataTables/datatables.css"/>
   <link rel='stylesheet' href='../assets/plugins/addSlider/src/addSlider.css' />
   <link rel="stylesheet" href="../assets/plugins/sliding-toggle-switch/lc_switch.css">
-  <link rel="stylesheet" href="../node_modules/chart.js/dist/Chart.min.css">
   <!-- js -->
   <script src="../assets/jquery/jquery.min.js"></script>
   <script src="../assets/plugins/popper/popper.min.js"></script>
   <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-  <script src="../node_modules/chart.js/dist/Chart.min.js"></script>
 </head>
 <body>
 
@@ -112,71 +110,114 @@
   </div>
 </header>
   
-<div class="main simulator-irr-calculator">
+<div class="main simulator-adding-integrated-product">
   <div class="filter-app">
     <div class="app-header px-0 m-0">
       <div class="row app-header-top">
-        <div class="col-xl-7 col-lg-7 col-md-7 col-sm-7 col-7">
-          <span class="title">מחשבון IRR</span>
+        <span class="title">הוספת מוצר משולב</span>
+        <button class="cs-btn-img btn-add-product ml-auto mr-5" data-toggle="modal" data-target="#addProductModal"></button>
+      </div>
+      <div class="row app-header-bottom">
+        <div class="col-8">
+            <div class="row">
+                <div class="col-4">
+                    <div class="form-group">
+                        <label class="text-primary">שם מוצר</label>
+                        <input type="text" class="form-control" />
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="form-group">
+                        <label class="text-primary">שיוך המוצר לקבוצה</label>
+                        <select class="form-control">
+                            <option>A</option>
+                            <option>B</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
         </div>
       </div>
     </div>
-    <div class="app-body mb-5">
+    <div class="app-body mt-4 mb-5">
+        <h5 class="text-primary"> תמהיל השקעות </h5>
         <div class="card">
-            <table class="table datatable table-bordered m-0">
-                <thead>
-                    <tr>
-                        <th class="">נתונים כספיים</th>
-                        <th class="text-center"></th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class="font-weight-bold pr-5">השקעה ראשונית</td>
-                        <td class="text-center"><input type="number" class="form-control" /></td>
-                    </tr>
-                    <tr>
-                        <td class="font-weight-bold pr-5">תזרים שנה 1</td>
-                        <td class="text-center"><input type="number" class="form-control" /></td>
-                    </tr>
-                    <tr>
-                        <td class="font-weight-bold pr-5">תזרים שנה 2</td>
-                        <td class="text-center"><input type="number" class="form-control" /></td>
-                    </tr>
-                    <tr>
-                        <td class="font-weight-bold pr-5">תזרים שנה 3</td>
-                        <td class="text-center"><input type="number" class="form-control" /></td>
-                    </tr>
-                    <tr>
-                        <td class="font-weight-bold pr-5">תזרים שנה 4</td>
-                        <td class="text-center"><input type="number" class="form-control" /></td>
-                    </tr>
-                    <tr>
-                        <td class="font-weight-bold pr-5">תזרים שנה 5</td>
-                        <td class="text-center"><input type="number" class="form-control" /></td>
-                    </tr>
-                    <tr>
-                        <td class="font-weight-bold pr-5">תזרים שנה 6</td>
-                        <td class="text-center"><input type="number" class="form-control" /></td>
-                    </tr>
-                    <tr>
-                        <td class="font-weight-bold pr-5">תזרים שנה 7</td>
-                        <td class="text-center"><input type="number" class="form-control" /></td>
-                    </tr>
-                    <tr>
-                        <td class="font-weight-bold pr-5">תקבול תום תקופה</td>
-                        <td class="text-center"><input type="number" class="form-control" /></td>
-                    </tr>
-                </tbody>
-                <tfoot>
-                    <tr>
-                        <td class="pr-5">IRR</td>
-                        <td class="">% 12</td>
-                    </tr>
-                </tfoot>
+          <div class="card-body p-0">
+            <table class="table datatable w-100 m-0">
+              <thead>
+                <tr>
+                  <th class="">בחר</th>
+                  <th class="">שם המוצר</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="font-weight-bold">TEXT</td>
+                  <td>
+                    <div class="d-flex">
+                        <input type="number" class="form-control mt-2" value="70" />
+                        <div class="slider-wrapper mr-3">
+                            <input
+                                data-name='age'
+                                data-addui='slider'
+                                data-fontsize='12'
+                                data-step='1'
+                                data-min='0'
+                                data-max='100'
+                                data-range='true'
+                                value='18,67'
+                            />
+                        </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="font-weight-bold">TEXT</td>
+                  <td>
+                    <div class="d-flex">
+                        <input type="number" class="form-control mt-2" value="70" />
+                        <div class="slider-wrapper mr-3">
+                            <input
+                                data-name='age'
+                                data-addui='slider'
+                                data-fontsize='12'
+                                data-step='1'
+                                data-min='0'
+                                data-max='100'
+                                data-range='true'
+                                value='18,67'
+                            />
+                        </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="font-weight-bold">TEXT</td>
+                  <td>
+                    <div class="d-flex">
+                        <input type="number" class="form-control mt-2" value="70" />
+                        <div class="slider-wrapper mr-3">
+                            <input
+                                data-name='age'
+                                data-addui='slider'
+                                data-fontsize='12'
+                                data-step='1'
+                                data-min='0'
+                                data-max='100'
+                                data-range='true'
+                                value='18,67'
+                            />
+                        </div>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
             </table>
+          </div>
         </div>
-        <button class="cs-btn-img btn-accountant mr-0 ml-auto mt-5"></button>
+        <div class="row mx-0 mt-5 border-top">
+            <button class="cs-btn-img btn-save-green ml-auto mr-0 mt-4"></button>
+        </div>
     </div>
   </div>
 </div>
@@ -206,84 +247,6 @@
       // ordering:  false
     });
   } );
-  // datepicker init
-  $('#datepicker').datepicker({ uiLibrary: 'bootstrap4' });
-  // === Chart 1
-  var data2 = {
-      labels: ["יולי", "ספטמבר", "נובמבר", "יוני", "מרץ", "מאי"],
-      datasets: [
-        {
-          label: ' הפועלים -   15.58% ', 
-          data: [20, -5, 22, -8, 8, 6, 12],
-          borderColor: '#B202D1',
-          backgroundColor: '#ffffff00',
-          tension: 0,
-          pointRadius: 0
-        }
-      ]
-    }
-  var configChart = {
-    type: 'line',
-    data: data2,
-    options: {
-      legend: {
-        display: false
-      },
-      responsive: true,
-      plugins: {
-        legend: {
-          position: 'top',
-        },
-        title: {
-          display: false,
-          text: ''
-        }
-      }
-    },
-  };
-  // === ./Chart 1
-  // === Chart 2
-  var ctx = document.getElementById("myChart1");
-  var myChart1 = new Chart(ctx, configChart);
-  // === ./Chart 2
-</script>
-<script>
-  function drawDoughnutCharts(chartEle) {
-    var ctx = chartEle.getContext('2d');
-    var myChart = new Chart(ctx, {
-      type: 'doughnut',
-      data: {
-          labels: ['Red', 'Yellow', 'Blue', 'Red', 'Yellow', 'Blue'],
-          datasets: [{
-              label: '# of Votes',
-              data: [25, 25, 25, 25, 25, 25],
-              backgroundColor: ['#bcddfd', '#9ce5f0', '#98e8ca', '#bcddfd', '#9ce5f0', '#98e8ca'],
-              // borderColor: '#A3A0FB',
-              borderWidth: 1,
-            }]
-      },
-      options: {
-        legend: {
-            display: false
-        },
-        responsive: true,
-        maintainAspectRatio: false,
-        cutoutPercentage: 60,
-        plugins: {
-          labels: {
-            render: 'percentage',
-            fontColor: ['#FFFFFF', '#FFFFFF', '#FFFFFF'],
-            precision: 2
-          }
-        }
-      }
-    });
-  }
-
-  var chartEles = document.getElementsByClassName('doughnut');
-  for(var i = 0; i < chartEles.length; i++) {
-    drawDoughnutCharts(chartEles[i]);
-  }
 </script>
 <!-- ./script -->
 </body>
