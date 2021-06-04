@@ -110,11 +110,11 @@
   </div>
 </header>
   
-<div class="main simulator-p2p-foundation">
+<div class="main simulator-debt-fund">
   <div class="filter-app">
     <div class="app-header px-0 m-0">
       <div class="row app-header-top">
-        <span class="title">הוספת מוצר P2P</span>
+        <span class="title">הוספת מוצר קרן חוב</span>
       </div>
       <div class="row app-header-bottom">
         <div class="col-8">
@@ -136,7 +136,13 @@
                 <div class="row">
                     <div class="col-3">
                         <div class="form-group">
-                            <label class="text-primary">שם החברה</label>
+                            <label class="text-primary">שם חברה</label>
+                            <input type="text" class="form-control" placeholder="TEXT" />
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="form-group">
+                            <label class="text-primary">שם המנהל </label>
                             <input type="text" class="form-control" placeholder="TEXT" />
                         </div>
                     </div>
@@ -148,19 +154,48 @@
                     </div>
                     <div class="col-3">
                         <div class="form-group">
-                            <label class="text-primary">רמת סיכון </label>
-                            <input type="text" class="form-control" placeholder="NUM" />
-                        </div>
-                    </div>
-                    <div class="col-3">
-                        <div class="form-group">
-                            <label class="text-primary">מסלול השקעה</label>
+                            <label class="text-primary">אסטרטגיית הקרן</label>
                             <input type="text" class="form-control" placeholder="TEXT" />
                         </div>
                     </div>
                 </div>
                 <!-- 2 -->
                 <div class="row">
+                    <div class="col-3">
+                        <div class="form-group">
+                            <label class="text-primary">רמת סיכון </label>
+                            <input type="text" class="form-control" placeholder="TEXT" />
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="form-group">
+                            <label class="text-primary">מטבע </label>
+                            <select class="form-control">
+                                <option>ILS</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="form-group">
+                            <label class="text-primary">מסלול / קלאס</label>
+                            <input type="text" class="form-control" placeholder="TEXT" />
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="form-group">
+                            <label class="text-primary">ISIN</label>
+                            <input type="text" class="form-control" placeholder="NUM" />
+                        </div>
+                    </div>
+                </div>
+                <!-- 3 -->
+                <div class="row">
+                    <div class="col-3">
+                        <div class="form-group">
+                            <label class="text-primary">מספר אוצר</label>
+                            <input type="text" class="form-control" placeholder="NUM" />
+                        </div>
+                    </div>
                     <div class="col-3">
                         <div class="form-group">
                             <label class="text-primary">וותק השנים </label>
@@ -175,43 +210,8 @@
                     </div>
                     <div class="col-3">
                         <div class="form-group">
-                            <label class="text-primary">מפקח על פעילות הקרן</label>
-                            <input type="text" class="form-control" placeholder="TEXT" />
-                        </div>
-                    </div>
-                    <div class="col-3">
-                        <div class="form-group">
                             <label class="text-primary">איזור פעילות</label>
                             <input type="text" class="form-control" placeholder="TEXT" />
-                        </div>
-                    </div>
-                </div>
-                <!-- 3 -->
-                <div class="row">
-                    <div class="col-3">
-                        <div class="form-group">
-                            <label class="text-primary">היכן רשומה הקרן</label>
-                            <input type="text" class="form-control" placeholder="TEXT" />
-                        </div>
-                    </div>
-                    <div class="col-3">
-                        <div class="form-group">
-                            <label class="text-primary">מטבע / קלאס</label>
-                            <select class="form-control">
-                                <option>ILS</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="col-3">
-                        <div class="form-group">
-                            <label class="text-primary">ISIN</label>
-                            <input type="text" class="form-control" placeholder="NUM" />
-                        </div>
-                    </div>
-                    <div class="col-3">
-                        <div class="form-group">
-                            <label class="text-primary">רו"ח מבקר</label>
-                            <input type="text" class="form-control" placeholder="NUM" />
                         </div>
                     </div>
                 </div>
@@ -219,10 +219,31 @@
                 <div class="row">
                     <div class="col-3">
                         <div class="form-group">
-                            <label class="text-primary">נאמן </label>
+                            <label class="text-primary">מפקח על פעילות הקרן </label>
                             <input type="text" class="form-control" placeholder="TEXT" />
                         </div>
                     </div>
+                    <div class="col-3">
+                        <div class="form-group">
+                            <label class="text-primary">היכן רשומה הקרן </label>
+                            <input type="text" class="form-control" placeholder="TEXT" />
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="form-group">
+                            <label class="text-primary">רו"ח מבקר</label>
+                            <input type="text" class="form-control" placeholder="TEXT" />
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="form-group">
+                            <label class="text-primary">נאמן</label>
+                            <input type="text" class="form-control" placeholder="TEXT" />
+                        </div>
+                    </div>
+                </div>
+                <!-- 5 -->
+                <div class="row">
                     <div class="col-3">
                         <div class="form-group">
                             <label class="text-primary">אדמיניסטרטור</label>
@@ -231,8 +252,8 @@
                     </div>
                     <div class="col-3">
                         <div class="form-group">
-                            <label class="text-primary">ייעוץ משפטי</label>
-                            <input type="text" class="form-control" placeholder="TEXT" />
+                            <label class="text-primary">סכום מינימום </label>
+                            <input type="text" class="form-control" placeholder="NUM" />
                         </div>
                     </div>
                     <div class="col-3">
@@ -241,8 +262,14 @@
                             <input type="text" class="form-control" placeholder="NUM" />
                         </div>
                     </div>
+                    <div class="col-3">
+                        <div class="form-group">
+                            <label class="text-primary">חשיפה נטו</label>
+                            <input type="text" class="form-control" placeholder="NUM" />
+                        </div>
+                    </div>
                 </div>
-                <!-- 5 -->
+                <!-- 6 -->
                 <div class="row">
                     <div class="col-3">
                         <div class="form-group">
@@ -269,7 +296,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- 6 -->
+                <!-- 7 -->
                 <div class="row">
                     <div class="col-3">
                         <div class="form-group">
@@ -289,15 +316,6 @@
                             <input type="text" class="form-control" placeholder="NUM" />
                         </div>
                     </div>
-                    <div class="col-3">
-                        <div class="form-group">
-                            <label class="text-primary">חשיפה נטו</label>
-                            <input type="text" class="form-control" placeholder="NUM" />
-                        </div>
-                    </div>
-                </div>
-                <!-- 7 -->
-                <div class="row">
                     <div class="col-3">
                         <div class="form-group">
                             <label class="text-primary">אתר החברה</label>

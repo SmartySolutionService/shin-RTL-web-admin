@@ -939,22 +939,28 @@
 /*******************************************************/
 /********* *** Simulator P2P Foundation  *** ***********/
 /*******************************************************/
-.simulator-p2p-foundation .app-header {
+.simulator-p2p-foundation .app-header,
+.simulator-debt-fund .app-header {
   border-bottom: none !important;
 }
-.simulator-p2p-foundation .card {
+.simulator-p2p-foundation .card,
+.simulator-debt-fund .card {
   border-top: solid 16px #7ABBFC;
 }
-.simulator-p2p-foundation .card label {
+.simulator-p2p-foundation .card label,
+.simulator-debt-fund .card label {
   margin-top: 20px;
 }
-.simulator-p2p-foundation label {
+.simulator-p2p-foundation label,
+.simulator-debt-fund label {
   font-weight: bold;
 }
-.simulator-p2p-foundation .text-primary {
+.simulator-p2p-foundation .text-primary,
+.simulator-debt-fund .text-primary {
   color: #7ABBFC;
 }
-.simulator-p2p-foundation .form-control {
+.simulator-p2p-foundation .form-control,
+.simulator-debt-fund .form-control {
   height: 50px;
   border-radius: 10px;
 }
