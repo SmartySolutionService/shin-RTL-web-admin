@@ -632,4 +632,27 @@
   max-width: 220px;
 }
 
+/*******************************************************/
+/*** *** Simulator Saving For Creating Butcher  *** ****/
+/*******************************************************/
+.simulator-saving-for-creating-butcher .card .card-body {
+  padding: 0;
+}
+.simulator-saving-for-creating-butcher .card .card-body .row {
+  margin: 0;
+  padding: 10px 20px;
+  border-bottom: solid 2px #BFC5D2;
+}
+.simulator-saving-for-creating-butcher .card .card-body .form-control {
+  max-width: 120px;
+}
+.simulator-saving-for-creating-butcher .card .card-footer {
+  font-weight: bold;
+  background-color: #485272;
+  color: #ffffff;
+}
+.simulator-saving-for-creating-butcher .btn-accountant {
+  width: 191px;
+}
+
 /*# sourceMappingURL=simulator.css.map */

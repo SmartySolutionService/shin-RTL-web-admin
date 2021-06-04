@@ -1706,6 +1706,12 @@ body {
             background-image: url(../img/buttons/btn-save-hover.png);
         }
     }
+    &.btn-accountant {
+        background-image: url(../img/buttons/btn-accountant.png);
+        &:hover {
+            background-image: url(../img/buttons/btn-accountant-hover.png);
+        }
+    }
     &.btn-save-green {
         background-image: url(../img/buttons/btn-save-green.png);
         &:hover {
