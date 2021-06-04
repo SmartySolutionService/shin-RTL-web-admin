@@ -11550,6 +11550,12 @@ body .main.open-filter .filter-app {
 .cs-btn-img.btn-accountant:hover {
   background-image: url(../img/buttons/btn-accountant-hover.png);
 }
+.cs-btn-img.btn-show-leverage-results {
+  background-image: url(../img/buttons/btn-show-leverage-results.png);
+}
+.cs-btn-img.btn-show-leverage-results:hover {
+  background-image: url(../img/buttons/btn-show-leverage-results-hover.png);
+}
 .cs-btn-img.btn-save-green {
   background-image: url(../img/buttons/btn-save-green.png);
 }

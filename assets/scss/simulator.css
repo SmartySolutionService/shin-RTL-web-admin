@@ -785,20 +785,26 @@
 /********* *** Simulator Leverage Results  *** *********/
 /*******************************************************/
 .simulator-leverage-results .filter-app .app-header,
-.simulator-irr-calculator .filter-app .app-header {
+.simulator-irr-calculator .filter-app .app-header,
+.simulator-double-leverage .filter-app .app-header {
   height: 120px !important;
+  border-bottom: none !important;
 }
 .simulator-leverage-results .filter-app .app-body .card .last-row,
-.simulator-irr-calculator .filter-app .app-body .card .last-row {
+.simulator-irr-calculator .filter-app .app-body .card .last-row,
+.simulator-double-leverage .filter-app .app-body .card .last-row {
   background-color: #7ABBFC;
 }
 .simulator-leverage-results .filter-app table th, .simulator-leverage-results .filter-app table td,
 .simulator-irr-calculator .filter-app table th,
-.simulator-irr-calculator .filter-app table td {
+.simulator-irr-calculator .filter-app table td,
+.simulator-double-leverage .filter-app table th,
+.simulator-double-leverage .filter-app table td {
   padding: 12px 30px !important;
 }
 .simulator-leverage-results .filter-app table tfoot tr,
-.simulator-irr-calculator .filter-app table tfoot tr {
+.simulator-irr-calculator .filter-app table tfoot tr,
+.simulator-double-leverage .filter-app table tfoot tr {
   background-color: #485272;
   color: #ffffff;
 }
@@ -818,6 +824,43 @@
 .simulator-irr-calculator .app-body .card table tfoot tr td {
   color: #ffffff;
   font-weight: bold;
+}
+
+/*******************************************************/
+/********** *** Simulator Double Leverage  *** *********/
+/*******************************************************/
+.simulator-double-leverage .dataTables_wrapper {
+  min-width: 300px !important;
+}
+.simulator-double-leverage table thead tr {
+  background-color: #7ABBFC;
+}
+.simulator-double-leverage table thead tr th {
+  color: #ffffff;
+}
+.simulator-double-leverage table tbody tr td {
+  min-height: 63px;
+  border-left: none;
+  border-right: none;
+}
+.simulator-double-leverage table tbody tr td .form-control {
+  max-width: 100px !important;
+}
+.simulator-double-leverage .row-foot {
+  background-color: #485272;
+  height: 60px;
+  color: #ffffff;
+}
+.simulator-double-leverage .row-foot div {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 15px 30px;
+}
+.simulator-double-leverage .btn-accountant {
+  width: 191px;
+}
+.simulator-double-leverage .btn-show-leverage-results {
+  width: 235px;
 }
 
 /*# sourceMappingURL=simulator.css.map */

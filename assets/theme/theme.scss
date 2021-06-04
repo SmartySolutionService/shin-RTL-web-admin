@@ -1712,6 +1712,12 @@ body {
             background-image: url(../img/buttons/btn-accountant-hover.png);
         }
     }
+    &.btn-show-leverage-results {
+        background-image: url(../img/buttons/btn-show-leverage-results.png);
+        &:hover {
+            background-image: url(../img/buttons/btn-show-leverage-results-hover.png);
+        }
+    }
     &.btn-save-green {
         background-image: url(../img/buttons/btn-save-green.png);
         &:hover {

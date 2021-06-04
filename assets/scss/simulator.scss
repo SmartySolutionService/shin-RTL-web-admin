@@ -760,10 +760,12 @@
 /********* *** Simulator Leverage Results  *** *********/ 
 /*******************************************************/ 
 .simulator-leverage-results, 
-.simulator-irr-calculator {
+.simulator-irr-calculator, 
+.simulator-double-leverage {
     .filter-app {
         .app-header {
             height: 120px !important;
+            border-bottom: none !important;
         }
         .app-body {
             .card {
@@ -808,5 +810,52 @@
                 }
             }
         }
+    }
+}
+
+/*******************************************************/ 
+/********** *** Simulator Double Leverage  *** *********/ 
+/*******************************************************/
+.simulator-double-leverage {
+    .dataTables_wrapper {
+        min-width: 300px !important;
+    }
+    table {
+        thead {
+            tr {
+                background-color: #7ABBFC;
+                th {
+                    color: #ffffff;
+                }
+            }
+        }
+        tbody {
+            tr {
+                td {
+                    min-height: 63px;
+                    border-left: none;
+                    border-right: none;
+                    .form-control {
+                        max-width: 100px !important;
+                    }
+                }
+            }
+        }
+    }
+    .row-foot {
+        background-color: #485272;
+        height: 60px;
+        color: #ffffff;
+        div {
+            font-size: 16px;
+            font-weight: bold;
+            padding: 15px 30px;
+        }
+    }
+    .btn-accountant {
+        width: 191px;
+    }
+    .btn-show-leverage-results {
+        width: 235px;
     }
 }
