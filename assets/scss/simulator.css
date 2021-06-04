@@ -388,38 +388,44 @@
 .simulator-top10 .filter-app,
 .simulator-top5 .filter-app,
 .simulator-allocation-and-analysis .filter-app,
-.simulator-leverage-results .filter-app {
+.simulator-leverage-results .filter-app,
+.simulator-irr-calculator .filter-app {
   width: 100% !important;
 }
 .simulator-top10 .filter-app .app-header,
 .simulator-top5 .filter-app .app-header,
 .simulator-allocation-and-analysis .filter-app .app-header,
-.simulator-leverage-results .filter-app .app-header {
+.simulator-leverage-results .filter-app .app-header,
+.simulator-irr-calculator .filter-app .app-header {
   border-bottom: none !important;
 }
 .simulator-top10 .filter-app .app-header .app-header-top .btn-add-product,
 .simulator-top5 .filter-app .app-header .app-header-top .btn-add-product,
 .simulator-allocation-and-analysis .filter-app .app-header .app-header-top .btn-add-product,
-.simulator-leverage-results .filter-app .app-header .app-header-top .btn-add-product {
+.simulator-leverage-results .filter-app .app-header .app-header-top .btn-add-product,
+.simulator-irr-calculator .filter-app .app-header .app-header-top .btn-add-product {
   width: 190px;
 }
 .simulator-top10 .filter-app .app-header .app-header-top .cs-btn-group,
 .simulator-top5 .filter-app .app-header .app-header-top .cs-btn-group,
 .simulator-allocation-and-analysis .filter-app .app-header .app-header-top .cs-btn-group,
-.simulator-leverage-results .filter-app .app-header .app-header-top .cs-btn-group {
+.simulator-leverage-results .filter-app .app-header .app-header-top .cs-btn-group,
+.simulator-irr-calculator .filter-app .app-header .app-header-top .cs-btn-group {
   display: inline-block;
 }
 .simulator-top10 .filter-app .app-header .app-header-top .cs-btn-group .cs-btn-icon,
 .simulator-top5 .filter-app .app-header .app-header-top .cs-btn-group .cs-btn-icon,
 .simulator-allocation-and-analysis .filter-app .app-header .app-header-top .cs-btn-group .cs-btn-icon,
-.simulator-leverage-results .filter-app .app-header .app-header-top .cs-btn-group .cs-btn-icon {
+.simulator-leverage-results .filter-app .app-header .app-header-top .cs-btn-group .cs-btn-icon,
+.simulator-irr-calculator .filter-app .app-header .app-header-top .cs-btn-group .cs-btn-icon {
   display: block;
   margin: 0;
 }
 .simulator-top10 .filter-app .app-header .app-header-top .cs-btn-group label,
 .simulator-top5 .filter-app .app-header .app-header-top .cs-btn-group label,
 .simulator-allocation-and-analysis .filter-app .app-header .app-header-top .cs-btn-group label,
-.simulator-leverage-results .filter-app .app-header .app-header-top .cs-btn-group label {
+.simulator-leverage-results .filter-app .app-header .app-header-top .cs-btn-group label,
+.simulator-irr-calculator .filter-app .app-header .app-header-top .cs-btn-group label {
   display: block;
   text-align: center;
   font-size: 12px;
@@ -429,25 +435,29 @@
 .simulator-top10 .filter-app .app-header .app-header-bottom .btn-show-results,
 .simulator-top5 .filter-app .app-header .app-header-bottom .btn-show-results,
 .simulator-allocation-and-analysis .filter-app .app-header .app-header-bottom .btn-show-results,
-.simulator-leverage-results .filter-app .app-header .app-header-bottom .btn-show-results {
+.simulator-leverage-results .filter-app .app-header .app-header-bottom .btn-show-results,
+.simulator-irr-calculator .filter-app .app-header .app-header-bottom .btn-show-results {
   width: 190px;
 }
 .simulator-top10 .filter-app .app-header .app-header-bottom .input-group-prepend,
 .simulator-top5 .filter-app .app-header .app-header-bottom .input-group-prepend,
 .simulator-allocation-and-analysis .filter-app .app-header .app-header-bottom .input-group-prepend,
-.simulator-leverage-results .filter-app .app-header .app-header-bottom .input-group-prepend {
+.simulator-leverage-results .filter-app .app-header .app-header-bottom .input-group-prepend,
+.simulator-irr-calculator .filter-app .app-header .app-header-bottom .input-group-prepend {
   width: 100%;
 }
 .simulator-top10 .filter-app .app-header .app-header-bottom .input-group-prepend:before,
 .simulator-top5 .filter-app .app-header .app-header-bottom .input-group-prepend:before,
 .simulator-allocation-and-analysis .filter-app .app-header .app-header-bottom .input-group-prepend:before,
-.simulator-leverage-results .filter-app .app-header .app-header-bottom .input-group-prepend:before {
+.simulator-leverage-results .filter-app .app-header .app-header-bottom .input-group-prepend:before,
+.simulator-irr-calculator .filter-app .app-header .app-header-bottom .input-group-prepend:before {
   top: 22px;
 }
 .simulator-top10 .filter-app .app-header .app-header-bottom .input-group-prepend .dropdown-toggle,
 .simulator-top5 .filter-app .app-header .app-header-bottom .input-group-prepend .dropdown-toggle,
 .simulator-allocation-and-analysis .filter-app .app-header .app-header-bottom .input-group-prepend .dropdown-toggle,
-.simulator-leverage-results .filter-app .app-header .app-header-bottom .input-group-prepend .dropdown-toggle {
+.simulator-leverage-results .filter-app .app-header .app-header-bottom .input-group-prepend .dropdown-toggle,
+.simulator-irr-calculator .filter-app .app-header .app-header-bottom .input-group-prepend .dropdown-toggle {
   width: 100%;
   height: 45px;
   font-size: 16px;
@@ -455,13 +465,15 @@
 .simulator-top10 .filter-app .app-header .app-header-bottom .input-group-prepend .dropdown-menu,
 .simulator-top5 .filter-app .app-header .app-header-bottom .input-group-prepend .dropdown-menu,
 .simulator-allocation-and-analysis .filter-app .app-header .app-header-bottom .input-group-prepend .dropdown-menu,
-.simulator-leverage-results .filter-app .app-header .app-header-bottom .input-group-prepend .dropdown-menu {
+.simulator-leverage-results .filter-app .app-header .app-header-bottom .input-group-prepend .dropdown-menu,
+.simulator-irr-calculator .filter-app .app-header .app-header-bottom .input-group-prepend .dropdown-menu {
   width: 100% !important;
 }
 .simulator-top10 .filter-app .app-header .app-header-bottom .input-group-prepend .dropdown-menu .dropdown-item,
 .simulator-top5 .filter-app .app-header .app-header-bottom .input-group-prepend .dropdown-menu .dropdown-item,
 .simulator-allocation-and-analysis .filter-app .app-header .app-header-bottom .input-group-prepend .dropdown-menu .dropdown-item,
-.simulator-leverage-results .filter-app .app-header .app-header-bottom .input-group-prepend .dropdown-menu .dropdown-item {
+.simulator-leverage-results .filter-app .app-header .app-header-bottom .input-group-prepend .dropdown-menu .dropdown-item,
+.simulator-irr-calculator .filter-app .app-header .app-header-bottom .input-group-prepend .dropdown-menu .dropdown-item {
   width: 100% !important;
   font-size: 16px;
   padding-right: 30px;
@@ -469,7 +481,8 @@
 .simulator-top10 .filter-app .app-header .app-header-bottom .input-group-prepend .dropdown-menu .dropdown-item .cs-checkbox-container,
 .simulator-top5 .filter-app .app-header .app-header-bottom .input-group-prepend .dropdown-menu .dropdown-item .cs-checkbox-container,
 .simulator-allocation-and-analysis .filter-app .app-header .app-header-bottom .input-group-prepend .dropdown-menu .dropdown-item .cs-checkbox-container,
-.simulator-leverage-results .filter-app .app-header .app-header-bottom .input-group-prepend .dropdown-menu .dropdown-item .cs-checkbox-container {
+.simulator-leverage-results .filter-app .app-header .app-header-bottom .input-group-prepend .dropdown-menu .dropdown-item .cs-checkbox-container,
+.simulator-irr-calculator .filter-app .app-header .app-header-bottom .input-group-prepend .dropdown-menu .dropdown-item .cs-checkbox-container {
   float: right;
   width: 18px;
   height: 18px;
@@ -479,21 +492,24 @@
 .simulator-top10 .filter-app .app-header .app-header-bottom .input-group-prepend .dropdown-menu .dropdown-item .cs-checkbox-container [type=checkbox],
 .simulator-top5 .filter-app .app-header .app-header-bottom .input-group-prepend .dropdown-menu .dropdown-item .cs-checkbox-container [type=checkbox],
 .simulator-allocation-and-analysis .filter-app .app-header .app-header-bottom .input-group-prepend .dropdown-menu .dropdown-item .cs-checkbox-container [type=checkbox],
-.simulator-leverage-results .filter-app .app-header .app-header-bottom .input-group-prepend .dropdown-menu .dropdown-item .cs-checkbox-container [type=checkbox] {
+.simulator-leverage-results .filter-app .app-header .app-header-bottom .input-group-prepend .dropdown-menu .dropdown-item .cs-checkbox-container [type=checkbox],
+.simulator-irr-calculator .filter-app .app-header .app-header-bottom .input-group-prepend .dropdown-menu .dropdown-item .cs-checkbox-container [type=checkbox] {
   width: 18px;
   height: 18px;
 }
 .simulator-top10 .filter-app .app-header .app-header-bottom .input-group-prepend .dropdown-menu .dropdown-item .cs-checkbox-container .checkmark,
 .simulator-top5 .filter-app .app-header .app-header-bottom .input-group-prepend .dropdown-menu .dropdown-item .cs-checkbox-container .checkmark,
 .simulator-allocation-and-analysis .filter-app .app-header .app-header-bottom .input-group-prepend .dropdown-menu .dropdown-item .cs-checkbox-container .checkmark,
-.simulator-leverage-results .filter-app .app-header .app-header-bottom .input-group-prepend .dropdown-menu .dropdown-item .cs-checkbox-container .checkmark {
+.simulator-leverage-results .filter-app .app-header .app-header-bottom .input-group-prepend .dropdown-menu .dropdown-item .cs-checkbox-container .checkmark,
+.simulator-irr-calculator .filter-app .app-header .app-header-bottom .input-group-prepend .dropdown-menu .dropdown-item .cs-checkbox-container .checkmark {
   width: 18px;
   height: 18px;
 }
 .simulator-top10 .filter-app .app-header .app-header-bottom .input-group-prepend .dropdown-menu .dropdown-item .cs-checkbox-container .checkmark:after,
 .simulator-top5 .filter-app .app-header .app-header-bottom .input-group-prepend .dropdown-menu .dropdown-item .cs-checkbox-container .checkmark:after,
 .simulator-allocation-and-analysis .filter-app .app-header .app-header-bottom .input-group-prepend .dropdown-menu .dropdown-item .cs-checkbox-container .checkmark:after,
-.simulator-leverage-results .filter-app .app-header .app-header-bottom .input-group-prepend .dropdown-menu .dropdown-item .cs-checkbox-container .checkmark:after {
+.simulator-leverage-results .filter-app .app-header .app-header-bottom .input-group-prepend .dropdown-menu .dropdown-item .cs-checkbox-container .checkmark:after,
+.simulator-irr-calculator .filter-app .app-header .app-header-bottom .input-group-prepend .dropdown-menu .dropdown-item .cs-checkbox-container .checkmark:after {
   right: 5px;
   top: 2px;
   width: 6px;
@@ -502,20 +518,23 @@
 .simulator-top10 .filter-app .app-body table thead,
 .simulator-top5 .filter-app .app-body table thead,
 .simulator-allocation-and-analysis .filter-app .app-body table thead,
-.simulator-leverage-results .filter-app .app-body table thead {
+.simulator-leverage-results .filter-app .app-body table thead,
+.simulator-irr-calculator .filter-app .app-body table thead {
   background-color: #7ABCFF;
 }
 .simulator-top10 .filter-app .app-body table thead tr th,
 .simulator-top5 .filter-app .app-body table thead tr th,
 .simulator-allocation-and-analysis .filter-app .app-body table thead tr th,
-.simulator-leverage-results .filter-app .app-body table thead tr th {
+.simulator-leverage-results .filter-app .app-body table thead tr th,
+.simulator-irr-calculator .filter-app .app-body table thead tr th {
   position: relative;
   color: #ffffff;
 }
 .simulator-top10 .filter-app .app-body table thead tr th .cs-icon,
 .simulator-top5 .filter-app .app-body table thead tr th .cs-icon,
 .simulator-allocation-and-analysis .filter-app .app-body table thead tr th .cs-icon,
-.simulator-leverage-results .filter-app .app-body table thead tr th .cs-icon {
+.simulator-leverage-results .filter-app .app-body table thead tr th .cs-icon,
+.simulator-irr-calculator .filter-app .app-body table thead tr th .cs-icon {
   position: absolute;
   top: 15px;
   right: 15px;
@@ -523,7 +542,8 @@
 .simulator-top10 .filter-app .app-body table thead tr th .cs-btn-icon,
 .simulator-top5 .filter-app .app-body table thead tr th .cs-btn-icon,
 .simulator-allocation-and-analysis .filter-app .app-body table thead tr th .cs-btn-icon,
-.simulator-leverage-results .filter-app .app-body table thead tr th .cs-btn-icon {
+.simulator-leverage-results .filter-app .app-body table thead tr th .cs-btn-icon,
+.simulator-irr-calculator .filter-app .app-body table thead tr th .cs-btn-icon {
   position: absolute;
   left: 10px;
   top: 10px;
@@ -535,19 +555,22 @@
 .simulator-top10 .filter-app .app-body table thead tr th a,
 .simulator-top5 .filter-app .app-body table thead tr th a,
 .simulator-allocation-and-analysis .filter-app .app-body table thead tr th a,
-.simulator-leverage-results .filter-app .app-body table thead tr th a {
+.simulator-leverage-results .filter-app .app-body table thead tr th a,
+.simulator-irr-calculator .filter-app .app-body table thead tr th a {
   color: #485272;
 }
 .simulator-top10 .filter-app .app-body table thead tr th a:hover,
 .simulator-top5 .filter-app .app-body table thead tr th a:hover,
 .simulator-allocation-and-analysis .filter-app .app-body table thead tr th a:hover,
-.simulator-leverage-results .filter-app .app-body table thead tr th a:hover {
+.simulator-leverage-results .filter-app .app-body table thead tr th a:hover,
+.simulator-irr-calculator .filter-app .app-body table thead tr th a:hover {
   color: #001553;
 }
 .simulator-top10 .filter-app .app-body table tbody tr td,
 .simulator-top5 .filter-app .app-body table tbody tr td,
 .simulator-allocation-and-analysis .filter-app .app-body table tbody tr td,
-.simulator-leverage-results .filter-app .app-body table tbody tr td {
+.simulator-leverage-results .filter-app .app-body table tbody tr td,
+.simulator-irr-calculator .filter-app .app-body table tbody tr td {
   position: relative;
   padding-right: 20px;
   padding-left: 20px;
@@ -555,14 +578,16 @@
 .simulator-top10 .filter-app .app-body table tbody tr td:first-child,
 .simulator-top5 .filter-app .app-body table tbody tr td:first-child,
 .simulator-allocation-and-analysis .filter-app .app-body table tbody tr td:first-child,
-.simulator-leverage-results .filter-app .app-body table tbody tr td:first-child {
+.simulator-leverage-results .filter-app .app-body table tbody tr td:first-child,
+.simulator-irr-calculator .filter-app .app-body table tbody tr td:first-child {
   padding-right: 0;
   padding-left: 0;
 }
 .simulator-top10 .filter-app .app-body table tbody tr td .cs-icon,
 .simulator-top5 .filter-app .app-body table tbody tr td .cs-icon,
 .simulator-allocation-and-analysis .filter-app .app-body table tbody tr td .cs-icon,
-.simulator-leverage-results .filter-app .app-body table tbody tr td .cs-icon {
+.simulator-leverage-results .filter-app .app-body table tbody tr td .cs-icon,
+.simulator-irr-calculator .filter-app .app-body table tbody tr td .cs-icon {
   position: absolute;
   top: 15px;
   right: 15px;
@@ -570,21 +595,24 @@
 .simulator-top10 .filter-app .app-body table tbody tr td .cs-checkbox-container,
 .simulator-top5 .filter-app .app-body table tbody tr td .cs-checkbox-container,
 .simulator-allocation-and-analysis .filter-app .app-body table tbody tr td .cs-checkbox-container,
-.simulator-leverage-results .filter-app .app-body table tbody tr td .cs-checkbox-container {
+.simulator-leverage-results .filter-app .app-body table tbody tr td .cs-checkbox-container,
+.simulator-irr-calculator .filter-app .app-body table tbody tr td .cs-checkbox-container {
   height: 20px;
   line-height: 20px;
 }
 .simulator-top10 .filter-app .app-body table tbody tr td .cs-checkbox-container [type=checkbox],
 .simulator-top5 .filter-app .app-body table tbody tr td .cs-checkbox-container [type=checkbox],
 .simulator-allocation-and-analysis .filter-app .app-body table tbody tr td .cs-checkbox-container [type=checkbox],
-.simulator-leverage-results .filter-app .app-body table tbody tr td .cs-checkbox-container [type=checkbox] {
+.simulator-leverage-results .filter-app .app-body table tbody tr td .cs-checkbox-container [type=checkbox],
+.simulator-irr-calculator .filter-app .app-body table tbody tr td .cs-checkbox-container [type=checkbox] {
   width: 20px;
   height: 20px;
 }
 .simulator-top10 .filter-app .app-body table tbody tr td .cs-checkbox-container .checkmark,
 .simulator-top5 .filter-app .app-body table tbody tr td .cs-checkbox-container .checkmark,
 .simulator-allocation-and-analysis .filter-app .app-body table tbody tr td .cs-checkbox-container .checkmark,
-.simulator-leverage-results .filter-app .app-body table tbody tr td .cs-checkbox-container .checkmark {
+.simulator-leverage-results .filter-app .app-body table tbody tr td .cs-checkbox-container .checkmark,
+.simulator-irr-calculator .filter-app .app-body table tbody tr td .cs-checkbox-container .checkmark {
   width: 20px;
   height: 20px;
   border-radius: 4px;
@@ -592,7 +620,8 @@
 .simulator-top10 .filter-app .app-body table tbody tr td .cs-checkbox-container .checkmark:after,
 .simulator-top5 .filter-app .app-body table tbody tr td .cs-checkbox-container .checkmark:after,
 .simulator-allocation-and-analysis .filter-app .app-body table tbody tr td .cs-checkbox-container .checkmark:after,
-.simulator-leverage-results .filter-app .app-body table tbody tr td .cs-checkbox-container .checkmark:after {
+.simulator-leverage-results .filter-app .app-body table tbody tr td .cs-checkbox-container .checkmark:after,
+.simulator-irr-calculator .filter-app .app-body table tbody tr td .cs-checkbox-container .checkmark:after {
   right: 4px;
   top: 1px;
   width: 8px;
@@ -723,38 +752,68 @@
 /*** *** Simulator Saving For Creating Butcher  *** ****/
 /*******************************************************/
 .simulator-saving-for-creating-butcher .card .card-body,
-.simulator-leverage-results .card .card-body {
+.simulator-leverage-results .card .card-body,
+.simulator-irr-calculator .card .card-body {
   padding: 0;
 }
 .simulator-saving-for-creating-butcher .card .card-body .row,
-.simulator-leverage-results .card .card-body .row {
+.simulator-leverage-results .card .card-body .row,
+.simulator-irr-calculator .card .card-body .row {
   margin: 0;
   padding: 10px 20px;
   border-bottom: solid 2px #BFC5D2;
 }
 .simulator-saving-for-creating-butcher .card .card-body .form-control,
-.simulator-leverage-results .card .card-body .form-control {
+.simulator-leverage-results .card .card-body .form-control,
+.simulator-irr-calculator .card .card-body .form-control {
   max-width: 120px;
 }
 .simulator-saving-for-creating-butcher .card .card-footer,
-.simulator-leverage-results .card .card-footer {
+.simulator-leverage-results .card .card-footer,
+.simulator-irr-calculator .card .card-footer {
   font-weight: bold;
   background-color: #485272;
   color: #ffffff;
 }
 .simulator-saving-for-creating-butcher .btn-accountant,
-.simulator-leverage-results .btn-accountant {
+.simulator-leverage-results .btn-accountant,
+.simulator-irr-calculator .btn-accountant {
   width: 191px;
 }
 
 /*******************************************************/
 /********* *** Simulator Leverage Results  *** *********/
 /*******************************************************/
-.simulator-leverage-results .filter-app .app-header {
+.simulator-leverage-results .filter-app .app-header,
+.simulator-irr-calculator .filter-app .app-header {
   height: 120px !important;
 }
-.simulator-leverage-results .filter-app .app-body .card .last-row {
+.simulator-leverage-results .filter-app .app-body .card .last-row,
+.simulator-irr-calculator .filter-app .app-body .card .last-row {
   background-color: #7ABBFC;
+}
+.simulator-leverage-results .filter-app table th, .simulator-leverage-results .filter-app table td,
+.simulator-irr-calculator .filter-app table th,
+.simulator-irr-calculator .filter-app table td {
+  padding: 12px 30px !important;
+}
+.simulator-leverage-results .filter-app table tfoot tr,
+.simulator-irr-calculator .filter-app table tfoot tr {
+  background-color: #485272;
+  color: #ffffff;
+}
+
+/*******************************************************/
+/********** *** Simulator IRR Calculator  *** **********/
+/*******************************************************/
+.simulator-irr-calculator .app-body .card {
+  max-width: 700px;
+}
+.simulator-irr-calculator .app-body .card table {
+  max-width: 700px !important;
+}
+.simulator-irr-calculator .app-body .card table tfoot tr td {
+  color: #ffffff;
 }
 
 /*# sourceMappingURL=simulator.css.map */
