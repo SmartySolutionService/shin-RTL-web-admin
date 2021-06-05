@@ -490,8 +490,10 @@
         </div>
         <!-- section 4 -->
         <div class="row mx-0">
-            <h4>איכות וסטטיסטיקה</h4>
-            <input type="date" class="form-control mr-3" />
+            <h4 class="pt-1">איכות וסטטיסטיקה</h4>
+            <div class="form-group">
+              <input id="datepicker" class="form-control mr-3" placeholder="בחר טווח" />
+            </div>
         </div>
         <div class="card mt-3 mb-5">
             <div class="card-body p-0">
@@ -1135,6 +1137,8 @@
 <!-- ./plugin js -->
 <!-- script -->
 <script>
+  // datepicker init
+  $('#datepicker').datepicker({ uiLibrary: 'bootstrap4' });
     // datatable init
   $(document).ready(function() {
     $('.datatable').DataTable({

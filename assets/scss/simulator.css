@@ -776,6 +776,11 @@
 .simulator-allocation-and-analysis .form-control {
   max-width: 220px;
 }
+.simulator-allocation-and-analysis #datepicker {
+  width: 220px;
+  height: 45px;
+  border-radius: 8px;
+}
 
 /*******************************************************/
 /*** *** Simulator Saving For Creating Butcher  *** ****/

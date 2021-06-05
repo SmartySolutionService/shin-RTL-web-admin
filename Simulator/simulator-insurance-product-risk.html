@@ -164,7 +164,7 @@
                     <div class="col-3">
                         <div class="form-group">
                             <label class="text-primary">תחילת ביטוח</label>
-                            <input type="text" class="form-control" placeholder="DATE" />
+                            <input id="datepicker" class="form-control" placeholder="DATE" />
                         </div>
                     </div>
                     <div class="col-3">
@@ -220,6 +220,8 @@
 <!-- ./plugin js -->
 <!-- script -->
 <script>
+  // datepicker init
+  $('#datepicker').datepicker({ uiLibrary: 'bootstrap4' });
     // datatable init
   $(document).ready(function() {
     $('.datatable').DataTable({
