@@ -680,8 +680,12 @@
                 background-color: #F4F7F8;
             }
             td {
-                &.bg-danger {
+                .bg-danger {
                     background-color: #DE0101 !important;
+                    position: relative;
+                    display: block;
+                    padding: 16px;
+                    width: max-content;
                 }
                 &:first-child {
                     padding-right: 20px !important;
@@ -703,6 +707,18 @@
                             .ic-collapse-pm {
                                 background-image: url(../img/icons/ic_minus_blue.png);
                             }
+                        }
+                    }
+                    .btn-remove {
+                        position: relative;
+                        display: block;
+                        width: 40px;
+                        height: 40px;
+                        border-left: solid 1px #BFC5D2;
+                        .cs-icon {
+                            position: relative;
+                            top: 10px;
+                            right: 3px;
                         }
                     }
                 }
