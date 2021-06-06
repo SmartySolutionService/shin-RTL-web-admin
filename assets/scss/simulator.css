@@ -736,6 +736,9 @@
 .simulator-allocation-and-analysis .cs-btn-img.btn-copy-client-file {
   width: 191px;
 }
+.simulator-allocation-and-analysis .table tr.sub-tr {
+  background-color: #F4F7F8;
+}
 .simulator-allocation-and-analysis .table tr td.bg-danger {
   background-color: #DE0101 !important;
 }

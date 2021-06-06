@@ -676,6 +676,9 @@
     }
     .table {
         tr {
+            &.sub-tr {
+                background-color: #F4F7F8;
+            }
             td {
                 &.bg-danger {
                     background-color: #DE0101 !important;

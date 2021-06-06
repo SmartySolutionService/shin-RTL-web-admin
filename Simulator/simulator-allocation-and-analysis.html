@@ -238,7 +238,18 @@
                                 <div class="cs-icon ic-collapse-pm"></div>
                             </a>
                         </td>
-                        <td class="font-weight-bold">פוליסת חיסכון</td>
+                        <td class="font-weight-bold">קרנות השתלמות</td>
+                        <td>NUMERIC</td>
+                        <td>NUMERIC %</td>
+                        <td>NUMERIC % TEXT</td>
+                    </tr>
+                    <tr data-id="2">
+                        <td class="text-right">
+                            <a class="details-control">
+                                <div class="cs-icon ic-collapse-pm"></div>
+                            </a>
+                        </td>
+                        <td class="font-weight-bold">קופת גימל</td>
                         <td>NUMERIC</td>
                         <td>NUMERIC %</td>
                         <td>NUMERIC % TEXT</td>
@@ -1159,13 +1170,29 @@
     }
     $(this).addClass('shown');
     var id = $(this).closest('tr').data('id');
-    $(this).closest('tr').after('<tr>'+
-                                '<td></td>'+
-                                '<td colspan="7" class="text-right pr-2">'+
-                                  id +
-                                '</td>'+
-                                '<td></td>'+
-                              '<tr>');
+    $(this).closest('tr').after('<tr class="sub-tr">'+
+                                  '<td></td>'+
+                                  '<td>'+
+                                    '<div class="font-weight-bold">פוליסה 1</div>'+
+                                    '<div class="font-weight-bold">פוליסה 2</div>'+
+                                    '<div class="font-weight-bold">פוליסה 3</div>'+
+                                  '</td>'+
+                                  '<td>'+
+                                    '<div>NUMERIC</div>'+
+                                    '<div>NUMERIC</div>'+
+                                    '<div>NUMERIC</div>'+
+                                  '</td>'+
+                                  '<td>'+
+                                    '<div>% NUMERIC</div>'+
+                                    '<div>% NUMERIC</div>'+
+                                    '<div>% NUMERIC</div>'+
+                                  '</td>'+
+                                  '<td>'+
+                                    '<div>TEXT % NUMERIC</div>'+
+                                    '<div>TEXT % NUMERIC</div>'+
+                                    '<div>TEXT % NUMERIC</div>'+
+                                  '</td>'+
+                                '<tr>');
   });
 </script>
 <script>
