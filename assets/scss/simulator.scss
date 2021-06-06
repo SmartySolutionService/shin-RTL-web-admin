@@ -734,6 +734,44 @@
         height: 45px;
         border-radius: 8px;
     }
+    .collapse-item {
+        &.open {
+            .collapse-header {
+                .ic-chevron {
+                    background-image: url(../img/icons/ic_chevron_up.png);
+                    position: relative;
+                    top: 8px;
+                    right: 10px;
+                }
+                .button-group {
+                    display: flex;
+                }
+            }
+            .collapse-body {
+                display: block;
+            }
+        }
+        .collapse-header {
+            // width: max-content;
+            cursor: pointer;
+            display: flex;
+            h4 {
+                width: max-content;
+            }
+            .ic-chevron {
+                background-image: url(../img/icons/ic_chevron_down.png);
+                position: relative;
+                top: 6px;
+                right: 10px;
+            }
+            .button-group {
+                display: none;
+            }
+        }
+        .collapse-body {
+            display: none;
+        }
+    }
 }
 
 /*******************************************************/ 

@@ -784,6 +784,37 @@
   height: 45px;
   border-radius: 8px;
 }
+.simulator-allocation-and-analysis .collapse-item.open .collapse-header .ic-chevron {
+  background-image: url(../img/icons/ic_chevron_up.png);
+  position: relative;
+  top: 8px;
+  right: 10px;
+}
+.simulator-allocation-and-analysis .collapse-item.open .collapse-header .button-group {
+  display: flex;
+}
+.simulator-allocation-and-analysis .collapse-item.open .collapse-body {
+  display: block;
+}
+.simulator-allocation-and-analysis .collapse-item .collapse-header {
+  cursor: pointer;
+  display: flex;
+}
+.simulator-allocation-and-analysis .collapse-item .collapse-header h4 {
+  width: max-content;
+}
+.simulator-allocation-and-analysis .collapse-item .collapse-header .ic-chevron {
+  background-image: url(../img/icons/ic_chevron_down.png);
+  position: relative;
+  top: 6px;
+  right: 10px;
+}
+.simulator-allocation-and-analysis .collapse-item .collapse-header .button-group {
+  display: none;
+}
+.simulator-allocation-and-analysis .collapse-item .collapse-body {
+  display: none;
+}
 
 /*******************************************************/
 /*** *** Simulator Saving For Creating Butcher  *** ****/

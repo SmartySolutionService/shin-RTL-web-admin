@@ -11768,6 +11768,12 @@ body .main.open-filter .filter-app {
 .cs-icon.ic-chevron_right {
   background-image: url(../img/icons/ic_chevron_right.png);
 }
+.cs-icon.ic-chevron-up {
+  background-image: url(../img/icons/ic_chevron_up.png);
+}
+.cs-icon.ic-chevron-down {
+  background-image: url(../img/icons/ic_chevron_down.png);
+}
 .cs-icon.ic-trash {
   background-image: url(../img/icons/ic_trash.png);
 }

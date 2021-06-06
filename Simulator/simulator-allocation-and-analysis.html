@@ -205,929 +205,986 @@
       </div>
     </div>
     <div class="app-body mt-4 mb-5">
-        <h4 class="text-primary">סוג מוצרים יתרות ונכסים </h4>
-        <p class="py-2">:להלן נתונים אודות המוצרים הפיננסים והפיננסים השונים כפי שהתקבלו מאתר המסלקה הפיננסיות וממשפחת פולק</p>
-        <!-- section 1 -->
-        <div class="card mb-5">
-            <div class="card-body p-0">
-              <table class="table datatable m-0">
-                <thead>
-                  <tr>
-                    <th style="width: 50px;"></th>
-                    <th>סוג נכס</th>
-                    <th>היכף הנכסים</th>
-                    <th>אחוז מהתיק</th>
-                    <th>מס רווח הון</th>
-                  </tr>
-                </thead>
-                <tbody>
-                    <tr data-id="1">
-                        <td class="text-right">
-                            <a class="details-control">
-                                <div class="cs-icon ic-collapse-pm"></div>
-                            </a>
-                        </td>
-                        <td class="font-weight-bold">פוליסת חיסכון</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC %</td>
-                        <td>NUMERIC % TEXT</td>
-                    </tr>
-                    <tr data-id="2">
-                        <td class="text-right">
-                            <a class="details-control">
-                                <div class="cs-icon ic-collapse-pm"></div>
-                            </a>
-                        </td>
-                        <td class="font-weight-bold">קרנות השתלמות</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC %</td>
-                        <td>NUMERIC % TEXT</td>
-                    </tr>
-                    <tr data-id="2">
-                        <td class="text-right">
-                            <a class="details-control">
-                                <div class="cs-icon ic-collapse-pm"></div>
-                            </a>
-                        </td>
-                        <td class="font-weight-bold">קופת גימל</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC %</td>
-                        <td>NUMERIC % TEXT</td>
-                    </tr>
-                </tbody>
-                <tfoot class="bg-accent">
-                    <tr>
-                        <td></td>
-                        <td>סה"כ</td>
-                        <td>NUMERIC</td>
-                        <td>100%</td>
-                        <td>NUMERIC</td>
-                    </tr>
-                </tfoot>
-              </table>
-            </div>
+      <!-- section 1 -->
+      <div class="collapse-item open">
+        <div class="collapse-header">
+          <h4 class="text-primary">סוג מוצרים יתרות ונכסים </h4>
+          <span class="cs-icon ic-chevron"></span>
         </div>
-        <!-- section 2 -->
-        <div class="card mb-5 card-border-top">
-            <div class="card-body">
-                <div class="row">
-                    <div class="col-3 border-left">
-                        <div class="row mx-0">
-                            <h6 class="w-100 pt-2">הרכב מנהלים</h6>
-                            <div class="row w-100 py-4">
-                                <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12">
-                                    <div class="doughnut-wrapper">
-                                    <canvas class="doughnut"></canvas>
-                                    </div>
-                                </div>
-                                <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12">
-                                    <div class="donut-captions">
-                                    <div class="row">
-                                        <label><span class="dount-caption-icon" style="--bgColor : #7ABBFC"></span>אלגו </label>
-                                    </div>
-                                    <div class="row">
-                                        <label><span class="dount-caption-icon" style="--bgColor : #3ACCE1"></span>נדל"ן יזמי </label>
-                                    </div>
-                                    <div class="row">
-                                        <label><span class="dount-caption-icon" style="--bgColor : #32D296"></span>נדל"ן מניב </label>
-                                    </div>
-                                    <div class="row">
-                                        <label><span class="dount-caption-icon" style="--bgColor : #7ABBFC"></span>ריט </label>
-                                    </div>
-                                    <div class="row">
-                                        <label><span class="dount-caption-icon" style="--bgColor : #3ACCE1"></span>אשראי עסקי </label>
-                                    </div>
-                                    <div class="row">
-                                        <label><span class="dount-caption-icon" style="--bgColor : #32D296"></span>אשראי צרכני </label>
-                                    </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-3 border-left">
-                        <div class="row mx-0">
-                            <h6 class="w-100 pt-2">הרכב מנהלים</h6>
-                            <div class="row w-100 py-4">
-                                <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12">
-                                    <div class="doughnut-wrapper">
-                                    <canvas class="doughnut"></canvas>
-                                    </div>
-                                </div>
-                                <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12">
-                                    <div class="donut-captions">
-                                    <div class="row">
-                                        <label><span class="dount-caption-icon" style="--bgColor : #7ABBFC"></span>אלגו </label>
-                                    </div>
-                                    <div class="row">
-                                        <label><span class="dount-caption-icon" style="--bgColor : #3ACCE1"></span>נדל"ן יזמי </label>
-                                    </div>
-                                    <div class="row">
-                                        <label><span class="dount-caption-icon" style="--bgColor : #32D296"></span>נדל"ן מניב </label>
-                                    </div>
-                                    <div class="row">
-                                        <label><span class="dount-caption-icon" style="--bgColor : #7ABBFC"></span>ריט </label>
-                                    </div>
-                                    <div class="row">
-                                        <label><span class="dount-caption-icon" style="--bgColor : #3ACCE1"></span>אשראי עסקי </label>
-                                    </div>
-                                    <div class="row">
-                                        <label><span class="dount-caption-icon" style="--bgColor : #32D296"></span>אשראי צרכני </label>
-                                    </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-3 border-left">
-                        <div class="row mx-0">
-                            <h6 class="w-100 pt-2">התפלגות אפיקי השקעה</h6>
-                            <div class="row w-100 py-4">
-                                <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12">
-                                    <div class="doughnut-wrapper">
-                                    <canvas class="doughnut"></canvas>
-                                    </div>
-                                </div>
-                                <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12">
-                                    <div class="donut-captions">
-                                    <div class="row">
-                                        <label><span class="dount-caption-icon" style="--bgColor : #7ABBFC"></span>אלגו </label>
-                                    </div>
-                                    <div class="row">
-                                        <label><span class="dount-caption-icon" style="--bgColor : #3ACCE1"></span>נדל"ן יזמי </label>
-                                    </div>
-                                    <div class="row">
-                                        <label><span class="dount-caption-icon" style="--bgColor : #32D296"></span>נדל"ן מניב </label>
-                                    </div>
-                                    <div class="row">
-                                        <label><span class="dount-caption-icon" style="--bgColor : #7ABBFC"></span>ריט </label>
-                                    </div>
-                                    <div class="row">
-                                        <label><span class="dount-caption-icon" style="--bgColor : #3ACCE1"></span>אשראי עסקי </label>
-                                    </div>
-                                    <div class="row">
-                                        <label><span class="dount-caption-icon" style="--bgColor : #32D296"></span>אשראי צרכני </label>
-                                    </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-3">
-                        <div class="row mx-0">
-                            <h6 class="w-100 pt-2">מס רווח הון</h6>
-                            <div class="row w-100 py-4">
-                                <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12">
-                                    <div class="doughnut-wrapper">
-                                    <canvas class="doughnut"></canvas>
-                                    </div>
-                                </div>
-                                <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12">
-                                    <div class="donut-captions">
-                                    <div class="row">
-                                        <label><span class="dount-caption-icon" style="--bgColor : #7ABBFC"></span>אלגו </label>
-                                    </div>
-                                    <div class="row">
-                                        <label><span class="dount-caption-icon" style="--bgColor : #3ACCE1"></span>נדל"ן יזמי </label>
-                                    </div>
-                                    <div class="row">
-                                        <label><span class="dount-caption-icon" style="--bgColor : #32D296"></span>נדל"ן מניב </label>
-                                    </div>
-                                    <div class="row">
-                                        <label><span class="dount-caption-icon" style="--bgColor : #7ABBFC"></span>ריט </label>
-                                    </div>
-                                    <div class="row">
-                                        <label><span class="dount-caption-icon" style="--bgColor : #3ACCE1"></span>אשראי עסקי </label>
-                                    </div>
-                                    <div class="row">
-                                        <label><span class="dount-caption-icon" style="--bgColor : #32D296"></span>אשראי צרכני </label>
-                                    </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="collapse-body">
+          <p class="py-2">:להלן נתונים אודות המוצרים הפיננסים והפיננסים השונים כפי שהתקבלו מאתר המסלקה הפיננסיות וממשפחת פולק</p>
+          <!-- section 1-1 -->
+          <div class="card mb-5">
+              <div class="card-body p-0">
+                <table class="table datatable m-0">
+                  <thead>
+                    <tr>
+                      <th style="width: 50px;"></th>
+                      <th>סוג נכס</th>
+                      <th>היכף הנכסים</th>
+                      <th>אחוז מהתיק</th>
+                      <th>מס רווח הון</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                      <tr data-id="1">
+                          <td class="text-right">
+                              <a class="details-control">
+                                  <div class="cs-icon ic-collapse-pm"></div>
+                              </a>
+                          </td>
+                          <td class="font-weight-bold">פוליסת חיסכון</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC %</td>
+                          <td>NUMERIC % TEXT</td>
+                      </tr>
+                      <tr data-id="2">
+                          <td class="text-right">
+                              <a class="details-control">
+                                  <div class="cs-icon ic-collapse-pm"></div>
+                              </a>
+                          </td>
+                          <td class="font-weight-bold">קרנות השתלמות</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC %</td>
+                          <td>NUMERIC % TEXT</td>
+                      </tr>
+                      <tr data-id="2">
+                          <td class="text-right">
+                              <a class="details-control">
+                                  <div class="cs-icon ic-collapse-pm"></div>
+                              </a>
+                          </td>
+                          <td class="font-weight-bold">קופת גימל</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC %</td>
+                          <td>NUMERIC % TEXT</td>
+                      </tr>
+                  </tbody>
+                  <tfoot class="bg-accent">
+                      <tr>
+                          <td></td>
+                          <td>סה"כ</td>
+                          <td>NUMERIC</td>
+                          <td>100%</td>
+                          <td>NUMERIC</td>
+                      </tr>
+                  </tfoot>
+                </table>
+              </div>
+          </div>
+          <!-- section 1-2 -->
+          <div class="card mb-5 card-border-top">
+              <div class="card-body">
+                  <div class="row">
+                      <div class="col-3 border-left">
+                          <div class="row mx-0">
+                              <h6 class="w-100 pt-2">הרכב מנהלים</h6>
+                              <div class="row w-100 py-4">
+                                  <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12">
+                                      <div class="doughnut-wrapper">
+                                      <canvas class="doughnut"></canvas>
+                                      </div>
+                                  </div>
+                                  <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12">
+                                      <div class="donut-captions">
+                                      <div class="row">
+                                          <label><span class="dount-caption-icon" style="--bgColor : #7ABBFC"></span>אלגו </label>
+                                      </div>
+                                      <div class="row">
+                                          <label><span class="dount-caption-icon" style="--bgColor : #3ACCE1"></span>נדל"ן יזמי </label>
+                                      </div>
+                                      <div class="row">
+                                          <label><span class="dount-caption-icon" style="--bgColor : #32D296"></span>נדל"ן מניב </label>
+                                      </div>
+                                      <div class="row">
+                                          <label><span class="dount-caption-icon" style="--bgColor : #7ABBFC"></span>ריט </label>
+                                      </div>
+                                      <div class="row">
+                                          <label><span class="dount-caption-icon" style="--bgColor : #3ACCE1"></span>אשראי עסקי </label>
+                                      </div>
+                                      <div class="row">
+                                          <label><span class="dount-caption-icon" style="--bgColor : #32D296"></span>אשראי צרכני </label>
+                                      </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-3 border-left">
+                          <div class="row mx-0">
+                              <h6 class="w-100 pt-2">הרכב מנהלים</h6>
+                              <div class="row w-100 py-4">
+                                  <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12">
+                                      <div class="doughnut-wrapper">
+                                      <canvas class="doughnut"></canvas>
+                                      </div>
+                                  </div>
+                                  <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12">
+                                      <div class="donut-captions">
+                                      <div class="row">
+                                          <label><span class="dount-caption-icon" style="--bgColor : #7ABBFC"></span>אלגו </label>
+                                      </div>
+                                      <div class="row">
+                                          <label><span class="dount-caption-icon" style="--bgColor : #3ACCE1"></span>נדל"ן יזמי </label>
+                                      </div>
+                                      <div class="row">
+                                          <label><span class="dount-caption-icon" style="--bgColor : #32D296"></span>נדל"ן מניב </label>
+                                      </div>
+                                      <div class="row">
+                                          <label><span class="dount-caption-icon" style="--bgColor : #7ABBFC"></span>ריט </label>
+                                      </div>
+                                      <div class="row">
+                                          <label><span class="dount-caption-icon" style="--bgColor : #3ACCE1"></span>אשראי עסקי </label>
+                                      </div>
+                                      <div class="row">
+                                          <label><span class="dount-caption-icon" style="--bgColor : #32D296"></span>אשראי צרכני </label>
+                                      </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-3 border-left">
+                          <div class="row mx-0">
+                              <h6 class="w-100 pt-2">התפלגות אפיקי השקעה</h6>
+                              <div class="row w-100 py-4">
+                                  <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12">
+                                      <div class="doughnut-wrapper">
+                                      <canvas class="doughnut"></canvas>
+                                      </div>
+                                  </div>
+                                  <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12">
+                                      <div class="donut-captions">
+                                      <div class="row">
+                                          <label><span class="dount-caption-icon" style="--bgColor : #7ABBFC"></span>אלגו </label>
+                                      </div>
+                                      <div class="row">
+                                          <label><span class="dount-caption-icon" style="--bgColor : #3ACCE1"></span>נדל"ן יזמי </label>
+                                      </div>
+                                      <div class="row">
+                                          <label><span class="dount-caption-icon" style="--bgColor : #32D296"></span>נדל"ן מניב </label>
+                                      </div>
+                                      <div class="row">
+                                          <label><span class="dount-caption-icon" style="--bgColor : #7ABBFC"></span>ריט </label>
+                                      </div>
+                                      <div class="row">
+                                          <label><span class="dount-caption-icon" style="--bgColor : #3ACCE1"></span>אשראי עסקי </label>
+                                      </div>
+                                      <div class="row">
+                                          <label><span class="dount-caption-icon" style="--bgColor : #32D296"></span>אשראי צרכני </label>
+                                      </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-3">
+                          <div class="row mx-0">
+                              <h6 class="w-100 pt-2">מס רווח הון</h6>
+                              <div class="row w-100 py-4">
+                                  <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12">
+                                      <div class="doughnut-wrapper">
+                                      <canvas class="doughnut"></canvas>
+                                      </div>
+                                  </div>
+                                  <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12">
+                                      <div class="donut-captions">
+                                      <div class="row">
+                                          <label><span class="dount-caption-icon" style="--bgColor : #7ABBFC"></span>אלגו </label>
+                                      </div>
+                                      <div class="row">
+                                          <label><span class="dount-caption-icon" style="--bgColor : #3ACCE1"></span>נדל"ן יזמי </label>
+                                      </div>
+                                      <div class="row">
+                                          <label><span class="dount-caption-icon" style="--bgColor : #32D296"></span>נדל"ן מניב </label>
+                                      </div>
+                                      <div class="row">
+                                          <label><span class="dount-caption-icon" style="--bgColor : #7ABBFC"></span>ריט </label>
+                                      </div>
+                                      <div class="row">
+                                          <label><span class="dount-caption-icon" style="--bgColor : #3ACCE1"></span>אשראי עסקי </label>
+                                      </div>
+                                      <div class="row">
+                                          <label><span class="dount-caption-icon" style="--bgColor : #32D296"></span>אשראי צרכני </label>
+                                      </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
         </div>
-        <!-- section 3 -->
-        <h4>אלוקצייה השקעות כוללת</h4>
-        <div class="card mt-3 mb-5">
-            <div class="card-body p-0">
-              <table class="table datatable m-0">
-                <thead>
-                  <tr>
-                    <th>שם מוצר </th>
-                    <th>יתרה </th>
-                    <th>דמי ניהול </th>
-                    <th>מזומנים</th>
-                    <th>אגח ממשלתי </th>
-                    <th>אגח קונצרני</th>
-                    <th>חשיפה למניות </th>
-                    <th>נדל"ן </th>
-                    <th>P2P</th>
-                    <th>אחר</th>
-                    <th>סה"כ אלטרנטיבי</th>
-                    <th>חשיפה למט"ח</th>
-                    <th>חשיפה לחו"ל </th>
-                  </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class="font-weight-bold">מוצר 1</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                    </tr>
-                    <tr>
-                        <td class="font-weight-bold">מוצר 2</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                    </tr>
-                    <tr>
-                        <td class="font-weight-bold">מוצר 3</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                    </tr>
-                </tbody>
-                <tfoot>
-                    <tr>
-                        <td>סה"כ</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                    </tr>
-                </tfoot>
-              </table>
-            </div>
+      </div>
+      <!-- section 2 -->
+      <div class="collapse-item open">
+        <div class="collapse-header">
+          <h4>אלוקצייה השקעות כוללת</h4>
+          <span class="cs-icon ic-chevron"></span>
         </div>
-        <!-- section 4 -->
-        <div class="row mx-0">
-            <h4 class="pt-1">איכות וסטטיסטיקה</h4>
-            <div class="form-group">
-              <input id="datepicker" class="form-control mr-3" placeholder="בחר טווח" />
-            </div>
+        <div class="collapse-body">
+          <div class="card mt-3 mb-5">
+              <div class="card-body p-0">
+                <table class="table datatable m-0">
+                  <thead>
+                    <tr>
+                      <th>שם מוצר </th>
+                      <th>יתרה </th>
+                      <th>דמי ניהול </th>
+                      <th>מזומנים</th>
+                      <th>אגח ממשלתי </th>
+                      <th>אגח קונצרני</th>
+                      <th>חשיפה למניות </th>
+                      <th>נדל"ן </th>
+                      <th>P2P</th>
+                      <th>אחר</th>
+                      <th>סה"כ אלטרנטיבי</th>
+                      <th>חשיפה למט"ח</th>
+                      <th>חשיפה לחו"ל </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <td class="font-weight-bold">מוצר 1</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                      </tr>
+                      <tr>
+                          <td class="font-weight-bold">מוצר 2</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                      </tr>
+                      <tr>
+                          <td class="font-weight-bold">מוצר 3</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                      </tr>
+                  </tbody>
+                  <tfoot>
+                      <tr>
+                          <td>סה"כ</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                      </tr>
+                  </tfoot>
+                </table>
+              </div>
+          </div>
         </div>
-        <div class="card mt-3 mb-5">
-            <div class="card-body p-0">
-              <table class="table datatable m-0">
-                <thead>
-                  <tr>
-                    <th>שם מוצר </th>
-                    <th>רמת סיכון </th>
-                    <th>יתרה </th>
-                    <th>אחוז מתיק </th>
-                    <th>תשואה 12 חודשים</th>
-                    <th>תשואה 36 חודשים</th>
-                    <th>אלפא 36</th>
-                    <th>בטא</th>
-                    <th>שארפ 36</th>
-                    <th>סטיית תקן 36</th>
-                    <th>DOWN TRADE</th>
-                    <th>WORST YEAR</th>
-                    <th>דירוג כוכבים</th>
-                    <th>דירוג 36</th>
-                  </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class="font-weight-bold">TEXT</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>TEXT</td>
-                    </tr>
-                    <tr>
-                        <td class="font-weight-bold">TEXT</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>TEXT</td>
-                    </tr>
-                    <tr>
-                        <td class="font-weight-bold">TEXT</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td class="bg-danger">NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>TEXT</td>
-                    </tr>
-                </tbody>
-                <tfoot>
-                    <tr>
-                        <td>סה"כ</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>TEXT</td>
-                    </tr>
-                </tfoot>
-              </table>
-            </div>
+      </div>
+      <!-- section 3 -->
+      <div class="collapse-item open">
+        <div class="collapse-header">
+          <div class="row mx-0">
+              <h4 class="pt-1">איכות וסטטיסטיקה</h4>
+              <span class="cs-icon ic-chevron mt-1"></span>
+              <div class="form-group button-group mr-3">
+                <input id="datepicker" class="form-control mr-3" placeholder="בחר טווח" />
+              </div>
+          </div>
         </div>
-        <!-- section 5 -->
-        <h4>ניהול וזיהוי חשיפות</h4>
-        <div class="card mt-3 mb-5">
-            <div class="card-body p-0">
-              <table class="table datatable m-0">
-                <thead>
-                  <tr>
-                    <th>שם מוצר </th>
-                    <th>רמת סיכון </th>
-                    <th>סוג נכס</th>
-                    <th>תחום פעילות </th>
-                    <th>יתרה </th>
-                    <th>אחוז מתיק </th>
-                    <th>מגבלת אחזקה</th>
-                    <th>חריגה</th>
-                  </tr>
-                </thead>
-                <tbody>
+        <div class="collapse-body">
+          <div class="card mt-3 mb-5">
+              <div class="card-body p-0">
+                <table class="table datatable m-0">
+                  <thead>
                     <tr>
-                        <td class="font-weight-bold">TEXT</td>
-                        <td>NUMERIC</td>
-                        <td>TEXT</td>
-                        <td>TEXT</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
+                      <th>שם מוצר </th>
+                      <th>רמת סיכון </th>
+                      <th>יתרה </th>
+                      <th>אחוז מתיק </th>
+                      <th>תשואה 12 חודשים</th>
+                      <th>תשואה 36 חודשים</th>
+                      <th>אלפא 36</th>
+                      <th>בטא</th>
+                      <th>שארפ 36</th>
+                      <th>סטיית תקן 36</th>
+                      <th>DOWN TRADE</th>
+                      <th>WORST YEAR</th>
+                      <th>דירוג כוכבים</th>
+                      <th>דירוג 36</th>
                     </tr>
-                    <tr>
-                        <td class="font-weight-bold">TEXT</td>
-                        <td>NUMERIC</td>
-                        <td>TEXT</td>
-                        <td>TEXT</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                    </tr>
-                    <tr>
-                        <td class="font-weight-bold">TEXT</td>
-                        <td>NUMERIC</td>
-                        <td>TEXT</td>
-                        <td>TEXT</td>
-                        <td class="bg-danger">NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td class="bg-danger">NUMERIC</td>
-                        <td>NUMERIC</td>
-                    </tr>
-                    <tr>
-                        <td class="font-weight-bold">TEXT</td>
-                        <td>NUMERIC</td>
-                        <td>TEXT</td>
-                        <td>TEXT</td>
-                        <td class="bg-danger">NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td class="bg-danger">NUMERIC</td>
-                        <td>NUMERIC</td>
-                    </tr>
-                </tbody>
-                <tfoot>
-                    <tr>
-                        <td>סה"כ</td>
-                        <td>NUMERIC</td>
-                        <td>TEXT</td>
-                        <td>TEXT</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                    </tr>
-                </tfoot>
-              </table>
-            </div>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <td class="font-weight-bold">TEXT</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>TEXT</td>
+                      </tr>
+                      <tr>
+                          <td class="font-weight-bold">TEXT</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>TEXT</td>
+                      </tr>
+                      <tr>
+                          <td class="font-weight-bold">TEXT</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td class="bg-danger">NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>TEXT</td>
+                      </tr>
+                  </tbody>
+                  <tfoot>
+                      <tr>
+                          <td>סה"כ</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>TEXT</td>
+                      </tr>
+                  </tfoot>
+                </table>
+              </div>
+          </div>
         </div>
-        <!-- section 6 -->
-        <h4>המלצה לשיפור</h4>
-        <div class="card mt-3 mb-5">
-            <div class="card-body p-0">
-              <table class="table datatable m-0">
-                <thead>
-                  <tr>
-                    <th>שם מוצר </th>
-                    <th>רמת סיכון </th>
-                    <th>יתרה </th>
-                    <th>אחוז מתיק </th>
-                    <th>תשואה 12 חודשים</th>
-                    <th>תשואה 36 חודשים</th>
-                    <th>אלפא 36</th>
-                    <th>בטא</th>
-                    <th>שארפ 36</th>
-                    <th>סטיית תקן 36</th>
-                    <th>דירוג כוכבים</th>
-                    <th>דירוג 36</th>
-                  </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class="font-weight-bold">TEXT</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td class="bg-danger">NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td class="bg-danger">NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                    </tr>
-                    <tr>
-                        <td class="font-weight-bold">TEXT</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                    </tr>
-                    <tr>
-                        <td class="font-weight-bold">TEXT</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                    </tr>
-                    <tr>
-                        <td class="font-weight-bold">TEXT</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                    </tr>
-                </tbody>
-                <tfoot>
-                    <tr>
-                        <td>סה"כ</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                    </tr>
-                </tfoot>
-              </table>
-            </div>
+      </div>
+      <!-- section 4 -->
+      <div class="collapse-item open">
+        <div class="collapse-header">
+          <h4>ניהול וזיהוי חשיפות</h4>
+          <span class="cs-icon ic-chevron"></span>
         </div>
-        <!-- section 7 -->
-        <div class="row">
-            <div class="col-6">
-                <h4>חלופה 1</h4>
-            </div>
-            <div class="col-6 text-left">
-                <button class="cs-btn-img btn-save-green ml-3"></button>
-                <button class="cs-btn-img btn-add-product-for-comparison ml-3"></button>
-                <button class="cs-btn-img btn-copy-client-file ml-3"></button>
-            </div>
+        <div class="collapse-body">
+          <div class="card mt-3 mb-5">
+              <div class="card-body p-0">
+                <table class="table datatable m-0">
+                  <thead>
+                    <tr>
+                      <th>שם מוצר </th>
+                      <th>רמת סיכון </th>
+                      <th>סוג נכס</th>
+                      <th>תחום פעילות </th>
+                      <th>יתרה </th>
+                      <th>אחוז מתיק </th>
+                      <th>מגבלת אחזקה</th>
+                      <th>חריגה</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <td class="font-weight-bold">TEXT</td>
+                          <td>NUMERIC</td>
+                          <td>TEXT</td>
+                          <td>TEXT</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                      </tr>
+                      <tr>
+                          <td class="font-weight-bold">TEXT</td>
+                          <td>NUMERIC</td>
+                          <td>TEXT</td>
+                          <td>TEXT</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                      </tr>
+                      <tr>
+                          <td class="font-weight-bold">TEXT</td>
+                          <td>NUMERIC</td>
+                          <td>TEXT</td>
+                          <td>TEXT</td>
+                          <td class="bg-danger">NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td class="bg-danger">NUMERIC</td>
+                          <td>NUMERIC</td>
+                      </tr>
+                      <tr>
+                          <td class="font-weight-bold">TEXT</td>
+                          <td>NUMERIC</td>
+                          <td>TEXT</td>
+                          <td>TEXT</td>
+                          <td class="bg-danger">NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td class="bg-danger">NUMERIC</td>
+                          <td>NUMERIC</td>
+                      </tr>
+                  </tbody>
+                  <tfoot>
+                      <tr>
+                          <td>סה"כ</td>
+                          <td>NUMERIC</td>
+                          <td>TEXT</td>
+                          <td>TEXT</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                      </tr>
+                  </tfoot>
+                </table>
+              </div>
+          </div>
         </div>
-        <div class="card mt-2 mb-5">
-            <div class="card-body p-0">
-              <table class="table datatable m-0">
-                <thead>
-                  <tr>
-                    <th>שם מוצר </th>
-                    <th>רמת סיכון </th>
-                    <th>יתרה </th>
-                    <th>אחוז מתיק </th>
-                    <th>תשואה 12 חודשים</th>
-                    <th>תשואה 36 חודשים</th>
-                    <th>אלפא 36</th>
-                    <th>בטא</th>
-                    <th>שארפ 36</th>
-                    <th>סטיית תקן 36</th>
-                    <th>DOWN TRADE</th>
-                    <th>WORST YEAR</th>
-                    <th>דירוג כוכבים</th>
-                    <th>דירוג 36</th>
-                  </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class="font-weight-bold">TEXT</td>
-                        <td>NUMERIC</td>
-                        <td>
-                            <input type="number" class="form-control" style="width: 90px;" value="1" />
-                        </td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                    </tr>
-                    <tr>
-                        <td class="font-weight-bold">TEXT</td>
-                        <td>NUMERIC</td>
-                        <td>
-                            <input type="number" class="form-control" style="width: 90px;" value="1" />
-                        </td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                    </tr>
-                    <tr>
-                        <td class="font-weight-bold">TEXT</td>
-                        <td>NUMERIC</td>
-                        <td>
-                            <input type="number" class="form-control" style="width: 90px;" value="1" />
-                        </td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                    </tr>
-                    <tr>
-                        <td class="font-weight-bold">TEXT</td>
-                        <td>NUMERIC</td>
-                        <td>
-                            <input type="number" class="form-control" style="width: 90px;" value="1" />
-                        </td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                    </tr>
-                </tbody>
-                <tfoot>
-                    <tr>
-                        <td>סה"כ</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                    </tr>
-                </tfoot>
-              </table>
-            </div>
+      </div>
+      <!-- section 5 -->
+      <div class="collapse-item open">
+        <div class="collapse-header">
+          <h4>המלצה לשיפור</h4>
+          <span class="cs-icon ic-chevron"></span>
         </div>
-        <!-- section 8 -->
-        <div class="row">
-            <div class="col-6">
-                <h4>חלופה עם מינוף</h4>
-            </div>
-            <div class="col-6 text-left">
-                <button class="cs-btn-img btn-save-green ml-3"></button>
-                <button class="cs-btn-img btn-add-product-for-comparison ml-3"></button>
-                <button class="cs-btn-img btn-copy-client-file ml-3"></button>
-            </div>
+        <div class="collapse-body">
+          <div class="card mt-3 mb-5">
+              <div class="card-body p-0">
+                <table class="table datatable m-0">
+                  <thead>
+                    <tr>
+                      <th>שם מוצר </th>
+                      <th>רמת סיכון </th>
+                      <th>יתרה </th>
+                      <th>אחוז מתיק </th>
+                      <th>תשואה 12 חודשים</th>
+                      <th>תשואה 36 חודשים</th>
+                      <th>אלפא 36</th>
+                      <th>בטא</th>
+                      <th>שארפ 36</th>
+                      <th>סטיית תקן 36</th>
+                      <th>דירוג כוכבים</th>
+                      <th>דירוג 36</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <td class="font-weight-bold">TEXT</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td class="bg-danger">NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td class="bg-danger">NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                      </tr>
+                      <tr>
+                          <td class="font-weight-bold">TEXT</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                      </tr>
+                      <tr>
+                          <td class="font-weight-bold">TEXT</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                      </tr>
+                      <tr>
+                          <td class="font-weight-bold">TEXT</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                      </tr>
+                  </tbody>
+                  <tfoot>
+                      <tr>
+                          <td>סה"כ</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                      </tr>
+                  </tfoot>
+                </table>
+              </div>
+          </div>
         </div>
-        <div class="card mt-2 mb-5">
-            <div class="card-body p-0">
-              <table class="table datatable m-0">
-                <thead>
-                  <tr>
-                    <th>שם מוצר </th>
-                    <th>רמת סיכון </th>
-                    <th>יתרה </th>
-                    <th>אחוז מתיק </th>
-                    <th>תשואה 12 חודשים</th>
-                    <th>תשואה 36 חודשים</th>
-                    <th>אלפא 36</th>
-                    <th>בטא</th>
-                    <th>שארפ 36</th>
-                    <th>סטיית תקן 36</th>
-                    <th>DOWN TRADE</th>
-                    <th>WORST YEAR</th>
-                    <th>דירוג כוכבים</th>
-                    <th>דירוג 36</th>
-                  </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class="font-weight-bold">TEXT</td>
-                        <td>NUMERIC</td>
-                        <td>
-                            <input type="number" class="form-control" style="width: 90px;" value="1" />
-                        </td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                    </tr>
-                    <tr>
-                        <td class="font-weight-bold">TEXT</td>
-                        <td>NUMERIC</td>
-                        <td>
-                            <input type="number" class="form-control" style="width: 90px;" value="1" />
-                        </td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                    </tr>
-                    <tr>
-                        <td class="font-weight-bold">TEXT</td>
-                        <td>NUMERIC</td>
-                        <td>
-                            <input type="number" class="form-control" style="width: 90px;" value="1" />
-                        </td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                    </tr>
-                    <tr>
-                        <td class="font-weight-bold">TEXT</td>
-                        <td>NUMERIC</td>
-                        <td>
-                            <input type="number" class="form-control" style="width: 90px;" value="1" />
-                        </td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                    </tr>
-                </tbody>
-                <tfoot>
-                    <tr>
-                        <td>סה"כ</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                    </tr>
-                </tfoot>
-              </table>
-            </div>
+      </div>
+      <!-- section 6 -->
+      <div class="collapse-item open">
+        <div class="collapse-header">
+          <div class="row w-100">
+              <div class="col-6 d-flex">
+                  <h4>חלופה 1</h4>
+                  <span class="cs-icon ic-chevron"></span>
+              </div>
+              <div class="col-6 text-left button-group">
+                  <button class="cs-btn-img btn-save-green ml-3"></button>
+                  <button class="cs-btn-img btn-add-product-for-comparison ml-3"></button>
+                  <button class="cs-btn-img btn-copy-client-file ml-3"></button>
+              </div>
+          </div>
         </div>
-        <!-- section 9 -->
-        <h4>השוואת חלופות</h4>
-        <div class="card mt-3 mb-5">
-            <div class="card-body p-0">
-              <table class="table datatable m-0">
-                <thead>
-                  <tr>
-                    <th>שם מוצר </th>
-                    <th>יתרה </th>
-                    <th>אחוז מתיק </th>
-                    <th>חשיפה למניות </th>
-                    <th>חשיפה לאלטרנטיבי</th>
-                    <th>אגח ממשלתי </th>
-                    <th>אגח קונצרני </th>
-                    <th>מזומנים </th>
-                    <th>תשואה 12 </th>
-                    <th>תשואה 36</th>
-                    <th>אלפא </th>
-                    <th>שארפ</th>
-                    <th>סטיית תקן </th>
-                  </tr>
-                </thead>
-                <tbody>
+        <div class="collapse-body">
+          <div class="card mt-2 mb-5">
+              <div class="card-body p-0">
+                <table class="table datatable m-0">
+                  <thead>
                     <tr>
-                        <td class="font-weight-bold">תיק קיים </td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
+                      <th>שם מוצר </th>
+                      <th>רמת סיכון </th>
+                      <th>יתרה </th>
+                      <th>אחוז מתיק </th>
+                      <th>תשואה 12 חודשים</th>
+                      <th>תשואה 36 חודשים</th>
+                      <th>אלפא 36</th>
+                      <th>בטא</th>
+                      <th>שארפ 36</th>
+                      <th>סטיית תקן 36</th>
+                      <th>DOWN TRADE</th>
+                      <th>WORST YEAR</th>
+                      <th>דירוג כוכבים</th>
+                      <th>דירוג 36</th>
                     </tr>
-                    <tr>
-                        <td class="font-weight-bold">חלופה 1</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                    </tr>
-                    <tr>
-                        <td class="font-weight-bold">חלופה 2</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                    </tr>
-                    <tr>
-                        <td class="font-weight-bold">חלופה עם מינוף</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                    </tr>
-                </tbody>
-                <tfoot>
-                    <tr>
-                        <td>סה"כ</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                        <td>NUMERIC</td>
-                    </tr>
-                </tfoot>
-              </table>
-            </div>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <td class="font-weight-bold">TEXT</td>
+                          <td>NUMERIC</td>
+                          <td>
+                              <input type="number" class="form-control" style="width: 90px;" value="1" />
+                          </td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                      </tr>
+                      <tr>
+                          <td class="font-weight-bold">TEXT</td>
+                          <td>NUMERIC</td>
+                          <td>
+                              <input type="number" class="form-control" style="width: 90px;" value="1" />
+                          </td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                      </tr>
+                      <tr>
+                          <td class="font-weight-bold">TEXT</td>
+                          <td>NUMERIC</td>
+                          <td>
+                              <input type="number" class="form-control" style="width: 90px;" value="1" />
+                          </td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                      </tr>
+                      <tr>
+                          <td class="font-weight-bold">TEXT</td>
+                          <td>NUMERIC</td>
+                          <td>
+                              <input type="number" class="form-control" style="width: 90px;" value="1" />
+                          </td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                      </tr>
+                  </tbody>
+                  <tfoot>
+                      <tr>
+                          <td>סה"כ</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                      </tr>
+                  </tfoot>
+                </table>
+              </div>
+          </div>
         </div>
+      </div>
+      <!-- section 7 -->
+      <div class="collapse-item open">
+        <div class="collapse-header">
+          <div class="row w-100">
+              <div class="col-6 d-flex">
+                  <h4>חלופה עם מינוף</h4>
+                  <span class="cs-icon ic-chevron"></span>
+              </div>
+              <div class="col-6 text-left button-group">
+                  <button class="cs-btn-img btn-save-green ml-3"></button>
+                  <button class="cs-btn-img btn-add-product-for-comparison ml-3"></button>
+                  <button class="cs-btn-img btn-copy-client-file ml-3"></button>
+              </div>
+          </div>
+        </div>
+        <div class="collapse-body">
+          <div class="card mt-2 mb-5">
+              <div class="card-body p-0">
+                <table class="table datatable m-0">
+                  <thead>
+                    <tr>
+                      <th>שם מוצר </th>
+                      <th>רמת סיכון </th>
+                      <th>יתרה </th>
+                      <th>אחוז מתיק </th>
+                      <th>תשואה 12 חודשים</th>
+                      <th>תשואה 36 חודשים</th>
+                      <th>אלפא 36</th>
+                      <th>בטא</th>
+                      <th>שארפ 36</th>
+                      <th>סטיית תקן 36</th>
+                      <th>DOWN TRADE</th>
+                      <th>WORST YEAR</th>
+                      <th>דירוג כוכבים</th>
+                      <th>דירוג 36</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <td class="font-weight-bold">TEXT</td>
+                          <td>NUMERIC</td>
+                          <td>
+                              <input type="number" class="form-control" style="width: 90px;" value="1" />
+                          </td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                      </tr>
+                      <tr>
+                          <td class="font-weight-bold">TEXT</td>
+                          <td>NUMERIC</td>
+                          <td>
+                              <input type="number" class="form-control" style="width: 90px;" value="1" />
+                          </td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                      </tr>
+                      <tr>
+                          <td class="font-weight-bold">TEXT</td>
+                          <td>NUMERIC</td>
+                          <td>
+                              <input type="number" class="form-control" style="width: 90px;" value="1" />
+                          </td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                      </tr>
+                      <tr>
+                          <td class="font-weight-bold">TEXT</td>
+                          <td>NUMERIC</td>
+                          <td>
+                              <input type="number" class="form-control" style="width: 90px;" value="1" />
+                          </td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                      </tr>
+                  </tbody>
+                  <tfoot>
+                      <tr>
+                          <td>סה"כ</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                      </tr>
+                  </tfoot>
+                </table>
+              </div>
+          </div>
+        </div>
+      </div>
+      <!-- section 8 -->
+      <div class="collapse-item open">
+        <div class="collapse-header">
+          <h4>השוואת חלופות</h4>
+          <span class="cs-icon ic-chevron"></span>
+        </div>
+        <div class="collapse-body">
+          <div class="card mt-3 mb-5">
+              <div class="card-body p-0">
+                <table class="table datatable m-0">
+                  <thead>
+                    <tr>
+                      <th>שם מוצר </th>
+                      <th>יתרה </th>
+                      <th>אחוז מתיק </th>
+                      <th>חשיפה למניות </th>
+                      <th>חשיפה לאלטרנטיבי</th>
+                      <th>אגח ממשלתי </th>
+                      <th>אגח קונצרני </th>
+                      <th>מזומנים </th>
+                      <th>תשואה 12 </th>
+                      <th>תשואה 36</th>
+                      <th>אלפא </th>
+                      <th>שארפ</th>
+                      <th>סטיית תקן </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <td class="font-weight-bold">תיק קיים </td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                      </tr>
+                      <tr>
+                          <td class="font-weight-bold">חלופה 1</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                      </tr>
+                      <tr>
+                          <td class="font-weight-bold">חלופה 2</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                      </tr>
+                      <tr>
+                          <td class="font-weight-bold">חלופה עם מינוף</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                      </tr>
+                  </tbody>
+                  <tfoot>
+                      <tr>
+                          <td>סה"כ</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                          <td>NUMERIC</td>
+                      </tr>
+                  </tfoot>
+                </table>
+              </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
@@ -1228,10 +1285,17 @@
     });
   }
 
-  var chartEles = document.getElementsByClassName('doughnut');
-  for(var i = 0; i < chartEles.length; i++) {
-    drawDoughnutCharts(chartEles[i]);
+  function renderChartSection() {
+    var chartEles = document.getElementsByClassName('doughnut');
+    for(var i = 0; i < chartEles.length; i++) {
+      drawDoughnutCharts(chartEles[i]);
+    }
   }
+  renderChartSection();
+  // collapse feature
+  $(document).on('click', '.collapse-header', function() {
+    $(this).closest('.collapse-item').toggleClass('open');
+  });
 </script>
 <!-- ./script -->
 </body>
