@@ -15,24 +15,62 @@
         .filter-app {
             padding-right: 30px !important;
         }
+        .filter-header {
+            .filter-optoin2 {
+                display: block !important;
+            }
+        }
+        .filter-footer {
+            display: block !important;
+        }
+    }
+    .filter-bar {
+        position: relative;
+        overflow: unset !important;
+        .filter-header {
+            .filter-optoin2 {
+                display: none;
+                padding-top: 20px;
+                border-bottom: solid 2px #D7DDE9;
+                margin: 0 30px;
+            }
+        }
+        .filter-body {
+            max-height: calc(100% - 230px);
+        }
+        .filter-footer {
+            display: none;
+            position: absolute;
+            width: calc(100% - 60px);
+            bottom: 30px;
+            height: 50px;
+            left: 30px;
+            border-top: solid 2px #D7DDE9;
+        }
     }
     .filter-form {
-        .filter-group-item {
-            border-bottom: solid 2px #D7DDE9;
-            padding: 15px 0;
-            .cs-btn-icon {
-                width: 20px;
-                height: 20px;
-                outline: none;
-                border: none;
-                margin-left: 0;
-                padding: 0;
-                &.btn-quiz {
-                    width: 15px;
-                    height: 15px;
+        .filter-form-body {
+            .filter-group-item {
+                border-bottom: solid 2px #D7DDE9;
+                padding: 15px 0;
+                .cs-btn-icon {
+                    width: 20px;
+                    height: 20px;
+                    outline: none;
+                    border: none;
+                    margin-left: 0;
+                    padding: 0;
+                    &.btn-quiz {
+                        width: 15px;
+                        height: 15px;
+                    }
                 }
             }
         }
+        .filter-form-footer {
+            
+        }
+        
     }
     .cs-btn-img {
         width: 191px;
