@@ -1,0 +1,160 @@
+.action-page {
+    .filter-app {
+        width: 100% !important;
+        .app-header {
+            border-bottom: none !important;
+            .app-header-top {
+                .btn-product-add, .btn-product-update {
+                    width: 190px;
+                }
+                .cs-btn-group {
+                    display: inline-block;
+                    .cs-btn-icon {
+                        display: block;
+                        margin: 0;
+                    }
+                    label {
+                        display: block;
+                        text-align: center;
+                        font-size: 12px;
+                        margin-top: 5px;
+                        font-weight: 600;
+                    }
+                }
+            }
+            .app-header-bottom {
+                margin: 0;
+                .badge {
+                    position: relative;
+                    display: flex;
+                    width: 200px;
+                    height: 50px;
+                    border-radius: 9px;
+                    color: #ffffff;
+                    padding: 10px;
+                    -webkit-box-shadow: 0px 0px 6px 3px rgba(0,0,0,0.3); 
+                    box-shadow: 0px 0px 6px 3px rgba(0,0,0,0.3);
+                    &.badge-primary {
+                        background-color: #7ABCFF;
+                        .bubble {
+                            color: #7ABCFF;
+                        }
+                    }
+                    &.badge-warnning {
+                        background-color: #DF974F;
+                        .bubble {
+                            color: #DF974F;
+                        }
+                    }
+                    &.badge-danger {
+                        background-color: #C56D6D;
+                        .bubble {
+                            color: #C56D6D;
+                        }
+                    }
+                    &.badge-success {
+                        background-color: #59A44F;
+                        .bubble {
+                            color: #59A44F;
+                        }
+                    }
+                    &.badge-secondary {
+                        background-color: #78849E;
+                        .bubble {
+                            color: #78849E;
+                        }
+                    }
+                    .bubble {
+                        position: relative;
+                        display: block;
+                        width: 30px;
+                        height: 30px;
+                        border-radius: 30px;
+                        background-color: #ffffff;
+                        font-size: 18px;
+                        padding: 5px 0;
+                        text-align: center;
+                    }
+                    .text {
+                        position: relative;
+                        display: block;
+                        width: calc(100% - 30px);
+                        text-align: center;
+                        font-size: 16px;
+                        padding: 5px 0;
+                    }
+                }
+            }
+        }
+        .app-body {
+            table {
+                thead {
+                    background-color: #7ABCFF;
+                    tr {
+                        th {
+                            position: relative;
+                            color: #ffffff;
+                            .cs-icon {
+                                position: absolute;
+                                top: 15px;
+                                right: 15px;
+                            }
+                            .cs-btn-icon {
+                                position: absolute;
+                                left: 10px;
+                                top: 10px;
+                                width: 20px;
+                                height: 20px;
+                                margin: 0;
+                                opacity: 1;
+                            }
+                            a {
+                                color: #485272;
+                                &:hover {
+                                    color: #001553;
+                                }
+                            }
+                        }
+                    }
+                }
+                tbody {
+                    tr {
+                        td {
+                            position: relative;
+                            padding-right: 20px;
+                            padding-left: 20px;
+                            &:first-child {
+                                padding-right: 0;
+                                padding-left: 0;
+                            }
+                            .cs-icon {
+                                position: absolute;
+                                top: 15px;
+                                right: 15px;
+                            }
+                        }
+                    }
+                }
+                .cs-checkbox-container {
+                    height: 20px;
+                    line-height: 20px;
+                    [type=checkbox] {
+                        width: 20px;
+                        height: 20px;
+                    }
+                    .checkmark {
+                        width: 20px;
+                        height: 20px;
+                        border-radius: 4px;
+                        &:after {
+                            right: 4px;
+                            top: 1px;
+                            width: 8px;
+                            height: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

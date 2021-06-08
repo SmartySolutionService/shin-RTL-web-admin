@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- <link rel="stylesheet" href="../assets/bootstrap-4.3.1-dist/css/bootstrap.min.css"> -->
   <link rel="stylesheet" href="../assets/theme/theme.css">
-  <link rel="stylesheet" href="../assets/scss/simulator.css">
+  <link rel="stylesheet" href="../assets/scss/action.css">
   <!-- plugin css -->
   <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
   <link rel="stylesheet" type="text/css" href="../assets/plugins/DataTables/datatables.css"/>
@@ -110,113 +110,135 @@
   </div>
 </header>
   
-<div class="main simulator-adding-integrated-product">
+<div class="main action-page">
   <div class="filter-app">
     <div class="app-header px-0 m-0">
       <div class="row app-header-top">
-        <span class="title">הוספת מוצר משולב</span>
-        <button class="cs-btn-img btn-add-product ml-auto mr-5" data-toggle="modal" data-target="#addProductModal"></button>
+        <div class="col-xl-7 col-lg-7 col-md-7 col-sm-7 col-7">
+          <span class="title">מעקב ביצוע</span>
+            <button class="cs-btn-img btn-product-add ml-0 mr-5" style="top:15px;" data-toggle="modal" data-target="#addProductModal"></button>
+            <button class="cs-btn-img btn-product-update ml-auto mr-3" style="top:15px;" data-toggle="modal" data-target="#addProductModal"></button>
+        </div>
+        <div class="col-xl-5 col-lg-5 col-md-5 col-sm-5 col-5 text-left">
+          <div class="cs-btn-group ml-3">
+            <a class="cs-btn-icon btn-bell" href="javascript:void(0)"></a>
+            <label>תזכורת</label>
+          </div>
+          <div class="cs-btn-group ml-3">
+            <a class="cs-btn-icon btn-print" href="javascript:void(0)"></a>
+            <label>הדפס</label>
+          </div>
+          <div class="cs-btn-group ml-3">
+            <a class="cs-btn-icon btn-xls" href="javascript:void(0)"></a>
+            <label>אקסל</label>
+          </div>
+          <div class="cs-btn-group ml-3">
+            <a class="cs-btn-icon btn-message" href="javascript:void(0)"></a>
+            <label>SMS</label>
+          </div>
+          <div class="cs-btn-group ml-3">
+            <a class="cs-btn-icon btn-email" href="javascript:void(0)"></a>
+            <label>אימייל</label>
+          </div>
+          <div class="cs-btn-group ml-0">
+            <a class="cs-btn-icon btn-trash" href="javascript:void(0)"></a>
+            <label>מחק</label>
+          </div>
+        </div>
       </div>
       <div class="row app-header-bottom">
-        <div class="col-8">
-            <div class="row">
-                <div class="col-4">
-                    <div class="form-group">
-                        <label class="text-primary">שם מוצר</label>
-                        <input type="text" class="form-control" />
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="form-group">
-                        <label class="text-primary">שיוך המוצר לקבוצה</label>
-                        <select class="form-control">
-                            <option>A</option>
-                            <option>B</option>
-                        </select>
-                    </div>
-                </div>
-            </div>
+        <div class="badge badge-primary">
+            <span class="bubble">6</span>
+            <span class="text">תהליכים בטיפול</span>
+        </div>
+        <div class="badge badge-warnning mr-3">
+            <span class="bubble">7</span>
+            <span class="text">תהליכים באיחור</span>
+        </div>
+        <div class="badge badge-danger mr-3">
+            <span class="bubble">2</span>
+            <span class="text">תהליכים דחופים</span>
+        </div>
+        <div class="badge badge-success mr-3">
+            <span class="bubble">2</span>
+            <span class="text">תהליכים מתוזכרים</span>
+        </div>
+        <div class="badge badge-secondary mr-3">
+            <span class="bubble">26</span>
+            <span class="text">כל התהליכים</span>
         </div>
       </div>
     </div>
-    <div class="app-body mt-4 mb-5">
-        <h5 class="text-primary"> תמהיל השקעות </h5>
+    <div class="app-body mt-5">
         <div class="card">
           <div class="card-body p-0">
             <table class="table datatable w-100 m-0">
               <thead>
                 <tr>
-                  <th class="">שם מוצר </th>
-                  <th class="">אחוז מהמוצר</th>
+                  <th>
+                    <label class="cs-checkbox-container m-0 mr-3 mt-2">
+                      <input type="checkbox" />
+                      <span class="checkmark"></span>
+                    </label>
+                	</th>
+                  <th>שם המוצר</th>
+                  <th>סוג המוצר</th>
+                  <th>חברה מנהלת</th>
+                  <th>שווי שוק</th>
+                  <th>תשואה מצטברת לתקופה</th>
+                  <th>שארפ</th>
+                  <th>יקף נכסים </th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td class="font-weight-bold">TEXT</td>
                   <td>
-                    <div class="d-flex">
-                        <input type="number" class="form-control mt-2" value="70" />
-                        <div class="slider-wrapper mr-3">
-                            <input
-                                data-name='age'
-                                data-addui='slider'
-                                data-fontsize='12'
-                                data-step='1'
-                                data-min='0'
-                                data-max='100'
-                                data-range='true'
-                                value='18,67'
-                            />
-                        </div>
-                    </div>
+                    <label class="cs-checkbox-container m-0 mr-3 mt-2">
+                      <input type="checkbox" />
+                      <span class="checkmark"></span>
+                    </label>
                   </td>
+                  <td class="font-weight-bold">אנליסט השתלמות כללי</td>
+                  <td>אנליסט השתלמות כללי</td>
+                  <td>TEXT </td>
+                  <td>250,000 ש"ח</td>
+                  <td>NUMERIC </td>
+                  <td>NUMERIC</td>
+                  <td>NUMERIC</td>
                 </tr>
                 <tr>
-                  <td class="font-weight-bold">TEXT</td>
                   <td>
-                    <div class="d-flex">
-                        <input type="number" class="form-control mt-2" value="70" />
-                        <div class="slider-wrapper mr-3">
-                            <input
-                                data-name='age'
-                                data-addui='slider'
-                                data-fontsize='12'
-                                data-step='1'
-                                data-min='0'
-                                data-max='100'
-                                data-range='true'
-                                value='18,67'
-                            />
-                        </div>
-                    </div>
+                    <label class="cs-checkbox-container m-0 mr-3 mt-2">
+                      <input type="checkbox" />
+                      <span class="checkmark"></span>
+                    </label>
                   </td>
+                  <td class="font-weight-bold">אנליסט השתלמות כללי</td>
+                  <td>אנליסט השתלמות כללי</td>
+                  <td>TEXT </td>
+                  <td>250,000 ש"ח</td>
+                  <td>NUMERIC </td>
+                  <td>NUMERIC</td>
+                  <td>NUMERIC</td>
                 </tr>
                 <tr>
-                  <td class="font-weight-bold">TEXT</td>
                   <td>
-                    <div class="d-flex">
-                        <input type="number" class="form-control mt-2" value="70" />
-                        <div class="slider-wrapper mr-3">
-                            <input
-                                data-name='age'
-                                data-addui='slider'
-                                data-fontsize='12'
-                                data-step='1'
-                                data-min='0'
-                                data-max='100'
-                                data-range='true'
-                                value='18,67'
-                            />
-                        </div>
-                    </div>
+                    <label class="cs-checkbox-container m-0 mr-3 mt-2">
+                      <input type="checkbox" />
+                      <span class="checkmark"></span>
+                    </label>
                   </td>
+                  <td class="font-weight-bold">אנליסט השתלמות כללי</td>
+                  <td>אנליסט השתלמות כללי</td>
+                  <td>TEXT </td>
+                  <td>250,000 ש"ח</td>
+                  <td>NUMERIC </td>
+                  <td>NUMERIC</td>
+                  <td>NUMERIC</td>
                 </tr>
               </tbody>
             </table>
           </div>
-        </div>
-        <div class="row mx-0 mt-5 border-top">
-            <button class="cs-btn-img btn-save-green ml-auto mr-0 mt-4"></button>
         </div>
     </div>
   </div>

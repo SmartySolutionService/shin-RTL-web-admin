@@ -11447,6 +11447,12 @@ body .main.open-filter .filter-app {
 .cs-btn-icon.btn-xls:hover {
   background-image: url(../img/buttons/btn-xls-hover.png);
 }
+.cs-btn-icon.btn-bell {
+  background-image: url(../img/buttons/btn-bell.png);
+}
+.cs-btn-icon.btn-bell:hover {
+  background-image: url(../img/buttons/btn-bell-hover.png);
+}
 .cs-btn-icon.btn-print {
   background-image: url(../img/buttons/btn-print.png);
 }
@@ -11603,6 +11609,18 @@ body .main.open-filter .filter-app {
 }
 .cs-btn-img.btn-add-product-dark:hover {
   background-image: url(../img/buttons/btn-add-product-dark-hover.png);
+}
+.cs-btn-img.btn-product-add {
+  background-image: url(../img/buttons/btn-product-add.png);
+}
+.cs-btn-img.btn-product-add:hover {
+  background-image: url(../img/buttons/btn-product-add-hover.png);
+}
+.cs-btn-img.btn-product-update {
+  background-image: url(../img/buttons/btn-product-update.png);
+}
+.cs-btn-img.btn-product-update:hover {
+  background-image: url(../img/buttons/btn-product-update-hover.png);
 }
 .cs-btn-img.btn-clear-selection {
   background-image: url(../img/buttons/btn-clear-selection.png);

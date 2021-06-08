@@ -1611,6 +1611,12 @@ body {
             background-image: url(../img/buttons/btn-xls-hover.png);
         }
     }
+    &.btn-bell {
+        background-image: url(../img/buttons/btn-bell.png);
+        &:hover {
+            background-image: url(../img/buttons/btn-bell-hover.png);
+        }
+    }
     &.btn-print {
         background-image: url(../img/buttons/btn-print.png);
         &:hover {
@@ -1764,6 +1770,18 @@ body {
         background-image: url(../img/buttons/btn-add-product-dark.png);
         &:hover {
             background-image: url(../img/buttons/btn-add-product-dark-hover.png);
+        }
+    }
+    &.btn-product-add {
+        background-image: url(../img/buttons/btn-product-add.png);
+        &:hover {
+            background-image: url(../img/buttons/btn-product-add-hover.png);
+        }
+    }
+    &.btn-product-update {
+        background-image: url(../img/buttons/btn-product-update.png);
+        &:hover {
+            background-image: url(../img/buttons/btn-product-update-hover.png);
         }
     }
     &.btn-clear-selection {
