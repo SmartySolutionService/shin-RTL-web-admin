@@ -310,6 +310,15 @@
                             list-style: none;
                             padding: 0;
                             margin: 0;
+                            li {
+                                width: max-content;
+                                padding: 0 5px;
+                                &:hover, &.selected {
+                                    background-color: #7ABBFC;
+                                    color: #ffffff;
+                                    cursor: default;
+                                }
+                            }
                         }
                     }
                 }

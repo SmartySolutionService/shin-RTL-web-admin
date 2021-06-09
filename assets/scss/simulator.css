@@ -273,6 +273,15 @@
   padding: 0;
   margin: 0;
 }
+#addProductModal .modal-dialog .modal-content .modal-left-bar .list-card .card-body ul li {
+  width: max-content;
+  padding: 0 5px;
+}
+#addProductModal .modal-dialog .modal-content .modal-left-bar .list-card .card-body ul li:hover, #addProductModal .modal-dialog .modal-content .modal-left-bar .list-card .card-body ul li.selected {
+  background-color: #7ABBFC;
+  color: #ffffff;
+  cursor: default;
+}
 #addProductModal .modal-dialog .modal-content .modal-left-bar table thead {
   background-color: #7abbfc;
 }

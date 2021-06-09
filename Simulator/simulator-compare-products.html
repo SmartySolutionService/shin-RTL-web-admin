@@ -1528,6 +1528,11 @@
     $(this).closest('table').find('tbody').fadeToggle();
     $(this).closest('.row-section').find('.chart-card').fadeToggle();
   });
+  //
+  $(document).on('click', '.list-card .card-body ul li', function() {
+    $(this).closest('.card-body').find('li').removeClass('selected');
+    $(this).addClass('selected');
+  });
 </script>
 <!-- ./script -->
 </body>
