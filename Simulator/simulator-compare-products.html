@@ -315,7 +315,7 @@
               מדד אלפא
             </h6>
             <div class="card-body">
-              <canvas id="myChart1" width="100%" height="100%"></canvas>
+              <canvas id="myChart1"></canvas>
             </div>
           </div>
         </div>
@@ -392,7 +392,7 @@
               מדד אלפא
             </h6>
             <div class="card-body">
-              <canvas id="myChart2" width="100%" height="100%"></canvas>
+              <canvas id="myChart2"></canvas>
             </div>
           </div>
         </div>
@@ -469,7 +469,7 @@
               מדד אלפא
             </h6>
             <div class="card-body">
-              <canvas id="myChart3" width="100%" height="100%"></canvas>
+              <canvas id="myChart3"></canvas>
             </div>
           </div>
         </div>
@@ -558,7 +558,7 @@
               מדד אלפא
             </h6>
             <div class="card-body">
-              <canvas id="myChart4" width="100%" height="100%"></canvas>
+              <canvas id="myChart4"></canvas>
             </div>
           </div>
         </div>
@@ -629,7 +629,7 @@
               מדד אלפא
             </h6>
             <div class="card-body">
-              <canvas id="myChart5" width="100%" height="100%"></canvas>
+              <canvas id="myChart5"></canvas>
             </div>
           </div>
         </div>
@@ -700,7 +700,7 @@
               מדד אלפא
             </h6>
             <div class="card-body">
-              <canvas id="myChart6" width="100%" height="100%"></canvas>
+              <canvas id="myChart6"></canvas>
             </div>
           </div>
         </div>
@@ -765,7 +765,7 @@
               מדד אלפא
             </h6>
             <div class="card-body">
-              <canvas id="myChart7" width="100%" height="100%"></canvas>
+              <canvas id="myChart7"></canvas>
             </div>
           </div>
         </div>
@@ -860,7 +860,7 @@
               מדד אלפא
             </h6>
             <div class="card-body">
-              <canvas id="myChart8" width="100%" height="100%"></canvas>
+              <canvas id="myChart8"></canvas>
             </div>
           </div>
         </div>
@@ -913,7 +913,7 @@
               מדד אלפא
             </h6>
             <div class="card-body">
-              <canvas id="myChart9" width="100%" height="100%"></canvas>
+              <canvas id="myChart9"></canvas>
             </div>
           </div>
         </div>
@@ -1020,7 +1020,7 @@
               מדד אלפא
             </h6>
             <div class="card-body">
-              <canvas id="myChart10" width="100%" height="100%"></canvas>
+              <canvas id="myChart10"></canvas>
             </div>
           </div>
         </div>
@@ -1387,6 +1387,9 @@
     data: data1,
     options: {
       responsive: true,
+      legend: {
+        display: false
+      },
       plugins: {
         legend: {
           position: 'top',
@@ -1451,26 +1454,41 @@
   };
   // === ./Chart 1
   // === Chart 2
-  var ctx = document.getElementById("myChart1");
-  var myChart1 = new Chart(ctx, configChart1);
-  var ctx = document.getElementById("myChart2");
-  var myChart2 = new Chart(ctx, configChart1);
-  var ctx = document.getElementById("myChart3");
-  var myChart3 = new Chart(ctx, configChart2);
-  var ctx = document.getElementById("myChart4");
-  var myChart4 = new Chart(ctx, configChart2);
-  var ctx = document.getElementById("myChart5");
-  var myChart5 = new Chart(ctx, configChart1);
-  var ctx = document.getElementById("myChart6");
-  var myChart6 = new Chart(ctx, configChart1);
-  var ctx = document.getElementById("myChart7");
-  var myChart7 = new Chart(ctx, configChart1);
-  var ctx = document.getElementById("myChart8");
-  var myChart8 = new Chart(ctx, configChart1);
-  var ctx = document.getElementById("myChart9");
-  var myChart9 = new Chart(ctx, configChart1);
-  var ctx = document.getElementById("myChart10");
-  var myChart10 = new Chart(ctx, configChart1);
+  //
+  drawCharts();
+  //
+  function drawCharts() {
+    var ctx = document.getElementById("myChart1");
+    ctx.height = $(ctx).closest('.card-body').height() / 2;
+    var myChart1 = new Chart(ctx, configChart1);
+    var ctx = document.getElementById("myChart2");
+    ctx.height = $(ctx).closest('.card-body').height() / 2;
+    var myChart2 = new Chart(ctx, configChart1);
+    var ctx = document.getElementById("myChart3");
+    ctx.height = $(ctx).closest('.card-body').height() / 2;
+    var myChart3 = new Chart(ctx, configChart2);
+    var ctx = document.getElementById("myChart4");
+    ctx.height = $(ctx).closest('.card-body').height() / 2;
+    var myChart4 = new Chart(ctx, configChart2);
+    var ctx = document.getElementById("myChart5");
+    ctx.height = $(ctx).closest('.card-body').height() / 2;
+    var myChart5 = new Chart(ctx, configChart1);
+    var ctx = document.getElementById("myChart6");
+    ctx.height = $(ctx).closest('.card-body').height() / 2;
+    var myChart6 = new Chart(ctx, configChart1);
+    var ctx = document.getElementById("myChart7");
+    ctx.height = $(ctx).closest('.card-body').height() / 2;
+    var myChart7 = new Chart(ctx, configChart1);
+    var ctx = document.getElementById("myChart8");
+    ctx.height = $(ctx).closest('.card-body').height() / 2;
+    var myChart8 = new Chart(ctx, configChart1);
+    var ctx = document.getElementById("myChart9");
+    ctx.height = $(ctx).closest('.card-body').height() / 2;
+    var myChart9 = new Chart(ctx, configChart1);
+    var ctx = document.getElementById("myChart10");
+    ctx.height = $(ctx).closest('.card-body').height() / 2;
+    var myChart10 = new Chart(ctx, configChart1);
+  }
   // === ./Chart 2
   $(document).on('click', 'table thead .btn-close', function() {
     var className = $(this).closest('th').attr('class').replace('text-center ', '.');
