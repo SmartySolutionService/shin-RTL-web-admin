@@ -1050,7 +1050,7 @@
   </div>
 </div>
 
-<!-- New Customer Modal -->
+<!-- Add Product Modal -->
 <div class="modal" id="addProductModal">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -1530,8 +1530,12 @@
   });
   //
   $(document).on('click', '.list-card .card-body ul li', function() {
-    $(this).closest('.card-body').find('li').removeClass('selected');
-    $(this).addClass('selected');
+    if($(this).hasClass('selected')) {
+      $(this).removeClass('selected');
+    } else {
+      $(this).closest('.card-body').find('li').removeClass('selected');
+      $(this).addClass('selected');
+    }
   });
 </script>
 <!-- ./script -->
