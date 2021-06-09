@@ -195,6 +195,13 @@
 .simulator-compare-products .filter-app .app-body table thead tr th .ic-check-less.close {
   background-image: url(../img/icons/ic_check_plus.png) !important;
 }
+.simulator-compare-products .filter-app .app-body table thead tr th .form-control-mini {
+  border: solid 1px #485272;
+  background-color: transparent;
+  color: #485272;
+  max-height: 24px;
+  max-width: 220px;
+}
 .simulator-compare-products .filter-app .app-body table tbody tr td {
   position: relative;
 }
