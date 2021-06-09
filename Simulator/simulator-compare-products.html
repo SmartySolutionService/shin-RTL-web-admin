@@ -1478,6 +1478,7 @@
   });
   //
   $(document).on('click', '.ic-check-less', function() {
+    $(this).toggleClass('close');
     $(this).closest('table').find('tbody').fadeToggle();
     $(this).closest('.row-section').find('.chart-card').fadeToggle();
   });

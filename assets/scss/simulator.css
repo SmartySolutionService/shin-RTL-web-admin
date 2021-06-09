@@ -189,6 +189,12 @@
 .simulator-compare-products .filter-app .app-body table thead tr th a:hover {
   color: #001553;
 }
+.simulator-compare-products .filter-app .app-body table thead tr th .ic-check-less {
+  background-image: url(../img/icons/ic_check_less.png);
+}
+.simulator-compare-products .filter-app .app-body table thead tr th .ic-check-less.close {
+  background-image: url(../img/icons/ic_check_plus.png) !important;
+}
 .simulator-compare-products .filter-app .app-body table tbody tr td {
   position: relative;
 }

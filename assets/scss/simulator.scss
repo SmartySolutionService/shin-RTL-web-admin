@@ -217,6 +217,12 @@
                                     color: #001553;
                                 }
                             }
+                            .ic-check-less {
+                                background-image: url(../img/icons/ic_check_less.png);
+                                &.close {
+                                    background-image: url(../img/icons/ic_check_plus.png) !important;
+                                }
+                            }
                         }
                     }
                 }

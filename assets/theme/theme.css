@@ -11918,6 +11918,9 @@ body .main.open-filter .filter-app {
 .cs-icon.ic-check-less {
   background-image: url(../img/icons/ic_check_less.png);
 }
+.cs-icon.ic-check-plus {
+  background-image: url(../img/icons/ic_check_plus.png);
+}
 .cs-icon.ic-trending-bar {
   background-image: url(../img/icons/ic_trending_bar.png);
 }
