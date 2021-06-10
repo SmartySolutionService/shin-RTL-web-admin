@@ -59,6 +59,7 @@
         }
         .filter-body {
             max-height: calc(100% - 230px);
+            padding: 0 25px !important;
         }
         .filter-footer {
             display: none;
@@ -75,6 +76,9 @@
             .filter-group-item {
                 border-bottom: solid 2px #D7DDE9;
                 padding: 15px 0;
+                &:last-child {
+                    border-bottom: 0;
+                }
                 .cs-btn-icon {
                     width: 20px;
                     height: 20px;

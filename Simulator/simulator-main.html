@@ -195,7 +195,7 @@
             </div>
             <div class="form-group row mx-0">
               <div class="col-3 p-0">
-                <input type="number" class="form-control slider-min" value="5.8" />
+                <input type="number" class="form-control slider-max" min="0" max="10" id="slider1_max" step="0.1" value="10" />
                 <label class="w-100 text-center pt-2">מקסימום</label>
               </div>
               <div class="col-6">
@@ -204,20 +204,21 @@
                 </div>
                 <div class="w-100">
                   <input
+                    id="slider1"
                     class="input-range-slider m-0 w-100"
-                    data-name='age'
-                    data-addui='slider'
+                    data-name='slider1'
+                    data-addui='slider1'
                     data-fontsize='0'
-                    data-step='1'
+                    data-step='0.1'
                     data-min='0'
-                    data-max='100'
+                    data-max='10'
                     data-range='true'
-                    value='0,100'
+                    value='0,10'
                   />
                 </div>
               </div>
               <div class="col-3 p-0">
-                <input type="number" class="form-control slider-max" value="5.8" />
+                <input type="number" class="form-control slider-min" min="0" max="10" id="slider1_min" step="0.1" value="0" />
                 <label class="w-100 text-center pt-2">מינימום</label>
               </div>
             </div>
@@ -235,7 +236,7 @@
             </div>
             <div class="form-group row mx-0">
               <div class="col-3 p-0">
-                <input type="number" class="form-control slider-min" value="5.8" />
+                <input type="number" class="form-control slider-max" min="0" max="10" id="slider2_max" step="0.1" value="10" />
                 <label class="w-100 text-center pt-2">מקסימום</label>
               </div>
               <div class="col-6">
@@ -244,20 +245,21 @@
                 </div>
                 <div class="w-100">
                   <input
+                    id="slider2"
                     class="input-range-slider m-0 w-100"
-                    data-name='age'
-                    data-addui='slider'
+                    data-name='slider2'
+                    data-addui='slider2'
                     data-fontsize='0'
-                    data-step='1'
+                    data-step='0.1'
                     data-min='0'
-                    data-max='100'
+                    data-max='10'
                     data-range='true'
-                    value='0,100'
+                    value='0,10'
                   />
                 </div>
               </div>
               <div class="col-3 p-0">
-                <input type="number" class="form-control slider-max" value="5.8" />
+                <input type="number" class="form-control slider-min" min="0" max="10" id="slider2_min" step="0.1" value="0" />
                 <label class="w-100 text-center pt-2">מינימום</label>
               </div>
             </div>
@@ -275,7 +277,7 @@
             </div>
             <div class="form-group row mx-0">
               <div class="col-3 p-0">
-                <input type="number" class="form-control slider-min" value="5.8" />
+                <input type="number" class="form-control slider-max" min="0" max="10" id="slider3_max" step="0.1" value="10" />
                 <label class="w-100 text-center pt-2">מקסימום</label>
               </div>
               <div class="col-6">
@@ -284,20 +286,21 @@
                 </div>
                 <div class="w-100">
                   <input
+                    id="slider3"
                     class="input-range-slider m-0 w-100"
-                    data-name='age'
-                    data-addui='slider'
+                    data-name='slider3'
+                    data-addui='slider3'
                     data-fontsize='0'
-                    data-step='1'
+                    data-step='0.1'
                     data-min='0'
-                    data-max='100'
+                    data-max='10'
                     data-range='true'
-                    value='0,100'
+                    value='0,10'
                   />
                 </div>
               </div>
               <div class="col-3 p-0">
-                <input type="number" class="form-control slider-max" value="5.8" />
+                <input type="number" class="form-control slider-min" min="0" max="10" id="slider3_min" step="0.1" value="0" />
                 <label class="w-100 text-center pt-2">מינימום</label>
               </div>
             </div>
@@ -315,7 +318,7 @@
             </div>
             <div class="form-group row mx-0">
               <div class="col-3 p-0">
-                <input type="number" class="form-control slider-min" value="5.8" />
+                <input type="number" class="form-control slider-max" min="0" max="10" id="slider4_max" step="0.1" value="10" />
                 <label class="w-100 text-center pt-2">מקסימום</label>
               </div>
               <div class="col-6">
@@ -324,20 +327,21 @@
                 </div>
                 <div class="w-100">
                   <input
+                    id="slider4"
                     class="input-range-slider m-0 w-100"
-                    data-name='age'
-                    data-addui='slider'
+                    data-name='slider4'
+                    data-addui='slider4'
                     data-fontsize='0'
-                    data-step='1'
+                    data-step='0.1'
                     data-min='0'
-                    data-max='100'
+                    data-max='10'
                     data-range='true'
-                    value='0,100'
+                    value='0,10'
                   />
                 </div>
               </div>
               <div class="col-3 p-0">
-                <input type="number" class="form-control slider-max" value="5.8" />
+                <input type="number" class="form-control slider-min" min="0" max="10" id="slider4_min" step="0.1" value="0" />
                 <label class="w-100 text-center pt-2">מינימום</label>
               </div>
             </div>
@@ -867,12 +871,46 @@
       $(items[i]).find('.item-title').text(new_txt);
     }
   });
-  $(document).on('change', '.slider-max', function() {
-    var slider_input = $(this).closest('.filter-group-item').find('.addui-slider-input');
-    // console.log('>>>', slider_input);debugger;
-    var slider_input_val = slider_input.val();
-    slider_input.val(slider_input_val.split(',')[0] + ',' + $(this).val());
+  $(document).on('change', '.slider-min, .slider-max', function() {
+    var min = $(this).closest('.filter-group-item').find('.slider-min').val();
+    var max = $(this).closest('.filter-group-item').find('.slider-max').val();
+    var slider_id = $(this).closest('.filter-group-item').find('.input-range-slider').attr('id');
+    // console.log('>>>>>>', slider_id);
+    if(slider_id == 'slider1') {
+      $(this).closest('.filter-group-item').find('.input-range-slider').addSlider({...slider_settings, value: (min+","+max)}, handleChangeSlider1);
+    } else if(slider_id == 'slider2') {
+      $(this).closest('.filter-group-item').find('.input-range-slider').addSlider({...slider_settings, value: (min+","+max)}, handleChangeSlider2);
+    } else if(slider_id == 'slider3') {
+      $(this).closest('.filter-group-item').find('.input-range-slider').addSlider({...slider_settings, value: (min+","+max)}, handleChangeSlider3);
+    } else if(slider_id == 'slider4') {
+      $(this).closest('.filter-group-item').find('.input-range-slider').addSlider({...slider_settings, value: (min+","+max)}, handleChangeSlider4);
+    }
   });
+  // range slider
+  var slider_settings = {value: "0,10.0", range: true, fontsize: 0, step: 0.1, min: 0, max: 10};
+  function handleChangeSlider1(e) {
+    $("#slider1_min").val(e.split(',')[0]);
+    $("#slider1_max").val(e.split(',')[1]);
+  }
+  $("[data-addui=slider1]").addSlider(slider_settings, handleChangeSlider1);
+  //
+  function handleChangeSlider2(e) {
+    $("#slider2_min").val(e.split(',')[0]);
+    $("#slider2_max").val(e.split(',')[1]);
+  }
+  $("[data-addui=slider2]").addSlider(slider_settings, handleChangeSlider2);
+  //
+  function handleChangeSlider3(e) {
+    $("#slider3_min").val(e.split(',')[0]);
+    $("#slider3_max").val(e.split(',')[1]);
+  }
+  $("[data-addui=slider3]").addSlider(slider_settings, handleChangeSlider3);
+  //
+  function handleChangeSlider4(e) {
+    $("#slider4_min").val(e.split(',')[0]);
+    $("#slider4_max").val(e.split(',')[1]);
+  }
+  $("[data-addui=slider4]").addSlider(slider_settings, handleChangeSlider4);
 </script>
 <!-- ./script -->
 </body>

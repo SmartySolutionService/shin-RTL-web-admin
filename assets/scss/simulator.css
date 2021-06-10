@@ -51,6 +51,7 @@
 }
 .simulator-main .filter-bar .filter-body {
   max-height: calc(100% - 230px);
+  padding: 0 25px !important;
 }
 .simulator-main .filter-bar .filter-footer {
   display: none;
@@ -64,6 +65,9 @@
 .simulator-main .filter-form .filter-form-body .filter-group-item {
   border-bottom: solid 2px #D7DDE9;
   padding: 15px 0;
+}
+.simulator-main .filter-form .filter-form-body .filter-group-item:last-child {
+  border-bottom: 0;
 }
 .simulator-main .filter-form .filter-form-body .filter-group-item .cs-btn-icon {
   width: 20px;
