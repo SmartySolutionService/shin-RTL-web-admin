@@ -155,19 +155,10 @@
                   <td class="font-weight-bold">TEXT</td>
                   <td>
                     <div class="d-flex">
-                        <input type="number" class="form-control mt-2" value="70" />
-                        <div class="slider-wrapper mr-3">
-                            <input
-                                data-name='age'
-                                data-addui='slider'
-                                data-fontsize='12'
-                                data-step='1'
-                                data-min='0'
-                                data-max='100'
-                                data-range='true'
-                                value='18,67'
-                            />
-                        </div>
+                      <input type="number" class="form-control" name="input1" value="70" />
+                      <div class="slider-wrapper mr-3">
+                        <input type="range" min="1" max="100" value="70" class="slider" id="slider1">
+                      </div>
                     </div>
                   </td>
                 </tr>
@@ -175,19 +166,10 @@
                   <td class="font-weight-bold">TEXT</td>
                   <td>
                     <div class="d-flex">
-                        <input type="number" class="form-control mt-2" value="70" />
-                        <div class="slider-wrapper mr-3">
-                            <input
-                                data-name='age'
-                                data-addui='slider'
-                                data-fontsize='12'
-                                data-step='1'
-                                data-min='0'
-                                data-max='100'
-                                data-range='true'
-                                value='18,67'
-                            />
-                        </div>
+                      <input type="number" class="form-control" name="input2" value="70" />
+                      <div class="slider-wrapper mr-3">
+                        <input type="range" min="1" max="100" value="70" class="slider" id="slider2">
+                      </div>
                     </div>
                   </td>
                 </tr>
@@ -195,19 +177,10 @@
                   <td class="font-weight-bold">TEXT</td>
                   <td>
                     <div class="d-flex">
-                        <input type="number" class="form-control mt-2" value="70" />
-                        <div class="slider-wrapper mr-3">
-                            <input
-                                data-name='age'
-                                data-addui='slider'
-                                data-fontsize='12'
-                                data-step='1'
-                                data-min='0'
-                                data-max='100'
-                                data-range='true'
-                                value='18,67'
-                            />
-                        </div>
+                      <input type="number" class="form-control" name="input3" value="70" />
+                      <div class="slider-wrapper mr-3">
+                        <input type="range" min="1" max="100" value="70" class="slider" id="slider3">
+                      </div>
                     </div>
                   </td>
                 </tr>
@@ -457,6 +430,13 @@
       $(this).closest('.card-body').find('li').removeClass('selected');
       $(this).addClass('selected');
     }
+  });
+  //
+  $(document).on('change', '.slider', function(e) {
+    $(this).closest('td').find('[type="number"]').val(e.target.value);
+  });
+  $(document).on('change', '[type="number"]', function(e) {
+    $(this).closest('td').find('.slider').val(e.target.value);
   });
 </script>
 <!-- ./script -->
