@@ -1,36 +1,58 @@
-.simulator .filter-options .filter-button {
+.simulator-main .filter-options .filter-button {
   width: 170px !important;
 }
-.simulator .filter-app {
+.simulator-main .filter-app {
   padding-left: 30px !important;
   padding-right: 30px !important;
 }
-.simulator.open-filter .filter-bar {
+.simulator-main.open-filter .filter-bar {
   width: 590px !important;
 }
-.simulator.open-filter .filter-app {
+.simulator-main.open-filter .filter-app {
   padding-right: 30px !important;
 }
-.simulator.open-filter .filter-header .filter-optoin2 {
+.simulator-main.open-filter .filter-header .filter-optoin2 {
   display: block !important;
 }
-.simulator.open-filter .filter-footer {
+.simulator-main.open-filter .filter-footer {
   display: block !important;
 }
-.simulator .filter-bar {
+.simulator-main .filter-bar {
   position: relative;
   overflow: unset !important;
 }
-.simulator .filter-bar .filter-header .filter-optoin2 {
+.simulator-main .filter-bar .filter-header .filter-optoin2 {
   display: none;
   padding-top: 20px;
   border-bottom: solid 2px #D7DDE9;
   margin: 0 30px;
 }
-.simulator .filter-bar .filter-body {
+.simulator-main .filter-bar .filter-header .filter-optoin2 .input-group-prepend {
+  width: 100%;
+  height: 40px;
+}
+.simulator-main .filter-bar .filter-header .filter-optoin2 .input-group-prepend::before {
+  top: 20px;
+}
+.simulator-main .filter-bar .filter-header .filter-optoin2 .input-group-prepend .dropdown-toggle {
+  width: 100%;
+  height: 40px;
+  font-size: 16px;
+}
+.simulator-main .filter-bar .filter-header .filter-optoin2 .input-group-prepend .dropdown-menu {
+  width: 100% !important;
+}
+.simulator-main .filter-bar .filter-header .filter-optoin2 .input-group-prepend .dropdown-menu .dropdown-item {
+  width: 100% !important;
+  font-size: 16px;
+}
+.simulator-main .filter-bar .filter-header .filter-optoin2 .input-group-prepend .dropdown-menu .dropdown-item .cs-checkbox-container {
+  top: 5px;
+}
+.simulator-main .filter-bar .filter-body {
   max-height: calc(100% - 230px);
 }
-.simulator .filter-bar .filter-footer {
+.simulator-main .filter-bar .filter-footer {
   display: none;
   position: absolute;
   width: calc(100% - 60px);
@@ -39,11 +61,11 @@
   left: 30px;
   border-top: solid 2px #D7DDE9;
 }
-.simulator .filter-form .filter-form-body .filter-group-item {
+.simulator-main .filter-form .filter-form-body .filter-group-item {
   border-bottom: solid 2px #D7DDE9;
   padding: 15px 0;
 }
-.simulator .filter-form .filter-form-body .filter-group-item .cs-btn-icon {
+.simulator-main .filter-form .filter-form-body .filter-group-item .cs-btn-icon {
   width: 20px;
   height: 20px;
   outline: none;
@@ -51,20 +73,20 @@
   margin-left: 0;
   padding: 0;
 }
-.simulator .filter-form .filter-form-body .filter-group-item .cs-btn-icon.btn-quiz {
+.simulator-main .filter-form .filter-form-body .filter-group-item .cs-btn-icon.btn-quiz {
   width: 15px;
   height: 15px;
 }
-.simulator .cs-btn-img {
+.simulator-main .cs-btn-img {
   width: 191px;
 }
-.simulator table thead tr {
+.simulator-main table thead tr {
   background-color: #7abbfc;
 }
-.simulator table thead tr th {
+.simulator-main table thead tr th {
   color: #fff;
 }
-.simulator .search-result {
+.simulator-main .search-result {
   position: absolute;
   color: #1a70c6;
 }

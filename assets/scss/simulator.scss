@@ -1,4 +1,4 @@
-.simulator {
+.simulator-main {
     .filter-options {
         .filter-button {
             width: 170px !important;
@@ -33,6 +33,28 @@
                 padding-top: 20px;
                 border-bottom: solid 2px #D7DDE9;
                 margin: 0 30px;
+                .input-group-prepend {
+                    width: 100%;
+                    height: 40px;
+                    &::before {
+                        top: 20px;
+                    }
+                    .dropdown-toggle {
+                        width: 100%;
+                        height: 40px;
+                        font-size: 16px;
+                    }
+                    .dropdown-menu {
+                        width: 100% !important;
+                        .dropdown-item {
+                            width: 100% !important;
+                            font-size: 16px;
+                            .cs-checkbox-container {
+                                top: 5px;
+                            }
+                        }
+                    }
+                }
             }
         }
         .filter-body {
