@@ -169,77 +169,181 @@
         </div>
       </div>
     </div>
-    <div class="app-body mt-5">
-        <div class="card">
+    <div class="app-body my-5">
+        <div class="card mb-5">
           <div class="card-body p-0">
             <table class="table datatable w-100 m-0">
               <thead>
                 <tr>
-                  <th>
-                    <label class="cs-checkbox-container m-0 mr-3 mt-2">
+                  <th class="text-center">
+                    <label class="cs-checkbox-container">
                       <input type="checkbox" />
                       <span class="checkmark"></span>
                     </label>
-                	</th>
+                    תזכורת
+                  </th>
+                  <th>תאריך</th>
+                  <th>פעילות</th>
+                  <th>שם לקוח</th>
+                  <th>ת.ז לקוח</th>
+                  <th>סוג מוצר</th>
                   <th>שם המוצר</th>
-                  <th>סוג המוצר</th>
-                  <th>חברה מנהלת</th>
-                  <th>שווי שוק</th>
-                  <th>תשואה מצטברת לתקופה</th>
-                  <th>שארפ</th>
-                  <th>יקף נכסים </th>
+                  <th>מספר אוצר</th>
+                  <th>חברה מנהלת </th>
+                  <th>סטטוס טיפול</th>
+                  <th>עדיפות</th>
+                  <th>גורם מטפל</th>
+                  <th>מועד סיום טיפול</th>
+                  <th>סוג לקוח</th>
+                  <th>סוג חריגה </th>
+                </tr>
+                <tr class="bg-dark">
+                  <th class="">
+                    <a class="action-control action-filter">
+                      <div class="cs-icon ic-filter"></div>
+                    </a>
+                  </th>
+                  <th>
+                    <input id="datepicker1" class="form-control" value="2020-03-09" />
+                  </th>
+                  <th>
+                    <select class="form-control">
+                      <option>פעילות</option>
+                    </select>
+                  </th>
+                  <th>
+                    <select class="form-control">
+                      <option>שם הלקוח</option>
+                    </select>
+                  </th>
+                  <th>
+                    <input type="text" class="form-control" value="111111111" />
+                  </th>
+                  <th>
+                    <select class="form-control">
+                      <option>גמל</option>
+                    </select>
+                  </th>
+                  <th>
+                    <input type="text" class="form-control" value="שם מוצר" />
+                  </th>
+                  <th>
+                    <input type="text" class="form-control" value="מספר אוצר" />
+                  </th>
+                  <th>
+                    <select class="form-control">
+                      <option>חברה מנהלת</option>
+                    </select>
+                  </th>
+                  <th><span class="badge badge-blue">בתהליך</sapn></th>
+                  <th><span class="badge badge-yellow">עדיפות</span></th>
+                  <th>
+                    <select class="form-control">
+                      <option>גורם מטפל</option>
+                    </select>
+                  </th>
+                  <th>
+                    <input id="datepicker2" class="form-control" value="2020-03-09" />
+                  </th>
+                  <th>
+                    <select class="form-control">
+                      <option>סוג לקוח</option>
+                    </select>
+                  </th>
+                  <th>
+                    <select class="form-control">
+                      <option>סוג חריגה</option>
+                    </select>
+                  </th>
                 </tr>
               </thead>
               <tbody>
-                <tr>
-                  <td>
-                    <label class="cs-checkbox-container m-0 mr-3 mt-2">
-                      <input type="checkbox" />
-                      <span class="checkmark"></span>
-                    </label>
+                <tr class="py-2">
+                  <td class="d-flex">
+                    <a class="action-control toggle-detail">
+                      <div class="cs-icon ic-collapse-pm"></div>
+                    </a>
+                    <div class="action-control">
+                      <label class="cs-checkbox-container">
+                        <input type="checkbox" />
+                        <span class="checkmark"></span>
+                      </label>
+                    </div>
+                    <a class="action-control">
+                      <div class="cs-icon ic-pencil-blue"></div>
+                    </a>
+                    <a class="action-control">
+                      <div class="cs-icon ic-question-answer"></div>
+                      <span class="bubble bubble-gray">1</span>
+                    </a>
                   </td>
-                  <td class="font-weight-bold">אנליסט השתלמות כללי</td>
-                  <td>אנליסט השתלמות כללי</td>
-                  <td>TEXT </td>
-                  <td>250,000 ש"ח</td>
-                  <td>NUMERIC </td>
-                  <td>NUMERIC</td>
-                  <td>NUMERIC</td>
+                  <td class="">03.09.2020</td>
+                  <td>הצטרפות</td>
+                  <td>נורית ישראלי</td>
+                  <td>111111111</td>
+                  <td>גמל</td>
+                  <td>שם מוצר</td>
+                  <td>מספר אוצר</td>
+                  <td>חברה מנהלת 1</td>
+                  <td><span class="badge badge-red">דחוף</span></td>
+                  <td><span class="badge badge-red">גבוה</span></td>
+                  <td>גורם מטפל</td>
+                  <td>03.09.2020</td>
+                  <td>VIP</td>
+                  <td>שיוך כספים</td>
                 </tr>
-                <tr>
-                  <td>
-                    <label class="cs-checkbox-container m-0 mr-3 mt-2">
-                      <input type="checkbox" />
-                      <span class="checkmark"></span>
-                    </label>
+                <tr class="py-2">
+                  <td class="d-flex">
+                    <a class="action-control toggle-detail">
+                      <div class="cs-icon ic-collapse-pm"></div>
+                    </a>
+                    <div class="action-control">
+                      <label class="cs-checkbox-container">
+                        <input type="checkbox" />
+                        <span class="checkmark"></span>
+                      </label>
+                    </div>
+                    <a class="action-control">
+                      <div class="cs-icon ic-pencil-blue"></div>
+                    </a>
+                    <a class="action-control">
+                      <div class="cs-icon ic-question-answer"></div>
+                      <span class="bubble bubble-gray">1</span>
+                    </a>
                   </td>
-                  <td class="font-weight-bold">אנליסט השתלמות כללי</td>
-                  <td>אנליסט השתלמות כללי</td>
-                  <td>TEXT </td>
-                  <td>250,000 ש"ח</td>
-                  <td>NUMERIC </td>
-                  <td>NUMERIC</td>
-                  <td>NUMERIC</td>
-                </tr>
-                <tr>
-                  <td>
-                    <label class="cs-checkbox-container m-0 mr-3 mt-2">
-                      <input type="checkbox" />
-                      <span class="checkmark"></span>
-                    </label>
-                  </td>
-                  <td class="font-weight-bold">אנליסט השתלמות כללי</td>
-                  <td>אנליסט השתלמות כללי</td>
-                  <td>TEXT </td>
-                  <td>250,000 ש"ח</td>
-                  <td>NUMERIC </td>
-                  <td>NUMERIC</td>
-                  <td>NUMERIC</td>
+                  <td class="">03.09.2020</td>
+                  <td>הצטרפות</td>
+                  <td>נורית ישראלי</td>
+                  <td>111111111</td>
+                  <td>גמל</td>
+                  <td>שם מוצר</td>
+                  <td>מספר אוצר</td>
+                  <td>חברה מנהלת 2</td>
+                  <td><span class="badge badge-red">דחוף</span></td>
+                  <td><span class="badge badge-red">גבוה</span></td>
+                  <td>גורם מטפל</td>
+                  <td>03.09.2020</td>
+                  <td>VIP</td>
+                  <td>שיוך כספים</td>
                 </tr>
               </tbody>
             </table>
           </div>
         </div>
+        <!-- Search Result -->
+        <div class="search-result">
+          נמצאו <strong>32</strong> מוצרים
+        </div>
+        <!-- pagination -->
+        <div class="pagination">
+          <a class="btn-pagination btn-prev"></a>
+          <a class="btn-pagination">1</a>
+          <a class="btn-pagination active">2</a>
+          <a class="btn-pagination">3</a>
+          <a class="btn-pagination">4</a>
+          <a class="btn-pagination btn-next"></a>
+        </div>
+        <!-- ./pagination -->
     </div>
   </div>
 </div>
@@ -260,15 +364,37 @@
 <!-- ./plugin js -->
 <!-- script -->
 <script>
-    // datatable init
+  // datepicker init
+  $('#datepicker1').datepicker({ uiLibrary: 'bootstrap4' });
+  $('#datepicker2').datepicker({ uiLibrary: 'bootstrap4' });
+  // datatable init
   $(document).ready(function() {
     $('.datatable').DataTable({
       paging: false,
       // scrollY: 400,
-      searching: false
-      // ordering:  false
+      searching: false,
+      // ordering:  false,
+      orderCellsTop: true
     });
-  } );
+  });
+</script>
+<script>
+  // table detail control
+  $(document).on('click', '.toggle-detail', function() {
+    if ($(this).hasClass('shown')) {
+      $(this).closest('tr').next().remove();
+      $(this).removeClass('shown');
+      return false;
+    }
+    $(this).addClass('shown');
+    var id = $(this).closest('tr').data('id');
+    $(this).closest('tr').after('<tr class="sub-tr">'+
+                                  '<td></td>'+
+                                  '<td colspan="14" class="text-right">'+
+                                    '<div class="font-weight-bold">פוליסה 1</div>'+
+                                  '</td>'+
+                                '<tr>');
+  });
 </script>
 <!-- ./script -->
 </body>

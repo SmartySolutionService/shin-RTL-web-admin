@@ -11927,6 +11927,12 @@ body .main.open-filter .filter-app {
 .cs-icon.ic-clear {
   background-image: url(../img/icons/ic_clear.png);
 }
+.cs-icon.ic-question-answer {
+  background-image: url(../img/icons/ic_question_answer.png);
+}
+.cs-icon.ic-filter {
+  background-image: url(../img/icons/ic_filter.png);
+}
 
 /* width */
 ::-webkit-scrollbar {

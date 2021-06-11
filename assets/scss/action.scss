@@ -91,9 +91,37 @@
                 thead {
                     background-color: #7ABCFF;
                     tr {
+                        &.bg-dark {
+                            background-color: #78849E !important;
+                            border: solid 1px #707070;
+                            -webkit-box-shadow: 0px 0px 6px 3px rgba(0,0,0,0.16); 
+                            box-shadow: 0px 0px 6px 3px rgba(0,0,0,0.16);
+                            th {
+                                padding: 15px 3px 5px;
+                            }
+                            .action-filter {
+                                position: relative;
+                                display: block;
+                                width: 35px;
+                                height: 35px;
+                                right: 50px;
+                                .cs-icon {
+                                    top: 8px;
+                                    right: 8px;
+                                }
+                            }
+                        }
                         th {
                             position: relative;
                             color: #ffffff;
+                            text-align: center;
+                            &:first-child {
+                                .cs-checkbox-container {
+                                    margin-top: 0;
+                                    position: relative;
+                                    top: 5px;
+                                }
+                            }
                             .cs-icon {
                                 position: absolute;
                                 top: 15px;
@@ -121,18 +149,88 @@
                     tr {
                         td {
                             position: relative;
-                            padding-right: 20px;
-                            padding-left: 20px;
-                            &:first-child {
-                                padding-right: 0;
-                                padding-left: 0;
-                            }
+                            padding: 5px 10px;
+                            text-align: center;
                             .cs-icon {
                                 position: absolute;
                                 top: 15px;
                                 right: 15px;
                             }
+                            &:first-child {
+                                padding-right: 0;
+                                padding-left: 0;
+                                .action-control {
+                                    position: relative;
+                                    display: block;
+                                    width: 50px;
+                                    height: 40px;
+                                    padding: 10px 15px;
+                                    border: none !important;
+                                    &.shown {
+                                        .ic-collapse-pm {
+                                            background-image: url(../img/icons/ic_minus_blue.png);
+                                        }
+                                    }
+                                    .cs-icon {
+                                        position: absolute;
+                                        width: 15px;
+                                        height: 15px;
+                                        &.ic-collapse-pm {
+                                            background-image: url(../img/icons/ic_plus_blue.png);
+                                        }
+                                    }
+                                    .cs-checkbox-container {
+                                        margin-top: 2px;
+                                    }
+                                    .bubble {
+                                        position: absolute;
+                                        width: 20px;
+                                        height: 20px;
+                                        top: 3px;
+                                        right: 3px;
+                                        border-radius: 20px;
+                                        line-height: 18px;
+                                        font-size: 14px;
+                                        border: solid 1px #F4F7F8;
+                                        &.bubble-gray {
+                                            background-color: #78849E;
+                                            color: #ffffff;
+                                        }
+                                    }
+                                }
+                                .btn-remove {
+                                    position: relative;
+                                    display: block;
+                                    width: 40px;
+                                    height: 40px;
+                                    border-left: solid 1px #BFC5D2;
+                                    .cs-icon {
+                                        position: relative;
+                                        top: 10px;
+                                        right: 3px;
+                                    }
+                                }
+                            }
                         }
+                    }
+                }
+                .badge {
+                    padding: 10px 20px;
+                    border-radius: 10px;
+                    font-weight: normal;
+                    height: 38px;
+                    border: solid 2px #E9E9E9;
+                    &.badge-red {
+                        background-color: #DE0101;
+                        color: #ffffff;
+                    }
+                    &.badge-blue {
+                        background-color: #7ABCFF;
+                        color: #ffffff;
+                    }
+                    &.badge-yellow {
+                        background-color: #ECC528;
+                        color: #ffffff;
                     }
                 }
                 .cs-checkbox-container {
@@ -154,6 +252,10 @@
                         }
                     }
                 }
+            }
+            .search-result {
+                position: absolute;
+                color: #1a70c6;
             }
         }
     }

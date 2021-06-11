@@ -87,9 +87,35 @@
 .action-page .filter-app .app-body table thead {
   background-color: #7ABCFF;
 }
+.action-page .filter-app .app-body table thead tr.bg-dark {
+  background-color: #78849E !important;
+  border: solid 1px #707070;
+  -webkit-box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.16);
+}
+.action-page .filter-app .app-body table thead tr.bg-dark th {
+  padding: 15px 3px 5px;
+}
+.action-page .filter-app .app-body table thead tr.bg-dark .action-filter {
+  position: relative;
+  display: block;
+  width: 35px;
+  height: 35px;
+  right: 50px;
+}
+.action-page .filter-app .app-body table thead tr.bg-dark .action-filter .cs-icon {
+  top: 8px;
+  right: 8px;
+}
 .action-page .filter-app .app-body table thead tr th {
   position: relative;
   color: #ffffff;
+  text-align: center;
+}
+.action-page .filter-app .app-body table thead tr th:first-child .cs-checkbox-container {
+  margin-top: 0;
+  position: relative;
+  top: 5px;
 }
 .action-page .filter-app .app-body table thead tr th .cs-icon {
   position: absolute;
@@ -113,17 +139,85 @@
 }
 .action-page .filter-app .app-body table tbody tr td {
   position: relative;
-  padding-right: 20px;
-  padding-left: 20px;
-}
-.action-page .filter-app .app-body table tbody tr td:first-child {
-  padding-right: 0;
-  padding-left: 0;
+  padding: 5px 10px;
+  text-align: center;
 }
 .action-page .filter-app .app-body table tbody tr td .cs-icon {
   position: absolute;
   top: 15px;
   right: 15px;
+}
+.action-page .filter-app .app-body table tbody tr td:first-child {
+  padding-right: 0;
+  padding-left: 0;
+}
+.action-page .filter-app .app-body table tbody tr td:first-child .action-control {
+  position: relative;
+  display: block;
+  width: 50px;
+  height: 40px;
+  padding: 10px 15px;
+  border: none !important;
+}
+.action-page .filter-app .app-body table tbody tr td:first-child .action-control.shown .ic-collapse-pm {
+  background-image: url(../img/icons/ic_minus_blue.png);
+}
+.action-page .filter-app .app-body table tbody tr td:first-child .action-control .cs-icon {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+}
+.action-page .filter-app .app-body table tbody tr td:first-child .action-control .cs-icon.ic-collapse-pm {
+  background-image: url(../img/icons/ic_plus_blue.png);
+}
+.action-page .filter-app .app-body table tbody tr td:first-child .action-control .cs-checkbox-container {
+  margin-top: 2px;
+}
+.action-page .filter-app .app-body table tbody tr td:first-child .action-control .bubble {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 3px;
+  right: 3px;
+  border-radius: 20px;
+  line-height: 18px;
+  font-size: 14px;
+  border: solid 1px #F4F7F8;
+}
+.action-page .filter-app .app-body table tbody tr td:first-child .action-control .bubble.bubble-gray {
+  background-color: #78849E;
+  color: #ffffff;
+}
+.action-page .filter-app .app-body table tbody tr td:first-child .btn-remove {
+  position: relative;
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-left: solid 1px #BFC5D2;
+}
+.action-page .filter-app .app-body table tbody tr td:first-child .btn-remove .cs-icon {
+  position: relative;
+  top: 10px;
+  right: 3px;
+}
+.action-page .filter-app .app-body table .badge {
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: normal;
+  height: 38px;
+  border: solid 2px #E9E9E9;
+}
+.action-page .filter-app .app-body table .badge.badge-red {
+  background-color: #DE0101;
+  color: #ffffff;
+}
+.action-page .filter-app .app-body table .badge.badge-blue {
+  background-color: #7ABCFF;
+  color: #ffffff;
+}
+.action-page .filter-app .app-body table .badge.badge-yellow {
+  background-color: #ECC528;
+  color: #ffffff;
 }
 .action-page .filter-app .app-body table .cs-checkbox-container {
   height: 20px;
@@ -143,6 +237,10 @@
   top: 1px;
   width: 8px;
   height: 12px;
+}
+.action-page .filter-app .app-body .search-result {
+  position: absolute;
+  color: #1a70c6;
 }
 
 /*# sourceMappingURL=action.css.map */
