@@ -272,7 +272,7 @@
                     <a class="action-control">
                       <div class="cs-icon ic-pencil-blue"></div>
                     </a>
-                    <a class="action-control">
+                    <a class="action-control" data-toggle="modal" data-target="#CRMreminderModal">
                       <div class="cs-icon ic-question-answer"></div>
                       <span class="bubble bubble-gray">1</span>
                     </a>
@@ -306,7 +306,7 @@
                     <a class="action-control">
                       <div class="cs-icon ic-pencil-blue"></div>
                     </a>
-                    <a class="action-control">
+                    <a class="action-control" data-toggle="modal" data-target="#CRMreminderModal">
                       <div class="cs-icon ic-question-answer"></div>
                       <span class="bubble bubble-gray">1</span>
                     </a>
@@ -344,6 +344,72 @@
           <a class="btn-pagination btn-next"></a>
         </div>
         <!-- ./pagination -->
+    </div>
+  </div>
+</div>
+
+
+<!-- CRM Reminder Modal -->
+<div class="modal" id="CRMreminderModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="mt-2" style="margin-right: 40px">תזכורת</h4>
+        <button type="button" class="cs-btn-icon btn-close close dark mr-auto" data-dismiss="modal"></button>
+      </div>
+      <!-- Modal body -->
+      <div class="modal-body">
+        <form>
+          <div class="row">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+              <div class="form-group">
+                <label>שם איש קשר</label>
+                <input type="text" class="form-control" placeholder="TEXT" />
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+              <div class="form-group">
+                <label>סוג הקשר</label>
+                <input type="text" class="form-control" placeholder="TEXT" />
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+              <div class="form-group">
+                <label>ישוב</label>
+                <select class="form-control">
+                  <option>LIST</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+              <div class="form-group">
+                <label>טלפון</label>
+                <input type="text" class="form-control" placeholder="PHONE" />
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+              <div class="form-group">
+                <label>אימייל</label>
+                <input type="text" class="form-control" placeholder="TEXT" />
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button class="cs-btn-img btn-save-modal btn-success" data-dismiss="modal"></button>
+      </div>
+      
     </div>
   </div>
 </div>
