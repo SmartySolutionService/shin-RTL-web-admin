@@ -118,6 +118,9 @@
   min-width: 200px;
   border-radius: 8px;
 }
+.action-page .filter-app .app-header .app-header-bottom .btn-adding-product {
+  width: 190px;
+}
 .action-page .filter-app .app-body table thead {
   background-color: #7ABCFF;
 }
@@ -243,6 +246,90 @@
   padding: 0 20px;
   margin-top: 8px;
   margin-bottom: 8px;
+}
+.action-page .filter-app .app-body table tbody tr td:first-child .dropleft {
+  padding: 4px 8px;
+}
+.action-page .filter-app .app-body table tbody tr td:first-child .dropleft .dropdown-toggle {
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+}
+.action-page .filter-app .app-body table tbody tr td:first-child .dropleft .dropdown-toggle:before, .action-page .filter-app .app-body table tbody tr td:first-child .dropleft .dropdown-toggle:after {
+  display: none;
+}
+.action-page .filter-app .app-body table tbody tr td:first-child .dropleft .dropdown-toggle:hover {
+  background-color: #78849E;
+  border: solid 1px #707070;
+}
+.action-page .filter-app .app-body table tbody tr td:first-child .dropleft .dropdown-toggle:hover .ic-pencil-blue {
+  background-image: url(../img/icons/ic_pencil_white.png);
+}
+.action-page .filter-app .app-body table tbody tr td:first-child .dropleft .dropdown-toggle .cs-icon {
+  top: 12px;
+}
+.action-page .filter-app .app-body table tbody tr td:first-child .dropleft .dropdown-menu {
+  padding: 0px;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 350px;
+}
+.action-page .filter-app .app-body table tbody tr td:first-child .dropleft .dropdown-menu .dropdown-ul {
+  width: 150px;
+  height: 330px;
+  list-style: none;
+  padding: 10px 0px;
+}
+.action-page .filter-app .app-body table tbody tr td:first-child .dropleft .dropdown-menu .dropdown-ul .dropdown-li {
+  position: relative;
+  padding: 5px 40px 5px 10px;
+  text-align: right;
+  color: #7ABBFC;
+  font-weight: bold;
+}
+.action-page .filter-app .app-body table tbody tr td:first-child .dropleft .dropdown-menu .dropdown-ul .dropdown-li:hover {
+  background-color: #BFC5D2;
+  color: #ffffff;
+  cursor: pointer;
+}
+.action-page .filter-app .app-body table tbody tr td:first-child .dropleft .dropdown-menu .dropdown-ul .dropdown-li.open .ic-collapse-pm {
+  background-image: url(../img/icons/ic_minus_blue.png) !important;
+}
+.action-page .filter-app .app-body table tbody tr td:first-child .dropleft .dropdown-menu .dropdown-ul .dropdown-li .cs-icon {
+  top: 10px;
+}
+.action-page .filter-app .app-body table tbody tr td:first-child .dropleft .dropdown-menu .dropdown-ul .dropdown-li .cs-icon.ic-collapse-pm {
+  background-image: url(../img/icons/ic_plus_blue.png);
+}
+.action-page .filter-app .app-body table tbody tr td:first-child .dropleft .dropdown-menu .dropdown-left-menu {
+  width: 200px;
+  border-right: solid 1px #D7DDE9;
+  display: none;
+}
+.action-page .filter-app .app-body table tbody tr td:first-child .dropleft .dropdown-menu .dropdown-left-menu.open {
+  display: block;
+}
+.action-page .filter-app .app-body table tbody tr td:first-child .dropleft .dropdown-menu .dropdown-left-menu .search-wrapper .form-control {
+  border-radius: 0px;
+  border-top-left-radius: 10px;
+}
+.action-page .filter-app .app-body table tbody tr td:first-child .dropleft .dropdown-menu .dropdown-left-menu .dropdown-left-menu-ul {
+  list-style: none;
+  padding: 0px;
+  height: 300px;
+  overflow: auto;
+}
+.action-page .filter-app .app-body table tbody tr td:first-child .dropleft .dropdown-menu .dropdown-left-menu .dropdown-left-menu-ul .dropdown-li {
+  position: relative;
+  display: flex;
+  padding: 5px 10px;
+  font-size: 12px;
+}
+.action-page .filter-app .app-body table tbody tr td:first-child .dropleft .dropdown-menu .dropdown-left-menu .dropdown-left-menu-ul .dropdown-li:hover {
+  background-color: #BFC5D2;
+  color: #ffffff;
+  cursor: pointer;
 }
 .action-page .filter-app .app-body table.datatable td {
   padding-right: 30px;

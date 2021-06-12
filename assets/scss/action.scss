@@ -124,6 +124,9 @@
                         }
                     }
                 }
+                .btn-adding-product {
+                    width: 190px;
+                }
             }
         }
         .app-body {
@@ -259,6 +262,94 @@
                                     padding: 0 20px;
                                     margin-top: 8px;
                                     margin-bottom: 8px;
+                                }
+                                .dropleft {
+                                    padding: 4px 8px;
+                                    .dropdown-toggle {
+                                        border: none;
+                                        width: 30px;
+                                        height: 30px;
+                                        border-radius: 30px;
+                                        &:before, &:after {
+                                            display: none;
+                                        }
+                                        &:hover {
+                                            background-color: #78849E;
+                                            border: solid 1px #707070;
+                                            .ic-pencil-blue {
+                                                background-image: url(../img/icons/ic_pencil_white.png);
+                                            }
+                                        }
+                                        .cs-icon {
+                                            top: 12px;
+                                        }
+                                    }
+                                    .dropdown-menu {
+                                        padding: 0px;
+                                        border-radius: 10px;
+                                        overflow: hidden;
+                                        height: 350px;
+                                        .dropdown-ul {
+                                            width: 150px;
+                                            height: 330px;
+                                            list-style: none;
+                                            padding: 10px 0px;
+                                            .dropdown-li {
+                                                position: relative;
+                                                padding: 5px 40px 5px 10px;
+                                                text-align: right;
+                                                color: #7ABBFC;
+                                                font-weight: bold;
+                                                &:hover {
+                                                    background-color: #BFC5D2;
+                                                    color: #ffffff;
+                                                    cursor: pointer;
+                                                }
+                                                &.open {
+                                                    .ic-collapse-pm {
+                                                        background-image: url(../img/icons/ic_minus_blue.png) !important;
+                                                    }
+                                                }
+                                                .cs-icon {
+                                                    top: 10px;
+                                                    &.ic-collapse-pm {
+                                                        background-image: url(../img/icons/ic_plus_blue.png);
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        .dropdown-left-menu {
+                                            width: 200px;
+                                            border-right: solid 1px #D7DDE9;
+                                            display: none;
+                                            &.open {
+                                                display: block;
+                                            }
+                                            .search-wrapper {
+                                                .form-control {
+                                                    border-radius: 0px;
+                                                    border-top-left-radius: 10px;
+                                                }
+                                            }
+                                            .dropdown-left-menu-ul {
+                                                list-style: none;
+                                                padding: 0px;
+                                                height: 300px;
+                                                overflow: auto;
+                                                .dropdown-li {
+                                                    position: relative;
+                                                    display: flex;
+                                                    padding: 5px 10px;
+                                                    font-size: 12px;
+                                                    &:hover {
+                                                        background-color: #BFC5D2;
+                                                        color: #ffffff;
+                                                        cursor: pointer;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         }

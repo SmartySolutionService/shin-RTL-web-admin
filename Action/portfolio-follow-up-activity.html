@@ -150,11 +150,8 @@
                 <option>בחר לקוח</option>
             </select>
         </div>
-        <div class="form-group autocomplete-form mr-4">
-            <div class="autocomplete">
-                <span class="cs-icon ic-search"></span>
-                <input type="text" id="search" class="form-control" placeholder="חיפוש" />
-            </div>
+        <div class="form-group mr-4">
+          <button class="cs-btn-img btn-adding-product float-right mr-2" data-toggle="modal" data-target="#newQuestionnaireModal"></button>
         </div>
       </div>
     </div>
@@ -175,34 +172,45 @@
               <tbody>
                 <tr class="py-2">
                   <td class="d-flex pr-2">
-                    <a class="action-control" href="../Action/portfolio-follow-up-activity.html">
-                      <div class="cs-icon ic-pencil-blue"></div>
-                    </a>
+                    <div class="dropleft action-control">
+                      <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <div class="cs-icon ic-pencil-blue"></div>
+                      </button>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <div class="d-flex">
+                          <ul class="dropdown-ul">
+                            <li class="dropdown-li toggle-dropdown-detail" data-id="1">
+                              <span class="cs-icon ic-collapse-pm"></span>
+                              פנסיוני
+                            </li>
+                            <li class="dropdown-li toggle-dropdown-detail" data-id="2">
+                              <span class="cs-icon ic-collapse-pm"></span>
+                              פיננסי
+                            </li>
+                            <li class="dropdown-li toggle-dropdown-detail" data-id="3">
+                              <span class="cs-icon ic-collapse-pm"></span>
+                              אלטרנטיבי
+                            </li>
+                            <li class="dropdown-li toggle-dropdown-detail" data-id="4">
+                              <span class="cs-icon ic-collapse-pm"></span>
+                              ביטוח
+                            </li>
+                          </ul>
+                          <div class="dropdown-left-menu">
+                            <div class="search-wrapper">
+                              <input type="text" class="form-control" placeholder="Search" />
+                            </div>
+                            <ul class="dropdown-left-menu-ul">
+                              <li class="dropdown-li">פנסיוני</li>
+                              <li class="dropdown-li">פנסיוני</li>
+                              <li class="dropdown-li">פנסיוני</li>
+                              <li class="dropdown-li">פנסיוני</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                     <div class="td-text font-weight-bold border-right">העברה</div>
-                  </td>
-                  <td>מספר אוצר</td>
-                  <td>מספר אוצר</td>
-                  <td>מספר אוצר</td>
-                  <td>חברה מנהלת</td>
-                </tr>
-                <tr class="py-2">
-                  <td class="d-flex pr-2">
-                    <a class="action-control" href="../Action/portfolio-follow-up-activity.html">
-                      <div class="cs-icon ic-pencil-blue"></div>
-                    </a>
-                    <div class="td-text font-weight-bold border-right">תוספת הפקדה</div>
-                  </td>
-                  <td>מספר אוצר</td>
-                  <td>מספר אוצר</td>
-                  <td>מספר אוצר</td>
-                  <td>חברה מנהלת</td>
-                </tr>
-                <tr class="py-2">
-                  <td class="d-flex pr-2">
-                    <a class="action-control" href="../Action/portfolio-follow-up-activity.html">
-                      <div class="cs-icon ic-pencil-blue"></div>
-                    </a>
-                    <div class="td-text font-weight-bold border-right">פדיון</div>
                   </td>
                   <td>מספר אוצר</td>
                   <td>מספר אוצר</td>
@@ -265,20 +273,41 @@
 </script>
 <script>
   // table detail control
-  $(document).on('click', '.toggle-detail', function() {
-    if ($(this).hasClass('shown')) {
-      $(this).closest('tr').next().remove();
-      $(this).removeClass('shown');
-      return false;
+  $(document).on('click', '.toggle-dropdown-detail', function(e) {
+    e.stopPropagation();
+    var dropdown_sub_menus = [];
+    switch($(this).data("id")) {
+      case 1: 
+        dropdown_sub_menus = ["העברה", "תוספת הפקדה", "פדיון", "מינוי סוכן", "סילוק/ביטול פוליסה", "הלוואה", "שינוי מסלול", "מינוי מוטבים", "קבלת קצבה", "שינוי דמי ניהול", "איחוד קופות", "אנונה", "שינוי מעסיק", "עדכון אמצעי תשלום ", "ניודים - גמל השתלמות / פיצוים"];
+        break;
+      case 2: 
+        dropdown_sub_menus = ["אמצעי תשלום", "תוספת הפקדה", "פדיון", "הלוואה", "שינוי מסלול", "שינוי דמי ניהול", "אנונה", "מינוי מוטבים", "עדכון אמצעי תשלום"];
+        break;
+      case 3: 
+        dropdown_sub_menus = ["שינוי דמי ניהול", "תוספת הפקדה", "פדיון", "מכירה", "אנונה", "מינוי מוטבים"];
+        break;
+      case 4: 
+        dropdown_sub_menus = ["עדכון הטבות", "סילוק/ביטול פוליסה", "תביעה", "מינוי סוכן"];
+        break;
     }
-    $(this).addClass('shown');
-    var id = $(this).closest('tr').data('id');
-    $(this).closest('tr').after('<tr class="sub-tr">'+
-                                  '<td></td>'+
-                                  '<td colspan="14" class="text-right">'+
-                                    '<div class="font-weight-bold">פוליסה 1</div>'+
-                                  '</td>'+
-                                '<tr>');
+    
+    $(this).closest('.dropdown-ul').find('.dropdown-li').removeClass('open');
+    if($(this).closest('.dropdown-menu').find('.dropdown-left-menu').hasClass('open')
+     && $(this).data("id") == $(this).closest('.dropdown-menu').find('.dropdown-left-menu').data("id")) {
+      $(this).closest('.dropdown-menu').find('.dropdown-left-menu').removeClass('open');
+      $(this).closest('.dropdown-menu').css('transform', 'translate3d(-150px, -162px, 0px)');  
+    } else {
+      $(this).closest('.dropdown-menu').find('.dropdown-left-menu-ul').empty();
+      for(var i = 0; i < dropdown_sub_menus.length; i++) {
+        $(this).closest('.dropdown-menu').find('.dropdown-left-menu-ul').append(
+          '<li class="dropdown-li">'+ dropdown_sub_menus[i] +'</li>'
+        );
+      }
+      $(this).addClass('open');
+      $(this).closest('.dropdown-menu').find('.dropdown-left-menu').addClass('open');
+      $(this).closest('.dropdown-menu').css('transform', 'translate3d(-342px, -162px, 0px)');
+      $(this).closest('.dropdown-menu').find('.dropdown-left-menu').data('id', $(this).data("id"));
+    }
   });
 </script>
 <!-- ./script -->

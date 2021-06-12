@@ -1835,6 +1835,12 @@ body {
             }
         }
     }
+    &.btn-adding-product {
+        background-image: url(../img/buttons/btn-adding-product.png);
+        &:hover {
+            background-image: url(../img/buttons/btn-adding-product-hover.png);
+        }
+    }
 }
 
 .cs-icon {
@@ -1906,6 +1912,9 @@ body {
     }
     &.ic-pencil-gray {
         background-image: url(../img/icons/ic_pencil_gray.png);
+    }
+    &.ic-pencil-white {
+        background-image: url(../img/icons/ic_pencil_white.png);
     }
     &.ic-female {
         background-image: url(../img/icons/ic_female.png);
