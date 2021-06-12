@@ -260,3 +260,105 @@
         }
     }
 }
+#CRMreminderModal {
+    .modal-dialog {
+        width: 740px !important;
+        .btn-update-green {
+            display: block;
+            width: 130px;
+        }
+        .attach {
+            display: inline-flex;
+            .ic-attach-file {
+                position: relative;
+                top: 3px;
+            }
+            .dropdown {
+                .dropdown-toggle {
+                    border: none;
+                    background-color: transparent;
+                    color: #7ABCFF;
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 30px;
+                    padding-bottom: 5px;
+                    &:after {
+                        display: none;
+                    }
+                    &:hover {
+                        background-color: #7ABCFF;
+                        color: #ffffff;
+                    }
+                }
+                .dropdown-menu {
+                    .dropdown-item {
+                        text-align: right;
+                    }
+                }
+            }
+        }
+        .text-editor {
+            position: relative;
+            display: block;
+            width: 100%;
+            height: 250px;
+            background-color: #ffffff;
+            .editor-header {
+                position: absolute;
+                z-index: 1000;
+                top: 0px;
+                left: 0px;
+                width: 100%;
+                padding: 20px;
+                display: flex;
+                .dropdown {
+                    .dropdown-toggle {
+                        border: none;
+                        z-index: 10000;
+                        &:after {
+                            display: none;
+                        }
+                    }
+                    .dropdown-menu {
+                        top: -30px !important;
+                        right: 5px;
+                        padding-top: 30px;
+                        padding-bottom: 15px;
+                        border-radius: 10px;
+                        border-top-right-radius: 5px;
+                        min-width: 130px;
+                        .dropdown-item {
+                            display: flex;
+                            padding: 10px 20px;
+                            .cs-icon {
+                                // position: absolute;
+                                // right: 20px;
+                            }
+                            .link-text {
+                                margin-right: 30px;
+                            }
+                        }
+                    }
+                }
+            }
+            .textarea-edit {
+                position: absolute;
+                bottom: 0px;
+                left: 0px;
+                border: 1px solid #CCCCCC;
+                border-radius: 10px;
+                width: 100%;
+                height: 250px;
+                background-color: #ffffff;
+                padding: 80px 20px 20px 20px;
+                &:hover, &:focus {
+                    border: 1px solid #CCCCCC;
+                    border-radius: 10px;
+                    width: 100%;
+                    height: 250px;
+                    outline: none;
+                }
+            }
+        }
+    }
+}

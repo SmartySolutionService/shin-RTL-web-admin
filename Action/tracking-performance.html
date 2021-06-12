@@ -16,6 +16,23 @@
   <script src="../assets/jquery/jquery.min.js"></script>
   <script src="../assets/plugins/popper/popper.min.js"></script>
   <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <!-- wysiwyg -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../assets/plugins/wysiwyg-editor/css/froala_editor.css">
+  <link rel="stylesheet" href="../assets/plugins/wysiwyg-editor/css/froala_style.css">
+  <link rel="stylesheet" href="../assets/plugins/wysiwyg-editor/css/plugins/code_view.css">
+  <link rel="stylesheet" href="../assets/plugins/wysiwyg-editor/css/plugins/colors.css">
+  <link rel="stylesheet" href="../assets/plugins/wysiwyg-editor/css/plugins/emoticons.css">
+  <link rel="stylesheet" href="../assets/plugins/wysiwyg-editor/css/plugins/image_manager.css">
+  <link rel="stylesheet" href="../assets/plugins/wysiwyg-editor/css/plugins/image.css">
+  <link rel="stylesheet" href="../assets/plugins/wysiwyg-editor/css/plugins/line_breaker.css">
+  <link rel="stylesheet" href="../assets/plugins/wysiwyg-editor/css/plugins/table.css">
+  <link rel="stylesheet" href="../assets/plugins/wysiwyg-editor/css/plugins/char_counter.css">
+  <link rel="stylesheet" href="../assets/plugins/wysiwyg-editor/css/plugins/video.css">
+  <link rel="stylesheet" href="../assets/plugins/wysiwyg-editor/css/plugins/fullscreen.css">
+  <link rel="stylesheet" href="../assets/plugins/wysiwyg-editor/css/plugins/file.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/codemirror.min.css">
+  <!-- ./wysiwyg -->
 </head>
 <body>
 
@@ -361,53 +378,65 @@
       <!-- Modal body -->
       <div class="modal-body">
         <form>
-          <div class="row">
-            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-              <div class="form-group">
-                <label>שם איש קשר</label>
-                <input type="text" class="form-control" placeholder="TEXT" />
+          <div class="row mx-0">
+            <div class="wysiwyg-editor">
+              <textarea id='edit' style="margin-top: 30px;" class="text-right" placeholder="Type some text">
+                <h6 class="font-weight-bold">טקסט</h6>
+              </textarea>
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-6">
+              <button class="cs-btn-img btn-update-green ml-auto"></button>
+            </div>
+            <div class="col-6">
+              <div class="attach">
+                <div class="font-weight-bold">הוסף קובץ</div>
+                <div class="dropdown mx-1">
+                  <button class="dropdown-toggle" type="button" id="dropdownAttach" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    (2)
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownAttach">
+                    <a class="dropdown-item" href="#">1. הוסף קובץ</a>
+                    <a class="dropdown-item" href="#">2. הוסף קובץ</a>
+                  </div>
+                </div>
+                <span class="cs-icon ic-attach-file"></span>
               </div>
             </div>
           </div>
-          <div class="row">
-            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-              <div class="form-group">
-                <label>סוג הקשר</label>
-                <input type="text" class="form-control" placeholder="TEXT" />
+          <div class="row mx-0 mt-5">
+            <div class="text-editor">
+              <div class="editor-header">
+                <div class="dropdown ml-auto">
+                  <button class="dropdown-toggle cs-btn-icon btn-arrow-down" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">
+                      <span class="cs-icon ic-mode-edit-gray"></sapn>
+                      <span class="link-text">עריכה</span>
+                    </a>
+                    <a class="dropdown-item" href="#">
+                      <span class="cs-icon ic-delete-gray"></sapn>
+                      <span class="link-text">מחק</span>
+                    </a>
+                    <a class="dropdown-item" href="#">
+                      <span class="cs-icon ic-bookmark-gray"></sapn>
+                      <span class="link-text">סימניה</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="w-50 mr-auto">
+                  <div class="text-primary">משתמש, 20/01/2020</div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-              <div class="form-group">
-                <label>ישוב</label>
-                <select class="form-control">
-                  <option>LIST</option>
-                </select>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-              <div class="form-group">
-                <label>טלפון</label>
-                <input type="text" class="form-control" placeholder="PHONE" />
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-              <div class="form-group">
-                <label>אימייל</label>
-                <input type="text" class="form-control" placeholder="TEXT" />
-              </div>
+              <textarea class="textarea-edit"></textarea>
             </div>
           </div>
         </form>
       </div>
       <!-- Modal footer -->
       <div class="modal-footer">
-        <button class="cs-btn-img btn-save-modal btn-success" data-dismiss="modal"></button>
+        <!-- <button class="cs-btn-img btn-save-modal btn-success" data-dismiss="modal"></button> -->
       </div>
       
     </div>
@@ -426,9 +455,58 @@
 <script src="../assets/custom/square-rater/square-rater.js" type="text/javascript"></script>
 <script src="../assets/custom/rate-color-bar/rate-color-bar.js" type="text/javascript"></script>
 <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
-
 <!-- ./plugin js -->
+<!-- wysiwyg -->
+<script type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/codemirror.min.js"></script>
+<script type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/mode/xml/xml.min.js"></script>
+<script type="text/javascript" src="../assets/plugins/wysiwyg-editor/js/froala_editor.min.js"></script>
+<script type="text/javascript" src="../assets/plugins/wysiwyg-editor/js/plugins/align.min.js"></script>
+<script type="text/javascript" src="../assets/plugins/wysiwyg-editor/js/plugins/code_beautifier.min.js"></script>
+<script type="text/javascript" src="../assets/plugins/wysiwyg-editor/js/plugins/code_view.min.js"></script>
+<script type="text/javascript" src="../assets/plugins/wysiwyg-editor/js/plugins/colors.min.js"></script>
+<script type="text/javascript" src="../assets/plugins/wysiwyg-editor/js/plugins/draggable.min.js"></script>
+<script type="text/javascript" src="../assets/plugins/wysiwyg-editor/js/plugins/emoticons.min.js"></script>
+<script type="text/javascript" src="../assets/plugins/wysiwyg-editor/js/plugins/font_size.min.js"></script>
+<script type="text/javascript" src="../assets/plugins/wysiwyg-editor/js/plugins/font_family.min.js"></script>
+<script type="text/javascript" src="../assets/plugins/wysiwyg-editor/js/plugins/image.min.js"></script>
+<script type="text/javascript" src="../assets/plugins/wysiwyg-editor/js/plugins/file.min.js"></script>
+<script type="text/javascript" src="../assets/plugins/wysiwyg-editor/js/plugins/image_manager.min.js"></script>
+<script type="text/javascript" src="../assets/plugins/wysiwyg-editor/js/plugins/line_breaker.min.js"></script>
+<script type="text/javascript" src="../assets/plugins/wysiwyg-editor/js/plugins/link.min.js"></script>
+<script type="text/javascript" src="../assets/plugins/wysiwyg-editor/js/plugins/lists.min.js"></script>
+<script type="text/javascript" src="../assets/plugins/wysiwyg-editor/js/plugins/paragraph_format.min.js"></script>
+<script type="text/javascript" src="../assets/plugins/wysiwyg-editor/js/plugins/paragraph_style.min.js"></script>
+<script type="text/javascript" src="../assets/plugins/wysiwyg-editor/js/plugins/video.min.js"></script>
+<script type="text/javascript" src="../assets/plugins/wysiwyg-editor/js/plugins/table.min.js"></script>
+<script type="text/javascript" src="../assets/plugins/wysiwyg-editor/js/plugins/url.min.js"></script>
+<script type="text/javascript" src="../assets/plugins/wysiwyg-editor/js/plugins/entities.min.js"></script>
+<script type="text/javascript" src="../assets/plugins/wysiwyg-editor/js/plugins/char_counter.min.js"></script>
+<script type="text/javascript" src="../assets/plugins/wysiwyg-editor/js/plugins/inline_style.min.js"></script>
+<script type="text/javascript" src="../assets/plugins/wysiwyg-editor/js/plugins/save.min.js"></script>
+<script type="text/javascript" src="../assets/plugins/wysiwyg-editor/js/plugins/fullscreen.min.js"></script>
+<script type="text/javascript" src="../assets/plugins/wysiwyg-editor/js/languages/ro.js"></script>
+<!-- ./wysiwyg -->
 <!-- script -->
+<script>
+  (function () {
+    const editorInstance = new FroalaEditor('#edit', {
+      direction: 'rtl',
+      enter: FroalaEditor.ENTER_P,
+      placeholderText: null,
+      events: {
+        initialized: function () {
+          const editor = this
+          this.el.closest('form').addEventListener('submit', function (e) {
+            console.log(editor.$oel.val())
+            e.preventDefault()
+          })
+        }
+      }
+    })
+  })()
+</script>
 <script>
   // datepicker init
   $('#datepicker1').datepicker({ uiLibrary: 'bootstrap4' });

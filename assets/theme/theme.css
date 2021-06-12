@@ -11522,6 +11522,9 @@ body .main.open-filter .filter-app {
 .cs-btn-icon.btn-quiz {
   background-image: url(../img/buttons/btn-quiz.png);
 }
+.cs-btn-icon.btn-arrow-down {
+  background-image: url(../img/buttons/btn-arrow-down.png);
+}
 
 .cs-btn-img {
   position: relative;
@@ -11651,6 +11654,12 @@ body .main.open-filter .filter-app {
 }
 .cs-btn-img.btn-options:hover {
   background-image: url(../img/buttons/btn-options-hover.png);
+}
+.cs-btn-img.btn-update-green {
+  background-image: url(../img/buttons/btn-update-green.png);
+}
+.cs-btn-img.btn-update-green:hover {
+  background-image: url(../img/buttons/btn-update-green-hover.png);
 }
 .cs-btn-img.btn-save-modal {
   background-image: url(../img/buttons/btn-save-modal.png);
@@ -11932,6 +11941,18 @@ body .main.open-filter .filter-app {
 }
 .cs-icon.ic-filter {
   background-image: url(../img/icons/ic_filter.png);
+}
+.cs-icon.ic-attach-file {
+  background-image: url(../img/icons/ic_attach_file.png);
+}
+.cs-icon.ic-bookmark-gray {
+  background-image: url(../img/icons/ic_bookmark_gray.png);
+}
+.cs-icon.ic-delete-gray {
+  background-image: url(../img/icons/ic_delete_gray.png);
+}
+.cs-icon.ic-mode-edit-gray {
+  background-image: url(../img/icons/ic_mode_edit_gray.png);
 }
 
 /* width */
