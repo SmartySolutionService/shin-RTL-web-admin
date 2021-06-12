@@ -84,6 +84,40 @@
   font-size: 16px;
   padding: 5px 0;
 }
+.action-page .filter-app .app-header .app-header-bottom .dropdown-form .form-control {
+  min-width: 250px;
+  border-radius: 8px;
+}
+.action-page .filter-app .app-header .app-header-bottom .autocomplete-form.invalid .form-control {
+  border: 1px solid #ced4da !important;
+  color: #485272 !important;
+}
+.action-page .filter-app .app-header .app-header-bottom .autocomplete-form.invalid .form-control:focus {
+  color: #485272 !important;
+  border-color: #80bdff !important;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25) !important;
+}
+.action-page .filter-app .app-header .app-header-bottom .autocomplete-form.invalid .form-control::-webkit-input-placeholder {
+  /* Edge */
+  color: #485272 !important;
+}
+.action-page .filter-app .app-header .app-header-bottom .autocomplete-form.invalid .form-control:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #485272 !important;
+}
+.action-page .filter-app .app-header .app-header-bottom .autocomplete-form.invalid .form-control::placeholder {
+  color: #485272 !important;
+}
+.action-page .filter-app .app-header .app-header-bottom .autocomplete-form .autocomplete .ic-search {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.action-page .filter-app .app-header .app-header-bottom .autocomplete-form .autocomplete .form-control {
+  color: #485272 !important;
+  min-width: 200px;
+  border-radius: 8px;
+}
 .action-page .filter-app .app-body table thead {
   background-color: #7ABCFF;
 }
@@ -110,7 +144,6 @@
 .action-page .filter-app .app-body table thead tr th {
   position: relative;
   color: #ffffff;
-  text-align: center;
 }
 .action-page .filter-app .app-body table thead tr th:first-child .cs-checkbox-container {
   margin-top: 0;
@@ -140,7 +173,6 @@
 .action-page .filter-app .app-body table tbody tr td {
   position: relative;
   padding: 5px 10px;
-  text-align: center;
 }
 .action-page .filter-app .app-body table tbody tr td .cs-icon {
   position: absolute;
@@ -199,6 +231,21 @@
   position: relative;
   top: 10px;
   right: 3px;
+}
+.action-page .filter-app .app-body table tbody tr td:first-child .border-left {
+  border-left: solid 1px #78849E !important;
+}
+.action-page .filter-app .app-body table tbody tr td:first-child .border-right {
+  border-right: solid 1px #78849E !important;
+}
+.action-page .filter-app .app-body table tbody tr td:first-child .td-text {
+  height: 25px;
+  padding: 0 20px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+.action-page .filter-app .app-body table.datatable td {
+  padding-right: 30px;
 }
 .action-page .filter-app .app-body table .badge {
   padding: 10px 20px;

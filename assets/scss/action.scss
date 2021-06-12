@@ -84,6 +84,46 @@
                         padding: 5px 0;
                     }
                 }
+                .dropdown-form {
+                    .form-control {
+                        min-width: 250px;
+                        border-radius: 8px;
+                    }
+                }
+                .autocomplete-form {
+                    &.invalid {
+                        .form-control {
+                            border: 1px solid #ced4da !important;
+                            color: #485272 !important;
+                            &:focus {
+                                color: #485272 !important;
+                                border-color: #80bdff !important;
+                                box-shadow: 0 0 0 0.2rem rgb(0, 123, 255, 0.25) !important;
+                            }
+                            &::-webkit-input-placeholder { /* Edge */
+                                color: #485272 !important;
+                            }
+                            &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+                                color: #485272 !important;
+                            }
+                            &::placeholder {
+                                color: #485272 !important;
+                            }
+                        }
+                    }
+                    .autocomplete {
+                        .ic-search {
+                            position: absolute;
+                            top: 10px;
+                            left: 10px;
+                        }
+                        .form-control {
+                            color: #485272 !important;
+                            min-width: 200px;
+                            border-radius: 8px;
+                        }
+                    }
+                }
             }
         }
         .app-body {
@@ -114,7 +154,6 @@
                         th {
                             position: relative;
                             color: #ffffff;
-                            text-align: center;
                             &:first-child {
                                 .cs-checkbox-container {
                                     margin-top: 0;
@@ -150,7 +189,6 @@
                         td {
                             position: relative;
                             padding: 5px 10px;
-                            text-align: center;
                             .cs-icon {
                                 position: absolute;
                                 top: 15px;
@@ -210,8 +248,25 @@
                                         right: 3px;
                                     }
                                 }
+                                .border-left {
+                                    border-left: solid 1px #78849E !important;
+                                }
+                                .border-right {
+                                    border-right: solid 1px #78849E !important;
+                                }
+                                .td-text {
+                                    height: 25px;
+                                    padding: 0 20px;
+                                    margin-top: 8px;
+                                    margin-bottom: 8px;
+                                }
                             }
                         }
+                    }
+                }
+                &.datatable {
+                    td {
+                        padding-right: 30px;
                     }
                 }
                 .badge {
