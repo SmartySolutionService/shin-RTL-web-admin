@@ -289,6 +289,9 @@
                                         border-radius: 10px;
                                         overflow: hidden;
                                         height: 350px;
+                                        &.h-auto {
+                                            height: auto !important;
+                                        }
                                         .dropdown-ul {
                                             width: 150px;
                                             height: 330px;
@@ -347,6 +350,23 @@
                                                         cursor: pointer;
                                                     }
                                                 }
+                                            }
+                                        }
+                                    }
+                                    .dropdown-col-2 {
+                                        width: 350px;
+                                        padding: 15px 0px;
+                                        .dropdown-ul {
+                                            border-left: solid 1px #D7DDE9;
+                                            padding: 0px;
+                                            margin: 0px;
+                                            height: auto !important;
+                                            &:last-child {
+                                                border-left: none;
+                                            }
+                                            .dropdown-li {
+                                                font-size: 14px;
+                                                padding: 5px 15px;
                                             }
                                         }
                                     }

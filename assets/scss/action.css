@@ -275,6 +275,9 @@
   overflow: hidden;
   height: 350px;
 }
+.action-page .filter-app .app-body table tbody tr td:first-child .dropleft .dropdown-menu.h-auto {
+  height: auto !important;
+}
 .action-page .filter-app .app-body table tbody tr td:first-child .dropleft .dropdown-menu .dropdown-ul {
   width: 150px;
   height: 330px;
@@ -330,6 +333,23 @@
   background-color: #BFC5D2;
   color: #ffffff;
   cursor: pointer;
+}
+.action-page .filter-app .app-body table tbody tr td:first-child .dropleft .dropdown-col-2 {
+  width: 350px;
+  padding: 15px 0px;
+}
+.action-page .filter-app .app-body table tbody tr td:first-child .dropleft .dropdown-col-2 .dropdown-ul {
+  border-left: solid 1px #D7DDE9;
+  padding: 0px;
+  margin: 0px;
+  height: auto !important;
+}
+.action-page .filter-app .app-body table tbody tr td:first-child .dropleft .dropdown-col-2 .dropdown-ul:last-child {
+  border-left: none;
+}
+.action-page .filter-app .app-body table tbody tr td:first-child .dropleft .dropdown-col-2 .dropdown-ul .dropdown-li {
+  font-size: 14px;
+  padding: 5px 15px;
 }
 .action-page .filter-app .app-body table.datatable td {
   padding-right: 30px;
