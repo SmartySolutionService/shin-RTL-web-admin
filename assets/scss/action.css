@@ -541,7 +541,22 @@
 #insurancePolicyModal .lcs_switch,
 #IRAModal .lcs_switch,
 #alternativeFundModal .lcs_switch,
-#realEstateInvestmentModal .lcs_switch {
+#realEstateInvestmentModal .lcs_switch,
+#financialProductRevenueModal .lcs_switch,
+#alternativeProductRevenueModal .lcs_switch,
+#methodsOfPaymentModal .lcs_switch,
+#appointmentOfOptimizersModal .lcs_switch,
+#fundConsolidationModal .lcs_switch,
+#insuranceProductsModal .lcs_switch,
+#changeOfEmployerModal .lcs_switch,
+#powerOfAttorneyModal .lcs_switch,
+#trackChangeModal .lcs_switch,
+#additionalDepositModal .lcs_switch,
+#allowanceModal .lcs_switch,
+#managementFeeModal .lcs_switch,
+#loanAcceptanceModal .lcs_switch,
+#annuityModal .lcs_switch,
+#repaymentOfLoanModal .lcs_switch {
   border-radius: 4px;
   width: 100px;
   height: 30px;
@@ -557,7 +572,22 @@
 #insurancePolicyModal .lcs_switch.lcs_off .lcs_cursor,
 #IRAModal .lcs_switch.lcs_off .lcs_cursor,
 #alternativeFundModal .lcs_switch.lcs_off .lcs_cursor,
-#realEstateInvestmentModal .lcs_switch.lcs_off .lcs_cursor {
+#realEstateInvestmentModal .lcs_switch.lcs_off .lcs_cursor,
+#financialProductRevenueModal .lcs_switch.lcs_off .lcs_cursor,
+#alternativeProductRevenueModal .lcs_switch.lcs_off .lcs_cursor,
+#methodsOfPaymentModal .lcs_switch.lcs_off .lcs_cursor,
+#appointmentOfOptimizersModal .lcs_switch.lcs_off .lcs_cursor,
+#fundConsolidationModal .lcs_switch.lcs_off .lcs_cursor,
+#insuranceProductsModal .lcs_switch.lcs_off .lcs_cursor,
+#changeOfEmployerModal .lcs_switch.lcs_off .lcs_cursor,
+#powerOfAttorneyModal .lcs_switch.lcs_off .lcs_cursor,
+#trackChangeModal .lcs_switch.lcs_off .lcs_cursor,
+#additionalDepositModal .lcs_switch.lcs_off .lcs_cursor,
+#allowanceModal .lcs_switch.lcs_off .lcs_cursor,
+#managementFeeModal .lcs_switch.lcs_off .lcs_cursor,
+#loanAcceptanceModal .lcs_switch.lcs_off .lcs_cursor,
+#annuityModal .lcs_switch.lcs_off .lcs_cursor,
+#repaymentOfLoanModal .lcs_switch.lcs_off .lcs_cursor {
   left: 0px;
 }
 #newProductModal .lcs_switch.lcs_on,
@@ -569,7 +599,22 @@
 #insurancePolicyModal .lcs_switch.lcs_on,
 #IRAModal .lcs_switch.lcs_on,
 #alternativeFundModal .lcs_switch.lcs_on,
-#realEstateInvestmentModal .lcs_switch.lcs_on {
+#realEstateInvestmentModal .lcs_switch.lcs_on,
+#financialProductRevenueModal .lcs_switch.lcs_on,
+#alternativeProductRevenueModal .lcs_switch.lcs_on,
+#methodsOfPaymentModal .lcs_switch.lcs_on,
+#appointmentOfOptimizersModal .lcs_switch.lcs_on,
+#fundConsolidationModal .lcs_switch.lcs_on,
+#insuranceProductsModal .lcs_switch.lcs_on,
+#changeOfEmployerModal .lcs_switch.lcs_on,
+#powerOfAttorneyModal .lcs_switch.lcs_on,
+#trackChangeModal .lcs_switch.lcs_on,
+#additionalDepositModal .lcs_switch.lcs_on,
+#allowanceModal .lcs_switch.lcs_on,
+#managementFeeModal .lcs_switch.lcs_on,
+#loanAcceptanceModal .lcs_switch.lcs_on,
+#annuityModal .lcs_switch.lcs_on,
+#repaymentOfLoanModal .lcs_switch.lcs_on {
   background-color: #7ABCFF;
 }
 #newProductModal .lcs_switch.lcs_on .lcs_cursor,
@@ -581,7 +626,22 @@
 #insurancePolicyModal .lcs_switch.lcs_on .lcs_cursor,
 #IRAModal .lcs_switch.lcs_on .lcs_cursor,
 #alternativeFundModal .lcs_switch.lcs_on .lcs_cursor,
-#realEstateInvestmentModal .lcs_switch.lcs_on .lcs_cursor {
+#realEstateInvestmentModal .lcs_switch.lcs_on .lcs_cursor,
+#financialProductRevenueModal .lcs_switch.lcs_on .lcs_cursor,
+#alternativeProductRevenueModal .lcs_switch.lcs_on .lcs_cursor,
+#methodsOfPaymentModal .lcs_switch.lcs_on .lcs_cursor,
+#appointmentOfOptimizersModal .lcs_switch.lcs_on .lcs_cursor,
+#fundConsolidationModal .lcs_switch.lcs_on .lcs_cursor,
+#insuranceProductsModal .lcs_switch.lcs_on .lcs_cursor,
+#changeOfEmployerModal .lcs_switch.lcs_on .lcs_cursor,
+#powerOfAttorneyModal .lcs_switch.lcs_on .lcs_cursor,
+#trackChangeModal .lcs_switch.lcs_on .lcs_cursor,
+#additionalDepositModal .lcs_switch.lcs_on .lcs_cursor,
+#allowanceModal .lcs_switch.lcs_on .lcs_cursor,
+#managementFeeModal .lcs_switch.lcs_on .lcs_cursor,
+#loanAcceptanceModal .lcs_switch.lcs_on .lcs_cursor,
+#annuityModal .lcs_switch.lcs_on .lcs_cursor,
+#repaymentOfLoanModal .lcs_switch.lcs_on .lcs_cursor {
   left: 50px;
 }
 #newProductModal .lcs_switch .lcs_cursor,
@@ -593,7 +653,22 @@
 #insurancePolicyModal .lcs_switch .lcs_cursor,
 #IRAModal .lcs_switch .lcs_cursor,
 #alternativeFundModal .lcs_switch .lcs_cursor,
-#realEstateInvestmentModal .lcs_switch .lcs_cursor {
+#realEstateInvestmentModal .lcs_switch .lcs_cursor,
+#financialProductRevenueModal .lcs_switch .lcs_cursor,
+#alternativeProductRevenueModal .lcs_switch .lcs_cursor,
+#methodsOfPaymentModal .lcs_switch .lcs_cursor,
+#appointmentOfOptimizersModal .lcs_switch .lcs_cursor,
+#fundConsolidationModal .lcs_switch .lcs_cursor,
+#insuranceProductsModal .lcs_switch .lcs_cursor,
+#changeOfEmployerModal .lcs_switch .lcs_cursor,
+#powerOfAttorneyModal .lcs_switch .lcs_cursor,
+#trackChangeModal .lcs_switch .lcs_cursor,
+#additionalDepositModal .lcs_switch .lcs_cursor,
+#allowanceModal .lcs_switch .lcs_cursor,
+#managementFeeModal .lcs_switch .lcs_cursor,
+#loanAcceptanceModal .lcs_switch .lcs_cursor,
+#annuityModal .lcs_switch .lcs_cursor,
+#repaymentOfLoanModal .lcs_switch .lcs_cursor {
   border-radius: 0px;
   height: 30px;
   width: 50px;
@@ -612,7 +687,22 @@
 #insurancePolicyModal .lcs_switch .lcs_label,
 #IRAModal .lcs_switch .lcs_label,
 #alternativeFundModal .lcs_switch .lcs_label,
-#realEstateInvestmentModal .lcs_switch .lcs_label {
+#realEstateInvestmentModal .lcs_switch .lcs_label,
+#financialProductRevenueModal .lcs_switch .lcs_label,
+#alternativeProductRevenueModal .lcs_switch .lcs_label,
+#methodsOfPaymentModal .lcs_switch .lcs_label,
+#appointmentOfOptimizersModal .lcs_switch .lcs_label,
+#fundConsolidationModal .lcs_switch .lcs_label,
+#insuranceProductsModal .lcs_switch .lcs_label,
+#changeOfEmployerModal .lcs_switch .lcs_label,
+#powerOfAttorneyModal .lcs_switch .lcs_label,
+#trackChangeModal .lcs_switch .lcs_label,
+#additionalDepositModal .lcs_switch .lcs_label,
+#allowanceModal .lcs_switch .lcs_label,
+#managementFeeModal .lcs_switch .lcs_label,
+#loanAcceptanceModal .lcs_switch .lcs_label,
+#annuityModal .lcs_switch .lcs_label,
+#repaymentOfLoanModal .lcs_switch .lcs_label {
   top: 0px;
 }
 #newProductModal .btn-delete,
@@ -624,7 +714,22 @@
 #insurancePolicyModal .btn-delete,
 #IRAModal .btn-delete,
 #alternativeFundModal .btn-delete,
-#realEstateInvestmentModal .btn-delete {
+#realEstateInvestmentModal .btn-delete,
+#financialProductRevenueModal .btn-delete,
+#alternativeProductRevenueModal .btn-delete,
+#methodsOfPaymentModal .btn-delete,
+#appointmentOfOptimizersModal .btn-delete,
+#fundConsolidationModal .btn-delete,
+#insuranceProductsModal .btn-delete,
+#changeOfEmployerModal .btn-delete,
+#powerOfAttorneyModal .btn-delete,
+#trackChangeModal .btn-delete,
+#additionalDepositModal .btn-delete,
+#allowanceModal .btn-delete,
+#managementFeeModal .btn-delete,
+#loanAcceptanceModal .btn-delete,
+#annuityModal .btn-delete,
+#repaymentOfLoanModal .btn-delete {
   position: relative;
   margin-top: 5px !important;
   width: 30px;
@@ -639,7 +744,22 @@
 #insurancePolicyModal .gj-datepicker .input-group-append .gj-icon,
 #IRAModal .gj-datepicker .input-group-append .gj-icon,
 #alternativeFundModal .gj-datepicker .input-group-append .gj-icon,
-#realEstateInvestmentModal .gj-datepicker .input-group-append .gj-icon {
+#realEstateInvestmentModal .gj-datepicker .input-group-append .gj-icon,
+#financialProductRevenueModal .gj-datepicker .input-group-append .gj-icon,
+#alternativeProductRevenueModal .gj-datepicker .input-group-append .gj-icon,
+#methodsOfPaymentModal .gj-datepicker .input-group-append .gj-icon,
+#appointmentOfOptimizersModal .gj-datepicker .input-group-append .gj-icon,
+#fundConsolidationModal .gj-datepicker .input-group-append .gj-icon,
+#insuranceProductsModal .gj-datepicker .input-group-append .gj-icon,
+#changeOfEmployerModal .gj-datepicker .input-group-append .gj-icon,
+#powerOfAttorneyModal .gj-datepicker .input-group-append .gj-icon,
+#trackChangeModal .gj-datepicker .input-group-append .gj-icon,
+#additionalDepositModal .gj-datepicker .input-group-append .gj-icon,
+#allowanceModal .gj-datepicker .input-group-append .gj-icon,
+#managementFeeModal .gj-datepicker .input-group-append .gj-icon,
+#loanAcceptanceModal .gj-datepicker .input-group-append .gj-icon,
+#annuityModal .gj-datepicker .input-group-append .gj-icon,
+#repaymentOfLoanModal .gj-datepicker .input-group-append .gj-icon {
   top: 10px;
 }
 #newProductModal .radio-label,
@@ -651,7 +771,22 @@
 #insurancePolicyModal .radio-label,
 #IRAModal .radio-label,
 #alternativeFundModal .radio-label,
-#realEstateInvestmentModal .radio-label {
+#realEstateInvestmentModal .radio-label,
+#financialProductRevenueModal .radio-label,
+#alternativeProductRevenueModal .radio-label,
+#methodsOfPaymentModal .radio-label,
+#appointmentOfOptimizersModal .radio-label,
+#fundConsolidationModal .radio-label,
+#insuranceProductsModal .radio-label,
+#changeOfEmployerModal .radio-label,
+#powerOfAttorneyModal .radio-label,
+#trackChangeModal .radio-label,
+#additionalDepositModal .radio-label,
+#allowanceModal .radio-label,
+#managementFeeModal .radio-label,
+#loanAcceptanceModal .radio-label,
+#annuityModal .radio-label,
+#repaymentOfLoanModal .radio-label {
   padding: 0 10px;
   font-weight: 600;
 }
@@ -664,7 +799,22 @@
 #insurancePolicyModal input[type=radio],
 #IRAModal input[type=radio],
 #alternativeFundModal input[type=radio],
-#realEstateInvestmentModal input[type=radio] {
+#realEstateInvestmentModal input[type=radio],
+#financialProductRevenueModal input[type=radio],
+#alternativeProductRevenueModal input[type=radio],
+#methodsOfPaymentModal input[type=radio],
+#appointmentOfOptimizersModal input[type=radio],
+#fundConsolidationModal input[type=radio],
+#insuranceProductsModal input[type=radio],
+#changeOfEmployerModal input[type=radio],
+#powerOfAttorneyModal input[type=radio],
+#trackChangeModal input[type=radio],
+#additionalDepositModal input[type=radio],
+#allowanceModal input[type=radio],
+#managementFeeModal input[type=radio],
+#loanAcceptanceModal input[type=radio],
+#annuityModal input[type=radio],
+#repaymentOfLoanModal input[type=radio] {
   width: 25px;
   height: 25px;
 }

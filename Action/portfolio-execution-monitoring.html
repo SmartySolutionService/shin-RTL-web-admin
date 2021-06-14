@@ -2561,7 +2561,6 @@
 
     // triggered each time a field changes status
     $(document).on('lcs-statuschange', '.lcs_check', function() {
-      console.log('Hello');
       var status 	= ($(this).is(':checked')) ? 'checked' : 'unchecked',
       subj 	= ($(this).attr('type') == 'radio') ? 'radio #' : 'checkbox #',
       num		= $(this).val(); 

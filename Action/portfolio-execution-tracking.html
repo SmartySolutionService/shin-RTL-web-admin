@@ -179,25 +179,25 @@
                       <div class="dropdown-menu h-auto" aria-labelledby="dropdownMenuButton">
                         <div class="d-flex dropdown-col-2">
                           <ul class="col-6 dropdown-ul">
-                            <li class="dropdown-li">פדיון מוצר פיננסי</li>
-                            <li class="dropdown-li">פדיון מוצר אלטרנטיבי</li>
-                            <li class="dropdown-li">אמצעי תשלום</li>
-                            <li class="dropdown-li">מינוי מטבים</li>
-                            <li class="dropdown-li">איחוד קופות</li>
-                            <li class="dropdown-li">מוצרי ביטוח</li>
-                            <li class="dropdown-li">שינוי מעסיק</li>
-                            <li class="dropdown-li">יפוי כח</li>
-                            <li class="dropdown-li">שינוי מסלול</li>
+                            <li class="dropdown-li" data-toggle="modal" data-target="#financialProductRevenueModal">פדיון מוצר פיננסי</li>
+                            <li class="dropdown-li" data-toggle="modal" data-target="#alternativeProductRevenueModal">פדיון מוצר אלטרנטיבי</li>
+                            <li class="dropdown-li" data-toggle="modal" data-target="#methodsOfPaymentModal">אמצעי תשלום</li>
+                            <li class="dropdown-li" data-toggle="modal" data-target="#appointmentOfOptimizersModal">מינוי מטבים</li>
+                            <li class="dropdown-li" data-toggle="modal" data-target="#fundConsolidationModal">איחוד קופות</li>
+                            <li class="dropdown-li" data-toggle="modal" data-target="#insuranceProductsModal">מוצרי ביטוח</li>
+                            <li class="dropdown-li" data-toggle="modal" data-target="#changeOfEmployerModal">שינוי מעסיק</li>
+                            <li class="dropdown-li" data-toggle="modal" data-target="#powerOfAttorneyModal">יפוי כח</li>
+                            <li class="dropdown-li" data-toggle="modal" data-target="#trackChangeModal">שינוי מסלול</li>
                           </ul>
                           <ul class="col-6 dropdown-ul">
-                            <li class="dropdown-li">הפקדה נוספת</li>
-                            <li class="dropdown-li">קצבה</li>
-                            <li class="dropdown-li">דמי ניהול</li>
-                            <li class="dropdown-li">קבלת הלוואה</li>
-                            <li class="dropdown-li">אנונה</li>
-                            <li class="dropdown-li">פרעון הלוואה</li>
-                            <li class="dropdown-li">ניוד גמל / השתלמות</li>
-                            <li class="dropdown-li">ניוד אלטרנטיבי</li>
+                            <li class="dropdown-li" data-toggle="modal" data-target="#additionalDepositModal">הפקדה נוספת</li>
+                            <li class="dropdown-li" data-toggle="modal" data-target="#allowanceModal">קצבה</li>
+                            <li class="dropdown-li" data-toggle="modal" data-target="#managementFeeModal">דמי ניהול</li>
+                            <li class="dropdown-li" data-toggle="modal" data-target="#loanAcceptanceModal">קבלת הלוואה</li>
+                            <li class="dropdown-li" data-toggle="modal" data-target="#annuityModal">אנונה</li>
+                            <li class="dropdown-li" data-toggle="modal" data-target="#repaymentOfLoanModal">פרעון הלוואה</li>
+                            <li class="dropdown-li" data-toggle="modal" data-target="#providentMobilizationModal">ניוד גמל / השתלמות</li>
+                            <li class="dropdown-li" data-toggle="modal" data-target="#alternativeMobilityModal">ניוד אלטרנטיבי</li>
                           </ul>
                         </div>
                       </div>
@@ -231,6 +231,2729 @@
   </div>
 </div>
 
+<!-- 1. financialProductRevenueModal -->
+<div class="modal full-modal" id="financialProductRevenueModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <!-- Modal Header -->
+      <div class="modal-header mt-4 pr-5">
+        <h2 class="title">
+          <span class="">פדיון מוצר פיננסי</span>
+        </h2>
+        <button type="button" class="cs-btn-icon btn-close close dark" data-dismiss="modal"></button>
+      </div>
+      <!-- Modal body -->
+      <div class="modal-body pt-2">
+        <div class="row">
+          <div class="col-4">
+            <label class="text-primary">לקוח</label>
+            <input type="text" class="form-control" placeholder="אוטומאטי" />
+          </div>
+        </div>
+        <!--  -->
+        <div class="row">
+          <div class="col-4">
+            <label class="text-primary">שם מוצר </label>
+            <input type="text" class="form-control" placeholder="טקסט" />
+          </div>
+          <div class="col-4">
+            <label class="text-primary">מספר חשבון</label>
+            <input type="text" class="form-control" placeholder="מספר" />
+          </div>
+          <div class="col-4">
+            <label class="text-primary">תאריך הצטרפות </label>
+            <input id="datepicker1" class="form-control" placeholder="dd/mm/yy" />
+          </div>
+        </div>
+        <!--  -->
+        <div class="row">
+          <div class="col-4">
+            <label class="text-primary">סוג מוצר</label>
+            <input type="text" class="form-control" placeholder="טקסט" />
+          </div>
+          <div class="col-4">
+            <label class="text-primary">חברה מנהלת</label>
+            <input type="text" class="form-control" placeholder="טקסט" />
+          </div>
+          <div class="col-4">
+            <label class="text-primary">מספר חברה מנהלת</label>
+            <input type="text" class="form-control" placeholder="מספר" />
+          </div>
+        </div>
+        <!--  -->
+        <div class="row">
+          <div class="col-4">
+            <label class="text-primary">בעלי הרישיון</label>
+            <input type="text" class="form-control" placeholder="טקסט" />
+          </div>
+          <div class="col-4">
+            <label class="text-primary">מספר הרישיון חברה המנהלת</label>
+            <input type="text" class="form-control" placeholder="טקסט" />
+          </div>
+          <div class="col-4">
+            <label class="text-primary">מספר אוצר</label>
+            <input type="text" class="form-control" placeholder="מספר" />
+          </div>
+        </div>
+        <!--  -->
+        <div class="row">
+          <div class="col-4">
+            <label class="text-primary">מעמד</label>
+            <input type="text" class="form-control" placeholder="טקסט" />
+          </div>
+          <div class="col-4">
+            <label class="text-primary">מעמד מספר</label>
+            <input type="text" class="form-control" placeholder="מספר" />
+          </div>
+          <div class="col-4">
+            <label class="text-primary">יתרה בקופה</label>
+            <input type="text" class="form-control" placeholder="מספר" />
+          </div>
+        </div>
+        <hr style="border-color: #78849E;" />
+        <!--  -->
+        <h5>פרטים לפדיון</h5>
+        <div class="row mt-4">
+          <div class="col-3 d-flex">
+            <label class="text-primary py-0">תמהיל</label>
+            <input type="checkbox" name="status" value="1" class="lcs_check" autocomplete="off" checked />
+          </div>
+        </div>
+        <!--  -->
+        <div class="row mt-3">
+          <div class="col-2">
+            <label class="text-primary pr-5">מסלול</label>
+          </div>
+          <div class="col-2">
+            <label class="text-primary">יתרה במסלול</label>
+          </div>
+          <div class="col-2">
+            <label class="text-primary">מספר אוצר</label>
+          </div>
+          <div class="col-2">
+            <label class="text-primary">סכום לפדיון</label>
+          </div>
+        </div>
+        <!--  -->
+        <div class="row mt-2">
+          <div class="col-2">
+            <div class="d-flex">
+              <div class="text-primary py-2 pl-3">1.</div>
+              <input type="text" class="form-control" placeholder="TEXT" />
+            </div>
+          </div>
+          <div class="col-2">
+            <input type="text" class="form-control" placeholder="NUM" />
+          </div>
+          <div class="col-2">
+            <input type="text" class="form-control" placeholder="NUM" />
+          </div>
+          <div class="col-2">
+            <input type="text" class="form-control" placeholder="NUM" />
+          </div>
+        </div>
+        <!--  -->
+        <div class="row mt-2">
+          <div class="col-2">
+            <div class="d-flex">
+              <div class="text-primary py-2 pl-3">2.</div>
+              <input type="text" class="form-control" placeholder="TEXT" />
+            </div>
+          </div>
+          <div class="col-2">
+            <input type="text" class="form-control" placeholder="NUM" />
+          </div>
+          <div class="col-2">
+            <input type="text" class="form-control" placeholder="NUM" />
+          </div>
+          <div class="col-2">
+            <input type="text" class="form-control" placeholder="NUM" />
+          </div>
+        </div>
+        <!--  -->
+        <div class="row mt-2">
+          <div class="col-2">
+            <div class="d-flex">
+              <div class="text-primary py-2 pl-3">3.</div>
+              <input type="text" class="form-control" placeholder="TEXT" />
+            </div>
+          </div>
+          <div class="col-2">
+            <input type="text" class="form-control" placeholder="NUM" />
+          </div>
+          <div class="col-2">
+            <input type="text" class="form-control" placeholder="NUM" />
+          </div>
+          <div class="col-2">
+            <input type="text" class="form-control" placeholder="NUM" />
+          </div>
+        </div>
+        <!--  -->
+        <div class="row">
+          <div class="col-2">
+            <label class="text-primary">סכום כולל פדיון</label>
+            <input type="text" class="form-control" placeholder="מספר" />
+          </div>
+        </div>
+        <!--  -->
+        <div class="row mt-4">
+          <div class="col-12">
+            <label class="text-primary">הערות</label>
+            <textarea class="form-control" placeholder="TEXT" rows="6"></textarea>
+          </div>
+        </div>
+        <!--  -->
+        <h5 class="mt-4">:בקרות</h5>
+        <div class="row">
+          <div class="col-4">
+            <label class="text-primary">גורם מטפל</label>
+            <select class="form-control">
+              <option>TEXT</option>
+            </select>
+          </div>
+          <div class="col-2">
+            <label class="text-primary">סטטוס טיפול</label>
+            <select class="form-control">
+              <option>TEXT</option>
+            </select>
+          </div>
+        </div>
+        <!--  -->
+        <div class="row">
+          <div class="col-2">
+            <label class="text-primary">תאריך שליחת הטפסים</label>
+            <input id="datepicker2" class="form-control" placeholder="DATE" />
+          </div>
+          <div class="col-2">
+            <label class="text-primary">תאריך בקשת המכירה</label>
+            <input id="datepicker3" class="form-control" placeholder="DATE" />
+          </div>
+          <div class="col-2">
+            <label class="text-primary">אסמכתא יל מכירה</label>
+            <input type="checkbox" name="status" value="1" class="lcs_check" autocomplete="off" checked />
+          </div>
+        </div>
+        <!--  -->
+        <div class="row">
+          <div class="col-2">
+            <label class="text-primary">צפי קבלת הכספים</label>
+            <input id="datepicker4" class="form-control" placeholder="DATE" />
+          </div>
+          <div class="col-2">
+            <label class="text-primary">תאריך פדיון בפועל</label>
+            <input id="datepicker5" class="form-control" placeholder="DATE" />
+          </div>
+          <div class="col-2">
+            <label class="text-primary">סכום הפדיון בפועל</label>
+            <input type="text" class="form-control" placeholder="NUM" />
+          </div>
+        </div>
+        <hr style="border-color: #78849E;" />
+        <!--  -->
+      </div>
+      <div class="modal-footer pt-0">
+        <button class="cs-btn-img btn-save-green float-right ml-auto" data-dismiss="modal"></button>
+        <div class="timestamp font-weight-bold mr-auto">משתמש מבצע, 20/01/2020</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 2. alternativeProductRevenueModal -->
+<div class="modal full-modal" id="alternativeProductRevenueModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <!-- Modal Header -->
+      <div class="modal-header mt-4 pr-5">
+        <h2 class="title">
+          <span class="">פדיון מוצר אלטרנטיבי</span>
+        </h2>
+        <button type="button" class="cs-btn-icon btn-close close dark" data-dismiss="modal"></button>
+      </div>
+      <!-- Modal body -->
+      <div class="modal-body pt-2">
+        <div class="row">
+          <div class="col-4">
+            <label class="text-primary">לקוח</label>
+            <input type="text" class="form-control" placeholder="אוטומאטי" />
+          </div>
+        </div>
+        <!--  -->
+        <div class="row">
+          <div class="col-4">
+            <label class="text-primary">שם מוצר </label>
+            <input type="text" class="form-control" placeholder="טקסט" />
+          </div>
+          <div class="col-4">
+            <label class="text-primary">מספר חשבון</label>
+            <input type="text" class="form-control" placeholder="מספר" />
+          </div>
+          <div class="col-4">
+            <label class="text-primary">תאריך הצטרפות </label>
+            <input id="datepicker6" class="form-control" placeholder="dd/mm/yy" />
+          </div>
+        </div>
+        <!--  -->
+        <div class="row">
+          <div class="col-4">
+            <label class="text-primary">סוג מוצר</label>
+            <input type="text" class="form-control" placeholder="טקסט" />
+          </div>
+          <div class="col-4">
+            <label class="text-primary">חברה מנהלת</label>
+            <input type="text" class="form-control" placeholder="טקסט" />
+          </div>
+          <div class="col-4">
+            <label class="text-primary">מספר חברה מנהלת</label>
+            <input type="text" class="form-control" placeholder="מספר" />
+          </div>
+        </div>
+        <!--  -->
+        <div class="row">
+          <div class="col-4">
+            <label class="text-primary">בעלי הרישיון</label>
+            <input type="text" class="form-control" placeholder="טקסט" />
+          </div>
+          <div class="col-4">
+            <label class="text-primary">מספר הרישיון חברה המנהלת</label>
+            <input type="text" class="form-control" placeholder="טקסט" />
+          </div>
+          <div class="col-4">
+            <label class="text-primary">מספר אוצר</label>
+            <input type="text" class="form-control" placeholder="מספר" />
+          </div>
+        </div>
+        <!--  -->
+        <div class="row">
+          <div class="col-4">
+            <label class="text-primary">מעמד</label>
+            <input type="text" class="form-control" placeholder="טקסט" />
+          </div>
+          <div class="col-4">
+            <label class="text-primary">מעמד מספר</label>
+            <input type="text" class="form-control" placeholder="מספר" />
+          </div>
+          <div class="col-4">
+            <label class="text-primary">יתרה בקופה</label>
+            <input type="text" class="form-control" placeholder="מספר" />
+          </div>
+        </div>
+        <hr style="border-color: #78849E;" />
+        <!--  -->
+        <h5>פרטים לפדיון</h5>
+        <div class="row mt-4">
+          <div class="col-3 d-flex">
+            <label class="text-primary py-0">פדיון מלא</label>
+            <input type="checkbox" name="status" value="1" class="lcs_check" autocomplete="off" checked />
+          </div>
+        </div>
+        <!--  -->
+        <div class="row mt-4">
+          <div class="col-2">
+            <label class="text-primary">סכום כולל פדיון</label>
+            <input type="text" class="form-control" placeholder="מספר" />
+          </div>
+        </div>
+        <!--  -->
+        <div class="row mt-4">
+          <div class="col-12">
+            <label class="text-primary">הערות</label>
+            <textarea class="form-control" placeholder="TEXT" rows="6"></textarea>
+          </div>
+        </div>
+        <!--  -->
+        <h5 class="mt-4">:בקרות</h5>
+        <div class="row">
+          <div class="col-4">
+            <label class="text-primary">גורם מטפל</label>
+            <select class="form-control">
+              <option>TEXT</option>
+            </select>
+          </div>
+          <div class="col-2">
+            <label class="text-primary">סטטוס טיפול</label>
+            <select class="form-control">
+              <option>TEXT</option>
+            </select>
+          </div>
+        </div>
+        <!--  -->
+        <div class="row">
+          <div class="col-2">
+            <label class="text-primary">תאריך שליחת הטפסים</label>
+            <input id="datepicker7" class="form-control" placeholder="DATE" />
+          </div>
+          <div class="col-2">
+            <label class="text-primary">תאריך בקשת המכירה</label>
+            <input id="datepicker8" class="form-control" placeholder="DATE" />
+          </div>
+          <div class="col-2">
+            <label class="text-primary">אסמכתא יל מכירה</label>
+            <input type="checkbox" name="status" value="1" class="lcs_check" autocomplete="off" checked />
+          </div>
+        </div>
+        <!--  -->
+        <div class="row">
+          <div class="col-2">
+            <label class="text-primary">צפי קבלת הכספים</label>
+            <input id="datepicker9" class="form-control" placeholder="DATE" />
+          </div>
+          <div class="col-2">
+            <label class="text-primary">תאריך פדיון בפועל</label>
+            <input id="datepicker10" class="form-control" placeholder="DATE" />
+          </div>
+          <div class="col-2">
+            <label class="text-primary">סכום הפדיון בפועל</label>
+            <input type="text" class="form-control" placeholder="NUM" />
+          </div>
+        </div>
+        <hr style="border-color: #78849E;" />
+        <!--  -->
+      </div>
+      <!-- Modal footer -->
+      <div class="modal-footer pt-0">
+        <button class="cs-btn-img btn-save-green float-right ml-auto" data-dismiss="modal"></button>
+        <div class="timestamp font-weight-bold mr-auto">משתמש מבצע, 20/01/2020</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 3. methodsOfPaymentModal -->
+<div class="modal full-modal" id="methodsOfPaymentModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <!-- Modal Header -->
+      <div class="modal-header mt-4 pr-5">
+        <h2 class="title">
+          <span class="">אמצעי תשלום</span>
+        </h2>
+        <button type="button" class="cs-btn-icon btn-close close dark" data-dismiss="modal"></button>
+      </div>
+      <!-- Modal body -->
+      <div class="modal-body pt-2">
+        <div class="row">
+          <div class="col-4">
+            <label class="text-primary">לקוח</label>
+            <input type="text" class="form-control" placeholder="אוטומאטי" />
+          </div>
+        </div>
+        <!--  -->
+        <div class="row">
+          <div class="col-4">
+            <label class="text-primary">שם מוצר </label>
+            <input type="text" class="form-control" placeholder="טקסט" />
+          </div>
+          <div class="col-4">
+            <label class="text-primary">מספר חשבון</label>
+            <input type="text" class="form-control" placeholder="מספר" />
+          </div>
+          <div class="col-4">
+            <label class="text-primary">תאריך הצטרפות </label>
+            <input id="datepicker6" class="form-control" placeholder="dd/mm/yy" />
+          </div>
+        </div>
+        <!--  -->
+        <div class="row">
+          <div class="col-4">
+            <label class="text-primary">סוג מוצר</label>
+            <input type="text" class="form-control" placeholder="טקסט" />
+          </div>
+          <div class="col-4">
+            <label class="text-primary">חברה מנהלת</label>
+            <input type="text" class="form-control" placeholder="טקסט" />
+          </div>
+          <div class="col-4">
+            <label class="text-primary">מספר חברה מנהלת</label>
+            <input type="text" class="form-control" placeholder="מספר" />
+          </div>
+        </div>
+        <!--  -->
+        <div class="row">
+          <div class="col-4">
+            <label class="text-primary">בעלי הרישיון</label>
+            <input type="text" class="form-control" placeholder="טקסט" />
+          </div>
+          <div class="col-4">
+            <label class="text-primary">מספר הרישיון חברה המנהלת</label>
+            <input type="text" class="form-control" placeholder="טקסט" />
+          </div>
+          <div class="col-4">
+            <label class="text-primary">מספר אוצר</label>
+            <input type="text" class="form-control" placeholder="מספר" />
+          </div>
+        </div>
+        <!--  -->
+        <div class="row">
+          <div class="col-4">
+            <label class="text-primary">מעמד</label>
+            <input type="text" class="form-control" placeholder="טקסט" />
+          </div>
+          <div class="col-4">
+            <label class="text-primary">מעמד מספר</label>
+            <input type="text" class="form-control" placeholder="מספר" />
+          </div>
+          <div class="col-4">
+            <label class="text-primary">יתרה בקופה</label>
+            <input type="text" class="form-control" placeholder="מספר" />
+          </div>
+        </div>
+        <hr style="border-color: #78849E;" />
+        <!--  -->
+        <h5>עדכון אמצעי תשלום</h5>
+        <div class="row">
+          <div class="col-2">
+            <label class="text-primary">אמצעי תשלום חדש</label>
+            <select class="form-control">
+              <option>TEXT</option>
+            </select>
+          </div>
+          <div class="col-2">
+            <label class="text-primary">חיוב חודשי חדש</label>
+            <input type="text" class="form-control" placeholder="NUM" />
+          </div>
+          <div class="col-2">
+            <label class="text-primary">סכר מעודכן</label>
+            <input type="text" class="form-control" placeholder="NUM" />
+          </div>
+        </div>
+        <!--  -->
+        <div class="row">
+          <div class="col-2">
+            <label class="text-primary">סילוק פוליסה</label>
+            <input type="checkbox" name="status" value="1" class="lcs_check" autocomplete="off" checked />
+          </div>
+          <div class="col-2">
+            <label class="text-primary">מספר פוליסה</label>
+            <input type="text" class="form-control" placeholder="NUM" />
+          </div>
+          <div class="col-2">
+            <label class="text-primary">חברת ביטוח</label>
+            <select class="form-control">
+              <option>TEXT</option>
+            </select>
+          </div>
+          <div class="col-2">
+            <label class="text-primary">סוג פוליסה</label>
+            <select class="form-control">
+              <option>TEXT</option>
+            </select>
+          </div>
+        </div>
+        <!--  -->
+        <div class="row mt-4">
+          <div class="col-12">
+            <label class="text-primary">הערות</label>
+            <textarea class="form-control" placeholder="TEXT" rows="6"></textarea>
+          </div>
+        </div>
+        <!--  -->
+        <h5 class="mt-4">:בקרות</h5>
+        <div class="row">
+          <div class="col-4">
+            <label class="text-primary">גורם מטפל</label>
+            <select class="form-control">
+              <option>TEXT</option>
+            </select>
+          </div>
+          <div class="col-2">
+            <label class="text-primary">סטטוס טיפול</label>
+            <select class="form-control">
+              <option>TEXT</option>
+            </select>
+          </div>
+        </div>
+        <!--  -->
+        <div class="row">
+          <div class="col-2">
+            <label class="text-primary">תאריך שליחת הטפסים</label>
+            <input id="datepicker11" class="form-control" placeholder="DATE" />
+          </div>
+        </div>
+        <!--  -->
+        <div class="row">
+          <div class="col-2">
+            <label class="text-primary">מועד עדכון צפי</label>
+            <input id="datepicker12" class="form-control" placeholder="DATE" />
+          </div>
+          <div class="col-2">
+            <label class="text-primary">מעוד עדכון בפועל</label>
+            <input id="datepicker13" class="form-control" placeholder="DATE" />
+          </div>
+        </div>
+        <hr style="border-color: #78849E;" />
+        <!--  -->
+      </div>
+      <!-- Modal footer -->
+      <div class="modal-footer pt-0">
+        <button class="cs-btn-img btn-save-green float-right ml-auto" data-dismiss="modal"></button>
+        <div class="timestamp font-weight-bold mr-auto">משתמש מבצע, 20/01/2020</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 4. appointmentOfOptimizersModal -->
+<div class="modal full-modal" id="appointmentOfOptimizersModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <!-- Modal Header -->
+      <div class="modal-header mt-4 pr-5">
+        <h2 class="title">
+          <span class="">מינוי מוטבים</span>
+        </h2>
+        <button type="button" class="cs-btn-icon btn-close close dark" data-dismiss="modal"></button>
+      </div>
+      <!-- Modal body -->
+      <div class="modal-body pt-2">
+        <div class="row">
+          <div class="col-4">
+            <label class="text-primary">לקוח</label>
+            <input type="text" class="form-control" placeholder="אוטומאטי" />
+          </div>
+        </div>
+        <!--  -->
+        <h5 class="mt-4">יפוי כח לכל החבורה</h5>
+        <div class="row">
+          <div class="col-2">
+            <input type="checkbox" name="status" value="1" class="lcs_check" autocomplete="off" checked />
+          </div>
+        </div>
+        <!--  -->
+        <h5 class="mt-4">מינוי מוטב</h5>
+        <div class="row">
+          <div class="col-6">
+            <div class="row">
+              <div class="col-3"></div>
+              <div class="col-3">
+                <label class="text-primary">מספר חשבון</label>
+              </div>
+              <div class="col-3">
+                <label class="text-primary">שם המוצר</label>
+              </div>
+              <div class="col-3">
+                <label class="text-primary">מספר אוצר</label>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="row">
+              <div class="col-3">
+                <label class="text-primary">יתרה במוצר</label>
+              </div>
+              <div class="col-3">
+                <label class="text-primary">חברה מנהלת</label>
+              </div>
+              <div class="col-3">
+                <label class="text-primary">שם בעל רשיון</label>
+              </div>
+              <div class="col-3">
+                <label class="text-primary">מספר רשיון חברה מנהלת</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 1. -->
+        <div class="row">
+          <div class="col-6">
+            <div class="row">
+              <div class="col-3">
+                <div class="d-flex pt-1">
+                  <div class="text-primary py-1 pl-3">1.</div>
+                  <input type="checkbox" name="status" value="1" class="lcs_check" autocomplete="off" checked />
+                </div>
+              </div>
+              <div class="col-3">
+                <input type="text" class="form-control" placeholder="NUM" />
+              </div>
+              <div class="col-3">
+                <input type="text" class="form-control" placeholder="TEXT" />
+              </div>
+              <div class="col-3">
+                <input type="text" class="form-control" placeholder="NUM" />
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="row">
+              <div class="col-3">
+                <input type="text" class="form-control" placeholder="NUM" />
+              </div>
+              <div class="col-3">
+                <input type="text" class="form-control" placeholder="TEXT" />
+              </div>
+              <div class="col-3">
+                <input type="text" class="form-control" placeholder="TEXT" />
+              </div>
+              <div class="col-3">
+                <input type="text" class="form-control" placeholder="TEXT" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 2. -->
+        <div class="row mt-2">
+          <div class="col-6">
+            <div class="row">
+              <div class="col-3">
+                <div class="d-flex pt-1">
+                  <div class="text-primary py-1 pl-3">2.</div>
+                  <input type="checkbox" name="status" value="1" class="lcs_check" autocomplete="off" checked />
+                </div>
+              </div>
+              <div class="col-3">
+                <input type="text" class="form-control" placeholder="NUM" />
+              </div>
+              <div class="col-3">
+                <input type="text" class="form-control" placeholder="TEXT" />
+              </div>
+              <div class="col-3">
+                <input type="text" class="form-control" placeholder="NUM" />
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="row">
+              <div class="col-3">
+                <input type="text" class="form-control" placeholder="NUM" />
+              </div>
+              <div class="col-3">
+                <input type="text" class="form-control" placeholder="TEXT" />
+              </div>
+              <div class="col-3">
+                <input type="text" class="form-control" placeholder="TEXT" />
+              </div>
+              <div class="col-3">
+                <input type="text" class="form-control" placeholder="TEXT" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 3. -->
+        <div class="row mt-2">
+          <div class="col-6">
+            <div class="row">
+              <div class="col-3">
+                <div class="d-flex pt-1">
+                  <div class="text-primary py-1 pl-3">3.</div>
+                  <input type="checkbox" name="status" value="1" class="lcs_check" autocomplete="off" checked />
+                </div>
+              </div>
+              <div class="col-3">
+                <input type="text" class="form-control" placeholder="NUM" />
+              </div>
+              <div class="col-3">
+                <input type="text" class="form-control" placeholder="TEXT" />
+              </div>
+              <div class="col-3">
+                <input type="text" class="form-control" placeholder="NUM" />
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="row">
+              <div class="col-3">
+                <input type="text" class="form-control" placeholder="NUM" />
+              </div>
+              <div class="col-3">
+                <input type="text" class="form-control" placeholder="TEXT" />
+              </div>
+              <div class="col-3">
+                <input type="text" class="form-control" placeholder="TEXT" />
+              </div>
+              <div class="col-3">
+                <input type="text" class="form-control" placeholder="TEXT" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+        <div class="row mt-4">
+          <div class="col-12">
+            <label class="text-primary">הערות</label>
+            <textarea class="form-control" placeholder="TEXT" rows="6"></textarea>
+          </div>
+        </div>
+        <!--  -->
+        <h5 class="mt-4">:בקרות</h5>
+        <div class="row">
+          <div class="col-4">
+            <label class="text-primary">גורם מטפל</label>
+            <select class="form-control">
+              <option>TEXT</option>
+            </select>
+          </div>
+          <div class="col-2">
+            <label class="text-primary">סטטוס טיפול</label>
+            <select class="form-control">
+              <option>TEXT</option>
+            </select>
+          </div>
+        </div>
+        <!--  -->
+        <div class="row">
+          <div class="col-2">
+            <label class="text-primary">מועד משוער לשינוי</label>
+            <input id="datepicker14" class="form-control" placeholder="DATE" />
+          </div>
+          <div class="col-2">
+            <label class="text-primary">תאריך שינוי בפועל</label>
+            <input id="datepicker15" class="form-control" placeholder="DATE" />
+          </div>
+        </div>
+        <hr style="border-color: #78849E;" />
+        <!--  -->
+      </div>
+      <!-- Modal footer -->
+      <div class="modal-footer pt-0">
+        <button class="cs-btn-img btn-save-green float-right ml-auto" data-dismiss="modal"></button>
+        <div class="timestamp font-weight-bold mr-auto">משתמש מבצע, 20/01/2020</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 5. fundConsolidationModal -->
+<div class="modal full-modal" id="fundConsolidationModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <!-- Modal Header -->
+      <div class="modal-header mt-4 pr-5">
+        <h2 class="title">
+          <span class="">איחוד קופות</span>
+        </h2>
+        <button type="button" class="cs-btn-icon btn-close close dark" data-dismiss="modal"></button>
+      </div>
+      <!-- Modal body -->
+      <div class="modal-body pt-2">
+        <div class="row">
+          <div class="col-4">
+            <label class="text-primary">לקוח</label>
+            <input type="text" class="form-control" placeholder="אוטומאטי" />
+          </div>
+        </div>
+        <!--  -->
+        <h5 class="mt-4">איחוד כל הקופות</h5>
+        <div class="row">
+          <div class="col-2">
+            <input type="checkbox" name="status" value="1" class="lcs_check" autocomplete="off" checked />
+          </div>
+        </div>
+        <!--  -->
+        <div class="row mt-4">
+          <div class="col-6">
+            <div class="row">
+              <div class="col-3">
+                <label class="text-primary">קופה לאיחוד</label>
+              </div>
+              <div class="col-3">
+                <label class="text-primary">מספר חשבון</label>
+              </div>
+              <div class="col-3">
+                <label class="text-primary">שם המוצר</label>
+              </div>
+              <div class="col-3">
+                <label class="text-primary">מספר אוצר</label>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="row">
+              <div class="col-3">
+                <label class="text-primary">יתרה במוצר</label>
+              </div>
+              <div class="col-3">
+                <label class="text-primary">חברה מנהלת</label>
+              </div>
+              <div class="col-3">
+                <label class="text-primary">שם בעל רשיון</label>
+              </div>
+              <div class="col-3">
+                <label class="text-primary">מספר רשיון חברה מנהלת</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 1. -->
+        <div class="row">
+          <div class="col-6">
+            <div class="row">
+              <div class="col-3">
+                <div class="d-flex pt-1">
+                  <div class="text-primary py-1 pl-3">1.</div>
+                  <input type="checkbox" name="status" value="1" class="lcs_check" autocomplete="off" checked />
+                </div>
+              </div>
+              <div class="col-3">
+                <input type="text" class="form-control" placeholder="NUM" />
+              </div>
+              <div class="col-3">
+                <input type="text" class="form-control" placeholder="TEXT" />
+              </div>
+              <div class="col-3">
+                <input type="text" class="form-control" placeholder="NUM" />
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="row">
+              <div class="col-3">
+                <input type="text" class="form-control" placeholder="NUM" />
+              </div>
+              <div class="col-3">
+                <input type="text" class="form-control" placeholder="TEXT" />
+              </div>
+              <div class="col-3">
+                <input type="text" class="form-control" placeholder="TEXT" />
+              </div>
+              <div class="col-3">
+                <input type="text" class="form-control" placeholder="TEXT" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 2. -->
+        <div class="row mt-2">
+          <div class="col-6">
+            <div class="row">
+              <div class="col-3">
+                <div class="d-flex pt-1">
+                  <div class="text-primary py-1 pl-3">2.</div>
+                  <input type="checkbox" name="status" value="1" class="lcs_check" autocomplete="off" checked />
+                </div>
+              </div>
+              <div class="col-3">
+                <input type="text" class="form-control" placeholder="NUM" />
+              </div>
+              <div class="col-3">
+                <input type="text" class="form-control" placeholder="TEXT" />
+              </div>
+              <div class="col-3">
+                <input type="text" class="form-control" placeholder="NUM" />
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="row">
+              <div class="col-3">
+                <input type="text" class="form-control" placeholder="NUM" />
+              </div>
+              <div class="col-3">
+                <input type="text" class="form-control" placeholder="TEXT" />
+              </div>
+              <div class="col-3">
+                <input type="text" class="form-control" placeholder="TEXT" />
+              </div>
+              <div class="col-3">
+                <input type="text" class="form-control" placeholder="TEXT" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 3. -->
+        <div class="row mt-2">
+          <div class="col-6">
+            <div class="row">
+              <div class="col-3">
+                <div class="d-flex pt-1">
+                  <div class="text-primary py-1 pl-3">3.</div>
+                  <input type="checkbox" name="status" value="1" class="lcs_check" autocomplete="off" checked />
+                </div>
+              </div>
+              <div class="col-3">
+                <input type="text" class="form-control" placeholder="NUM" />
+              </div>
+              <div class="col-3">
+                <input type="text" class="form-control" placeholder="TEXT" />
+              </div>
+              <div class="col-3">
+                <input type="text" class="form-control" placeholder="NUM" />
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="row">
+              <div class="col-3">
+                <input type="text" class="form-control" placeholder="NUM" />
+              </div>
+              <div class="col-3">
+                <input type="text" class="form-control" placeholder="TEXT" />
+              </div>
+              <div class="col-3">
+                <input type="text" class="form-control" placeholder="TEXT" />
+              </div>
+              <div class="col-3">
+                <input type="text" class="form-control" placeholder="TEXT" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+        <h5 class="mt-5">קופה מאחדת</h5>
+        <div class="row">
+          <div class="col-2">
+            <label class="text-primary">שם מסלול</label>
+            <select class="form-control">
+              <option>TEXT</option>
+            </select>
+          </div>
+          <div class="col-2">
+            <label class="text-primary">מ"ה המסלול</label>
+            <input type="text" class="form-control" placeholder="NUM" />
+          </div>
+          <div class="col-2">
+            <label class="text-primary">יתרה במסלול</label>
+            <input type="text" class="form-control" placeholder="NUM" />
+          </div>
+        </div>
+        <!--  -->
+        <div class="row mt-4">
+          <div class="col-12">
+            <label class="text-primary">הערות</label>
+            <textarea class="form-control" placeholder="TEXT" rows="6"></textarea>
+          </div>
+        </div>
+        <!--  -->
+        <h5 class="mt-4">:בקרות</h5>
+        <div class="row">
+          <div class="col-4">
+            <label class="text-primary">גורם מטפל</label>
+            <select class="form-control">
+              <option>TEXT</option>
+            </select>
+          </div>
+          <div class="col-2">
+            <label class="text-primary">סטטוס טיפול</label>
+            <select class="form-control">
+              <option>TEXT</option>
+            </select>
+          </div>
+        </div>
+        <!--  -->
+        <div class="row">
+          <div class="col-2">
+            <label class="text-primary">תאריך שליחת הטפסים</label>
+            <input id="datepicker16" class="form-control" placeholder="DATE" />
+          </div>
+        </div>
+        <!--  -->
+        <div class="row">
+          <div class="col-2">
+            <label class="text-primary">מועד עדכון צפי</label>
+            <input id="datepicker17" class="form-control" placeholder="DATE" />
+          </div>
+          <div class="col-2">
+            <label class="text-primary">מעוד עדכון בפועל</label>
+            <input id="datepicker18" class="form-control" placeholder="DATE" />
+          </div>
+        </div>
+        <hr style="border-color: #78849E;" />
+        <!--  -->
+      </div>
+      <!-- Modal footer -->
+      <div class="modal-footer pt-0">
+        <button class="cs-btn-img btn-save-green float-right ml-auto" data-dismiss="modal"></button>
+        <div class="timestamp font-weight-bold mr-auto">משתמש מבצע, 20/01/2020</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 6. insuranceProductsModal -->
+<div class="modal full-modal" id="insuranceProductsModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <!-- Modal Header -->
+      <div class="modal-header mt-4 pr-5">
+        <h2 class="title">
+          <span class="">מוצרי ביטוח</span>
+        </h2>
+        <button type="button" class="cs-btn-icon btn-close close dark" data-dismiss="modal"></button>
+      </div>
+      <!-- Modal body -->
+      <div class="modal-body pt-2">
+        <div class="row">
+          <div class="col-4">
+            <label class="text-primary">לקוח</label>
+            <input type="text" class="form-control" placeholder="אוטומאטי" />
+          </div>
+        </div>
+        <!--  -->
+        <div class="row">
+          <div class="col-4">
+            <label class="text-primary">שם פוליסה</label>
+            <input type="text" class="form-control" placeholder="טקסט" />
+          </div>
+          <div class="col-4">
+            <label class="text-primary">מספר פוליסה</label>
+            <input type="text" class="form-control" placeholder="מספר" />
+          </div>
+          <div class="col-4">
+            <label class="text-primary">תאריך הצטרפות </label>
+            <input id="datepicker19" class="form-control" placeholder="dd/mm/yy" />
+          </div>
+        </div>
+        <!--  -->
+        <div class="row">
+          <div class="col-4">
+            <label class="text-primary">סוג פוליסה</label>
+            <input type="text" class="form-control" placeholder="טקסט" />
+          </div>
+          <div class="col-4">
+            <label class="text-primary">חברת ביטוח</label>
+            <input type="text" class="form-control" placeholder="טקסט" />
+          </div>
+        </div>
+        <!--  -->
+        <div class="row">
+          <div class="col-4">
+            <label class="text-primary">בעלי הרישיון</label>
+            <input type="text" class="form-control" placeholder="טקסט" />
+          </div>
+          <div class="col-4">
+            <label class="text-primary">מספר הרישיון בחברה</label>
+            <input type="text" class="form-control" placeholder="טקסט" />
+          </div>
+        </div>
+        <hr style="border-color: #78849E;" />
+        <!--  -->
+        <h5 class="mt-4">פרטי שינוי</h5>
+        <div class="row">
+          <div class="col-2">
+            <label class="text-primary">סוג השוני</label>
+            <select class="form-control">
+              <option>TEXT</option>
+            </select>
+          </div>
+          <div class="col-2">
+            <label class="text-primary">אחוז הנחה</label>
+            <input type="text" class="form-control" placeholder="NUM" />
+          </div>
+          <div class="col-2">
+            <label class="text-primary">תקופת הנחה</label>
+            <input id="datepicker20" class="form-control" placeholder="DATE" />
+          </div>
+          <div class="col-2">
+            <label class="text-primary">מועד תום הנחה</label>
+            <input id="datepicker21" class="form-control" placeholder="DATE" />
+          </div>
+        </div>
+        <!--  -->
+        <div class="row mt-4">
+          <div class="col-12">
+            <label class="text-primary">הערות</label>
+            <textarea class="form-control" placeholder="TEXT" rows="6"></textarea>
+          </div>
+        </div>
+        <!--  -->
+        <h5 class="mt-4">:בקרות</h5>
+        <div class="row">
+          <div class="col-4">
+            <label class="text-primary">גורם מטפל</label>
+            <select class="form-control">
+              <option>TEXT</option>
+            </select>
+          </div>
+          <div class="col-2">
+            <label class="text-primary">סטטוס טיפול</label>
+            <select class="form-control">
+              <option>TEXT</option>
+            </select>
+          </div>
+        </div>
+        <!--  -->
+        <div class="row">
+          <div class="col-2">
+            <label class="text-primary">תאריך שליחת הטפסים</label>
+            <input id="datepicker22" class="form-control" placeholder="DATE" />
+          </div>
+        </div>
+        <!--  -->
+        <div class="row">
+          <div class="col-2">
+            <label class="text-primary">מועד עדכון צפי</label>
+            <input id="datepicker23" class="form-control" placeholder="DATE" />
+          </div>
+          <div class="col-2">
+            <label class="text-primary">מעוד עדכון בפועל</label>
+            <input id="datepicker24" class="form-control" placeholder="DATE" />
+          </div>
+        </div>
+        <hr style="border-color: #78849E;" />
+        <!--  -->
+      </div>
+      <!-- Modal footer -->
+      <div class="modal-footer pt-0">
+        <button class="cs-btn-img btn-save-green float-right ml-auto" data-dismiss="modal"></button>
+        <div class="timestamp font-weight-bold mr-auto">משתמש מבצע, 20/01/2020</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 7. changeOfEmployerModal -->
+<div class="modal full-modal" id="changeOfEmployerModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <!-- Modal Header -->
+      <div class="modal-header mt-4 pr-5">
+        <h2 class="title">
+          <span class="">שינוי מעסיק</span>
+        </h2>
+        <button type="button" class="cs-btn-icon btn-close close dark" data-dismiss="modal"></button>
+      </div>
+      <!-- Modal body -->
+      <div class="modal-body pt-2">
+        <div class="row">
+          <div class="col-4">
+            <label class="text-primary">לקוח</label>
+            <input type="text" class="form-control" placeholder="אוטומאטי" />
+          </div>
+        </div>
+        <!--  -->
+        <div class="row">
+          <div class="col-4">
+            <label class="text-primary">שם מוצר </label>
+            <input type="text" class="form-control" placeholder="טקסט" />
+          </div>
+          <div class="col-4">
+            <label class="text-primary">מספר חשבון</label>
+            <input type="text" class="form-control" placeholder="מספר" />
+          </div>
+          <div class="col-4">
+            <label class="text-primary">תאריך הצטרפות </label>
+            <input id="datepicker19" class="form-control" placeholder="dd/mm/yy" />
+          </div>
+        </div>
+        <!--  -->
+        <div class="row">
+          <div class="col-4">
+            <label class="text-primary">סוג מוצר</label>
+            <input type="text" class="form-control" placeholder="טקסט" />
+          </div>
+          <div class="col-4">
+            <label class="text-primary">חברה מנהלת</label>
+            <input type="text" class="form-control" placeholder="טקסט" />
+          </div>
+          <div class="col-4">
+            <label class="text-primary">מספר חברה מנהלת</label>
+            <input type="text" class="form-control" placeholder="מספר" />
+          </div>
+        </div>
+        <!--  -->
+        <div class="row">
+          <div class="col-4">
+            <label class="text-primary">בעלי הרישיון</label>
+            <input type="text" class="form-control" placeholder="טקסט" />
+          </div>
+          <div class="col-4">
+            <label class="text-primary">מספר הרישיון חברה המנהלת</label>
+            <input type="text" class="form-control" placeholder="טקסט" />
+          </div>
+          <div class="col-4">
+            <label class="text-primary">מספר אוצר</label>
+            <input type="text" class="form-control" placeholder="מספר" />
+          </div>
+        </div>
+        <!--  -->
+        <div class="row">
+          <div class="col-4">
+            <label class="text-primary">מעמד</label>
+            <input type="text" class="form-control" placeholder="טקסט" />
+          </div>
+          <div class="col-4">
+            <label class="text-primary">מעמד מספר</label>
+            <input type="text" class="form-control" placeholder="טקסט" />
+          </div>
+          <div class="col-4">
+            <label class="text-primary">יתרה בקופה</label>
+            <input type="text" class="form-control" placeholder="מספר" />
+          </div>
+        </div>
+        <!--  -->
+        <div class="row">
+          <div class="col-4">
+            <label class="text-primary">מעסיק נוכחי</label>
+            <input type="text" class="form-control" placeholder="טקסט" />
+          </div>
+          <div class="col-4">
+            <label class="text-primary">כתובת</label>
+            <input type="text" class="form-control" placeholder="טקסט" />
+          </div>
+          <div class="col-4">
+            <label class="text-primary">ישוב</label>
+            <input type="text" class="form-control" placeholder="טקסט" />
+          </div>
+        </div>
+        <hr style="border-color: #78849E;" />
+        <!--  -->
+        <h5 class="mt-4">מעסיק לעידכון</h5>
+        <div class="row">
+          <div class="col-2">
+            <label class="text-primary">מעסיק חדש</label>
+            <input type="text" class="form-control" placeholder="TEXT" />
+          </div>
+          <div class="col-2">
+            <label class="text-primary">כתובת מעסיק חדש</label>
+            <input type="text" class="form-control" placeholder="TEXT" />
+          </div>
+          <div class="col-2">
+            <label class="text-primary">ישוב</label>
+            <input type="text" class="form-control" placeholder="TEXT" />
+          </div>
+        </div>
+        <!--  -->
+        <div class="row mt-4">
+          <div class="col-12">
+            <label class="text-primary">הערות</label>
+            <textarea class="form-control" placeholder="TEXT" rows="6"></textarea>
+          </div>
+        </div>
+        <!--  -->
+        <h5 class="mt-4">:בקרות</h5>
+        <div class="row">
+          <div class="col-4">
+            <label class="text-primary">גורם מטפל</label>
+            <select class="form-control">
+              <option>TEXT</option>
+            </select>
+          </div>
+          <div class="col-2">
+            <label class="text-primary">סטטוס טיפול</label>
+            <select class="form-control">
+              <option>TEXT</option>
+            </select>
+          </div>
+        </div>
+        <!--  -->
+        <div class="row">
+          <div class="col-2">
+            <label class="text-primary">תאריך שליחת הטפסים</label>
+            <input id="datepicker25" class="form-control" placeholder="DATE" />
+          </div>
+        </div>
+        <!--  -->
+        <div class="row">
+          <div class="col-2">
+            <label class="text-primary">מועד עדכון צפוי</label>
+            <input id="datepicker26" class="form-control" placeholder="DATE" />
+          </div>
+          <div class="col-2">
+            <label class="text-primary">מועד עדכון בפועל</label>
+            <input id="datepicker27" class="form-control" placeholder="DATE" />
+          </div>
+        </div>
+        <hr style="border-color: #78849E;" />
+        <!--  -->
+      </div>
+      <!-- Modal footer -->
+      <div class="modal-footer pt-0">
+        <button class="cs-btn-img btn-save-green float-right ml-auto" data-dismiss="modal"></button>
+        <div class="timestamp font-weight-bold mr-auto">משתמש מבצע, 20/01/2020</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 8. powerOfAttorneyModal -->
+<div class="modal full-modal" id="powerOfAttorneyModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <!-- Modal Header -->
+      <div class="modal-header mt-4 pr-5">
+        <h2 class="title">
+          <span class="">יפוי כוח</span>
+        </h2>
+        <button type="button" class="cs-btn-icon btn-close close dark" data-dismiss="modal"></button>
+      </div>
+      <!-- Modal body -->
+      <div class="modal-body pt-2">
+        <div class="row">
+          <div class="col-4">
+            <label class="text-primary">לקוח</label>
+            <input type="text" class="form-control" placeholder="אוטומאטי" />
+          </div>
+        </div>
+        <!--  -->
+        <h5 class="mt-4">יפוי כח לכל החבורה</h5>
+        <div class="row">
+          <div class="col-2">
+            <input type="checkbox" name="status" value="1" class="lcs_check" autocomplete="off" checked />
+          </div>
+        </div>
+        <!--  -->
+        <div class="row mt-4">
+          <div class="col-6">
+            <h5 class="">יפוי כוח לכל  החברות</h5>
+          </div>
+          <div class="col-6">
+            <h5 class="">רשימה של מוצרים</h5>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <div class="row">
+              <div class="col-3">
+                <label class="text-primary">יפוי כוח מלא</label>
+              </div>
+              <div class="col-3">
+                <label class="text-primary">מספר חשבון</label>
+              </div>
+              <div class="col-3">
+                <label class="text-primary">שם המוצר</label>
+              </div>
+              <div class="col-3">
+                <label class="text-primary">מספר אוצר</label>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="row">
+              <div class="col-3">
+                <label class="text-primary">יתרה במוצר</label>
+              </div>
+              <div class="col-3">
+                <label class="text-primary">חברה מנהלת</label>
+              </div>
+              <div class="col-3">
+                <label class="text-primary">שם בעל רשיון</label>
+              </div>
+              <div class="col-3">
+                <label class="text-primary">מספר רשיון חברה מנהלת</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 1. -->
+        <div class="row">
+          <div class="col-6">
+            <div class="row">
+              <div class="col-3">
+                <div class="d-flex pt-1">
+                  <div class="text-primary py-1 pl-3">1.</div>
+                  <input type="checkbox" name="status" value="1" class="lcs_check" autocomplete="off" checked />
+                </div>
+              </div>
+              <div class="col-3">
+                <input type="text" class="form-control" placeholder="NUM" />
+              </div>
+              <div class="col-3">
+                <input type="text" class="form-control" placeholder="TEXT" />
+              </div>
+              <div class="col-3">
+                <input type="text" class="form-control" placeholder="NUM" />
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="row">
+              <div class="col-3">
+                <input type="text" class="form-control" placeholder="NUM" />
+              </div>
+              <div class="col-3">
+                <input type="text" class="form-control" placeholder="TEXT" />
+              </div>
+              <div class="col-3">
+                <input type="text" class="form-control" placeholder="TEXT" />
+              </div>
+              <div class="col-3">
+                <input type="text" class="form-control" placeholder="TEXT" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 2. -->
+        <div class="row mt-2">
+          <div class="col-6">
+            <div class="row">
+              <div class="col-3">
+                <div class="d-flex pt-1">
+                  <div class="text-primary py-1 pl-3">2.</div>
+                  <input type="checkbox" name="status" value="1" class="lcs_check" autocomplete="off" checked />
+                </div>
+              </div>
+              <div class="col-3">
+                <input type="text" class="form-control" placeholder="NUM" />
+              </div>
+              <div class="col-3">
+                <input type="text" class="form-control" placeholder="TEXT" />
+              </div>
+              <div class="col-3">
+                <input type="text" class="form-control" placeholder="NUM" />
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="row">
+              <div class="col-3">
+                <input type="text" class="form-control" placeholder="NUM" />
+              </div>
+              <div class="col-3">
+                <input type="text" class="form-control" placeholder="TEXT" />
+              </div>
+              <div class="col-3">
+                <input type="text" class="form-control" placeholder="TEXT" />
+              </div>
+              <div class="col-3">
+                <input type="text" class="form-control" placeholder="TEXT" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 3. -->
+        <div class="row mt-2">
+          <div class="col-6">
+            <div class="row">
+              <div class="col-3">
+                <div class="d-flex pt-1">
+                  <div class="text-primary py-1 pl-3">3.</div>
+                  <input type="checkbox" name="status" value="1" class="lcs_check" autocomplete="off" checked />
+                </div>
+              </div>
+              <div class="col-3">
+                <input type="text" class="form-control" placeholder="NUM" />
+              </div>
+              <div class="col-3">
+                <input type="text" class="form-control" placeholder="TEXT" />
+              </div>
+              <div class="col-3">
+                <input type="text" class="form-control" placeholder="NUM" />
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="row">
+              <div class="col-3">
+                <input type="text" class="form-control" placeholder="NUM" />
+              </div>
+              <div class="col-3">
+                <input type="text" class="form-control" placeholder="TEXT" />
+              </div>
+              <div class="col-3">
+                <input type="text" class="form-control" placeholder="TEXT" />
+              </div>
+              <div class="col-3">
+                <input type="text" class="form-control" placeholder="TEXT" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+        <div class="row mt-4">
+          <div class="col-12">
+            <label class="text-primary">הערות</label>
+            <textarea class="form-control" placeholder="TEXT" rows="6"></textarea>
+          </div>
+        </div>
+        <!--  -->
+        <h5 class="mt-4">:בקרות</h5>
+        <div class="row">
+          <div class="col-4">
+            <label class="text-primary">גורם מטפל</label>
+            <select class="form-control">
+              <option>TEXT</option>
+            </select>
+          </div>
+          <div class="col-2">
+            <label class="text-primary">סטטוס טיפול</label>
+            <select class="form-control">
+              <option>TEXT</option>
+            </select>
+          </div>
+        </div>
+        <!--  -->
+        <div class="row">
+          <div class="col-2">
+            <label class="text-primary">תאריך שיוך משוער</label>
+            <input id="datepicker28" class="form-control" placeholder="DATE" />
+          </div>
+          <div class="col-2">
+            <label class="text-primary">תאריך שיוך בפועל</label>
+            <input id="datepicker29" class="form-control" placeholder="DATE" />
+          </div>
+        </div>
+        <hr style="border-color: #78849E;" />
+        <!--  -->
+      </div>
+      <!-- Modal footer -->
+      <div class="modal-footer pt-0">
+        <button class="cs-btn-img btn-save-green float-right ml-auto" data-dismiss="modal"></button>
+        <div class="timestamp font-weight-bold mr-auto">משתמש מבצע, 20/01/2020</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 9. trackChangeModal -->
+<div class="modal full-modal" id="trackChangeModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <!-- Modal Header -->
+      <div class="modal-header mt-4 pr-5">
+        <h2 class="title">
+          <span class="">שינוי מסלול</span>
+        </h2>
+        <button type="button" class="cs-btn-icon btn-close close dark" data-dismiss="modal"></button>
+      </div>
+      <!-- Modal body -->
+      <div class="modal-body pt-2">
+        <div class="row">
+          <div class="col-4">
+            <label class="text-primary">לקוח</label>
+            <input type="text" class="form-control" placeholder="אוטומאטי" />
+          </div>
+        </div>
+        <!--  -->
+        <div class="row">
+          <div class="col-4">
+            <label class="text-primary">שם מוצר </label>
+            <input type="text" class="form-control" placeholder="טקסט" />
+          </div>
+          <div class="col-4">
+            <label class="text-primary">מספר חשבון</label>
+            <input type="text" class="form-control" placeholder="מספר" />
+          </div>
+          <div class="col-4">
+            <label class="text-primary">תאריך הצטרפות </label>
+            <input id="datepicker1" class="form-control" placeholder="dd/mm/yy" />
+          </div>
+        </div>
+        <!--  -->
+        <div class="row">
+          <div class="col-4">
+            <label class="text-primary">סוג מוצר</label>
+            <input type="text" class="form-control" placeholder="טקסט" />
+          </div>
+          <div class="col-4">
+            <label class="text-primary">חברה מנהלת</label>
+            <input type="text" class="form-control" placeholder="טקסט" />
+          </div>
+          <div class="col-4">
+            <label class="text-primary">מספר חברה מנהלת</label>
+            <input type="text" class="form-control" placeholder="מספר" />
+          </div>
+        </div>
+        <!--  -->
+        <div class="row">
+          <div class="col-4">
+            <label class="text-primary">בעלי הרישיון</label>
+            <input type="text" class="form-control" placeholder="טקסט" />
+          </div>
+          <div class="col-4">
+            <label class="text-primary">מספר הרישיון חברה המנהלת</label>
+            <input type="text" class="form-control" placeholder="טקסט" />
+          </div>
+          <div class="col-4">
+            <label class="text-primary">מספר אוצר</label>
+            <input type="text" class="form-control" placeholder="מספר" />
+          </div>
+        </div>
+        <!--  -->
+        <div class="row">
+          <div class="col-4">
+            <label class="text-primary">מעמד</label>
+            <input type="text" class="form-control" placeholder="טקסט" />
+          </div>
+          <div class="col-4">
+            <label class="text-primary">מעמד מספר</label>
+            <input type="text" class="form-control" placeholder="מספר" />
+          </div>
+        </div>
+        <!--  -->
+        <div class="row">
+          <div class="col-2">
+            <label class="text-primary">מסלול</label>
+            <input type="text" class="form-control" placeholder="טקסט" />
+          </div>
+          <div class="col-2">
+            <label class="text-primary">יתרה במוצר</label>
+            <input type="text" class="form-control" placeholder="NUM" />
+          </div>
+          <div class="col-2">
+            <label class="text-primary">אחוזי צבירה</label>
+            <input type="text" class="form-control" placeholder="טקסט" />
+          </div>
+          <div class="col-2">
+            <label class="text-primary">אחוזי הפקדות</label>
+            <input type="text" class="form-control" placeholder="טקסט" />
+          </div>
+          <div class="col-2">
+            <label class="text-primary">יתרה לאחר שינוי</label>
+            <input type="text" class="form-control" placeholder="טקסט" />
+          </div>
+        </div>
+        <hr style="border-color: #78849E;" />
+        <!--  -->
+        <h5>מסלול לעידכון</h5>
+        <!--  -->
+        <div class="row">
+          <div class="col-2">
+            <label class="text-primary">מסלול</label>
+            <input type="text" class="form-control" placeholder="TEXT" />
+          </div>
+          <div class="col-2">
+            <label class="text-primary">יתרה במוצר</label>
+            <input type="text" class="form-control" placeholder="TEXT" />
+          </div>
+          <div class="col-2">
+            <label class="text-primary">אחוזי צבירה</label>
+            <input type="text" class="form-control" placeholder="TEXT" />
+          </div>
+          <div class="col-2">
+            <label class="text-primary">אחוזי הפקדות</label>
+            <input type="text" class="form-control" placeholder="TEXT" />
+          </div>
+          <div class="col-2">
+            <label class="text-primary">יתרה לאחר שינוי</label>
+            <input type="text" class="form-control" placeholder="TEXT" />
+          </div>
+        </div>
+        <!--  -->
+        <div class="row mt-4">
+          <div class="col-12">
+            <label class="text-primary">הערות</label>
+            <textarea class="form-control" placeholder="TEXT" rows="6"></textarea>
+          </div>
+        </div>
+        <!--  -->
+        <h5 class="mt-4">:בקרות</h5>
+        <div class="row">
+          <div class="col-4">
+            <label class="text-primary">גורם מטפל</label>
+            <select class="form-control">
+              <option>TEXT</option>
+            </select>
+          </div>
+          <div class="col-2">
+            <label class="text-primary">מועד סיום משוער</label>
+            <input id="datepicker30" class="form-control" placeholder="DATE" />
+          </div>
+          <div class="col-2">
+            <label class="text-primary">סטטוס טיפול</label>
+            <select class="form-control">
+              <option>TEXT</option>
+            </select>
+          </div>
+        </div>
+        <!--  -->
+        <div class="row">
+          <div class="col-2">
+            <label class="text-primary">תאריך שליחת הטפסים</label>
+            <input id="datepicker31" class="form-control" placeholder="DATE" />
+          </div>
+          <div class="col-2">
+            <label class="text-primary">מספר חשבון חדש</label>
+            <input type="text" class="form-control" placeholder="NUM" />
+          </div>
+          <div class="col-2">
+            <label class="text-primary">צפי לקבלת מספר</label>
+            <input id="datepicker32" class="form-control" placeholder="DATE" />
+          </div>
+        </div>
+        <!--  -->
+        <div class="row">
+          <div class="col-2">
+            <label class="text-primary">בקרת רכישה</label>
+            <input type="checkbox" name="status" value="1" class="lcs_check" autocomplete="off" checked />
+          </div>
+          <div class="col-2">
+            <label class="text-primary">בקרת קבלת אסמכתא</label>
+            <input type="checkbox" name="status" value="1" class="lcs_check" autocomplete="off" checked />
+          </div>
+        </div>
+        <!--  -->
+        <hr style="border-color: #78849E;" />
+        <!--  -->
+      </div>
+      <div class="modal-footer pt-0">
+        <button class="cs-btn-img btn-save-green float-right ml-auto" data-dismiss="modal"></button>
+        <div class="timestamp font-weight-bold mr-auto">משתמש מבצע, 20/01/2020</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 10. additionalDepositModal -->
+<div class="modal full-modal" id="additionalDepositModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <!-- Modal Header -->
+      <div class="modal-header mt-4 pr-5">
+        <h2 class="title">
+          <span class="">הפקדות נוספות</span>
+        </h2>
+        <button type="button" class="cs-btn-icon btn-close close dark" data-dismiss="modal"></button>
+      </div>
+      <!-- Modal body -->
+      <div class="modal-body pt-2">
+        <div class="row">
+          <div class="col-4">
+            <label class="text-primary">לקוח</label>
+            <input type="text" class="form-control" placeholder="אוטומאטי" />
+          </div>
+        </div>
+        <!--  -->
+        <div class="row">
+          <div class="col-4">
+            <label class="text-primary">שם מוצר </label>
+            <input type="text" class="form-control" placeholder="טקסט" />
+          </div>
+          <div class="col-4">
+            <label class="text-primary">מספר חשבון</label>
+            <input type="text" class="form-control" placeholder="מספר" />
+          </div>
+          <div class="col-4">
+            <label class="text-primary">תאריך הצטרפות </label>
+            <input id="datepicker1" class="form-control" placeholder="dd/mm/yy" />
+          </div>
+        </div>
+        <!--  -->
+        <div class="row">
+          <div class="col-4">
+            <label class="text-primary">סוג מוצר</label>
+            <input type="text" class="form-control" placeholder="טקסט" />
+          </div>
+          <div class="col-4">
+            <label class="text-primary">חברה מנהלת</label>
+            <input type="text" class="form-control" placeholder="טקסט" />
+          </div>
+          <div class="col-4">
+            <label class="text-primary">מספר חברה מנהלת</label>
+            <input type="text" class="form-control" placeholder="מספר" />
+          </div>
+        </div>
+        <!--  -->
+        <div class="row">
+          <div class="col-4">
+            <label class="text-primary">בעלי הרישיון</label>
+            <input type="text" class="form-control" placeholder="טקסט" />
+          </div>
+          <div class="col-4">
+            <label class="text-primary">מספר הרישיון חברה המנהלת</label>
+            <input type="text" class="form-control" placeholder="טקסט" />
+          </div>
+          <div class="col-4">
+            <label class="text-primary">מספר אוצר</label>
+            <input type="text" class="form-control" placeholder="מספר" />
+          </div>
+        </div>
+        <!--  -->
+        <div class="row">
+          <div class="col-4">
+            <label class="text-primary">מעמד</label>
+            <input type="text" class="form-control" placeholder="טקסט" />
+          </div>
+          <div class="col-4">
+            <label class="text-primary">מעמד מספר</label>
+            <input type="text" class="form-control" placeholder="מספר" />
+          </div>
+          <div class="col-4">
+            <label class="text-primary">יתרה בקופה</label>
+            <input type="text" class="form-control" placeholder="מספר" />
+          </div>
+        </div>
+        <!--  -->
+        <div class="row">
+          <div class="col-2">
+            <label class="text-primary">קופה מסלולית</label>
+            <input type="checkbox" name="status" value="1" class="lcs_check" autocomplete="off" checked />
+          </div>
+        </div>
+        <hr style="border-color: #78849E;" />
+        <!--  -->
+        <h5>פרטים לפדיון</h5>
+        <div class="row">
+          <div class="col-2">
+            <label class="text-primary pr-4">מסלול</label>
+          </div>
+          <div class="col-2">
+            <label class="text-primary">יתרה במסלול</label>
+          </div>
+          <div class="col-2">
+            <label class="text-primary">מספר אוצר</label>
+          </div>
+        </div>
+        <!-- 1 -->
+        <div class="row">
+          <div class="col-2">
+            <div class="d-flex">
+              <div class="text-primary px-1 py-1">1.</div>
+              <input type="text" class="form-control" placeholder="TEXT" />
+            </div>
+          </div>
+          <div class="col-2">
+            <input type="text" class="form-control" placeholder="NUM" />
+          </div>
+          <div class="col-2">
+            <input type="text" class="form-control" placeholder="NUM" />
+          </div>
+        </div>
+        <!-- 2 -->
+        <div class="row mt-2">
+          <div class="col-2">
+            <div class="d-flex">
+              <div class="text-primary px-1 py-1">2.</div>
+              <input type="text" class="form-control" placeholder="TEXT" />
+            </div>
+          </div>
+          <div class="col-2">
+            <input type="text" class="form-control" placeholder="NUM" />
+          </div>
+          <div class="col-2">
+            <input type="text" class="form-control" placeholder="NUM" />
+          </div>
+        </div>
+        <!-- 3 -->
+        <div class="row mt-2">
+          <div class="col-2">
+            <div class="d-flex">
+              <div class="text-primary px-1 py-1">3.</div>
+              <input type="text" class="form-control" placeholder="TEXT" />
+            </div>
+          </div>
+          <div class="col-2">
+            <input type="text" class="form-control" placeholder="NUM" />
+          </div>
+          <div class="col-2">
+            <input type="text" class="form-control" placeholder="NUM" />
+          </div>
+        </div>
+        <hr style="border-color: #78849E;" />
+        <!--  -->
+        <div class="row mt-4">
+          <div class="col-2">
+            <label class="text-primary">בחר מסלול הפקדה</label>
+            <input type="text" class="form-control" placeholder="TEXT" />
+          </div>
+          <div class="col-2">
+            <label class="text-primary">סכום הפקדה</label>
+            <input type="text" class="form-control" placeholder="NUM" />
+          </div>
+        </div>
+        <!--  -->
+        <div class="row mt-4">
+          <div class="col-12">
+            <label class="text-primary">הערות</label>
+            <textarea class="form-control" placeholder="TEXT" rows="6"></textarea>
+          </div>
+        </div>
+        <!--  -->
+        <h5 class="mt-4">:בקרות</h5>
+        <div class="row">
+          <div class="col-4">
+            <label class="text-primary">גורם מטפל</label>
+            <select class="form-control">
+              <option>TEXT</option>
+            </select>
+          </div>
+          <div class="col-2">
+            <label class="text-primary">סטטוס טיפול</label>
+            <select class="form-control">
+              <option>TEXT</option>
+            </select>
+          </div>
+        </div>
+        <!--  -->
+        <div class="row">
+          <div class="col-2">
+            <label class="text-primary">תאריך שליחת הפוליסה</label>
+            <input id="datepicker33" class="form-control" placeholder="DATE" />
+          </div>
+        </div>
+        <!--  -->
+        <div class="row">
+          <div class="col-2">
+            <label class="text-primary">נועד עדכון צפוי</label>
+            <input id="datepicker34" class="form-control" placeholder="DATE" />
+          </div>
+          <div class="col-2">
+            <label class="text-primary">מועד עדכון בפועל</label>
+            <input id="datepicker35" class="form-control" placeholder="DATE" />
+          </div>
+        </div>
+        <!--  -->
+        <hr style="border-color: #78849E;" />
+        <!--  -->
+      </div>
+      <div class="modal-footer pt-0">
+        <button class="cs-btn-img btn-save-green float-right ml-auto" data-dismiss="modal"></button>
+        <div class="timestamp font-weight-bold mr-auto">משתמש מבצע, 20/01/2020</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 11. allowanceModal -->
+<div class="modal full-modal" id="allowanceModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <!-- Modal Header -->
+      <div class="modal-header mt-4 pr-5">
+        <h2 class="title">
+          <span class="">קצבה</span>
+        </h2>
+        <button type="button" class="cs-btn-icon btn-close close dark" data-dismiss="modal"></button>
+      </div>
+      <!-- Modal body -->
+      <div class="modal-body pt-2">
+        <div class="row">
+          <div class="col-4">
+            <label class="text-primary">לקוח</label>
+            <input type="text" class="form-control" placeholder="אוטומאטי" />
+          </div>
+        </div>
+        <!--  -->
+        <div class="row">
+          <div class="col-4">
+            <label class="text-primary">שם מוצר </label>
+            <input type="text" class="form-control" placeholder="טקסט" />
+          </div>
+          <div class="col-4">
+            <label class="text-primary">מספר חשבון</label>
+            <input type="text" class="form-control" placeholder="מספר" />
+          </div>
+          <div class="col-4">
+            <label class="text-primary">תאריך הצטרפות </label>
+            <input id="datepicker1" class="form-control" placeholder="dd/mm/yy" />
+          </div>
+        </div>
+        <!--  -->
+        <div class="row">
+          <div class="col-4">
+            <label class="text-primary">סוג מוצר</label>
+            <input type="text" class="form-control" placeholder="טקסט" />
+          </div>
+          <div class="col-4">
+            <label class="text-primary">חברה מנהלת</label>
+            <input type="text" class="form-control" placeholder="טקסט" />
+          </div>
+          <div class="col-4">
+            <label class="text-primary">מספר חברה מנהלת</label>
+            <input type="text" class="form-control" placeholder="מספר" />
+          </div>
+        </div>
+        <!--  -->
+        <div class="row">
+          <div class="col-4">
+            <label class="text-primary">בעלי הרישיון</label>
+            <input type="text" class="form-control" placeholder="טקסט" />
+          </div>
+          <div class="col-4">
+            <label class="text-primary">מספר הרישיון חברה המנהלת</label>
+            <input type="text" class="form-control" placeholder="טקסט" />
+          </div>
+          <div class="col-4">
+            <label class="text-primary">מספר אוצר</label>
+            <input type="text" class="form-control" placeholder="מספר" />
+          </div>
+        </div>
+        <!--  -->
+        <div class="row">
+          <div class="col-4">
+            <label class="text-primary">מעמד</label>
+            <input type="text" class="form-control" placeholder="טקסט" />
+          </div>
+          <div class="col-4">
+            <label class="text-primary">מעמד מספר</label>
+            <input type="text" class="form-control" placeholder="מספר" />
+          </div>
+          <div class="col-4">
+            <label class="text-primary">יתרה בקופה</label>
+            <input type="text" class="form-control" placeholder="מספר" />
+          </div>
+        </div>
+        <hr style="border-color: #78849E;" />
+        <!--  -->
+        <h5>קבלת קצבה</h5>
+        <!--  -->
+        <div class="row mt-4">
+          <div class="col-2">
+            <input type="checkbox" name="status" value="1" class="lcs_check" autocomplete="off" checked />
+          </div>
+        </div>
+        <!--  -->
+        <div class="row mt-4">
+          <div class="col-12">
+            <label class="text-primary">הערות</label>
+            <textarea class="form-control" placeholder="TEXT" rows="6"></textarea>
+          </div>
+        </div>
+        <!--  -->
+        <h5 class="mt-4">:בקרות</h5>
+        <div class="row">
+          <div class="col-4">
+            <label class="text-primary">גורם מטפל</label>
+            <select class="form-control">
+              <option>TEXT</option>
+            </select>
+          </div>
+          <div class="col-2">
+            <label class="text-primary">סטטוס טיפול</label>
+            <select class="form-control">
+              <option>TEXT</option>
+            </select>
+          </div>
+        </div>
+        <!--  -->
+        <div class="row">
+          <div class="col-2">
+            <label class="text-primary">תאריך שליחת הפוליסה</label>
+            <input id="datepicker36" class="form-control" placeholder="DATE" />
+          </div>
+        </div>
+        <!--  -->
+        <div class="row">
+          <div class="col-2">
+            <label class="text-primary">נועד עדכון צפוי</label>
+            <input id="datepicker37" class="form-control" placeholder="DATE" />
+          </div>
+          <div class="col-2">
+            <label class="text-primary">מועד עדכון בפועל</label>
+            <input id="datepicker38" class="form-control" placeholder="DATE" />
+          </div>
+        </div>
+        <!--  -->
+        <hr style="border-color: #78849E;" />
+        <!--  -->
+      </div>
+      <div class="modal-footer pt-0">
+        <button class="cs-btn-img btn-save-green float-right ml-auto" data-dismiss="modal"></button>
+        <div class="timestamp font-weight-bold mr-auto">משתמש מבצע, 20/01/2020</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 12. managementFeeModal -->
+<div class="modal full-modal" id="managementFeeModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <!-- Modal Header -->
+      <div class="modal-header mt-4 pr-5">
+        <h2 class="title">
+          <span class="">דמי ניהול</span>
+        </h2>
+        <button type="button" class="cs-btn-icon btn-close close dark" data-dismiss="modal"></button>
+      </div>
+      <!-- Modal body -->
+      <div class="modal-body pt-2">
+        <div class="row">
+          <div class="col-4">
+            <label class="text-primary">לקוח</label>
+            <input type="text" class="form-control" placeholder="אוטומאטי" />
+          </div>
+        </div>
+        <!--  -->
+        <div class="row">
+          <div class="col-4">
+            <label class="text-primary">שם מוצר </label>
+            <input type="text" class="form-control" placeholder="טקסט" />
+          </div>
+          <div class="col-4">
+            <label class="text-primary">מספר חשבון</label>
+            <input type="text" class="form-control" placeholder="מספר" />
+          </div>
+          <div class="col-4">
+            <label class="text-primary">תאריך הצטרפות </label>
+            <input id="datepicker1" class="form-control" placeholder="dd/mm/yy" />
+          </div>
+        </div>
+        <!--  -->
+        <div class="row">
+          <div class="col-4">
+            <label class="text-primary">סוג מוצר</label>
+            <input type="text" class="form-control" placeholder="טקסט" />
+          </div>
+          <div class="col-4">
+            <label class="text-primary">חברה מנהלת</label>
+            <input type="text" class="form-control" placeholder="טקסט" />
+          </div>
+          <div class="col-4">
+            <label class="text-primary">מספר חברה מנהלת</label>
+            <input type="text" class="form-control" placeholder="מספר" />
+          </div>
+        </div>
+        <!--  -->
+        <div class="row">
+          <div class="col-4">
+            <label class="text-primary">בעלי הרישיון</label>
+            <input type="text" class="form-control" placeholder="טקסט" />
+          </div>
+          <div class="col-4">
+            <label class="text-primary">מספר הרישיון חברה המנהלת</label>
+            <input type="text" class="form-control" placeholder="טקסט" />
+          </div>
+          <div class="col-4">
+            <label class="text-primary">מספר אוצר</label>
+            <input type="text" class="form-control" placeholder="מספר" />
+          </div>
+        </div>
+        <!--  -->
+        <div class="row">
+          <div class="col-4">
+            <label class="text-primary">מעמד</label>
+            <input type="text" class="form-control" placeholder="טקסט" />
+          </div>
+          <div class="col-4">
+            <label class="text-primary">מעמד מספר</label>
+            <input type="text" class="form-control" placeholder="מספר" />
+          </div>
+        </div>
+        <!--  -->
+        <div class="row">
+          <div class="col-4">
+            <label class="text-primary">דמי ניהול מצבירה</label>
+            <input type="text" class="form-control" placeholder="NUM" />
+          </div>
+          <div class="col-4">
+            <label class="text-primary">דמי ניהול מפרמיה</label>
+            <input type="text" class="form-control" placeholder="NUM" />
+          </div>
+        </div>
+        <hr style="border-color: #78849E;" />
+        <!--  -->
+        <h5>דמי ניהול מפרמיה</h5>
+        <div class="row">
+          <div class="col-2">
+            <label class="text-primary">דמי ניהול מצבירה</label>
+            <input type="text" class="form-control" placeholder="NUM" />
+          </div>
+          <div class="col-2">
+            <label class="text-primary">דמי ניהול מפרמיה</label>
+            <input type="text" class="form-control" placeholder="NUM" />
+          </div>
+        </div>
+        <hr style="border-color: #78849E;" />
+        <!--  -->
+        <h5 class="mt-4">:בקרות</h5>
+        <div class="row">
+          <div class="col-4">
+            <label class="text-primary">גורם מטפל</label>
+            <select class="form-control">
+              <option>TEXT</option>
+            </select>
+          </div>
+          <div class="col-2">
+            <label class="text-primary">מועד סיום משוער</label>
+            <input id="datepicker39" class="form-control" placeholder="DATE" />
+          </div>
+          <div class="col-2">
+            <label class="text-primary">סטטוס טיפול</label>
+            <select class="form-control">
+              <option>TEXT</option>
+            </select>
+          </div>
+        </div>
+        <!--  -->
+        <div class="row">
+          <div class="col-2">
+            <label class="text-primary">תאריך שליחת הטפסים</label>
+            <input id="datepicker40" class="form-control" placeholder="DATE" />
+          </div>
+        </div>
+        <!--  -->
+        <div class="row">
+          <div class="col-2">
+            <label class="text-primary">תאריך סיום משוער</label>
+            <input id="datepicker41" class="form-control" placeholder="DATE" />
+          </div>
+          <div class="col-2">
+            <label class="text-primary">תאריך סיום בפועל</label>
+            <input id="datepicker42" class="form-control" placeholder="DATE" />
+          </div>
+        </div>
+        <!--  -->
+        <hr style="border-color: #78849E;" />
+        <!--  -->
+      </div>
+      <div class="modal-footer pt-0">
+        <button class="cs-btn-img btn-save-green float-right ml-auto" data-dismiss="modal"></button>
+        <div class="timestamp font-weight-bold mr-auto">משתמש מבצע, 20/01/2020</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 13. loanAcceptanceModal -->
+<div class="modal full-modal" id="loanAcceptanceModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <!-- Modal Header -->
+      <div class="modal-header mt-4 pr-5">
+        <h2 class="title">
+          <span class="">קבלת הלוואה</span>
+        </h2>
+        <button type="button" class="cs-btn-icon btn-close close dark" data-dismiss="modal"></button>
+      </div>
+      <!-- Modal body -->
+      <div class="modal-body pt-2">
+        <div class="row">
+          <div class="col-4">
+            <label class="text-primary">לקוח</label>
+            <input type="text" class="form-control" placeholder="אוטומאטי" />
+          </div>
+        </div>
+        <!--  -->
+        <div class="row">
+          <div class="col-4">
+            <label class="text-primary">שם מוצר </label>
+            <input type="text" class="form-control" placeholder="טקסט" />
+          </div>
+          <div class="col-4">
+            <label class="text-primary">מספר חשבון</label>
+            <input type="text" class="form-control" placeholder="מספר" />
+          </div>
+          <div class="col-4">
+            <label class="text-primary">תאריך הצטרפות </label>
+            <input id="datepicker1" class="form-control" placeholder="dd/mm/yy" />
+          </div>
+        </div>
+        <!--  -->
+        <div class="row">
+          <div class="col-4">
+            <label class="text-primary">סוג מוצר</label>
+            <input type="text" class="form-control" placeholder="טקסט" />
+          </div>
+          <div class="col-4">
+            <label class="text-primary">חברה מנהלת</label>
+            <input type="text" class="form-control" placeholder="טקסט" />
+          </div>
+          <div class="col-4">
+            <label class="text-primary">מספר חברה מנהלת</label>
+            <input type="text" class="form-control" placeholder="מספר" />
+          </div>
+        </div>
+        <!--  -->
+        <div class="row">
+          <div class="col-4">
+            <label class="text-primary">בעלי הרישיון</label>
+            <input type="text" class="form-control" placeholder="טקסט" />
+          </div>
+          <div class="col-4">
+            <label class="text-primary">מספר הרישיון חברה המנהלת</label>
+            <input type="text" class="form-control" placeholder="טקסט" />
+          </div>
+          <div class="col-4">
+            <label class="text-primary">מספר אוצר</label>
+            <input type="text" class="form-control" placeholder="מספר" />
+          </div>
+        </div>
+        <!--  -->
+        <div class="row">
+          <div class="col-4">
+            <label class="text-primary">מעמד</label>
+            <input type="text" class="form-control" placeholder="טקסט" />
+          </div>
+          <div class="col-4">
+            <label class="text-primary">מעמד מספר</label>
+            <input type="text" class="form-control" placeholder="מספר" />
+          </div>
+          <div class="col-4">
+            <label class="text-primary">מסלול</label>
+            <input type="text" class="form-control" placeholder="מספר" />
+          </div>
+        </div>
+        <hr style="border-color: #78849E;" />
+        <!--  -->
+        <h5>קבלת קצבה</h5>
+        <div class="row">
+          <div class="col-2">
+            <label class="text-primary">סכום הלוואה מבוקש</label>
+            <input type="text" class="form-control" placeholder="NUM" />
+          </div>
+          <div class="col-2">
+            <label class="text-primary">ריבית הלוואה</label>
+            <input type="text" class="form-control" placeholder="NUM" />
+          </div>
+          <div class="col-2">
+            <label class="text-primary">סוג הלוואה</label>
+            <select class="form-control">
+              <option>TEXT</option>
+            </select>
+          </div>
+        </div>
+        <!--  -->
+        <div class="row">
+          <div class="col-2">
+            <label class="text-primary">תקופת הלוואה</label>
+            <input type="text" class="form-control" placeholder="NUM" />
+          </div>
+          <div class="col-2">
+            <label class="text-primary">מועד סיום משוער</label>
+            <input id="datepicker43" class="form-control" placeholder="DATE" />
+          </div>
+        </div>
+        <!--  -->
+        <div class="row mt-4">
+          <div class="col-12">
+            <label class="text-primary">הערות</label>
+            <textarea class="form-control" placeholder="TEXT" rows="6"></textarea>
+          </div>
+        </div>
+        <!--  -->
+        <h5 class="mt-4">:בקרות</h5>
+        <div class="row">
+          <div class="col-4">
+            <label class="text-primary">גורם מטפל</label>
+            <select class="form-control">
+              <option>TEXT</option>
+            </select>
+          </div>
+          <div class="col-2">
+            <label class="text-primary">מועד סיום משוער</label>
+            <input id="datepicker44" class="form-control" placeholder="DATE" />
+          </div>
+          <div class="col-2">
+            <label class="text-primary">סטטוס טיפול</label>
+            <select class="form-control">
+              <option>TEXT</option>
+            </select>
+          </div>
+        </div>
+        <!--  -->
+        <div class="row">
+          <div class="col-2">
+            <label class="text-primary">קבלת הסכם הלוואה</label>
+            <input type="checkbox" name="status" value="1" class="lcs_check" autocomplete="off" checked />
+          </div>
+        </div>
+        <!--  -->
+        <div class="row">
+          <div class="col-2">
+            <label class="text-primary">מועד משוער לעדכון</label>
+            <input id="datepicker45" class="form-control" placeholder="DATE" />
+          </div>
+          <div class="col-2">
+            <label class="text-primary">מועד עדכון בפועל</label>
+            <input id="datepicker46" class="form-control" placeholder="DATE" />
+          </div>
+        </div>
+        <!--  -->
+        <hr style="border-color: #78849E;" />
+        <!--  -->
+      </div>
+      <div class="modal-footer pt-0">
+        <button class="cs-btn-img btn-save-green float-right ml-auto" data-dismiss="modal"></button>
+        <div class="timestamp font-weight-bold mr-auto">משתמש מבצע, 20/01/2020</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 14. annuityModal -->
+<div class="modal full-modal" id="annuityModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <!-- Modal Header -->
+      <div class="modal-header mt-4 pr-5">
+        <h2 class="title">
+          <span class="">אנונה</span>
+        </h2>
+        <button type="button" class="cs-btn-icon btn-close close dark" data-dismiss="modal"></button>
+      </div>
+      <!-- Modal body -->
+      <div class="modal-body pt-2">
+        <div class="row">
+          <div class="col-4">
+            <label class="text-primary">לקוח</label>
+            <input type="text" class="form-control" placeholder="אוטומאטי" />
+          </div>
+        </div>
+        <!--  -->
+        <div class="row">
+          <div class="col-4">
+            <label class="text-primary">שם מוצר </label>
+            <input type="text" class="form-control" placeholder="טקסט" />
+          </div>
+          <div class="col-4">
+            <label class="text-primary">מספר חשבון</label>
+            <input type="text" class="form-control" placeholder="מספר" />
+          </div>
+          <div class="col-4">
+            <label class="text-primary">תאריך הצטרפות </label>
+            <input id="datepicker1" class="form-control" placeholder="dd/mm/yy" />
+          </div>
+        </div>
+        <!--  -->
+        <div class="row">
+          <div class="col-4">
+            <label class="text-primary">סוג מוצר</label>
+            <input type="text" class="form-control" placeholder="טקסט" />
+          </div>
+          <div class="col-4">
+            <label class="text-primary">חברה מנהלת</label>
+            <input type="text" class="form-control" placeholder="טקסט" />
+          </div>
+          <div class="col-4">
+            <label class="text-primary">מספר חברה מנהלת</label>
+            <input type="text" class="form-control" placeholder="מספר" />
+          </div>
+        </div>
+        <!--  -->
+        <div class="row">
+          <div class="col-4">
+            <label class="text-primary">בעלי הרישיון</label>
+            <input type="text" class="form-control" placeholder="טקסט" />
+          </div>
+          <div class="col-4">
+            <label class="text-primary">מספר הרישיון חברה המנהלת</label>
+            <input type="text" class="form-control" placeholder="טקסט" />
+          </div>
+          <div class="col-4">
+            <label class="text-primary">מספר אוצר</label>
+            <input type="text" class="form-control" placeholder="מספר" />
+          </div>
+        </div>
+        <!--  -->
+        <div class="row">
+          <div class="col-4">
+            <label class="text-primary">מעמד</label>
+            <input type="text" class="form-control" placeholder="טקסט" />
+          </div>
+          <div class="col-4">
+            <label class="text-primary">מעמד מספר</label>
+            <input type="text" class="form-control" placeholder="מספר" />
+          </div>
+          <div class="col-4">
+            <label class="text-primary">מסלול</label>
+            <input type="text" class="form-control" placeholder="מספר" />
+          </div>
+        </div>
+        <hr style="border-color: #78849E;" />
+        <!--  -->
+        <h5>פרטי אנונה</h5>
+        <div class="row">
+          <div class="col-2">
+            <label class="text-primary">קבלת אנונה</label>
+            <input type="checkbox" name="status" value="1" class="lcs_check" autocomplete="off" checked />
+          </div>
+          <div class="col-2">
+            <label class="text-primary">אנונה מבוקשת</label>
+            <input type="text" class="form-control" placeholder="NUM" />
+          </div>
+          <div class="col-2">
+            <label class="text-primary">קבלת ריבית</label>
+            <input type="checkbox" name="status" value="1" class="lcs_check" autocomplete="off" checked />
+          </div>
+        </div>
+        <!--  -->
+        <div class="row mt-4">
+          <div class="col-12">
+            <label class="text-primary">הערות</label>
+            <textarea class="form-control" placeholder="TEXT" rows="6"></textarea>
+          </div>
+        </div>
+        <!--  -->
+        <h5 class="mt-4">:בקרות</h5>
+        <div class="row">
+          <div class="col-4">
+            <label class="text-primary">גורם מטפל</label>
+            <select class="form-control">
+              <option>TEXT</option>
+            </select>
+          </div>
+          <div class="col-2">
+            <label class="text-primary">מועד סיום משוער</label>
+            <input id="datepicker47" class="form-control" placeholder="DATE" />
+          </div>
+          <div class="col-2">
+            <label class="text-primary">סטטוס טיפול</label>
+            <select class="form-control">
+              <option>TEXT</option>
+            </select>
+          </div>
+        </div>
+        <!--  -->
+        <div class="row">
+          <div class="col-2">
+            <label class="text-primary">תאריך שליחת הטפסים</label>
+            <input id="datepicker48" class="form-control" placeholder="DATE" />
+          </div>
+        </div>
+        <!--  -->
+        <div class="row">
+          <div class="col-2">
+            <label class="text-primary">מועד קבלה אנינה צפוי</label>
+            <input id="datepicker49" class="form-control" placeholder="DATE" />
+          </div>
+          <div class="col-2">
+            <label class="text-primary">מועד קבלה אנינה בפועל</label>
+            <input id="datepicker50" class="form-control" placeholder="DATE" />
+          </div>
+          <div class="col-2">
+            <label class="text-primary">תאריך תשלום בפועל</label>
+            <input id="datepicker51" class="form-control" placeholder="DATE" />
+          </div>
+        </div>
+        <!--  -->
+        <hr style="border-color: #78849E;" />
+        <!--  -->
+      </div>
+      <div class="modal-footer pt-0">
+        <button class="cs-btn-img btn-save-green float-right ml-auto" data-dismiss="modal"></button>
+        <div class="timestamp font-weight-bold mr-auto">משתמש מבצע, 20/01/2020</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 15. repaymentOfLoanModal -->
+<div class="modal full-modal" id="repaymentOfLoanModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <!-- Modal Header -->
+      <div class="modal-header mt-4 pr-5">
+        <h2 class="title">
+          <span class="">פרעון הלוואה </span>
+        </h2>
+        <button type="button" class="cs-btn-icon btn-close close dark" data-dismiss="modal"></button>
+      </div>
+      <!-- Modal body -->
+      <div class="modal-body pt-2">
+        <div class="row">
+          <div class="col-4">
+            <label class="text-primary">לקוח</label>
+            <input type="text" class="form-control" placeholder="אוטומאטי" />
+          </div>
+        </div>
+        <!--  -->
+        <div class="row">
+          <div class="col-4">
+            <label class="text-primary">שם מוצר </label>
+            <input type="text" class="form-control" placeholder="טקסט" />
+          </div>
+          <div class="col-4">
+            <label class="text-primary">מספר חשבון</label>
+            <input type="text" class="form-control" placeholder="מספר" />
+          </div>
+          <div class="col-4">
+            <label class="text-primary">תאריך הצטרפות </label>
+            <input id="datepicker1" class="form-control" placeholder="dd/mm/yy" />
+          </div>
+        </div>
+        <!--  -->
+        <div class="row">
+          <div class="col-4">
+            <label class="text-primary">סוג מוצר</label>
+            <input type="text" class="form-control" placeholder="טקסט" />
+          </div>
+          <div class="col-4">
+            <label class="text-primary">חברה מנהלת</label>
+            <input type="text" class="form-control" placeholder="טקסט" />
+          </div>
+          <div class="col-4">
+            <label class="text-primary">מספר חברה מנהלת</label>
+            <input type="text" class="form-control" placeholder="מספר" />
+          </div>
+        </div>
+        <!--  -->
+        <div class="row">
+          <div class="col-4">
+            <label class="text-primary">בעלי הרישיון</label>
+            <input type="text" class="form-control" placeholder="טקסט" />
+          </div>
+          <div class="col-4">
+            <label class="text-primary">מספר הרישיון חברה המנהלת</label>
+            <input type="text" class="form-control" placeholder="טקסט" />
+          </div>
+          <div class="col-4">
+            <label class="text-primary">מספר אוצר</label>
+            <input type="text" class="form-control" placeholder="מספר" />
+          </div>
+        </div>
+        <!--  -->
+        <div class="row">
+          <div class="col-4">
+            <label class="text-primary">מעמד</label>
+            <input type="text" class="form-control" placeholder="טקסט" />
+          </div>
+          <div class="col-4">
+            <label class="text-primary">מעמד מספר</label>
+            <input type="text" class="form-control" placeholder="מספר" />
+          </div>
+          <div class="col-4">
+            <label class="text-primary">מסלול</label>
+            <input type="text" class="form-control" placeholder="מספר" />
+          </div>
+        </div>
+        <!--  -->
+        <div class="row">
+          <div class="col-4">
+            <label class="text-primary">סכום הלוואה נוכחי</label>
+            <input type="text" class="form-control" placeholder="טקסט" />
+          </div>
+          <div class="col-4">
+            <label class="text-primary">תאריך סיום הלוואה</label>
+            <input type="text" class="form-control" placeholder="טקסט" />
+          </div>
+        </div>
+        <hr style="border-color: #78849E;" />
+        <!--  -->
+        <h5>פרטי פרעון הלוואה</h5>
+        <div class="row">
+          <div class="col-2">
+            <label class="text-primary">סכום פרעון מבוקש</label>
+            <input type="text" class="form-control" placeholder="NUM" />
+          </div>
+        </div>
+        <!--  -->
+        <div class="row mt-4">
+          <div class="col-12">
+            <label class="text-primary">הערות</label>
+            <textarea class="form-control" placeholder="TEXT" rows="6"></textarea>
+          </div>
+        </div>
+        <!--  -->
+        <h5 class="mt-4">:בקרות</h5>
+        <div class="row">
+          <div class="col-4">
+            <label class="text-primary">גורם מטפל</label>
+            <select class="form-control">
+              <option>TEXT</option>
+            </select>
+          </div>
+          <div class="col-2">
+            <label class="text-primary">מועד סיום משוער</label>
+            <input id="datepicker52" class="form-control" placeholder="DATE" />
+          </div>
+          <div class="col-2">
+            <label class="text-primary">סטטוס טיפול</label>
+            <select class="form-control">
+              <option>TEXT</option>
+            </select>
+          </div>
+        </div>
+        <!--  -->
+        <div class="row">
+          <div class="col-2">
+            <label class="text-primary">אשור פרעון</label>
+            <input type="checkbox" name="status" value="1" class="lcs_check" autocomplete="off" checked />
+          </div>
+        </div>
+        <!--  -->
+        <div class="row">
+          <div class="col-2">
+            <label class="text-primary">מועד משוער לפרעון</label>
+            <input id="datepicker53" class="form-control" placeholder="DATE" />
+          </div>
+          <div class="col-2">
+            <label class="text-primary">מועד פרעון בפועל</label>
+            <input id="datepicker54" class="form-control" placeholder="DATE" />
+          </div>
+        </div>
+        <!--  -->
+        <hr style="border-color: #78849E;" />
+        <!--  -->
+      </div>
+      <div class="modal-footer pt-0">
+        <button class="cs-btn-img btn-save-green float-right ml-auto" data-dismiss="modal"></button>
+        <div class="timestamp font-weight-bold mr-auto">משתמש מבצע, 20/01/2020</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 <!-- plugin js -->
 <script type="text/javascript" src="../assets/plugins/DataTables/datatables.min.js"></script>
 <script src="../assets/plugins/bar-rating/jquery.barrating.js"></script>
@@ -249,6 +2972,58 @@
   // datepicker init
   $('#datepicker1').datepicker({ uiLibrary: 'bootstrap4' });
   $('#datepicker2').datepicker({ uiLibrary: 'bootstrap4' });
+  $('#datepicker3').datepicker({ uiLibrary: 'bootstrap4' });
+  $('#datepicker4').datepicker({ uiLibrary: 'bootstrap4' });
+  $('#datepicker5').datepicker({ uiLibrary: 'bootstrap4' });
+  $('#datepicker6').datepicker({ uiLibrary: 'bootstrap4' });
+  $('#datepicker7').datepicker({ uiLibrary: 'bootstrap4' });
+  $('#datepicker8').datepicker({ uiLibrary: 'bootstrap4' });
+  $('#datepicker9').datepicker({ uiLibrary: 'bootstrap4' });
+  $('#datepicker10').datepicker({ uiLibrary: 'bootstrap4' });
+  $('#datepicker11').datepicker({ uiLibrary: 'bootstrap4' });
+  $('#datepicker12').datepicker({ uiLibrary: 'bootstrap4' });
+  $('#datepicker13').datepicker({ uiLibrary: 'bootstrap4' });
+  $('#datepicker14').datepicker({ uiLibrary: 'bootstrap4' });
+  $('#datepicker15').datepicker({ uiLibrary: 'bootstrap4' });
+  $('#datepicker16').datepicker({ uiLibrary: 'bootstrap4' });
+  $('#datepicker17').datepicker({ uiLibrary: 'bootstrap4' });
+  $('#datepicker18').datepicker({ uiLibrary: 'bootstrap4' });
+  $('#datepicker19').datepicker({ uiLibrary: 'bootstrap4' });
+  $('#datepicker20').datepicker({ uiLibrary: 'bootstrap4' });
+  $('#datepicker21').datepicker({ uiLibrary: 'bootstrap4' });
+  $('#datepicker22').datepicker({ uiLibrary: 'bootstrap4' });
+  $('#datepicker23').datepicker({ uiLibrary: 'bootstrap4' });
+  $('#datepicker24').datepicker({ uiLibrary: 'bootstrap4' });
+  $('#datepicker25').datepicker({ uiLibrary: 'bootstrap4' });
+  $('#datepicker26').datepicker({ uiLibrary: 'bootstrap4' });
+  $('#datepicker27').datepicker({ uiLibrary: 'bootstrap4' });
+  $('#datepicker28').datepicker({ uiLibrary: 'bootstrap4' });
+  $('#datepicker29').datepicker({ uiLibrary: 'bootstrap4' });
+  $('#datepicker30').datepicker({ uiLibrary: 'bootstrap4' });
+  $('#datepicker31').datepicker({ uiLibrary: 'bootstrap4' });
+  $('#datepicker32').datepicker({ uiLibrary: 'bootstrap4' });
+  $('#datepicker33').datepicker({ uiLibrary: 'bootstrap4' });
+  $('#datepicker34').datepicker({ uiLibrary: 'bootstrap4' });
+  $('#datepicker35').datepicker({ uiLibrary: 'bootstrap4' });
+  $('#datepicker36').datepicker({ uiLibrary: 'bootstrap4' });
+  $('#datepicker37').datepicker({ uiLibrary: 'bootstrap4' });
+  $('#datepicker38').datepicker({ uiLibrary: 'bootstrap4' });
+  $('#datepicker39').datepicker({ uiLibrary: 'bootstrap4' });
+  $('#datepicker40').datepicker({ uiLibrary: 'bootstrap4' });
+  $('#datepicker41').datepicker({ uiLibrary: 'bootstrap4' });
+  $('#datepicker42').datepicker({ uiLibrary: 'bootstrap4' });
+  $('#datepicker43').datepicker({ uiLibrary: 'bootstrap4' });
+  $('#datepicker44').datepicker({ uiLibrary: 'bootstrap4' });
+  $('#datepicker45').datepicker({ uiLibrary: 'bootstrap4' });
+  $('#datepicker46').datepicker({ uiLibrary: 'bootstrap4' });
+  $('#datepicker47').datepicker({ uiLibrary: 'bootstrap4' });
+  $('#datepicker48').datepicker({ uiLibrary: 'bootstrap4' });
+  $('#datepicker49').datepicker({ uiLibrary: 'bootstrap4' });
+  $('#datepicker50').datepicker({ uiLibrary: 'bootstrap4' });
+  $('#datepicker51').datepicker({ uiLibrary: 'bootstrap4' });
+  $('#datepicker52').datepicker({ uiLibrary: 'bootstrap4' });
+  $('#datepicker53').datepicker({ uiLibrary: 'bootstrap4' });
+  $('#datepicker54').datepicker({ uiLibrary: 'bootstrap4' });
   // datatable init
   $(document).ready(function() {
     $('.datatable').DataTable({
@@ -262,6 +3037,46 @@
   // autocomplete form-control proximity
   var search_list_for_exe_monitoring = ["מוצר חדש", "גמל / השתלמות / פיצוים", "פוליסת חיסכון ", "תיק מנוהל ", "פוליסת ביטוח - חיסכון ", "קרן פנסיה ", "פוליסת ביטוח ", "IRA", "קרן אלטרנטיבית", "השקעת נדל\"ן"];
   autocomplete(document.getElementById("search"), search_list_for_exe_monitoring);
+</script>
+<script type="text/javascript">
+  $(document).ready(function(e) {
+    $('input.lcs_check').lc_switch('כן', 'לא');
+    // rerender lcs switches
+    var lcs_switches = $('.lcs_switch');
+    for(var i = 0; i < lcs_switches.length; i++) {
+      if($(lcs_switches[i]).hasClass('lcs_on')) {
+        $(lcs_switches[i]).find('.lcs_cursor').text($(lcs_switches[i]).find('.lcs_label_off').text());
+      } else {
+        $(lcs_switches[i]).find('.lcs_cursor').text($(lcs_switches[i]).find('.lcs_label_on').text());
+      }
+    }
+
+    // triggered each time a field changes status
+    $(document).on('lcs-statuschange', '.lcs_check', function() {
+      var status 	= ($(this).is(':checked')) ? 'checked' : 'unchecked',
+      subj 	= ($(this).attr('type') == 'radio') ? 'radio #' : 'checkbox #',
+      num		= $(this).val(); 
+          
+      $('#third_div ul').prepend('<li><em>[lcs-statuschange]</em>'+ subj + num +' changed status: '+ status +'</li>');
+    });
+    
+    // triggered each time a field is checked
+    $(document).on('lcs-on', '.lcs_check', function() {
+      var subj 	= ($(this).attr('type') == 'radio') ? 'radio #' : 'checkbox #',
+        num		= $(this).val(); 
+      $('#third_div ul').prepend('<li><em>[lcs-on]</em>'+ subj + num +' is checked</li>');
+      $(this).closest('.lcs_wrap').find('.lcs_cursor').text($(this).closest('.lcs_wrap').find('.lcs_label_off').text());
+    });
+    
+    
+    // triggered each time a is unchecked
+    $(document).on('lcs-off', '.lcs_check', function() {
+      var subj 	= ($(this).attr('type') == 'radio') ? 'radio #' : 'checkbox #',
+      num		= $(this).val(); 
+      $('#third_div ul').prepend('<li><em>[lcs-off]</em>'+ subj + num +' is unchecked</li>');
+      $(this).closest('.lcs_wrap').find('.lcs_cursor').text($(this).closest('.lcs_wrap').find('.lcs_label_on').text());
+    });
+  });
 </script>
 <!-- ./script -->
 </body>
