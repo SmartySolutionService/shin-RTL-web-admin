@@ -1628,7 +1628,7 @@
   </div>
 </div>
 
-<!-- IRAModal -->
+<!-- 8. IRAModal -->
 <div class="modal full-modal" id="IRAModal">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -1943,28 +1943,257 @@
   </div>
 </div>
 
-<!-- alternativeFundModal -->
+<!-- 9. alternativeFundModal -->
 <div class="modal full-modal" id="alternativeFundModal">
   <div class="modal-dialog">
     <div class="modal-content">
       <!-- Modal Header -->
-      <div class="modal-header">
+      <div class="modal-header mt-4 pr-5">
         <h2 class="title">
           <span class="">הוספת מוצר מסוג - </span>
-          <span class="text-primary">גמל / השתלמות / פיצוים</span>
+          <span class="text-primary">קרן אלטרנטיבית</span>
         </h2>
         <button type="button" class="cs-btn-icon btn-close close dark" data-dismiss="modal"></button>
       </div>
       <!-- Modal body -->
       <div class="modal-body pt-2">
-        
+        <div class="row">
+          <div class="col-2 d-flex">
+            <label class="text-primary">לקוח</label>
+            <label class="text-value">אוטומאטי</label>
+          </div>
+          <div class="col-4 d-flex">
+            <label class="text-primary">שם מוצר</label>
+            <select class="form-control">
+              <option>קומבו (השלמה אוטומאטית) תצוגה מספר + שם</option>
+            </select>
+          </div>
+          <div class="col-3 d-flex">
+            <label class="text-primary">גורם מטפל</label>
+            <select class="form-control">
+              <option>גורם מטפל</option>
+            </select>
+          </div>
+        </div>
+        <hr style="border-color: #78849E;" />
+        <!--  -->
+        <div class="row">
+          <div class="col-4">
+            <label class="text-primary">חברה מנהלת</label>
+            <input type="text" class="form-control" placeholder="TEXT" />
+          </div>
+          <div class="col-2">
+            <label class="text-primary">מספר רשיון בחברה מנהלת</label>
+            <label class="text-value w-100">NUM</label>
+          </div>
+          <div class="col-3">
+            <label class="text-primary">בעל רשיון</label>
+            <select class="form-control">
+              <option>TEXT</option>
+            </select>
+          </div>
+        </div>
+        <!--  -->
+        <div class="row">
+          <div class="col-4">
+            <label class="text-primary">מועמד במוצר</label>
+            <input type="text" class="form-control" placeholder="TEXT" />
+          </div>
+          <div class="col-2">
+            <label class="text-primary">ISN</label>
+            <input type="text" class="form-control" placeholder="TEXT" />
+          </div>
+          <div class="col-3">
+            <label class="text-primary">מעמד מספר</label>
+            <select class="form-control">
+              <option>NUM</option>
+            </select>
+          </div>
+        </div>
+        <!--  -->
+        <div class="row">
+          <div class="col-2">
+            <label class="text-primary">שער מטבע הרכישה </label>
+            <input type="type" class="form-control" placeholder="NUM" />
+          </div>
+          <div class="col-2">
+            <label class="text-primary">מטבע הרכישה</label>
+            <select class="form-control">
+              <option>NUM</option>
+            </select>
+          </div>
+        </div>
+        <!--  -->
+        <div class="row">
+          <div class="col-2">
+            <label class="text-primary">הפקדה חד פעמית </label>
+            <input type="checkbox" name="status" value="1" class="lcs_check" autocomplete="off" checked />
+          </div>
+          <div class="col-2">
+            <label class="text-primary">סכום הפקדה ח"פ</label>
+            <input type="text" class="form-control" placeholder="NUM" />
+          </div>
+          <div class="col-2">
+            <label class="text-primary">מועד הפקדה ח"פ</label>
+            <input id="datepicker34" class="form-control" placeholder="DATE" />
+          </div>
+          <div class="col-2">
+            <label class="text-primary">מקור הכספים</label>
+            <input type="text" class="form-control" placeholder="TEXT" />
+          </div>
+        </div>
+        <!--  -->
+        <div class="row">
+          <div class="col-2">
+            <label class="text-primary">הפקדות שוטפות </label>
+            <input type="checkbox" name="status" value="1" class="lcs_check" autocomplete="off" checked />
+          </div>
+          <div class="col-2">
+            <label class="text-primary">גובה הפקדה שוטפת</label>
+            <input type="text" class="form-control" placeholder="NUM" />
+          </div>
+        </div>
+        <!--  -->
+        <div class="row">
+          <div class="col-2">
+            <label class="text-primary">אנונה מהמוצר</label>
+            <input type="checkbox" name="status" value="1" class="lcs_check" autocomplete="off" checked />
+          </div>
+          <div class="col-2">
+            <label class="text-primary">סכום אנונה</label>
+            <input type="text" class="form-control" placeholder="NUM" />
+          </div>
+        </div>
+        <!--  -->
+        <div class="row">
+          <div class="col-2">
+            <label class="text-primary">מינוף למוצר</label>
+            <input type="checkbox" name="status" value="1" class="lcs_check" autocomplete="off" checked />
+          </div>
+          <div class="col-2">
+            <label class="text-primary">סכום המינוף </label>
+            <input type="text" class="form-control" placeholder="NUM" />
+          </div>
+          <div class="col-2">
+            <label class="text-primary">מוצר ממונף </label>
+            <select class="form-control">
+              <option>NUM</option>
+            </select>
+          </div>
+          <div class="col-2">
+            <label class="text-primary">חשבון מוצר ממונף</label>
+            <input type="text" class="form-control" placeholder="NUM" />
+          </div>
+        </div>
+        <!--  -->
+        <div class="row">
+          <div class="col-2">
+            <label class="text-primary">ריבית חודשית</label>
+            <input type="checkbox" name="status" value="1" class="lcs_check" autocomplete="off" checked />
+          </div>
+          <div class="col-2">
+            <label class="text-primary">תאריך מינוף</label>
+            <input id="datepicker35" class="form-control" placeholder="DATE" />
+          </div>
+        </div>
+        <!--  -->
+        <div class="row">
+          <div class="col-2">
+            <label class="text-primary">אמצעי תשלום </label>
+            <select class="form-control">
+              <option>TEXT</option>
+            </select>
+          </div>
+          <div class="col-2">
+            <label class="text-primary">תאריך הפקדה </label>
+            <input id="datepicker36" class="form-control" placeholder="DATE" />
+          </div>
+          <div class="col-2">
+            <label class="text-primary">חודש הצטרפות </label>
+            <input id="datepicker37" class="form-control" placeholder="DATE" />
+          </div>
+        </div>
+        <hr style="border-color: #78849E;" />
+        <!--  -->
+        <h5 class="mt-4">:בקרות</h5>
+        <div class="row">
+          <div class="col-2">
+            <label class="text-primary">תאריך הקמה / משלוח </label>
+            <input id="datepicker38" class="form-control" placeholder="DATE" />
+          </div>
+          <div class="col-2">
+            <label class="text-primary">פתיחת חשבון </label>
+            <input type="checkbox" name="status" value="1" class="lcs_check" autocomplete="off" checked />
+          </div>
+          <div class="col-2">
+            <label class="text-primary">סכום הפקדה בפועל</label>
+            <input type="text" class="form-control" placeholder="NUM" />
+          </div>
+          <div class="col-2">
+            <label class="text-primary">בקרת חיוב ראשון </label>
+            <input type="checkbox" name="status" value="1" class="lcs_check" autocomplete="off" checked />
+          </div>
+          <div class="col-2">
+            <label class="text-primary">בקרת קבלת אסמכתא</label>
+            <input type="checkbox" name="status" value="1" class="lcs_check" autocomplete="off" checked />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-2">
+            <label class="text-primary">בקרת אנונה / ריבית</label>
+            <input type="checkbox" name="status" value="1" class="lcs_check" autocomplete="off" checked />
+          </div>
+          <div class="col-2">
+            <label class="text-primary">בקרת שיוך לקוח </label>
+            <input type="checkbox" name="status" value="1" class="lcs_check" autocomplete="off" checked />
+          </div>
+          <div class="col-2">
+            <label class="text-primary">מועד סיום משוער</label>
+            <input id="datepicker39" class="form-control" placeholder="DATE" />
+          </div>
+          <div class="col-2">
+            <label class="text-primary">סטטוס טיפול</label>
+            <select class="form-control">
+              <option>TEXT</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-2">
+            <label class="text-primary">תאריך שליחת המסמכים ללקוח</label>
+            <input id="datepicker40" class="form-control" placeholder="DATE" />
+          </div>
+          <div class="col-2">
+            <label class="text-primary">תאריך חתימה הלקוח על המסמכים</label>
+            <input id="datepicker41" class="form-control" placeholder="DATE" />
+          </div>
+          <div class="col-2">
+            <label class="text-primary">תאריך העברה לאדמיניסטרור</label>
+            <input id="datepicker42" class="form-control" placeholder="DATE" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-2">
+            <label class="text-primary">תאריך הפקדה</label>
+            <input id="datepicker43" class="form-control" placeholder="DATE" />
+          </div>
+          <div class="col-2">
+            <label class="text-primary">תאריך אישור הפקדה ללקוח</label>
+            <input id="datepicker44" class="form-control" placeholder="DATE" />
+          </div>
+        </div>
+        <hr style="border-color: #78849E;" />
+        <!--  -->
       </div>
-      
+      <div class="modal-footer pt-0">
+        <button class="cs-btn-img btn-save-green float-right ml-auto" data-dismiss="modal"></button>
+        <div class="timestamp font-weight-bold mr-auto">משתמש מבצע, 20/01/2020</div>
+      </div>
     </div>
   </div>
 </div>
 
-<!-- realEstateInvestmentModal -->
+<!-- 10. realEstateInvestmentModal -->
 <div class="modal full-modal" id="realEstateInvestmentModal">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -2035,6 +2264,17 @@
   $('#datepicker31').datepicker({ uiLibrary: 'bootstrap4' });
   $('#datepicker32').datepicker({ uiLibrary: 'bootstrap4' });
   $('#datepicker33').datepicker({ uiLibrary: 'bootstrap4' });
+  $('#datepicker34').datepicker({ uiLibrary: 'bootstrap4' });
+  $('#datepicker35').datepicker({ uiLibrary: 'bootstrap4' });
+  $('#datepicker36').datepicker({ uiLibrary: 'bootstrap4' });
+  $('#datepicker37').datepicker({ uiLibrary: 'bootstrap4' });
+  $('#datepicker38').datepicker({ uiLibrary: 'bootstrap4' });
+  $('#datepicker39').datepicker({ uiLibrary: 'bootstrap4' });
+  $('#datepicker40').datepicker({ uiLibrary: 'bootstrap4' });
+  $('#datepicker41').datepicker({ uiLibrary: 'bootstrap4' });
+  $('#datepicker42').datepicker({ uiLibrary: 'bootstrap4' });
+  $('#datepicker43').datepicker({ uiLibrary: 'bootstrap4' });
+  $('#datepicker44').datepicker({ uiLibrary: 'bootstrap4' });
   // datatable init
   $(document).ready(function() {
     $('.datatable').DataTable({
