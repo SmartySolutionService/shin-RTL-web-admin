@@ -574,7 +574,16 @@
     }
 }
 
-#newProductModal {
+#newProductModal, 
+#providentEducationCompensationModal, 
+#savingPolicyModal, 
+#managedPortfolioModal, 
+#insurancePolicySavingsModal, 
+#pensionFundModal, 
+#insurancePolicyModal, 
+#IRAModal, 
+#alternativeFundModal, 
+#realEstateInvestmentModal {
     .lcs_switch {
         border-radius: 4px;
         width: 100px;
@@ -618,5 +627,13 @@
                 top: 10px;
             }
         }
+    }
+    .radio-label {
+        padding: 0 10px;
+        font-weight: 600;
+    }
+    input[type=radio] {
+        width: 25px;
+        height: 25px;
     }
 }

@@ -532,23 +532,68 @@
   margin: 0px;
 }
 
-#newProductModal .lcs_switch {
+#newProductModal .lcs_switch,
+#providentEducationCompensationModal .lcs_switch,
+#savingPolicyModal .lcs_switch,
+#managedPortfolioModal .lcs_switch,
+#insurancePolicySavingsModal .lcs_switch,
+#pensionFundModal .lcs_switch,
+#insurancePolicyModal .lcs_switch,
+#IRAModal .lcs_switch,
+#alternativeFundModal .lcs_switch,
+#realEstateInvestmentModal .lcs_switch {
   border-radius: 4px;
   width: 100px;
   height: 30px;
   -webkit-box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.15);
   box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.15);
 }
-#newProductModal .lcs_switch.lcs_off .lcs_cursor {
+#newProductModal .lcs_switch.lcs_off .lcs_cursor,
+#providentEducationCompensationModal .lcs_switch.lcs_off .lcs_cursor,
+#savingPolicyModal .lcs_switch.lcs_off .lcs_cursor,
+#managedPortfolioModal .lcs_switch.lcs_off .lcs_cursor,
+#insurancePolicySavingsModal .lcs_switch.lcs_off .lcs_cursor,
+#pensionFundModal .lcs_switch.lcs_off .lcs_cursor,
+#insurancePolicyModal .lcs_switch.lcs_off .lcs_cursor,
+#IRAModal .lcs_switch.lcs_off .lcs_cursor,
+#alternativeFundModal .lcs_switch.lcs_off .lcs_cursor,
+#realEstateInvestmentModal .lcs_switch.lcs_off .lcs_cursor {
   left: 0px;
 }
-#newProductModal .lcs_switch.lcs_on {
+#newProductModal .lcs_switch.lcs_on,
+#providentEducationCompensationModal .lcs_switch.lcs_on,
+#savingPolicyModal .lcs_switch.lcs_on,
+#managedPortfolioModal .lcs_switch.lcs_on,
+#insurancePolicySavingsModal .lcs_switch.lcs_on,
+#pensionFundModal .lcs_switch.lcs_on,
+#insurancePolicyModal .lcs_switch.lcs_on,
+#IRAModal .lcs_switch.lcs_on,
+#alternativeFundModal .lcs_switch.lcs_on,
+#realEstateInvestmentModal .lcs_switch.lcs_on {
   background-color: #7ABCFF;
 }
-#newProductModal .lcs_switch.lcs_on .lcs_cursor {
+#newProductModal .lcs_switch.lcs_on .lcs_cursor,
+#providentEducationCompensationModal .lcs_switch.lcs_on .lcs_cursor,
+#savingPolicyModal .lcs_switch.lcs_on .lcs_cursor,
+#managedPortfolioModal .lcs_switch.lcs_on .lcs_cursor,
+#insurancePolicySavingsModal .lcs_switch.lcs_on .lcs_cursor,
+#pensionFundModal .lcs_switch.lcs_on .lcs_cursor,
+#insurancePolicyModal .lcs_switch.lcs_on .lcs_cursor,
+#IRAModal .lcs_switch.lcs_on .lcs_cursor,
+#alternativeFundModal .lcs_switch.lcs_on .lcs_cursor,
+#realEstateInvestmentModal .lcs_switch.lcs_on .lcs_cursor {
   left: 50px;
 }
-#newProductModal .lcs_switch .lcs_cursor {
+#newProductModal .lcs_switch .lcs_cursor,
+#providentEducationCompensationModal .lcs_switch .lcs_cursor,
+#savingPolicyModal .lcs_switch .lcs_cursor,
+#managedPortfolioModal .lcs_switch .lcs_cursor,
+#insurancePolicySavingsModal .lcs_switch .lcs_cursor,
+#pensionFundModal .lcs_switch .lcs_cursor,
+#insurancePolicyModal .lcs_switch .lcs_cursor,
+#IRAModal .lcs_switch .lcs_cursor,
+#alternativeFundModal .lcs_switch .lcs_cursor,
+#realEstateInvestmentModal .lcs_switch .lcs_cursor {
   border-radius: 0px;
   height: 30px;
   width: 50px;
@@ -558,17 +603,70 @@
   padding: 5px;
   font-weight: bold;
 }
-#newProductModal .lcs_switch .lcs_label {
+#newProductModal .lcs_switch .lcs_label,
+#providentEducationCompensationModal .lcs_switch .lcs_label,
+#savingPolicyModal .lcs_switch .lcs_label,
+#managedPortfolioModal .lcs_switch .lcs_label,
+#insurancePolicySavingsModal .lcs_switch .lcs_label,
+#pensionFundModal .lcs_switch .lcs_label,
+#insurancePolicyModal .lcs_switch .lcs_label,
+#IRAModal .lcs_switch .lcs_label,
+#alternativeFundModal .lcs_switch .lcs_label,
+#realEstateInvestmentModal .lcs_switch .lcs_label {
   top: 0px;
 }
-#newProductModal .btn-delete {
+#newProductModal .btn-delete,
+#providentEducationCompensationModal .btn-delete,
+#savingPolicyModal .btn-delete,
+#managedPortfolioModal .btn-delete,
+#insurancePolicySavingsModal .btn-delete,
+#pensionFundModal .btn-delete,
+#insurancePolicyModal .btn-delete,
+#IRAModal .btn-delete,
+#alternativeFundModal .btn-delete,
+#realEstateInvestmentModal .btn-delete {
   position: relative;
   margin-top: 5px !important;
   width: 30px;
   height: 30px;
 }
-#newProductModal .gj-datepicker .input-group-append .gj-icon {
+#newProductModal .gj-datepicker .input-group-append .gj-icon,
+#providentEducationCompensationModal .gj-datepicker .input-group-append .gj-icon,
+#savingPolicyModal .gj-datepicker .input-group-append .gj-icon,
+#managedPortfolioModal .gj-datepicker .input-group-append .gj-icon,
+#insurancePolicySavingsModal .gj-datepicker .input-group-append .gj-icon,
+#pensionFundModal .gj-datepicker .input-group-append .gj-icon,
+#insurancePolicyModal .gj-datepicker .input-group-append .gj-icon,
+#IRAModal .gj-datepicker .input-group-append .gj-icon,
+#alternativeFundModal .gj-datepicker .input-group-append .gj-icon,
+#realEstateInvestmentModal .gj-datepicker .input-group-append .gj-icon {
   top: 10px;
+}
+#newProductModal .radio-label,
+#providentEducationCompensationModal .radio-label,
+#savingPolicyModal .radio-label,
+#managedPortfolioModal .radio-label,
+#insurancePolicySavingsModal .radio-label,
+#pensionFundModal .radio-label,
+#insurancePolicyModal .radio-label,
+#IRAModal .radio-label,
+#alternativeFundModal .radio-label,
+#realEstateInvestmentModal .radio-label {
+  padding: 0 10px;
+  font-weight: 600;
+}
+#newProductModal input[type=radio],
+#providentEducationCompensationModal input[type=radio],
+#savingPolicyModal input[type=radio],
+#managedPortfolioModal input[type=radio],
+#insurancePolicySavingsModal input[type=radio],
+#pensionFundModal input[type=radio],
+#insurancePolicyModal input[type=radio],
+#IRAModal input[type=radio],
+#alternativeFundModal input[type=radio],
+#realEstateInvestmentModal input[type=radio] {
+  width: 25px;
+  height: 25px;
 }
 
 /*# sourceMappingURL=action.css.map */
