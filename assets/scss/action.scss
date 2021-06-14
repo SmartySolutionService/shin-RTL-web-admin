@@ -90,7 +90,7 @@
                         border-radius: 8px;
                     }
                 }
-                .autocomplete-form {
+                .searchable-dropdown-form {
                     &.invalid {
                         .form-control {
                             border: 1px solid #ced4da !important;
@@ -111,7 +111,8 @@
                             }
                         }
                     }
-                    .autocomplete {
+                    .searchable-dropdown {
+                        position: relative;
                         .ic-search {
                             position: absolute;
                             top: 10px;
@@ -119,8 +120,36 @@
                         }
                         .form-control {
                             color: #485272 !important;
-                            min-width: 200px;
+                            min-width: 220px;
                             border-radius: 8px;
+                        }
+                        .dropdown-content {
+                            position: absolute;
+                            display: block;
+                            width: 220px;
+                            top: 37px;
+                            right: 0px;
+                            background-color: #ffffff;
+                            border: solid 1px #ced4da;
+                            z-index: 1000;
+                            border-bottom-left-radius: 10px;
+                            border-bottom-right-radius: 10px;
+                            .content-item {
+                                position: relative;
+                                display: block;
+                                width: 100%;
+                                padding: 3px 15px;
+                                &:hover, &:active, &.active {
+                                    font-weight: bold;
+                                    cursor: pointer;
+                                }
+                                &:first-child {
+                                    margin-top: 10px;
+                                }
+                                &:last-child {
+                                    margin-bottom: 10px;
+                                }
+                            }
                         }
                     }
                 }
@@ -426,6 +455,7 @@
         }
     }
 }
+
 #CRMreminderModal {
     .modal-dialog {
         width: 740px !important;
@@ -525,6 +555,55 @@
                     outline: none;
                 }
             }
+        }
+    }
+}
+
+.full-modal {
+    .modal-dialog {
+        width: 100%;
+        .modal-body {
+            text-align: right;
+            label {
+                min-width: 100px;
+                font-weight: bold;
+                padding: 5px;
+                margin: 0px;
+            }
+        }
+    }
+}
+
+#newProductModal {
+    .lcs_switch {
+        border-radius: 4px;
+        width: 100px;
+        height: 30px;
+        -webkit-box-shadow: 0px 0px 6px 3px rgba(0,0,0,0.15); 
+        box-shadow: 0px 0px 6px 3px rgba(0,0,0,0.15);
+        &.lcs_off {
+            .lcs_cursor {
+                left: 0px;
+            }
+        }
+        &.lcs_on {
+            background-color: #7ABCFF;
+            .lcs_cursor {
+                left: 50px;
+            }
+        }
+        .lcs_cursor {
+            border-radius: 0px;
+            height: 30px;
+            width: 50px;
+            top: 0px;
+            font-size: 12px;
+            text-align: center;
+            padding: 5px;
+            font-weight: bold;
+        }
+        .lcs_label {
+            top: 0px;
         }
     }
 }
