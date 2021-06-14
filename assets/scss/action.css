@@ -561,5 +561,14 @@
 #newProductModal .lcs_switch .lcs_label {
   top: 0px;
 }
+#newProductModal .btn-delete {
+  position: relative;
+  margin-top: 5px !important;
+  width: 30px;
+  height: 30px;
+}
+#newProductModal .gj-datepicker .input-group-append .gj-icon {
+  top: 10px;
+}
 
 /*# sourceMappingURL=action.css.map */

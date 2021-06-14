@@ -606,4 +606,17 @@
             top: 0px;
         }
     }
+    .btn-delete {
+        position: relative;
+        margin-top: 5px !important;
+        width: 30px;
+        height: 30px;
+    }
+    .gj-datepicker {
+        .input-group-append {
+            .gj-icon {
+                top: 10px;
+            }
+        }
+    }
 }

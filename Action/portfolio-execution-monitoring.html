@@ -249,7 +249,7 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <!-- Modal Header -->
-      <div class="modal-header">
+      <div class="modal-header mt-4 pr-5">
         <h2 class="title">
           <span class="">הוספת מוצר מסוג - </span>
           <span class="text-primary">גמל / השתלמות / פיצוים</span>
@@ -355,7 +355,7 @@
               <div class="col-3">
                 <label class="text-primary"> % הפקדה ח"פ </label>
               </div>
-              <div class="col-3">
+              <div class="col-2">
                 <label class="text-primary">הפקדה שוטפת</label>
               </div>
               <div class="col-3">
@@ -386,7 +386,7 @@
               <div class="col-3">
                 <input type="text" class="form-control" placeholder="%" />
               </div>
-              <div class="col-3">
+              <div class="col-2">
                 <input type="checkbox" name="status" value="1" class="lcs_check" autocomplete="off" checked />
               </div>
               <div class="col-3">
@@ -398,33 +398,38 @@
             </div>
           </div>
         </div>
-        <div class="row mt-2">
-          <div class="col-5">
-            <div class="row">
-              <div class="col-8">
-                <div class="d-flex">
-                  <div class="text-primary py-2 pl-3">2.</div>
-                  <input type="text" class="form-control" placeholder="TEXT" />
+        <div id="deposit-routes-wrapper">
+          <div class="row mt-2 route-item">
+            <div class="col-5">
+              <div class="row">
+                <div class="col-8">
+                  <div class="d-flex">
+                    <div class="text-primary py-2 pl-3">2.</div>
+                    <input type="text" class="form-control" placeholder="TEXT" />
+                  </div>
+                </div>
+                <div class="col-4">
+                  <input type="text" class="form-control" placeholder="NUM" />
                 </div>
               </div>
-              <div class="col-4">
-                <input type="text" class="form-control" placeholder="NUM" />
-              </div>
             </div>
-          </div>
-          <div class="col-7">
-            <div class="row">
-              <div class="col-3">
-                <input type="text" class="form-control" placeholder="%" />
-              </div>
-              <div class="col-3">
-                <input type="checkbox" name="status" value="1" class="lcs_check" autocomplete="off" checked />
-              </div>
-              <div class="col-3">
-                <input type="text" class="form-control" placeholder="NUM" />
-              </div>
-              <div class="col-3">
-                <input type="text" class="form-control" placeholder="%" />
+            <div class="col-7">
+              <div class="row">
+                <div class="col-3">
+                  <input type="text" class="form-control" placeholder="%" />
+                </div>
+                <div class="col-2">
+                  <input type="checkbox" name="status" value="1" class="lcs_check" autocomplete="off" checked />
+                </div>
+                <div class="col-3">
+                  <input type="text" class="form-control" placeholder="NUM" />
+                </div>
+                <div class="col-3">
+                  <input type="text" class="form-control" placeholder="%" />
+                </div>
+                <div class="col-1">
+                  <a class="cs-btn-icon btn-delete m-0" href="javascript:void(0)"></a>
+                </div>
               </div>
             </div>
           </div>
@@ -512,7 +517,7 @@
           </div>
           <div class="col-2">
             <label class="text-primary">מועד סיום משוער</label>
-            <select id="datepicker4" class="form-control">
+            <select class="form-control">
               <option>TEXT</option>
             </select>
           </div>
@@ -827,6 +832,11 @@
       $('#third_div ul').prepend('<li><em>[lcs-off]</em>'+ subj + num +' is unchecked</li>');
       $(this).closest('.lcs_wrap').find('.lcs_cursor').text($(this).closest('.lcs_wrap').find('.lcs_label_on').text());
     });
+  });
+</script>
+<script>
+  $(document).on('click', '#deposit-routes-wrapper .btn-delete', function(e) {
+    $(this).closest('.route-item').remove();
   });
 </script>
 <!-- ./script -->
