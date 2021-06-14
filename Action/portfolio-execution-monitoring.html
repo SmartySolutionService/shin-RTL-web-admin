@@ -2198,18 +2198,228 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <!-- Modal Header -->
-      <div class="modal-header">
+      <div class="modal-header mt-4 pr-5">
         <h2 class="title">
           <span class="">הוספת מוצר מסוג - </span>
-          <span class="text-primary">גמל / השתלמות / פיצוים</span>
+          <span class="text-primary">השקעת נדל"ן</span>
         </h2>
         <button type="button" class="cs-btn-icon btn-close close dark" data-dismiss="modal"></button>
       </div>
       <!-- Modal body -->
       <div class="modal-body pt-2">
-        
+        <div class="row">
+          <div class="col-2 d-flex">
+            <label class="text-primary">לקוח</label>
+            <label class="text-value">אוטומאטי</label>
+          </div>
+          <div class="col-4 d-flex">
+            <label class="text-primary">שם מוצר</label>
+            <select class="form-control">
+              <option>קומבו (השלמה אוטומאטית) תצוגה מספר + שם</option>
+            </select>
+          </div>
+          <div class="col-3 d-flex">
+            <label class="text-primary">גורם מטפל</label>
+            <select class="form-control">
+              <option>גורם מטפל</option>
+            </select>
+          </div>
+        </div>
+        <hr style="border-color: #78849E;" />
+        <!--  -->
+        <div class="row">
+          <div class="col-4">
+            <label class="text-primary">שם החברה</label>
+            <input type="text" class="form-control" placeholder="TEXT" />
+          </div>
+          <div class="col-3">
+            <label class="text-primary">שם הפרוייקט</label>
+            <input type="text" class="form-control" />
+          </div>
+          <div class="col-2">
+            <label class="text-primary">שם הפרוייקט</label>
+            <select class="form-control">
+              <option>TEXT</option>
+            </select>
+          </div>
+        </div>
+        <!--  -->
+        <div class="row">
+          <div class="col-4">
+            <label class="text-primary">מעמד במוצר</label>
+            <input type="text" class="form-control" placeholder="TEXT" />
+          </div>
+          <div class="col-2">
+            <label class="text-primary">מטבע רכישה</label>
+            <select class="form-control">
+              <option>TEXT</option>
+            </select>
+          </div>
+          <div class="col-3">
+            <label class="text-primary">סכום התחייבות</label>
+            <input type="text" class="form-control" placeholder="TEXT" />
+          </div>
+        </div>
+        <!--  -->
+        <div class="row">
+          <div class="col-2">
+            <label class="text-primary">קריאה ראשונה</label>
+            <input id="datepicker45" class="form-control" placeholder="DATE" />
+          </div>
+          <div class="col-2">
+            <label class="text-primary">סכום הפקדה ח"פ</label>
+            <input type="text" class="form-control" placeholder="NUM" />
+          </div>
+          <div class="col-2">
+            <label class="text-primary">תאריך הפקדה</label>
+            <input id="datepicker46" class="form-control" placeholder="DATE" />
+          </div>
+          <div class="col-2">
+            <label class="text-primary">מקור הכספים </label>
+            <input type="text" class="form-control" placeholder="TEXT" />
+          </div>
+        </div>
+        <!--  -->
+        <div class="row">
+          <div class="col-2">
+            <label class="text-primary">מועד קלוזינג</label>
+            <input id="datepicker47" class="form-control" placeholder="DATE" />
+          </div>
+          <div class="col-2">
+            <label class="text-primary">תקופת השקעה צפיה</label>
+            <input type="text" class="form-control" placeholder="TEXT" />
+          </div>
+          <div class="col-2">
+            <label class="text-primary">תאריך סיום צפוי</label>
+            <input id="datepicker48" class="form-control" placeholder="DATE" />
+          </div>
+        </div>
+        <!--  -->
+        <div class="row">
+          <div class="col-2">
+            <label class="text-primary">סכום הפקדה ח"פ</label>
+            <input type="text" class="form-control" placeholder="NUM" />
+          </div>
+          <div class="col-2">
+            <label class="text-primary">מועד הפקדה ח"פ</label>
+            <input id="datepicker49" class="form-control" placeholder="DATE" />
+          </div>
+          <div class="col-2">
+            <label class="text-primary">תקופת השקעה צפויה</label>
+            <input id="datepicker50" class="form-control" placeholder="DATE" />
+          </div>
+          <div class="col-2">
+            <label class="text-primary">תאריך סיום צפוי</label>
+            <input id="datepicker51" class="form-control" placeholder="DATE" />
+          </div>
+        </div>
+        <!--  -->
+        <div class="row">
+          <div class="col-2">
+            <label class="text-primary">חלוקה תקופתית</label>
+            <input type="checkbox" name="status" value="1" class="lcs_check" autocomplete="off" checked />
+          </div>
+          <div class="col-2">
+            <label class="text-primary">תדירות חלוקה</label>
+            <input id="datepicker52" class="form-control" placeholder="DATE" />
+          </div>
+          <div class="col-2">
+            <label class="text-primary">חלוקה ראשונה צפויה</label>
+            <input id="datepicker53" class="form-control" placeholder="DATE" />
+          </div>
+          <div class="col-2">
+            <label class="text-primary">מעמד מספר</label>
+            <input type="text" class="form-control" placeholder="TEXT" />
+          </div>
+        </div>
+        <hr style="border-color: #78849E;" />
+        <!--  -->
+        <div class="row mt-4">
+          <div class="col-12">
+            <label class="text-primary">הערות</label>
+            <textarea class="form-control" placeholder="TEXT" rows="6"></textarea>
+          </div>
+        </div>
+        <!--  -->
+        <h5 class="mt-4">:בקרות</h5>
+        <div class="row">
+          <div class="col-2">
+            <label class="text-primary">תאריך הקמה / משלוח </label>
+            <input type="text" id="datepicker54" class="form-control" placeholder="DATE" />
+          </div>
+          <div class="col-2">
+            <label class="text-primary">אשור הצטרפות</label>
+            <div class="row">
+              <div class="col-6 d-flex py-2">
+                <input type="radio" class="form-control" name="radio3" />
+                <span class="radio-label">כן</span>
+              </div>
+              <div class="col-6 d-flex py-2">
+                <input type="radio" class="form-control" name="radio3" checked />
+                <span class="radio-label">לא</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-2">
+            <label class="text-primary">קבלת הסכם השקעה</label>
+            <div class="row">
+              <div class="col-6 d-flex py-2">
+                <input type="radio" class="form-control" name="radio4" />
+                <span class="radio-label">כן</span>
+              </div>
+              <div class="col-6 d-flex py-2">
+                <input type="radio" class="form-control" name="radio4" checked />
+                <span class="radio-label">לא</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-2">
+            <label class="text-primary">בקרת קבלת אסמכתא</label>
+            <div class="row">
+              <div class="col-6 d-flex py-2">
+                <input type="radio" class="form-control" name="radio5" />
+                <span class="radio-label">כן</span>
+              </div>
+              <div class="col-6 d-flex py-2">
+                <input type="radio" class="form-control" name="radio5" checked />
+                <span class="radio-label">לא</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-2">
+            <label class="text-primary">בקרת חלוקה ראשונה</label>
+            <div class="row">
+              <div class="col-6 d-flex py-2">
+                <input type="radio" class="form-control" name="radio6" />
+                <span class="radio-label">כן</span>
+              </div>
+              <div class="col-6 d-flex py-2">
+                <input type="radio" class="form-control" name="radio6" checked />
+                <span class="radio-label">לא</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+        <div class="row">
+          <div class="col-2">
+            <label class="text-primary">מועד סיום משוער</label>
+            <input type="text" id="datepicker55" class="form-control" placeholder="DATE" />
+          </div>
+          <div class="col-2">
+            <label class="text-primary">סטטוס טיפול</label>
+            <select class="form-control">
+              <option>TEXT</option>
+            </select>
+          </div>
+        </div>
+        <hr style="border-color: #78849E;" />
+        <!--  -->
       </div>
-      
+      <div class="modal-footer pt-0">
+        <button class="cs-btn-img btn-save-green float-right ml-auto" data-dismiss="modal"></button>
+        <div class="timestamp font-weight-bold mr-auto">משתמש מבצע, 20/01/2020</div>
+      </div>
     </div>
   </div>
 </div>
@@ -2275,6 +2485,17 @@
   $('#datepicker42').datepicker({ uiLibrary: 'bootstrap4' });
   $('#datepicker43').datepicker({ uiLibrary: 'bootstrap4' });
   $('#datepicker44').datepicker({ uiLibrary: 'bootstrap4' });
+  $('#datepicker45').datepicker({ uiLibrary: 'bootstrap4' });
+  $('#datepicker46').datepicker({ uiLibrary: 'bootstrap4' });
+  $('#datepicker47').datepicker({ uiLibrary: 'bootstrap4' });
+  $('#datepicker48').datepicker({ uiLibrary: 'bootstrap4' });
+  $('#datepicker49').datepicker({ uiLibrary: 'bootstrap4' });
+  $('#datepicker50').datepicker({ uiLibrary: 'bootstrap4' });
+  $('#datepicker51').datepicker({ uiLibrary: 'bootstrap4' });
+  $('#datepicker52').datepicker({ uiLibrary: 'bootstrap4' });
+  $('#datepicker53').datepicker({ uiLibrary: 'bootstrap4' });
+  $('#datepicker54').datepicker({ uiLibrary: 'bootstrap4' });
+  $('#datepicker55').datepicker({ uiLibrary: 'bootstrap4' });
   // datatable init
   $(document).ready(function() {
     $('.datatable').DataTable({
