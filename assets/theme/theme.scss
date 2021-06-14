@@ -164,10 +164,9 @@ body {
                 padding: 0px;
                 li {
                     position: relative;
-                    height: 68px;
+                    min-height: 68px;
                     width: 100%;
-                    padding-top: 15px;
-                    padding-right: 125px;
+                    padding: 15px 125px 15px 0px;
                     // @media (min-width: 1024px) and (max-width: 1279px) {
                     //     padding-right: 100px;
                     //     padding-top: 20px;
@@ -239,6 +238,28 @@ body {
                         &.ic-insurance {
                             background-image: url(../img/icons/ic_insurance.png);
                         }
+                        //
+                        &.ic-bell {
+                            background-image: url(../img/icons/ic_bell.png);
+                        }
+                        &.ic-error {
+                            background-image: url(../img/icons/ic_error.png);
+                        }
+                        &.ic-face {
+                            background-image: url(../img/icons/ic_face.png);
+                        }
+                        &.ic-inbox {
+                            background-image: url(../img/icons/ic_inbox.png);
+                        }
+                        &.ic-mouse {
+                            background-image: url(../img/icons/ic_mouse.png);
+                        }
+                        &.ic-settings {
+                            background-image: url(../img/icons/ic_settings.png);
+                        }
+                        &.ic-unarchive {
+                            background-image: url(../img/icons/ic_unarchive.png);
+                        }
                     }
                     
                     /* actived sidebar icon */
@@ -282,6 +303,28 @@ body {
                             }
                             &.ic-insurance {
                                 background-image: url(../img/icons/ic_insurance_white.png);
+                            }
+                            //
+                            &.ic-bell {
+                                background-image: url(../img/icons/ic_bell_white.png);
+                            }
+                            &.ic-error {
+                                background-image: url(../img/icons/ic_error_white.png);
+                            }
+                            &.ic-face {
+                                background-image: url(../img/icons/ic_face_white.png);
+                            }
+                            &.ic-inbox {
+                                background-image: url(../img/icons/ic_inbox_white.png);
+                            }
+                            &.ic-mouse {
+                                background-image: url(../img/icons/ic_mouse_white.png);
+                            }
+                            &.ic-settings {
+                                background-image: url(../img/icons/ic_settings_white.png);
+                            }
+                            &.ic-unarchive {
+                                background-image: url(../img/icons/ic_unarchive_white.png);
                             }
                         }
                     }
@@ -1839,6 +1882,12 @@ body {
         background-image: url(../img/buttons/btn-adding-product.png);
         &:hover {
             background-image: url(../img/buttons/btn-adding-product-hover.png);
+        }
+    }
+    &.btn-absorption {
+        background-image: url(../img/buttons/btn-absorption.png);
+        &:hover {
+            background-image: url(../img/buttons/btn-absorption-hover.png);
         }
     }
 }

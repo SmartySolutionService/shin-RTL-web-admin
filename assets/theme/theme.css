@@ -10026,10 +10026,9 @@ body .main .sidebar ul {
 }
 body .main .sidebar ul li {
   position: relative;
-  height: 68px;
+  min-height: 68px;
   width: 100%;
-  padding-top: 15px;
-  padding-right: 125px;
+  padding: 15px 125px 15px 0px;
 }
 body .main .sidebar ul li a {
   font-size: 24px;
@@ -10090,6 +10089,27 @@ body .main .sidebar .side-nav li .cs-icon.ic-supervisor-account {
 body .main .sidebar .side-nav li .cs-icon.ic-insurance {
   background-image: url(../img/icons/ic_insurance.png);
 }
+body .main .sidebar .side-nav li .cs-icon.ic-bell {
+  background-image: url(../img/icons/ic_bell.png);
+}
+body .main .sidebar .side-nav li .cs-icon.ic-error {
+  background-image: url(../img/icons/ic_error.png);
+}
+body .main .sidebar .side-nav li .cs-icon.ic-face {
+  background-image: url(../img/icons/ic_face.png);
+}
+body .main .sidebar .side-nav li .cs-icon.ic-inbox {
+  background-image: url(../img/icons/ic_inbox.png);
+}
+body .main .sidebar .side-nav li .cs-icon.ic-mouse {
+  background-image: url(../img/icons/ic_mouse.png);
+}
+body .main .sidebar .side-nav li .cs-icon.ic-settings {
+  background-image: url(../img/icons/ic_settings.png);
+}
+body .main .sidebar .side-nav li .cs-icon.ic-unarchive {
+  background-image: url(../img/icons/ic_unarchive.png);
+}
 body .main .sidebar .side-nav li.active .cs-icon.ic-folder-shared {
   background-image: url(../img/icons/ic_folder_shared_white.png);
 }
@@ -10128,6 +10148,27 @@ body .main .sidebar .side-nav li.active .cs-icon.ic-supervisor-account {
 }
 body .main .sidebar .side-nav li.active .cs-icon.ic-insurance {
   background-image: url(../img/icons/ic_insurance_white.png);
+}
+body .main .sidebar .side-nav li.active .cs-icon.ic-bell {
+  background-image: url(../img/icons/ic_bell_white.png);
+}
+body .main .sidebar .side-nav li.active .cs-icon.ic-error {
+  background-image: url(../img/icons/ic_error_white.png);
+}
+body .main .sidebar .side-nav li.active .cs-icon.ic-face {
+  background-image: url(../img/icons/ic_face_white.png);
+}
+body .main .sidebar .side-nav li.active .cs-icon.ic-inbox {
+  background-image: url(../img/icons/ic_inbox_white.png);
+}
+body .main .sidebar .side-nav li.active .cs-icon.ic-mouse {
+  background-image: url(../img/icons/ic_mouse_white.png);
+}
+body .main .sidebar .side-nav li.active .cs-icon.ic-settings {
+  background-image: url(../img/icons/ic_settings_white.png);
+}
+body .main .sidebar .side-nav li.active .cs-icon.ic-unarchive {
+  background-image: url(../img/icons/ic_unarchive_white.png);
 }
 body .main .app {
   width: calc(100% - 324px);
@@ -11678,6 +11719,12 @@ body .main.open-filter .filter-app {
 }
 .cs-btn-img.btn-adding-product:hover {
   background-image: url(../img/buttons/btn-adding-product-hover.png);
+}
+.cs-btn-img.btn-absorption {
+  background-image: url(../img/buttons/btn-absorption.png);
+}
+.cs-btn-img.btn-absorption:hover {
+  background-image: url(../img/buttons/btn-absorption-hover.png);
 }
 
 .cs-icon {
