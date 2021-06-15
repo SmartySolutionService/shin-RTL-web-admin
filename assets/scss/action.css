@@ -249,6 +249,7 @@
   line-height: 18px;
   font-size: 14px;
   border: solid 1px #F4F7F8;
+  text-align: center;
 }
 .action-page .filter-app .app-body table tbody tr td:first-child .action-control .bubble.bubble-gray {
   background-color: #78849E;
