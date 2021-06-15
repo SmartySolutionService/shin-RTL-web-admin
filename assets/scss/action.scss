@@ -598,7 +598,9 @@
 #managementFeeModal, 
 #loanAcceptanceModal, 
 #annuityModal, 
-#repaymentOfLoanModal {
+#repaymentOfLoanModal, 
+#providentMobilizationModal, 
+#alternativeMobilityModal {
     .lcs_switch {
         border-radius: 4px;
         width: 100px;
@@ -650,5 +652,69 @@
     input[type=radio] {
         width: 25px;
         height: 25px;
+    }
+    .modal-tab {
+        .nav-tabs {
+            border-bottom: solid 17px #7ABBFC;
+            height: 86px;
+            border-top-left-radius: 0.5rem;
+            border-top-right-radius: 0.5rem;
+            @media (min-width: 1600px) and (max-width: 1919px) {
+                height: 70px;
+            }
+            @media (min-width: 1440px) and (max-width: 1599px) {
+                height: 65px;
+            }
+            @media (min-width: 1360px) and (max-width: 1439px) {
+                height: 60px;
+            }
+            @media (max-width: 1359px) {
+                height: 60px;
+            }
+            .nav-link {
+                color: #485272;
+                font-size: 20px;
+                padding: 18px;
+                @media (min-width: 1600px) and (max-width: 1919px) {
+                    font-size: 16px;
+                    padding: 10px 15px;
+                }
+                @media (min-width: 1440px) and (max-width: 1599px) {
+                    font-size: 14px;
+                    padding: 10px 15px;
+                }
+                @media (min-width: 1360px) and (max-width: 1439px) {
+                    font-size: 14px;
+                    padding: 8px 15px;
+                }
+                @media (max-width: 1359px) {
+                    font-size: 12px;
+                    padding: 9px 15px;
+                }
+                &.active {
+                    background-color: #7ABBFC;
+                    border: 0;
+                    color: #FFFFFF;
+                    font-weight: bold;
+                    border-top-left-radius: 0.5rem;
+                    border-top-right-radius: 0.5rem;
+                    
+                }
+                &:hover {
+                    border: 0;
+                }
+            }
+        }
+        .tab-content {
+            .tab-pane {
+                // background-color: #FFFFFF;
+                padding: 25px;
+                // -webkit-box-shadow: 0px 3px 6px rgba(0,0,0,0.16); 
+                // box-shadow: 0px 3px 6px rgba(0,0,0,0.16);
+                overflow-x: auto;
+                padding: 0;
+
+            }
+        }
     }
 }

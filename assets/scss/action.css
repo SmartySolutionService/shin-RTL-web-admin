@@ -556,7 +556,9 @@
 #managementFeeModal .lcs_switch,
 #loanAcceptanceModal .lcs_switch,
 #annuityModal .lcs_switch,
-#repaymentOfLoanModal .lcs_switch {
+#repaymentOfLoanModal .lcs_switch,
+#providentMobilizationModal .lcs_switch,
+#alternativeMobilityModal .lcs_switch {
   border-radius: 4px;
   width: 100px;
   height: 30px;
@@ -587,7 +589,9 @@
 #managementFeeModal .lcs_switch.lcs_off .lcs_cursor,
 #loanAcceptanceModal .lcs_switch.lcs_off .lcs_cursor,
 #annuityModal .lcs_switch.lcs_off .lcs_cursor,
-#repaymentOfLoanModal .lcs_switch.lcs_off .lcs_cursor {
+#repaymentOfLoanModal .lcs_switch.lcs_off .lcs_cursor,
+#providentMobilizationModal .lcs_switch.lcs_off .lcs_cursor,
+#alternativeMobilityModal .lcs_switch.lcs_off .lcs_cursor {
   left: 0px;
 }
 #newProductModal .lcs_switch.lcs_on,
@@ -614,7 +618,9 @@
 #managementFeeModal .lcs_switch.lcs_on,
 #loanAcceptanceModal .lcs_switch.lcs_on,
 #annuityModal .lcs_switch.lcs_on,
-#repaymentOfLoanModal .lcs_switch.lcs_on {
+#repaymentOfLoanModal .lcs_switch.lcs_on,
+#providentMobilizationModal .lcs_switch.lcs_on,
+#alternativeMobilityModal .lcs_switch.lcs_on {
   background-color: #7ABCFF;
 }
 #newProductModal .lcs_switch.lcs_on .lcs_cursor,
@@ -641,7 +647,9 @@
 #managementFeeModal .lcs_switch.lcs_on .lcs_cursor,
 #loanAcceptanceModal .lcs_switch.lcs_on .lcs_cursor,
 #annuityModal .lcs_switch.lcs_on .lcs_cursor,
-#repaymentOfLoanModal .lcs_switch.lcs_on .lcs_cursor {
+#repaymentOfLoanModal .lcs_switch.lcs_on .lcs_cursor,
+#providentMobilizationModal .lcs_switch.lcs_on .lcs_cursor,
+#alternativeMobilityModal .lcs_switch.lcs_on .lcs_cursor {
   left: 50px;
 }
 #newProductModal .lcs_switch .lcs_cursor,
@@ -668,7 +676,9 @@
 #managementFeeModal .lcs_switch .lcs_cursor,
 #loanAcceptanceModal .lcs_switch .lcs_cursor,
 #annuityModal .lcs_switch .lcs_cursor,
-#repaymentOfLoanModal .lcs_switch .lcs_cursor {
+#repaymentOfLoanModal .lcs_switch .lcs_cursor,
+#providentMobilizationModal .lcs_switch .lcs_cursor,
+#alternativeMobilityModal .lcs_switch .lcs_cursor {
   border-radius: 0px;
   height: 30px;
   width: 50px;
@@ -702,7 +712,9 @@
 #managementFeeModal .lcs_switch .lcs_label,
 #loanAcceptanceModal .lcs_switch .lcs_label,
 #annuityModal .lcs_switch .lcs_label,
-#repaymentOfLoanModal .lcs_switch .lcs_label {
+#repaymentOfLoanModal .lcs_switch .lcs_label,
+#providentMobilizationModal .lcs_switch .lcs_label,
+#alternativeMobilityModal .lcs_switch .lcs_label {
   top: 0px;
 }
 #newProductModal .btn-delete,
@@ -729,7 +741,9 @@
 #managementFeeModal .btn-delete,
 #loanAcceptanceModal .btn-delete,
 #annuityModal .btn-delete,
-#repaymentOfLoanModal .btn-delete {
+#repaymentOfLoanModal .btn-delete,
+#providentMobilizationModal .btn-delete,
+#alternativeMobilityModal .btn-delete {
   position: relative;
   margin-top: 5px !important;
   width: 30px;
@@ -759,7 +773,9 @@
 #managementFeeModal .gj-datepicker .input-group-append .gj-icon,
 #loanAcceptanceModal .gj-datepicker .input-group-append .gj-icon,
 #annuityModal .gj-datepicker .input-group-append .gj-icon,
-#repaymentOfLoanModal .gj-datepicker .input-group-append .gj-icon {
+#repaymentOfLoanModal .gj-datepicker .input-group-append .gj-icon,
+#providentMobilizationModal .gj-datepicker .input-group-append .gj-icon,
+#alternativeMobilityModal .gj-datepicker .input-group-append .gj-icon {
   top: 10px;
 }
 #newProductModal .radio-label,
@@ -786,7 +802,9 @@
 #managementFeeModal .radio-label,
 #loanAcceptanceModal .radio-label,
 #annuityModal .radio-label,
-#repaymentOfLoanModal .radio-label {
+#repaymentOfLoanModal .radio-label,
+#providentMobilizationModal .radio-label,
+#alternativeMobilityModal .radio-label {
   padding: 0 10px;
   font-weight: 600;
 }
@@ -814,9 +832,420 @@
 #managementFeeModal input[type=radio],
 #loanAcceptanceModal input[type=radio],
 #annuityModal input[type=radio],
-#repaymentOfLoanModal input[type=radio] {
+#repaymentOfLoanModal input[type=radio],
+#providentMobilizationModal input[type=radio],
+#alternativeMobilityModal input[type=radio] {
   width: 25px;
   height: 25px;
+}
+#newProductModal .modal-tab .nav-tabs,
+#providentEducationCompensationModal .modal-tab .nav-tabs,
+#savingPolicyModal .modal-tab .nav-tabs,
+#managedPortfolioModal .modal-tab .nav-tabs,
+#insurancePolicySavingsModal .modal-tab .nav-tabs,
+#pensionFundModal .modal-tab .nav-tabs,
+#insurancePolicyModal .modal-tab .nav-tabs,
+#IRAModal .modal-tab .nav-tabs,
+#alternativeFundModal .modal-tab .nav-tabs,
+#realEstateInvestmentModal .modal-tab .nav-tabs,
+#financialProductRevenueModal .modal-tab .nav-tabs,
+#alternativeProductRevenueModal .modal-tab .nav-tabs,
+#methodsOfPaymentModal .modal-tab .nav-tabs,
+#appointmentOfOptimizersModal .modal-tab .nav-tabs,
+#fundConsolidationModal .modal-tab .nav-tabs,
+#insuranceProductsModal .modal-tab .nav-tabs,
+#changeOfEmployerModal .modal-tab .nav-tabs,
+#powerOfAttorneyModal .modal-tab .nav-tabs,
+#trackChangeModal .modal-tab .nav-tabs,
+#additionalDepositModal .modal-tab .nav-tabs,
+#allowanceModal .modal-tab .nav-tabs,
+#managementFeeModal .modal-tab .nav-tabs,
+#loanAcceptanceModal .modal-tab .nav-tabs,
+#annuityModal .modal-tab .nav-tabs,
+#repaymentOfLoanModal .modal-tab .nav-tabs,
+#providentMobilizationModal .modal-tab .nav-tabs,
+#alternativeMobilityModal .modal-tab .nav-tabs {
+  border-bottom: solid 17px #7ABBFC;
+  height: 86px;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+@media (min-width: 1600px) and (max-width: 1919px) {
+  #newProductModal .modal-tab .nav-tabs,
+#providentEducationCompensationModal .modal-tab .nav-tabs,
+#savingPolicyModal .modal-tab .nav-tabs,
+#managedPortfolioModal .modal-tab .nav-tabs,
+#insurancePolicySavingsModal .modal-tab .nav-tabs,
+#pensionFundModal .modal-tab .nav-tabs,
+#insurancePolicyModal .modal-tab .nav-tabs,
+#IRAModal .modal-tab .nav-tabs,
+#alternativeFundModal .modal-tab .nav-tabs,
+#realEstateInvestmentModal .modal-tab .nav-tabs,
+#financialProductRevenueModal .modal-tab .nav-tabs,
+#alternativeProductRevenueModal .modal-tab .nav-tabs,
+#methodsOfPaymentModal .modal-tab .nav-tabs,
+#appointmentOfOptimizersModal .modal-tab .nav-tabs,
+#fundConsolidationModal .modal-tab .nav-tabs,
+#insuranceProductsModal .modal-tab .nav-tabs,
+#changeOfEmployerModal .modal-tab .nav-tabs,
+#powerOfAttorneyModal .modal-tab .nav-tabs,
+#trackChangeModal .modal-tab .nav-tabs,
+#additionalDepositModal .modal-tab .nav-tabs,
+#allowanceModal .modal-tab .nav-tabs,
+#managementFeeModal .modal-tab .nav-tabs,
+#loanAcceptanceModal .modal-tab .nav-tabs,
+#annuityModal .modal-tab .nav-tabs,
+#repaymentOfLoanModal .modal-tab .nav-tabs,
+#providentMobilizationModal .modal-tab .nav-tabs,
+#alternativeMobilityModal .modal-tab .nav-tabs {
+    height: 70px;
+  }
+}
+@media (min-width: 1440px) and (max-width: 1599px) {
+  #newProductModal .modal-tab .nav-tabs,
+#providentEducationCompensationModal .modal-tab .nav-tabs,
+#savingPolicyModal .modal-tab .nav-tabs,
+#managedPortfolioModal .modal-tab .nav-tabs,
+#insurancePolicySavingsModal .modal-tab .nav-tabs,
+#pensionFundModal .modal-tab .nav-tabs,
+#insurancePolicyModal .modal-tab .nav-tabs,
+#IRAModal .modal-tab .nav-tabs,
+#alternativeFundModal .modal-tab .nav-tabs,
+#realEstateInvestmentModal .modal-tab .nav-tabs,
+#financialProductRevenueModal .modal-tab .nav-tabs,
+#alternativeProductRevenueModal .modal-tab .nav-tabs,
+#methodsOfPaymentModal .modal-tab .nav-tabs,
+#appointmentOfOptimizersModal .modal-tab .nav-tabs,
+#fundConsolidationModal .modal-tab .nav-tabs,
+#insuranceProductsModal .modal-tab .nav-tabs,
+#changeOfEmployerModal .modal-tab .nav-tabs,
+#powerOfAttorneyModal .modal-tab .nav-tabs,
+#trackChangeModal .modal-tab .nav-tabs,
+#additionalDepositModal .modal-tab .nav-tabs,
+#allowanceModal .modal-tab .nav-tabs,
+#managementFeeModal .modal-tab .nav-tabs,
+#loanAcceptanceModal .modal-tab .nav-tabs,
+#annuityModal .modal-tab .nav-tabs,
+#repaymentOfLoanModal .modal-tab .nav-tabs,
+#providentMobilizationModal .modal-tab .nav-tabs,
+#alternativeMobilityModal .modal-tab .nav-tabs {
+    height: 65px;
+  }
+}
+@media (min-width: 1360px) and (max-width: 1439px) {
+  #newProductModal .modal-tab .nav-tabs,
+#providentEducationCompensationModal .modal-tab .nav-tabs,
+#savingPolicyModal .modal-tab .nav-tabs,
+#managedPortfolioModal .modal-tab .nav-tabs,
+#insurancePolicySavingsModal .modal-tab .nav-tabs,
+#pensionFundModal .modal-tab .nav-tabs,
+#insurancePolicyModal .modal-tab .nav-tabs,
+#IRAModal .modal-tab .nav-tabs,
+#alternativeFundModal .modal-tab .nav-tabs,
+#realEstateInvestmentModal .modal-tab .nav-tabs,
+#financialProductRevenueModal .modal-tab .nav-tabs,
+#alternativeProductRevenueModal .modal-tab .nav-tabs,
+#methodsOfPaymentModal .modal-tab .nav-tabs,
+#appointmentOfOptimizersModal .modal-tab .nav-tabs,
+#fundConsolidationModal .modal-tab .nav-tabs,
+#insuranceProductsModal .modal-tab .nav-tabs,
+#changeOfEmployerModal .modal-tab .nav-tabs,
+#powerOfAttorneyModal .modal-tab .nav-tabs,
+#trackChangeModal .modal-tab .nav-tabs,
+#additionalDepositModal .modal-tab .nav-tabs,
+#allowanceModal .modal-tab .nav-tabs,
+#managementFeeModal .modal-tab .nav-tabs,
+#loanAcceptanceModal .modal-tab .nav-tabs,
+#annuityModal .modal-tab .nav-tabs,
+#repaymentOfLoanModal .modal-tab .nav-tabs,
+#providentMobilizationModal .modal-tab .nav-tabs,
+#alternativeMobilityModal .modal-tab .nav-tabs {
+    height: 60px;
+  }
+}
+@media (max-width: 1359px) {
+  #newProductModal .modal-tab .nav-tabs,
+#providentEducationCompensationModal .modal-tab .nav-tabs,
+#savingPolicyModal .modal-tab .nav-tabs,
+#managedPortfolioModal .modal-tab .nav-tabs,
+#insurancePolicySavingsModal .modal-tab .nav-tabs,
+#pensionFundModal .modal-tab .nav-tabs,
+#insurancePolicyModal .modal-tab .nav-tabs,
+#IRAModal .modal-tab .nav-tabs,
+#alternativeFundModal .modal-tab .nav-tabs,
+#realEstateInvestmentModal .modal-tab .nav-tabs,
+#financialProductRevenueModal .modal-tab .nav-tabs,
+#alternativeProductRevenueModal .modal-tab .nav-tabs,
+#methodsOfPaymentModal .modal-tab .nav-tabs,
+#appointmentOfOptimizersModal .modal-tab .nav-tabs,
+#fundConsolidationModal .modal-tab .nav-tabs,
+#insuranceProductsModal .modal-tab .nav-tabs,
+#changeOfEmployerModal .modal-tab .nav-tabs,
+#powerOfAttorneyModal .modal-tab .nav-tabs,
+#trackChangeModal .modal-tab .nav-tabs,
+#additionalDepositModal .modal-tab .nav-tabs,
+#allowanceModal .modal-tab .nav-tabs,
+#managementFeeModal .modal-tab .nav-tabs,
+#loanAcceptanceModal .modal-tab .nav-tabs,
+#annuityModal .modal-tab .nav-tabs,
+#repaymentOfLoanModal .modal-tab .nav-tabs,
+#providentMobilizationModal .modal-tab .nav-tabs,
+#alternativeMobilityModal .modal-tab .nav-tabs {
+    height: 60px;
+  }
+}
+#newProductModal .modal-tab .nav-tabs .nav-link,
+#providentEducationCompensationModal .modal-tab .nav-tabs .nav-link,
+#savingPolicyModal .modal-tab .nav-tabs .nav-link,
+#managedPortfolioModal .modal-tab .nav-tabs .nav-link,
+#insurancePolicySavingsModal .modal-tab .nav-tabs .nav-link,
+#pensionFundModal .modal-tab .nav-tabs .nav-link,
+#insurancePolicyModal .modal-tab .nav-tabs .nav-link,
+#IRAModal .modal-tab .nav-tabs .nav-link,
+#alternativeFundModal .modal-tab .nav-tabs .nav-link,
+#realEstateInvestmentModal .modal-tab .nav-tabs .nav-link,
+#financialProductRevenueModal .modal-tab .nav-tabs .nav-link,
+#alternativeProductRevenueModal .modal-tab .nav-tabs .nav-link,
+#methodsOfPaymentModal .modal-tab .nav-tabs .nav-link,
+#appointmentOfOptimizersModal .modal-tab .nav-tabs .nav-link,
+#fundConsolidationModal .modal-tab .nav-tabs .nav-link,
+#insuranceProductsModal .modal-tab .nav-tabs .nav-link,
+#changeOfEmployerModal .modal-tab .nav-tabs .nav-link,
+#powerOfAttorneyModal .modal-tab .nav-tabs .nav-link,
+#trackChangeModal .modal-tab .nav-tabs .nav-link,
+#additionalDepositModal .modal-tab .nav-tabs .nav-link,
+#allowanceModal .modal-tab .nav-tabs .nav-link,
+#managementFeeModal .modal-tab .nav-tabs .nav-link,
+#loanAcceptanceModal .modal-tab .nav-tabs .nav-link,
+#annuityModal .modal-tab .nav-tabs .nav-link,
+#repaymentOfLoanModal .modal-tab .nav-tabs .nav-link,
+#providentMobilizationModal .modal-tab .nav-tabs .nav-link,
+#alternativeMobilityModal .modal-tab .nav-tabs .nav-link {
+  color: #485272;
+  font-size: 20px;
+  padding: 18px;
+}
+@media (min-width: 1600px) and (max-width: 1919px) {
+  #newProductModal .modal-tab .nav-tabs .nav-link,
+#providentEducationCompensationModal .modal-tab .nav-tabs .nav-link,
+#savingPolicyModal .modal-tab .nav-tabs .nav-link,
+#managedPortfolioModal .modal-tab .nav-tabs .nav-link,
+#insurancePolicySavingsModal .modal-tab .nav-tabs .nav-link,
+#pensionFundModal .modal-tab .nav-tabs .nav-link,
+#insurancePolicyModal .modal-tab .nav-tabs .nav-link,
+#IRAModal .modal-tab .nav-tabs .nav-link,
+#alternativeFundModal .modal-tab .nav-tabs .nav-link,
+#realEstateInvestmentModal .modal-tab .nav-tabs .nav-link,
+#financialProductRevenueModal .modal-tab .nav-tabs .nav-link,
+#alternativeProductRevenueModal .modal-tab .nav-tabs .nav-link,
+#methodsOfPaymentModal .modal-tab .nav-tabs .nav-link,
+#appointmentOfOptimizersModal .modal-tab .nav-tabs .nav-link,
+#fundConsolidationModal .modal-tab .nav-tabs .nav-link,
+#insuranceProductsModal .modal-tab .nav-tabs .nav-link,
+#changeOfEmployerModal .modal-tab .nav-tabs .nav-link,
+#powerOfAttorneyModal .modal-tab .nav-tabs .nav-link,
+#trackChangeModal .modal-tab .nav-tabs .nav-link,
+#additionalDepositModal .modal-tab .nav-tabs .nav-link,
+#allowanceModal .modal-tab .nav-tabs .nav-link,
+#managementFeeModal .modal-tab .nav-tabs .nav-link,
+#loanAcceptanceModal .modal-tab .nav-tabs .nav-link,
+#annuityModal .modal-tab .nav-tabs .nav-link,
+#repaymentOfLoanModal .modal-tab .nav-tabs .nav-link,
+#providentMobilizationModal .modal-tab .nav-tabs .nav-link,
+#alternativeMobilityModal .modal-tab .nav-tabs .nav-link {
+    font-size: 16px;
+    padding: 10px 15px;
+  }
+}
+@media (min-width: 1440px) and (max-width: 1599px) {
+  #newProductModal .modal-tab .nav-tabs .nav-link,
+#providentEducationCompensationModal .modal-tab .nav-tabs .nav-link,
+#savingPolicyModal .modal-tab .nav-tabs .nav-link,
+#managedPortfolioModal .modal-tab .nav-tabs .nav-link,
+#insurancePolicySavingsModal .modal-tab .nav-tabs .nav-link,
+#pensionFundModal .modal-tab .nav-tabs .nav-link,
+#insurancePolicyModal .modal-tab .nav-tabs .nav-link,
+#IRAModal .modal-tab .nav-tabs .nav-link,
+#alternativeFundModal .modal-tab .nav-tabs .nav-link,
+#realEstateInvestmentModal .modal-tab .nav-tabs .nav-link,
+#financialProductRevenueModal .modal-tab .nav-tabs .nav-link,
+#alternativeProductRevenueModal .modal-tab .nav-tabs .nav-link,
+#methodsOfPaymentModal .modal-tab .nav-tabs .nav-link,
+#appointmentOfOptimizersModal .modal-tab .nav-tabs .nav-link,
+#fundConsolidationModal .modal-tab .nav-tabs .nav-link,
+#insuranceProductsModal .modal-tab .nav-tabs .nav-link,
+#changeOfEmployerModal .modal-tab .nav-tabs .nav-link,
+#powerOfAttorneyModal .modal-tab .nav-tabs .nav-link,
+#trackChangeModal .modal-tab .nav-tabs .nav-link,
+#additionalDepositModal .modal-tab .nav-tabs .nav-link,
+#allowanceModal .modal-tab .nav-tabs .nav-link,
+#managementFeeModal .modal-tab .nav-tabs .nav-link,
+#loanAcceptanceModal .modal-tab .nav-tabs .nav-link,
+#annuityModal .modal-tab .nav-tabs .nav-link,
+#repaymentOfLoanModal .modal-tab .nav-tabs .nav-link,
+#providentMobilizationModal .modal-tab .nav-tabs .nav-link,
+#alternativeMobilityModal .modal-tab .nav-tabs .nav-link {
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+}
+@media (min-width: 1360px) and (max-width: 1439px) {
+  #newProductModal .modal-tab .nav-tabs .nav-link,
+#providentEducationCompensationModal .modal-tab .nav-tabs .nav-link,
+#savingPolicyModal .modal-tab .nav-tabs .nav-link,
+#managedPortfolioModal .modal-tab .nav-tabs .nav-link,
+#insurancePolicySavingsModal .modal-tab .nav-tabs .nav-link,
+#pensionFundModal .modal-tab .nav-tabs .nav-link,
+#insurancePolicyModal .modal-tab .nav-tabs .nav-link,
+#IRAModal .modal-tab .nav-tabs .nav-link,
+#alternativeFundModal .modal-tab .nav-tabs .nav-link,
+#realEstateInvestmentModal .modal-tab .nav-tabs .nav-link,
+#financialProductRevenueModal .modal-tab .nav-tabs .nav-link,
+#alternativeProductRevenueModal .modal-tab .nav-tabs .nav-link,
+#methodsOfPaymentModal .modal-tab .nav-tabs .nav-link,
+#appointmentOfOptimizersModal .modal-tab .nav-tabs .nav-link,
+#fundConsolidationModal .modal-tab .nav-tabs .nav-link,
+#insuranceProductsModal .modal-tab .nav-tabs .nav-link,
+#changeOfEmployerModal .modal-tab .nav-tabs .nav-link,
+#powerOfAttorneyModal .modal-tab .nav-tabs .nav-link,
+#trackChangeModal .modal-tab .nav-tabs .nav-link,
+#additionalDepositModal .modal-tab .nav-tabs .nav-link,
+#allowanceModal .modal-tab .nav-tabs .nav-link,
+#managementFeeModal .modal-tab .nav-tabs .nav-link,
+#loanAcceptanceModal .modal-tab .nav-tabs .nav-link,
+#annuityModal .modal-tab .nav-tabs .nav-link,
+#repaymentOfLoanModal .modal-tab .nav-tabs .nav-link,
+#providentMobilizationModal .modal-tab .nav-tabs .nav-link,
+#alternativeMobilityModal .modal-tab .nav-tabs .nav-link {
+    font-size: 14px;
+    padding: 8px 15px;
+  }
+}
+@media (max-width: 1359px) {
+  #newProductModal .modal-tab .nav-tabs .nav-link,
+#providentEducationCompensationModal .modal-tab .nav-tabs .nav-link,
+#savingPolicyModal .modal-tab .nav-tabs .nav-link,
+#managedPortfolioModal .modal-tab .nav-tabs .nav-link,
+#insurancePolicySavingsModal .modal-tab .nav-tabs .nav-link,
+#pensionFundModal .modal-tab .nav-tabs .nav-link,
+#insurancePolicyModal .modal-tab .nav-tabs .nav-link,
+#IRAModal .modal-tab .nav-tabs .nav-link,
+#alternativeFundModal .modal-tab .nav-tabs .nav-link,
+#realEstateInvestmentModal .modal-tab .nav-tabs .nav-link,
+#financialProductRevenueModal .modal-tab .nav-tabs .nav-link,
+#alternativeProductRevenueModal .modal-tab .nav-tabs .nav-link,
+#methodsOfPaymentModal .modal-tab .nav-tabs .nav-link,
+#appointmentOfOptimizersModal .modal-tab .nav-tabs .nav-link,
+#fundConsolidationModal .modal-tab .nav-tabs .nav-link,
+#insuranceProductsModal .modal-tab .nav-tabs .nav-link,
+#changeOfEmployerModal .modal-tab .nav-tabs .nav-link,
+#powerOfAttorneyModal .modal-tab .nav-tabs .nav-link,
+#trackChangeModal .modal-tab .nav-tabs .nav-link,
+#additionalDepositModal .modal-tab .nav-tabs .nav-link,
+#allowanceModal .modal-tab .nav-tabs .nav-link,
+#managementFeeModal .modal-tab .nav-tabs .nav-link,
+#loanAcceptanceModal .modal-tab .nav-tabs .nav-link,
+#annuityModal .modal-tab .nav-tabs .nav-link,
+#repaymentOfLoanModal .modal-tab .nav-tabs .nav-link,
+#providentMobilizationModal .modal-tab .nav-tabs .nav-link,
+#alternativeMobilityModal .modal-tab .nav-tabs .nav-link {
+    font-size: 12px;
+    padding: 9px 15px;
+  }
+}
+#newProductModal .modal-tab .nav-tabs .nav-link.active,
+#providentEducationCompensationModal .modal-tab .nav-tabs .nav-link.active,
+#savingPolicyModal .modal-tab .nav-tabs .nav-link.active,
+#managedPortfolioModal .modal-tab .nav-tabs .nav-link.active,
+#insurancePolicySavingsModal .modal-tab .nav-tabs .nav-link.active,
+#pensionFundModal .modal-tab .nav-tabs .nav-link.active,
+#insurancePolicyModal .modal-tab .nav-tabs .nav-link.active,
+#IRAModal .modal-tab .nav-tabs .nav-link.active,
+#alternativeFundModal .modal-tab .nav-tabs .nav-link.active,
+#realEstateInvestmentModal .modal-tab .nav-tabs .nav-link.active,
+#financialProductRevenueModal .modal-tab .nav-tabs .nav-link.active,
+#alternativeProductRevenueModal .modal-tab .nav-tabs .nav-link.active,
+#methodsOfPaymentModal .modal-tab .nav-tabs .nav-link.active,
+#appointmentOfOptimizersModal .modal-tab .nav-tabs .nav-link.active,
+#fundConsolidationModal .modal-tab .nav-tabs .nav-link.active,
+#insuranceProductsModal .modal-tab .nav-tabs .nav-link.active,
+#changeOfEmployerModal .modal-tab .nav-tabs .nav-link.active,
+#powerOfAttorneyModal .modal-tab .nav-tabs .nav-link.active,
+#trackChangeModal .modal-tab .nav-tabs .nav-link.active,
+#additionalDepositModal .modal-tab .nav-tabs .nav-link.active,
+#allowanceModal .modal-tab .nav-tabs .nav-link.active,
+#managementFeeModal .modal-tab .nav-tabs .nav-link.active,
+#loanAcceptanceModal .modal-tab .nav-tabs .nav-link.active,
+#annuityModal .modal-tab .nav-tabs .nav-link.active,
+#repaymentOfLoanModal .modal-tab .nav-tabs .nav-link.active,
+#providentMobilizationModal .modal-tab .nav-tabs .nav-link.active,
+#alternativeMobilityModal .modal-tab .nav-tabs .nav-link.active {
+  background-color: #7ABBFC;
+  border: 0;
+  color: #FFFFFF;
+  font-weight: bold;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+#newProductModal .modal-tab .nav-tabs .nav-link:hover,
+#providentEducationCompensationModal .modal-tab .nav-tabs .nav-link:hover,
+#savingPolicyModal .modal-tab .nav-tabs .nav-link:hover,
+#managedPortfolioModal .modal-tab .nav-tabs .nav-link:hover,
+#insurancePolicySavingsModal .modal-tab .nav-tabs .nav-link:hover,
+#pensionFundModal .modal-tab .nav-tabs .nav-link:hover,
+#insurancePolicyModal .modal-tab .nav-tabs .nav-link:hover,
+#IRAModal .modal-tab .nav-tabs .nav-link:hover,
+#alternativeFundModal .modal-tab .nav-tabs .nav-link:hover,
+#realEstateInvestmentModal .modal-tab .nav-tabs .nav-link:hover,
+#financialProductRevenueModal .modal-tab .nav-tabs .nav-link:hover,
+#alternativeProductRevenueModal .modal-tab .nav-tabs .nav-link:hover,
+#methodsOfPaymentModal .modal-tab .nav-tabs .nav-link:hover,
+#appointmentOfOptimizersModal .modal-tab .nav-tabs .nav-link:hover,
+#fundConsolidationModal .modal-tab .nav-tabs .nav-link:hover,
+#insuranceProductsModal .modal-tab .nav-tabs .nav-link:hover,
+#changeOfEmployerModal .modal-tab .nav-tabs .nav-link:hover,
+#powerOfAttorneyModal .modal-tab .nav-tabs .nav-link:hover,
+#trackChangeModal .modal-tab .nav-tabs .nav-link:hover,
+#additionalDepositModal .modal-tab .nav-tabs .nav-link:hover,
+#allowanceModal .modal-tab .nav-tabs .nav-link:hover,
+#managementFeeModal .modal-tab .nav-tabs .nav-link:hover,
+#loanAcceptanceModal .modal-tab .nav-tabs .nav-link:hover,
+#annuityModal .modal-tab .nav-tabs .nav-link:hover,
+#repaymentOfLoanModal .modal-tab .nav-tabs .nav-link:hover,
+#providentMobilizationModal .modal-tab .nav-tabs .nav-link:hover,
+#alternativeMobilityModal .modal-tab .nav-tabs .nav-link:hover {
+  border: 0;
+}
+#newProductModal .modal-tab .tab-content .tab-pane,
+#providentEducationCompensationModal .modal-tab .tab-content .tab-pane,
+#savingPolicyModal .modal-tab .tab-content .tab-pane,
+#managedPortfolioModal .modal-tab .tab-content .tab-pane,
+#insurancePolicySavingsModal .modal-tab .tab-content .tab-pane,
+#pensionFundModal .modal-tab .tab-content .tab-pane,
+#insurancePolicyModal .modal-tab .tab-content .tab-pane,
+#IRAModal .modal-tab .tab-content .tab-pane,
+#alternativeFundModal .modal-tab .tab-content .tab-pane,
+#realEstateInvestmentModal .modal-tab .tab-content .tab-pane,
+#financialProductRevenueModal .modal-tab .tab-content .tab-pane,
+#alternativeProductRevenueModal .modal-tab .tab-content .tab-pane,
+#methodsOfPaymentModal .modal-tab .tab-content .tab-pane,
+#appointmentOfOptimizersModal .modal-tab .tab-content .tab-pane,
+#fundConsolidationModal .modal-tab .tab-content .tab-pane,
+#insuranceProductsModal .modal-tab .tab-content .tab-pane,
+#changeOfEmployerModal .modal-tab .tab-content .tab-pane,
+#powerOfAttorneyModal .modal-tab .tab-content .tab-pane,
+#trackChangeModal .modal-tab .tab-content .tab-pane,
+#additionalDepositModal .modal-tab .tab-content .tab-pane,
+#allowanceModal .modal-tab .tab-content .tab-pane,
+#managementFeeModal .modal-tab .tab-content .tab-pane,
+#loanAcceptanceModal .modal-tab .tab-content .tab-pane,
+#annuityModal .modal-tab .tab-content .tab-pane,
+#repaymentOfLoanModal .modal-tab .tab-content .tab-pane,
+#providentMobilizationModal .modal-tab .tab-content .tab-pane,
+#alternativeMobilityModal .modal-tab .tab-content .tab-pane {
+  padding: 25px;
+  overflow-x: auto;
+  padding: 0;
 }
 
 /*# sourceMappingURL=action.css.map */
