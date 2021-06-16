@@ -1647,5 +1647,8 @@
   border-top: solid 1px #78849E;
   padding: 20px;
 }
+.data-page .btn-new-user {
+  width: 190px;
+}
 
 /*# sourceMappingURL=action.css.map */

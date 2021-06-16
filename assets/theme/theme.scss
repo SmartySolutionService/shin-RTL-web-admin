@@ -1902,6 +1902,12 @@ body {
             background-image: url(../img/buttons/btn-void-hover.png);
         }
     }
+    &.btn-new-user {
+        background-image: url(../img/buttons/btn-new-user.png);
+        &:hover {
+            background-image: url(../img/buttons/btn-new-user-hover.png);
+        }
+    }
 }
 
 .cs-icon {
