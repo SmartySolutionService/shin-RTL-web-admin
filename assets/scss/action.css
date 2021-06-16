@@ -1355,6 +1355,9 @@
   top: 8px;
   right: 8px;
 }
+.data-page table thead tr.bg-dark .gj-datepicker .input-group-append .gj-icon {
+  top: 5px;
+}
 .data-page table thead tr th {
   position: relative;
   color: #ffffff;
