@@ -149,7 +149,7 @@ body {
         .sidebar {
             // position: fixed;
             width: 324px;
-            // height: calc(100% - 150px);
+            min-height: calc(100vh - 150px);
             background-color: #FFFFFF;
             overflow: auto;
             -webkit-box-shadow: 0px 3px 6px rgba(0,0,0,0.16); 

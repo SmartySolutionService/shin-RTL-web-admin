@@ -10014,6 +10014,7 @@ body .main {
 }
 body .main .sidebar {
   width: 324px;
+  min-height: calc(100vh - 150px);
   background-color: #FFFFFF;
   overflow: auto;
   -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);

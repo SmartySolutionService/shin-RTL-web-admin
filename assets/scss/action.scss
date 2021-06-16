@@ -797,8 +797,313 @@
             width: 100px;
             margin-top: 20px;
         }
-        .btn-file-choose {
-
+    }
+    table {
+        thead {
+            background-color: #7ABCFF;
+            tr {
+                &.bg-dark {
+                    background-color: #78849E !important;
+                    border: solid 1px #707070;
+                    -webkit-box-shadow: 0px 0px 6px 3px rgba(0,0,0,0.16); 
+                    box-shadow: 0px 0px 6px 3px rgba(0,0,0,0.16);
+                    th {
+                        padding: 15px;
+                    }
+                    .action-filter {
+                        position: relative;
+                        display: block;
+                        width: 35px;
+                        height: 35px;
+                        right: 40px;
+                        .cs-icon {
+                            top: 8px;
+                            right: 8px;
+                        }
+                    }
+                }
+                th {
+                    position: relative;
+                    color: #ffffff;
+                    &:first-child {
+                        max-width: 200px;
+                        .cs-checkbox-container {
+                            margin-top: 0;
+                            position: relative;
+                            top: 5px;
+                        }
+                    }
+                    .cs-icon {
+                        position: absolute;
+                        top: 15px;
+                        right: 15px;
+                    }
+                    .cs-btn-icon {
+                        position: absolute;
+                        left: 10px;
+                        top: 10px;
+                        width: 20px;
+                        height: 20px;
+                        margin: 0;
+                        opacity: 1;
+                    }
+                    a {
+                        color: #485272;
+                        &:hover {
+                            color: #001553;
+                        }
+                    }
+                }
+            }
+        }
+        tbody {
+            tr {
+                td {
+                    position: relative;
+                    .cs-icon {
+                        position: absolute;
+                        top: 15px;
+                        right: 15px;
+                    }
+                    &:first-child {
+                        padding-right: 0;
+                        padding-left: 0;
+                        .action-control {
+                            position: relative;
+                            display: block;
+                            width: 50px;
+                            height: 40px;
+                            padding: 10px 15px;
+                            border: none !important;
+                            &.shown {
+                                .ic-collapse-pm {
+                                    background-image: url(../img/icons/ic_minus_blue.png);
+                                }
+                            }
+                            .cs-icon {
+                                position: absolute;
+                                width: 15px;
+                                height: 15px;
+                                &.ic-collapse-pm {
+                                    background-image: url(../img/icons/ic_plus_blue.png);
+                                }
+                            }
+                            .cs-checkbox-container {
+                                margin-top: 2px;
+                            }
+                            .bubble {
+                                position: absolute;
+                                width: 20px;
+                                height: 20px;
+                                top: 3px;
+                                right: 3px;
+                                border-radius: 20px;
+                                line-height: 18px;
+                                font-size: 14px;
+                                border: solid 1px #F4F7F8;
+                                text-align: center;
+                                &.bubble-gray {
+                                    background-color: #78849E;
+                                    color: #ffffff;
+                                }
+                            }
+                        }
+                        .btn-remove {
+                            position: relative;
+                            display: block;
+                            width: 40px;
+                            height: 40px;
+                            border-left: solid 1px #BFC5D2;
+                            .cs-icon {
+                                position: relative;
+                                top: 10px;
+                                right: 3px;
+                            }
+                        }
+                        .border-left {
+                            border-left: solid 1px #78849E !important;
+                        }
+                        .border-right {
+                            border-right: solid 1px #78849E !important;
+                        }
+                        .td-text {
+                            height: 25px;
+                            padding: 0 20px;
+                            margin-top: 8px;
+                            margin-bottom: 8px;
+                        }
+                        .dropleft {
+                            padding: 4px 8px;
+                            .dropdown-toggle {
+                                border: none;
+                                width: 30px;
+                                height: 30px;
+                                border-radius: 30px;
+                                &:before, &:after {
+                                    display: none;
+                                }
+                                &:hover {
+                                    background-color: #78849E;
+                                    border: solid 1px #707070;
+                                    .ic-pencil-blue {
+                                        background-image: url(../img/icons/ic_pencil_white.png);
+                                    }
+                                }
+                                .cs-icon {
+                                    top: 12px;
+                                }
+                            }
+                            .dropdown-menu {
+                                padding: 0px;
+                                border-radius: 10px;
+                                overflow: hidden;
+                                height: 350px;
+                                &.h-auto {
+                                    height: auto !important;
+                                }
+                                .dropdown-ul {
+                                    width: 150px;
+                                    height: 330px;
+                                    list-style: none;
+                                    padding: 10px 0px;
+                                    .dropdown-li {
+                                        position: relative;
+                                        padding: 5px 40px 5px 10px;
+                                        text-align: right;
+                                        color: #7ABBFC;
+                                        font-weight: bold;
+                                        &:hover {
+                                            background-color: #BFC5D2;
+                                            color: #ffffff;
+                                            cursor: pointer;
+                                        }
+                                        &.open {
+                                            .ic-collapse-pm {
+                                                background-image: url(../img/icons/ic_minus_blue.png) !important;
+                                            }
+                                        }
+                                        .cs-icon {
+                                            top: 10px;
+                                            &.ic-collapse-pm {
+                                                background-image: url(../img/icons/ic_plus_blue.png);
+                                            }
+                                        }
+                                    }
+                                }
+                                .dropdown-left-menu {
+                                    width: 200px;
+                                    border-right: solid 1px #D7DDE9;
+                                    display: none;
+                                    &.open {
+                                        display: block;
+                                    }
+                                    .search-wrapper {
+                                        .form-control {
+                                            border-radius: 0px;
+                                            border-top-left-radius: 10px;
+                                        }
+                                    }
+                                    .dropdown-left-menu-ul {
+                                        list-style: none;
+                                        padding: 0px;
+                                        height: 300px;
+                                        overflow: auto;
+                                        .dropdown-li {
+                                            position: relative;
+                                            display: flex;
+                                            padding: 5px 10px;
+                                            font-size: 12px;
+                                            &:hover {
+                                                background-color: #BFC5D2;
+                                                color: #ffffff;
+                                                cursor: pointer;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            .dropdown-col-2 {
+                                width: 350px;
+                                padding: 15px 0px;
+                                .dropdown-ul {
+                                    border-left: solid 1px #D7DDE9;
+                                    padding: 0px;
+                                    margin: 0px;
+                                    height: auto !important;
+                                    &:last-child {
+                                        border-left: none;
+                                    }
+                                    .dropdown-li {
+                                        font-size: 14px;
+                                        padding: 5px 15px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &.datatable {
+            td {
+                padding: 10px 15px;
+            }
+        }
+        .gj-datepicker {
+            .input-group-append {
+                display: block;
+                .gj-icon {
+                    top: 10px;
+                }
+            }
+        }
+        .badge {
+            padding: 10px 20px;
+            border-radius: 10px;
+            font-weight: normal;
+            height: 38px;
+            width: 80px;
+            border: solid 2px #E9E9E9;
+            font-size: 12px;
+            &.badge-red {
+                background-color: #DE0101;
+                color: #ffffff;
+            }
+            &.badge-blue {
+                background-color: #7ABCFF;
+                color: #ffffff;
+            }
+            &.badge-green {
+                background-color: #2CA01C;
+                color: #ffffff;
+            }
+            &.badge-yellow {
+                background-color: #ECC528;
+                color: #ffffff;
+            }
+            &.badge-white {
+                background-color: #F9F9F9;
+                color: #515151;
+            }
+        }
+        .cs-checkbox-container {
+            height: 20px;
+            line-height: 20px;
+            [type=checkbox] {
+                width: 20px;
+                height: 20px;
+            }
+            .checkmark {
+                width: 20px;
+                height: 20px;
+                border-radius: 4px;
+                &:after {
+                    right: 4px;
+                    top: 1px;
+                    width: 8px;
+                    height: 12px;
+                }
+            }
         }
     }
 }

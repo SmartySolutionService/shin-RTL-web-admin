@@ -1321,5 +1321,295 @@
   width: 100px;
   margin-top: 20px;
 }
+.data-page table thead {
+  background-color: #7ABCFF;
+}
+.data-page table thead tr.bg-dark {
+  background-color: #78849E !important;
+  border: solid 1px #707070;
+  -webkit-box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.16);
+}
+.data-page table thead tr.bg-dark th {
+  padding: 15px;
+}
+.data-page table thead tr.bg-dark .action-filter {
+  position: relative;
+  display: block;
+  width: 35px;
+  height: 35px;
+  right: 40px;
+}
+.data-page table thead tr.bg-dark .action-filter .cs-icon {
+  top: 8px;
+  right: 8px;
+}
+.data-page table thead tr th {
+  position: relative;
+  color: #ffffff;
+}
+.data-page table thead tr th:first-child {
+  max-width: 200px;
+}
+.data-page table thead tr th:first-child .cs-checkbox-container {
+  margin-top: 0;
+  position: relative;
+  top: 5px;
+}
+.data-page table thead tr th .cs-icon {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+.data-page table thead tr th .cs-btn-icon {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  opacity: 1;
+}
+.data-page table thead tr th a {
+  color: #485272;
+}
+.data-page table thead tr th a:hover {
+  color: #001553;
+}
+.data-page table tbody tr td {
+  position: relative;
+}
+.data-page table tbody tr td .cs-icon {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+.data-page table tbody tr td:first-child {
+  padding-right: 0;
+  padding-left: 0;
+}
+.data-page table tbody tr td:first-child .action-control {
+  position: relative;
+  display: block;
+  width: 50px;
+  height: 40px;
+  padding: 10px 15px;
+  border: none !important;
+}
+.data-page table tbody tr td:first-child .action-control.shown .ic-collapse-pm {
+  background-image: url(../img/icons/ic_minus_blue.png);
+}
+.data-page table tbody tr td:first-child .action-control .cs-icon {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+}
+.data-page table tbody tr td:first-child .action-control .cs-icon.ic-collapse-pm {
+  background-image: url(../img/icons/ic_plus_blue.png);
+}
+.data-page table tbody tr td:first-child .action-control .cs-checkbox-container {
+  margin-top: 2px;
+}
+.data-page table tbody tr td:first-child .action-control .bubble {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 3px;
+  right: 3px;
+  border-radius: 20px;
+  line-height: 18px;
+  font-size: 14px;
+  border: solid 1px #F4F7F8;
+  text-align: center;
+}
+.data-page table tbody tr td:first-child .action-control .bubble.bubble-gray {
+  background-color: #78849E;
+  color: #ffffff;
+}
+.data-page table tbody tr td:first-child .btn-remove {
+  position: relative;
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-left: solid 1px #BFC5D2;
+}
+.data-page table tbody tr td:first-child .btn-remove .cs-icon {
+  position: relative;
+  top: 10px;
+  right: 3px;
+}
+.data-page table tbody tr td:first-child .border-left {
+  border-left: solid 1px #78849E !important;
+}
+.data-page table tbody tr td:first-child .border-right {
+  border-right: solid 1px #78849E !important;
+}
+.data-page table tbody tr td:first-child .td-text {
+  height: 25px;
+  padding: 0 20px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+.data-page table tbody tr td:first-child .dropleft {
+  padding: 4px 8px;
+}
+.data-page table tbody tr td:first-child .dropleft .dropdown-toggle {
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+}
+.data-page table tbody tr td:first-child .dropleft .dropdown-toggle:before, .data-page table tbody tr td:first-child .dropleft .dropdown-toggle:after {
+  display: none;
+}
+.data-page table tbody tr td:first-child .dropleft .dropdown-toggle:hover {
+  background-color: #78849E;
+  border: solid 1px #707070;
+}
+.data-page table tbody tr td:first-child .dropleft .dropdown-toggle:hover .ic-pencil-blue {
+  background-image: url(../img/icons/ic_pencil_white.png);
+}
+.data-page table tbody tr td:first-child .dropleft .dropdown-toggle .cs-icon {
+  top: 12px;
+}
+.data-page table tbody tr td:first-child .dropleft .dropdown-menu {
+  padding: 0px;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 350px;
+}
+.data-page table tbody tr td:first-child .dropleft .dropdown-menu.h-auto {
+  height: auto !important;
+}
+.data-page table tbody tr td:first-child .dropleft .dropdown-menu .dropdown-ul {
+  width: 150px;
+  height: 330px;
+  list-style: none;
+  padding: 10px 0px;
+}
+.data-page table tbody tr td:first-child .dropleft .dropdown-menu .dropdown-ul .dropdown-li {
+  position: relative;
+  padding: 5px 40px 5px 10px;
+  text-align: right;
+  color: #7ABBFC;
+  font-weight: bold;
+}
+.data-page table tbody tr td:first-child .dropleft .dropdown-menu .dropdown-ul .dropdown-li:hover {
+  background-color: #BFC5D2;
+  color: #ffffff;
+  cursor: pointer;
+}
+.data-page table tbody tr td:first-child .dropleft .dropdown-menu .dropdown-ul .dropdown-li.open .ic-collapse-pm {
+  background-image: url(../img/icons/ic_minus_blue.png) !important;
+}
+.data-page table tbody tr td:first-child .dropleft .dropdown-menu .dropdown-ul .dropdown-li .cs-icon {
+  top: 10px;
+}
+.data-page table tbody tr td:first-child .dropleft .dropdown-menu .dropdown-ul .dropdown-li .cs-icon.ic-collapse-pm {
+  background-image: url(../img/icons/ic_plus_blue.png);
+}
+.data-page table tbody tr td:first-child .dropleft .dropdown-menu .dropdown-left-menu {
+  width: 200px;
+  border-right: solid 1px #D7DDE9;
+  display: none;
+}
+.data-page table tbody tr td:first-child .dropleft .dropdown-menu .dropdown-left-menu.open {
+  display: block;
+}
+.data-page table tbody tr td:first-child .dropleft .dropdown-menu .dropdown-left-menu .search-wrapper .form-control {
+  border-radius: 0px;
+  border-top-left-radius: 10px;
+}
+.data-page table tbody tr td:first-child .dropleft .dropdown-menu .dropdown-left-menu .dropdown-left-menu-ul {
+  list-style: none;
+  padding: 0px;
+  height: 300px;
+  overflow: auto;
+}
+.data-page table tbody tr td:first-child .dropleft .dropdown-menu .dropdown-left-menu .dropdown-left-menu-ul .dropdown-li {
+  position: relative;
+  display: flex;
+  padding: 5px 10px;
+  font-size: 12px;
+}
+.data-page table tbody tr td:first-child .dropleft .dropdown-menu .dropdown-left-menu .dropdown-left-menu-ul .dropdown-li:hover {
+  background-color: #BFC5D2;
+  color: #ffffff;
+  cursor: pointer;
+}
+.data-page table tbody tr td:first-child .dropleft .dropdown-col-2 {
+  width: 350px;
+  padding: 15px 0px;
+}
+.data-page table tbody tr td:first-child .dropleft .dropdown-col-2 .dropdown-ul {
+  border-left: solid 1px #D7DDE9;
+  padding: 0px;
+  margin: 0px;
+  height: auto !important;
+}
+.data-page table tbody tr td:first-child .dropleft .dropdown-col-2 .dropdown-ul:last-child {
+  border-left: none;
+}
+.data-page table tbody tr td:first-child .dropleft .dropdown-col-2 .dropdown-ul .dropdown-li {
+  font-size: 14px;
+  padding: 5px 15px;
+}
+.data-page table.datatable td {
+  padding: 10px 15px;
+}
+.data-page table .gj-datepicker .input-group-append {
+  display: block;
+}
+.data-page table .gj-datepicker .input-group-append .gj-icon {
+  top: 10px;
+}
+.data-page table .badge {
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: normal;
+  height: 38px;
+  width: 80px;
+  border: solid 2px #E9E9E9;
+  font-size: 12px;
+}
+.data-page table .badge.badge-red {
+  background-color: #DE0101;
+  color: #ffffff;
+}
+.data-page table .badge.badge-blue {
+  background-color: #7ABCFF;
+  color: #ffffff;
+}
+.data-page table .badge.badge-green {
+  background-color: #2CA01C;
+  color: #ffffff;
+}
+.data-page table .badge.badge-yellow {
+  background-color: #ECC528;
+  color: #ffffff;
+}
+.data-page table .badge.badge-white {
+  background-color: #F9F9F9;
+  color: #515151;
+}
+.data-page table .cs-checkbox-container {
+  height: 20px;
+  line-height: 20px;
+}
+.data-page table .cs-checkbox-container [type=checkbox] {
+  width: 20px;
+  height: 20px;
+}
+.data-page table .cs-checkbox-container .checkmark {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+}
+.data-page table .cs-checkbox-container .checkmark:after {
+  right: 4px;
+  top: 1px;
+  width: 8px;
+  height: 12px;
+}
 
 /*# sourceMappingURL=action.css.map */
