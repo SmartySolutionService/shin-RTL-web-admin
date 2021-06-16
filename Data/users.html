@@ -113,7 +113,7 @@
       <div class="row app-header-top">
         <div class="col-xl-5 col-lg-5 col-md-6 col-sm-6 col-6">
           <span class="title float-right">משתמשים</span>
-          <button class="cs-btn-img btn-new-user float-right mr-5" data-toggle="modal" data-target="#newQuestionnaireModal"></button>
+          <button class="cs-btn-img btn-new-user float-right mr-5" data-toggle="modal" data-target="#newUserModal"></button>
         </div>
         <div class="col-xl-7 col-lg-7 col-md-6 col-sm-6 col-6 text-left">
           <a class="cs-btn-icon btn-xls" href="javascript:void(0)"></a>
@@ -250,6 +250,93 @@
   </div>
 </div>
 
+
+<!-- New User Modal -->
+<div class="modal" id="newUserModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="mt-2" style="margin-right: 40px">פרטי המשתמש</h4>
+        <button type="button" class="cs-btn-icon btn-close close dark mr-auto" data-dismiss="modal"></button>
+      </div>
+      <!-- Modal body -->
+      <div class="modal-body">
+        <form>
+          <div class="row mx-0">
+            <div class="form-group mb-4">
+              <label class="text-primary">מספר זהות</label>
+              <input type="text" class="form-control" placeholder="NUM" />
+            </div>
+          </div>
+          <div class="row mx-0">
+            <div class="form-group mb-4">
+              <label class="text-primary">שם משפחה</label>
+              <input type="text" class="form-control" placeholder="TEXT" />
+            </div>
+          </div>
+          <div class="row mx-0">
+            <div class="form-group mb-4">
+              <label class="text-primary">שם פרטי</label>
+              <input type="text" class="form-control" placeholder="TEXT" />
+            </div>
+          </div>
+          <div class="row mx-0">
+            <div class="form-group mb-4">
+              <label class="text-primary">סוג הרשאה</label>
+              <input type="text" class="form-control" placeholder="TEXT" />
+            </div>
+          </div>
+          <div class="row mx-0">
+            <div class="form-group mb-4">
+              <label class="text-primary">שם משתמש</label>
+              <input type="text" class="form-control" placeholder="TEXT" />
+            </div>
+          </div>
+          <div class="row mx-0">
+            <div class="form-group mb-4">
+              <label class="text-primary">מספר טלפון</label>
+              <input type="text" class="form-control" placeholder="NUM" />
+            </div>
+          </div>
+          <div class="row mx-0">
+            <div class="form-group mb-4">
+              <label class="text-primary">אימייל</label>
+              <input type="text" class="form-control" placeholder="TEXT" />
+            </div>
+          </div>
+          <div class="row my-4">
+            <div class="col-1">
+              <label class="text-primary font-weight-bold">פעיל</label>
+            </div>
+            <div class="col-3">
+              <input type="checkbox" name="status" value="1" class="lcs_check" autocomplete="off" checked />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <div class="form-group mb-4">
+                <label class="text-primary">סיסמה</label>
+                <input type="text" class="form-control" placeholder="TEXT" />
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="form-group mb-4">
+                <label class="text-primary">אימות סיסמה</label>
+                <input type="text" class="form-control" placeholder="TEXT" />
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button class="cs-btn-img btn-save-modal btn-success" data-dismiss="modal"></button>
+      </div>
+      
+    </div>
+  </div>
+</div>
 
 
 <!-- plugins js -->
