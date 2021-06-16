@@ -1890,6 +1890,12 @@ body {
             background-image: url(../img/buttons/btn-absorption-hover.png);
         }
     }
+    &.btn-file-choose {
+        background-image: url(../img/buttons/btn-file-choose.png);
+        &:hover {
+            background-image: url(../img/buttons/btn-file-choose-hover.png);
+        }
+    }
 }
 
 .cs-icon {

@@ -719,3 +719,86 @@
         }
     }
 }
+
+
+// =========== DATA Page CSS ============= //
+
+.data-page {
+    h5 {
+        font-weight: bold;
+        &.text-primary {
+            color: #1E87F0 !important;
+        }
+    }
+    label {
+        font-weight: bold;
+    }
+    .form-control-wrapper {
+        max-width: 240px;
+        position: relative;
+    }
+    .form-control {
+        height: 45px;
+        border-radius: 8px !important;
+    }
+    .lcs_switch {
+        border-radius: 4px;
+        width: 100px;
+        height: 30px;
+        -webkit-box-shadow: 0px 0px 6px 3px rgba(0,0,0,0.15) !important; 
+        box-shadow: 0px 0px 6px 3px rgba(0,0,0,0.15) !important;
+        &.lcs_off {
+            .lcs_cursor {
+                left: 0px;
+            }
+        }
+        &.lcs_on {
+            background-color: #7ABCFF;
+            .lcs_cursor {
+                left: 50px;
+            }
+        }
+        .lcs_cursor {
+            border-radius: 0px;
+            height: 30px;
+            width: 50px;
+            top: 0px;
+            font-size: 12px;
+            text-align: center;
+            padding: 5px;
+            font-weight: bold;
+        }
+        .lcs_label {
+            top: 0px;
+        }
+    }
+    .timestamp {
+        font-weight: bold;
+        padding: 5px;
+    }
+    .cs-alert {
+        font-weight: bold;
+        padding: 5px;
+        &.alert-danger {
+            color: #DE0101;
+            background-color: transparent;
+        }
+    }
+    .card-border-top {
+        border-top: solid 16px #1E87F0;
+    }
+    .uploader-wrapper {
+        position: relative;
+        display: block;
+        text-align: center;
+        border: solid 1px #BFC5D2;
+        padding: 20px;
+        .uploader-icon {
+            width: 100px;
+            margin-top: 20px;
+        }
+        .btn-file-choose {
+
+        }
+    }
+}

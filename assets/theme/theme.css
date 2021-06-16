@@ -11726,6 +11726,12 @@ body .main.open-filter .filter-app {
 .cs-btn-img.btn-absorption:hover {
   background-image: url(../img/buttons/btn-absorption-hover.png);
 }
+.cs-btn-img.btn-file-choose {
+  background-image: url(../img/buttons/btn-file-choose.png);
+}
+.cs-btn-img.btn-file-choose:hover {
+  background-image: url(../img/buttons/btn-file-choose-hover.png);
+}
 
 .cs-icon {
   display: inline-flex;
