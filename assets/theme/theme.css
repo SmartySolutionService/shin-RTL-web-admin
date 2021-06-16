@@ -11733,6 +11733,12 @@ body .main.open-filter .filter-app {
 .cs-btn-img.btn-file-choose:hover {
   background-image: url(../img/buttons/btn-file-choose-hover.png);
 }
+.cs-btn-img.btn-void {
+  background-image: url(../img/buttons/btn-void.png);
+}
+.cs-btn-img.btn-void:hover {
+  background-image: url(../img/buttons/btn-void-hover.png);
+}
 
 .cs-icon {
   display: inline-flex;
@@ -12016,6 +12022,9 @@ body .main.open-filter .filter-app {
 }
 .cs-icon.ic-mode-edit-gray {
   background-image: url(../img/icons/ic_mode_edit_gray.png);
+}
+.cs-icon.ic-quiz {
+  background-image: url(../img/icons/ic_quiz.png);
 }
 
 /* width */

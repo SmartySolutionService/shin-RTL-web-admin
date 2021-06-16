@@ -1896,6 +1896,12 @@ body {
             background-image: url(../img/buttons/btn-file-choose-hover.png);
         }
     }
+    &.btn-void {
+        background-image: url(../img/buttons/btn-void.png);
+        &:hover {
+            background-image: url(../img/buttons/btn-void-hover.png);
+        }
+    }
 }
 
 .cs-icon {
@@ -2178,6 +2184,9 @@ body {
     }
     &.ic-mode-edit-gray {
         background-image: url(../img/icons/ic_mode_edit_gray.png);
+    }
+    &.ic-quiz {
+        background-image: url(../img/icons/ic_quiz.png);
     }
 }
 
