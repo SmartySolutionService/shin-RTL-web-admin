@@ -1321,6 +1321,17 @@
   width: 100px;
   margin-top: 20px;
 }
+.data-page table.datatable td {
+  padding: 10px 15px;
+}
+.data-page table.datatable.lg-table th, .data-page table.datatable.lg-table td {
+  font-size: 14px !important;
+}
+.data-page table.datatable.lg-table .bg-dark th {
+  padding-left: 2px !important;
+  padding-right: 2px !important;
+  font-size: 14px !important;
+}
 .data-page table thead {
   background-color: #7ABCFF;
 }
@@ -1553,9 +1564,6 @@
 .data-page table tbody tr td:first-child .dropleft .dropdown-col-2 .dropdown-ul .dropdown-li {
   font-size: 14px;
   padding: 5px 15px;
-}
-.data-page table.datatable td {
-  padding: 10px 15px;
 }
 .data-page table .gj-datepicker .input-group-append {
   display: block;
