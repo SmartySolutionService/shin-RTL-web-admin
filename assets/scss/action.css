@@ -152,6 +152,37 @@
 .action-page .filter-app .app-header .app-header-bottom .btn-adding-product {
   width: 190px;
 }
+.action-page .filter-app .app-header .app-header-bottom .cs-dropdown {
+  position: relative;
+}
+.action-page .filter-app .app-header .app-header-bottom .cs-dropdown .dropdown-content {
+  position: absolute;
+  display: block;
+  width: 220px;
+  top: 50px;
+  right: 0px;
+  background-color: #ffffff;
+  border: solid 1px #ced4da;
+  z-index: 1000;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.action-page .filter-app .app-header .app-header-bottom .cs-dropdown .dropdown-content .content-item {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 3px 15px;
+}
+.action-page .filter-app .app-header .app-header-bottom .cs-dropdown .dropdown-content .content-item:hover, .action-page .filter-app .app-header .app-header-bottom .cs-dropdown .dropdown-content .content-item:active, .action-page .filter-app .app-header .app-header-bottom .cs-dropdown .dropdown-content .content-item.active {
+  font-weight: bold;
+  cursor: pointer;
+}
+.action-page .filter-app .app-header .app-header-bottom .cs-dropdown .dropdown-content .content-item:first-child {
+  margin-top: 10px;
+}
+.action-page .filter-app .app-header .app-header-bottom .cs-dropdown .dropdown-content .content-item:last-child {
+  margin-bottom: 10px;
+}
 .action-page .filter-app .app-body table thead {
   background-color: #7ABCFF;
 }
