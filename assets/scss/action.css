@@ -175,6 +175,12 @@
   top: 8px;
   right: 8px;
 }
+.action-page .filter-app .app-body table thead tr.bg-dark .gj-datepicker .input-group-append {
+  display: block;
+}
+.action-page .filter-app .app-body table thead tr.bg-dark .gj-datepicker .input-group-append .gj-icon {
+  top: 3px !important;
+}
 .action-page .filter-app .app-body table thead tr th {
   position: relative;
   color: #ffffff;
@@ -393,18 +399,6 @@
   height: 38px;
   border: solid 2px #E9E9E9;
 }
-.action-page .filter-app .app-body table .badge.badge-red {
-  background-color: #DE0101;
-  color: #ffffff;
-}
-.action-page .filter-app .app-body table .badge.badge-blue {
-  background-color: #7ABCFF;
-  color: #ffffff;
-}
-.action-page .filter-app .app-body table .badge.badge-yellow {
-  background-color: #ECC528;
-  color: #ffffff;
-}
 .action-page .filter-app .app-body table .cs-checkbox-container {
   height: 20px;
   line-height: 20px;
@@ -427,6 +421,80 @@
 .action-page .filter-app .app-body .search-result {
   position: absolute;
   color: #1a70c6;
+}
+.action-page .filter-app .app-body .badge-dropdown .dropdown-toggle {
+  padding: 5px;
+}
+.action-page .filter-app .app-body .badge-dropdown .dropdown-toggle:after {
+  display: none;
+}
+.action-page .filter-app .app-body .badge-dropdown .dropdown-toggle:focus {
+  box-shadow: none;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+}
+.action-page .filter-app .app-body .badge-dropdown .dropdown-menu {
+  min-width: 60px;
+}
+.action-page .filter-app .app-body .badge-dropdown .dropdown-menu .dropdown-item {
+  padding: 5px;
+}
+.action-page .filter-app .app-body .gj-datepicker .td-datepicker {
+  min-width: 120px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.action-page .filter-app .app-body .gj-datepicker .input-group-append {
+  display: block;
+}
+.action-page .filter-app .app-body .gj-datepicker .input-group-append .gj-icon {
+  top: 3px !important;
+}
+.action-page .filter-app .app-body .td-select {
+  min-width: 110px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.app-body .badge {
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: normal;
+  height: 38px;
+  width: 80px;
+  border: solid 2px #E9E9E9;
+  font-size: 12px;
+}
+.app-body .badge.badge-red {
+  background-color: #DE0101;
+  color: #ffffff;
+}
+.app-body .badge.badge-blue {
+  background-color: #7ABCFF;
+  color: #ffffff;
+}
+.app-body .badge.badge-green {
+  background-color: #2CA01C;
+  color: #ffffff;
+}
+.app-body .badge.badge-yellow {
+  background-color: #ECC528;
+  color: #ffffff;
+}
+.app-body .badge.badge-white {
+  background-color: #F9F9F9;
+  color: #515151;
+}
+.app-body .badge.badge-sky {
+  background-color: #7ABBFC;
+  color: #ffffff;
+}
+.app-body .badge.badge-blue-accent {
+  background-color: #1A70C6;
+  color: #ffffff;
+}
+.app-body .badge.badge-gray {
+  background-color: #BFC5D2;
+  color: #515151;
 }
 
 #CRMreminderModal .modal-dialog,

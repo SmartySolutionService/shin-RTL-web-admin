@@ -182,6 +182,14 @@
                                     right: 8px;
                                 }
                             }
+                            .gj-datepicker {
+                                .input-group-append {
+                                    display: block;
+                                    .gj-icon {
+                                        top: 3px !important;
+                                    }
+                                }
+                            }
                         }
                         th {
                             position: relative;
@@ -416,18 +424,6 @@
                     font-weight: normal;
                     height: 38px;
                     border: solid 2px #E9E9E9;
-                    &.badge-red {
-                        background-color: #DE0101;
-                        color: #ffffff;
-                    }
-                    &.badge-blue {
-                        background-color: #7ABCFF;
-                        color: #ffffff;
-                    }
-                    &.badge-yellow {
-                        background-color: #ECC528;
-                        color: #ffffff;
-                    }
                 }
                 .cs-checkbox-container {
                     height: 20px;
@@ -453,9 +449,91 @@
                 position: absolute;
                 color: #1a70c6;
             }
+            .badge-dropdown {
+                .dropdown-toggle {
+                    &:after {
+                        display: none;
+                    }
+                    &:focus {
+                        box-shadow: none;
+                        border: 1px solid rgba(0, 0, 0, 0.15);
+                    }
+                    padding: 5px;
+                }
+                .dropdown-menu {
+                    min-width: 60px;
+                    .dropdown-item {
+                        padding: 5px;
+                    }
+                }
+            }
+            .gj-datepicker {
+                .td-datepicker {
+                    min-width: 120px;
+                    padding-left: 5px;
+                    padding-right: 5px;
+                }
+                .input-group-append {
+                    display: block;
+                    .gj-icon {
+                        top: 3px !important;
+                    }
+                }
+            }
+            .td-select {
+                min-width: 110px;
+                padding-left: 5px;
+                padding-right: 5px;
+            }
         }
     }
 }
+
+// ================= Shared CSS ================= //
+.app-body {
+    .badge {
+        padding: 10px 20px;
+        border-radius: 10px;
+        font-weight: normal;
+        height: 38px;
+        width: 80px;
+        border: solid 2px #E9E9E9;
+        font-size: 12px;
+        &.badge-red {
+            background-color: #DE0101;
+            color: #ffffff;
+        }
+        &.badge-blue {
+            background-color: #7ABCFF;
+            color: #ffffff;
+        }
+        &.badge-green {
+            background-color: #2CA01C;
+            color: #ffffff;
+        }
+        &.badge-yellow {
+            background-color: #ECC528;
+            color: #ffffff;
+        }
+        &.badge-white {
+            background-color: #F9F9F9;
+            color: #515151;
+        }
+        &.badge-sky {
+            background-color: #7ABBFC;
+            color: #ffffff;
+        }
+        &.badge-blue-accent {
+            background-color: #1A70C6;
+            color: #ffffff;
+        }
+        &.badge-gray {
+            background-color: #BFC5D2;
+            color: #515151;
+        }
+    }
+}
+// =================== ./Shared CSS ================ //
 
 #CRMreminderModal, 
 #newUserModal {
