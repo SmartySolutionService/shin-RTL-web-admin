@@ -11745,6 +11745,12 @@ body .main.open-filter .filter-app {
 .cs-btn-img.btn-new-user:hover {
   background-image: url(../img/buttons/btn-new-user-hover.png);
 }
+.cs-btn-img.btn-new-product-details {
+  background-image: url(../img/buttons/btn-new-product-details.png);
+}
+.cs-btn-img.btn-new-product-details:hover {
+  background-image: url(../img/buttons/btn-new-product-details-hover.png);
+}
 
 .cs-icon {
   display: inline-flex;
