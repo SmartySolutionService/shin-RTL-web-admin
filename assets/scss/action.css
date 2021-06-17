@@ -453,22 +453,6 @@
   position: absolute;
   color: #1a70c6;
 }
-.action-page .filter-app .app-body .badge-dropdown .dropdown-toggle {
-  padding: 5px;
-}
-.action-page .filter-app .app-body .badge-dropdown .dropdown-toggle:after {
-  display: none;
-}
-.action-page .filter-app .app-body .badge-dropdown .dropdown-toggle:focus {
-  box-shadow: none;
-  border: 1px solid rgba(0, 0, 0, 0.15);
-}
-.action-page .filter-app .app-body .badge-dropdown .dropdown-menu {
-  min-width: 60px;
-}
-.action-page .filter-app .app-body .badge-dropdown .dropdown-menu .dropdown-item {
-  padding: 5px;
-}
 .action-page .filter-app .app-body .gj-datepicker .td-datepicker {
   min-width: 120px;
   padding-left: 5px;
@@ -526,6 +510,22 @@
 .app-body .badge.badge-gray {
   background-color: #BFC5D2;
   color: #515151;
+}
+.app-body .badge-dropdown .dropdown-toggle {
+  padding: 5px;
+}
+.app-body .badge-dropdown .dropdown-toggle:after {
+  display: none;
+}
+.app-body .badge-dropdown .dropdown-toggle:focus {
+  box-shadow: none;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+}
+.app-body .badge-dropdown .dropdown-menu {
+  min-width: 60px;
+}
+.app-body .badge-dropdown .dropdown-menu .dropdown-item {
+  padding: 5px;
 }
 
 #CRMreminderModal .modal-dialog,

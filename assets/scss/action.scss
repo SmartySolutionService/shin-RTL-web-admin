@@ -480,24 +480,6 @@
                 position: absolute;
                 color: #1a70c6;
             }
-            .badge-dropdown {
-                .dropdown-toggle {
-                    &:after {
-                        display: none;
-                    }
-                    &:focus {
-                        box-shadow: none;
-                        border: 1px solid rgba(0, 0, 0, 0.15);
-                    }
-                    padding: 5px;
-                }
-                .dropdown-menu {
-                    min-width: 60px;
-                    .dropdown-item {
-                        padding: 5px;
-                    }
-                }
-            }
             .gj-datepicker {
                 .td-datepicker {
                     min-width: 120px;
@@ -561,6 +543,24 @@
         &.badge-gray {
             background-color: #BFC5D2;
             color: #515151;
+        }
+    }
+    .badge-dropdown {
+        .dropdown-toggle {
+            &:after {
+                display: none;
+            }
+            &:focus {
+                box-shadow: none;
+                border: 1px solid rgba(0, 0, 0, 0.15);
+            }
+            padding: 5px;
+        }
+        .dropdown-menu {
+            min-width: 60px;
+            .dropdown-item {
+                padding: 5px;
+            }
         }
     }
 }

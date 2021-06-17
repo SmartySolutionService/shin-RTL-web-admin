@@ -242,7 +242,19 @@
                 <td>Text</td>
                 <td>Text</td>
                 <td>
-                  <span class="badge badge-red">דחוף</sapn>
+                  <div class="dropdown badge-dropdown">
+                    <button class="btn dropdown-toggle" type="button" id="dropdownBadge" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <span class="badge badge-red">דחוף</span>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownBadge">
+                      <a class="dropdown-item" href="#" ><span class="badge badge-green">דחוף</span></a>
+                      <a class="dropdown-item" href="#" ><span class="badge badge-red">דחוף</span></a>
+                      <a class="dropdown-item" href="#" ><span class="badge badge-sky">דחוף</span></a>
+                      <a class="dropdown-item" href="#" ><span class="badge badge-white">דחוף</span></a>
+                      <a class="dropdown-item" href="#" ><span class="badge badge-gray">דחוף</span></a>
+                      <a class="dropdown-item" href="#" ><span class="badge badge-blue-accent">דחוף</span></a>
+                    </div>
+                  </div>
                 </td>
                 <td>Num</td>
                 <td>Num</td>
@@ -268,7 +280,19 @@
                 <td>Text</td>
                 <td>Text</td>
                 <td>
-                  <span class="badge badge-white">רגיל</sapn>
+                  <div class="dropdown badge-dropdown">
+                    <button class="btn dropdown-toggle" type="button" id="dropdownBadge" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <span class="badge badge-white">דחוף</span>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownBadge">
+                      <a class="dropdown-item" href="#" ><span class="badge badge-green">דחוף</span></a>
+                      <a class="dropdown-item" href="#" ><span class="badge badge-red">דחוף</span></a>
+                      <a class="dropdown-item" href="#" ><span class="badge badge-sky">דחוף</span></a>
+                      <a class="dropdown-item" href="#" ><span class="badge badge-white">דחוף</span></a>
+                      <a class="dropdown-item" href="#" ><span class="badge badge-gray">דחוף</span></a>
+                      <a class="dropdown-item" href="#" ><span class="badge badge-blue-accent">דחוף</span></a>
+                    </div>
+                  </div>
                 </td>
                 <td>Num</td>
                 <td>Num</td>
@@ -294,7 +318,19 @@
                 <td>Text</td>
                 <td>Text</td>
                 <td>
-                  <span class="badge badge-green">טופל</sapn>
+                  <div class="dropdown badge-dropdown">
+                    <button class="btn dropdown-toggle" type="button" id="dropdownBadge" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <span class="badge badge-green">דחוף</span>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownBadge">
+                      <a class="dropdown-item" href="#" ><span class="badge badge-green">דחוף</span></a>
+                      <a class="dropdown-item" href="#" ><span class="badge badge-red">דחוף</span></a>
+                      <a class="dropdown-item" href="#" ><span class="badge badge-sky">דחוף</span></a>
+                      <a class="dropdown-item" href="#" ><span class="badge badge-white">דחוף</span></a>
+                      <a class="dropdown-item" href="#" ><span class="badge badge-gray">דחוף</span></a>
+                      <a class="dropdown-item" href="#" ><span class="badge badge-blue-accent">דחוף</span></a>
+                    </div>
+                  </div>
                 </td>
                 <td>Num</td>
                 <td>Num</td>
@@ -357,6 +393,11 @@
       // ordering:  false,
       orderCellsTop: true
     });
+  });
+</script>
+<script>
+  $(document).on('click', '.badge-dropdown .dropdown-item', function() {
+    $(this).closest('.badge-dropdown').find('.dropdown-toggle').html($(this).html());
   });
 </script>
 </body>
