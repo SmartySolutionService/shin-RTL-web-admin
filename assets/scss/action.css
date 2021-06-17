@@ -1369,6 +1369,38 @@
   overflow-x: auto;
   padding: 0;
 }
+#newProductModal .btn-add-route-item,
+#providentEducationCompensationModal .btn-add-route-item,
+#savingPolicyModal .btn-add-route-item,
+#managedPortfolioModal .btn-add-route-item,
+#insurancePolicySavingsModal .btn-add-route-item,
+#pensionFundModal .btn-add-route-item,
+#insurancePolicyModal .btn-add-route-item,
+#IRAModal .btn-add-route-item,
+#alternativeFundModal .btn-add-route-item,
+#realEstateInvestmentModal .btn-add-route-item,
+#financialProductRevenueModal .btn-add-route-item,
+#alternativeProductRevenueModal .btn-add-route-item,
+#methodsOfPaymentModal .btn-add-route-item,
+#appointmentOfOptimizersModal .btn-add-route-item,
+#fundConsolidationModal .btn-add-route-item,
+#insuranceProductsModal .btn-add-route-item,
+#changeOfEmployerModal .btn-add-route-item,
+#powerOfAttorneyModal .btn-add-route-item,
+#trackChangeModal .btn-add-route-item,
+#additionalDepositModal .btn-add-route-item,
+#allowanceModal .btn-add-route-item,
+#managementFeeModal .btn-add-route-item,
+#loanAcceptanceModal .btn-add-route-item,
+#annuityModal .btn-add-route-item,
+#repaymentOfLoanModal .btn-add-route-item,
+#providentMobilizationModal .btn-add-route-item,
+#alternativeMobilityModal .btn-add-route-item {
+  margin-top: 10px;
+  margin-right: 40px;
+  text-decoration: underline;
+  cursor: pointer;
+}
 
 .data-page h5 {
   font-weight: bold;
