@@ -1914,6 +1914,12 @@ body {
             background-image: url(../img/buttons/btn-new-product-details-hover.png);
         }
     }
+    &.btn-add-touch {
+        background-image: url(../img/buttons/btn-add-touch.png);
+        &:hover {
+            background-image: url(../img/buttons/btn-add-touch-hover.png);
+        }
+    }
 }
 
 .cs-icon {

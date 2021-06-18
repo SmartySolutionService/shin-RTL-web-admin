@@ -527,6 +527,35 @@
 .app-body .badge-dropdown .dropdown-menu .dropdown-item {
   padding: 5px;
 }
+.app-body .gj-timepicker {
+  position: relative;
+  display: block;
+  height: 40px;
+}
+.app-body .gj-timepicker .timepicker {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 100;
+  float: left;
+  width: 120px;
+  height: 48px;
+  padding-bottom: 5px;
+  margin: 2px 0 0 0;
+  list-style: none;
+  font-size: 14px;
+  text-align: center;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  background-clip: padding-box;
+}
+.app-body .gj-timepicker .gj-icon {
+  z-index: 1000;
+}
 
 #CRMreminderModal .modal-dialog,
 #newUserModal .modal-dialog {
@@ -1836,6 +1865,13 @@
 }
 .data-page .btn-new-user {
   width: 190px;
+}
+
+.crm-page table .gj-datepicker {
+  min-width: 130px !important;
+}
+.crm-page table .gj-datepicker .input-group-append {
+  margin-left: 0px;
 }
 
 /*# sourceMappingURL=action.css.map */

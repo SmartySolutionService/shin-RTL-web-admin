@@ -11751,6 +11751,12 @@ body .main.open-filter .filter-app {
 .cs-btn-img.btn-new-product-details:hover {
   background-image: url(../img/buttons/btn-new-product-details-hover.png);
 }
+.cs-btn-img.btn-add-touch {
+  background-image: url(../img/buttons/btn-add-touch.png);
+}
+.cs-btn-img.btn-add-touch:hover {
+  background-image: url(../img/buttons/btn-add-touch-hover.png);
+}
 
 .cs-icon {
   display: inline-flex;
