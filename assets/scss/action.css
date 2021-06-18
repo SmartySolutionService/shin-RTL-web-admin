@@ -527,34 +527,35 @@
 .app-body .badge-dropdown .dropdown-menu .dropdown-item {
   padding: 5px;
 }
+.app-body .gj-datepicker .form-control {
+  border-top-right-radius: 0.25rem !important;
+  border-bottom-right-radius: 0.25rem !important;
+}
 .app-body .gj-timepicker {
-  position: relative;
-  display: block;
-  height: 40px;
+  width: 100px;
 }
-.app-body .gj-timepicker .timepicker {
+.app-body .gj-timepicker .form-control {
+  border-top-right-radius: 0.25rem !important;
+  border-bottom-right-radius: 0.25rem !important;
+}
+.app-body .gj-timepicker .input-group-append {
   position: absolute;
-  top: 0px;
   left: 0px;
-  z-index: 100;
-  float: left;
-  width: 120px;
-  height: 48px;
-  padding-bottom: 5px;
-  margin: 2px 0 0 0;
-  list-style: none;
-  font-size: 14px;
-  text-align: center;
-  background-color: #fff;
-  border: 1px solid #ccc;
-  border: 1px solid rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
-  background-clip: padding-box;
+  z-index: 5;
 }
-.app-body .gj-timepicker .gj-icon {
-  z-index: 1000;
+.app-body .gj-timepicker .input-group-append button {
+  border: none;
+  height: 38px;
+}
+.app-body .gj-timepicker .input-group-append button:hover, .app-body .gj-timepicker .input-group-append button:active, .app-body .gj-timepicker .input-group-append button:focus, .app-body .gj-timepicker .input-group-append button:active:focus {
+  background-color: transparent;
+  outline: none;
+  border: 0;
+  box-shadow: none;
+}
+.app-body .gj-timepicker .input-group-append button .gj-icon {
+  top: 10px;
+  color: #7abbfc;
 }
 
 #CRMreminderModal .modal-dialog,

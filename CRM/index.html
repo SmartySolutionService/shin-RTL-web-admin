@@ -12,7 +12,6 @@
   <link rel="stylesheet" type="text/css" href="../assets/plugins/DataTables/datatables.css"/>
   <link rel='stylesheet' href='../assets/plugins/addSlider/src/addSlider.css' />
   <link rel="stylesheet" href="../assets/plugins/sliding-toggle-switch/lc_switch.css">
-  <link rel="stylesheet" href="../assets/plugins/user-friendly-time-picker/dist/css/timepicker.min.css" />
   <!-- js -->
   <script src="../assets/jquery/jquery.min.js"></script>
   <script src="../assets/plugins/popper/popper.min.js"></script>
@@ -221,8 +220,8 @@
                   <th>
                     <input class="form-control datepicker" value="2020-03-09" />
                   </th>
-                  <th>
-                    <input type="text" class="timepicker" value="14:32" />
+                  <th class="text-center">
+                    <input type="text" class="form-control timepicker" value="14:32" />
                   </th>
                   <th>
                     <select class="form-control">
@@ -289,8 +288,74 @@
                   <td class="">
                     <input class="form-control datepicker td-datepicker" value="2020/03/09" />
                   </td>
+                  <td class="text-center px-1">
+                    <input type="text" class="form-control timepicker" value="14:32" />
+                  </td>
+                  <td>הילה</td>
+                  <td>מי מטעם הלקוח</td>
+                  <td>נורית ישראלי</td>
+                  <td>פנייה טלפונית</td>
+                  <td>תיאום פגישת היכרות </td>
+                  <td>הועבר לגוף מנהל </td>
+                  <td>גנית </td>
+                  <td class="px-2">
+                    <div class="dropdown badge-dropdown">
+                      <button class="btn dropdown-toggle" type="button" id="dropdownBadge" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="badge badge-red">דחוף</span>
+                      </button>
+                      <div class="dropdown-menu" aria-labelledby="dropdownBadge">
+                        <a class="dropdown-item" href="#" ><span class="badge badge-green">דחוף</span></a>
+                        <a class="dropdown-item" href="#" ><span class="badge badge-red">דחוף</span></a>
+                        <a class="dropdown-item" href="#" ><span class="badge badge-sky">דחוף</span></a>
+                        <a class="dropdown-item" href="#" ><span class="badge badge-white">דחוף</span></a>
+                        <a class="dropdown-item" href="#" ><span class="badge badge-gray">דחוף</span></a>
+                        <a class="dropdown-item" href="#" ><span class="badge badge-blue-accent">דחוף</span></a>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="px-2">
+                    <div class="dropdown badge-dropdown">
+                      <button class="btn dropdown-toggle" type="button" id="dropdownBadge" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="badge badge-red">דחוף</span>
+                      </button>
+                      <div class="dropdown-menu" aria-labelledby="dropdownBadge">
+                        <a class="dropdown-item" href="#" ><span class="badge badge-green">דחוף</span></a>
+                        <a class="dropdown-item" href="#" ><span class="badge badge-red">דחוף</span></a>
+                        <a class="dropdown-item" href="#" ><span class="badge badge-sky">דחוף</span></a>
+                        <a class="dropdown-item" href="#" ><span class="badge badge-white">דחוף</span></a>
+                        <a class="dropdown-item" href="#" ><span class="badge badge-gray">דחוף</span></a>
+                        <a class="dropdown-item" href="#" ><span class="badge badge-blue-accent">דחוף</span></a>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <input class="form-control datepicker td-datepicker" value="2020/03/09" />
+                  </td>
+                </tr>
+                <tr class="py-2">
+                  <td class="d-flex">
+                    <a class="action-control toggle-detail">
+                      <div class="cs-icon ic-collapse-pm"></div>
+                    </a>
+                    <div class="action-control">
+                      <label class="cs-checkbox-container">
+                        <input type="checkbox" />
+                        <span class="checkmark"></span>
+                      </label>
+                    </div>
+                    <a class="action-control">
+                      <div class="cs-icon ic-pencil-blue"></div>
+                    </a>
+                    <a class="action-control" data-toggle="modal" data-target="#CRMreminderModal">
+                      <div class="cs-icon ic-question-answer"></div>
+                      <span class="bubble bubble-gray">1</span>
+                    </a>
+                  </td>
                   <td class="">
-                    <input class="form-control datepicker td-datepicker" value="14:32" />
+                    <input class="form-control datepicker td-datepicker" value="2020/03/09" />
+                  </td>
+                  <td class="text-center px-1">
+                    <input type="text" class="form-control timepicker" value="14:32" />
                   </td>
                   <td>הילה</td>
                   <td>מי מטעם הלקוח</td>
@@ -318,6 +383,72 @@
                     <div class="dropdown badge-dropdown">
                       <button class="btn dropdown-toggle" type="button" id="dropdownBadge" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <span class="badge badge-red">דחוף</span>
+                      </button>
+                      <div class="dropdown-menu" aria-labelledby="dropdownBadge">
+                        <a class="dropdown-item" href="#" ><span class="badge badge-green">דחוף</span></a>
+                        <a class="dropdown-item" href="#" ><span class="badge badge-red">דחוף</span></a>
+                        <a class="dropdown-item" href="#" ><span class="badge badge-sky">דחוף</span></a>
+                        <a class="dropdown-item" href="#" ><span class="badge badge-white">דחוף</span></a>
+                        <a class="dropdown-item" href="#" ><span class="badge badge-gray">דחוף</span></a>
+                        <a class="dropdown-item" href="#" ><span class="badge badge-blue-accent">דחוף</span></a>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <input class="form-control datepicker td-datepicker" value="2020/03/09" />
+                  </td>
+                </tr>
+                <tr class="py-2">
+                  <td class="d-flex">
+                    <a class="action-control toggle-detail">
+                      <div class="cs-icon ic-collapse-pm"></div>
+                    </a>
+                    <div class="action-control">
+                      <label class="cs-checkbox-container">
+                        <input type="checkbox" />
+                        <span class="checkmark"></span>
+                      </label>
+                    </div>
+                    <a class="action-control">
+                      <div class="cs-icon ic-pencil-blue"></div>
+                    </a>
+                    <a class="action-control" data-toggle="modal" data-target="#CRMreminderModal">
+                      <div class="cs-icon ic-question-answer"></div>
+                      <span class="bubble bubble-gray">1</span>
+                    </a>
+                  </td>
+                  <td class="">
+                    <input class="form-control datepicker td-datepicker" value="2020/03/09" />
+                  </td>
+                  <td class="text-center px-1">
+                    <input type="text" class="form-control timepicker" value="14:32" />
+                  </td>
+                  <td>הילה</td>
+                  <td>מי מטעם הלקוח</td>
+                  <td>נורית ישראלי</td>
+                  <td>פנייה טלפונית</td>
+                  <td>תיאום פגישת היכרות </td>
+                  <td>הועבר לגוף מנהל </td>
+                  <td>גנית </td>
+                  <td class="px-2">
+                    <div class="dropdown badge-dropdown">
+                      <button class="btn dropdown-toggle" type="button" id="dropdownBadge" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="badge badge-green">דחוף</span>
+                      </button>
+                      <div class="dropdown-menu" aria-labelledby="dropdownBadge">
+                        <a class="dropdown-item" href="#" ><span class="badge badge-green">דחוף</span></a>
+                        <a class="dropdown-item" href="#" ><span class="badge badge-red">דחוף</span></a>
+                        <a class="dropdown-item" href="#" ><span class="badge badge-sky">דחוף</span></a>
+                        <a class="dropdown-item" href="#" ><span class="badge badge-white">דחוף</span></a>
+                        <a class="dropdown-item" href="#" ><span class="badge badge-gray">דחוף</span></a>
+                        <a class="dropdown-item" href="#" ><span class="badge badge-blue-accent">דחוף</span></a>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="px-2">
+                    <div class="dropdown badge-dropdown">
+                      <button class="btn dropdown-toggle" type="button" id="dropdownBadge" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="badge badge-white">דחוף</span>
                       </button>
                       <div class="dropdown-menu" aria-labelledby="dropdownBadge">
                         <a class="dropdown-item" href="#" ><span class="badge badge-green">דחוף</span></a>
@@ -444,7 +575,6 @@
 <script src="../assets/js/common.js" type="text/javascript"></script>
 <script src="../assets/custom/square-rater/square-rater.js" type="text/javascript"></script>
 <script src="../assets/custom/rate-color-bar/rate-color-bar.js" type="text/javascript"></script>
-<script src="../assets/plugins/user-friendly-time-picker/dist/js/timepicker.min.js"></script>
 <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
 <!-- ./plugin js -->
 <!-- wysiwyg -->
@@ -509,7 +639,7 @@
   function initTimepicker() {
     var timepickers = $('.timepicker');
     for(var i = 0; i < timepickers.length; i++) {
-      $(timepickers[i]).timepicker();
+      $(timepickers[i]).timepicker({ uiLibrary: 'bootstrap4', modal: false, header: true, footer: false, mode: '24hr' });
     }
   }
   initDatepicker();

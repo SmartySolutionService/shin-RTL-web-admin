@@ -563,33 +563,36 @@
             }
         }
     }
-    .gj-timepicker {
-        position: relative;
-        display: block;
-        height: 40px;
-        .timepicker {
-            position:absolute;
-            top: 0px;
-            left: 0px;
-            z-index:100;
-            float:left;
-            width:120px;
-            height: 48px;
-            padding-bottom:5px;
-            margin:2px 0 0 0;
-            list-style:none;
-            font-size:14px;
-            text-align:center;
-            background-color:#fff;
-            border:1px solid #ccc;
-            border:1px solid rgba(0,0,0,0.15);
-            border-radius:4px;
-            -webkit-box-shadow:0 6px 12px rgba(0,0,0,0.175);
-            box-shadow:0 6px 12px rgba(0,0,0,0.175);
-            background-clip: padding-box;
+    .gj-datepicker {
+        .form-control {
+            border-top-right-radius: 0.25rem !important;
+            border-bottom-right-radius: 0.25rem !important;
         }
-        .gj-icon {
-            z-index:1000;
+    }
+    .gj-timepicker {
+        width: 100px;
+        .form-control {
+            border-top-right-radius: 0.25rem !important;
+            border-bottom-right-radius: 0.25rem !important;
+        }
+        .input-group-append {
+            position: absolute;
+            left: 0px;
+            z-index: 5;
+            button {
+                border: none;
+                height: 38px;
+                &:hover, &:active, &:focus, &:active:focus {
+                    background-color: transparent;
+                    outline: none;
+                    border: 0;
+                    box-shadow: none;
+                }
+                .gj-icon {
+                    top: 10px;
+                    color: #7abbfc;
+                }
+            }
         }
     }
 }
