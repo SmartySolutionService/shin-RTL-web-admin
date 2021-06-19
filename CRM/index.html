@@ -133,7 +133,7 @@
       <div class="row app-header-top">
         <div class="col-xl-7 col-lg-7 col-md-7 col-sm-7 col-7">
           <span class="title">CRM</span>
-            <a class="cs-btn-img btn-add-touch ml-0 mr-5" style="top:15px;" href="../Action/portfolio-execution-tracking.html"></a>
+            <a class="cs-btn-img btn-add-touch ml-0 mr-5" style="top:15px;" data-toggle="modal" data-target="#CRMAddTouchModal"></a>
         </div>
         <div class="col-xl-5 col-lg-5 col-md-5 col-sm-5 col-5 text-left">
           <div class="cs-btn-group ml-3">
@@ -149,11 +149,11 @@
             <label>אקסל</label>
           </div>
           <div class="cs-btn-group ml-3">
-            <a class="cs-btn-icon btn-message" href="javascript:void(0)"></a>
+            <a class="cs-btn-icon btn-message" data-toggle="modal" data-target="#SMSModal"></a>
             <label>SMS</label>
           </div>
           <div class="cs-btn-group ml-3">
-            <a class="cs-btn-icon btn-email" href="javascript:void(0)"></a>
+            <a class="cs-btn-icon btn-email" data-toggle="modal" data-target="#EmailModal"></a>
             <label>אימייל</label>
           </div>
           <div class="cs-btn-group ml-0">
@@ -277,7 +277,7 @@
                         <span class="checkmark"></span>
                       </label>
                     </div>
-                    <a class="action-control">
+                    <a class="action-control" data-toggle="modal" data-target="#CRMAddTouchModal">
                       <div class="cs-icon ic-pencil-blue"></div>
                     </a>
                     <a class="action-control" data-toggle="modal" data-target="#CRMreminderModal">
@@ -343,7 +343,7 @@
                         <span class="checkmark"></span>
                       </label>
                     </div>
-                    <a class="action-control">
+                    <a class="action-control" data-toggle="modal" data-target="#CRMAddTouchModal">
                       <div class="cs-icon ic-pencil-blue"></div>
                     </a>
                     <a class="action-control" data-toggle="modal" data-target="#CRMreminderModal">
@@ -409,7 +409,7 @@
                         <span class="checkmark"></span>
                       </label>
                     </div>
-                    <a class="action-control">
+                    <a class="action-control" data-toggle="modal" data-target="#CRMAddTouchModal">
                       <div class="cs-icon ic-pencil-blue"></div>
                     </a>
                     <a class="action-control" data-toggle="modal" data-target="#CRMreminderModal">
@@ -558,6 +558,257 @@
       <!-- Modal footer -->
       <div class="modal-footer">
         <!-- <button class="cs-btn-img btn-save-modal btn-success" data-dismiss="modal"></button> -->
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<!-- CRM Add Touch Modal -->
+<div class="modal" id="CRMAddTouchModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="mt-2" style="margin-right: 40px">מגע חדש</h4>
+        <button type="button" class="cs-btn-icon btn-close close dark mr-auto" data-dismiss="modal"></button>
+      </div>
+      <!-- Modal body -->
+      <div class="modal-body">
+        <form class="text-right">
+          <div class="row">
+            <div class="col-12">
+              <label class="text-primary font-weight-bold">לקוח</label>
+              <select class="form-control">
+                <option>TEXT</option>
+              </select>
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-12">
+              <label class="text-primary font-weight-bold">שם יוזם המגע</label>
+              <input class="form-control" placeholder="TEXT" />
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-6">
+              <label class="text-primary font-weight-bold">מקבל פניה</label>
+              <select class="form-control">
+                <option>TEXT</option>
+              </select>
+            </div>
+            <div class="col-6">
+              <label class="text-primary font-weight-bold">יוזם המגע</label>
+              <select class="form-control">
+                <option>TEXT</option>
+              </select>
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-6">
+              <label class="text-primary font-weight-bold">סוג תקשורת</label>
+              <select class="form-control">
+                <option>TEXT</option>
+              </select>
+            </div>
+            <div class="col-6">
+              <label class="text-primary font-weight-bold">מהות המגע </label>
+              <select class="form-control">
+                <option>TEXT</option>
+              </select>
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-6">
+              <label class="text-primary font-weight-bold">גורם מטפל</label>
+              <select class="form-control">
+                <option>TEXT</option>
+              </select>
+            </div>
+            <div class="col-6">
+              <label class="text-primary font-weight-bold">עדיפות</label>
+              <select class="form-control">
+                <option>TEXT</option>
+              </select>
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-12">
+              <label class="text-primary font-weight-bold">פרטי טיפול</label>
+              <textarea class="form-control" rows="5"></textarea>
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-12">
+              <label class="text-primary font-weight-bold">תוצאות המגע</label>
+              <input class="form-control" placeholder="TEXT" />
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-6">
+              <label class="text-primary font-weight-bold">סטטוס טיפול</label>
+              <select class="form-control">
+                <option>TEXT</option>
+              </select>
+              <div class="d-flex mt-3">
+                <label>תאריך פנייה: </label>
+                <label class="font-weight-bold">22.12.2020</label>
+              </div>
+            </div>
+            <div class="col-6">
+              <label class="text-primary font-weight-bold">מועד סיום טיפול</label>
+              <input class="form-control datepicker" placeholder="DATE" />
+              <div class="d-flex mt-3">
+                <label>משתמש יוצר: </label>
+                <label class="font-weight-bold">שם משתמש</label>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button class="cs-btn-img btn-save-modal btn-success" data-dismiss="modal"></button>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<!-- SMS Modal -->
+<div class="modal" id="SMSModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="mt-2" style="margin-right: 40px">SMS משלוח</h4>
+        <button type="button" class="cs-btn-icon btn-close close dark mr-auto" data-dismiss="modal"></button>
+      </div>
+      <!-- Modal body -->
+      <div class="modal-body pl-5">
+        <form class="text-right">
+          <div class="row">
+            <div class="col-12">
+              <label class="text-primary font-weight-bold">הודעה</label>
+              <textarea class="form-control" rows="5" placeholder="TEXT" style="height: 250px;"></textarea>
+            </div>
+          </div>
+          <div class="row mt-5">
+            <div class="col-4 d-flex py-2">
+              <input type="radio" class="form-control ml-3 mt-1" />
+              <label class="text-primary font-weight-bold py-1">שלח לקוח</label>
+            </div>
+            <div class="col-6">
+              <input type="text" class="form-control" placeholder="מספר טלפון" />
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-4 d-flex py-2">
+              <input type="radio" class="form-control ml-3 mt-1" />
+              <label class="text-primary font-weight-bold py-1">שלח לעובד החברה</label>
+            </div>
+            <div class="col-6">
+              <select class="form-control">
+                <option>בחר נציגים מהרשימה</option>
+              </select>
+            </div>
+          </div>
+          <div class="row mx-0 mt-5">
+            <a class="btn-add-abstainers font-weight-bold">הוסף נמנעים</a>
+          </div>
+        </form>
+      </div>
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button class="cs-btn-img btn-send-green" data-dismiss="modal"></button>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<!-- Email Modal -->
+<div class="modal" id="EmailModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="mt-2" style="margin-right: 40px">שליחת אימייל</h4>
+        <button type="button" class="cs-btn-icon btn-close close dark mr-auto" data-dismiss="modal"></button>
+      </div>
+      <!-- Modal body -->
+      <div class="modal-body pl-5">
+        <form class="text-right">
+          <div class="row">
+            <div class="col-4 d-flex py-2">
+              <input type="radio" class="form-control ml-3 mt-1" />
+              <label class="text-primary font-weight-bold py-1">שלח לעובד החברה</label>
+            </div>
+            <div class="col-6">
+              <select class="form-control">
+                <option>בחר נציגים מהרשימה</option>
+              </select>
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-4 d-flex py-2">
+              <input type="radio" class="form-control ml-3 mt-1" />
+              <label class="text-primary font-weight-bold py-1">שלח לקוח</label>
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-3">
+              <label class="form-control py-2">אל...</label>
+            </div>
+            <div class="col-9">
+              <input type="text" class="form-control" />
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-3">
+              <label class="form-control py-2">אותק...</label>
+            </div>
+            <div class="col-9">
+              <input type="text" class="form-control" />
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-3">
+              <label class="form-control py-2">מוסתר...</label>
+            </div>
+            <div class="col-9">
+              <input type="text" class="form-control" />
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-3">
+              <label class="py-2">נושא</label>
+            </div>
+            <div class="col-9">
+              <input type="text" class="form-control" />
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-3">
+              <label class="py-2">
+                <span class="cs-icon ic-attach-file" style="position: relative; top: 5px;"></span>
+                צרף קובץ
+              </label>
+            </div>
+            <div class="col-9">
+              <input type="text" class="form-control" />
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-12">
+              <textarea class="form-control" rows="5" placeholder="TEXT" style="height: 250px;"></textarea>
+            </div>
+          </div>
+        </form>
+      </div>
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button class="cs-btn-img btn-send-green" data-dismiss="modal"></button>
       </div>
       
     </div>

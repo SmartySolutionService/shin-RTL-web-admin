@@ -559,25 +559,40 @@
 }
 
 #CRMreminderModal .modal-dialog,
-#newUserModal .modal-dialog {
+#CRMAddTouchModal .modal-dialog,
+#newUserModal .modal-dialog,
+#SMSModal .modal-dialog,
+#EmailModal .modal-dialog {
   width: 740px !important;
 }
 #CRMreminderModal .modal-dialog .btn-update-green,
-#newUserModal .modal-dialog .btn-update-green {
+#CRMAddTouchModal .modal-dialog .btn-update-green,
+#newUserModal .modal-dialog .btn-update-green,
+#SMSModal .modal-dialog .btn-update-green,
+#EmailModal .modal-dialog .btn-update-green {
   display: block;
   width: 130px;
 }
 #CRMreminderModal .modal-dialog .attach,
-#newUserModal .modal-dialog .attach {
+#CRMAddTouchModal .modal-dialog .attach,
+#newUserModal .modal-dialog .attach,
+#SMSModal .modal-dialog .attach,
+#EmailModal .modal-dialog .attach {
   display: inline-flex;
 }
 #CRMreminderModal .modal-dialog .attach .ic-attach-file,
-#newUserModal .modal-dialog .attach .ic-attach-file {
+#CRMAddTouchModal .modal-dialog .attach .ic-attach-file,
+#newUserModal .modal-dialog .attach .ic-attach-file,
+#SMSModal .modal-dialog .attach .ic-attach-file,
+#EmailModal .modal-dialog .attach .ic-attach-file {
   position: relative;
   top: 3px;
 }
 #CRMreminderModal .modal-dialog .attach .dropdown .dropdown-toggle,
-#newUserModal .modal-dialog .attach .dropdown .dropdown-toggle {
+#CRMAddTouchModal .modal-dialog .attach .dropdown .dropdown-toggle,
+#newUserModal .modal-dialog .attach .dropdown .dropdown-toggle,
+#SMSModal .modal-dialog .attach .dropdown .dropdown-toggle,
+#EmailModal .modal-dialog .attach .dropdown .dropdown-toggle {
   border: none;
   background-color: transparent;
   color: #7ABCFF;
@@ -587,20 +602,32 @@
   padding-bottom: 5px;
 }
 #CRMreminderModal .modal-dialog .attach .dropdown .dropdown-toggle:after,
-#newUserModal .modal-dialog .attach .dropdown .dropdown-toggle:after {
+#CRMAddTouchModal .modal-dialog .attach .dropdown .dropdown-toggle:after,
+#newUserModal .modal-dialog .attach .dropdown .dropdown-toggle:after,
+#SMSModal .modal-dialog .attach .dropdown .dropdown-toggle:after,
+#EmailModal .modal-dialog .attach .dropdown .dropdown-toggle:after {
   display: none;
 }
 #CRMreminderModal .modal-dialog .attach .dropdown .dropdown-toggle:hover,
-#newUserModal .modal-dialog .attach .dropdown .dropdown-toggle:hover {
+#CRMAddTouchModal .modal-dialog .attach .dropdown .dropdown-toggle:hover,
+#newUserModal .modal-dialog .attach .dropdown .dropdown-toggle:hover,
+#SMSModal .modal-dialog .attach .dropdown .dropdown-toggle:hover,
+#EmailModal .modal-dialog .attach .dropdown .dropdown-toggle:hover {
   background-color: #7ABCFF;
   color: #ffffff;
 }
 #CRMreminderModal .modal-dialog .attach .dropdown .dropdown-menu .dropdown-item,
-#newUserModal .modal-dialog .attach .dropdown .dropdown-menu .dropdown-item {
+#CRMAddTouchModal .modal-dialog .attach .dropdown .dropdown-menu .dropdown-item,
+#newUserModal .modal-dialog .attach .dropdown .dropdown-menu .dropdown-item,
+#SMSModal .modal-dialog .attach .dropdown .dropdown-menu .dropdown-item,
+#EmailModal .modal-dialog .attach .dropdown .dropdown-menu .dropdown-item {
   text-align: right;
 }
 #CRMreminderModal .modal-dialog .text-editor,
-#newUserModal .modal-dialog .text-editor {
+#CRMAddTouchModal .modal-dialog .text-editor,
+#newUserModal .modal-dialog .text-editor,
+#SMSModal .modal-dialog .text-editor,
+#EmailModal .modal-dialog .text-editor {
   position: relative;
   display: block;
   width: 100%;
@@ -608,7 +635,10 @@
   background-color: #ffffff;
 }
 #CRMreminderModal .modal-dialog .text-editor .editor-header,
-#newUserModal .modal-dialog .text-editor .editor-header {
+#CRMAddTouchModal .modal-dialog .text-editor .editor-header,
+#newUserModal .modal-dialog .text-editor .editor-header,
+#SMSModal .modal-dialog .text-editor .editor-header,
+#EmailModal .modal-dialog .text-editor .editor-header {
   position: absolute;
   z-index: 1000;
   top: 0px;
@@ -618,16 +648,25 @@
   display: flex;
 }
 #CRMreminderModal .modal-dialog .text-editor .editor-header .dropdown .dropdown-toggle,
-#newUserModal .modal-dialog .text-editor .editor-header .dropdown .dropdown-toggle {
+#CRMAddTouchModal .modal-dialog .text-editor .editor-header .dropdown .dropdown-toggle,
+#newUserModal .modal-dialog .text-editor .editor-header .dropdown .dropdown-toggle,
+#SMSModal .modal-dialog .text-editor .editor-header .dropdown .dropdown-toggle,
+#EmailModal .modal-dialog .text-editor .editor-header .dropdown .dropdown-toggle {
   border: none;
   z-index: 10000;
 }
 #CRMreminderModal .modal-dialog .text-editor .editor-header .dropdown .dropdown-toggle:after,
-#newUserModal .modal-dialog .text-editor .editor-header .dropdown .dropdown-toggle:after {
+#CRMAddTouchModal .modal-dialog .text-editor .editor-header .dropdown .dropdown-toggle:after,
+#newUserModal .modal-dialog .text-editor .editor-header .dropdown .dropdown-toggle:after,
+#SMSModal .modal-dialog .text-editor .editor-header .dropdown .dropdown-toggle:after,
+#EmailModal .modal-dialog .text-editor .editor-header .dropdown .dropdown-toggle:after {
   display: none;
 }
 #CRMreminderModal .modal-dialog .text-editor .editor-header .dropdown .dropdown-menu,
-#newUserModal .modal-dialog .text-editor .editor-header .dropdown .dropdown-menu {
+#CRMAddTouchModal .modal-dialog .text-editor .editor-header .dropdown .dropdown-menu,
+#newUserModal .modal-dialog .text-editor .editor-header .dropdown .dropdown-menu,
+#SMSModal .modal-dialog .text-editor .editor-header .dropdown .dropdown-menu,
+#EmailModal .modal-dialog .text-editor .editor-header .dropdown .dropdown-menu {
   top: -30px !important;
   right: 5px;
   padding-top: 30px;
@@ -637,16 +676,25 @@
   min-width: 130px;
 }
 #CRMreminderModal .modal-dialog .text-editor .editor-header .dropdown .dropdown-menu .dropdown-item,
-#newUserModal .modal-dialog .text-editor .editor-header .dropdown .dropdown-menu .dropdown-item {
+#CRMAddTouchModal .modal-dialog .text-editor .editor-header .dropdown .dropdown-menu .dropdown-item,
+#newUserModal .modal-dialog .text-editor .editor-header .dropdown .dropdown-menu .dropdown-item,
+#SMSModal .modal-dialog .text-editor .editor-header .dropdown .dropdown-menu .dropdown-item,
+#EmailModal .modal-dialog .text-editor .editor-header .dropdown .dropdown-menu .dropdown-item {
   display: flex;
   padding: 10px 20px;
 }
 #CRMreminderModal .modal-dialog .text-editor .editor-header .dropdown .dropdown-menu .dropdown-item .link-text,
-#newUserModal .modal-dialog .text-editor .editor-header .dropdown .dropdown-menu .dropdown-item .link-text {
+#CRMAddTouchModal .modal-dialog .text-editor .editor-header .dropdown .dropdown-menu .dropdown-item .link-text,
+#newUserModal .modal-dialog .text-editor .editor-header .dropdown .dropdown-menu .dropdown-item .link-text,
+#SMSModal .modal-dialog .text-editor .editor-header .dropdown .dropdown-menu .dropdown-item .link-text,
+#EmailModal .modal-dialog .text-editor .editor-header .dropdown .dropdown-menu .dropdown-item .link-text {
   margin-right: 30px;
 }
 #CRMreminderModal .modal-dialog .text-editor .textarea-edit,
-#newUserModal .modal-dialog .text-editor .textarea-edit {
+#CRMAddTouchModal .modal-dialog .text-editor .textarea-edit,
+#newUserModal .modal-dialog .text-editor .textarea-edit,
+#SMSModal .modal-dialog .text-editor .textarea-edit,
+#EmailModal .modal-dialog .text-editor .textarea-edit {
   position: absolute;
   bottom: 0px;
   left: 0px;
@@ -658,16 +706,48 @@
   padding: 80px 20px 20px 20px;
 }
 #CRMreminderModal .modal-dialog .text-editor .textarea-edit:hover, #CRMreminderModal .modal-dialog .text-editor .textarea-edit:focus,
+#CRMAddTouchModal .modal-dialog .text-editor .textarea-edit:hover,
+#CRMAddTouchModal .modal-dialog .text-editor .textarea-edit:focus,
 #newUserModal .modal-dialog .text-editor .textarea-edit:hover,
-#newUserModal .modal-dialog .text-editor .textarea-edit:focus {
+#newUserModal .modal-dialog .text-editor .textarea-edit:focus,
+#SMSModal .modal-dialog .text-editor .textarea-edit:hover,
+#SMSModal .modal-dialog .text-editor .textarea-edit:focus,
+#EmailModal .modal-dialog .text-editor .textarea-edit:hover,
+#EmailModal .modal-dialog .text-editor .textarea-edit:focus {
   border: 1px solid #CCCCCC;
   border-radius: 10px;
   width: 100%;
   height: 250px;
   outline: none;
 }
+#CRMreminderModal .modal-dialog .form-control,
+#CRMAddTouchModal .modal-dialog .form-control,
+#newUserModal .modal-dialog .form-control,
+#SMSModal .modal-dialog .form-control,
+#EmailModal .modal-dialog .form-control {
+  height: 45px;
+}
+#CRMreminderModal .modal-dialog .form-control[type=radio],
+#CRMAddTouchModal .modal-dialog .form-control[type=radio],
+#newUserModal .modal-dialog .form-control[type=radio],
+#SMSModal .modal-dialog .form-control[type=radio],
+#EmailModal .modal-dialog .form-control[type=radio] {
+  width: 30px;
+  height: 30px;
+}
+#CRMreminderModal .modal-dialog .btn-add-abstainers,
+#CRMAddTouchModal .modal-dialog .btn-add-abstainers,
+#newUserModal .modal-dialog .btn-add-abstainers,
+#SMSModal .modal-dialog .btn-add-abstainers,
+#EmailModal .modal-dialog .btn-add-abstainers {
+  text-decoration: underline;
+  cursor: pointer;
+}
 #CRMreminderModal .lcs_switch,
-#newUserModal .lcs_switch {
+#CRMAddTouchModal .lcs_switch,
+#newUserModal .lcs_switch,
+#SMSModal .lcs_switch,
+#EmailModal .lcs_switch {
   border-radius: 4px;
   width: 100px;
   height: 30px;
@@ -675,19 +755,31 @@
   box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.15);
 }
 #CRMreminderModal .lcs_switch.lcs_off .lcs_cursor,
-#newUserModal .lcs_switch.lcs_off .lcs_cursor {
+#CRMAddTouchModal .lcs_switch.lcs_off .lcs_cursor,
+#newUserModal .lcs_switch.lcs_off .lcs_cursor,
+#SMSModal .lcs_switch.lcs_off .lcs_cursor,
+#EmailModal .lcs_switch.lcs_off .lcs_cursor {
   left: 0px;
 }
 #CRMreminderModal .lcs_switch.lcs_on,
-#newUserModal .lcs_switch.lcs_on {
+#CRMAddTouchModal .lcs_switch.lcs_on,
+#newUserModal .lcs_switch.lcs_on,
+#SMSModal .lcs_switch.lcs_on,
+#EmailModal .lcs_switch.lcs_on {
   background-color: #7ABCFF;
 }
 #CRMreminderModal .lcs_switch.lcs_on .lcs_cursor,
-#newUserModal .lcs_switch.lcs_on .lcs_cursor {
+#CRMAddTouchModal .lcs_switch.lcs_on .lcs_cursor,
+#newUserModal .lcs_switch.lcs_on .lcs_cursor,
+#SMSModal .lcs_switch.lcs_on .lcs_cursor,
+#EmailModal .lcs_switch.lcs_on .lcs_cursor {
   left: 50px;
 }
 #CRMreminderModal .lcs_switch .lcs_cursor,
-#newUserModal .lcs_switch .lcs_cursor {
+#CRMAddTouchModal .lcs_switch .lcs_cursor,
+#newUserModal .lcs_switch .lcs_cursor,
+#SMSModal .lcs_switch .lcs_cursor,
+#EmailModal .lcs_switch .lcs_cursor {
   border-radius: 0px;
   height: 30px;
   width: 50px;
@@ -698,7 +790,10 @@
   font-weight: bold;
 }
 #CRMreminderModal .lcs_switch .lcs_label,
-#newUserModal .lcs_switch .lcs_label {
+#CRMAddTouchModal .lcs_switch .lcs_label,
+#newUserModal .lcs_switch .lcs_label,
+#SMSModal .lcs_switch .lcs_label,
+#EmailModal .lcs_switch .lcs_label {
   top: 0px;
 }
 

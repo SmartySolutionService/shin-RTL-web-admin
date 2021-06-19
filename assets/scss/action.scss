@@ -599,7 +599,10 @@
 // =================== ./Shared CSS ================ //
 
 #CRMreminderModal, 
-#newUserModal {
+#CRMAddTouchModal, 
+#newUserModal, 
+#SMSModal, 
+#EmailModal {
     .modal-dialog {
         width: 740px !important;
         .btn-update-green {
@@ -698,6 +701,17 @@
                     outline: none;
                 }
             }
+        }
+        .form-control {
+            height: 45px;
+            &[type=radio] {
+                width: 30px;
+                height: 30px;
+            }
+        }
+        .btn-add-abstainers {
+            text-decoration: underline;
+            cursor: pointer;
         }
     }
     .lcs_switch {
