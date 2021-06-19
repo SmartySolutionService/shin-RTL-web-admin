@@ -10111,6 +10111,12 @@ body .main .sidebar .side-nav li .cs-icon.ic-settings {
 body .main .sidebar .side-nav li .cs-icon.ic-unarchive {
   background-image: url(../img/icons/ic_unarchive.png);
 }
+body .main .sidebar .side-nav li .cs-icon.ic-insert-chart {
+  background-image: url(../img/icons/ic_insert_chart_gray.png);
+}
+body .main .sidebar .side-nav li .cs-icon.ic-layers {
+  background-image: url(../img/icons/ic_layers_gray.png);
+}
 body .main .sidebar .side-nav li.active .cs-icon.ic-folder-shared {
   background-image: url(../img/icons/ic_folder_shared_white.png);
 }
@@ -10170,6 +10176,12 @@ body .main .sidebar .side-nav li.active .cs-icon.ic-settings {
 }
 body .main .sidebar .side-nav li.active .cs-icon.ic-unarchive {
   background-image: url(../img/icons/ic_unarchive_white.png);
+}
+body .main .sidebar .side-nav li.active .cs-icon.ic-insert-chart {
+  background-image: url(../img/icons/ic_insert_chart_white.png);
+}
+body .main .sidebar .side-nav li.active .cs-icon.ic-layers {
+  background-image: url(../img/icons/ic_layers_white.png);
 }
 body .main .app {
   width: calc(100% - 324px);
@@ -11756,6 +11768,18 @@ body .main.open-filter .filter-app {
 }
 .cs-btn-img.btn-add-touch:hover {
   background-image: url(../img/buttons/btn-add-touch-hover.png);
+}
+.cs-btn-img.btn-send-customer {
+  background-image: url(../img/buttons/btn-send-customer.png);
+}
+.cs-btn-img.btn-send-customer:hover {
+  background-image: url(../img/buttons/btn-send-customer-hover.png);
+}
+.cs-btn-img.btn-produce-pdf {
+  background-image: url(../img/buttons/btn-produce-pdf.png);
+}
+.cs-btn-img.btn-produce-pdf:hover {
+  background-image: url(../img/buttons/btn-produce-pdf-hover.png);
 }
 
 .cs-icon {

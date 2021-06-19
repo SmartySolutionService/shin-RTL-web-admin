@@ -1970,4 +1970,8 @@
   margin-left: 0px;
 }
 
+.btn-produce-pdf, .btn-send-customer {
+  width: 209px;
+}
+
 /*# sourceMappingURL=action.css.map */

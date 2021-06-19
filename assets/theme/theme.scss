@@ -260,6 +260,12 @@ body {
                         &.ic-unarchive {
                             background-image: url(../img/icons/ic_unarchive.png);
                         }
+                        &.ic-insert-chart {
+                            background-image: url(../img/icons/ic_insert_chart_gray.png);
+                        }
+                        &.ic-layers {
+                            background-image: url(../img/icons/ic_layers_gray.png);
+                        }
                     }
                     
                     /* actived sidebar icon */
@@ -325,6 +331,12 @@ body {
                             }
                             &.ic-unarchive {
                                 background-image: url(../img/icons/ic_unarchive_white.png);
+                            }
+                            &.ic-insert-chart {
+                                background-image: url(../img/icons/ic_insert_chart_white.png);
+                            }
+                            &.ic-layers {
+                                background-image: url(../img/icons/ic_layers_white.png);
                             }
                         }
                     }
@@ -1918,6 +1930,18 @@ body {
         background-image: url(../img/buttons/btn-add-touch.png);
         &:hover {
             background-image: url(../img/buttons/btn-add-touch-hover.png);
+        }
+    }
+    &.btn-send-customer {
+        background-image: url(../img/buttons/btn-send-customer.png);
+        &:hover {
+            background-image: url(../img/buttons/btn-send-customer-hover.png);
+        }
+    }
+    &.btn-produce-pdf {
+        background-image: url(../img/buttons/btn-produce-pdf.png);
+        &:hover {
+            background-image: url(../img/buttons/btn-produce-pdf-hover.png);
         }
     }
 }
