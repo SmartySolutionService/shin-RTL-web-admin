@@ -1944,6 +1944,18 @@ body {
             background-image: url(../img/buttons/btn-produce-pdf-hover.png);
         }
     }
+    &.btn-continue {
+        background-image: url(../img/buttons/btn-continue.png);
+        &:hover {
+            background-image: url(../img/buttons/btn-continue-hover.png);
+        }
+    }
+    &.btn-return {
+        background-image: url(../img/buttons/btn-return.png);
+        &:hover {
+            background-image: url(../img/buttons/btn-return-hover.png);
+        }
+    }
 }
 
 .cs-icon {
@@ -4444,6 +4456,78 @@ table {
         }
     }
 }
+
+// =========== Login Page CSS ============ //
+.login-page {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/bg/bg-login.png);
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    .login-container {
+        position: absolute;
+        width: 600px;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        .card {
+            border-radius: 15px !important;
+            .card-body {
+                .tab-container {
+                    .nav-tabs {
+                        border-bottom: none;
+                        .nav-item {
+                            width: 50%;
+                            height: 50px;
+                            background-color: #BFC5D2;
+                            color: #78849E;
+                            text-align: center;
+                            font-weight: bold;
+                            border-radius: 8px;
+                            padding: 12px 0px;
+                            &.active {
+                                background-color: #485272;
+                                color: #ffffff;
+                                font-weight: bold;
+                            }
+                            &#nav-login-sms-tab {
+                                border-top-left-radius: 0px !important;
+                                border-bottom-left-radius: 0px !important;
+                            }
+                            &#nav-login-general-tab {
+                                border-top-right-radius: 0px !important;
+                                border-bottom-right-radius: 0px !important;
+                            }
+                        }
+                    }
+                }
+                .tab-content {
+                    
+                }
+            }
+        }
+        .btn-continue {
+            width: 209px;
+        }
+        .btn-return {
+            width: 209px;
+        }
+        .form-control {
+            height: 45px;
+        }
+    }
+}
+// ========== ./Login Page CSS =========== //
+
+
+
+
+
+
+
+
 
 @media (min-width: 1600px) and (max-width: 1919px) {
     

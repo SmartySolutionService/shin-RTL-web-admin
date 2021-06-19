@@ -11781,6 +11781,18 @@ body .main.open-filter .filter-app {
 .cs-btn-img.btn-produce-pdf:hover {
   background-image: url(../img/buttons/btn-produce-pdf-hover.png);
 }
+.cs-btn-img.btn-continue {
+  background-image: url(../img/buttons/btn-continue.png);
+}
+.cs-btn-img.btn-continue:hover {
+  background-image: url(../img/buttons/btn-continue-hover.png);
+}
+.cs-btn-img.btn-return {
+  background-image: url(../img/buttons/btn-return.png);
+}
+.cs-btn-img.btn-return:hover {
+  background-image: url(../img/buttons/btn-return-hover.png);
+}
 
 .cs-icon {
   display: inline-flex;
@@ -14317,6 +14329,61 @@ table th, table td {
 
 table .gj-datepicker .input-group-append {
   display: none;
+}
+
+.login-page {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/bg/bg-login.png);
+  background-size: 100% 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.login-page .login-container {
+  position: absolute;
+  width: 600px;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.login-page .login-container .card {
+  border-radius: 15px !important;
+}
+.login-page .login-container .card .card-body .tab-container .nav-tabs {
+  border-bottom: none;
+}
+.login-page .login-container .card .card-body .tab-container .nav-tabs .nav-item {
+  width: 50%;
+  height: 50px;
+  background-color: #BFC5D2;
+  color: #78849E;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 8px;
+  padding: 12px 0px;
+}
+.login-page .login-container .card .card-body .tab-container .nav-tabs .nav-item.active {
+  background-color: #485272;
+  color: #ffffff;
+  font-weight: bold;
+}
+.login-page .login-container .card .card-body .tab-container .nav-tabs .nav-item#nav-login-sms-tab {
+  border-top-left-radius: 0px !important;
+  border-bottom-left-radius: 0px !important;
+}
+.login-page .login-container .card .card-body .tab-container .nav-tabs .nav-item#nav-login-general-tab {
+  border-top-right-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+}
+.login-page .login-container .btn-continue {
+  width: 209px;
+}
+.login-page .login-container .btn-return {
+  width: 209px;
+}
+.login-page .login-container .form-control {
+  height: 45px;
 }
 
 /*# sourceMappingURL=theme.css.map */
