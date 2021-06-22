@@ -192,8 +192,8 @@
             <table class="table datatable w-100 m-0">
               <thead>
                 <tr>
-                  <th class="text-center">
-                    <label class="cs-checkbox-container">
+                  <th class="">
+                    <label class="cs-checkbox-container mr-4">
                       <input type="checkbox" />
                       <span class="checkmark"></span>
                     </label>
@@ -207,8 +207,8 @@
                   <th>שם המוצר</th>
                   <th>מספר אוצר</th>
                   <th>חברה מנהלת </th>
-                  <th class="text-center">סטטוס טיפול</th>
-                  <th class="text-center">עדיפות</th>
+                  <th class="">סטטוס טיפול</th>
+                  <th class="">עדיפות</th>
                   <th>גורם מטפל</th>
                   <th>מועד סיום טיפול</th>
                   <th>סוג לקוח</th>
@@ -252,8 +252,8 @@
                       <option>חברה מנהלת</option>
                     </select>
                   </th>
-                  <th class="text-center"><span class="badge badge-blue">בתהליך</sapn></th>
-                  <th class="text-center"><span class="badge badge-yellow">עדיפות</span></th>
+                  <th class=""><span class="badge badge-blue">בתהליך</sapn></th>
+                  <th class=""><span class="badge badge-yellow">עדיפות</span></th>
                   <th>
                     <select class="form-control">
                       <option>גורם מטפל</option>
@@ -610,8 +610,8 @@
     var id = $(this).closest('tr').data('id');
     $(this).closest('tr').after('<tr class="sub-tr">'+
                                   '<td></td>'+
-                                  '<td colspan="14" class="text-right pt-3 pb-5">'+
-                                    '<div class="font-weight-bold">פוליסה 1</div>'+
+                                  '<td colspan="14" class="text-right p-2">'+
+                                    '<textarea class="form-control font-weight-bold" rows="3">פוליסה 1</textarea>'+
                                   '</td>'+
                                 '<tr>');
   });

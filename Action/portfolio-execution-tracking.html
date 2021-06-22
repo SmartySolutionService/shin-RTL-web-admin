@@ -217,7 +217,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="td-text font-weight-bold border-right">העברה</div>
+                    <div class="td-text font-weight-bold border-right mr-3">העברה</div>
                   </td>
                   <td>מספר אוצר</td>
                   <td>מספר אוצר</td>
@@ -3348,8 +3348,7 @@
                   <a class="btn-add-route-item" data-id="providentMobilizationModal">הוסף מסלול</a>
                 </div>
                 <!--  -->
-                <h5 class="my-4">הוסף מסלול</h5>
-                <div class="row">
+                <div class="row mt-4">
                   <div class="col-3">
                     <label class="text-primary">גובה הפקדות שוטפות</label>
                     <input type="text" class="form-control" placeholder="NUM" />
@@ -3420,21 +3419,25 @@
                 </div>
                 <!--  -->
                 <div class="row">
-                  <div class="col-2">
-                    <label class="text-primary">בקרת דמי ניהול</label>
-                    <input type="checkbox" name="status" value="1" class="lcs_check" autocomplete="off" checked />
-                  </div>
-                  <div class="col-2">
-                    <label class="text-primary">בקרת חיוב ראשון</label>
-                    <input type="checkbox" name="status" value="1" class="lcs_check" autocomplete="off" checked />
-                  </div>
-                  <div class="col-2">
-                    <label class="text-primary">בקרת שיוך לקוח</label>
-                    <input type="checkbox" name="status" value="1" class="lcs_check" autocomplete="off" checked />
-                  </div>
-                  <div class="col-2">
-                    <label class="text-primary">בקרת אשור הפקדה </label>
-                    <input type="checkbox" name="status" value="1" class="lcs_check" autocomplete="off" checked />
+                  <div class="col-6">
+                    <div class="row mx-0" style="justify-content: space-around;">
+                      <div class="d-block ml-auto">
+                        <label class="text-primary">בקרת דמי ניהול</label>
+                        <input type="checkbox" name="status" value="1" class="lcs_check" autocomplete="off" checked />
+                      </div>
+                      <div class="d-block mx-auto">
+                        <label class="text-primary">בקרת חיוב ראשון</label>
+                        <input type="checkbox" name="status" value="1" class="lcs_check" autocomplete="off" checked />
+                      </div>
+                      <div class="d-block mx-auto">
+                        <label class="text-primary">בקרת שיוך לקוח</label>
+                        <input type="checkbox" name="status" value="1" class="lcs_check" autocomplete="off" checked />
+                      </div>
+                      <div class="d-block mr-auto">
+                        <label class="text-primary">בקרת אשור הפקדה </label>
+                        <input type="checkbox" name="status" value="1" class="lcs_check" autocomplete="off" checked />
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <!--  -->
@@ -4189,8 +4192,7 @@
           <a class="btn-add-route-item" data-id="newProductModal">הוסף מסלול</a>
         </div>
         <!--  -->
-        <h5 class="mt-5">הוסף מסלול</h5>
-        <div class="row">
+        <div class="row mt-5">
           <div class="col-2">
             <label class="text-primary">גובה הפקדות שוטפות</label>
             <input type="text" class="form-control" placeholder="NUM" />
@@ -4467,8 +4469,7 @@
           <a class="btn-add-route-item" data-id="providentEducationCompensationModal">הוסף מסלול</a>
         </div>
         <!--  -->
-        <h5 class="mt-5">הוסף מסלול</h5>
-        <div class="row">
+        <div class="row mt-5">
           <div class="col-2">
             <label class="text-primary">גובה הפקדות שוטפות</label>
             <input type="text" class="form-control" placeholder="NUM" />
@@ -6150,55 +6151,19 @@
           </div>
           <div class="col-2">
             <label class="text-primary">אשור הצטרפות</label>
-            <div class="row">
-              <div class="col-6 d-flex py-2">
-                <input type="radio" class="form-control" name="radio3" />
-                <span class="radio-label">כן</span>
-              </div>
-              <div class="col-6 d-flex py-2">
-                <input type="radio" class="form-control" name="radio3" checked />
-                <span class="radio-label">לא</span>
-              </div>
-            </div>
+            <input type="checkbox" name="status" value="1" class="lcs_check" autocomplete="off" checked />
           </div>
           <div class="col-2">
             <label class="text-primary">קבלת הסכם השקעה</label>
-            <div class="row">
-              <div class="col-6 d-flex py-2">
-                <input type="radio" class="form-control" name="radio4" />
-                <span class="radio-label">כן</span>
-              </div>
-              <div class="col-6 d-flex py-2">
-                <input type="radio" class="form-control" name="radio4" checked />
-                <span class="radio-label">לא</span>
-              </div>
-            </div>
+            <input type="checkbox" name="status" value="1" class="lcs_check" autocomplete="off" checked />
           </div>
           <div class="col-2">
             <label class="text-primary">בקרת קבלת אסמכתא</label>
-            <div class="row">
-              <div class="col-6 d-flex py-2">
-                <input type="radio" class="form-control" name="radio5" />
-                <span class="radio-label">כן</span>
-              </div>
-              <div class="col-6 d-flex py-2">
-                <input type="radio" class="form-control" name="radio5" checked />
-                <span class="radio-label">לא</span>
-              </div>
-            </div>
+            <input type="checkbox" name="status" value="1" class="lcs_check" autocomplete="off" checked />
           </div>
           <div class="col-2">
             <label class="text-primary">בקרת חלוקה ראשונה</label>
-            <div class="row">
-              <div class="col-6 d-flex py-2">
-                <input type="radio" class="form-control" name="radio6" />
-                <span class="radio-label">כן</span>
-              </div>
-              <div class="col-6 d-flex py-2">
-                <input type="radio" class="form-control" name="radio6" checked />
-                <span class="radio-label">לא</span>
-              </div>
-            </div>
+            <input type="checkbox" name="status" value="1" class="lcs_check" autocomplete="off" checked />
           </div>
         </div>
         <!--  -->

@@ -200,7 +200,7 @@
                             -webkit-box-shadow: 0px 0px 6px 3px rgba(0,0,0,0.16); 
                             box-shadow: 0px 0px 6px 3px rgba(0,0,0,0.16);
                             th {
-                                padding: 15px 3px 5px;
+                                padding: 15px 3px;
                             }
                             .action-filter {
                                 position: relative;
@@ -210,7 +210,7 @@
                                 right: 50px;
                                 .cs-icon {
                                     top: 8px;
-                                    right: 8px;
+                                    right: 5px;
                                 }
                             }
                             .gj-datepicker {
@@ -262,22 +262,24 @@
                             padding: 5px 10px;
                             .cs-icon {
                                 position: absolute;
-                                top: 15px;
-                                right: 15px;
+                                top: 10px;
+                                right: 10px;
                             }
                             &:first-child {
-                                padding-right: 0;
-                                padding-left: 0;
+                                // padding-right: 0;
+                                // padding-left: 0;
+                                padding-top: 12px;
+                                padding-bottom: 12px;
                                 .action-control {
                                     position: relative;
                                     display: block;
-                                    width: 50px;
-                                    height: 40px;
-                                    padding: 10px 15px;
+                                    width: 35px;
+                                    height: 35px;
+                                    padding: 10px 10px;
                                     border: none !important;
                                     &.shown {
                                         .ic-collapse-pm {
-                                            background-image: url(../img/icons/ic_minus_blue.png);
+                                            background-image: url(../img/icons/ic_minus_blue.png) !important;
                                         }
                                     }
                                     .cs-icon {
@@ -289,14 +291,14 @@
                                         }
                                     }
                                     .cs-checkbox-container {
-                                        margin-top: 2px;
+                                        margin-top: -2px;
                                     }
                                     .bubble {
                                         position: absolute;
                                         width: 20px;
                                         height: 20px;
-                                        top: 3px;
-                                        right: 3px;
+                                        top: -3px;
+                                        right: 0px;
                                         border-radius: 20px;
                                         line-height: 18px;
                                         font-size: 14px;
@@ -335,6 +337,7 @@
                                 .dropleft {
                                     padding: 4px 8px;
                                     .dropdown-toggle {
+                                        position: relative;
                                         border: none;
                                         width: 30px;
                                         height: 30px;
@@ -350,7 +353,9 @@
                                             }
                                         }
                                         .cs-icon {
-                                            top: 12px;
+                                            position: relative;
+                                            top: 2px;
+                                            right: 0px;
                                         }
                                     }
                                     .dropdown-menu {
@@ -446,7 +451,7 @@
                 }
                 &.datatable {
                     td {
-                        padding-right: 30px;
+                        // padding-right: 30px;
                     }
                 }
                 .badge {
@@ -721,6 +726,7 @@
         -webkit-box-shadow: 0px 0px 6px 3px rgba(0,0,0,0.15); 
         box-shadow: 0px 0px 6px 3px rgba(0,0,0,0.15);
         &.lcs_off {
+            background-color: #7ABCFF;
             .lcs_cursor {
                 left: 0px;
             }
@@ -796,6 +802,7 @@
         -webkit-box-shadow: 0px 0px 6px 3px rgba(0,0,0,0.15); 
         box-shadow: 0px 0px 6px 3px rgba(0,0,0,0.15);
         &.lcs_off {
+            background-color: #7ABCFF;
             .lcs_cursor {
                 left: 0px;
             }
@@ -941,6 +948,7 @@
         -webkit-box-shadow: 0px 0px 6px 3px rgba(0,0,0,0.15) !important; 
         box-shadow: 0px 0px 6px 3px rgba(0,0,0,0.15) !important;
         &.lcs_off {
+            background-color: #7ABCFF;
             .lcs_cursor {
                 left: 0px;
             }
