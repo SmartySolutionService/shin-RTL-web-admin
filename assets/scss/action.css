@@ -528,15 +528,15 @@
   padding: 5px;
 }
 .app-body .gj-datepicker .form-control {
-  border-top-right-radius: 0.25rem !important;
-  border-bottom-right-radius: 0.25rem !important;
+  border-top-right-radius: 8px !important;
+  border-bottom-right-radius: 8px !important;
 }
 .app-body .gj-timepicker {
   width: 100px;
 }
 .app-body .gj-timepicker .form-control {
-  border-top-right-radius: 0.25rem !important;
-  border-bottom-right-radius: 0.25rem !important;
+  border-top-right-radius: 8px !important;
+  border-bottom-right-radius: 8px !important;
 }
 .app-body .gj-timepicker .input-group-append {
   position: absolute;
@@ -1697,7 +1697,7 @@
   display: block;
   width: 35px;
   height: 35px;
-  right: 40px;
+  right: 20px;
 }
 .data-page table thead tr.bg-dark .action-filter .cs-icon {
   top: 8px;
@@ -1711,12 +1711,15 @@
   color: #ffffff;
 }
 .data-page table thead tr th:first-child {
-  max-width: 200px;
+  max-width: 90px;
 }
 .data-page table thead tr th:first-child .cs-checkbox-container {
   margin-top: 0;
   position: relative;
   top: 5px;
+}
+.data-page table thead tr th.th-date {
+  max-width: 90px;
 }
 .data-page table thead tr th .cs-icon {
   position: absolute;
@@ -1743,8 +1746,8 @@
 }
 .data-page table tbody tr td .cs-icon {
   position: absolute;
-  top: 15px;
-  right: 15px;
+  top: 10px;
+  right: 10px;
 }
 .data-page table tbody tr td:first-child {
   padding-right: 0;
@@ -1753,13 +1756,13 @@
 .data-page table tbody tr td:first-child .action-control {
   position: relative;
   display: block;
-  width: 50px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   padding: 10px 15px;
   border: none !important;
 }
 .data-page table tbody tr td:first-child .action-control.shown .ic-collapse-pm {
-  background-image: url(../img/icons/ic_minus_blue.png);
+  background-image: url(../img/icons/ic_minus_blue.png) !important;
 }
 .data-page table tbody tr td:first-child .action-control .cs-icon {
   position: absolute;
@@ -1770,14 +1773,16 @@
   background-image: url(../img/icons/ic_plus_blue.png);
 }
 .data-page table tbody tr td:first-child .action-control .cs-checkbox-container {
-  margin-top: 2px;
+  position: relative;
+  left: 7px;
+  margin-top: -2px;
 }
 .data-page table tbody tr td:first-child .action-control .bubble {
   position: absolute;
   width: 20px;
   height: 20px;
-  top: 3px;
-  right: 3px;
+  top: -3px;
+  right: 0px;
   border-radius: 20px;
   line-height: 18px;
   font-size: 14px;
@@ -2000,6 +2005,13 @@
 }
 .data-page .btn-new-user {
   width: 190px;
+}
+.data-page .badge-cell {
+  max-width: 90px;
+}
+.data-page .datepicker {
+  border-top-right-radius: 8px !important;
+  border-bottom-right-radius: 8px !important;
 }
 
 .crm-page table .gj-datepicker {

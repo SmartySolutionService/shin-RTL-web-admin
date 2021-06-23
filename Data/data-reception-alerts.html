@@ -143,18 +143,18 @@
           <table class="table datatable w-100 m-0">
             <thead>
               <tr>
-                <th class="pr-5">
+                <th class="th-action">
                   <label class="cs-checkbox-container mx-3">
                     <input type="checkbox" />
                     <span class="checkmark"></span>
                   </label>
                   תזכורת
                 </th>
-                <th>תאריך</th>
+                <th class="th-date">תאריך</th>
                 <th>נושא לטיפול</th>
-                <th>סטטוס טיפול</th>
-                <th>עדיפות</th>
-                <th>גורם מטפל</th>
+                <th class="badge-cell">סטטוס טיפול</th>
+                <th class="badge-cell" style="max-width:70px;">עדיפות</th>
+                <th style="max-width:150px;">גורם מטפל</th>
               </tr>
               <tr class="bg-dark">
                 <th class="">
@@ -163,15 +163,41 @@
                   </a>
                 </th>
                 <th>
-                  <input id="datepicker1" class="form-control" style="width: 150px;" value="2020-03-09" />
+                  <input class="form-control datepicker" style="width: 150px;" value="2020-03-09" />
                 </th>
                 <th>
-                  <select class="form-control" style="width: 250px;">
-                    <option>טקסט חופשי</option>
-                  </select>
+                  <input type="text" class="form-control" placeholder="טקסט חופשי"/>
                 </th>
-                <th class="text-center"><span class="badge badge-blue">בתהליך</sapn></th>
-                <th class="text-center"><span class="badge badge-yellow">נמוך</span></th>
+                <th class="text-center badge-cell">
+                  <div class="dropdown badge-dropdown">
+                    <button class="btn dropdown-toggle" type="button" id="dropdownBadge" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <span class="badge badge-sky">דחוף</span>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownBadge">
+                      <a class="dropdown-item" href="#" ><span class="badge badge-green">דחוף</span></a>
+                      <a class="dropdown-item" href="#" ><span class="badge badge-red">דחוף</span></a>
+                      <a class="dropdown-item" href="#" ><span class="badge badge-sky">דחוף</span></a>
+                      <a class="dropdown-item" href="#" ><span class="badge badge-white">דחוף</span></a>
+                      <a class="dropdown-item" href="#" ><span class="badge badge-gray">דחוף</span></a>
+                      <a class="dropdown-item" href="#" ><span class="badge badge-blue-accent">דחוף</span></a>
+                    </div>
+                  </div>
+                </th>
+                <th class="text-center badge-cell">
+                  <div class="dropdown badge-dropdown">
+                    <button class="btn dropdown-toggle" type="button" id="dropdownBadge" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <span class="badge badge-yellow">דחוף</span>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownBadge">
+                      <a class="dropdown-item" href="#" ><span class="badge badge-green">דחוף</span></a>
+                      <a class="dropdown-item" href="#" ><span class="badge badge-red">דחוף</span></a>
+                      <a class="dropdown-item" href="#" ><span class="badge badge-sky">דחוף</span></a>
+                      <a class="dropdown-item" href="#" ><span class="badge badge-white">דחוף</span></a>
+                      <a class="dropdown-item" href="#" ><span class="badge badge-gray">דחוף</span></a>
+                      <a class="dropdown-item" href="#" ><span class="badge badge-blue-accent">דחוף</span></a>
+                    </div>
+                  </div>
+                </th>
                 <th>
                   <select class="form-control">
                     <option>גורם מטפל</option>
@@ -181,27 +207,29 @@
             </thead>
             <tbody>
               <tr class="py-2">
-                <td class="d-flex">
-                  <a class="action-control toggle-detail">
-                    <div class="cs-icon ic-collapse-pm"></div>
-                  </a>
-                  <div class="action-control">
-                    <label class="cs-checkbox-container">
-                      <input type="checkbox" />
-                      <span class="checkmark"></span>
-                    </label>
+                <td class="">
+                  <div class="d-flex">
+                    <a class="action-control toggle-detail">
+                      <div class="cs-icon ic-collapse-pm"></div>
+                    </a>
+                    <div class="action-control">
+                      <label class="cs-checkbox-container">
+                        <input type="checkbox" />
+                        <span class="checkmark"></span>
+                      </label>
+                    </div>
+                    <a class="action-control">
+                      <div class="cs-icon ic-pencil-blue"></div>
+                    </a>
+                    <a class="action-control" data-toggle="modal" data-target="#CRMreminderModal">
+                      <div class="cs-icon ic-question-answer"></div>
+                      <span class="bubble bubble-gray">1</span>
+                    </a>
                   </div>
-                  <a class="action-control">
-                    <div class="cs-icon ic-pencil-blue"></div>
-                  </a>
-                  <a class="action-control" data-toggle="modal" data-target="#CRMreminderModal">
-                    <div class="cs-icon ic-question-answer"></div>
-                    <span class="bubble bubble-gray">1</span>
-                  </a>
                 </td>
                 <td class="">03.09.2020</td>
                 <td>הצטרפות</td>
-                <td class="text-center">
+                <td class="text-center badge-cell">
                   <div class="dropdown badge-dropdown">
                     <button class="btn dropdown-toggle" type="button" id="dropdownBadge" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       <span class="badge badge-red">דחוף</span>
@@ -216,7 +244,7 @@
                     </div>
                   </div>
                 </td>
-                <td class="text-center">
+                <td class="text-center badge-cell">
                   <div class="dropdown badge-dropdown">
                     <button class="btn dropdown-toggle" type="button" id="dropdownBadge" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       <span class="badge badge-red">דחוף</span>
@@ -234,27 +262,29 @@
                 <td>גורם מטפל</td>
               </tr>
               <tr class="py-2">
-                <td class="d-flex">
-                  <a class="action-control toggle-detail">
-                    <div class="cs-icon ic-collapse-pm"></div>
-                  </a>
-                  <div class="action-control">
-                    <label class="cs-checkbox-container">
-                      <input type="checkbox" />
-                      <span class="checkmark"></span>
-                    </label>
+                <td class="">
+                  <div class="d-flex">
+                    <a class="action-control toggle-detail">
+                      <div class="cs-icon ic-collapse-pm"></div>
+                    </a>
+                    <div class="action-control">
+                      <label class="cs-checkbox-container">
+                        <input type="checkbox" />
+                        <span class="checkmark"></span>
+                      </label>
+                    </div>
+                    <a class="action-control">
+                      <div class="cs-icon ic-pencil-blue"></div>
+                    </a>
+                    <a class="action-control" data-toggle="modal" data-target="#CRMreminderModal">
+                      <div class="cs-icon ic-question-answer"></div>
+                      <span class="bubble bubble-gray">1</span>
+                    </a>
                   </div>
-                  <a class="action-control">
-                    <div class="cs-icon ic-pencil-blue"></div>
-                  </a>
-                  <a class="action-control" data-toggle="modal" data-target="#CRMreminderModal">
-                    <div class="cs-icon ic-question-answer"></div>
-                    <span class="bubble bubble-gray">1</span>
-                  </a>
                 </td>
                 <td class="">03.09.2020</td>
                 <td>העברה</td>
-                <td class="text-center">
+                <td class="text-center badge-cell">
                   <div class="dropdown badge-dropdown">
                     <button class="btn dropdown-toggle" type="button" id="dropdownBadge" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       <span class="badge badge-red">דחוף</span>
@@ -269,7 +299,7 @@
                     </div>
                   </div>
                 </td>
-                <td class="text-center">
+                <td class="text-center badge-cell">
                   <div class="dropdown badge-dropdown">
                     <button class="btn dropdown-toggle" type="button" id="dropdownBadge" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       <span class="badge badge-red">דחוף</span>
@@ -287,27 +317,29 @@
                 <td>גורם מטפל</td>
               </tr>
               <tr class="py-2">
-                <td class="d-flex">
-                  <a class="action-control toggle-detail">
-                    <div class="cs-icon ic-collapse-pm"></div>
-                  </a>
-                  <div class="action-control">
-                    <label class="cs-checkbox-container">
-                      <input type="checkbox" />
-                      <span class="checkmark"></span>
-                    </label>
+                <td class="">
+                  <div class="d-flex">
+                    <a class="action-control toggle-detail">
+                      <div class="cs-icon ic-collapse-pm"></div>
+                    </a>
+                    <div class="action-control">
+                      <label class="cs-checkbox-container">
+                        <input type="checkbox" />
+                        <span class="checkmark"></span>
+                      </label>
+                    </div>
+                    <a class="action-control">
+                      <div class="cs-icon ic-pencil-blue"></div>
+                    </a>
+                    <a class="action-control" data-toggle="modal" data-target="#CRMreminderModal">
+                      <div class="cs-icon ic-question-answer"></div>
+                      <span class="bubble bubble-gray">1</span>
+                    </a>
                   </div>
-                  <a class="action-control">
-                    <div class="cs-icon ic-pencil-blue"></div>
-                  </a>
-                  <a class="action-control" data-toggle="modal" data-target="#CRMreminderModal">
-                    <div class="cs-icon ic-question-answer"></div>
-                    <span class="bubble bubble-gray">1</span>
-                  </a>
                 </td>
                 <td class="">03.09.2020</td>
                 <td>הצטרפות</td>
-                <td class="text-center">
+                <td class="text-center badge-cell">
                   <div class="dropdown badge-dropdown">
                     <button class="btn dropdown-toggle" type="button" id="dropdownBadge" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       <span class="badge badge-red">דחוף</span>
@@ -322,7 +354,7 @@
                     </div>
                   </div>
                 </td>
-                <td class="text-center">
+                <td class="text-center badge-cell">
                   <div class="dropdown badge-dropdown">
                     <button class="btn dropdown-toggle" type="button" id="dropdownBadge" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       <span class="badge badge-red">דחוף</span>
@@ -487,13 +519,13 @@
 </script>
 <script>
   // datepicker init
-  $('#datepicker1').datepicker({ uiLibrary: 'bootstrap4' });
-  $('#datepicker2').datepicker({ uiLibrary: 'bootstrap4' });
-  $('#datepicker3').datepicker({ uiLibrary: 'bootstrap4' });
-  $('#datepicker4').datepicker({ uiLibrary: 'bootstrap4' });
-  $('#datepicker5').datepicker({ uiLibrary: 'bootstrap4' });
-  $('#datepicker6').datepicker({ uiLibrary: 'bootstrap4' });
-  $('#datepicker7').datepicker({ uiLibrary: 'bootstrap4' });
+  function initDatepicker() {
+    var datepickers = $('.datepicker');
+    for(var i = 0; i < datepickers.length; i++) {
+      $(datepickers[i]).datepicker({ uiLibrary: 'bootstrap4' });
+    }
+  }
+  initDatepicker();
   // datatable init
   $(document).ready(function() {
     $('.datatable').DataTable({
@@ -517,8 +549,8 @@
     var id = $(this).closest('tr').data('id');
     $(this).closest('tr').after('<tr class="sub-tr">'+
                                   '<td></td>'+
-                                  '<td colspan="14" class="text-right pt-3 pb-5">'+
-                                    '<div class="font-weight-bold">פוליסה 1</div>'+
+                                  '<td colspan="14" class="text-right p-3">'+
+                                    '<textarea class="form-control" style="min-height:80px;">פוליסה 1</textarea>'+
                                   '</td>'+
                                 '<tr>');
   });

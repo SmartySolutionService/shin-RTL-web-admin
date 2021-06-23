@@ -570,15 +570,15 @@
     }
     .gj-datepicker {
         .form-control {
-            border-top-right-radius: 0.25rem !important;
-            border-bottom-right-radius: 0.25rem !important;
+            border-top-right-radius: 8px !important;
+            border-bottom-right-radius: 8px !important;
         }
     }
     .gj-timepicker {
         width: 100px;
         .form-control {
-            border-top-right-radius: 0.25rem !important;
-            border-bottom-right-radius: 0.25rem !important;
+            border-top-right-radius: 8px !important;
+            border-bottom-right-radius: 8px !important;
         }
         .input-group-append {
             position: absolute;
@@ -1033,7 +1033,7 @@
                         display: block;
                         width: 35px;
                         height: 35px;
-                        right: 40px;
+                        right: 20px;
                         .cs-icon {
                             top: 8px;
                             right: 8px;
@@ -1051,12 +1051,15 @@
                     position: relative;
                     color: #ffffff;
                     &:first-child {
-                        max-width: 200px;
+                        max-width: 90px;
                         .cs-checkbox-container {
                             margin-top: 0;
                             position: relative;
                             top: 5px;
                         }
+                    }
+                    &.th-date {
+                        max-width: 90px;
                     }
                     .cs-icon {
                         position: absolute;
@@ -1087,8 +1090,8 @@
                     position: relative;
                     .cs-icon {
                         position: absolute;
-                        top: 15px;
-                        right: 15px;
+                        top: 10px;
+                        right: 10px;
                     }
                     &:first-child {
                         padding-right: 0;
@@ -1096,13 +1099,13 @@
                         .action-control {
                             position: relative;
                             display: block;
-                            width: 50px;
-                            height: 40px;
+                            width: 35px;
+                            height: 35px;
                             padding: 10px 15px;
                             border: none !important;
                             &.shown {
                                 .ic-collapse-pm {
-                                    background-image: url(../img/icons/ic_minus_blue.png);
+                                    background-image: url(../img/icons/ic_minus_blue.png) !important;
                                 }
                             }
                             .cs-icon {
@@ -1114,14 +1117,16 @@
                                 }
                             }
                             .cs-checkbox-container {
-                                margin-top: 2px;
+                                position: relative;
+                                left: 7px;
+                                margin-top: -2px;
                             }
                             .bubble {
                                 position: absolute;
                                 width: 20px;
                                 height: 20px;
-                                top: 3px;
-                                right: 3px;
+                                top: -3px;
+                                right: 0px;
                                 border-radius: 20px;
                                 line-height: 18px;
                                 font-size: 14px;
@@ -1364,6 +1369,13 @@
     }
     .btn-new-user {
         width: 190px;
+    }
+    .badge-cell {
+        max-width: 90px;
+    }
+    .datepicker {
+        border-top-right-radius: 8px !important;
+        border-bottom-right-radius: 8px !important;
     }
 }
 
