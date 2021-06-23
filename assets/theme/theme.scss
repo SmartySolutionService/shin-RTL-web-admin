@@ -3051,7 +3051,7 @@ button:focus {
             font-weight: bold;
             color: #7ABBFC;
             @media (min-width: 1024px) and (max-width: 1919px) {
-                font-size: 12px;
+                // font-size: 12px;
                 padding: 10px 5px;
             }
         }
@@ -3062,7 +3062,7 @@ button:focus {
             font-size: 16px;
             color: #485272;
             @media (min-width: 1024px) and (max-width: 1919px) {
-                font-size: 12px;
+                // font-size: 12px;
                 padding: 10px 5px;
             }
             &:first-child {

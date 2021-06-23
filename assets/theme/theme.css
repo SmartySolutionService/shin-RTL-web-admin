@@ -12984,7 +12984,6 @@ input[type=submit] {
 }
 @media (min-width: 1024px) and (max-width: 1919px) {
   .dataTables_wrapper tr th {
-    font-size: 12px;
     padding: 10px 5px;
   }
 }
@@ -12995,7 +12994,6 @@ input[type=submit] {
 }
 @media (min-width: 1024px) and (max-width: 1919px) {
   .dataTables_wrapper tr td {
-    font-size: 12px;
     padding: 10px 5px;
   }
 }
