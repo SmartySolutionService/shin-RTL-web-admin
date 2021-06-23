@@ -4875,8 +4875,13 @@ table {
 
 
 
-
-
+// ========== Common Shared CSS =========== //
+.dataTables_wrapper {
+    max-width: 100% !important;
+    min-width: auto !important;
+    overflow: auto;
+}
+// ========= ./Comman Shared CSS ========== //
 
 
 @media (min-width: 1600px) and (max-width: 1919px) {

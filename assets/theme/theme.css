@@ -14728,4 +14728,10 @@ table .gj-datepicker .input-group-append {
   font-weight: 500;
 }
 
+.dataTables_wrapper {
+  max-width: 100% !important;
+  min-width: auto !important;
+  overflow: auto;
+}
+
 /*# sourceMappingURL=theme.css.map */

@@ -1006,7 +1006,7 @@
             }
             &.lg-table {
                 th, td {
-                    font-size: 14px !important;
+                    // font-size: 14px !important;
                 }
                 .bg-dark {
                     th {
@@ -1033,7 +1033,7 @@
                         display: block;
                         width: 35px;
                         height: 35px;
-                        right: 20px;
+                        right: 35px;
                         .cs-icon {
                             top: 8px;
                             right: 8px;
@@ -1094,8 +1094,6 @@
                         right: 10px;
                     }
                     &:first-child {
-                        padding-right: 0;
-                        padding-left: 0;
                         .action-control {
                             position: relative;
                             display: block;
@@ -1118,8 +1116,9 @@
                             }
                             .cs-checkbox-container {
                                 position: relative;
+                                top: -5px;
                                 left: 7px;
-                                margin-top: -2px;
+                                margin-top: 0px;
                             }
                             .bubble {
                                 position: absolute;
@@ -1329,6 +1328,16 @@
                     height: 12px;
                 }
             }
+        }
+        td, th {
+            min-width: 90px;
+            width: max-content;
+            &:first-child {
+                min-width: 50px;
+            }
+        }
+        .form-control {
+            min-width: 90px;
         }
     }
     .app-tab {

@@ -1672,9 +1672,6 @@
 .data-page table.datatable td {
   padding: 10px 15px;
 }
-.data-page table.datatable.lg-table th, .data-page table.datatable.lg-table td {
-  font-size: 14px !important;
-}
 .data-page table.datatable.lg-table .bg-dark th {
   padding-left: 2px !important;
   padding-right: 2px !important;
@@ -1697,7 +1694,7 @@
   display: block;
   width: 35px;
   height: 35px;
-  right: 20px;
+  right: 35px;
 }
 .data-page table thead tr.bg-dark .action-filter .cs-icon {
   top: 8px;
@@ -1749,10 +1746,6 @@
   top: 10px;
   right: 10px;
 }
-.data-page table tbody tr td:first-child {
-  padding-right: 0;
-  padding-left: 0;
-}
 .data-page table tbody tr td:first-child .action-control {
   position: relative;
   display: block;
@@ -1774,8 +1767,9 @@
 }
 .data-page table tbody tr td:first-child .action-control .cs-checkbox-container {
   position: relative;
+  top: -5px;
   left: 7px;
-  margin-top: -2px;
+  margin-top: 0px;
 }
 .data-page table tbody tr td:first-child .action-control .bubble {
   position: absolute;
@@ -1974,6 +1968,16 @@
   top: 1px;
   width: 8px;
   height: 12px;
+}
+.data-page table td, .data-page table th {
+  min-width: 90px;
+  width: max-content;
+}
+.data-page table td:first-child, .data-page table th:first-child {
+  min-width: 50px;
+}
+.data-page table .form-control {
+  min-width: 90px;
 }
 .data-page .app-tab .nav-tabs {
   height: 50px !important;
