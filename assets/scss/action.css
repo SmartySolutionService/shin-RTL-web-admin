@@ -1677,6 +1677,9 @@
   padding-right: 2px !important;
   font-size: 14px !important;
 }
+.data-page table.datatable tr:last-child span, .data-page table.datatable td:last-child span {
+  margin-left: 0px;
+}
 .data-page table thead {
   background-color: #7ABCFF;
 }

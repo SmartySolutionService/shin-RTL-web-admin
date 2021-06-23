@@ -1016,6 +1016,11 @@
                     }
                 }
             }
+            tr:last-child, td:last-child{
+                span {
+                    margin-left: 0px;
+                }
+            } 
         }
         thead {
             background-color: #7ABCFF;
