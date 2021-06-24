@@ -133,8 +133,8 @@
       <div class="row app-header-top">
         <div class="col-xl-7 col-lg-7 col-md-7 col-sm-7 col-7">
           <span class="title">מעקב ביצוע</span>
-            <a class="cs-btn-img btn-product-add ml-0 mr-5" style="top:15px;" href="../Action/portfolio-execution-tracking.html"></a>
-            <a class="cs-btn-img btn-product-update ml-auto mr-3" style="top:15px;" href="../Action/portfolio-execution-tracking.html"></a>
+            <a class="cs-btn-img btn-product-add ml-0 mr-5" style="top:15px;" href="../Action/portfolio-execution-monitoring.html"></a>
+            <a class="cs-btn-img btn-product-update ml-auto mr-3" style="top:15px;" href="../Action/portfolio-execution-monitoring.html"></a>
         </div>
         <div class="col-xl-5 col-lg-5 col-md-5 col-sm-5 col-5 text-left">
           <div class="cs-btn-group ml-3">
@@ -252,8 +252,36 @@
                       <option>חברה מנהלת</option>
                     </select>
                   </th>
-                  <th class=""><span class="badge badge-blue">בתהליך</sapn></th>
-                  <th class=""><span class="badge badge-yellow">עדיפות</span></th>
+                  <th class="">
+                    <div class="dropdown badge-dropdown">
+                      <button class="btn dropdown-toggle" type="button" id="dropdownBadge" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="badge badge-blue">דחוף</span>
+                      </button>
+                      <div class="dropdown-menu" aria-labelledby="dropdownBadge">
+                        <a class="dropdown-item" href="#" ><span class="badge badge-green">דחוף</span></a>
+                        <a class="dropdown-item" href="#" ><span class="badge badge-red">דחוף</span></a>
+                        <a class="dropdown-item" href="#" ><span class="badge badge-sky">דחוף</span></a>
+                        <a class="dropdown-item" href="#" ><span class="badge badge-white">דחוף</span></a>
+                        <a class="dropdown-item" href="#" ><span class="badge badge-gray">דחוף</span></a>
+                        <a class="dropdown-item" href="#" ><span class="badge badge-blue-accent">דחוף</span></a>
+                      </div>
+                    </div>
+                  </th>
+                  <th class="">
+                    <div class="dropdown badge-dropdown">
+                      <button class="btn dropdown-toggle" type="button" id="dropdownBadge" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="badge badge-yellow">דחוף</span>
+                      </button>
+                      <div class="dropdown-menu" aria-labelledby="dropdownBadge">
+                        <a class="dropdown-item" href="#" ><span class="badge badge-green">דחוף</span></a>
+                        <a class="dropdown-item" href="#" ><span class="badge badge-red">דחוף</span></a>
+                        <a class="dropdown-item" href="#" ><span class="badge badge-sky">דחוף</span></a>
+                        <a class="dropdown-item" href="#" ><span class="badge badge-white">דחוף</span></a>
+                        <a class="dropdown-item" href="#" ><span class="badge badge-gray">דחוף</span></a>
+                        <a class="dropdown-item" href="#" ><span class="badge badge-blue-accent">דחוף</span></a>
+                      </div>
+                    </div>
+                  </th>
                   <th>
                     <select class="form-control">
                       <option>גורם מטפל</option>
@@ -468,12 +496,14 @@
                   <button class="dropdown-toggle" type="button" id="dropdownAttach" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     (2)
                   </button>
-                  <div class="dropdown-menu" aria-labelledby="dropdownAttach">
+                  <div class="dropdown-menu" aria-labelledby="dropdownAttach" style="z-index: 1001;">
                     <a class="dropdown-item" href="#">1. הוסף קובץ</a>
                     <a class="dropdown-item" href="#">2. הוסף קובץ</a>
                   </div>
                 </div>
-                <span class="cs-icon ic-attach-file"></span>
+                <span class="cs-icon ic-attach-file">
+                  <input type="file" class="hidden" multiple />
+                </span>
               </div>
             </div>
           </div>
@@ -619,6 +649,24 @@
 <script>
   $(document).on('click', '.badge-dropdown .dropdown-item', function() {
     $(this).closest('.badge-dropdown').find('.dropdown-toggle').html($(this).html());
+  });
+</script>
+<script>
+  $(document).on('click', '.ic-attach-file', function() {
+    $(this).find('input[type=file]')[0].click();
+  });
+  $(document).on('change', 'input[type=file]', function(e) {
+    console.log('>>>', e.target.files);
+    var files = e.target.files;
+    $(this).closest('.attach').find('.dropdown-toggle').text('(' + files.length + ')');
+    $(this).closest('.attach').find('.dropdown-menu').empty();
+    if(files.length) {
+      for(var i = 0; i < files.length; i++) {
+        $(this).closest('.attach').find('.dropdown-menu').append('<a class="dropdown-item" href="#">'+(i+1)+'. '+files[i].name+'</a>');
+      }
+    } else {
+      $(this).closest('.attach').find('.dropdown-menu').append('<a class="dropdown-item" href="#">There is no choosed file.</a>');
+    }
   });
 </script>
 <!-- ./script -->

@@ -152,11 +152,26 @@
           </select> -->
         </div>
         <div class="form-group searchable-dropdown-form mr-4">
-          <div class="searchable-dropdown">
+          <!-- <div class="searchable-dropdown">
             <span class="cs-icon ic-search"></span>
             <input type="text" class="form-control" placeholder="חיפוש" />
             <div class="dropdown-content" style="display: none;">
               <a class="content-item" data-toggle="modal" data-target="#newProductModal">מוצר חדש</a>
+              <a class="content-item" data-toggle="modal" data-target="#providentEducationCompensationModal">גמל / השתלמות / פיצוים</a>
+              <a class="content-item" data-toggle="modal" data-target="#savingPolicyModal">פוליסת חיסכון</a>
+              <a class="content-item" data-toggle="modal" data-target="#managedPortfolioModal">תיק מנוהל</a>
+              <a class="content-item" data-toggle="modal" data-target="#insurancePolicySavingsModal">פוליסת ביטוח - חיסכון</a>
+              <a class="content-item" data-toggle="modal" data-target="#pensionFundModal">קרן פנסיה</a>
+              <a class="content-item" data-toggle="modal" data-target="#insurancePolicyModal">פוליסת ביטוח</a>
+              <a class="content-item" data-toggle="modal" data-target="#IRAModal">IRA</a>
+              <a class="content-item" data-toggle="modal" data-target="#alternativeFundModal">קרן אלטרנטיבית</a>
+              <a class="content-item" data-toggle="modal" data-target="#realEstateInvestmentModal">השקעת נדל"ן</a>
+            </div>
+          </div> -->
+          <div class="cs-dropdown">
+            <button class="cs-toggle cs-btn-img btn-adding-product" type="button"></button>
+            <div class="dropdown-content" style="display: none;">
+              <a class="content-item font-weight-bold">מוצר חדש</a>
               <a class="content-item" data-toggle="modal" data-target="#providentEducationCompensationModal">גמל / השתלמות / פיצוים</a>
               <a class="content-item" data-toggle="modal" data-target="#savingPolicyModal">פוליסת חיסכון</a>
               <a class="content-item" data-toggle="modal" data-target="#managedPortfolioModal">תיק מנוהל</a>
@@ -187,11 +202,13 @@
               </thead>
               <tbody>
                 <tr class="py-2">
-                  <td class="d-flex pr-2">
-                    <a class="action-control" href="../Action/portfolio-follow-up-activity.html">
-                      <div class="cs-icon ic-pencil-blue"></div>
-                    </a>
-                    <div class="td-text font-weight-bold border-right">העברה</div>
+                  <td class="pr-2">
+                    <div class="d-flex">
+                      <a class="action-control lg" href="../Action/portfolio-execution-tracking.html">
+                        <div class="cs-icon ic-pencil-blue"></div>
+                      </a>
+                      <div class="td-text font-weight-bold border-right">העברה</div>
+                    </div>
                   </td>
                   <td>מספר אוצר</td>
                   <td>מספר אוצר</td>
@@ -199,11 +216,13 @@
                   <td>חברה מנהלת</td>
                 </tr>
                 <tr class="py-2">
-                  <td class="d-flex pr-2">
-                    <a class="action-control" href="../Action/portfolio-follow-up-activity.html">
-                      <div class="cs-icon ic-pencil-blue"></div>
-                    </a>
-                    <div class="td-text font-weight-bold border-right">תוספת הפקדה</div>
+                  <td class="pr-2">
+                    <div class="d-flex">
+                      <a class="action-control lg" href="../Action/portfolio-execution-tracking.html">
+                        <div class="cs-icon ic-pencil-blue"></div>
+                      </a>
+                      <div class="td-text font-weight-bold border-right">תוספת הפקדה</div>
+                    </div>
                   </td>
                   <td>מספר אוצר</td>
                   <td>מספר אוצר</td>
@@ -211,11 +230,13 @@
                   <td>חברה מנהלת</td>
                 </tr>
                 <tr class="py-2">
-                  <td class="d-flex pr-2">
-                    <a class="action-control" href="../Action/portfolio-follow-up-activity.html">
-                      <div class="cs-icon ic-pencil-blue"></div>
-                    </a>
-                    <div class="td-text font-weight-bold border-right">פדיון</div>
+                  <td class="pr-2">
+                    <div class="d-flex">
+                      <a class="action-control lg" href="../Action/portfolio-execution-tracking.html">
+                        <div class="cs-icon ic-pencil-blue"></div>
+                      </a>
+                      <div class="td-text font-weight-bold border-right">פדיון</div>
+                    </div>
                   </td>
                   <td>מספר אוצר</td>
                   <td>מספר אוצר</td>
@@ -247,6 +268,11 @@
 
 <!-- 1. newProductModal -->
 <div class="modal full-modal" id="newProductModal">
+  
+</div>
+
+<!-- 2. providentEducationCompensationModal -->
+<div class="modal full-modal" id="providentEducationCompensationModal">
   <div class="modal-dialog">
     <div class="modal-content">
       <!-- Modal Header -->
@@ -440,7 +466,7 @@
           </div>
         </div>
         <div class="row mx-0">
-          <a class="btn-add-route-item" data-id="newProductModal">הוסף מסלול</a>
+          <a class="btn-add-route-item" data-id="providentEducationCompensationModal">הוסף מסלול</a>
         </div>
         <!--  -->
         <div class="row mt-5">
@@ -541,8 +567,8 @@
   </div>
 </div>
 
-<!-- 2. providentEducationCompensationModal -->
-<div class="modal full-modal" id="providentEducationCompensationModal">
+<!-- 3. savingPolicyModal -->
+<div class="modal full-modal" id="savingPolicyModal">
   <div class="modal-dialog">
     <div class="modal-content">
       <!-- Modal Header -->
@@ -717,7 +743,7 @@
           </div>
         </div>
         <div class="row mx-0">
-          <a class="btn-add-route-item" data-id="providentEducationCompensationModal">הוסף מסלול</a>
+          <a class="btn-add-route-item" data-id="savingPolicyModal">הוסף מסלול</a>
         </div>
         <!--  -->
         <div class="row mt-5">
@@ -818,8 +844,8 @@
   </div>
 </div>
 
-<!-- 3. savingPolicyModal -->
-<div class="modal full-modal" id="savingPolicyModal">
+<!-- 4. managedPortfolioModal -->
+<div class="modal full-modal" id="managedPortfolioModal">
   <div class="modal-dialog">
     <div class="modal-content">
       <!-- Modal Header -->
@@ -998,7 +1024,7 @@
           </div>
         </div>
         <div class="row mx-0">
-          <a class="btn-add-route-item" data-id="savingPolicyModal">הוסף מסלול</a>
+          <a class="btn-add-route-item" data-id="managedPortfolioModal">הוסף מסלול</a>
         </div>
         <!--  -->
         <h5 class="mt-5">הוסף הפקדה ח"פ</h5>
@@ -1091,8 +1117,8 @@
   </div>
 </div>
 
-<!-- 4. managedPortfolioModal -->
-<div class="modal full-modal" id="managedPortfolioModal">
+<!-- 5. insurancePolicySavingsModal -->
+<div class="modal full-modal" id="insurancePolicySavingsModal">
   <div class="modal-dialog">
     <div class="modal-content">
       <!-- Modal Header -->
@@ -1159,7 +1185,7 @@
           </div>
           <div class="col-3">
             <label class="text-primary">מספר אוצר</label>
-            <label class="text-value w-100">NUM</label>
+            <input type="text" class="form-control" placeholder="NUM" />
           </div>
         </div>
         <!--  -->
@@ -1272,8 +1298,8 @@
   </div>
 </div>
 
-<!-- 5. insurancePolicySavingsModal -->
-<div class="modal full-modal" id="insurancePolicySavingsModal">
+<!-- 6. pensionFundModal -->
+<div class="modal full-modal" id="pensionFundModal">
   <div class="modal-dialog">
     <div class="modal-content">
       <!-- Modal Header -->
@@ -1340,7 +1366,7 @@
           </div>
           <div class="col-3">
             <label class="text-primary">מספר אוצר</label>
-            <label class="text-value w-100">NUM</label>
+            <input type="text" class="form-control" placeholder="NUM" />
           </div>
         </div>
         <!--  -->
@@ -1489,8 +1515,8 @@
   </div>
 </div>
 
-<!-- 6. pensionFundModal -->
-<div class="modal full-modal" id="pensionFundModal">
+<!-- 7. insurancePolicyModal -->
+<div class="modal full-modal" id="insurancePolicyModal">
   <div class="modal-dialog">
     <div class="modal-content">
       <!-- Modal Header -->
@@ -1555,7 +1581,7 @@
           </div>
           <div class="col-3">
             <label class="text-primary">מספר אוצר</label>
-            <label class="text-value w-100">NUM</label>
+            <input type="text" class="form-control" placeholder="NUM" />
           </div>
         </div>
         <!--  -->
@@ -1645,27 +1671,6 @@
   </div>
 </div>
 
-<!-- 7. insurancePolicyModal -->
-<div class="modal full-modal" id="insurancePolicyModal">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <!-- Modal Header -->
-      <div class="modal-header">
-        <h2 class="title">
-          <span class="">הוספת מוצר מסוג - </span>
-          <span class="text-primary">גמל / השתלמות / פיצוים</span>
-        </h2>
-        <button type="button" class="cs-btn-icon btn-close close dark" data-dismiss="modal"></button>
-      </div>
-      <!-- Modal body -->
-      <div class="modal-body pt-2">
-        
-      </div>
-      
-    </div>
-  </div>
-</div>
-
 <!-- 8. IRAModal -->
 <div class="modal full-modal" id="IRAModal">
   <div class="modal-dialog">
@@ -1726,13 +1731,13 @@
             <label class="text-primary">סוג ביטוח</label>
             <input type="text" class="form-control" placeholder="TEXT" />
           </div>
-          <div class="col-2">
+          <div class="col-3">
             <label class="text-primary">שכר תוכנית</label>
             <input type="text" class="form-control" placeholder="TEXT" />
           </div>
-          <div class="col-3">
+          <div class="col-2">
             <label class="text-primary">מספר אוצר</label>
-            <label class="text-value w-100">NUM</label>
+            <input type="text" class="form-control" placeholder="NUM" />
           </div>
         </div>
         <!--  -->
@@ -2033,7 +2038,7 @@
           </div>
           <div class="col-2">
             <label class="text-primary">מספר רשיון בחברה מנהלת</label>
-            <label class="text-value w-100">NUM</label>
+            <input type="text" class="form-control" placeholder="TEXT" />
           </div>
           <div class="col-3">
             <label class="text-primary">בעל רשיון</label>
@@ -2402,55 +2407,19 @@
           </div>
           <div class="col-2">
             <label class="text-primary">אשור הצטרפות</label>
-            <div class="row">
-              <div class="col-6 d-flex py-2">
-                <input type="radio" class="form-control" name="radio3" />
-                <span class="radio-label">כן</span>
-              </div>
-              <div class="col-6 d-flex py-2">
-                <input type="radio" class="form-control" name="radio3" checked />
-                <span class="radio-label">לא</span>
-              </div>
-            </div>
+            <input type="checkbox" name="status" value="1" class="lcs_check" autocomplete="off" checked />
           </div>
           <div class="col-2">
             <label class="text-primary">קבלת הסכם השקעה</label>
-            <div class="row">
-              <div class="col-6 d-flex py-2">
-                <input type="radio" class="form-control" name="radio4" />
-                <span class="radio-label">כן</span>
-              </div>
-              <div class="col-6 d-flex py-2">
-                <input type="radio" class="form-control" name="radio4" checked />
-                <span class="radio-label">לא</span>
-              </div>
-            </div>
+            <input type="checkbox" name="status" value="1" class="lcs_check" autocomplete="off" checked />
           </div>
           <div class="col-2">
             <label class="text-primary">בקרת קבלת אסמכתא</label>
-            <div class="row">
-              <div class="col-6 d-flex py-2">
-                <input type="radio" class="form-control" name="radio5" />
-                <span class="radio-label">כן</span>
-              </div>
-              <div class="col-6 d-flex py-2">
-                <input type="radio" class="form-control" name="radio5" checked />
-                <span class="radio-label">לא</span>
-              </div>
-            </div>
+            <input type="checkbox" name="status" value="1" class="lcs_check" autocomplete="off" checked />
           </div>
           <div class="col-2">
             <label class="text-primary">בקרת חלוקה ראשונה</label>
-            <div class="row">
-              <div class="col-6 d-flex py-2">
-                <input type="radio" class="form-control" name="radio6" />
-                <span class="radio-label">כן</span>
-              </div>
-              <div class="col-6 d-flex py-2">
-                <input type="radio" class="form-control" name="radio6" checked />
-                <span class="radio-label">לא</span>
-              </div>
-            </div>
+            <input type="checkbox" name="status" value="1" class="lcs_check" autocomplete="off" checked />
           </div>
         </div>
         <!--  -->
@@ -2538,7 +2507,7 @@
                                 '<tr>');
   });
 </script>
-<script>
+<!-- <script>
   $(document).on('keyup', '.searchable-dropdown input', function(e) {
     var search_key = $(this).val().toUpperCase();
     var items = $(this).closest('.searchable-dropdown').find('.dropdown-content').find('.content-item');
@@ -2556,6 +2525,23 @@
   $(document).on('blur', '.searchable-dropdown input', function(e) {
     setTimeout(() => {
       $(this).closest('.searchable-dropdown').find('.dropdown-content').css('display', 'none');  
+    }, 1000 * 0.2);
+  });
+</script> -->
+<script>
+  //
+  $(document).on('click', '.cs-dropdown .cs-toggle', function() {
+    if($(this).hasClass('open')) {
+      $(this).closest('.cs-dropdown').find('.dropdown-content').css('display', 'none');
+    } else {
+      $(this).closest('.cs-dropdown').find('.dropdown-content').css('display', 'block');
+    }
+    $(this).toggleClass('open');
+  });
+  $(document).on('blur', '.cs-dropdown .cs-toggle', function(e) {
+    setTimeout(() => {
+      $(this).removeClass('open');
+      $(this).closest('.cs-dropdown').find('.dropdown-content').css('display', 'none');  
     }, 1000 * 0.2);
   });
 </script>
@@ -2620,42 +2606,6 @@
   $(document).on('click', '.btn-add-route-item', function(e) {
     var parent_id = $(this).data('id');
     switch(parent_id) {
-      case 'newProductModal' :
-        $('#' + parent_id).find('.deposit-routes-wrapper').append('<div class="row mt-2 route-item">'+
-            '<div class="col-5">'+
-              '<div class="row">'+
-                '<div class="col-8">'+
-                  '<div class="d-flex">'+
-                    '<div class="text-primary py-2 pl-3">'+ ($('#' + parent_id).find('.route-item').length + 2) +'.</div>'+
-                    '<input type="text" class="form-control" placeholder="TEXT" />'+
-                  '</div>'+
-                '</div>'+
-                '<div class="col-4">'+
-                  '<input type="text" class="form-control" placeholder="NUM" />'+
-                '</div>'+
-              '</div>'+
-            '</div>'+
-            '<div class="col-7">'+
-              '<div class="row">'+
-                '<div class="col-3">'+
-                  '<input type="text" class="form-control" placeholder="%" />'+
-                '</div>'+
-                '<div class="col-2">'+
-                  '<input type="checkbox" name="status" value="1" class="lcs_check" autocomplete="off" checked />'+
-                '</div>'+
-                '<div class="col-3">'+
-                  '<input type="text" class="form-control" placeholder="NUM" />'+
-                '</div>'+
-                '<div class="col-3">'+
-                  '<input type="text" class="form-control" placeholder="%" />'+
-                '</div>'+
-                '<div class="col-1">'+
-                  '<a class="cs-btn-icon btn-delete m-0" href="javascript:void(0)"></a>'+
-                '</div>'+
-              '</div>'+
-            '</div>'+
-          '</div>');
-        break;
       case 'providentEducationCompensationModal' :
         $('#' + parent_id).find('.deposit-routes-wrapper').append('<div class="row mt-2 route-item">'+
             '<div class="col-5">'+
@@ -2693,6 +2643,42 @@
           '</div>');
         break;
       case 'savingPolicyModal' :
+        $('#' + parent_id).find('.deposit-routes-wrapper').append('<div class="row mt-2 route-item">'+
+            '<div class="col-5">'+
+              '<div class="row">'+
+                '<div class="col-8">'+
+                  '<div class="d-flex">'+
+                    '<div class="text-primary py-2 pl-3">'+ ($('#' + parent_id).find('.route-item').length + 2) +'.</div>'+
+                    '<input type="text" class="form-control" placeholder="TEXT" />'+
+                  '</div>'+
+                '</div>'+
+                '<div class="col-4">'+
+                  '<input type="text" class="form-control" placeholder="NUM" />'+
+                '</div>'+
+              '</div>'+
+            '</div>'+
+            '<div class="col-7">'+
+              '<div class="row">'+
+                '<div class="col-3">'+
+                  '<input type="text" class="form-control" placeholder="%" />'+
+                '</div>'+
+                '<div class="col-2">'+
+                  '<input type="checkbox" name="status" value="1" class="lcs_check" autocomplete="off" checked />'+
+                '</div>'+
+                '<div class="col-3">'+
+                  '<input type="text" class="form-control" placeholder="NUM" />'+
+                '</div>'+
+                '<div class="col-3">'+
+                  '<input type="text" class="form-control" placeholder="%" />'+
+                '</div>'+
+                '<div class="col-1">'+
+                  '<a class="cs-btn-icon btn-delete m-0" href="javascript:void(0)"></a>'+
+                '</div>'+
+              '</div>'+
+            '</div>'+
+          '</div>');
+        break;
+      case 'managedPortfolioModal' :
         $('#' + parent_id).find('.deposit-routes-wrapper').append('<div class="row mt-2 route-item">'+
             '<div class="col-5">'+
               '<div class="row">'+

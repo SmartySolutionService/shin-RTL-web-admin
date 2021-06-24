@@ -14729,7 +14729,7 @@ table .gj-datepicker .input-group-append {
 .dataTables_wrapper {
   max-width: 100% !important;
   min-width: auto !important;
-  overflow: auto;
+  overflow-x: auto;
 }
 
 .dropdown.has-sub-dropdown .form-control.dropdown-toggle {
