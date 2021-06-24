@@ -199,9 +199,7 @@
                             border: solid 1px #707070;
                             -webkit-box-shadow: 0px 0px 6px 3px rgba(0,0,0,0.16); 
                             box-shadow: 0px 0px 6px 3px rgba(0,0,0,0.16);
-                            th {
-                                // padding: 15px 3px;
-                            }
+                            
                             .action-filter {
                                 position: relative;
                                 display: block;
@@ -456,11 +454,7 @@
                         }
                     }
                 }
-                &.datatable {
-                    td {
-                        // padding-right: 30px;
-                    }
-                }
+                
                 .badge {
                     padding: 10px 20px;
                     border-radius: 10px;
@@ -694,10 +688,7 @@
                         .dropdown-item {
                             display: flex;
                             padding: 10px 20px;
-                            .cs-icon {
-                                // position: absolute;
-                                // right: 20px;
-                            }
+                            
                             .link-text {
                                 margin-right: 30px;
                             }
@@ -1022,9 +1013,7 @@
                 padding: 10px 15px;
             }
             &.lg-table {
-                th, td {
-                    // font-size: 14px !important;
-                }
+                
                 .bg-dark {
                     th {
                         padding-left: 2px !important; 
