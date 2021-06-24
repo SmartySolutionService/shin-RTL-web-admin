@@ -200,7 +200,7 @@
                             -webkit-box-shadow: 0px 0px 6px 3px rgba(0,0,0,0.16); 
                             box-shadow: 0px 0px 6px 3px rgba(0,0,0,0.16);
                             th {
-                                padding: 15px 3px;
+                                // padding: 15px 3px;
                             }
                             .action-filter {
                                 position: relative;
@@ -570,6 +570,7 @@
     }
     .gj-datepicker {
         .form-control {
+            border-radius: 8px;
             border-top-right-radius: 8px !important;
             border-bottom-right-radius: 8px !important;
         }
@@ -577,6 +578,7 @@
     .gj-timepicker {
         width: 100px;
         .form-control {
+            border-radius: 8px;
             border-top-right-radius: 8px !important;
             border-bottom-right-radius: 8px !important;
         }
@@ -1402,6 +1404,9 @@
             .input-group-append {
                 margin-left: 0px;
             }
+        }
+        th, td {
+            min-width: 120px !important;
         }
     }
 }

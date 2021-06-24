@@ -192,9 +192,6 @@
   -webkit-box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.16);
   box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.16);
 }
-.action-page .filter-app .app-body table thead tr.bg-dark th {
-  padding: 15px 3px;
-}
 .action-page .filter-app .app-body table thead tr.bg-dark .action-filter {
   position: relative;
   display: block;
@@ -528,6 +525,7 @@
   padding: 5px;
 }
 .app-body .gj-datepicker .form-control {
+  border-radius: 8px;
   border-top-right-radius: 8px !important;
   border-bottom-right-radius: 8px !important;
 }
@@ -535,6 +533,7 @@
   width: 100px;
 }
 .app-body .gj-timepicker .form-control {
+  border-radius: 8px;
   border-top-right-radius: 8px !important;
   border-bottom-right-radius: 8px !important;
 }
@@ -2026,6 +2025,9 @@
 }
 .crm-page table .gj-datepicker .input-group-append {
   margin-left: 0px;
+}
+.crm-page table th, .crm-page table td {
+  min-width: 120px !important;
 }
 
 .btn-produce-pdf, .btn-send-customer {
