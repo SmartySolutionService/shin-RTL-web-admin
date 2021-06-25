@@ -622,6 +622,102 @@
     });
   });
 </script>
+<script>
+  $(document).on('click', '.deposit-routes-wrapper .btn-delete', function(e) {
+    $(this).closest('.route-item').remove();
+  });
+  //
+  $(document).on('click', '.btn-add-route-item', function(e) {
+        $('.cs-dialog #nav-new-product-details2').find('.deposit-routes-wrapper').append('<div class="route-item">'+
+                    '<div class="row">'+
+                      '<div class="col-6">'+
+                        '<div class="row">'+
+                          '<div class="col-3">'+
+                            '<label class="text-primary pr-5">שם מוצר</label>'+
+                            '<div class="d-flex">'+
+                              '<div class="text-primary px-2 py-1">'+ ($('.cs-dialog #nav-new-product-details2').find('.route-item').length + 1)  +'.</div>'+
+                              '<input type="text" class="form-control" placeholder="TEXT" />'+
+                            '</div>'+
+                          '</div>'+
+                          '<div class="col-3">'+
+                            '<label class="text-primary">סכום הפקדה</label>'+
+                            '<input type="text" class="form-control" placeholder="NUM" />'+
+                          '</div>'+
+                          '<div class="col-3">'+
+                            '<label class="text-primary">סכום רכישה</label>'+
+                            '<input type="text" class="form-control" placeholder="NUM" />'+
+                          '</div>'+
+                          '<div class="col-3">'+
+                            '<label class="text-primary">שער רכישה</label>'+
+                            '<input type="text" class="form-control" placeholder="NUM" />'+
+                          '</div>'+
+                        '</div>'+
+                      '</div>'+
+                      '<div class="col-6">'+
+                        '<div class="row">'+
+                          '<div class="col-3">'+
+                            '<label class="text-primary">מטבע רכישה</label>'+
+                            '<input type="text" class="form-control" placeholder="TEXT" />'+
+                          '</div>'+
+                          '<div class="col-3">'+
+                            '<label class="text-primary">שער מטבע רכישה</label>'+
+                            '<input type="text" class="form-control" placeholder="NUM" />'+
+                          '</div>'+
+                          '<div class="col-3">'+
+                            '<label class="text-primary">ISN</label>'+
+                            '<input type="text" class="form-control" placeholder="NUM" />'+
+                          '</div>'+
+                          '<div class="col-3">'+
+                            '<a class="cs-btn-icon btn-delete m-0" href="javascript:void(0)" style="top:35px;"></a>'+
+                          '</div>'+
+                        '</div>'+
+                      '</div>'+
+                    '</div>'+
+                    '<div class="row">'+
+                      '<div class="col-6">'+
+                        '<div class="row">'+
+                          '<div class="col-3">'+
+                            '<label class="text-primary pr-5">חודש הצטרפות</label>'+
+                            '<div class="d-flex">'+
+                              '<div class="text-primary px-2 py-1"></div>'+
+                              '<input class="form-control datepicker" placeholder="DATE" />'+
+                            '</div>'+
+                          '</div>'+
+                          '<div class="col-3">'+
+                            '<label class="text-primary">מספר אסמכתא</label>'+
+                            '<input type="text" class="form-control" placeholder="NUM" />'+
+                          '</div>'+
+                          '<div class="col-3">'+
+                            '<label class="text-primary">מעמד מספר</label>'+
+                            '<input type="text" class="form-control" placeholder="NUM" />'+
+                          '</div>'+
+                          '<div class="col-3">'+
+                            '<label class="text-primary">תאריך רכישה</label>'+
+                            '<input class="form-control datepicker" placeholder="DATE" />'+
+                          '</div>'+
+                        '</div>'+
+                      '</div>'+
+                      '<div class="col-6">'+
+                        '<div class="row">'+
+                          '<div class="col-3">'+
+                            '<label class="text-primary">מקור הכספים</label>'+
+                            '<input type="text" class="form-control" placeholder="TEXT" />'+
+                          '</div>'+
+                          '<div class="col-3">'+
+                          '</div>'+
+                          '<div class="col-3">'+
+                          '</div>'+
+                          '<div class="col-3">'+
+                          '</div>'+
+                        '</div>'+
+                      '</div>'+
+                    '</div>'+
+                    '<hr style="border-color: #78849E;" />'+
+                  '</div>');
+    initLCSSwitches();
+    initDatepicker();
+  });
+</script>
 <!-- ./script -->
 </body>
 </html>

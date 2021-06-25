@@ -590,6 +590,50 @@
     });
   });
 </script>
+<script>
+  $(document).on('click', '.deposit-routes-wrapper .btn-delete', function(e) {
+    $(this).closest('.route-item').remove();
+  });
+  //
+  $(document).on('click', '.btn-add-route-item', function(e) {
+        $('.cs-dialog').find('.deposit-routes-wrapper').append('<div class="row mt-2 route-item">'+
+                    '<div class="col-6">'+
+                      '<div class="row">'+
+                        '<div class="col-4">'+
+                          '<div class="d-flex">'+
+                            '<div class="text-primary px-2 py-1">'+ ($('.cs-dialog').find('.route-item').length + 2)  +'.</div>'+
+                            '<input type="text" class="form-control" placeholder="TEXT" />'+
+                          '</div>'+
+                        '</div>'+
+                        '<div class="col-4">'+
+                          '<input type="text" class="form-control" placeholder="NUM" />'+
+                        '</div>'+
+                        '<div class="col-4">'+
+                          '<input type="text" class="form-control" placeholder="%" />'+
+                        '</div>'+
+                      '</div>'+
+                    '</div>'+
+                    '<div class="col-6">'+
+                      '<div class="row">'+
+                        '<div class="col-3 col-sm-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2 pt-1">'+
+                          '<input type="checkbox" name="status" value="1" class="lcs_check" autocomplete="off" checked />'+
+                        '</div>'+
+                        '<div class="col-4">'+
+                          '<input type="text" class="form-control" placeholder="NUM" />'+
+                        '</div>'+
+                        '<div class="col-4">'+
+                          '<input type="text" class="form-control" placeholder="%" />'+
+                        '</div>'+
+                        '<div class="col-1">'+
+                          '<a class="cs-btn-icon btn-delete m-0" href="javascript:void(0)"></a>'+
+                        '</div>'+
+                      '</div>'+
+                    '</div>'+
+                  '</div>');
+    initLCSSwitches();
+    initDatepicker();
+  });
+</script>
 <!-- ./script -->
 </body>
 </html>

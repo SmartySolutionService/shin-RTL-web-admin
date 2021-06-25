@@ -2135,5 +2135,27 @@
   height: 30px;
   margin-top: 5px !important;
 }
+.cs-dialog .modal-content .modal-body .modal-tab .nav-tabs {
+  height: 60px;
+  border-bottom: solid 17px #7ABBFC;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+.cs-dialog .modal-content .modal-body .modal-tab .nav-tabs .nav-link {
+  font-size: 14px;
+  padding: 8px 15px;
+  color: #485272;
+  border: 1px solid transparent;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+}
+.cs-dialog .modal-content .modal-body .modal-tab .nav-tabs .nav-link.active {
+  background-color: #7ABBFC;
+  border: 0;
+  color: #FFFFFF;
+  font-weight: bold;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
 
 /*# sourceMappingURL=action.css.map */
