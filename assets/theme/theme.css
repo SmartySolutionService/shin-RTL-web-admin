@@ -14573,9 +14573,18 @@ table .gj-datepicker .input-group-append {
   display: flex;
   justify-content: space-around;
   margin-top: 40px;
+  margin-left: -5px;
+  margin-right: -5px;
 }
-.dashboard-page .content .control-tab .btn-tab {
+.dashboard-page .content .control-tab .btn-wrapper {
+  position: relative;
+  display: block;
   width: 200px;
+  height: 70px;
+  padding: 0 5px;
+}
+.dashboard-page .content .control-tab .btn-wrapper .btn-tab {
+  width: 100%;
   height: 70px;
   background-color: #FFFFFF;
   color: #1E87F0;
@@ -14585,14 +14594,14 @@ table .gj-datepicker .input-group-append {
   -webkit-box-shadow: 0px 3px 6px 3px rgba(0, 0, 0, 0.16);
   box-shadow: 0px 3px 6px 3px rgba(0, 0, 0, 0.16);
 }
-.dashboard-page .content .control-tab .btn-tab.active {
+.dashboard-page .content .control-tab .btn-wrapper .btn-tab.active {
   background-color: #1E87F0;
   color: #FFFFFF;
 }
-.dashboard-page .content .control-tab .btn-tab.active span {
+.dashboard-page .content .control-tab .btn-wrapper .btn-tab.active span {
   color: #FFFFFF;
 }
-.dashboard-page .content .control-tab .btn-tab span {
+.dashboard-page .content .control-tab .btn-wrapper .btn-tab span {
   color: #515151;
 }
 .dashboard-page .content .search-wrapper {
