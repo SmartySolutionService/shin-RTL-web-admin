@@ -3674,9 +3674,11 @@ button:focus {
     }
 }
 
-#newQuestionnaireModal {
-  .modal-dialog {
+#newQuestionnaireModal,
+#new-questionnaire-modal-dialog {
     width: 100%;
+    max-width: 100% !important;
+    margin: 0px;
     .modal-content {
         height: 100vh;
         overflow-y: auto;
@@ -3863,8 +3865,6 @@ button:focus {
         }
       }
     }
-    
-  }
 }
 
 #breakdown-of-monthly-expenses {
@@ -4965,6 +4965,125 @@ table {
         }
     }
 }
+
+// ============== Dialog Modal CSS ============ //
+.embed-modal {
+    .btn-close {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        width: 32px;
+        height: 32px;
+    }
+}
+// .cs-dialog {
+//     max-width: 100%;
+//     width: 100%;
+//     margin: 0px !important;
+//     text-align: right;
+//     .modal-content {
+//         background-color: #F4F6FC;
+//         border-radius: 0px;
+//         padding-left: 60px;
+//         padding-right: 30px;
+//         .modal-header {
+//             border-bottom: none;
+//         }
+//         .modal-footer {
+//             border-top: none;
+//         }
+//         .modal-body {
+//             label {
+//                 font-weight: bold;
+//                 min-width: 100px;
+//             }
+//             .btn-add-route-item {
+//                 margin-top: 10px;
+//                 margin-right: 40px;
+//                 text-decoration: underline;
+//                 cursor: pointer;
+//             }
+//             .lcs_switch {
+//                 border-radius: 4px;
+//                 width: 100px;
+//                 height: 30px;
+//                 -webkit-box-shadow: 0px 0px 6px 3px rgba(0,0,0,0.15); 
+//                 box-shadow: 0px 0px 6px 3px rgba(0,0,0,0.15);
+//                 &.lcs_off {
+//                     background-color: #7ABCFF;
+//                     .lcs_cursor {
+//                         left: 0px;
+//                     }
+//                 }
+//                 &.lcs_on {
+//                     background-color: #7ABCFF;
+//                     .lcs_cursor {
+//                         left: 50px;
+//                     }
+//                 }
+//                 .lcs_cursor {
+//                     border-radius: 0px;
+//                     height: 30px;
+//                     width: 50px;
+//                     top: 0px;
+//                     font-size: 12px;
+//                     text-align: center;
+//                     padding: 5px;
+//                     font-weight: bold;
+//                 }
+//                 .lcs_label {
+//                     top: 0px;
+//                 }
+//             }
+//             .gj-datepicker {
+//                 .input-group-append {
+//                     position: absolute;
+//                     // right: 260px;
+//                     left: 0;
+//                     top: 0px;
+//                     height: 100%;
+//                     z-index: 10;
+//                     .btn {
+//                         border: 0;
+//                         color: #7ABBFC;
+//                         .gj-icon {
+//                             top: 10px;
+//                         }
+//                     }
+//                 }
+//             }
+//             .btn-delete {
+//                 width: 30px;
+//                 height: 30px;
+//                 margin-top: 5px !important;
+//             }
+//             .modal-tab {
+//                 .nav-tabs {
+//                     height: 60px;
+//                     border-bottom: solid 17px #7ABBFC;
+//                     border-top-left-radius: 0.5rem;
+//                     border-top-right-radius: 0.5rem;
+//                     .nav-link {
+//                         font-size: 14px;
+//                         padding: 8px 15px;
+//                         color: #485272;
+//                         border: 1px solid transparent;
+//                         border-top-left-radius: 0.25rem;
+//                         border-top-right-radius: 0.25rem;
+//                         &.active {
+//                             background-color: #7ABBFC;
+//                             border: 0;
+//                             color: #FFFFFF;
+//                             font-weight: bold;
+//                             border-top-left-radius: 0.5rem;
+//                             border-top-right-radius: 0.5rem;
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
 // ========= ./Comman Shared CSS ========== //
 
 

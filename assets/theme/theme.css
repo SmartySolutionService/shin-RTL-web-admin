@@ -13562,32 +13562,41 @@ input[type=submit] {
   max-width: 190px;
 }
 
-#newQuestionnaireModal .modal-dialog {
+#newQuestionnaireModal,
+#new-questionnaire-modal-dialog {
   width: 100%;
+  max-width: 100% !important;
+  margin: 0px;
 }
-#newQuestionnaireModal .modal-dialog .modal-content {
+#newQuestionnaireModal .modal-content,
+#new-questionnaire-modal-dialog .modal-content {
   height: 100vh;
   overflow-y: auto;
   border: 0;
 }
-#newQuestionnaireModal .modal-dialog .modal-content .modal-header .btn-close {
+#newQuestionnaireModal .modal-content .modal-header .btn-close,
+#new-questionnaire-modal-dialog .modal-content .modal-header .btn-close {
   top: 28px;
   right: 28px;
 }
-#newQuestionnaireModal .modal-dialog .modal-content .modal-body {
+#newQuestionnaireModal .modal-content .modal-body,
+#new-questionnaire-modal-dialog .modal-content .modal-body {
   padding-left: 60px;
   padding-right: 60px;
 }
-#newQuestionnaireModal .modal-dialog .modal-content .modal-body .multi-step-form {
+#newQuestionnaireModal .modal-content .modal-body .multi-step-form,
+#new-questionnaire-modal-dialog .modal-content .modal-body .multi-step-form {
   text-align: right;
 }
-#newQuestionnaireModal .modal-dialog .modal-content .modal-body .multi-step-form .indicators {
+#newQuestionnaireModal .modal-content .modal-body .multi-step-form .indicators,
+#new-questionnaire-modal-dialog .modal-content .modal-body .multi-step-form .indicators {
   margin: 0;
   padding: 0;
   list-style: none;
   display: inline-flex;
 }
-#newQuestionnaireModal .modal-dialog .modal-content .modal-body .multi-step-form .indicators .step {
+#newQuestionnaireModal .modal-content .modal-body .multi-step-form .indicators .step,
+#new-questionnaire-modal-dialog .modal-content .modal-body .multi-step-form .indicators .step {
   width: 49px;
   height: 49px;
   background-color: #D7DDE9;
@@ -13601,7 +13610,8 @@ input[type=submit] {
   cursor: pointer;
 }
 @media (min-width: 1280px) and (max-width: 1359px) {
-  #newQuestionnaireModal .modal-dialog .modal-content .modal-body .multi-step-form .indicators .step {
+  #newQuestionnaireModal .modal-content .modal-body .multi-step-form .indicators .step,
+#new-questionnaire-modal-dialog .modal-content .modal-body .multi-step-form .indicators .step {
     width: 45px;
     height: 45px;
     font-size: 18px;
@@ -13610,7 +13620,8 @@ input[type=submit] {
   }
 }
 @media (min-width: 1024px) and (max-width: 1279px) {
-  #newQuestionnaireModal .modal-dialog .modal-content .modal-body .multi-step-form .indicators .step {
+  #newQuestionnaireModal .modal-content .modal-body .multi-step-form .indicators .step,
+#new-questionnaire-modal-dialog .modal-content .modal-body .multi-step-form .indicators .step {
     width: 38px;
     height: 38px;
     font-size: 16px;
@@ -13618,15 +13629,18 @@ input[type=submit] {
     margin-left: 3px;
   }
 }
-#newQuestionnaireModal .modal-dialog .modal-content .modal-body .multi-step-form .indicators .step.active {
+#newQuestionnaireModal .modal-content .modal-body .multi-step-form .indicators .step.active,
+#new-questionnaire-modal-dialog .modal-content .modal-body .multi-step-form .indicators .step.active {
   background-color: #21D102 !important;
   color: #FFFFFF;
 }
-#newQuestionnaireModal .modal-dialog .modal-content .modal-body .multi-step-form .indicators .step.done {
+#newQuestionnaireModal .modal-content .modal-body .multi-step-form .indicators .step.done,
+#new-questionnaire-modal-dialog .modal-content .modal-body .multi-step-form .indicators .step.done {
   background-color: #7ABBFC;
   color: #FFFFFF;
 }
-#newQuestionnaireModal .modal-dialog .modal-content .modal-body .multi-step-form .tabs {
+#newQuestionnaireModal .modal-content .modal-body .multi-step-form .tabs,
+#new-questionnaire-modal-dialog .modal-content .modal-body .multi-step-form .tabs {
   position: relative;
   width: 100%;
   min-height: 600px;
@@ -13637,118 +13651,144 @@ input[type=submit] {
   background-color: #FFFFFF;
   padding-bottom: 120px;
 }
-#newQuestionnaireModal .modal-dialog .modal-content .modal-body .multi-step-form .tabs .mtab {
+#newQuestionnaireModal .modal-content .modal-body .multi-step-form .tabs .mtab,
+#new-questionnaire-modal-dialog .modal-content .modal-body .multi-step-form .tabs .mtab {
   display: none;
   width: 100%;
   padding: 30px;
 }
-#newQuestionnaireModal .modal-dialog .modal-content .modal-body .multi-step-form .tabs .mtab.active {
+#newQuestionnaireModal .modal-content .modal-body .multi-step-form .tabs .mtab.active,
+#new-questionnaire-modal-dialog .modal-content .modal-body .multi-step-form .tabs .mtab.active {
   display: block;
 }
-#newQuestionnaireModal .modal-dialog .modal-content .modal-body .multi-step-form .tabs .mtab h3 {
+#newQuestionnaireModal .modal-content .modal-body .multi-step-form .tabs .mtab h3,
+#new-questionnaire-modal-dialog .modal-content .modal-body .multi-step-form .tabs .mtab h3 {
   font-size: 26px;
   color: #7ABBFC;
   font-weight: bold;
   padding-right: 15px;
 }
 @media (min-width: 1280px) and (max-width: 1359px) {
-  #newQuestionnaireModal .modal-dialog .modal-content .modal-body .multi-step-form .tabs .mtab h3 {
+  #newQuestionnaireModal .modal-content .modal-body .multi-step-form .tabs .mtab h3,
+#new-questionnaire-modal-dialog .modal-content .modal-body .multi-step-form .tabs .mtab h3 {
     font-size: 24px;
   }
 }
 @media (min-width: 1024px) and (max-width: 1279px) {
-  #newQuestionnaireModal .modal-dialog .modal-content .modal-body .multi-step-form .tabs .mtab h3 {
+  #newQuestionnaireModal .modal-content .modal-body .multi-step-form .tabs .mtab h3,
+#new-questionnaire-modal-dialog .modal-content .modal-body .multi-step-form .tabs .mtab h3 {
     font-size: 22px;
   }
 }
-#newQuestionnaireModal .modal-dialog .modal-content .modal-body .multi-step-form .tabs .mtab h5 {
+#newQuestionnaireModal .modal-content .modal-body .multi-step-form .tabs .mtab h5,
+#new-questionnaire-modal-dialog .modal-content .modal-body .multi-step-form .tabs .mtab h5 {
   padding-right: 15px;
 }
 @media (min-width: 1600px) {
-  #newQuestionnaireModal .modal-dialog .modal-content .modal-body .multi-step-form .tabs .mtab .form-group {
+  #newQuestionnaireModal .modal-content .modal-body .multi-step-form .tabs .mtab .form-group,
+#new-questionnaire-modal-dialog .modal-content .modal-body .multi-step-form .tabs .mtab .form-group {
     width: 100%;
   }
 }
 @media (min-width: 1024px) and (max-width: 1599px) {
-  #newQuestionnaireModal .modal-dialog .modal-content .modal-body .multi-step-form .tabs .mtab .form-group .form-control {
+  #newQuestionnaireModal .modal-content .modal-body .multi-step-form .tabs .mtab .form-group .form-control,
+#new-questionnaire-modal-dialog .modal-content .modal-body .multi-step-form .tabs .mtab .form-group .form-control {
     height: 45px;
   }
 }
-#newQuestionnaireModal .modal-dialog .modal-content .modal-body .multi-step-form .tabs .mtab .grid-5 {
+#newQuestionnaireModal .modal-content .modal-body .multi-step-form .tabs .mtab .grid-5,
+#new-questionnaire-modal-dialog .modal-content .modal-body .multi-step-form .tabs .mtab .grid-5 {
   display: grid;
   grid-template-columns: 20% 20% 20% 20% 20%;
 }
-#newQuestionnaireModal .modal-dialog .modal-content .modal-body .multi-step-form .tabs .mtab .grid-5 .form-group {
+#newQuestionnaireModal .modal-content .modal-body .multi-step-form .tabs .mtab .grid-5 .form-group,
+#new-questionnaire-modal-dialog .modal-content .modal-body .multi-step-form .tabs .mtab .grid-5 .form-group {
   margin-bottom: 35px;
   padding: 0 10px;
 }
-#newQuestionnaireModal .modal-dialog .modal-content .modal-body .multi-step-form .tabs .mtab .grid-5 .form-group.grid-sum-2 {
+#newQuestionnaireModal .modal-content .modal-body .multi-step-form .tabs .mtab .grid-5 .form-group.grid-sum-2,
+#new-questionnaire-modal-dialog .modal-content .modal-body .multi-step-form .tabs .mtab .grid-5 .form-group.grid-sum-2 {
   grid-column-start: 1;
   grid-column-end: 3;
   min-width: 600px;
 }
 @media (min-width: 1600px) and (max-width: 1919px) {
-  #newQuestionnaireModal .modal-dialog .modal-content .modal-body .multi-step-form .tabs .mtab .grid-5 .form-group.grid-sum-2 {
+  #newQuestionnaireModal .modal-content .modal-body .multi-step-form .tabs .mtab .grid-5 .form-group.grid-sum-2,
+#new-questionnaire-modal-dialog .modal-content .modal-body .multi-step-form .tabs .mtab .grid-5 .form-group.grid-sum-2 {
     min-width: 560px;
   }
 }
 @media (min-width: 1440px) and (max-width: 1599px) {
-  #newQuestionnaireModal .modal-dialog .modal-content .modal-body .multi-step-form .tabs .mtab .grid-5 .form-group.grid-sum-2 {
+  #newQuestionnaireModal .modal-content .modal-body .multi-step-form .tabs .mtab .grid-5 .form-group.grid-sum-2,
+#new-questionnaire-modal-dialog .modal-content .modal-body .multi-step-form .tabs .mtab .grid-5 .form-group.grid-sum-2 {
     min-width: 500px;
   }
 }
 @media (min-width: 1360px) and (max-width: 1439px) {
-  #newQuestionnaireModal .modal-dialog .modal-content .modal-body .multi-step-form .tabs .mtab .grid-5 .form-group.grid-sum-2 {
+  #newQuestionnaireModal .modal-content .modal-body .multi-step-form .tabs .mtab .grid-5 .form-group.grid-sum-2,
+#new-questionnaire-modal-dialog .modal-content .modal-body .multi-step-form .tabs .mtab .grid-5 .form-group.grid-sum-2 {
     min-width: 450px;
   }
 }
 @media (min-width: 1280px) and (max-width: 1359px) {
-  #newQuestionnaireModal .modal-dialog .modal-content .modal-body .multi-step-form .tabs .mtab .grid-5 .form-group.grid-sum-2 {
+  #newQuestionnaireModal .modal-content .modal-body .multi-step-form .tabs .mtab .grid-5 .form-group.grid-sum-2,
+#new-questionnaire-modal-dialog .modal-content .modal-body .multi-step-form .tabs .mtab .grid-5 .form-group.grid-sum-2 {
     min-width: 440px;
   }
 }
 @media (min-width: 1024px) and (max-width: 1279px) {
-  #newQuestionnaireModal .modal-dialog .modal-content .modal-body .multi-step-form .tabs .mtab .grid-5 .form-group.grid-sum-2 {
+  #newQuestionnaireModal .modal-content .modal-body .multi-step-form .tabs .mtab .grid-5 .form-group.grid-sum-2,
+#new-questionnaire-modal-dialog .modal-content .modal-body .multi-step-form .tabs .mtab .grid-5 .form-group.grid-sum-2 {
     min-width: 335px;
   }
 }
-#newQuestionnaireModal .modal-dialog .modal-content .modal-body .multi-step-form .tabs .mtab#children-dependents-detail .form-children-dependents-detail .children-dependents-detail-row {
+#newQuestionnaireModal .modal-content .modal-body .multi-step-form .tabs .mtab#children-dependents-detail .form-children-dependents-detail .children-dependents-detail-row,
+#new-questionnaire-modal-dialog .modal-content .modal-body .multi-step-form .tabs .mtab#children-dependents-detail .form-children-dependents-detail .children-dependents-detail-row {
   padding-left: 50px;
 }
-#newQuestionnaireModal .modal-dialog .modal-content .modal-body .multi-step-form .tabs .mtab#children-dependents-detail .form-children-dependents-detail .children-dependents-detail-row .form-group {
+#newQuestionnaireModal .modal-content .modal-body .multi-step-form .tabs .mtab#children-dependents-detail .form-children-dependents-detail .children-dependents-detail-row .form-group,
+#new-questionnaire-modal-dialog .modal-content .modal-body .multi-step-form .tabs .mtab#children-dependents-detail .form-children-dependents-detail .children-dependents-detail-row .form-group {
   margin-bottom: 20px;
 }
-#newQuestionnaireModal .modal-dialog .modal-content .modal-body .multi-step-form .tabs .mtab#children-dependents-detail .form-children-dependents-detail .children-dependents-detail-row .form-group .form-control {
+#newQuestionnaireModal .modal-content .modal-body .multi-step-form .tabs .mtab#children-dependents-detail .form-children-dependents-detail .children-dependents-detail-row .form-group .form-control,
+#new-questionnaire-modal-dialog .modal-content .modal-body .multi-step-form .tabs .mtab#children-dependents-detail .form-children-dependents-detail .children-dependents-detail-row .form-group .form-control {
   max-width: 100%;
 }
-#newQuestionnaireModal .modal-dialog .modal-content .modal-body .multi-step-form .tabs .mtab#children-dependents-detail .form-children-dependents-detail .children-dependents-detail-row .btn-delete {
+#newQuestionnaireModal .modal-content .modal-body .multi-step-form .tabs .mtab#children-dependents-detail .form-children-dependents-detail .children-dependents-detail-row .btn-delete,
+#new-questionnaire-modal-dialog .modal-content .modal-body .multi-step-form .tabs .mtab#children-dependents-detail .form-children-dependents-detail .children-dependents-detail-row .btn-delete {
   position: absolute;
   left: 20px;
 }
 @media (min-width: 1600px) and (max-width: 1919px) {
-  #newQuestionnaireModal .modal-dialog .modal-content .modal-body .multi-step-form .tabs .mtab#children-dependents-detail .form-children-dependents-detail .children-dependents-detail-row .btn-delete {
+  #newQuestionnaireModal .modal-content .modal-body .multi-step-form .tabs .mtab#children-dependents-detail .form-children-dependents-detail .children-dependents-detail-row .btn-delete,
+#new-questionnaire-modal-dialog .modal-content .modal-body .multi-step-form .tabs .mtab#children-dependents-detail .form-children-dependents-detail .children-dependents-detail-row .btn-delete {
     margin-top: 5px !important;
   }
 }
 @media (min-width: 1024px) and (max-width: 1599px) {
-  #newQuestionnaireModal .modal-dialog .modal-content .modal-body .multi-step-form .tabs .mtab#children-dependents-detail .form-children-dependents-detail .children-dependents-detail-row .btn-delete {
+  #newQuestionnaireModal .modal-content .modal-body .multi-step-form .tabs .mtab#children-dependents-detail .form-children-dependents-detail .children-dependents-detail-row .btn-delete,
+#new-questionnaire-modal-dialog .modal-content .modal-body .multi-step-form .tabs .mtab#children-dependents-detail .form-children-dependents-detail .children-dependents-detail-row .btn-delete {
     margin-top: 3px !important;
   }
 }
-#newQuestionnaireModal .modal-dialog .modal-content .modal-body .multi-step-form .tabs .mtab#customer-approval-risk .form-textarea {
+#newQuestionnaireModal .modal-content .modal-body .multi-step-form .tabs .mtab#customer-approval-risk .form-textarea,
+#new-questionnaire-modal-dialog .modal-content .modal-body .multi-step-form .tabs .mtab#customer-approval-risk .form-textarea {
   max-width: 1327px;
 }
-#newQuestionnaireModal .modal-dialog .modal-content .modal-body .multi-step-form .tabs .mtab#customer-approval-risk .form-control {
+#newQuestionnaireModal .modal-content .modal-body .multi-step-form .tabs .mtab#customer-approval-risk .form-control,
+#new-questionnaire-modal-dialog .modal-content .modal-body .multi-step-form .tabs .mtab#customer-approval-risk .form-control {
   max-width: 378px;
 }
-#newQuestionnaireModal .modal-dialog .modal-content .modal-body .multi-step-form .tabs .navigators {
+#newQuestionnaireModal .modal-content .modal-body .multi-step-form .tabs .navigators,
+#new-questionnaire-modal-dialog .modal-content .modal-body .multi-step-form .tabs .navigators {
   position: absolute;
   display: block;
   bottom: 0;
   width: 100%;
   padding: 30px;
 }
-#newQuestionnaireModal .modal-dialog .modal-content .modal-body .multi-step-form .tabs .navigators .btn {
+#newQuestionnaireModal .modal-content .modal-body .multi-step-form .tabs .navigators .btn,
+#new-questionnaire-modal-dialog .modal-content .modal-body .multi-step-form .tabs .navigators .btn {
   width: 158px;
   height: 60px;
   font-size: 20px;
@@ -13756,11 +13796,13 @@ input[type=submit] {
   font-weight: bold;
   border-radius: 35px;
 }
-#newQuestionnaireModal .modal-dialog .modal-content .modal-body .multi-step-form .tabs .navigators .btn.btn-prev {
+#newQuestionnaireModal .modal-content .modal-body .multi-step-form .tabs .navigators .btn.btn-prev,
+#new-questionnaire-modal-dialog .modal-content .modal-body .multi-step-form .tabs .navigators .btn.btn-prev {
   float: right;
   background-color: #BFC5D2;
 }
-#newQuestionnaireModal .modal-dialog .modal-content .modal-body .multi-step-form .tabs .navigators .btn.btn-next {
+#newQuestionnaireModal .modal-content .modal-body .multi-step-form .tabs .navigators .btn.btn-next,
+#new-questionnaire-modal-dialog .modal-content .modal-body .multi-step-form .tabs .navigators .btn.btn-next {
   float: left;
   background-color: #7ABBFC;
 }
@@ -14813,6 +14855,14 @@ table .gj-datepicker .input-group-append {
   margin-top: 8px;
   margin-left: 15px;
   margin-right: 20px;
+}
+
+.embed-modal .btn-close {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 32px;
+  height: 32px;
 }
 
 /*# sourceMappingURL=theme.css.map */
