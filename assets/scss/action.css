@@ -578,6 +578,22 @@
 #EmailModal .modal-dialog {
   width: 740px !important;
 }
+#CRMreminderModal .modal-dialog .wysiwyg-editor,
+#CRMAddTouchModal .modal-dialog .wysiwyg-editor,
+#newUserModal .modal-dialog .wysiwyg-editor,
+#SMSModal .modal-dialog .wysiwyg-editor,
+#EmailModal .modal-dialog .wysiwyg-editor {
+  width: 100%;
+}
+#CRMreminderModal .modal-dialog .wysiwyg-editor .form-control,
+#CRMAddTouchModal .modal-dialog .wysiwyg-editor .form-control,
+#newUserModal .modal-dialog .wysiwyg-editor .form-control,
+#SMSModal .modal-dialog .wysiwyg-editor .form-control,
+#EmailModal .modal-dialog .wysiwyg-editor .form-control {
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+}
 #CRMreminderModal .modal-dialog .btn-update-green,
 #CRMAddTouchModal .modal-dialog .btn-update-green,
 #newUserModal .modal-dialog .btn-update-green,

@@ -81,6 +81,13 @@
   width: 15px;
   height: 15px;
 }
+.simulator-main .filter-form .filter-form-body .filter-group-item .link-close {
+  cursor: pointer;
+  font-size: 12px;
+  line-height: 14px;
+  position: relative;
+  top: -8px;
+}
 .simulator-main .cs-btn-img {
   width: 191px;
 }

@@ -190,7 +190,7 @@
               </div>
               <div class="col-4 p-0 d-block text-left">
                 <button class="cs-btn-icon btn-close dark"></button>
-                <a href="#" class="d-block" style="font-size: 14px;">הסר</a>
+                <a class="d-block link-close">הסר</a>
               </div>
             </div>
             <div class="form-group row mx-0">
@@ -231,7 +231,7 @@
               </div>
               <div class="col-4 p-0 d-block text-left">
                 <button class="cs-btn-icon btn-close dark"></button>
-                <a href="#" class="d-block" style="font-size: 14px;">הסר</a>
+                <a class="d-block link-close">הסר</a>
               </div>
             </div>
             <div class="form-group row mx-0">
@@ -272,7 +272,7 @@
               </div>
               <div class="col-4 p-0 d-block text-left">
                 <button class="cs-btn-icon btn-close dark"></button>
-                <a href="#" class="d-block" style="font-size: 14px;">הסר</a>
+                <a class="d-block link-close">הסר</a>
               </div>
             </div>
             <div class="form-group row mx-0">
@@ -313,7 +313,7 @@
               </div>
               <div class="col-4 p-0 d-block text-left">
                 <button class="cs-btn-icon btn-close dark"></button>
-                <a href="#" class="d-block" style="font-size: 14px;">הסר</a>
+                <a class="d-block link-close">הסר</a>
               </div>
             </div>
             <div class="form-group row mx-0">
@@ -861,7 +861,7 @@
     $('input[name=tag-input]').val('');
   });
   //
-  $(document).on('click', '.filter-group-item .btn-close', function() {
+  $(document).on('click', '.filter-group-item .btn-close, .filter-group-item .link-close', function() {
     $(this).closest('.filter-group-item').remove();
     var items = $('.filter-group-item');
     // console.log('>>>', items.length);
