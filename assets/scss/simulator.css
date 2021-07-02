@@ -88,6 +88,21 @@
   position: relative;
   top: -8px;
 }
+.simulator-main .filter-form .filter-form-body .filter-group-item .distribution-slider-container {
+  position: relative;
+}
+.simulator-main .filter-form .filter-form-body .filter-group-item .distribution-slider-container .bar-Chart-wrapper {
+  text-align: center;
+}
+.simulator-main .filter-form .filter-form-body .filter-group-item .distribution-slider-container .bar-Chart-wrapper canvas {
+  position: relative;
+  right: 5px;
+}
+.simulator-main .filter-form .filter-form-body .filter-group-item .distribution-slider-container .range-slider-wrapper {
+  width: 100%;
+  position: absolute;
+  top: 25px;
+}
 .simulator-main .cs-btn-img {
   width: 191px;
 }

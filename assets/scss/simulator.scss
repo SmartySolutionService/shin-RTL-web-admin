@@ -98,6 +98,21 @@
                     position: relative;
                     top: -8px;
                 }
+                .distribution-slider-container {
+                    position: relative;
+                    .bar-Chart-wrapper {
+                        text-align: center;
+                        canvas {
+                            position: relative;
+                            right: 5px;
+                        }
+                    }
+                    .range-slider-wrapper {
+                        width: 100%;
+                        position: absolute;
+                        top: 25px;
+                    }
+                }
             }
         }
         

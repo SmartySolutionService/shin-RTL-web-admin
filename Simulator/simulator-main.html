@@ -13,10 +13,12 @@
   <link rel="stylesheet" href="../assets/plugins/sliding-toggle-switch/lc_switch.css">
   <link rel="stylesheet" href="../assets/custom/square-rater/square-rater.css">
   <link rel="stylesheet" href="../assets/custom/rate-color-bar/rate-color-bar.css">
+  <link rel="stylesheet" href="../node_modules/chart.js/dist/Chart.min.css">
   <!-- js -->
   <script src="../assets/jquery/jquery.min.js"></script>
   <script src="../assets/plugins/popper/popper.min.js"></script>
   <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="../node_modules/chart.js/dist/Chart.min.js"></script>
   <script>
     function usd(x){
       if(isNaN(parseInt(x)))
@@ -199,22 +201,25 @@
                 <label class="w-100 text-center pt-2">מקסימום</label>
               </div>
               <div class="col-6">
-                <div class="text-center">
-                  <img src="../assets/img/bg/wave1.png" alt="" />
-                </div>
-                <div class="w-100">
-                  <input
-                    id="slider1"
-                    class="input-range-slider m-0 w-100"
-                    data-name='slider1'
-                    data-addui='slider1'
-                    data-fontsize='0'
-                    data-step='0.1'
-                    data-min='0'
-                    data-max='10'
-                    data-range='true'
-                    value='0,10'
-                  />
+                <div class="distribution-slider-container">
+                  <div class="bar-Chart-wrapper">
+                    <!-- <img src="../assets/img/bg/wave1.png" alt="" /> -->
+                    <canvas id="myChart1"></canvas>
+                  </div>
+                  <div class="range-slider-wrapper">
+                    <input
+                      id="slider1"
+                      class="input-range-slider m-0 w-100"
+                      data-name='slider1'
+                      data-addui='slider1'
+                      data-fontsize='0'
+                      data-step='0.1'
+                      data-min='0'
+                      data-max='10'
+                      data-range='true'
+                      value='0,10'
+                    />
+                  </div>
                 </div>
               </div>
               <div class="col-3 p-0">
@@ -223,129 +228,7 @@
               </div>
             </div>
           </div>
-          <div class="filter-group-item">
-            <div class="form-group row mx-0">
-              <div class="col-8 p-0">
-                <label class="item-title">2. שויי שוק (מיל' ש"ח)</label>
-                <button class="cs-btn-icon btn-quiz" data-toggle="tooltip" data-placement="top" title="Tooltip on top"></button>
-              </div>
-              <div class="col-4 p-0 d-block text-left">
-                <button class="cs-btn-icon btn-close dark"></button>
-                <a class="d-block link-close">הסר</a>
-              </div>
-            </div>
-            <div class="form-group row mx-0">
-              <div class="col-3 p-0">
-                <input type="number" class="form-control slider-max" min="0" max="10" id="slider2_max" step="0.1" value="10" />
-                <label class="w-100 text-center pt-2">מקסימום</label>
-              </div>
-              <div class="col-6">
-                <div class="text-center">
-                  <img src="../assets/img/bg/wave2.png" alt="" />
-                </div>
-                <div class="w-100">
-                  <input
-                    id="slider2"
-                    class="input-range-slider m-0 w-100"
-                    data-name='slider2'
-                    data-addui='slider2'
-                    data-fontsize='0'
-                    data-step='0.1'
-                    data-min='0'
-                    data-max='10'
-                    data-range='true'
-                    value='0,10'
-                  />
-                </div>
-              </div>
-              <div class="col-3 p-0">
-                <input type="number" class="form-control slider-min" min="0" max="10" id="slider2_min" step="0.1" value="0" />
-                <label class="w-100 text-center pt-2">מינימום</label>
-              </div>
-            </div>
-          </div>
-          <div class="filter-group-item">
-            <div class="form-group row mx-0">
-              <div class="col-8 p-0">
-                <label class="item-title">3. שויי שוק (מיל' ש"ח)</label>
-                <button class="cs-btn-icon btn-quiz" data-toggle="tooltip" data-placement="top" title="Tooltip on top"></button>
-              </div>
-              <div class="col-4 p-0 d-block text-left">
-                <button class="cs-btn-icon btn-close dark"></button>
-                <a class="d-block link-close">הסר</a>
-              </div>
-            </div>
-            <div class="form-group row mx-0">
-              <div class="col-3 p-0">
-                <input type="number" class="form-control slider-max" min="0" max="10" id="slider3_max" step="0.1" value="10" />
-                <label class="w-100 text-center pt-2">מקסימום</label>
-              </div>
-              <div class="col-6">
-                <div class="text-center">
-                  <img src="../assets/img/bg/wave2.png" alt="" />
-                </div>
-                <div class="w-100">
-                  <input
-                    id="slider3"
-                    class="input-range-slider m-0 w-100"
-                    data-name='slider3'
-                    data-addui='slider3'
-                    data-fontsize='0'
-                    data-step='0.1'
-                    data-min='0'
-                    data-max='10'
-                    data-range='true'
-                    value='0,10'
-                  />
-                </div>
-              </div>
-              <div class="col-3 p-0">
-                <input type="number" class="form-control slider-min" min="0" max="10" id="slider3_min" step="0.1" value="0" />
-                <label class="w-100 text-center pt-2">מינימום</label>
-              </div>
-            </div>
-          </div>
-          <div class="filter-group-item">
-            <div class="form-group row mx-0">
-              <div class="col-8 p-0">
-                <label class="item-title">4. שויי שוק (מיל' ש"ח)</label>
-                <button class="cs-btn-icon btn-quiz" data-toggle="tooltip" data-placement="top" title="Tooltip on top"></button>
-              </div>
-              <div class="col-4 p-0 d-block text-left">
-                <button class="cs-btn-icon btn-close dark"></button>
-                <a class="d-block link-close">הסר</a>
-              </div>
-            </div>
-            <div class="form-group row mx-0">
-              <div class="col-3 p-0">
-                <input type="number" class="form-control slider-max" min="0" max="10" id="slider4_max" step="0.1" value="10" />
-                <label class="w-100 text-center pt-2">מקסימום</label>
-              </div>
-              <div class="col-6">
-                <div class="text-center">
-                  <img src="../assets/img/bg/wave1.png" alt="" />
-                </div>
-                <div class="w-100">
-                  <input
-                    id="slider4"
-                    class="input-range-slider m-0 w-100"
-                    data-name='slider4'
-                    data-addui='slider4'
-                    data-fontsize='0'
-                    data-step='0.1'
-                    data-min='0'
-                    data-max='10'
-                    data-range='true'
-                    value='0,10'
-                  />
-                </div>
-              </div>
-              <div class="col-3 p-0">
-                <input type="number" class="form-control slider-min" min="0" max="10" id="slider4_min" step="0.1" value="0" />
-                <label class="w-100 text-center pt-2">מינימום</label>
-              </div>
-            </div>
-          </div>
+
         </div>
       </div>
     </div>
@@ -752,6 +635,65 @@
 <script src="../assets/custom/rate-color-bar/rate-color-bar.js" type="text/javascript"></script>
 
 <!-- ./plugin js -->
+<script>
+  // Our labels along the x-axis
+  var years = [1500,1600,1700,1750,1800,1850,1900,1950,1999,2050];
+  // For drawing the lines
+  var africa = [86,114,106,106,107,111,133,221,783,2478];
+  // === Chart 1
+  var data1 = {
+      labels: ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""],
+      datasets: [
+        {
+          label: 'Dataset 1', 
+          data: [5,8,4,7,5,6,3,4,8,9,5,6,4,3,4,6,4,5,7,8,4,7,5,6,3,4,8,9,5,6,4,3,4,6,4,5,7],
+          backgroundColor: '#1E87F0'
+        }
+      ]
+    }
+  var configChart1 = {
+    type: 'bar',
+    data: data1,
+    options: {
+      responsive: true,
+      legend: {
+        display: false
+      },
+      tooltips: {
+        enabled: false
+      },
+      scales: {
+        xAxes: [{
+            gridLines: {
+              display: false
+            }
+        }],
+        yAxes: [{
+          gridLines: {
+            display: false
+          },
+          ticks: {
+            display: false
+          }
+        }]
+      },
+      plugins: {
+        legend: {
+          position: 'top',
+        },
+        title: {
+          display: false,
+          text: ''
+        }
+      }
+    },
+  };
+  // 
+  var ctx = document.getElementById("myChart1");
+  // ctx.height = $(ctx).closest('.card-body').height() / 2;
+  ctx.height = 100;
+  var myChart1 = new Chart(ctx, configChart1);
+</script>
 <script>
   // datatable init
   $(document).ready(function() {
