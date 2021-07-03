@@ -1,6 +1,6 @@
 if($add===undefined)var $add={version:{},auto:{disabled:false}};
 $add.version.Slider = "2.0.1";
-$add.SliderObj = function(settings, onChange){
+$add.SliderObj = function(settings, index, onChange, container){
   Obj.apply(this);
   
   function toNearest(num, x){
@@ -16,7 +16,7 @@ $add.SliderObj = function(settings, onChange){
     value: 50,
     fontsize: 18,
     onChange: function(x){
-      onChange(x)
+      onChange(x, index, container)
     },
     formatter: function(x){
       if((this._settings.step+"").indexOf(".")>-1)
@@ -46,7 +46,8 @@ $add.SliderObj = function(settings, onChange){
     range: false,
     id: false,
     name: "",
-    class: ""
+    class: "",
+    index: index
   };
   Object.defineProperty(this, "settings", {
     get: function(){
@@ -327,7 +328,7 @@ $add.SliderObj = function(settings, onChange){
   };
   this.init.apply(this, arguments);
 };
-$add.Slider = function(selector, settings, onChange){
+$add.Slider = function(selector, settings, onChange, container){
   var o = $(selector).each(function(i,el){
     var $el = $(el);
     var s = {};
@@ -346,14 +347,14 @@ $add.Slider = function(selector, settings, onChange){
     if($el.attr("step"))
       s.step = $el.attr("step");
     settings = $.extend(s, $el.data(), settings);
-    var S = new $add.SliderObj(settings, onChange);
+    var S = new $add.SliderObj(settings, i, onChange, container);
     S.render($el, "replace");
     return S;
   });
   return (o.length == 0)?null:(o.length==1)?o[0]:o;
 };
-$.fn.addSlider = function(settings, onChange){
-  $add.Slider(this, settings, onChange);
+$.fn.addSlider = function(settings, onChange, container){
+  $add.Slider(this, settings, onChange, container);
 };
 $add.auto.Slider = function(){
   if(!$add.auto.disabled)

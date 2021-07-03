@@ -204,14 +204,13 @@
                 <div class="distribution-slider-container">
                   <div class="bar-Chart-wrapper">
                     <!-- <img src="../assets/img/bg/wave1.png" alt="" /> -->
-                    <canvas id="myChart1"></canvas>
+                    <canvas class="barChart"></canvas>
                   </div>
                   <div class="range-slider-wrapper">
                     <input
-                      id="slider1"
                       class="input-range-slider m-0 w-100"
-                      data-name='slider1'
-                      data-addui='slider1'
+                      data-name='slider'
+                      data-addui='slider'
                       data-fontsize='0'
                       data-step='0.1'
                       data-min='0'
@@ -228,7 +227,49 @@
               </div>
             </div>
           </div>
-
+          <!--  -->
+          <div class="filter-group-item">
+            <div class="form-group row mx-0">
+              <div class="col-8 p-0">
+                <label class="item-title">1. שויי שוק (מיל' ש"ח)</label>
+                <button class="cs-btn-icon btn-quiz" data-toggle="tooltip" data-placement="top" title="Tooltip on top"></button>
+              </div>
+              <div class="col-4 p-0 d-block text-left">
+                <button class="cs-btn-icon btn-close dark"></button>
+                <a class="d-block link-close">הסר</a>
+              </div>
+            </div>
+            <div class="form-group row mx-0">
+              <div class="col-3 p-0">
+                <input type="number" class="form-control slider-max" min="0" max="10" id="slider1_max" step="0.1" value="10" />
+                <label class="w-100 text-center pt-2">מקסימום</label>
+              </div>
+              <div class="col-6">
+                <div class="distribution-slider-container">
+                  <div class="bar-Chart-wrapper">
+                    <canvas class="barChart"></canvas>
+                  </div>
+                  <div class="range-slider-wrapper">
+                    <input
+                      class="input-range-slider m-0 w-100"
+                      data-name='slider'
+                      data-addui='slider'
+                      data-fontsize='0'
+                      data-step='0.1'
+                      data-min='0'
+                      data-max='10'
+                      data-range='true'
+                      value='0,10'
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="col-3 p-0">
+                <input type="number" class="form-control slider-min" min="0" max="10" id="slider1_min" step="0.1" value="0" />
+                <label class="w-100 text-center pt-2">מינימום</label>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -346,262 +387,262 @@
           <div class="grid-container">
             <div class="grid-item">
               <h6 class="text-title">אפיקי השקעה עיקריים</h6>
-              <div class="row">
+              <div class="row grid-sub-item">
                 <label class="cs-checkbox-container">
                   <input type="checkbox" />
                   <span class="checkmark"></span>
                 </label>
-                <label>חשיפה למניות </label>
+                <label class="item-label">חשיפה למניות </label>
               </div>
-              <div class="row">
+              <div class="row grid-sub-item">
                 <label class="cs-checkbox-container">
                   <input type="checkbox" />
                   <span class="checkmark"></span>
                 </label>
-                <label>חשיפה לאגח ממשלתי </label>
+                <label class="item-label">חשיפה לאגח ממשלתי </label>
               </div>
-              <div class="row">
+              <div class="row grid-sub-item">
                 <label class="cs-checkbox-container">
                   <input type="checkbox" />
                   <span class="checkmark"></span>
                 </label>
-                <label>חשיפה לאגח קונצרני </label>
+                <label class="item-label">חשיפה לאגח קונצרני </label>
               </div>
-              <div class="row">
+              <div class="row grid-sub-item">
                 <label class="cs-checkbox-container">
                   <input type="checkbox" />
                   <span class="checkmark"></span>
                 </label>
-                <label>חשיפה לחו"ל </label>
+                <label class="item-label">חשיפה לחו"ל </label>
               </div>
-              <div class="row">
+              <div class="row grid-sub-item">
                 <label class="cs-checkbox-container">
                   <input type="checkbox" />
                   <span class="checkmark"></span>
                 </label>
-                <label>חשיפה למט"ח </label>
+                <label class="item-label">חשיפה למט"ח </label>
               </div>
-              <div class="row">
+              <div class="row grid-sub-item">
                 <label class="cs-checkbox-container">
                   <input type="checkbox" />
                   <span class="checkmark"></span>
                 </label>
-                <label>חשיפה נטו </label>
-              </div>
-            </div>
-            <div class="grid-item">
-              <h6 class="text-title">אפיקי השקעה עיקריים</h6>
-              <div class="row">
-                <label class="cs-checkbox-container">
-                  <input type="checkbox" />
-                  <span class="checkmark"></span>
-                </label>
-                <label>חודש אחרון  </label>
-              </div>
-              <div class="row">
-                <label class="cs-checkbox-container">
-                  <input type="checkbox" />
-                  <span class="checkmark"></span>
-                </label>
-                <label>רבעון אחרון  </label>
-              </div>
-              <div class="row">
-                <label class="cs-checkbox-container">
-                  <input type="checkbox" />
-                  <span class="checkmark"></span>
-                </label>
-                <label>חציון אחרון </label>
-              </div>
-              <div class="row">
-                <label class="cs-checkbox-container">
-                  <input type="checkbox" />
-                  <span class="checkmark"></span>
-                </label>
-                <label>12 חודשים </label>
-              </div>
-              <div class="row">
-                <label class="cs-checkbox-container">
-                  <input type="checkbox" />
-                  <span class="checkmark"></span>
-                </label>
-                <label>24 חודשים </label>
-              </div>
-              <div class="row">
-                <label class="cs-checkbox-container">
-                  <input type="checkbox" />
-                  <span class="checkmark"></span>
-                </label>
-                <label>36 חודשים </label>
-              </div>
-              <div class="row">
-                <label class="cs-checkbox-container">
-                  <input type="checkbox" />
-                  <span class="checkmark"></span>
-                </label>
-                <label>60 חודשים</label>
-              </div>
-              <div class="row">
-                <label class="cs-checkbox-container">
-                  <input type="checkbox" />
-                  <span class="checkmark"></span>
-                </label>
-                <label>ממוצע 36 חודשים </label>
-              </div>
-              <div class="row">
-                <label class="cs-checkbox-container">
-                  <input type="checkbox" />
-                  <span class="checkmark"></span>
-                </label>
-                <label>ממוצע 60 חודשים </label>
-              </div>
-              <div class="row">
-                <label class="cs-checkbox-container">
-                  <input type="checkbox" />
-                  <span class="checkmark"></span>
-                </label>
-                <label>בחירה לפי טווח </label>
-              </div>
-              <div class="row">
-                <label class="cs-checkbox-container">
-                  <input type="checkbox" />
-                  <span class="checkmark"></span>
-                </label>
-                <label>תשואות לפי שנים</label>
+                <label class="item-label">חשיפה נטו </label>
               </div>
             </div>
             <div class="grid-item">
               <h6 class="text-title">אפיקי השקעה עיקריים</h6>
-              <div class="row">
+              <div class="row grid-sub-item">
                 <label class="cs-checkbox-container">
                   <input type="checkbox" />
                   <span class="checkmark"></span>
                 </label>
-                <label>דירוג </label>
+                <label class="item-label">חודש אחרון  </label>
               </div>
-              <div class="row">
+              <div class="row grid-sub-item">
                 <label class="cs-checkbox-container">
                   <input type="checkbox" />
                   <span class="checkmark"></span>
                 </label>
-                <label>אלפא</label>
+                <label class="item-label">רבעון אחרון  </label>
               </div>
-              <div class="row">
+              <div class="row grid-sub-item">
                 <label class="cs-checkbox-container">
                   <input type="checkbox" />
                   <span class="checkmark"></span>
                 </label>
-                <label>שארפ</label>
+                <label class="item-label">חציון אחרון </label>
               </div>
-              <div class="row">
+              <div class="row grid-sub-item">
                 <label class="cs-checkbox-container">
                   <input type="checkbox" />
                   <span class="checkmark"></span>
                 </label>
-                <label>RECOVERY</label>
+                <label class="item-label">12 חודשים </label>
               </div>
-              <div class="row">
+              <div class="row grid-sub-item">
                 <label class="cs-checkbox-container">
                   <input type="checkbox" />
                   <span class="checkmark"></span>
                 </label>
-                <label>עקביות 36</label>
+                <label class="item-label">24 חודשים </label>
               </div>
-              <div class="row">
+              <div class="row grid-sub-item">
                 <label class="cs-checkbox-container">
                   <input type="checkbox" />
                   <span class="checkmark"></span>
                 </label>
-                <label>עקביות 12</label>
+                <label class="item-label">36 חודשים </label>
               </div>
-              <div class="row">
+              <div class="row grid-sub-item">
                 <label class="cs-checkbox-container">
                   <input type="checkbox" />
                   <span class="checkmark"></span>
                 </label>
-                <label>צבירה 12 </label>
+                <label class="item-label">60 חודשים</label>
               </div>
-            </div>
-            <div class="grid-item">
-              <h6 class="text-title">אפיקי השקעה עיקריים</h6>
-              <div class="row">
+              <div class="row grid-sub-item">
                 <label class="cs-checkbox-container">
                   <input type="checkbox" />
                   <span class="checkmark"></span>
                 </label>
-                <label>יתרת נכסים </label>
+                <label class="item-label">ממוצע 36 חודשים </label>
               </div>
-              <div class="row">
+              <div class="row grid-sub-item">
                 <label class="cs-checkbox-container">
                   <input type="checkbox" />
                   <span class="checkmark"></span>
                 </label>
-                <label>וותק</label>
+                <label class="item-label">ממוצע 60 חודשים </label>
               </div>
-              <div class="row">
+              <div class="row grid-sub-item">
                 <label class="cs-checkbox-container">
                   <input type="checkbox" />
                   <span class="checkmark"></span>
                 </label>
-                <label>מסלול השקעה</label>
+                <label class="item-label">בחירה לפי טווח </label>
               </div>
-              <div class="row">
+              <div class="row grid-sub-item">
                 <label class="cs-checkbox-container">
                   <input type="checkbox" />
                   <span class="checkmark"></span>
                 </label>
-                <label>התמחות ראשית</label>
-              </div>
-              <div class="row">
-                <label class="cs-checkbox-container">
-                  <input type="checkbox" />
-                  <span class="checkmark"></span>
-                </label>
-                <label>רמת סיכון </label>
+                <label class="item-label">תשואות לפי שנים</label>
               </div>
             </div>
             <div class="grid-item">
               <h6 class="text-title">אפיקי השקעה עיקריים</h6>
-              <div class="row">
+              <div class="row grid-sub-item">
                 <label class="cs-checkbox-container">
                   <input type="checkbox" />
                   <span class="checkmark"></span>
                 </label>
-                <label>סטיית תקן</label>
+                <label class="item-label">דירוג </label>
               </div>
-              <div class="row">
+              <div class="row grid-sub-item">
                 <label class="cs-checkbox-container">
                   <input type="checkbox" />
                   <span class="checkmark"></span>
                 </label>
-                <label>בתא</label>
+                <label class="item-label">אלפא</label>
               </div>
-              <div class="row">
+              <div class="row grid-sub-item">
                 <label class="cs-checkbox-container">
                   <input type="checkbox" />
                   <span class="checkmark"></span>
                 </label>
-                <label>DOWNTRADE</label>
+                <label class="item-label">שארפ</label>
               </div>
-              <div class="row">
+              <div class="row grid-sub-item">
                 <label class="cs-checkbox-container">
                   <input type="checkbox" />
                   <span class="checkmark"></span>
                 </label>
-                <label>WORSTRADE</label>
+                <label class="item-label">RECOVERY</label>
               </div>
-              <div class="row">
+              <div class="row grid-sub-item">
                 <label class="cs-checkbox-container">
                   <input type="checkbox" />
                   <span class="checkmark"></span>
                 </label>
-                <label>WORSTYEAR</label>
+                <label class="item-label">עקביות 36</label>
               </div>
-              <div class="row">
+              <div class="row grid-sub-item">
                 <label class="cs-checkbox-container">
                   <input type="checkbox" />
                   <span class="checkmark"></span>
                 </label>
-                <label>POSITIVE MONTHS</label>
+                <label class="item-label">עקביות 12</label>
+              </div>
+              <div class="row grid-sub-item">
+                <label class="cs-checkbox-container">
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+                <label class="item-label">צבירה 12 </label>
+              </div>
+            </div>
+            <div class="grid-item">
+              <h6 class="text-title">אפיקי השקעה עיקריים</h6>
+              <div class="row grid-sub-item">
+                <label class="cs-checkbox-container">
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+                <label class="item-label">יתרת נכסים </label>
+              </div>
+              <div class="row grid-sub-item">
+                <label class="cs-checkbox-container">
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+                <label class="item-label">וותק</label>
+              </div>
+              <div class="row grid-sub-item">
+                <label class="cs-checkbox-container">
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+                <label class="item-label">מסלול השקעה</label>
+              </div>
+              <div class="row grid-sub-item">
+                <label class="cs-checkbox-container">
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+                <label class="item-label">התמחות ראשית</label>
+              </div>
+              <div class="row grid-sub-item">
+                <label class="cs-checkbox-container">
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+                <label class="item-label">רמת סיכון </label>
+              </div>
+            </div>
+            <div class="grid-item">
+              <h6 class="text-title">אפיקי השקעה עיקריים</h6>
+              <div class="row grid-sub-item">
+                <label class="cs-checkbox-container">
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+                <label class="item-label">סטיית תקן</label>
+              </div>
+              <div class="row grid-sub-item">
+                <label class="cs-checkbox-container">
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+                <label class="item-label">בתא</label>
+              </div>
+              <div class="row grid-sub-item">
+                <label class="cs-checkbox-container">
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+                <label class="item-label">DOWNTRADE</label>
+              </div>
+              <div class="row grid-sub-item">
+                <label class="cs-checkbox-container">
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+                <label class="item-label">WORSTRADE</label>
+              </div>
+              <div class="row grid-sub-item">
+                <label class="cs-checkbox-container">
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+                <label class="item-label">WORSTYEAR</label>
+              </div>
+              <div class="row grid-sub-item">
+                <label class="cs-checkbox-container">
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+                <label class="item-label">POSITIVE MONTHS</label>
               </div>
             </div>
           </div>
@@ -609,15 +650,10 @@
             נבחרו <strong class="text-primary px-1">3</strong> פורמטיים מתוך 6 אפשריים
           </div>
           <div class="row mx-0">
-            <button class="cs-btn-img btn-send-green mt-4"></button>
+            <button type="button" class="cs-btn-img btn-send-green mt-4" onclick="addFilterItems()"></button>
           </div>
         </form>
       </div>
-      <!-- Modal footer -->
-      <div class="modal-footer">
-        <button class="cs-btn-img btn-save-modal btn-success" data-dismiss="modal"></button>
-      </div>
-      
     </div>
   </div>
 </div>
@@ -689,10 +725,117 @@
     },
   };
   // 
-  var ctx = document.getElementById("myChart1");
-  // ctx.height = $(ctx).closest('.card-body').height() / 2;
-  ctx.height = 100;
-  var myChart1 = new Chart(ctx, configChart1);
+  function renderBarCharts() {
+    var barCharts = $(".barChart");
+    barCharts.each(function(index, ele) {
+      // ctx.height = $(ctx).closest('.card-body').height() / 2;
+      ele.height = 100;
+      var barChart = new Chart(ele, configChart1);
+    });
+  }
+  //
+  renderBarCharts();
+  // range slider
+  var slider_settings = {value: "0,10.0", range: true, fontsize: 0, step: 0.1, min: 0, max: 10};
+  function handleChangeSlider(e, index, container) {
+    console.log('e : ', container);
+    $(container).find(".slider-min").val(e.split(',')[0]);
+    $(container).find(".slider-max").val(e.split(',')[1]);
+  }
+  function initRangeSliders () {
+    var sliders = $("[data-addui=slider]");
+    sliders.each(function(index, ele) {
+      $(ele).addSlider(slider_settings, handleChangeSlider, $(ele).closest('.filter-group-item'));
+    });
+  }
+  initRangeSliders();
+  //
+  $(document).on('click', '.filter-group-item .btn-close, .filter-group-item .link-close', function() {
+    $(this).closest('.filter-group-item').remove();
+    var items = $('.filter-group-item');
+    // console.log('>>>', items.length);
+    for(var i = 1; i < items.length; i++) {
+      var txt = $(items[i]).find('.item-title').text();
+      var new_txt = i + txt.substr(1, txt.length - 1);
+      $(items[i]).find('.item-title').text(new_txt);
+    }
+    //
+    initRangeSliders();
+  });
+  $(document).on('change', '.slider-min, .slider-max', function() {
+    var min = $(this).closest('.filter-group-item').find('.slider-min').val();
+    var max = $(this).closest('.filter-group-item').find('.slider-max').val();
+    var slider_index = $(this).closest('.filter-group-item').data("index");
+    console.log('>>>', slider_index);
+    $(this).closest('.filter-group-item').find('.range-slider-wrapper').html('<input'+
+                                                                              ' class="input-range-slider m-0 w-100"'+
+                                                                              ' data-name="slider"'+
+                                                                              ' data-addui="slider"'+
+                                                                              ' data-fontsize="0"'+
+                                                                              ' data-step="0.1"'+
+                                                                              ' data-min="0"'+
+                                                                              ' data-max="10"'+
+                                                                              ' data-range="true"'+
+                                                                              ' value="0,10"'+
+                                                                            ' />');
+    $(this).closest('.filter-group-item').find('.input-range-slider').addSlider({...slider_settings, value: (min+","+max)}, handleChangeSlider, $(this).closest('.filter-group-item'));
+  });
+</script>
+<script>
+  function addFilterItems() {
+    var checkedEles = $('#filterSettingsModal').find('[type=checkbox]:checked');
+    $('.filter-form-body').empty();
+    checkedEles.each(function(index, ele) {
+      $('.filter-form-body').append('<div class="filter-group-item" data-index="'+ index +'">'+
+                                      '<div class="form-group row mx-0">'+
+                                        '<div class="col-8 p-0">'+
+                                          '<label class="item-title">'+ (index + 1) +'. '+ $(ele).closest(".grid-sub-item").find(".item-label").text() +'</label>'+
+                                          '<button class="cs-btn-icon btn-quiz" data-toggle="tooltip" data-placement="top" title="Tooltip on top"></button>'+
+                                        '</div>'+
+                                        '<div class="col-4 p-0 d-block text-left">'+
+                                          '<button class="cs-btn-icon btn-close dark"></button>'+
+                                          '<a class="d-block link-close">הסר</a>'+
+                                        '</div>'+
+                                      '</div>'+
+                                      '<div class="form-group row mx-0">'+
+                                        '<div class="col-3 p-0">'+
+                                          '<input type="number" class="form-control slider-max" min="0" max="10" id="slider1_max" step="0.1" value="10" />'+
+                                          '<label class="w-100 text-center pt-2">מקסימום</label>'+
+                                        '</div>'+
+                                        '<div class="col-6">'+
+                                          '<div class="distribution-slider-container">'+
+                                            '<div class="bar-Chart-wrapper">'+
+                                              '<canvas class="barChart"></canvas>'+
+                                            '</div>'+
+                                            '<div class="range-slider-wrapper">'+
+                                              '<input'+
+                                                'class="input-range-slider m-0 w-100"'+
+                                                'data-name="slider"'+
+                                                'data-addui="slider"'+
+                                                'data-fontsize="0"'+
+                                                'data-step="0.1"'+
+                                                'data-min="0"'+
+                                                'data-max="10"'+
+                                                'data-range="true"'+
+                                                'value="0,10"'+
+                                              '/>'+
+                                            '</div>'+
+                                          '</div>'+
+                                        '</div>'+
+                                        '<div class="col-3 p-0">'+
+                                          '<input type="number" class="form-control slider-min" min="0" max="10" id="slider1_min" step="0.1" value="0" />'+
+                                          '<label class="w-100 text-center pt-2">מינימום</label>'+
+                                        '</div>'+
+                                      '</div>'+
+                                    '</div>');
+    });
+    //
+    renderBarCharts();
+    //
+    initRangeSliders();
+    //
+    $('#filterSettingsModal [data-dismiss="modal"]').click();
+  }
 </script>
 <script>
   // datatable init
@@ -802,57 +945,6 @@
     $('.tag-wrapper').empty();
     $('input[name=tag-input]').val('');
   });
-  //
-  $(document).on('click', '.filter-group-item .btn-close, .filter-group-item .link-close', function() {
-    $(this).closest('.filter-group-item').remove();
-    var items = $('.filter-group-item');
-    // console.log('>>>', items.length);
-    for(var i = 1; i < items.length; i++) {
-      var txt = $(items[i]).find('.item-title').text();
-      var new_txt = i + txt.substr(1, txt.length - 1);
-      $(items[i]).find('.item-title').text(new_txt);
-    }
-  });
-  $(document).on('change', '.slider-min, .slider-max', function() {
-    var min = $(this).closest('.filter-group-item').find('.slider-min').val();
-    var max = $(this).closest('.filter-group-item').find('.slider-max').val();
-    var slider_id = $(this).closest('.filter-group-item').find('.input-range-slider').attr('id');
-    // console.log('>>>>>>', slider_id);
-    if(slider_id == 'slider1') {
-      $(this).closest('.filter-group-item').find('.input-range-slider').addSlider({...slider_settings, value: (min+","+max)}, handleChangeSlider1);
-    } else if(slider_id == 'slider2') {
-      $(this).closest('.filter-group-item').find('.input-range-slider').addSlider({...slider_settings, value: (min+","+max)}, handleChangeSlider2);
-    } else if(slider_id == 'slider3') {
-      $(this).closest('.filter-group-item').find('.input-range-slider').addSlider({...slider_settings, value: (min+","+max)}, handleChangeSlider3);
-    } else if(slider_id == 'slider4') {
-      $(this).closest('.filter-group-item').find('.input-range-slider').addSlider({...slider_settings, value: (min+","+max)}, handleChangeSlider4);
-    }
-  });
-  // range slider
-  var slider_settings = {value: "0,10.0", range: true, fontsize: 0, step: 0.1, min: 0, max: 10};
-  function handleChangeSlider1(e) {
-    $("#slider1_min").val(e.split(',')[0]);
-    $("#slider1_max").val(e.split(',')[1]);
-  }
-  $("[data-addui=slider1]").addSlider(slider_settings, handleChangeSlider1);
-  //
-  function handleChangeSlider2(e) {
-    $("#slider2_min").val(e.split(',')[0]);
-    $("#slider2_max").val(e.split(',')[1]);
-  }
-  $("[data-addui=slider2]").addSlider(slider_settings, handleChangeSlider2);
-  //
-  function handleChangeSlider3(e) {
-    $("#slider3_min").val(e.split(',')[0]);
-    $("#slider3_max").val(e.split(',')[1]);
-  }
-  $("[data-addui=slider3]").addSlider(slider_settings, handleChangeSlider3);
-  //
-  function handleChangeSlider4(e) {
-    $("#slider4_min").val(e.split(',')[0]);
-    $("#slider4_max").val(e.split(',')[1]);
-  }
-  $("[data-addui=slider4]").addSlider(slider_settings, handleChangeSlider4);
 </script>
 <!-- ./script -->
 </body>

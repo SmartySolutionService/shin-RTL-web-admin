@@ -103,6 +103,10 @@
   position: absolute;
   top: 25px;
 }
+.simulator-main .filter-form .filter-form-body .filter-group-item .distribution-slider-container .range-slider-wrapper .addui-slider.addui-slider-horizontal {
+  margin: 0 !important;
+  width: 100% !important;
+}
 .simulator-main .cs-btn-img {
   width: 191px;
 }

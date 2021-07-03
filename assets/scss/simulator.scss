@@ -111,6 +111,12 @@
                         width: 100%;
                         position: absolute;
                         top: 25px;
+                        .addui-slider {
+                            &.addui-slider-horizontal {
+                                margin: 0 !important;
+                                width: 100% !important;
+                            }
+                        }
                     }
                 }
             }
