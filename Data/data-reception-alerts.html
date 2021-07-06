@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <title>Admin</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- <link rel="stylesheet" href="../assets/bootstrap-4.3.1-dist/css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="../assets/theme/theme.css">
+  <link rel="stylesheet" href="../assets/scss/action.css">
+  <!-- plugins css -->
+  <link rel="stylesheet" href="../assets/plugins/sliding-toggle-switch/lc_switch.css">
+  <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../assets/plugins/signature-pad/assets/jquery.signaturepad.css">
+  <link rel="stylesheet" type="text/css" href="../assets/plugins/DataTables/datatables.css"/>
+  <!-- Custom Plugin CSS -->
+  <link rel="stylesheet" href="../assets/custom/gradient-semi-chart/gradient-semi-chart.css">
+
+  <script src="../assets/jquery/jquery.min.js"></script>
+  <script src="../assets/plugins/popper/popper.min.js"></script>
+  <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <!-- wysiwyg -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../assets/plugins/wysiwyg-editor/css/froala_editor.css">
+  <link rel="stylesheet" href="../assets/plugins/wysiwyg-editor/css/froala_style.css">
+  <link rel="stylesheet" href="../assets/plugins/wysiwyg-editor/css/plugins/code_view.css">
+  <link rel="stylesheet" href="../assets/plugins/wysiwyg-editor/css/plugins/colors.css">
+  <link rel="stylesheet" href="../assets/plugins/wysiwyg-editor/css/plugins/emoticons.css">
+  <link rel="stylesheet" href="../assets/plugins/wysiwyg-editor/css/plugins/image_manager.css">
+  <link rel="stylesheet" href="../assets/plugins/wysiwyg-editor/css/plugins/image.css">
+  <link rel="stylesheet" href="../assets/plugins/wysiwyg-editor/css/plugins/line_breaker.css">
+  <link rel="stylesheet" href="../assets/plugins/wysiwyg-editor/css/plugins/table.css">
+  <link rel="stylesheet" href="../assets/plugins/wysiwyg-editor/css/plugins/char_counter.css">
+  <link rel="stylesheet" href="../assets/plugins/wysiwyg-editor/css/plugins/video.css">
+  <link rel="stylesheet" href="../assets/plugins/wysiwyg-editor/css/plugins/fullscreen.css">
+  <link rel="stylesheet" href="../assets/plugins/wysiwyg-editor/css/plugins/file.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/codemirror.min.css">
+  <!-- ./wysiwyg -->
+</head>
+<body>
+
+<header class="header">
+  <div class="header-top">
+    <div class="dropdown">
+      <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <div class="avatar-container">
+          <img src="../assets/img/icons/ic_account_circle.png" alt="avatar" class="header-avatar" />
+        </div>
+        שם משתמש
+      </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" href="#">Action</a>
+        <a class="dropdown-item" href="#">Another action</a>
+        <a class="dropdown-item" href="#">Something else here</a>
+      </div>
+    </div>
+  </div>
+  <div class="header-nav">
+    <nav class="nav">
+      <div class="header-logo">
+        <a href="#" class="logo-text">LOGO</a>
+      </div>
+      <ul>
+        <li class="">
+          <a href="../Customer/customer-list.html">לקוחות</a>
+        </li>
+        <li class="">
+          <a href="../Simulator/simulator-main.html">סימולטור</a>
+        </li>
+        <li class="">
+          <a href="../CRM/index.html">CRM</a>
+        </li>
+        <li class="">
+          <a href="../Action/tracking-performance.html">מעקב ביצוע</a>
+        </li>
+        <li class="active">
+          <a href="../Data/data-reception.html">ניהול וקליטת נתונים</a>
+        </li>
+        <li class="">
+          <a href="../Reports/index.html">דוחות</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+  
+<div class="main data-page">
+  <div class="sidebar">
+    <ul class="side-nav">
+      <li class="">
+        <a href="../Data/data-reception.html">
+          <div class="cs-icon ic-inbox"></div>קליטת נתונים
+        </a>
+      </li>
+      <li class="">
+        <a href="../Data/absorption-from-clearing-house.html">
+          <div class="cs-icon ic-unarchive"></div>קליטה ממסלקה
+        </a>
+      </li>
+      <li class="active">
+        <a href="../Data/data-reception-alerts.html">
+          <div class="cs-icon ic-bell"></div>התראות קליטת נתונים
+        </a>
+      </li>
+      <li class="">
+        <a href="../Data/exceptions.html">
+          <div class="cs-icon ic-error"></div>חריגים
+        </a>
+      </li>
+      <li class="">
+        <a href="../Data/system-settings.html">
+          <div class="cs-icon ic-settings"></div>הגדרות מערכת
+        </a>
+      </li>
+      <li class="">
+        <a href="../Data/users.html">
+          <div class="cs-icon ic-face"></div>משתמשים
+        </a>
+      </li>
+      <li class="">
+        <a href="../Data/activity-log.html">
+          <div class="cs-icon ic-mouse"></div>לוג פעילות
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="app">
+    <div class="app-header">
+      <div class="row app-header-top">
+        <div class="col-xl-5 col-lg-5 col-md-6 col-sm-6 col-6">
+          <span class="title float-right">קליטת נתונים</span>
+          <button class="cs-btn-img btn-absorption float-right mr-5" data-toggle="modal" data-target="#newQuestionnaireModal"></button>
+        </div>
+        <div class="col-xl-7 col-lg-7 col-md-6 col-sm-6 col-6 text-left">
+          <a class="cs-btn-icon btn-xls" href="javascript:void(0)"></a>
+          <a class="cs-btn-icon btn-email" href="javascript:void(0)"></a>
+        </div>
+      </div>
+    </div>
+    <div class="app-body p-5">
+      <div class="card mb-5">
+        <div class="card-body p-0">
+          <table class="table datatable w-100 m-0">
+            <thead>
+              <tr>
+                <th class="th-action">
+                  <label class="cs-checkbox-container ml-2" style="margin-right: 30px;">
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                  תזכורת
+                </th>
+                <th class="th-date">תאריך</th>
+                <th>נושא לטיפול</th>
+                <th class="badge-cell">סטטוס טיפול</th>
+                <th class="badge-cell" style="max-width:70px;">עדיפות</th>
+                <th style="max-width:150px;">גורם מטפל</th>
+              </tr>
+              <tr class="bg-dark">
+                <th class="">
+                  <a class="action-control action-filter">
+                    <div class="cs-icon ic-filter"></div>
+                  </a>
+                </th>
+                <th>
+                  <input class="form-control datepicker" style="width: 150px;" value="2020-03-09" />
+                </th>
+                <th>
+                  <input type="text" class="form-control" placeholder="טקסט חופשי"/>
+                </th>
+                <th class="text-center badge-cell">
+                  <div class="dropdown badge-dropdown">
+                    <button class="btn dropdown-toggle" type="button" id="dropdownBadge" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <span class="badge badge-sky">דחוף</span>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownBadge">
+                      <a class="dropdown-item" href="#" ><span class="badge badge-green">דחוף</span></a>
+                      <a class="dropdown-item" href="#" ><span class="badge badge-red">דחוף</span></a>
+                      <a class="dropdown-item" href="#" ><span class="badge badge-sky">דחוף</span></a>
+                      <a class="dropdown-item" href="#" ><span class="badge badge-white">דחוף</span></a>
+                      <a class="dropdown-item" href="#" ><span class="badge badge-gray">דחוף</span></a>
+                      <a class="dropdown-item" href="#" ><span class="badge badge-blue-accent">דחוף</span></a>
+                    </div>
+                  </div>
+                </th>
+                <th class="text-center badge-cell">
+                  <div class="dropdown badge-dropdown">
+                    <button class="btn dropdown-toggle" type="button" id="dropdownBadge" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <span class="badge badge-yellow">דחוף</span>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownBadge">
+                      <a class="dropdown-item" href="#" ><span class="badge badge-green">דחוף</span></a>
+                      <a class="dropdown-item" href="#" ><span class="badge badge-red">דחוף</span></a>
+                      <a class="dropdown-item" href="#" ><span class="badge badge-sky">דחוף</span></a>
+                      <a class="dropdown-item" href="#" ><span class="badge badge-white">דחוף</span></a>
+                      <a class="dropdown-item" href="#" ><span class="badge badge-gray">דחוף</span></a>
+                      <a class="dropdown-item" href="#" ><span class="badge badge-blue-accent">דחוף</span></a>
+                    </div>
+                  </div>
+                </th>
+                <th>
+                  <select class="form-control">
+                    <option>גורם מטפל</option>
+                  </select>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="py-2">
+                <td class="">
+                  <div class="d-flex">
+                    <a class="action-control toggle-detail">
+                      <div class="cs-icon ic-collapse-pm"></div>
+                    </a>
+                    <div class="action-control">
+                      <label class="cs-checkbox-container">
+                        <input type="checkbox" />
+                        <span class="checkmark"></span>
+                      </label>
+                    </div>
+                    <a class="action-control">
+                      <div class="cs-icon ic-pencil-blue"></div>
+                    </a>
+                    <a class="action-control" data-toggle="modal" data-target="#CRMreminderModal">
+                      <div class="cs-icon ic-question-answer"></div>
+                      <span class="bubble bubble-gray">1</span>
+                    </a>
+                  </div>
+                </td>
+                <td class="">03.09.2020</td>
+                <td>הצטרפות</td>
+                <td class="text-center badge-cell">
+                  <div class="dropdown badge-dropdown">
+                    <button class="btn dropdown-toggle" type="button" id="dropdownBadge" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <span class="badge badge-red">דחוף</span>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownBadge">
+                      <a class="dropdown-item" href="#" ><span class="badge badge-green">דחוף</span></a>
+                      <a class="dropdown-item" href="#" ><span class="badge badge-red">דחוף</span></a>
+                      <a class="dropdown-item" href="#" ><span class="badge badge-sky">דחוף</span></a>
+                      <a class="dropdown-item" href="#" ><span class="badge badge-white">דחוף</span></a>
+                      <a class="dropdown-item" href="#" ><span class="badge badge-gray">דחוף</span></a>
+                      <a class="dropdown-item" href="#" ><span class="badge badge-blue-accent">דחוף</span></a>
+                    </div>
+                  </div>
+                </td>
+                <td class="text-center badge-cell">
+                  <div class="dropdown badge-dropdown">
+                    <button class="btn dropdown-toggle" type="button" id="dropdownBadge" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <span class="badge badge-red">דחוף</span>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownBadge">
+                      <a class="dropdown-item" href="#" ><span class="badge badge-green">דחוף</span></a>
+                      <a class="dropdown-item" href="#" ><span class="badge badge-red">דחוף</span></a>
+                      <a class="dropdown-item" href="#" ><span class="badge badge-sky">דחוף</span></a>
+                      <a class="dropdown-item" href="#" ><span class="badge badge-white">דחוף</span></a>
+                      <a class="dropdown-item" href="#" ><span class="badge badge-gray">דחוף</span></a>
+                      <a class="dropdown-item" href="#" ><span class="badge badge-blue-accent">דחוף</span></a>
+                    </div>
+                  </div>
+                </td>
+                <td>גורם מטפל</td>
+              </tr>
+              <tr class="py-2">
+                <td class="">
+                  <div class="d-flex">
+                    <a class="action-control toggle-detail">
+                      <div class="cs-icon ic-collapse-pm"></div>
+                    </a>
+                    <div class="action-control">
+                      <label class="cs-checkbox-container">
+                        <input type="checkbox" />
+                        <span class="checkmark"></span>
+                      </label>
+                    </div>
+                    <a class="action-control">
+                      <div class="cs-icon ic-pencil-blue"></div>
+                    </a>
+                    <a class="action-control" data-toggle="modal" data-target="#CRMreminderModal">
+                      <div class="cs-icon ic-question-answer"></div>
+                      <span class="bubble bubble-gray">1</span>
+                    </a>
+                  </div>
+                </td>
+                <td class="">03.09.2020</td>
+                <td>העברה</td>
+                <td class="text-center badge-cell">
+                  <div class="dropdown badge-dropdown">
+                    <button class="btn dropdown-toggle" type="button" id="dropdownBadge" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <span class="badge badge-red">דחוף</span>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownBadge">
+                      <a class="dropdown-item" href="#" ><span class="badge badge-green">דחוף</span></a>
+                      <a class="dropdown-item" href="#" ><span class="badge badge-red">דחוף</span></a>
+                      <a class="dropdown-item" href="#" ><span class="badge badge-sky">דחוף</span></a>
+                      <a class="dropdown-item" href="#" ><span class="badge badge-white">דחוף</span></a>
+                      <a class="dropdown-item" href="#" ><span class="badge badge-gray">דחוף</span></a>
+                      <a class="dropdown-item" href="#" ><span class="badge badge-blue-accent">דחוף</span></a>
+                    </div>
+                  </div>
+                </td>
+                <td class="text-center badge-cell">
+                  <div class="dropdown badge-dropdown">
+                    <button class="btn dropdown-toggle" type="button" id="dropdownBadge" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <span class="badge badge-red">דחוף</span>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownBadge">
+                      <a class="dropdown-item" href="#" ><span class="badge badge-green">דחוף</span></a>
+                      <a class="dropdown-item" href="#" ><span class="badge badge-red">דחוף</span></a>
+                      <a class="dropdown-item" href="#" ><span class="badge badge-sky">דחוף</span></a>
+                      <a class="dropdown-item" href="#" ><span class="badge badge-white">דחוף</span></a>
+                      <a class="dropdown-item" href="#" ><span class="badge badge-gray">דחוף</span></a>
+                      <a class="dropdown-item" href="#" ><span class="badge badge-blue-accent">דחוף</span></a>
+                    </div>
+                  </div>
+                </td>
+                <td>גורם מטפל</td>
+              </tr>
+              <tr class="py-2">
+                <td class="">
+                  <div class="d-flex">
+                    <a class="action-control toggle-detail">
+                      <div class="cs-icon ic-collapse-pm"></div>
+                    </a>
+                    <div class="action-control">
+                      <label class="cs-checkbox-container">
+                        <input type="checkbox" />
+                        <span class="checkmark"></span>
+                      </label>
+                    </div>
+                    <a class="action-control">
+                      <div class="cs-icon ic-pencil-blue"></div>
+                    </a>
+                    <a class="action-control" data-toggle="modal" data-target="#CRMreminderModal">
+                      <div class="cs-icon ic-question-answer"></div>
+                      <span class="bubble bubble-gray">1</span>
+                    </a>
+                  </div>
+                </td>
+                <td class="">03.09.2020</td>
+                <td>הצטרפות</td>
+                <td class="text-center badge-cell">
+                  <div class="dropdown badge-dropdown">
+                    <button class="btn dropdown-toggle" type="button" id="dropdownBadge" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <span class="badge badge-red">דחוף</span>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownBadge">
+                      <a class="dropdown-item" href="#" ><span class="badge badge-green">דחוף</span></a>
+                      <a class="dropdown-item" href="#" ><span class="badge badge-red">דחוף</span></a>
+                      <a class="dropdown-item" href="#" ><span class="badge badge-sky">דחוף</span></a>
+                      <a class="dropdown-item" href="#" ><span class="badge badge-white">דחוף</span></a>
+                      <a class="dropdown-item" href="#" ><span class="badge badge-gray">דחוף</span></a>
+                      <a class="dropdown-item" href="#" ><span class="badge badge-blue-accent">דחוף</span></a>
+                    </div>
+                  </div>
+                </td>
+                <td class="text-center badge-cell">
+                  <div class="dropdown badge-dropdown">
+                    <button class="btn dropdown-toggle" type="button" id="dropdownBadge" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <span class="badge badge-red">דחוף</span>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownBadge">
+                      <a class="dropdown-item" href="#" ><span class="badge badge-green">דחוף</span></a>
+                      <a class="dropdown-item" href="#" ><span class="badge badge-red">דחוף</span></a>
+                      <a class="dropdown-item" href="#" ><span class="badge badge-sky">דחוף</span></a>
+                      <a class="dropdown-item" href="#" ><span class="badge badge-white">דחוף</span></a>
+                      <a class="dropdown-item" href="#" ><span class="badge badge-gray">דחוף</span></a>
+                      <a class="dropdown-item" href="#" ><span class="badge badge-blue-accent">דחוף</span></a>
+                    </div>
+                  </div>
+                </td>
+                <td>גורם מטפל</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- CRM Reminder Modal -->
+<div class="modal" id="CRMreminderModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="mt-2" style="margin-right: 40px">תזכורת</h4>
+        <button type="button" class="cs-btn-icon btn-close close dark mr-auto" data-dismiss="modal"></button>
+      </div>
+      <!-- Modal body -->
+      <div class="modal-body">
+        <form>
+          <div class="row mx-0">
+            <div class="wysiwyg-editor">
+              <!-- <textarea id='edit' style="margin-top: 30px;" class="text-right" placeholder="Type some text">
+                <h6 class="font-weight-bold">טקסט</h6>
+              </textarea> -->
+              <textarea class="form-control">טקסט</textarea>
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-6">
+              <button class="cs-btn-img btn-update-green ml-auto"></button>
+            </div>
+            <div class="col-6">
+              <div class="attach">
+                <div class="font-weight-bold">הוסף קובץ</div>
+                <div class="dropdown mx-1">
+                  <button class="dropdown-toggle" type="button" id="dropdownAttach" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    (2)
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownAttach">
+                    <a class="dropdown-item" href="#">1. הוסף קובץ</a>
+                    <a class="dropdown-item" href="#">2. הוסף קובץ</a>
+                  </div>
+                </div>
+                <span class="cs-icon ic-attach-file"></span>
+              </div>
+            </div>
+          </div>
+          <div class="row mx-0 mt-5">
+            <div class="text-editor">
+              <div class="editor-header">
+                <div class="dropdown ml-auto">
+                  <button class="dropdown-toggle cs-btn-icon btn-arrow-down" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">
+                      <span class="cs-icon ic-mode-edit-gray"></sapn>
+                      <span class="link-text">עריכה</span>
+                    </a>
+                    <a class="dropdown-item" href="#">
+                      <span class="cs-icon ic-delete-gray"></sapn>
+                      <span class="link-text">מחק</span>
+                    </a>
+                    <a class="dropdown-item" href="#">
+                      <span class="cs-icon ic-bookmark-gray"></sapn>
+                      <span class="link-text">סימניה</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="w-50 mr-auto">
+                  <div class="text-primary">משתמש, 20/01/2020</div>
+                </div>
+              </div>
+              <textarea class="textarea-edit"></textarea>
+            </div>
+          </div>
+        </form>
+      </div>
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <!-- <button class="cs-btn-img btn-save-modal btn-success" data-dismiss="modal"></button> -->
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+<!-- plugins js -->
+<script type="text/javascript" src="../assets/plugins/DataTables/datatables.min.js"></script>
+<script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+<script src="../assets/plugins/sliding-toggle-switch/lc_switch.js" type="text/javascript"></script>
+<script src="../assets/plugins/signature-pad/jquery.signaturepad.js"></script>
+<script src="../assets/plugins/signature-pad/assets/json2.min.js"></script>
+<script src="../assets/js/form-validation.js" type="text/javascript"></script>
+<script src="../assets/custom/gradient-semi-chart/gradient-semi-chart.js" type="text/javascript"></script>
+<script src="../assets/js/common.js" type="text/javascript"></script>
+<!-- wysiwyg -->
+<script type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/codemirror.min.js"></script>
+<script type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/mode/xml/xml.min.js"></script>
+<script type="text/javascript" src="../assets/plugins/wysiwyg-editor/js/froala_editor.min.js"></script>
+<script type="text/javascript" src="../assets/plugins/wysiwyg-editor/js/plugins/align.min.js"></script>
+<script type="text/javascript" src="../assets/plugins/wysiwyg-editor/js/plugins/code_beautifier.min.js"></script>
+<script type="text/javascript" src="../assets/plugins/wysiwyg-editor/js/plugins/code_view.min.js"></script>
+<script type="text/javascript" src="../assets/plugins/wysiwyg-editor/js/plugins/colors.min.js"></script>
+<script type="text/javascript" src="../assets/plugins/wysiwyg-editor/js/plugins/draggable.min.js"></script>
+<script type="text/javascript" src="../assets/plugins/wysiwyg-editor/js/plugins/emoticons.min.js"></script>
+<script type="text/javascript" src="../assets/plugins/wysiwyg-editor/js/plugins/font_size.min.js"></script>
+<script type="text/javascript" src="../assets/plugins/wysiwyg-editor/js/plugins/font_family.min.js"></script>
+<script type="text/javascript" src="../assets/plugins/wysiwyg-editor/js/plugins/image.min.js"></script>
+<script type="text/javascript" src="../assets/plugins/wysiwyg-editor/js/plugins/file.min.js"></script>
+<script type="text/javascript" src="../assets/plugins/wysiwyg-editor/js/plugins/image_manager.min.js"></script>
+<script type="text/javascript" src="../assets/plugins/wysiwyg-editor/js/plugins/line_breaker.min.js"></script>
+<script type="text/javascript" src="../assets/plugins/wysiwyg-editor/js/plugins/link.min.js"></script>
+<script type="text/javascript" src="../assets/plugins/wysiwyg-editor/js/plugins/lists.min.js"></script>
+<script type="text/javascript" src="../assets/plugins/wysiwyg-editor/js/plugins/paragraph_format.min.js"></script>
+<script type="text/javascript" src="../assets/plugins/wysiwyg-editor/js/plugins/paragraph_style.min.js"></script>
+<script type="text/javascript" src="../assets/plugins/wysiwyg-editor/js/plugins/video.min.js"></script>
+<script type="text/javascript" src="../assets/plugins/wysiwyg-editor/js/plugins/table.min.js"></script>
+<script type="text/javascript" src="../assets/plugins/wysiwyg-editor/js/plugins/url.min.js"></script>
+<script type="text/javascript" src="../assets/plugins/wysiwyg-editor/js/plugins/entities.min.js"></script>
+<script type="text/javascript" src="../assets/plugins/wysiwyg-editor/js/plugins/char_counter.min.js"></script>
+<script type="text/javascript" src="../assets/plugins//js/plugins/inline_style.min.js"></script>
+<script type="text/javascript" src="../assets/plugins/wysiwyg-editor/js/plugins/save.min.js"></script>
+<script type="text/javascript" src="../assets/plugins/wysiwyg-editor/js/plugins/fullscreen.min.js"></script>
+<script type="text/javascript" src="../assets/plugins/wysiwyg-editor/js/languages/ro.js"></script>
+<!-- ./wysiwyg -->
+<script>
+  (function () {
+    const editorInstance = new FroalaEditor('#edit', {
+      direction: 'rtl',
+      enter: FroalaEditor.ENTER_P,
+      placeholderText: null,
+      events: {
+        initialized: function () {
+          const editor = this
+          this.el.closest('form').addEventListener('submit', function (e) {
+            console.log(editor.$oel.val())
+            e.preventDefault()
+          })
+        }
+      }
+    })
+  })()
+</script>
+<script>
+  // datepicker init
+  function initDatepicker() {
+    var datepickers = $('.datepicker');
+    for(var i = 0; i < datepickers.length; i++) {
+      $(datepickers[i]).datepicker({ uiLibrary: 'bootstrap4' });
+    }
+  }
+  initDatepicker();
+  // datatable init
+  $(document).ready(function() {
+    $('.datatable').DataTable({
+      paging: false,
+      // scrollY: 400,
+      searching: false,
+      // ordering:  false,
+      orderCellsTop: true
+    });
+  });
+</script>
+<script>
+  // table detail control
+  $(document).on('click', '.toggle-detail', function() {
+    if ($(this).hasClass('shown')) {
+      $(this).closest('tr').next().remove();
+      $(this).removeClass('shown');
+      return false;
+    }
+    $(this).addClass('shown');
+    var id = $(this).closest('tr').data('id');
+    $(this).closest('tr').after('<tr class="sub-tr">'+
+                                  '<td></td>'+
+                                  '<td colspan="14" class="text-right p-3">'+
+                                    '<textarea class="form-control" style="min-height:80px;">פוליסה 1</textarea>'+
+                                  '</td>'+
+                                '<tr>');
+  });
+</script>
+<script>
+  $(document).on('click', '.badge-dropdown .dropdown-item', function() {
+    $(this).closest('.badge-dropdown').find('.dropdown-toggle').html($(this).html());
+  });
+</script>
+</body>
+</html>

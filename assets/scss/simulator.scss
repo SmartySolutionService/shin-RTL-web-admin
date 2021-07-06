@@ -1,0 +1,1152 @@
+.simulator-main {
+    .filter-options {
+        .filter-button {
+            width: 170px !important;
+        }
+    }
+    .filter-app {
+        padding-left: 30px !important;
+        padding-right: 30px !important;
+    }
+    &.open-filter {
+        .filter-bar {
+            width: 590px !important;
+        }
+        .filter-app {
+            padding-right: 30px !important;
+        }
+        .filter-header {
+            .filter-optoin2 {
+                display: block !important;
+            }
+        }
+        .filter-footer {
+            display: block !important;
+        }
+    }
+    .filter-bar {
+        position: relative;
+        overflow: unset !important;
+        .filter-header {
+            .filter-optoin2 {
+                display: none;
+                padding-top: 20px;
+                border-bottom: solid 2px #D7DDE9;
+                margin: 0 30px;
+                .input-group-prepend {
+                    width: 100%;
+                    height: 40px;
+                    &::before {
+                        top: 20px;
+                    }
+                    .dropdown-toggle {
+                        width: 100%;
+                        height: 40px;
+                        font-size: 16px;
+                    }
+                    .dropdown-menu {
+                        width: 100% !important;
+                        .dropdown-item {
+                            width: 100% !important;
+                            font-size: 16px;
+                            .cs-checkbox-container {
+                                top: 5px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .filter-body {
+            max-height: calc(100% - 230px);
+            padding: 0 25px !important;
+        }
+        .filter-footer {
+            display: none;
+            position: absolute;
+            width: calc(100% - 60px);
+            bottom: 30px;
+            height: 50px;
+            left: 30px;
+            border-top: solid 2px #D7DDE9;
+        }
+    }
+    .filter-form {
+        .filter-form-body {
+            .filter-group-item {
+                border-bottom: solid 2px #D7DDE9;
+                padding: 15px 0;
+                &:last-child {
+                    border-bottom: 0;
+                }
+                .cs-btn-icon {
+                    width: 20px;
+                    height: 20px;
+                    outline: none;
+                    border: none;
+                    margin-left: 0;
+                    padding: 0;
+                    &.btn-quiz {
+                        width: 15px;
+                        height: 15px;
+                    }
+                }
+                .link-close {
+                    cursor: pointer;
+                    font-size: 12px;
+                    line-height: 14px;
+                    position: relative;
+                    top: -8px;
+                }
+                .distribution-slider-container {
+                    position: relative;
+                    .bar-Chart-wrapper {
+                        text-align: center;
+                        canvas {
+                            position: relative;
+                            right: 5px;
+                        }
+                    }
+                    .range-slider-wrapper {
+                        width: 100%;
+                        position: absolute;
+                        top: 25px;
+                        .addui-slider {
+                            &.addui-slider-horizontal {
+                                margin: 0 !important;
+                                width: 100% !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+    .cs-btn-img {
+        width: 191px;
+    }
+    table {
+        thead {
+            tr {
+                background-color: #7abbfc;
+                th {
+                    color: #fff;
+                }
+            }
+        }
+    }
+    .search-result {
+        position: absolute;
+        color: #1a70c6;
+    }
+    
+}
+
+#filterSettingsModal {
+    margin-top: 155px;
+    &.show {
+        .modal-dialog {
+            right: 0 !important;
+            margin: 0 0 0 auto !important;
+            transition: right 0.35s !important;
+        }
+    }
+    .modal-dialog {
+        right: -100% !important;
+        margin: 0 0 0 auto !important;
+        transition: right 0.35s !important;
+        .modal-content {
+            border-right: 0;
+            border-left: solid 16px #7ABBFC;
+            .grid-container {
+                display: grid;
+                grid-template-columns: 20% 20% 20% 20% 20%;
+            }
+            .grid-item {
+                padding: 10px 0 10px 10px;
+                text-align: center;
+                width: 240px;
+                .text-title {
+                    color: #7ABBFC;
+                    text-align: right;
+                    margin-bottom: 20px;
+                }
+                .cs-checkbox-container {
+                    margin: 3px 10px 0 0;
+                    padding-right: 40px;
+                    [type=checkbox] {
+                        width: 20px;
+                        height: 20px;
+                    }
+                    .checkmark {
+                        width: 20px;
+                        height: 20px;
+                        border-radius: 4px;
+                        &:after {
+                            right: 5px;
+                            top: 2px;
+                            width: 6px;
+                            height: 10px;
+                        }
+                    }
+                }
+            }
+        }
+        .btn-close {
+            opacity: 1;
+        }
+    }
+    .btn-clear {
+        position: absolute;
+        top: 75px;
+        right: 40px;
+        padding: 10px 20px;
+        border-radius: 50px;
+        height: 45px;
+        width: 120px;
+        font-size: 14px;
+    }
+    .btn-send-green {
+        width: 190px;
+    }
+}
+
+/*******************************************************/ 
+/********** *** Simulator Compare Products *** *********/ 
+/*******************************************************/ 
+.simulator-compare-products {
+    .filter-app {
+        width: 100% !important;
+        .app-header {
+            border-bottom: none !important;
+            .app-header-top {
+                .btn-add-product {
+                    width: 190px;
+                }
+                .cs-btn-group {
+                    display: inline-block;
+                    .cs-btn-icon {
+                        display: block;
+                        margin: 0;
+                    }
+                    label {
+                        display: block;
+                        text-align: center;
+                        font-size: 12px;
+                        margin-top: 5px;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+        .app-body {
+            table {
+                thead {
+                    background-color: #7ABCFF;
+                    tr {
+                        th {
+                            position: relative;
+                            color: #485272;
+                            .cs-icon {
+                                position: absolute;
+                                top: 15px;
+                                right: 15px;
+                            }
+                            .cs-btn-icon {
+                                position: absolute;
+                                left: 10px;
+                                top: 10px;
+                                width: 20px;
+                                height: 20px;
+                                margin: 0;
+                                opacity: 1;
+                            }
+                            a {
+                                color: #485272;
+                                &:hover {
+                                    color: #001553;
+                                }
+                            }
+                            .ic-check-less {
+                                background-image: url(../img/icons/ic_check_less.png);
+                                &.close {
+                                    background-image: url(../img/icons/ic_check_plus.png) !important;
+                                }
+                            }
+                            .form-control-mini {
+                                border: solid 1px #485272;
+                                background-color: transparent;
+                                color: #485272;
+                                max-height: 24px;
+                                max-width: 220px;
+                            }
+                        }
+                    }
+                }
+                tbody {
+                    tr {
+                        td {
+                            position: relative;
+                            .cs-icon {
+                                position: absolute;
+                                top: 15px;
+                                right: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+#addProductModal {
+    padding: 50px !important;
+    .modal-dialog {
+        margin: 0;
+        width: 100%;
+        overflow: hidden;
+        .modal-content {
+            position: relative;
+            border-right: none !important;
+            border-top: solid 16px #7ABBFC;
+            display: flex;
+            .btn-close {
+                position: absolute;
+                top: 20px;
+                left: 20px;
+                width: 30px;
+                height: 30px;
+                opacity: 1;
+            }
+            .modal-right-bar {
+                border-left: solid 1px #78849E;
+                width: 270px;
+                height: 100%;
+                padding: 20px;
+                .bar-item {
+                    padding: 2px 0;
+                }
+                .bar-divider {
+                    width: 100%;
+                    height: 1px;
+                    background-color: #BFC5D2;
+                    margin: 15px 0;
+                }
+            }
+            .modal-left-bar {
+                width: calc(100% - 270px);
+                height: calc(100% - 100px);
+                display: block;
+                padding: 20px 30px;
+                overflow-y: auto;
+                padding-left: 60px;
+                .list-card {
+                    border: solid 1px #A3A0FB;
+                    background-color: transparent;
+                    -webkit-box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.3); 
+                    box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.3);
+                    height: 350px;
+                    overflow-y: auto;
+                    .card-header {
+                        background: transparent;
+                        border-bottom: solid 1px #A3A0FB;
+                    }
+                    .card-body {
+                        ul {
+                            list-style: none;
+                            padding: 0;
+                            margin: 0;
+                            li {
+                                width: max-content;
+                                padding: 0 5px;
+                                &:hover, &.selected {
+                                    background-color: #7ABBFC;
+                                    color: #ffffff;
+                                    cursor: default;
+                                }
+                            }
+                        }
+                    }
+                }
+                table {
+                    thead {
+                        background-color: #7abbfc;
+                        tr {
+                            th {
+                                color: #fff;
+                                &:first-child {
+                                    width: 50px;
+                                }
+                            }
+                        }
+                    }
+                    tbody {
+                        tr {
+                            td {
+                                padding-right: 20px;
+                                padding-left: 20px;
+                                &:first-child {
+                                    width: 50px;
+                                    padding-right: 0px;
+                                    padding-left: 0px;
+                                }
+                                .cs-icon {
+                                    position: absolute;
+                                    left: 10px;
+                                    width: 15px;
+                                    height: 15px;
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+                    }
+                }
+                .ic-search-blue {
+                    position: absolute;
+                    top: 12px;
+                    left: 28px;
+                    width: 15px;
+                    height: 15px;
+                }
+            }
+            .cs-checkbox-container {
+                height: 20px;
+                line-height: 20px;
+                margin-top: 3px !important;
+                [type=checkbox] {
+                    width: 20px;
+                    height: 20px;
+                }
+                .checkmark {
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 4px;
+                    &:after {
+                        right: 5px;
+                        top: 1px;
+                        width: 7px;
+                        height: 11px;
+                    }
+                }
+            }
+        }
+    }
+    .text-primary {
+        color: #1E87F0 !important;
+    }
+}
+
+/*******************************************************/ 
+/*********** *** Simulator Product Detail *** **********/ 
+/*******************************************************/ 
+.simulator-product-detail {
+    .filter-app {
+        width: 100% !important;
+    }
+    .app-tab {
+        .nav-tabs {
+            border-bottom: solid 16px #7ABBFC;
+            .nav-item {
+                background-color: transparent;
+                color: #485272;
+                min-width: 190px;
+                text-align: center;
+                .cs-icon {
+                    position: relative;
+                    margin: 0 10px;
+                    width: 20px;
+                    height: 20px;
+                    top: 4px;
+                }
+                .ic-assignment2 {
+                    background-image: url(../img/icons/ic_assignment2_blue.png);
+                }
+                .ic-dashboard {
+                    background-image: url(../img/icons/ic_dashboard_blue.png);
+                }
+                &:hover {
+                    border-color: transparent;
+                }
+                &.active {
+                    background-color: #7ABBFC;
+                    color: #FFFFFF;
+                    border: 0;
+                    border-top-left-radius: 10px;
+                    border-top-right-radius: 10px;
+                    font-weight: bold;
+                    .ic-assignment2 {
+                        background-image: url(../img/icons/ic_assignment2_white.png);
+                    }
+                    .ic-dashboard {
+                        background-image: url(../img/icons/ic_dashboard_white.png);
+                    }
+                }
+            }
+        }
+        .tab-pane {
+            .pane-body {
+                .border-left {
+                    border-left: solid 1px #78849E !important;
+                }
+                .row-divider {
+                    width: 100%;
+                    height: 1px;
+                    background-color: #78849E;
+                    margin: 30px 0;
+                }
+                .datepicker-wrapper {
+                    width: 220px;
+                    input {
+                        border-radius: 8px;
+                    }
+                    .gj-icon {
+                        top: 10px;
+                    }
+                }
+            }
+        }
+    }
+    .text-primary {
+        color: #7ABBFC;
+    }
+}
+
+.donut-captions {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    .dount-caption-icon {
+        position: relative;
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        border-radius: 10px;
+        margin-left: 20px;
+        top: 3px;
+        background: var(--bgColor);
+        &::after {
+            content: "";
+            background: #FFFFFF;
+            width: 10px;
+            height: 10px;
+            position: absolute;
+            top: 3px;
+            right: 3px;
+            border-radius: 50%;
+            display: block;
+        }
+    }
+}
+
+/*******************************************************/ 
+/*************** *** Simulator Top 10  *** *************/ 
+/*******************************************************/ 
+.simulator-top10, 
+.simulator-top5, 
+.simulator-allocation-and-analysis, 
+.simulator-leverage-results, 
+.simulator-irr-calculator, 
+.simulator-adding-integrated-product {
+    .filter-app {
+        width: 100% !important;
+        .app-header {
+            border-bottom: none !important;
+            .app-header-top {
+                .btn-add-product {
+                    width: 190px;
+                }
+                .cs-btn-group {
+                    display: inline-block;
+                    .cs-btn-icon {
+                        display: block;
+                        margin: 0;
+                    }
+                    label {
+                        display: block;
+                        text-align: center;
+                        font-size: 12px;
+                        margin-top: 5px;
+                        font-weight: 600;
+                    }
+                }
+            }
+            .app-header-bottom {
+                .btn-show-results {
+                    width: 190px;
+                }
+                .input-group-prepend {
+                    width: 100%;
+                    &:before {
+                        top: 22px;
+                    }
+                    .dropdown-toggle {
+                        width: 100%;
+                        height: 45px;
+                        font-size: 16px;
+                    }
+                    .dropdown-menu {
+                        width: 100% !important;
+                        .dropdown-item {
+                            width: 100% !important;
+                            font-size: 16px;
+                            padding-right: 30px;
+                            .cs-checkbox-container {
+                                float: right;
+                                width: 18px;
+                                height: 18px;
+                                top: 3px;
+                                right: -10px;
+                                [type=checkbox] {
+                                    width: 18px;
+                                    height: 18px;
+                                }
+                                .checkmark {
+                                    width: 18px;
+                                    height: 18px;
+                                    &:after {
+                                        right: 5px;
+                                        top: 2px;
+                                        width: 6px;
+                                        height: 11px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .app-body {
+            table {
+                thead {
+                    background-color: #7ABCFF;
+                    tr {
+                        th {
+                            position: relative;
+                            color: #ffffff;
+                            .cs-icon {
+                                position: absolute;
+                                top: 15px;
+                                right: 15px;
+                            }
+                            .cs-btn-icon {
+                                position: absolute;
+                                left: 10px;
+                                top: 10px;
+                                width: 20px;
+                                height: 20px;
+                                margin: 0;
+                                opacity: 1;
+                            }
+                            a {
+                                color: #485272;
+                                &:hover {
+                                    color: #001553;
+                                }
+                            }
+                        }
+                    }
+                }
+                tbody {
+                    tr {
+                        td {
+                            position: relative;
+                            padding-right: 20px;
+                            padding-left: 20px;
+                            &:first-child {
+                                padding-right: 0;
+                                padding-left: 0;
+                            }
+                            .cs-icon {
+                                position: absolute;
+                                top: 15px;
+                                right: 15px;
+                            }
+                            .cs-checkbox-container {
+                                height: 20px;
+                                line-height: 20px;
+                                [type=checkbox] {
+                                    width: 20px;
+                                    height: 20px;
+                                }
+                                .checkmark {
+                                    width: 20px;
+                                    height: 20px;
+                                    border-radius: 4px;
+                                    &:after {
+                                        right: 4px;
+                                        top: 1px;
+                                        width: 8px;
+                                        height: 12px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*******************************************************/ 
+/*************** *** Simulator Trends  *** *************/ 
+/*******************************************************/ 
+.simulator-trends {
+    .filter-app {
+        width: 100% !important;
+        .app-header {
+            border-bottom: none !important;
+            height: 150px !important;
+            .app-header-top {
+                .btn-add-product {
+                    width: 190px;
+                }
+                .cs-btn-group {
+                    display: inline-block;
+                    .cs-btn-icon {
+                        display: block;
+                        margin: 0;
+                    }
+                    label {
+                        display: block;
+                        text-align: center;
+                        font-size: 12px;
+                        margin-top: 5px;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+        .app-body {
+            .chart-header {
+                .chart-tags-group {
+                    border-left: solid 1px #485272;
+                    padding-left: 20px;
+                }
+                .chart-tag {
+                    height: 27px !important;
+                    border-radius: 27px !important;
+                    font-size: 11px !important;
+                }
+                .cs-btn-img {
+                    width: 105px;
+                    height: 27px;
+                }
+                .filter-options {
+                    .dropdown-wrapper {
+                        .input-group-prepend {
+                            width: 100% !important;
+                            &:before {
+                                top: 17px !important;
+                            }
+                            .dropdown-toggle {
+                                width: 100% !important;
+                                height: 100% !important;
+                                font-size: 16px !important;
+                            }
+                            .dropdown-menu {
+                                width: 100% !important;
+                                .dropdown-item {
+                                    width: 100% !important;
+                                    font-size: 16px;
+                                    .cs-checkbox-container {
+                                        top: 5px;
+                                        width: 15px !important;
+                                        height: 15px !important;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*******************************************************/ 
+/***** *** Simulator Allocation and Analysis  *** ******/ 
+/*******************************************************/ 
+.simulator-allocation-and-analysis {
+    .cs-btn-img {
+        &.btn-send {
+            width: 190px;
+        }
+        &.btn-save-green {
+            width: 169px;
+        }
+        &.btn-add-product-for-comparison {
+            width: 239px;
+        }
+        &.btn-copy-client-file {
+            width: 191px;
+        }
+    }
+    .table {
+        tr {
+            &.sub-tr {
+                background-color: #F4F7F8;
+            }
+            td {
+                .bg-danger {
+                    background-color: #DE0101 !important;
+                    position: relative;
+                    display: block;
+                    padding: 16px;
+                    width: max-content;
+                }
+                &:first-child {
+                    padding-right: 20px !important;
+                    .details-control {
+                        display: inline-flex;
+                        width: 50px;
+                        height: 40px;
+                        padding: 10px 15px;
+                        border: none !important;
+                        .cs-icon {
+                            width: 15px;
+                            height: 15px;
+                            top: 25px;
+                            &.ic-collapse-pm {
+                                background-image: url(../img/icons/ic_plus_blue.png);
+                            }
+                        }
+                        &.shown {
+                            .ic-collapse-pm {
+                                background-image: url(../img/icons/ic_minus_blue.png);
+                            }
+                        }
+                    }
+                    .btn-remove {
+                        position: relative;
+                        display: block;
+                        width: 40px;
+                        height: 40px;
+                        border-left: solid 1px #BFC5D2;
+                        .cs-icon {
+                            position: relative;
+                            top: 10px;
+                            right: 3px;
+                        }
+                    }
+                }
+            }
+        }
+        tfoot {
+            tr {
+                background-color: #485272;
+                td {
+                    color: #ffffff;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    .card {
+        &.card-border-top {
+            border-top: solid 16px #7ABBFC;
+        }
+        .border-left {
+            border-left: solid 1px #78849E;
+        }
+    }
+    .form-control {
+        max-width: 220px;
+    }
+    #datepicker {
+        width: 220px;
+        height: 45px;
+        border-radius: 8px;
+    }
+    .collapse-item {
+        &.open {
+            .collapse-header {
+                .ic-chevron {
+                    background-image: url(../img/icons/ic_chevron_up.png);
+                    position: relative;
+                    top: 8px;
+                    right: 10px;
+                }
+                .button-group {
+                    display: flex;
+                }
+            }
+            .collapse-body {
+                display: block;
+            }
+        }
+        .collapse-header {
+            // width: max-content;
+            cursor: pointer;
+            display: flex;
+            h4 {
+                width: max-content;
+            }
+            .ic-chevron {
+                background-image: url(../img/icons/ic_chevron_down.png);
+                position: relative;
+                top: 6px;
+                right: 10px;
+            }
+            .button-group {
+                display: none;
+            }
+        }
+        .collapse-body {
+            display: none;
+        }
+    }
+}
+
+/*******************************************************/ 
+/*** *** Simulator Saving For Creating Butcher  *** ****/ 
+/*******************************************************/ 
+.simulator-saving-for-creating-butcher, 
+.simulator-leverage-results, 
+.simulator-irr-calculator {
+    .card {
+        .card-body {
+            padding: 0;
+            .row {
+                margin: 0;
+                padding: 10px 20px;
+                border-bottom: solid 2px #BFC5D2;
+            }
+            .form-control {
+                max-width: 120px;
+            }
+        }
+        .card-footer {
+            font-weight: bold;
+            background-color: #485272;
+            color: #ffffff;
+        }
+    }
+    .btn-accountant {
+        width: 191px;
+    }
+}
+
+/*******************************************************/ 
+/********* *** Simulator Leverage Results  *** *********/ 
+/*******************************************************/ 
+.simulator-leverage-results, 
+.simulator-irr-calculator, 
+.simulator-double-leverage, 
+.simulator-standard-leverage {
+    .filter-app {
+        .app-header {
+            height: 120px !important;
+            border-bottom: none !important;
+        }
+        .app-body {
+            .card {
+                .last-row {
+                    background-color: #7ABBFC;
+                }
+            }
+        }
+        table {
+            th, td {
+                padding: 12px 30px !important;
+            }
+            tfoot {
+                tr {
+                    background-color: #485272;
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+}
+
+/*******************************************************/ 
+/********** *** Simulator IRR Calculator  *** **********/ 
+/*******************************************************/
+.simulator-irr-calculator {
+    .app-body {
+        .card {
+            max-width: 700px;
+            table {
+                max-width: 700px !important;
+                .form-control {
+                    max-width: 100px;
+                }
+                tfoot {
+                    tr {
+                        td {
+                            color: #ffffff;
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*******************************************************/ 
+/********** *** Simulator Double Leverage  *** *********/ 
+/*******************************************************/
+.simulator-double-leverage, 
+.simulator-standard-leverage {
+    .dataTables_wrapper {
+        min-width: 300px !important;
+    }
+    table {
+        thead {
+            tr {
+                background-color: #7ABBFC;
+                th {
+                    color: #ffffff;
+                }
+            }
+        }
+        tbody {
+            tr {
+                td {
+                    min-height: 63px;
+                    border-left: none;
+                    border-right: none;
+                    .form-control {
+                        max-width: 100px !important;
+                    }
+                }
+            }
+        }
+    }
+    .row-foot {
+        background-color: #485272;
+        height: 60px;
+        color: #ffffff;
+        div {
+            font-size: 16px;
+            font-weight: bold;
+            padding: 15px 30px;
+        }
+    }
+    .btn-accountant {
+        width: 191px;
+    }
+    .btn-show-leverage-results {
+        width: 235px;
+    }
+}
+
+/*******************************************************/ 
+/********* *** Simulator Standard Leverage  *** ********/ 
+/*******************************************************/
+.simulator-standard-leverage {
+    table {
+        tfoot {
+            tr {
+                td {
+                    color: #ffffff;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+
+/*******************************************************/ 
+/**** *** Simulator Adding Integrated Product  *** *****/ 
+/*******************************************************/
+.simulator-adding-integrated-product {
+    table {
+        th, td {
+            padding: 12px 30px !important;
+            &:first-child {
+                width: 350px;
+            }
+        }
+        .form-control {
+            max-width: 100px;
+        }
+        .slider-wrapper {
+            width: 250px;
+            .addui-slider {
+                margin: 0 !important;
+                .addui-slider-range {
+                    left: 0;
+                }
+            }
+            .slider {
+                -webkit-appearance: none;
+                width: 100%;
+                height: 5px;
+                border-radius: 5px;
+                background: #d3d3d3;
+                outline: none;
+                opacity: 0.9;
+                -webkit-transition: .2s;
+                transition: opacity .2s;
+                padding: 0;
+                margin: 15px;
+                &:hover {
+                    opacity: 1;
+                }
+
+                &::-webkit-slider-thumb {
+                    -webkit-appearance: none;
+                    appearance: none;
+                    width: 20px;
+                    height: 20px;
+                    border: 0;
+                    background: url('../img/icons/ic_slider_eye.png');
+                    background-repeat: none;
+                    background-size: 20px 20px;
+                    cursor: pointer;
+                }
+
+                &::-moz-range-thumb {
+                    width: 20px;
+                    height: 20px;
+                    border: 0;
+                    background: url('../img/icons/ic_slider_eye.png');
+                    background-repeat: none;
+                    background-size: 20px 20px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    .border-top {
+        border-top: solid 1px #78849E;
+    }
+}
+
+/*******************************************************/ 
+/********* *** Simulator P2P Foundation  *** ***********/ 
+/*******************************************************/
+.simulator-p2p-foundation, 
+.simulator-debt-fund, 
+.simulator-hedge-fund, 
+.simulator-real-estate-investments, 
+.simulator-reit-foundation, 
+.simulator-algo-beam, 
+.simulator-insurance-product-risk {
+    .app-header {
+        border-bottom: none !important;
+    }
+    .card {
+        border-top: solid 16px #7ABBFC;
+        label {
+            margin-top: 20px;
+        }
+    }
+    label {
+        font-weight: bold;
+    }
+    .text-primary {
+        color: #7ABBFC;
+    }
+    .form-control {
+        height: 50px;
+        border-radius: 10px;
+    }
+}

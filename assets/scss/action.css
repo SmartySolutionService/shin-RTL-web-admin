@@ -1,0 +1,2177 @@
+.action-page .filter-app {
+  width: 100% !important;
+}
+.action-page .filter-app .app-header {
+  border-bottom: none !important;
+}
+.action-page .filter-app .app-header .app-header-top .btn-product-add, .action-page .filter-app .app-header .app-header-top .btn-product-update {
+  width: 190px;
+}
+.action-page .filter-app .app-header .app-header-top .cs-btn-group {
+  display: inline-block;
+}
+.action-page .filter-app .app-header .app-header-top .cs-btn-group .cs-btn-icon {
+  display: block;
+  margin: 0;
+}
+.action-page .filter-app .app-header .app-header-top .cs-btn-group label {
+  display: block;
+  text-align: center;
+  font-size: 12px;
+  margin-top: 5px;
+  font-weight: 600;
+}
+.action-page .filter-app .app-header .app-header-bottom {
+  margin: 0;
+}
+.action-page .filter-app .app-header .app-header-bottom .badge {
+  position: relative;
+  display: flex;
+  width: 200px;
+  height: 50px;
+  border-radius: 9px;
+  color: #ffffff;
+  padding: 10px;
+  -webkit-box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.3);
+}
+.action-page .filter-app .app-header .app-header-bottom .badge.badge-primary {
+  background-color: #7ABCFF;
+}
+.action-page .filter-app .app-header .app-header-bottom .badge.badge-primary .bubble {
+  color: #7ABCFF;
+}
+.action-page .filter-app .app-header .app-header-bottom .badge.badge-warnning {
+  background-color: #DF974F;
+}
+.action-page .filter-app .app-header .app-header-bottom .badge.badge-warnning .bubble {
+  color: #DF974F;
+}
+.action-page .filter-app .app-header .app-header-bottom .badge.badge-danger {
+  background-color: #C56D6D;
+}
+.action-page .filter-app .app-header .app-header-bottom .badge.badge-danger .bubble {
+  color: #C56D6D;
+}
+.action-page .filter-app .app-header .app-header-bottom .badge.badge-success {
+  background-color: #59A44F;
+}
+.action-page .filter-app .app-header .app-header-bottom .badge.badge-success .bubble {
+  color: #59A44F;
+}
+.action-page .filter-app .app-header .app-header-bottom .badge.badge-secondary {
+  background-color: #78849E;
+}
+.action-page .filter-app .app-header .app-header-bottom .badge.badge-secondary .bubble {
+  color: #78849E;
+}
+.action-page .filter-app .app-header .app-header-bottom .badge .bubble {
+  position: relative;
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  background-color: #ffffff;
+  font-size: 18px;
+  padding: 5px 0;
+  text-align: center;
+}
+.action-page .filter-app .app-header .app-header-bottom .badge .text {
+  position: relative;
+  display: block;
+  width: calc(100% - 30px);
+  text-align: center;
+  font-size: 16px;
+  padding: 5px 0;
+}
+.action-page .filter-app .app-header .app-header-bottom .dropdown-form .form-control {
+  min-width: 250px;
+  border-radius: 8px;
+}
+.action-page .filter-app .app-header .app-header-bottom .searchable-dropdown-form.invalid .form-control {
+  border: 1px solid #ced4da !important;
+  color: #485272 !important;
+}
+.action-page .filter-app .app-header .app-header-bottom .searchable-dropdown-form.invalid .form-control:focus {
+  color: #485272 !important;
+  border-color: #80bdff !important;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25) !important;
+}
+.action-page .filter-app .app-header .app-header-bottom .searchable-dropdown-form.invalid .form-control::-webkit-input-placeholder {
+  /* Edge */
+  color: #485272 !important;
+}
+.action-page .filter-app .app-header .app-header-bottom .searchable-dropdown-form.invalid .form-control:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #485272 !important;
+}
+.action-page .filter-app .app-header .app-header-bottom .searchable-dropdown-form.invalid .form-control::placeholder {
+  color: #485272 !important;
+}
+.action-page .filter-app .app-header .app-header-bottom .searchable-dropdown-form .searchable-dropdown {
+  position: relative;
+}
+.action-page .filter-app .app-header .app-header-bottom .searchable-dropdown-form .searchable-dropdown .ic-search {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.action-page .filter-app .app-header .app-header-bottom .searchable-dropdown-form .searchable-dropdown .form-control {
+  color: #485272 !important;
+  min-width: 220px;
+  border-radius: 8px;
+}
+.action-page .filter-app .app-header .app-header-bottom .searchable-dropdown-form .searchable-dropdown .dropdown-content {
+  position: absolute;
+  display: block;
+  width: 220px;
+  top: 37px;
+  right: 0px;
+  background-color: #ffffff;
+  border: solid 1px #ced4da;
+  z-index: 1000;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.action-page .filter-app .app-header .app-header-bottom .searchable-dropdown-form .searchable-dropdown .dropdown-content .content-item {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 3px 15px;
+}
+.action-page .filter-app .app-header .app-header-bottom .searchable-dropdown-form .searchable-dropdown .dropdown-content .content-item:hover, .action-page .filter-app .app-header .app-header-bottom .searchable-dropdown-form .searchable-dropdown .dropdown-content .content-item:active, .action-page .filter-app .app-header .app-header-bottom .searchable-dropdown-form .searchable-dropdown .dropdown-content .content-item.active {
+  font-weight: bold;
+  cursor: pointer;
+}
+.action-page .filter-app .app-header .app-header-bottom .searchable-dropdown-form .searchable-dropdown .dropdown-content .content-item:first-child {
+  margin-top: 10px;
+}
+.action-page .filter-app .app-header .app-header-bottom .searchable-dropdown-form .searchable-dropdown .dropdown-content .content-item:last-child {
+  margin-bottom: 10px;
+}
+.action-page .filter-app .app-header .app-header-bottom .btn-adding-product {
+  width: 190px;
+}
+.action-page .filter-app .app-header .app-header-bottom .cs-dropdown {
+  position: relative;
+}
+.action-page .filter-app .app-header .app-header-bottom .cs-dropdown .dropdown-content {
+  position: absolute;
+  display: block;
+  width: 220px;
+  top: 50px;
+  right: 0px;
+  background-color: #ffffff;
+  border: solid 1px #ced4da;
+  z-index: 1000;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.action-page .filter-app .app-header .app-header-bottom .cs-dropdown .dropdown-content .content-item {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 3px 15px;
+}
+.action-page .filter-app .app-header .app-header-bottom .cs-dropdown .dropdown-content .content-item:hover, .action-page .filter-app .app-header .app-header-bottom .cs-dropdown .dropdown-content .content-item:active, .action-page .filter-app .app-header .app-header-bottom .cs-dropdown .dropdown-content .content-item.active {
+  font-weight: bold;
+  cursor: pointer;
+}
+.action-page .filter-app .app-header .app-header-bottom .cs-dropdown .dropdown-content .content-item:first-child {
+  margin-top: 10px;
+}
+.action-page .filter-app .app-header .app-header-bottom .cs-dropdown .dropdown-content .content-item:last-child {
+  margin-bottom: 10px;
+}
+.action-page .filter-app .app-body table thead {
+  background-color: #7ABCFF;
+}
+.action-page .filter-app .app-body table thead tr.bg-dark {
+  background-color: #78849E !important;
+  border: solid 1px #707070;
+  -webkit-box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.16);
+}
+.action-page .filter-app .app-body table thead tr.bg-dark .action-filter {
+  position: relative;
+  display: block;
+  width: 35px;
+  height: 35px;
+  right: 40px;
+}
+.action-page .filter-app .app-body table thead tr.bg-dark .action-filter .cs-icon {
+  top: 8px;
+  right: 5px;
+}
+.action-page .filter-app .app-body table thead tr.bg-dark .gj-datepicker .input-group-append {
+  display: block;
+}
+.action-page .filter-app .app-body table thead tr.bg-dark .gj-datepicker .input-group-append .gj-icon {
+  top: 3px !important;
+}
+.action-page .filter-app .app-body table thead tr th {
+  position: relative;
+  color: #ffffff;
+}
+.action-page .filter-app .app-body table thead tr th:first-child .cs-checkbox-container {
+  margin-top: 0;
+  position: relative;
+  top: 5px;
+}
+.action-page .filter-app .app-body table thead tr th .cs-icon {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+.action-page .filter-app .app-body table thead tr th .cs-btn-icon {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  opacity: 1;
+}
+.action-page .filter-app .app-body table thead tr th a {
+  color: #485272;
+}
+.action-page .filter-app .app-body table thead tr th a:hover {
+  color: #001553;
+}
+.action-page .filter-app .app-body table tbody tr td {
+  position: relative;
+  padding: 5px 10px;
+}
+.action-page .filter-app .app-body table tbody tr td .cs-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.action-page .filter-app .app-body table tbody tr td:first-child {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+.action-page .filter-app .app-body table tbody tr td:first-child .action-control {
+  position: relative;
+  display: block;
+  width: 35px;
+  height: 35px;
+  padding: 10px 10px;
+  border: none !important;
+}
+.action-page .filter-app .app-body table tbody tr td:first-child .action-control.lg {
+  width: 40px;
+  height: 40px;
+}
+.action-page .filter-app .app-body table tbody tr td:first-child .action-control.lg .cs-icon {
+  top: 12px;
+}
+.action-page .filter-app .app-body table tbody tr td:first-child .action-control.shown .ic-collapse-pm {
+  background-image: url(../img/icons/ic_minus_blue.png) !important;
+}
+.action-page .filter-app .app-body table tbody tr td:first-child .action-control .cs-icon {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+}
+.action-page .filter-app .app-body table tbody tr td:first-child .action-control .cs-icon.ic-collapse-pm {
+  background-image: url(../img/icons/ic_plus_blue.png);
+}
+.action-page .filter-app .app-body table tbody tr td:first-child .action-control .cs-checkbox-container {
+  margin-top: -2px;
+}
+.action-page .filter-app .app-body table tbody tr td:first-child .action-control .bubble {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: -3px;
+  right: 0px;
+  border-radius: 20px;
+  line-height: 18px;
+  font-size: 14px;
+  border: solid 1px #F4F7F8;
+  text-align: center;
+}
+.action-page .filter-app .app-body table tbody tr td:first-child .action-control .bubble.bubble-gray {
+  background-color: #78849E;
+  color: #ffffff;
+}
+.action-page .filter-app .app-body table tbody tr td:first-child .btn-remove {
+  position: relative;
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-left: solid 1px #BFC5D2;
+}
+.action-page .filter-app .app-body table tbody tr td:first-child .btn-remove .cs-icon {
+  position: relative;
+  top: 10px;
+  right: 3px;
+}
+.action-page .filter-app .app-body table tbody tr td:first-child .border-left {
+  border-left: solid 1px #78849E !important;
+}
+.action-page .filter-app .app-body table tbody tr td:first-child .border-right {
+  border-right: solid 1px #78849E !important;
+}
+.action-page .filter-app .app-body table tbody tr td:first-child .td-text {
+  height: 25px;
+  padding: 0 20px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+.action-page .filter-app .app-body table tbody tr td:first-child .dropleft {
+  padding: 4px 8px;
+}
+.action-page .filter-app .app-body table tbody tr td:first-child .dropleft .dropdown-toggle {
+  position: relative;
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+}
+.action-page .filter-app .app-body table tbody tr td:first-child .dropleft .dropdown-toggle:before, .action-page .filter-app .app-body table tbody tr td:first-child .dropleft .dropdown-toggle:after {
+  display: none;
+}
+.action-page .filter-app .app-body table tbody tr td:first-child .dropleft .dropdown-toggle:hover {
+  background-color: #78849E;
+  border: solid 1px #707070;
+}
+.action-page .filter-app .app-body table tbody tr td:first-child .dropleft .dropdown-toggle:hover .ic-pencil-blue {
+  background-image: url(../img/icons/ic_pencil_white.png);
+}
+.action-page .filter-app .app-body table tbody tr td:first-child .dropleft .dropdown-toggle .cs-icon {
+  position: relative;
+  top: 2px;
+  right: 0px;
+}
+.action-page .filter-app .app-body table tbody tr td:first-child .dropleft .dropdown-menu {
+  padding: 0px;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 350px;
+}
+.action-page .filter-app .app-body table tbody tr td:first-child .dropleft .dropdown-menu.h-auto {
+  height: auto !important;
+}
+.action-page .filter-app .app-body table tbody tr td:first-child .dropleft .dropdown-menu .dropdown-ul {
+  width: 150px;
+  height: 330px;
+  list-style: none;
+  padding: 10px 0px;
+}
+.action-page .filter-app .app-body table tbody tr td:first-child .dropleft .dropdown-menu .dropdown-ul .dropdown-li {
+  position: relative;
+  padding: 5px 40px 5px 10px;
+  text-align: right;
+  color: #7ABBFC;
+  font-weight: bold;
+}
+.action-page .filter-app .app-body table tbody tr td:first-child .dropleft .dropdown-menu .dropdown-ul .dropdown-li:hover {
+  background-color: #BFC5D2;
+  color: #ffffff;
+  cursor: pointer;
+}
+.action-page .filter-app .app-body table tbody tr td:first-child .dropleft .dropdown-menu .dropdown-ul .dropdown-li.open .ic-collapse-pm {
+  background-image: url(../img/icons/ic_minus_blue.png) !important;
+}
+.action-page .filter-app .app-body table tbody tr td:first-child .dropleft .dropdown-menu .dropdown-ul .dropdown-li .cs-icon {
+  top: 10px;
+}
+.action-page .filter-app .app-body table tbody tr td:first-child .dropleft .dropdown-menu .dropdown-ul .dropdown-li .cs-icon.ic-collapse-pm {
+  background-image: url(../img/icons/ic_plus_blue.png);
+}
+.action-page .filter-app .app-body table tbody tr td:first-child .dropleft .dropdown-menu .dropdown-left-menu {
+  width: 200px;
+  border-right: solid 1px #D7DDE9;
+  display: none;
+}
+.action-page .filter-app .app-body table tbody tr td:first-child .dropleft .dropdown-menu .dropdown-left-menu.open {
+  display: block;
+}
+.action-page .filter-app .app-body table tbody tr td:first-child .dropleft .dropdown-menu .dropdown-left-menu .search-wrapper .form-control {
+  border-radius: 0px;
+  border-top-left-radius: 10px;
+}
+.action-page .filter-app .app-body table tbody tr td:first-child .dropleft .dropdown-menu .dropdown-left-menu .dropdown-left-menu-ul {
+  list-style: none;
+  padding: 0px;
+  height: 300px;
+  overflow: auto;
+}
+.action-page .filter-app .app-body table tbody tr td:first-child .dropleft .dropdown-menu .dropdown-left-menu .dropdown-left-menu-ul .dropdown-li {
+  position: relative;
+  display: flex;
+  padding: 5px 10px;
+  font-size: 12px;
+}
+.action-page .filter-app .app-body table tbody tr td:first-child .dropleft .dropdown-menu .dropdown-left-menu .dropdown-left-menu-ul .dropdown-li:hover {
+  background-color: #BFC5D2;
+  color: #ffffff;
+  cursor: pointer;
+}
+.action-page .filter-app .app-body table tbody tr td:first-child .dropleft .dropdown-col-2 {
+  width: 350px;
+  padding: 15px 0px;
+}
+.action-page .filter-app .app-body table tbody tr td:first-child .dropleft .dropdown-col-2 .dropdown-ul {
+  border-left: solid 1px #D7DDE9;
+  padding: 0px;
+  margin: 0px;
+  height: auto !important;
+}
+.action-page .filter-app .app-body table tbody tr td:first-child .dropleft .dropdown-col-2 .dropdown-ul:last-child {
+  border-left: none;
+}
+.action-page .filter-app .app-body table tbody tr td:first-child .dropleft .dropdown-col-2 .dropdown-ul .dropdown-li {
+  font-size: 14px;
+  padding: 5px 15px;
+}
+.action-page .filter-app .app-body table .badge {
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: normal;
+  height: 38px;
+  border: solid 2px #E9E9E9;
+}
+.action-page .filter-app .app-body table .cs-checkbox-container {
+  height: 20px;
+  line-height: 20px;
+}
+.action-page .filter-app .app-body table .cs-checkbox-container [type=checkbox] {
+  width: 20px;
+  height: 20px;
+}
+.action-page .filter-app .app-body table .cs-checkbox-container .checkmark {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+}
+.action-page .filter-app .app-body table .cs-checkbox-container .checkmark:after {
+  right: 4px;
+  top: 1px;
+  width: 8px;
+  height: 12px;
+}
+.action-page .filter-app .app-body table th, .action-page .filter-app .app-body table td {
+  min-width: 120px;
+}
+.action-page .filter-app .app-body .search-result {
+  position: absolute;
+  color: #1a70c6;
+}
+.action-page .filter-app .app-body .gj-datepicker .td-datepicker {
+  min-width: 120px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.action-page .filter-app .app-body .gj-datepicker .input-group-append {
+  display: block;
+}
+.action-page .filter-app .app-body .gj-datepicker .input-group-append .gj-icon {
+  top: 3px !important;
+}
+.action-page .filter-app .app-body .td-select {
+  min-width: 110px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.action-page .execution-monitoring .dataTables_wrapper,
+.action-page .execution-tracking .dataTables_wrapper {
+  overflow: inherit;
+}
+
+.app-body .badge {
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: normal;
+  height: 38px;
+  width: 80px;
+  border: solid 2px #E9E9E9;
+  font-size: 12px;
+}
+.app-body .badge.badge-red {
+  background-color: #DE0101;
+  color: #ffffff;
+}
+.app-body .badge.badge-blue {
+  background-color: #7ABCFF;
+  color: #ffffff;
+}
+.app-body .badge.badge-green {
+  background-color: #2CA01C;
+  color: #ffffff;
+}
+.app-body .badge.badge-yellow {
+  background-color: #ECC528;
+  color: #ffffff;
+}
+.app-body .badge.badge-white {
+  background-color: #F9F9F9;
+  color: #515151;
+}
+.app-body .badge.badge-sky {
+  background-color: #7ABBFC;
+  color: #ffffff;
+}
+.app-body .badge.badge-blue-accent {
+  background-color: #1A70C6;
+  color: #ffffff;
+}
+.app-body .badge.badge-gray {
+  background-color: #BFC5D2;
+  color: #515151;
+}
+.app-body .badge-dropdown .dropdown-toggle {
+  padding: 5px;
+}
+.app-body .badge-dropdown .dropdown-toggle:after {
+  display: none;
+}
+.app-body .badge-dropdown .dropdown-toggle:focus {
+  box-shadow: none;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+}
+.app-body .badge-dropdown .dropdown-menu {
+  min-width: 60px;
+}
+.app-body .badge-dropdown .dropdown-menu .dropdown-item {
+  padding: 5px;
+}
+.app-body .gj-datepicker .form-control {
+  border-radius: 8px;
+  border-top-right-radius: 8px !important;
+  border-bottom-right-radius: 8px !important;
+}
+.app-body .gj-timepicker {
+  width: 100px;
+}
+.app-body .gj-timepicker .form-control {
+  border-radius: 8px;
+  border-top-right-radius: 8px !important;
+  border-bottom-right-radius: 8px !important;
+}
+.app-body .gj-timepicker .input-group-append {
+  position: absolute;
+  left: 0px;
+  z-index: 5;
+}
+.app-body .gj-timepicker .input-group-append button {
+  border: none;
+  height: 38px;
+}
+.app-body .gj-timepicker .input-group-append button:hover, .app-body .gj-timepicker .input-group-append button:active, .app-body .gj-timepicker .input-group-append button:focus, .app-body .gj-timepicker .input-group-append button:active:focus {
+  background-color: transparent;
+  outline: none;
+  border: 0;
+  box-shadow: none;
+}
+.app-body .gj-timepicker .input-group-append button .gj-icon {
+  top: 10px;
+  color: #7abbfc;
+}
+
+#CRMreminderModal .modal-dialog,
+#CRMAddTouchModal .modal-dialog,
+#newUserModal .modal-dialog,
+#SMSModal .modal-dialog,
+#EmailModal .modal-dialog {
+  width: 740px !important;
+}
+#CRMreminderModal .modal-dialog .wysiwyg-editor,
+#CRMAddTouchModal .modal-dialog .wysiwyg-editor,
+#newUserModal .modal-dialog .wysiwyg-editor,
+#SMSModal .modal-dialog .wysiwyg-editor,
+#EmailModal .modal-dialog .wysiwyg-editor {
+  width: 100%;
+}
+#CRMreminderModal .modal-dialog .wysiwyg-editor .form-control,
+#CRMAddTouchModal .modal-dialog .wysiwyg-editor .form-control,
+#newUserModal .modal-dialog .wysiwyg-editor .form-control,
+#SMSModal .modal-dialog .wysiwyg-editor .form-control,
+#EmailModal .modal-dialog .wysiwyg-editor .form-control {
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+}
+#CRMreminderModal .modal-dialog .btn-update-green,
+#CRMAddTouchModal .modal-dialog .btn-update-green,
+#newUserModal .modal-dialog .btn-update-green,
+#SMSModal .modal-dialog .btn-update-green,
+#EmailModal .modal-dialog .btn-update-green {
+  display: block;
+  width: 130px;
+}
+#CRMreminderModal .modal-dialog .attach,
+#CRMAddTouchModal .modal-dialog .attach,
+#newUserModal .modal-dialog .attach,
+#SMSModal .modal-dialog .attach,
+#EmailModal .modal-dialog .attach {
+  display: inline-flex;
+}
+#CRMreminderModal .modal-dialog .attach .ic-attach-file,
+#CRMAddTouchModal .modal-dialog .attach .ic-attach-file,
+#newUserModal .modal-dialog .attach .ic-attach-file,
+#SMSModal .modal-dialog .attach .ic-attach-file,
+#EmailModal .modal-dialog .attach .ic-attach-file {
+  position: relative;
+  top: 3px;
+}
+#CRMreminderModal .modal-dialog .attach .dropdown .dropdown-toggle,
+#CRMAddTouchModal .modal-dialog .attach .dropdown .dropdown-toggle,
+#newUserModal .modal-dialog .attach .dropdown .dropdown-toggle,
+#SMSModal .modal-dialog .attach .dropdown .dropdown-toggle,
+#EmailModal .modal-dialog .attach .dropdown .dropdown-toggle {
+  border: none;
+  background-color: transparent;
+  color: #7ABCFF;
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  padding-bottom: 5px;
+}
+#CRMreminderModal .modal-dialog .attach .dropdown .dropdown-toggle:after,
+#CRMAddTouchModal .modal-dialog .attach .dropdown .dropdown-toggle:after,
+#newUserModal .modal-dialog .attach .dropdown .dropdown-toggle:after,
+#SMSModal .modal-dialog .attach .dropdown .dropdown-toggle:after,
+#EmailModal .modal-dialog .attach .dropdown .dropdown-toggle:after {
+  display: none;
+}
+#CRMreminderModal .modal-dialog .attach .dropdown .dropdown-toggle:hover,
+#CRMAddTouchModal .modal-dialog .attach .dropdown .dropdown-toggle:hover,
+#newUserModal .modal-dialog .attach .dropdown .dropdown-toggle:hover,
+#SMSModal .modal-dialog .attach .dropdown .dropdown-toggle:hover,
+#EmailModal .modal-dialog .attach .dropdown .dropdown-toggle:hover {
+  background-color: #7ABCFF;
+  color: #ffffff;
+}
+#CRMreminderModal .modal-dialog .attach .dropdown .dropdown-menu .dropdown-item,
+#CRMAddTouchModal .modal-dialog .attach .dropdown .dropdown-menu .dropdown-item,
+#newUserModal .modal-dialog .attach .dropdown .dropdown-menu .dropdown-item,
+#SMSModal .modal-dialog .attach .dropdown .dropdown-menu .dropdown-item,
+#EmailModal .modal-dialog .attach .dropdown .dropdown-menu .dropdown-item {
+  text-align: right;
+}
+#CRMreminderModal .modal-dialog .text-editor,
+#CRMAddTouchModal .modal-dialog .text-editor,
+#newUserModal .modal-dialog .text-editor,
+#SMSModal .modal-dialog .text-editor,
+#EmailModal .modal-dialog .text-editor {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 250px;
+  background-color: #ffffff;
+}
+#CRMreminderModal .modal-dialog .text-editor .editor-header,
+#CRMAddTouchModal .modal-dialog .text-editor .editor-header,
+#newUserModal .modal-dialog .text-editor .editor-header,
+#SMSModal .modal-dialog .text-editor .editor-header,
+#EmailModal .modal-dialog .text-editor .editor-header {
+  position: absolute;
+  z-index: 1000;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+}
+#CRMreminderModal .modal-dialog .text-editor .editor-header .dropdown .dropdown-toggle,
+#CRMAddTouchModal .modal-dialog .text-editor .editor-header .dropdown .dropdown-toggle,
+#newUserModal .modal-dialog .text-editor .editor-header .dropdown .dropdown-toggle,
+#SMSModal .modal-dialog .text-editor .editor-header .dropdown .dropdown-toggle,
+#EmailModal .modal-dialog .text-editor .editor-header .dropdown .dropdown-toggle {
+  border: none;
+  z-index: 10000;
+}
+#CRMreminderModal .modal-dialog .text-editor .editor-header .dropdown .dropdown-toggle:after,
+#CRMAddTouchModal .modal-dialog .text-editor .editor-header .dropdown .dropdown-toggle:after,
+#newUserModal .modal-dialog .text-editor .editor-header .dropdown .dropdown-toggle:after,
+#SMSModal .modal-dialog .text-editor .editor-header .dropdown .dropdown-toggle:after,
+#EmailModal .modal-dialog .text-editor .editor-header .dropdown .dropdown-toggle:after {
+  display: none;
+}
+#CRMreminderModal .modal-dialog .text-editor .editor-header .dropdown .dropdown-menu,
+#CRMAddTouchModal .modal-dialog .text-editor .editor-header .dropdown .dropdown-menu,
+#newUserModal .modal-dialog .text-editor .editor-header .dropdown .dropdown-menu,
+#SMSModal .modal-dialog .text-editor .editor-header .dropdown .dropdown-menu,
+#EmailModal .modal-dialog .text-editor .editor-header .dropdown .dropdown-menu {
+  top: -30px !important;
+  right: 5px;
+  padding-top: 30px;
+  padding-bottom: 15px;
+  border-radius: 10px;
+  border-top-right-radius: 5px;
+  min-width: 130px;
+}
+#CRMreminderModal .modal-dialog .text-editor .editor-header .dropdown .dropdown-menu .dropdown-item,
+#CRMAddTouchModal .modal-dialog .text-editor .editor-header .dropdown .dropdown-menu .dropdown-item,
+#newUserModal .modal-dialog .text-editor .editor-header .dropdown .dropdown-menu .dropdown-item,
+#SMSModal .modal-dialog .text-editor .editor-header .dropdown .dropdown-menu .dropdown-item,
+#EmailModal .modal-dialog .text-editor .editor-header .dropdown .dropdown-menu .dropdown-item {
+  display: flex;
+  padding: 10px 20px;
+}
+#CRMreminderModal .modal-dialog .text-editor .editor-header .dropdown .dropdown-menu .dropdown-item .link-text,
+#CRMAddTouchModal .modal-dialog .text-editor .editor-header .dropdown .dropdown-menu .dropdown-item .link-text,
+#newUserModal .modal-dialog .text-editor .editor-header .dropdown .dropdown-menu .dropdown-item .link-text,
+#SMSModal .modal-dialog .text-editor .editor-header .dropdown .dropdown-menu .dropdown-item .link-text,
+#EmailModal .modal-dialog .text-editor .editor-header .dropdown .dropdown-menu .dropdown-item .link-text {
+  margin-right: 30px;
+}
+#CRMreminderModal .modal-dialog .text-editor .textarea-edit,
+#CRMAddTouchModal .modal-dialog .text-editor .textarea-edit,
+#newUserModal .modal-dialog .text-editor .textarea-edit,
+#SMSModal .modal-dialog .text-editor .textarea-edit,
+#EmailModal .modal-dialog .text-editor .textarea-edit {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  border: 1px solid #CCCCCC;
+  border-radius: 10px;
+  width: 100%;
+  height: 250px;
+  background-color: #ffffff;
+  padding: 80px 20px 20px 20px;
+}
+#CRMreminderModal .modal-dialog .text-editor .textarea-edit:hover, #CRMreminderModal .modal-dialog .text-editor .textarea-edit:focus,
+#CRMAddTouchModal .modal-dialog .text-editor .textarea-edit:hover,
+#CRMAddTouchModal .modal-dialog .text-editor .textarea-edit:focus,
+#newUserModal .modal-dialog .text-editor .textarea-edit:hover,
+#newUserModal .modal-dialog .text-editor .textarea-edit:focus,
+#SMSModal .modal-dialog .text-editor .textarea-edit:hover,
+#SMSModal .modal-dialog .text-editor .textarea-edit:focus,
+#EmailModal .modal-dialog .text-editor .textarea-edit:hover,
+#EmailModal .modal-dialog .text-editor .textarea-edit:focus {
+  border: 1px solid #CCCCCC;
+  border-radius: 10px;
+  width: 100%;
+  height: 250px;
+  outline: none;
+}
+#CRMreminderModal .modal-dialog .form-control,
+#CRMAddTouchModal .modal-dialog .form-control,
+#newUserModal .modal-dialog .form-control,
+#SMSModal .modal-dialog .form-control,
+#EmailModal .modal-dialog .form-control {
+  height: 45px;
+}
+#CRMreminderModal .modal-dialog .form-control[type=radio],
+#CRMAddTouchModal .modal-dialog .form-control[type=radio],
+#newUserModal .modal-dialog .form-control[type=radio],
+#SMSModal .modal-dialog .form-control[type=radio],
+#EmailModal .modal-dialog .form-control[type=radio] {
+  width: 30px;
+  height: 30px;
+}
+#CRMreminderModal .modal-dialog .btn-add-abstainers,
+#CRMAddTouchModal .modal-dialog .btn-add-abstainers,
+#newUserModal .modal-dialog .btn-add-abstainers,
+#SMSModal .modal-dialog .btn-add-abstainers,
+#EmailModal .modal-dialog .btn-add-abstainers {
+  text-decoration: underline;
+  cursor: pointer;
+}
+#CRMreminderModal .lcs_switch,
+#CRMAddTouchModal .lcs_switch,
+#newUserModal .lcs_switch,
+#SMSModal .lcs_switch,
+#EmailModal .lcs_switch {
+  border-radius: 4px;
+  width: 100px;
+  height: 30px;
+  -webkit-box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.15);
+}
+#CRMreminderModal .lcs_switch.lcs_off,
+#CRMAddTouchModal .lcs_switch.lcs_off,
+#newUserModal .lcs_switch.lcs_off,
+#SMSModal .lcs_switch.lcs_off,
+#EmailModal .lcs_switch.lcs_off {
+  background-color: #7ABCFF;
+}
+#CRMreminderModal .lcs_switch.lcs_off .lcs_cursor,
+#CRMAddTouchModal .lcs_switch.lcs_off .lcs_cursor,
+#newUserModal .lcs_switch.lcs_off .lcs_cursor,
+#SMSModal .lcs_switch.lcs_off .lcs_cursor,
+#EmailModal .lcs_switch.lcs_off .lcs_cursor {
+  left: 0px;
+}
+#CRMreminderModal .lcs_switch.lcs_on,
+#CRMAddTouchModal .lcs_switch.lcs_on,
+#newUserModal .lcs_switch.lcs_on,
+#SMSModal .lcs_switch.lcs_on,
+#EmailModal .lcs_switch.lcs_on {
+  background-color: #7ABCFF;
+}
+#CRMreminderModal .lcs_switch.lcs_on .lcs_cursor,
+#CRMAddTouchModal .lcs_switch.lcs_on .lcs_cursor,
+#newUserModal .lcs_switch.lcs_on .lcs_cursor,
+#SMSModal .lcs_switch.lcs_on .lcs_cursor,
+#EmailModal .lcs_switch.lcs_on .lcs_cursor {
+  left: 50px;
+}
+#CRMreminderModal .lcs_switch .lcs_cursor,
+#CRMAddTouchModal .lcs_switch .lcs_cursor,
+#newUserModal .lcs_switch .lcs_cursor,
+#SMSModal .lcs_switch .lcs_cursor,
+#EmailModal .lcs_switch .lcs_cursor {
+  border-radius: 0px;
+  height: 30px;
+  width: 50px;
+  top: 0px;
+  font-size: 12px;
+  text-align: center;
+  padding: 5px;
+  font-weight: bold;
+}
+#CRMreminderModal .lcs_switch .lcs_label,
+#CRMAddTouchModal .lcs_switch .lcs_label,
+#newUserModal .lcs_switch .lcs_label,
+#SMSModal .lcs_switch .lcs_label,
+#EmailModal .lcs_switch .lcs_label {
+  top: 0px;
+}
+
+.full-modal .modal-dialog {
+  width: 100%;
+}
+.full-modal .modal-dialog .modal-body {
+  text-align: right;
+}
+.full-modal .modal-dialog .modal-body label {
+  min-width: 100px;
+  font-weight: bold;
+  padding: 5px;
+  margin: 0px;
+}
+
+#newProductModal .lcs_switch,
+#providentEducationCompensationModal .lcs_switch,
+#savingPolicyModal .lcs_switch,
+#managedPortfolioModal .lcs_switch,
+#insurancePolicySavingsModal .lcs_switch,
+#pensionFundModal .lcs_switch,
+#insurancePolicyModal .lcs_switch,
+#IRAModal .lcs_switch,
+#alternativeFundModal .lcs_switch,
+#realEstateInvestmentModal .lcs_switch,
+#financialProductRevenueModal .lcs_switch,
+#alternativeProductRevenueModal .lcs_switch,
+#methodsOfPaymentModal .lcs_switch,
+#appointmentOfOptimizersModal .lcs_switch,
+#fundConsolidationModal .lcs_switch,
+#insuranceProductsModal .lcs_switch,
+#changeOfEmployerModal .lcs_switch,
+#powerOfAttorneyModal .lcs_switch,
+#trackChangeModal .lcs_switch,
+#additionalDepositModal .lcs_switch,
+#allowanceModal .lcs_switch,
+#managementFeeModal .lcs_switch,
+#loanAcceptanceModal .lcs_switch,
+#annuityModal .lcs_switch,
+#repaymentOfLoanModal .lcs_switch,
+#providentMobilizationModal .lcs_switch,
+#alternativeMobilityModal .lcs_switch {
+  border-radius: 4px;
+  width: 100px;
+  height: 30px;
+  -webkit-box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.15);
+}
+#newProductModal .lcs_switch.lcs_off,
+#providentEducationCompensationModal .lcs_switch.lcs_off,
+#savingPolicyModal .lcs_switch.lcs_off,
+#managedPortfolioModal .lcs_switch.lcs_off,
+#insurancePolicySavingsModal .lcs_switch.lcs_off,
+#pensionFundModal .lcs_switch.lcs_off,
+#insurancePolicyModal .lcs_switch.lcs_off,
+#IRAModal .lcs_switch.lcs_off,
+#alternativeFundModal .lcs_switch.lcs_off,
+#realEstateInvestmentModal .lcs_switch.lcs_off,
+#financialProductRevenueModal .lcs_switch.lcs_off,
+#alternativeProductRevenueModal .lcs_switch.lcs_off,
+#methodsOfPaymentModal .lcs_switch.lcs_off,
+#appointmentOfOptimizersModal .lcs_switch.lcs_off,
+#fundConsolidationModal .lcs_switch.lcs_off,
+#insuranceProductsModal .lcs_switch.lcs_off,
+#changeOfEmployerModal .lcs_switch.lcs_off,
+#powerOfAttorneyModal .lcs_switch.lcs_off,
+#trackChangeModal .lcs_switch.lcs_off,
+#additionalDepositModal .lcs_switch.lcs_off,
+#allowanceModal .lcs_switch.lcs_off,
+#managementFeeModal .lcs_switch.lcs_off,
+#loanAcceptanceModal .lcs_switch.lcs_off,
+#annuityModal .lcs_switch.lcs_off,
+#repaymentOfLoanModal .lcs_switch.lcs_off,
+#providentMobilizationModal .lcs_switch.lcs_off,
+#alternativeMobilityModal .lcs_switch.lcs_off {
+  background-color: #7ABCFF;
+}
+#newProductModal .lcs_switch.lcs_off .lcs_cursor,
+#providentEducationCompensationModal .lcs_switch.lcs_off .lcs_cursor,
+#savingPolicyModal .lcs_switch.lcs_off .lcs_cursor,
+#managedPortfolioModal .lcs_switch.lcs_off .lcs_cursor,
+#insurancePolicySavingsModal .lcs_switch.lcs_off .lcs_cursor,
+#pensionFundModal .lcs_switch.lcs_off .lcs_cursor,
+#insurancePolicyModal .lcs_switch.lcs_off .lcs_cursor,
+#IRAModal .lcs_switch.lcs_off .lcs_cursor,
+#alternativeFundModal .lcs_switch.lcs_off .lcs_cursor,
+#realEstateInvestmentModal .lcs_switch.lcs_off .lcs_cursor,
+#financialProductRevenueModal .lcs_switch.lcs_off .lcs_cursor,
+#alternativeProductRevenueModal .lcs_switch.lcs_off .lcs_cursor,
+#methodsOfPaymentModal .lcs_switch.lcs_off .lcs_cursor,
+#appointmentOfOptimizersModal .lcs_switch.lcs_off .lcs_cursor,
+#fundConsolidationModal .lcs_switch.lcs_off .lcs_cursor,
+#insuranceProductsModal .lcs_switch.lcs_off .lcs_cursor,
+#changeOfEmployerModal .lcs_switch.lcs_off .lcs_cursor,
+#powerOfAttorneyModal .lcs_switch.lcs_off .lcs_cursor,
+#trackChangeModal .lcs_switch.lcs_off .lcs_cursor,
+#additionalDepositModal .lcs_switch.lcs_off .lcs_cursor,
+#allowanceModal .lcs_switch.lcs_off .lcs_cursor,
+#managementFeeModal .lcs_switch.lcs_off .lcs_cursor,
+#loanAcceptanceModal .lcs_switch.lcs_off .lcs_cursor,
+#annuityModal .lcs_switch.lcs_off .lcs_cursor,
+#repaymentOfLoanModal .lcs_switch.lcs_off .lcs_cursor,
+#providentMobilizationModal .lcs_switch.lcs_off .lcs_cursor,
+#alternativeMobilityModal .lcs_switch.lcs_off .lcs_cursor {
+  left: 0px;
+}
+#newProductModal .lcs_switch.lcs_on,
+#providentEducationCompensationModal .lcs_switch.lcs_on,
+#savingPolicyModal .lcs_switch.lcs_on,
+#managedPortfolioModal .lcs_switch.lcs_on,
+#insurancePolicySavingsModal .lcs_switch.lcs_on,
+#pensionFundModal .lcs_switch.lcs_on,
+#insurancePolicyModal .lcs_switch.lcs_on,
+#IRAModal .lcs_switch.lcs_on,
+#alternativeFundModal .lcs_switch.lcs_on,
+#realEstateInvestmentModal .lcs_switch.lcs_on,
+#financialProductRevenueModal .lcs_switch.lcs_on,
+#alternativeProductRevenueModal .lcs_switch.lcs_on,
+#methodsOfPaymentModal .lcs_switch.lcs_on,
+#appointmentOfOptimizersModal .lcs_switch.lcs_on,
+#fundConsolidationModal .lcs_switch.lcs_on,
+#insuranceProductsModal .lcs_switch.lcs_on,
+#changeOfEmployerModal .lcs_switch.lcs_on,
+#powerOfAttorneyModal .lcs_switch.lcs_on,
+#trackChangeModal .lcs_switch.lcs_on,
+#additionalDepositModal .lcs_switch.lcs_on,
+#allowanceModal .lcs_switch.lcs_on,
+#managementFeeModal .lcs_switch.lcs_on,
+#loanAcceptanceModal .lcs_switch.lcs_on,
+#annuityModal .lcs_switch.lcs_on,
+#repaymentOfLoanModal .lcs_switch.lcs_on,
+#providentMobilizationModal .lcs_switch.lcs_on,
+#alternativeMobilityModal .lcs_switch.lcs_on {
+  background-color: #7ABCFF;
+}
+#newProductModal .lcs_switch.lcs_on .lcs_cursor,
+#providentEducationCompensationModal .lcs_switch.lcs_on .lcs_cursor,
+#savingPolicyModal .lcs_switch.lcs_on .lcs_cursor,
+#managedPortfolioModal .lcs_switch.lcs_on .lcs_cursor,
+#insurancePolicySavingsModal .lcs_switch.lcs_on .lcs_cursor,
+#pensionFundModal .lcs_switch.lcs_on .lcs_cursor,
+#insurancePolicyModal .lcs_switch.lcs_on .lcs_cursor,
+#IRAModal .lcs_switch.lcs_on .lcs_cursor,
+#alternativeFundModal .lcs_switch.lcs_on .lcs_cursor,
+#realEstateInvestmentModal .lcs_switch.lcs_on .lcs_cursor,
+#financialProductRevenueModal .lcs_switch.lcs_on .lcs_cursor,
+#alternativeProductRevenueModal .lcs_switch.lcs_on .lcs_cursor,
+#methodsOfPaymentModal .lcs_switch.lcs_on .lcs_cursor,
+#appointmentOfOptimizersModal .lcs_switch.lcs_on .lcs_cursor,
+#fundConsolidationModal .lcs_switch.lcs_on .lcs_cursor,
+#insuranceProductsModal .lcs_switch.lcs_on .lcs_cursor,
+#changeOfEmployerModal .lcs_switch.lcs_on .lcs_cursor,
+#powerOfAttorneyModal .lcs_switch.lcs_on .lcs_cursor,
+#trackChangeModal .lcs_switch.lcs_on .lcs_cursor,
+#additionalDepositModal .lcs_switch.lcs_on .lcs_cursor,
+#allowanceModal .lcs_switch.lcs_on .lcs_cursor,
+#managementFeeModal .lcs_switch.lcs_on .lcs_cursor,
+#loanAcceptanceModal .lcs_switch.lcs_on .lcs_cursor,
+#annuityModal .lcs_switch.lcs_on .lcs_cursor,
+#repaymentOfLoanModal .lcs_switch.lcs_on .lcs_cursor,
+#providentMobilizationModal .lcs_switch.lcs_on .lcs_cursor,
+#alternativeMobilityModal .lcs_switch.lcs_on .lcs_cursor {
+  left: 50px;
+}
+#newProductModal .lcs_switch .lcs_cursor,
+#providentEducationCompensationModal .lcs_switch .lcs_cursor,
+#savingPolicyModal .lcs_switch .lcs_cursor,
+#managedPortfolioModal .lcs_switch .lcs_cursor,
+#insurancePolicySavingsModal .lcs_switch .lcs_cursor,
+#pensionFundModal .lcs_switch .lcs_cursor,
+#insurancePolicyModal .lcs_switch .lcs_cursor,
+#IRAModal .lcs_switch .lcs_cursor,
+#alternativeFundModal .lcs_switch .lcs_cursor,
+#realEstateInvestmentModal .lcs_switch .lcs_cursor,
+#financialProductRevenueModal .lcs_switch .lcs_cursor,
+#alternativeProductRevenueModal .lcs_switch .lcs_cursor,
+#methodsOfPaymentModal .lcs_switch .lcs_cursor,
+#appointmentOfOptimizersModal .lcs_switch .lcs_cursor,
+#fundConsolidationModal .lcs_switch .lcs_cursor,
+#insuranceProductsModal .lcs_switch .lcs_cursor,
+#changeOfEmployerModal .lcs_switch .lcs_cursor,
+#powerOfAttorneyModal .lcs_switch .lcs_cursor,
+#trackChangeModal .lcs_switch .lcs_cursor,
+#additionalDepositModal .lcs_switch .lcs_cursor,
+#allowanceModal .lcs_switch .lcs_cursor,
+#managementFeeModal .lcs_switch .lcs_cursor,
+#loanAcceptanceModal .lcs_switch .lcs_cursor,
+#annuityModal .lcs_switch .lcs_cursor,
+#repaymentOfLoanModal .lcs_switch .lcs_cursor,
+#providentMobilizationModal .lcs_switch .lcs_cursor,
+#alternativeMobilityModal .lcs_switch .lcs_cursor {
+  border-radius: 0px;
+  height: 30px;
+  width: 50px;
+  top: 0px;
+  font-size: 12px;
+  text-align: center;
+  padding: 5px;
+  font-weight: bold;
+}
+#newProductModal .lcs_switch .lcs_label,
+#providentEducationCompensationModal .lcs_switch .lcs_label,
+#savingPolicyModal .lcs_switch .lcs_label,
+#managedPortfolioModal .lcs_switch .lcs_label,
+#insurancePolicySavingsModal .lcs_switch .lcs_label,
+#pensionFundModal .lcs_switch .lcs_label,
+#insurancePolicyModal .lcs_switch .lcs_label,
+#IRAModal .lcs_switch .lcs_label,
+#alternativeFundModal .lcs_switch .lcs_label,
+#realEstateInvestmentModal .lcs_switch .lcs_label,
+#financialProductRevenueModal .lcs_switch .lcs_label,
+#alternativeProductRevenueModal .lcs_switch .lcs_label,
+#methodsOfPaymentModal .lcs_switch .lcs_label,
+#appointmentOfOptimizersModal .lcs_switch .lcs_label,
+#fundConsolidationModal .lcs_switch .lcs_label,
+#insuranceProductsModal .lcs_switch .lcs_label,
+#changeOfEmployerModal .lcs_switch .lcs_label,
+#powerOfAttorneyModal .lcs_switch .lcs_label,
+#trackChangeModal .lcs_switch .lcs_label,
+#additionalDepositModal .lcs_switch .lcs_label,
+#allowanceModal .lcs_switch .lcs_label,
+#managementFeeModal .lcs_switch .lcs_label,
+#loanAcceptanceModal .lcs_switch .lcs_label,
+#annuityModal .lcs_switch .lcs_label,
+#repaymentOfLoanModal .lcs_switch .lcs_label,
+#providentMobilizationModal .lcs_switch .lcs_label,
+#alternativeMobilityModal .lcs_switch .lcs_label {
+  top: 0px;
+}
+#newProductModal .btn-delete,
+#providentEducationCompensationModal .btn-delete,
+#savingPolicyModal .btn-delete,
+#managedPortfolioModal .btn-delete,
+#insurancePolicySavingsModal .btn-delete,
+#pensionFundModal .btn-delete,
+#insurancePolicyModal .btn-delete,
+#IRAModal .btn-delete,
+#alternativeFundModal .btn-delete,
+#realEstateInvestmentModal .btn-delete,
+#financialProductRevenueModal .btn-delete,
+#alternativeProductRevenueModal .btn-delete,
+#methodsOfPaymentModal .btn-delete,
+#appointmentOfOptimizersModal .btn-delete,
+#fundConsolidationModal .btn-delete,
+#insuranceProductsModal .btn-delete,
+#changeOfEmployerModal .btn-delete,
+#powerOfAttorneyModal .btn-delete,
+#trackChangeModal .btn-delete,
+#additionalDepositModal .btn-delete,
+#allowanceModal .btn-delete,
+#managementFeeModal .btn-delete,
+#loanAcceptanceModal .btn-delete,
+#annuityModal .btn-delete,
+#repaymentOfLoanModal .btn-delete,
+#providentMobilizationModal .btn-delete,
+#alternativeMobilityModal .btn-delete {
+  position: relative;
+  margin-top: 5px !important;
+  width: 30px;
+  height: 30px;
+}
+#newProductModal .gj-datepicker .input-group-append .gj-icon,
+#providentEducationCompensationModal .gj-datepicker .input-group-append .gj-icon,
+#savingPolicyModal .gj-datepicker .input-group-append .gj-icon,
+#managedPortfolioModal .gj-datepicker .input-group-append .gj-icon,
+#insurancePolicySavingsModal .gj-datepicker .input-group-append .gj-icon,
+#pensionFundModal .gj-datepicker .input-group-append .gj-icon,
+#insurancePolicyModal .gj-datepicker .input-group-append .gj-icon,
+#IRAModal .gj-datepicker .input-group-append .gj-icon,
+#alternativeFundModal .gj-datepicker .input-group-append .gj-icon,
+#realEstateInvestmentModal .gj-datepicker .input-group-append .gj-icon,
+#financialProductRevenueModal .gj-datepicker .input-group-append .gj-icon,
+#alternativeProductRevenueModal .gj-datepicker .input-group-append .gj-icon,
+#methodsOfPaymentModal .gj-datepicker .input-group-append .gj-icon,
+#appointmentOfOptimizersModal .gj-datepicker .input-group-append .gj-icon,
+#fundConsolidationModal .gj-datepicker .input-group-append .gj-icon,
+#insuranceProductsModal .gj-datepicker .input-group-append .gj-icon,
+#changeOfEmployerModal .gj-datepicker .input-group-append .gj-icon,
+#powerOfAttorneyModal .gj-datepicker .input-group-append .gj-icon,
+#trackChangeModal .gj-datepicker .input-group-append .gj-icon,
+#additionalDepositModal .gj-datepicker .input-group-append .gj-icon,
+#allowanceModal .gj-datepicker .input-group-append .gj-icon,
+#managementFeeModal .gj-datepicker .input-group-append .gj-icon,
+#loanAcceptanceModal .gj-datepicker .input-group-append .gj-icon,
+#annuityModal .gj-datepicker .input-group-append .gj-icon,
+#repaymentOfLoanModal .gj-datepicker .input-group-append .gj-icon,
+#providentMobilizationModal .gj-datepicker .input-group-append .gj-icon,
+#alternativeMobilityModal .gj-datepicker .input-group-append .gj-icon {
+  top: 10px;
+}
+#newProductModal .radio-label,
+#providentEducationCompensationModal .radio-label,
+#savingPolicyModal .radio-label,
+#managedPortfolioModal .radio-label,
+#insurancePolicySavingsModal .radio-label,
+#pensionFundModal .radio-label,
+#insurancePolicyModal .radio-label,
+#IRAModal .radio-label,
+#alternativeFundModal .radio-label,
+#realEstateInvestmentModal .radio-label,
+#financialProductRevenueModal .radio-label,
+#alternativeProductRevenueModal .radio-label,
+#methodsOfPaymentModal .radio-label,
+#appointmentOfOptimizersModal .radio-label,
+#fundConsolidationModal .radio-label,
+#insuranceProductsModal .radio-label,
+#changeOfEmployerModal .radio-label,
+#powerOfAttorneyModal .radio-label,
+#trackChangeModal .radio-label,
+#additionalDepositModal .radio-label,
+#allowanceModal .radio-label,
+#managementFeeModal .radio-label,
+#loanAcceptanceModal .radio-label,
+#annuityModal .radio-label,
+#repaymentOfLoanModal .radio-label,
+#providentMobilizationModal .radio-label,
+#alternativeMobilityModal .radio-label {
+  padding: 0 10px;
+  font-weight: 600;
+}
+#newProductModal input[type=radio],
+#providentEducationCompensationModal input[type=radio],
+#savingPolicyModal input[type=radio],
+#managedPortfolioModal input[type=radio],
+#insurancePolicySavingsModal input[type=radio],
+#pensionFundModal input[type=radio],
+#insurancePolicyModal input[type=radio],
+#IRAModal input[type=radio],
+#alternativeFundModal input[type=radio],
+#realEstateInvestmentModal input[type=radio],
+#financialProductRevenueModal input[type=radio],
+#alternativeProductRevenueModal input[type=radio],
+#methodsOfPaymentModal input[type=radio],
+#appointmentOfOptimizersModal input[type=radio],
+#fundConsolidationModal input[type=radio],
+#insuranceProductsModal input[type=radio],
+#changeOfEmployerModal input[type=radio],
+#powerOfAttorneyModal input[type=radio],
+#trackChangeModal input[type=radio],
+#additionalDepositModal input[type=radio],
+#allowanceModal input[type=radio],
+#managementFeeModal input[type=radio],
+#loanAcceptanceModal input[type=radio],
+#annuityModal input[type=radio],
+#repaymentOfLoanModal input[type=radio],
+#providentMobilizationModal input[type=radio],
+#alternativeMobilityModal input[type=radio] {
+  width: 25px;
+  height: 25px;
+}
+#newProductModal .modal-tab .nav-tabs,
+#providentEducationCompensationModal .modal-tab .nav-tabs,
+#savingPolicyModal .modal-tab .nav-tabs,
+#managedPortfolioModal .modal-tab .nav-tabs,
+#insurancePolicySavingsModal .modal-tab .nav-tabs,
+#pensionFundModal .modal-tab .nav-tabs,
+#insurancePolicyModal .modal-tab .nav-tabs,
+#IRAModal .modal-tab .nav-tabs,
+#alternativeFundModal .modal-tab .nav-tabs,
+#realEstateInvestmentModal .modal-tab .nav-tabs,
+#financialProductRevenueModal .modal-tab .nav-tabs,
+#alternativeProductRevenueModal .modal-tab .nav-tabs,
+#methodsOfPaymentModal .modal-tab .nav-tabs,
+#appointmentOfOptimizersModal .modal-tab .nav-tabs,
+#fundConsolidationModal .modal-tab .nav-tabs,
+#insuranceProductsModal .modal-tab .nav-tabs,
+#changeOfEmployerModal .modal-tab .nav-tabs,
+#powerOfAttorneyModal .modal-tab .nav-tabs,
+#trackChangeModal .modal-tab .nav-tabs,
+#additionalDepositModal .modal-tab .nav-tabs,
+#allowanceModal .modal-tab .nav-tabs,
+#managementFeeModal .modal-tab .nav-tabs,
+#loanAcceptanceModal .modal-tab .nav-tabs,
+#annuityModal .modal-tab .nav-tabs,
+#repaymentOfLoanModal .modal-tab .nav-tabs,
+#providentMobilizationModal .modal-tab .nav-tabs,
+#alternativeMobilityModal .modal-tab .nav-tabs {
+  border-bottom: solid 17px #7ABBFC;
+  height: 86px;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+@media (min-width: 1600px) and (max-width: 1919px) {
+  #newProductModal .modal-tab .nav-tabs,
+#providentEducationCompensationModal .modal-tab .nav-tabs,
+#savingPolicyModal .modal-tab .nav-tabs,
+#managedPortfolioModal .modal-tab .nav-tabs,
+#insurancePolicySavingsModal .modal-tab .nav-tabs,
+#pensionFundModal .modal-tab .nav-tabs,
+#insurancePolicyModal .modal-tab .nav-tabs,
+#IRAModal .modal-tab .nav-tabs,
+#alternativeFundModal .modal-tab .nav-tabs,
+#realEstateInvestmentModal .modal-tab .nav-tabs,
+#financialProductRevenueModal .modal-tab .nav-tabs,
+#alternativeProductRevenueModal .modal-tab .nav-tabs,
+#methodsOfPaymentModal .modal-tab .nav-tabs,
+#appointmentOfOptimizersModal .modal-tab .nav-tabs,
+#fundConsolidationModal .modal-tab .nav-tabs,
+#insuranceProductsModal .modal-tab .nav-tabs,
+#changeOfEmployerModal .modal-tab .nav-tabs,
+#powerOfAttorneyModal .modal-tab .nav-tabs,
+#trackChangeModal .modal-tab .nav-tabs,
+#additionalDepositModal .modal-tab .nav-tabs,
+#allowanceModal .modal-tab .nav-tabs,
+#managementFeeModal .modal-tab .nav-tabs,
+#loanAcceptanceModal .modal-tab .nav-tabs,
+#annuityModal .modal-tab .nav-tabs,
+#repaymentOfLoanModal .modal-tab .nav-tabs,
+#providentMobilizationModal .modal-tab .nav-tabs,
+#alternativeMobilityModal .modal-tab .nav-tabs {
+    height: 70px;
+  }
+}
+@media (min-width: 1440px) and (max-width: 1599px) {
+  #newProductModal .modal-tab .nav-tabs,
+#providentEducationCompensationModal .modal-tab .nav-tabs,
+#savingPolicyModal .modal-tab .nav-tabs,
+#managedPortfolioModal .modal-tab .nav-tabs,
+#insurancePolicySavingsModal .modal-tab .nav-tabs,
+#pensionFundModal .modal-tab .nav-tabs,
+#insurancePolicyModal .modal-tab .nav-tabs,
+#IRAModal .modal-tab .nav-tabs,
+#alternativeFundModal .modal-tab .nav-tabs,
+#realEstateInvestmentModal .modal-tab .nav-tabs,
+#financialProductRevenueModal .modal-tab .nav-tabs,
+#alternativeProductRevenueModal .modal-tab .nav-tabs,
+#methodsOfPaymentModal .modal-tab .nav-tabs,
+#appointmentOfOptimizersModal .modal-tab .nav-tabs,
+#fundConsolidationModal .modal-tab .nav-tabs,
+#insuranceProductsModal .modal-tab .nav-tabs,
+#changeOfEmployerModal .modal-tab .nav-tabs,
+#powerOfAttorneyModal .modal-tab .nav-tabs,
+#trackChangeModal .modal-tab .nav-tabs,
+#additionalDepositModal .modal-tab .nav-tabs,
+#allowanceModal .modal-tab .nav-tabs,
+#managementFeeModal .modal-tab .nav-tabs,
+#loanAcceptanceModal .modal-tab .nav-tabs,
+#annuityModal .modal-tab .nav-tabs,
+#repaymentOfLoanModal .modal-tab .nav-tabs,
+#providentMobilizationModal .modal-tab .nav-tabs,
+#alternativeMobilityModal .modal-tab .nav-tabs {
+    height: 65px;
+  }
+}
+@media (min-width: 1360px) and (max-width: 1439px) {
+  #newProductModal .modal-tab .nav-tabs,
+#providentEducationCompensationModal .modal-tab .nav-tabs,
+#savingPolicyModal .modal-tab .nav-tabs,
+#managedPortfolioModal .modal-tab .nav-tabs,
+#insurancePolicySavingsModal .modal-tab .nav-tabs,
+#pensionFundModal .modal-tab .nav-tabs,
+#insurancePolicyModal .modal-tab .nav-tabs,
+#IRAModal .modal-tab .nav-tabs,
+#alternativeFundModal .modal-tab .nav-tabs,
+#realEstateInvestmentModal .modal-tab .nav-tabs,
+#financialProductRevenueModal .modal-tab .nav-tabs,
+#alternativeProductRevenueModal .modal-tab .nav-tabs,
+#methodsOfPaymentModal .modal-tab .nav-tabs,
+#appointmentOfOptimizersModal .modal-tab .nav-tabs,
+#fundConsolidationModal .modal-tab .nav-tabs,
+#insuranceProductsModal .modal-tab .nav-tabs,
+#changeOfEmployerModal .modal-tab .nav-tabs,
+#powerOfAttorneyModal .modal-tab .nav-tabs,
+#trackChangeModal .modal-tab .nav-tabs,
+#additionalDepositModal .modal-tab .nav-tabs,
+#allowanceModal .modal-tab .nav-tabs,
+#managementFeeModal .modal-tab .nav-tabs,
+#loanAcceptanceModal .modal-tab .nav-tabs,
+#annuityModal .modal-tab .nav-tabs,
+#repaymentOfLoanModal .modal-tab .nav-tabs,
+#providentMobilizationModal .modal-tab .nav-tabs,
+#alternativeMobilityModal .modal-tab .nav-tabs {
+    height: 60px;
+  }
+}
+@media (max-width: 1359px) {
+  #newProductModal .modal-tab .nav-tabs,
+#providentEducationCompensationModal .modal-tab .nav-tabs,
+#savingPolicyModal .modal-tab .nav-tabs,
+#managedPortfolioModal .modal-tab .nav-tabs,
+#insurancePolicySavingsModal .modal-tab .nav-tabs,
+#pensionFundModal .modal-tab .nav-tabs,
+#insurancePolicyModal .modal-tab .nav-tabs,
+#IRAModal .modal-tab .nav-tabs,
+#alternativeFundModal .modal-tab .nav-tabs,
+#realEstateInvestmentModal .modal-tab .nav-tabs,
+#financialProductRevenueModal .modal-tab .nav-tabs,
+#alternativeProductRevenueModal .modal-tab .nav-tabs,
+#methodsOfPaymentModal .modal-tab .nav-tabs,
+#appointmentOfOptimizersModal .modal-tab .nav-tabs,
+#fundConsolidationModal .modal-tab .nav-tabs,
+#insuranceProductsModal .modal-tab .nav-tabs,
+#changeOfEmployerModal .modal-tab .nav-tabs,
+#powerOfAttorneyModal .modal-tab .nav-tabs,
+#trackChangeModal .modal-tab .nav-tabs,
+#additionalDepositModal .modal-tab .nav-tabs,
+#allowanceModal .modal-tab .nav-tabs,
+#managementFeeModal .modal-tab .nav-tabs,
+#loanAcceptanceModal .modal-tab .nav-tabs,
+#annuityModal .modal-tab .nav-tabs,
+#repaymentOfLoanModal .modal-tab .nav-tabs,
+#providentMobilizationModal .modal-tab .nav-tabs,
+#alternativeMobilityModal .modal-tab .nav-tabs {
+    height: 60px;
+  }
+}
+#newProductModal .modal-tab .nav-tabs .nav-link,
+#providentEducationCompensationModal .modal-tab .nav-tabs .nav-link,
+#savingPolicyModal .modal-tab .nav-tabs .nav-link,
+#managedPortfolioModal .modal-tab .nav-tabs .nav-link,
+#insurancePolicySavingsModal .modal-tab .nav-tabs .nav-link,
+#pensionFundModal .modal-tab .nav-tabs .nav-link,
+#insurancePolicyModal .modal-tab .nav-tabs .nav-link,
+#IRAModal .modal-tab .nav-tabs .nav-link,
+#alternativeFundModal .modal-tab .nav-tabs .nav-link,
+#realEstateInvestmentModal .modal-tab .nav-tabs .nav-link,
+#financialProductRevenueModal .modal-tab .nav-tabs .nav-link,
+#alternativeProductRevenueModal .modal-tab .nav-tabs .nav-link,
+#methodsOfPaymentModal .modal-tab .nav-tabs .nav-link,
+#appointmentOfOptimizersModal .modal-tab .nav-tabs .nav-link,
+#fundConsolidationModal .modal-tab .nav-tabs .nav-link,
+#insuranceProductsModal .modal-tab .nav-tabs .nav-link,
+#changeOfEmployerModal .modal-tab .nav-tabs .nav-link,
+#powerOfAttorneyModal .modal-tab .nav-tabs .nav-link,
+#trackChangeModal .modal-tab .nav-tabs .nav-link,
+#additionalDepositModal .modal-tab .nav-tabs .nav-link,
+#allowanceModal .modal-tab .nav-tabs .nav-link,
+#managementFeeModal .modal-tab .nav-tabs .nav-link,
+#loanAcceptanceModal .modal-tab .nav-tabs .nav-link,
+#annuityModal .modal-tab .nav-tabs .nav-link,
+#repaymentOfLoanModal .modal-tab .nav-tabs .nav-link,
+#providentMobilizationModal .modal-tab .nav-tabs .nav-link,
+#alternativeMobilityModal .modal-tab .nav-tabs .nav-link {
+  color: #485272;
+  font-size: 20px;
+  padding: 18px;
+}
+@media (min-width: 1600px) and (max-width: 1919px) {
+  #newProductModal .modal-tab .nav-tabs .nav-link,
+#providentEducationCompensationModal .modal-tab .nav-tabs .nav-link,
+#savingPolicyModal .modal-tab .nav-tabs .nav-link,
+#managedPortfolioModal .modal-tab .nav-tabs .nav-link,
+#insurancePolicySavingsModal .modal-tab .nav-tabs .nav-link,
+#pensionFundModal .modal-tab .nav-tabs .nav-link,
+#insurancePolicyModal .modal-tab .nav-tabs .nav-link,
+#IRAModal .modal-tab .nav-tabs .nav-link,
+#alternativeFundModal .modal-tab .nav-tabs .nav-link,
+#realEstateInvestmentModal .modal-tab .nav-tabs .nav-link,
+#financialProductRevenueModal .modal-tab .nav-tabs .nav-link,
+#alternativeProductRevenueModal .modal-tab .nav-tabs .nav-link,
+#methodsOfPaymentModal .modal-tab .nav-tabs .nav-link,
+#appointmentOfOptimizersModal .modal-tab .nav-tabs .nav-link,
+#fundConsolidationModal .modal-tab .nav-tabs .nav-link,
+#insuranceProductsModal .modal-tab .nav-tabs .nav-link,
+#changeOfEmployerModal .modal-tab .nav-tabs .nav-link,
+#powerOfAttorneyModal .modal-tab .nav-tabs .nav-link,
+#trackChangeModal .modal-tab .nav-tabs .nav-link,
+#additionalDepositModal .modal-tab .nav-tabs .nav-link,
+#allowanceModal .modal-tab .nav-tabs .nav-link,
+#managementFeeModal .modal-tab .nav-tabs .nav-link,
+#loanAcceptanceModal .modal-tab .nav-tabs .nav-link,
+#annuityModal .modal-tab .nav-tabs .nav-link,
+#repaymentOfLoanModal .modal-tab .nav-tabs .nav-link,
+#providentMobilizationModal .modal-tab .nav-tabs .nav-link,
+#alternativeMobilityModal .modal-tab .nav-tabs .nav-link {
+    font-size: 16px;
+    padding: 10px 15px;
+  }
+}
+@media (min-width: 1440px) and (max-width: 1599px) {
+  #newProductModal .modal-tab .nav-tabs .nav-link,
+#providentEducationCompensationModal .modal-tab .nav-tabs .nav-link,
+#savingPolicyModal .modal-tab .nav-tabs .nav-link,
+#managedPortfolioModal .modal-tab .nav-tabs .nav-link,
+#insurancePolicySavingsModal .modal-tab .nav-tabs .nav-link,
+#pensionFundModal .modal-tab .nav-tabs .nav-link,
+#insurancePolicyModal .modal-tab .nav-tabs .nav-link,
+#IRAModal .modal-tab .nav-tabs .nav-link,
+#alternativeFundModal .modal-tab .nav-tabs .nav-link,
+#realEstateInvestmentModal .modal-tab .nav-tabs .nav-link,
+#financialProductRevenueModal .modal-tab .nav-tabs .nav-link,
+#alternativeProductRevenueModal .modal-tab .nav-tabs .nav-link,
+#methodsOfPaymentModal .modal-tab .nav-tabs .nav-link,
+#appointmentOfOptimizersModal .modal-tab .nav-tabs .nav-link,
+#fundConsolidationModal .modal-tab .nav-tabs .nav-link,
+#insuranceProductsModal .modal-tab .nav-tabs .nav-link,
+#changeOfEmployerModal .modal-tab .nav-tabs .nav-link,
+#powerOfAttorneyModal .modal-tab .nav-tabs .nav-link,
+#trackChangeModal .modal-tab .nav-tabs .nav-link,
+#additionalDepositModal .modal-tab .nav-tabs .nav-link,
+#allowanceModal .modal-tab .nav-tabs .nav-link,
+#managementFeeModal .modal-tab .nav-tabs .nav-link,
+#loanAcceptanceModal .modal-tab .nav-tabs .nav-link,
+#annuityModal .modal-tab .nav-tabs .nav-link,
+#repaymentOfLoanModal .modal-tab .nav-tabs .nav-link,
+#providentMobilizationModal .modal-tab .nav-tabs .nav-link,
+#alternativeMobilityModal .modal-tab .nav-tabs .nav-link {
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+}
+@media (min-width: 1360px) and (max-width: 1439px) {
+  #newProductModal .modal-tab .nav-tabs .nav-link,
+#providentEducationCompensationModal .modal-tab .nav-tabs .nav-link,
+#savingPolicyModal .modal-tab .nav-tabs .nav-link,
+#managedPortfolioModal .modal-tab .nav-tabs .nav-link,
+#insurancePolicySavingsModal .modal-tab .nav-tabs .nav-link,
+#pensionFundModal .modal-tab .nav-tabs .nav-link,
+#insurancePolicyModal .modal-tab .nav-tabs .nav-link,
+#IRAModal .modal-tab .nav-tabs .nav-link,
+#alternativeFundModal .modal-tab .nav-tabs .nav-link,
+#realEstateInvestmentModal .modal-tab .nav-tabs .nav-link,
+#financialProductRevenueModal .modal-tab .nav-tabs .nav-link,
+#alternativeProductRevenueModal .modal-tab .nav-tabs .nav-link,
+#methodsOfPaymentModal .modal-tab .nav-tabs .nav-link,
+#appointmentOfOptimizersModal .modal-tab .nav-tabs .nav-link,
+#fundConsolidationModal .modal-tab .nav-tabs .nav-link,
+#insuranceProductsModal .modal-tab .nav-tabs .nav-link,
+#changeOfEmployerModal .modal-tab .nav-tabs .nav-link,
+#powerOfAttorneyModal .modal-tab .nav-tabs .nav-link,
+#trackChangeModal .modal-tab .nav-tabs .nav-link,
+#additionalDepositModal .modal-tab .nav-tabs .nav-link,
+#allowanceModal .modal-tab .nav-tabs .nav-link,
+#managementFeeModal .modal-tab .nav-tabs .nav-link,
+#loanAcceptanceModal .modal-tab .nav-tabs .nav-link,
+#annuityModal .modal-tab .nav-tabs .nav-link,
+#repaymentOfLoanModal .modal-tab .nav-tabs .nav-link,
+#providentMobilizationModal .modal-tab .nav-tabs .nav-link,
+#alternativeMobilityModal .modal-tab .nav-tabs .nav-link {
+    font-size: 14px;
+    padding: 8px 15px;
+  }
+}
+@media (max-width: 1359px) {
+  #newProductModal .modal-tab .nav-tabs .nav-link,
+#providentEducationCompensationModal .modal-tab .nav-tabs .nav-link,
+#savingPolicyModal .modal-tab .nav-tabs .nav-link,
+#managedPortfolioModal .modal-tab .nav-tabs .nav-link,
+#insurancePolicySavingsModal .modal-tab .nav-tabs .nav-link,
+#pensionFundModal .modal-tab .nav-tabs .nav-link,
+#insurancePolicyModal .modal-tab .nav-tabs .nav-link,
+#IRAModal .modal-tab .nav-tabs .nav-link,
+#alternativeFundModal .modal-tab .nav-tabs .nav-link,
+#realEstateInvestmentModal .modal-tab .nav-tabs .nav-link,
+#financialProductRevenueModal .modal-tab .nav-tabs .nav-link,
+#alternativeProductRevenueModal .modal-tab .nav-tabs .nav-link,
+#methodsOfPaymentModal .modal-tab .nav-tabs .nav-link,
+#appointmentOfOptimizersModal .modal-tab .nav-tabs .nav-link,
+#fundConsolidationModal .modal-tab .nav-tabs .nav-link,
+#insuranceProductsModal .modal-tab .nav-tabs .nav-link,
+#changeOfEmployerModal .modal-tab .nav-tabs .nav-link,
+#powerOfAttorneyModal .modal-tab .nav-tabs .nav-link,
+#trackChangeModal .modal-tab .nav-tabs .nav-link,
+#additionalDepositModal .modal-tab .nav-tabs .nav-link,
+#allowanceModal .modal-tab .nav-tabs .nav-link,
+#managementFeeModal .modal-tab .nav-tabs .nav-link,
+#loanAcceptanceModal .modal-tab .nav-tabs .nav-link,
+#annuityModal .modal-tab .nav-tabs .nav-link,
+#repaymentOfLoanModal .modal-tab .nav-tabs .nav-link,
+#providentMobilizationModal .modal-tab .nav-tabs .nav-link,
+#alternativeMobilityModal .modal-tab .nav-tabs .nav-link {
+    font-size: 12px;
+    padding: 9px 15px;
+  }
+}
+#newProductModal .modal-tab .nav-tabs .nav-link.active,
+#providentEducationCompensationModal .modal-tab .nav-tabs .nav-link.active,
+#savingPolicyModal .modal-tab .nav-tabs .nav-link.active,
+#managedPortfolioModal .modal-tab .nav-tabs .nav-link.active,
+#insurancePolicySavingsModal .modal-tab .nav-tabs .nav-link.active,
+#pensionFundModal .modal-tab .nav-tabs .nav-link.active,
+#insurancePolicyModal .modal-tab .nav-tabs .nav-link.active,
+#IRAModal .modal-tab .nav-tabs .nav-link.active,
+#alternativeFundModal .modal-tab .nav-tabs .nav-link.active,
+#realEstateInvestmentModal .modal-tab .nav-tabs .nav-link.active,
+#financialProductRevenueModal .modal-tab .nav-tabs .nav-link.active,
+#alternativeProductRevenueModal .modal-tab .nav-tabs .nav-link.active,
+#methodsOfPaymentModal .modal-tab .nav-tabs .nav-link.active,
+#appointmentOfOptimizersModal .modal-tab .nav-tabs .nav-link.active,
+#fundConsolidationModal .modal-tab .nav-tabs .nav-link.active,
+#insuranceProductsModal .modal-tab .nav-tabs .nav-link.active,
+#changeOfEmployerModal .modal-tab .nav-tabs .nav-link.active,
+#powerOfAttorneyModal .modal-tab .nav-tabs .nav-link.active,
+#trackChangeModal .modal-tab .nav-tabs .nav-link.active,
+#additionalDepositModal .modal-tab .nav-tabs .nav-link.active,
+#allowanceModal .modal-tab .nav-tabs .nav-link.active,
+#managementFeeModal .modal-tab .nav-tabs .nav-link.active,
+#loanAcceptanceModal .modal-tab .nav-tabs .nav-link.active,
+#annuityModal .modal-tab .nav-tabs .nav-link.active,
+#repaymentOfLoanModal .modal-tab .nav-tabs .nav-link.active,
+#providentMobilizationModal .modal-tab .nav-tabs .nav-link.active,
+#alternativeMobilityModal .modal-tab .nav-tabs .nav-link.active {
+  background-color: #7ABBFC;
+  border: 0;
+  color: #FFFFFF;
+  font-weight: bold;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+#newProductModal .modal-tab .nav-tabs .nav-link:hover,
+#providentEducationCompensationModal .modal-tab .nav-tabs .nav-link:hover,
+#savingPolicyModal .modal-tab .nav-tabs .nav-link:hover,
+#managedPortfolioModal .modal-tab .nav-tabs .nav-link:hover,
+#insurancePolicySavingsModal .modal-tab .nav-tabs .nav-link:hover,
+#pensionFundModal .modal-tab .nav-tabs .nav-link:hover,
+#insurancePolicyModal .modal-tab .nav-tabs .nav-link:hover,
+#IRAModal .modal-tab .nav-tabs .nav-link:hover,
+#alternativeFundModal .modal-tab .nav-tabs .nav-link:hover,
+#realEstateInvestmentModal .modal-tab .nav-tabs .nav-link:hover,
+#financialProductRevenueModal .modal-tab .nav-tabs .nav-link:hover,
+#alternativeProductRevenueModal .modal-tab .nav-tabs .nav-link:hover,
+#methodsOfPaymentModal .modal-tab .nav-tabs .nav-link:hover,
+#appointmentOfOptimizersModal .modal-tab .nav-tabs .nav-link:hover,
+#fundConsolidationModal .modal-tab .nav-tabs .nav-link:hover,
+#insuranceProductsModal .modal-tab .nav-tabs .nav-link:hover,
+#changeOfEmployerModal .modal-tab .nav-tabs .nav-link:hover,
+#powerOfAttorneyModal .modal-tab .nav-tabs .nav-link:hover,
+#trackChangeModal .modal-tab .nav-tabs .nav-link:hover,
+#additionalDepositModal .modal-tab .nav-tabs .nav-link:hover,
+#allowanceModal .modal-tab .nav-tabs .nav-link:hover,
+#managementFeeModal .modal-tab .nav-tabs .nav-link:hover,
+#loanAcceptanceModal .modal-tab .nav-tabs .nav-link:hover,
+#annuityModal .modal-tab .nav-tabs .nav-link:hover,
+#repaymentOfLoanModal .modal-tab .nav-tabs .nav-link:hover,
+#providentMobilizationModal .modal-tab .nav-tabs .nav-link:hover,
+#alternativeMobilityModal .modal-tab .nav-tabs .nav-link:hover {
+  border: 0;
+}
+#newProductModal .modal-tab .tab-content .tab-pane,
+#providentEducationCompensationModal .modal-tab .tab-content .tab-pane,
+#savingPolicyModal .modal-tab .tab-content .tab-pane,
+#managedPortfolioModal .modal-tab .tab-content .tab-pane,
+#insurancePolicySavingsModal .modal-tab .tab-content .tab-pane,
+#pensionFundModal .modal-tab .tab-content .tab-pane,
+#insurancePolicyModal .modal-tab .tab-content .tab-pane,
+#IRAModal .modal-tab .tab-content .tab-pane,
+#alternativeFundModal .modal-tab .tab-content .tab-pane,
+#realEstateInvestmentModal .modal-tab .tab-content .tab-pane,
+#financialProductRevenueModal .modal-tab .tab-content .tab-pane,
+#alternativeProductRevenueModal .modal-tab .tab-content .tab-pane,
+#methodsOfPaymentModal .modal-tab .tab-content .tab-pane,
+#appointmentOfOptimizersModal .modal-tab .tab-content .tab-pane,
+#fundConsolidationModal .modal-tab .tab-content .tab-pane,
+#insuranceProductsModal .modal-tab .tab-content .tab-pane,
+#changeOfEmployerModal .modal-tab .tab-content .tab-pane,
+#powerOfAttorneyModal .modal-tab .tab-content .tab-pane,
+#trackChangeModal .modal-tab .tab-content .tab-pane,
+#additionalDepositModal .modal-tab .tab-content .tab-pane,
+#allowanceModal .modal-tab .tab-content .tab-pane,
+#managementFeeModal .modal-tab .tab-content .tab-pane,
+#loanAcceptanceModal .modal-tab .tab-content .tab-pane,
+#annuityModal .modal-tab .tab-content .tab-pane,
+#repaymentOfLoanModal .modal-tab .tab-content .tab-pane,
+#providentMobilizationModal .modal-tab .tab-content .tab-pane,
+#alternativeMobilityModal .modal-tab .tab-content .tab-pane {
+  padding: 25px;
+  overflow-x: auto;
+  padding: 0;
+}
+#newProductModal .btn-add-route-item,
+#providentEducationCompensationModal .btn-add-route-item,
+#savingPolicyModal .btn-add-route-item,
+#managedPortfolioModal .btn-add-route-item,
+#insurancePolicySavingsModal .btn-add-route-item,
+#pensionFundModal .btn-add-route-item,
+#insurancePolicyModal .btn-add-route-item,
+#IRAModal .btn-add-route-item,
+#alternativeFundModal .btn-add-route-item,
+#realEstateInvestmentModal .btn-add-route-item,
+#financialProductRevenueModal .btn-add-route-item,
+#alternativeProductRevenueModal .btn-add-route-item,
+#methodsOfPaymentModal .btn-add-route-item,
+#appointmentOfOptimizersModal .btn-add-route-item,
+#fundConsolidationModal .btn-add-route-item,
+#insuranceProductsModal .btn-add-route-item,
+#changeOfEmployerModal .btn-add-route-item,
+#powerOfAttorneyModal .btn-add-route-item,
+#trackChangeModal .btn-add-route-item,
+#additionalDepositModal .btn-add-route-item,
+#allowanceModal .btn-add-route-item,
+#managementFeeModal .btn-add-route-item,
+#loanAcceptanceModal .btn-add-route-item,
+#annuityModal .btn-add-route-item,
+#repaymentOfLoanModal .btn-add-route-item,
+#providentMobilizationModal .btn-add-route-item,
+#alternativeMobilityModal .btn-add-route-item {
+  margin-top: 10px;
+  margin-right: 40px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.data-page h5 {
+  font-weight: bold;
+}
+.data-page h5.text-primary {
+  color: #1E87F0 !important;
+}
+.data-page label {
+  font-weight: bold;
+}
+.data-page .form-control-wrapper {
+  max-width: 240px;
+  position: relative;
+}
+.data-page .form-control {
+  height: 45px;
+  border-radius: 8px !important;
+}
+.data-page .lcs_switch {
+  border-radius: 4px;
+  width: 100px;
+  height: 30px;
+  -webkit-box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.15) !important;
+  box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.15) !important;
+}
+.data-page .lcs_switch.lcs_off {
+  background-color: #7ABCFF;
+}
+.data-page .lcs_switch.lcs_off .lcs_cursor {
+  left: 0px;
+}
+.data-page .lcs_switch.lcs_on {
+  background-color: #7ABCFF;
+}
+.data-page .lcs_switch.lcs_on .lcs_cursor {
+  left: 50px;
+}
+.data-page .lcs_switch .lcs_cursor {
+  border-radius: 0px;
+  height: 30px;
+  width: 50px;
+  top: 0px;
+  font-size: 12px;
+  text-align: center;
+  padding: 5px;
+  font-weight: bold;
+}
+.data-page .lcs_switch .lcs_label {
+  top: 0px;
+}
+.data-page .timestamp {
+  font-weight: bold;
+  padding: 5px;
+}
+.data-page .cs-alert {
+  font-weight: bold;
+  padding: 5px;
+}
+.data-page .cs-alert.alert-danger {
+  color: #DE0101;
+  background-color: transparent;
+}
+.data-page .card-border-top {
+  border-top: solid 16px #1E87F0;
+}
+.data-page .uploader-wrapper {
+  position: relative;
+  display: block;
+  text-align: center;
+  border: solid 1px #BFC5D2;
+  padding: 20px;
+}
+.data-page .uploader-wrapper .uploader-icon {
+  width: 100px;
+  margin-top: 20px;
+}
+.data-page table.datatable td {
+  padding: 10px 15px;
+}
+.data-page table.datatable.lg-table .bg-dark th {
+  padding-left: 2px !important;
+  padding-right: 2px !important;
+  font-size: 14px !important;
+}
+.data-page table.datatable tr:last-child span, .data-page table.datatable td:last-child span {
+  margin-left: 0px;
+}
+.data-page table thead {
+  background-color: #7ABCFF;
+}
+.data-page table thead tr.bg-dark {
+  background-color: #78849E !important;
+  border: solid 1px #707070;
+  -webkit-box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.16);
+}
+.data-page table thead tr.bg-dark th {
+  padding: 15px;
+}
+.data-page table thead tr.bg-dark .action-filter {
+  position: relative;
+  display: block;
+  width: 35px;
+  height: 35px;
+  right: 35px;
+}
+.data-page table thead tr.bg-dark .action-filter .cs-icon {
+  top: 8px;
+  right: 8px;
+}
+.data-page table thead tr.bg-dark .gj-datepicker .input-group-append .gj-icon {
+  top: 5px;
+}
+.data-page table thead tr th {
+  position: relative;
+  color: #ffffff;
+}
+.data-page table thead tr th:first-child {
+  max-width: 90px;
+}
+.data-page table thead tr th:first-child .cs-checkbox-container {
+  margin-top: 0;
+  position: relative;
+  top: 5px;
+}
+.data-page table thead tr th.th-date {
+  max-width: 90px;
+}
+.data-page table thead tr th .cs-icon {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+.data-page table thead tr th .cs-btn-icon {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  opacity: 1;
+}
+.data-page table thead tr th a {
+  color: #485272;
+}
+.data-page table thead tr th a:hover {
+  color: #001553;
+}
+.data-page table tbody tr td {
+  position: relative;
+}
+.data-page table tbody tr td .cs-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.data-page table tbody tr td:first-child .action-control {
+  position: relative;
+  display: block;
+  width: 35px;
+  height: 35px;
+  padding: 10px 15px;
+  border: none !important;
+}
+.data-page table tbody tr td:first-child .action-control.shown .ic-collapse-pm {
+  background-image: url(../img/icons/ic_minus_blue.png) !important;
+}
+.data-page table tbody tr td:first-child .action-control .cs-icon {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+}
+.data-page table tbody tr td:first-child .action-control .cs-icon.ic-collapse-pm {
+  background-image: url(../img/icons/ic_plus_blue.png);
+}
+.data-page table tbody tr td:first-child .action-control .cs-checkbox-container {
+  position: relative;
+  top: -2px;
+  left: 7px;
+  margin-top: 0px;
+}
+.data-page table tbody tr td:first-child .action-control .bubble {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: -3px;
+  right: 0px;
+  border-radius: 20px;
+  line-height: 18px;
+  font-size: 14px;
+  border: solid 1px #F4F7F8;
+  text-align: center;
+}
+.data-page table tbody tr td:first-child .action-control .bubble.bubble-gray {
+  background-color: #78849E;
+  color: #ffffff;
+}
+.data-page table tbody tr td:first-child .btn-remove {
+  position: relative;
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-left: solid 1px #BFC5D2;
+}
+.data-page table tbody tr td:first-child .btn-remove .cs-icon {
+  position: relative;
+  top: 10px;
+  right: 3px;
+}
+.data-page table tbody tr td:first-child .border-left {
+  border-left: solid 1px #78849E !important;
+}
+.data-page table tbody tr td:first-child .border-right {
+  border-right: solid 1px #78849E !important;
+}
+.data-page table tbody tr td:first-child .td-text {
+  height: 25px;
+  padding: 0 20px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+.data-page table tbody tr td:first-child .dropleft {
+  padding: 4px 8px;
+}
+.data-page table tbody tr td:first-child .dropleft .dropdown-toggle {
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+}
+.data-page table tbody tr td:first-child .dropleft .dropdown-toggle:before, .data-page table tbody tr td:first-child .dropleft .dropdown-toggle:after {
+  display: none;
+}
+.data-page table tbody tr td:first-child .dropleft .dropdown-toggle:hover {
+  background-color: #78849E;
+  border: solid 1px #707070;
+}
+.data-page table tbody tr td:first-child .dropleft .dropdown-toggle:hover .ic-pencil-blue {
+  background-image: url(../img/icons/ic_pencil_white.png);
+}
+.data-page table tbody tr td:first-child .dropleft .dropdown-toggle .cs-icon {
+  top: 12px;
+}
+.data-page table tbody tr td:first-child .dropleft .dropdown-menu {
+  padding: 0px;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 350px;
+}
+.data-page table tbody tr td:first-child .dropleft .dropdown-menu.h-auto {
+  height: auto !important;
+}
+.data-page table tbody tr td:first-child .dropleft .dropdown-menu .dropdown-ul {
+  width: 150px;
+  height: 330px;
+  list-style: none;
+  padding: 10px 0px;
+}
+.data-page table tbody tr td:first-child .dropleft .dropdown-menu .dropdown-ul .dropdown-li {
+  position: relative;
+  padding: 5px 40px 5px 10px;
+  text-align: right;
+  color: #7ABBFC;
+  font-weight: bold;
+}
+.data-page table tbody tr td:first-child .dropleft .dropdown-menu .dropdown-ul .dropdown-li:hover {
+  background-color: #BFC5D2;
+  color: #ffffff;
+  cursor: pointer;
+}
+.data-page table tbody tr td:first-child .dropleft .dropdown-menu .dropdown-ul .dropdown-li.open .ic-collapse-pm {
+  background-image: url(../img/icons/ic_minus_blue.png) !important;
+}
+.data-page table tbody tr td:first-child .dropleft .dropdown-menu .dropdown-ul .dropdown-li .cs-icon {
+  top: 10px;
+}
+.data-page table tbody tr td:first-child .dropleft .dropdown-menu .dropdown-ul .dropdown-li .cs-icon.ic-collapse-pm {
+  background-image: url(../img/icons/ic_plus_blue.png);
+}
+.data-page table tbody tr td:first-child .dropleft .dropdown-menu .dropdown-left-menu {
+  width: 200px;
+  border-right: solid 1px #D7DDE9;
+  display: none;
+}
+.data-page table tbody tr td:first-child .dropleft .dropdown-menu .dropdown-left-menu.open {
+  display: block;
+}
+.data-page table tbody tr td:first-child .dropleft .dropdown-menu .dropdown-left-menu .search-wrapper .form-control {
+  border-radius: 0px;
+  border-top-left-radius: 10px;
+}
+.data-page table tbody tr td:first-child .dropleft .dropdown-menu .dropdown-left-menu .dropdown-left-menu-ul {
+  list-style: none;
+  padding: 0px;
+  height: 300px;
+  overflow: auto;
+}
+.data-page table tbody tr td:first-child .dropleft .dropdown-menu .dropdown-left-menu .dropdown-left-menu-ul .dropdown-li {
+  position: relative;
+  display: flex;
+  padding: 5px 10px;
+  font-size: 12px;
+}
+.data-page table tbody tr td:first-child .dropleft .dropdown-menu .dropdown-left-menu .dropdown-left-menu-ul .dropdown-li:hover {
+  background-color: #BFC5D2;
+  color: #ffffff;
+  cursor: pointer;
+}
+.data-page table tbody tr td:first-child .dropleft .dropdown-col-2 {
+  width: 350px;
+  padding: 15px 0px;
+}
+.data-page table tbody tr td:first-child .dropleft .dropdown-col-2 .dropdown-ul {
+  border-left: solid 1px #D7DDE9;
+  padding: 0px;
+  margin: 0px;
+  height: auto !important;
+}
+.data-page table tbody tr td:first-child .dropleft .dropdown-col-2 .dropdown-ul:last-child {
+  border-left: none;
+}
+.data-page table tbody tr td:first-child .dropleft .dropdown-col-2 .dropdown-ul .dropdown-li {
+  font-size: 14px;
+  padding: 5px 15px;
+}
+.data-page table .gj-datepicker .input-group-append {
+  display: block;
+}
+.data-page table .gj-datepicker .input-group-append .gj-icon {
+  top: 10px;
+}
+.data-page table .badge {
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: normal;
+  height: 38px;
+  width: 80px;
+  border: solid 2px #E9E9E9;
+  font-size: 12px;
+}
+.data-page table .badge.badge-red {
+  background-color: #DE0101;
+  color: #ffffff;
+}
+.data-page table .badge.badge-blue {
+  background-color: #7ABCFF;
+  color: #ffffff;
+}
+.data-page table .badge.badge-green {
+  background-color: #2CA01C;
+  color: #ffffff;
+}
+.data-page table .badge.badge-yellow {
+  background-color: #ECC528;
+  color: #ffffff;
+}
+.data-page table .badge.badge-white {
+  background-color: #F9F9F9;
+  color: #515151;
+}
+.data-page table .cs-checkbox-container {
+  height: 20px;
+  line-height: 20px;
+}
+.data-page table .cs-checkbox-container [type=checkbox] {
+  width: 20px;
+  height: 20px;
+}
+.data-page table .cs-checkbox-container .checkmark {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+}
+.data-page table .cs-checkbox-container .checkmark:after {
+  right: 4px;
+  top: 1px;
+  width: 8px;
+  height: 12px;
+}
+.data-page table td, .data-page table th {
+  min-width: 90px;
+  width: max-content;
+}
+.data-page table td:first-child, .data-page table th:first-child {
+  min-width: 50px;
+}
+.data-page table .form-control {
+  min-width: 90px;
+}
+.data-page .app-tab .nav-tabs {
+  height: 50px !important;
+  border-bottom: none !important;
+}
+.data-page .app-tab .nav-tabs .nav-link {
+  padding: 10px 50px !important;
+}
+.data-page .app-tab .tab-content .tab-pane .pane-header {
+  background-color: #D7DDE9;
+  -webkit-box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.16);
+}
+.data-page .app-tab .tab-content .tab-pane .pane-header h5 {
+  font-size: 16px;
+  color: #485272;
+}
+.data-page .app-tab .tab-content .tab-pane .pane-body label {
+  color: #485272;
+  margin-top: 5px;
+}
+.data-page .app-tab .tab-content .tab-pane .pane-body label .ic-quiz {
+  position: relative;
+  top: 5px;
+}
+.data-page .app-tab .tab-content .tab-pane .pane-footer {
+  border-top: solid 1px #78849E;
+  padding: 20px;
+}
+.data-page .btn-new-user {
+  width: 190px;
+}
+.data-page .badge-cell {
+  max-width: 90px;
+}
+.data-page .datepicker {
+  border-top-right-radius: 8px !important;
+  border-bottom-right-radius: 8px !important;
+}
+
+.crm-page table .gj-datepicker {
+  min-width: 130px !important;
+}
+.crm-page table .gj-datepicker .input-group-append {
+  margin-left: 0px;
+}
+.crm-page table th, .crm-page table td {
+  min-width: 120px !important;
+}
+
+.btn-produce-pdf, .btn-send-customer {
+  width: 209px;
+}
+
+.embed-modal .btn-close {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 32px;
+  height: 32px;
+}
+
+.cs-dialog {
+  max-width: 100%;
+  width: 100%;
+  margin: 0px !important;
+  text-align: right;
+}
+.cs-dialog .modal-content {
+  background-color: #F4F6FC;
+  border-radius: 0px;
+  padding-left: 60px;
+  padding-right: 30px;
+}
+.cs-dialog .modal-content .modal-header {
+  border-bottom: none;
+}
+.cs-dialog .modal-content .modal-footer {
+  border-top: none;
+}
+.cs-dialog .modal-content .modal-body label {
+  font-weight: bold;
+  min-width: 100px;
+}
+.cs-dialog .modal-content .modal-body .btn-add-route-item {
+  margin-top: 10px;
+  margin-right: 40px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.cs-dialog .modal-content .modal-body .lcs_switch {
+  border-radius: 4px;
+  width: 100px;
+  height: 30px;
+  -webkit-box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.15);
+}
+.cs-dialog .modal-content .modal-body .lcs_switch.lcs_off {
+  background-color: #7ABCFF;
+}
+.cs-dialog .modal-content .modal-body .lcs_switch.lcs_off .lcs_cursor {
+  left: 0px;
+}
+.cs-dialog .modal-content .modal-body .lcs_switch.lcs_on {
+  background-color: #7ABCFF;
+}
+.cs-dialog .modal-content .modal-body .lcs_switch.lcs_on .lcs_cursor {
+  left: 50px;
+}
+.cs-dialog .modal-content .modal-body .lcs_switch .lcs_cursor {
+  border-radius: 0px;
+  height: 30px;
+  width: 50px;
+  top: 0px;
+  font-size: 12px;
+  text-align: center;
+  padding: 5px;
+  font-weight: bold;
+}
+.cs-dialog .modal-content .modal-body .lcs_switch .lcs_label {
+  top: 0px;
+}
+.cs-dialog .modal-content .modal-body .gj-datepicker .input-group-append {
+  position: absolute;
+  left: 0;
+  top: 0px;
+  height: 100%;
+  z-index: 10;
+}
+.cs-dialog .modal-content .modal-body .gj-datepicker .input-group-append .btn {
+  border: 0;
+  color: #7ABBFC;
+}
+.cs-dialog .modal-content .modal-body .gj-datepicker .input-group-append .btn .gj-icon {
+  top: 10px;
+}
+.cs-dialog .modal-content .modal-body .btn-delete {
+  width: 30px;
+  height: 30px;
+  margin-top: 5px !important;
+}
+.cs-dialog .modal-content .modal-body .modal-tab .nav-tabs {
+  height: 60px;
+  border-bottom: solid 17px #7ABBFC;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+.cs-dialog .modal-content .modal-body .modal-tab .nav-tabs .nav-link {
+  font-size: 14px;
+  padding: 8px 15px;
+  color: #485272;
+  border: 1px solid transparent;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+}
+.cs-dialog .modal-content .modal-body .modal-tab .nav-tabs .nav-link.active {
+  background-color: #7ABBFC;
+  border: 0;
+  color: #FFFFFF;
+  font-weight: bold;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+/*# sourceMappingURL=action.css.map */

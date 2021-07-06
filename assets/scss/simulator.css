@@ -1,0 +1,1194 @@
+.simulator-main .filter-options .filter-button {
+  width: 170px !important;
+}
+.simulator-main .filter-app {
+  padding-left: 30px !important;
+  padding-right: 30px !important;
+}
+.simulator-main.open-filter .filter-bar {
+  width: 590px !important;
+}
+.simulator-main.open-filter .filter-app {
+  padding-right: 30px !important;
+}
+.simulator-main.open-filter .filter-header .filter-optoin2 {
+  display: block !important;
+}
+.simulator-main.open-filter .filter-footer {
+  display: block !important;
+}
+.simulator-main .filter-bar {
+  position: relative;
+  overflow: unset !important;
+}
+.simulator-main .filter-bar .filter-header .filter-optoin2 {
+  display: none;
+  padding-top: 20px;
+  border-bottom: solid 2px #D7DDE9;
+  margin: 0 30px;
+}
+.simulator-main .filter-bar .filter-header .filter-optoin2 .input-group-prepend {
+  width: 100%;
+  height: 40px;
+}
+.simulator-main .filter-bar .filter-header .filter-optoin2 .input-group-prepend::before {
+  top: 20px;
+}
+.simulator-main .filter-bar .filter-header .filter-optoin2 .input-group-prepend .dropdown-toggle {
+  width: 100%;
+  height: 40px;
+  font-size: 16px;
+}
+.simulator-main .filter-bar .filter-header .filter-optoin2 .input-group-prepend .dropdown-menu {
+  width: 100% !important;
+}
+.simulator-main .filter-bar .filter-header .filter-optoin2 .input-group-prepend .dropdown-menu .dropdown-item {
+  width: 100% !important;
+  font-size: 16px;
+}
+.simulator-main .filter-bar .filter-header .filter-optoin2 .input-group-prepend .dropdown-menu .dropdown-item .cs-checkbox-container {
+  top: 5px;
+}
+.simulator-main .filter-bar .filter-body {
+  max-height: calc(100% - 230px);
+  padding: 0 25px !important;
+}
+.simulator-main .filter-bar .filter-footer {
+  display: none;
+  position: absolute;
+  width: calc(100% - 60px);
+  bottom: 30px;
+  height: 50px;
+  left: 30px;
+  border-top: solid 2px #D7DDE9;
+}
+.simulator-main .filter-form .filter-form-body .filter-group-item {
+  border-bottom: solid 2px #D7DDE9;
+  padding: 15px 0;
+}
+.simulator-main .filter-form .filter-form-body .filter-group-item:last-child {
+  border-bottom: 0;
+}
+.simulator-main .filter-form .filter-form-body .filter-group-item .cs-btn-icon {
+  width: 20px;
+  height: 20px;
+  outline: none;
+  border: none;
+  margin-left: 0;
+  padding: 0;
+}
+.simulator-main .filter-form .filter-form-body .filter-group-item .cs-btn-icon.btn-quiz {
+  width: 15px;
+  height: 15px;
+}
+.simulator-main .filter-form .filter-form-body .filter-group-item .link-close {
+  cursor: pointer;
+  font-size: 12px;
+  line-height: 14px;
+  position: relative;
+  top: -8px;
+}
+.simulator-main .filter-form .filter-form-body .filter-group-item .distribution-slider-container {
+  position: relative;
+}
+.simulator-main .filter-form .filter-form-body .filter-group-item .distribution-slider-container .bar-Chart-wrapper {
+  text-align: center;
+}
+.simulator-main .filter-form .filter-form-body .filter-group-item .distribution-slider-container .bar-Chart-wrapper canvas {
+  position: relative;
+  right: 5px;
+}
+.simulator-main .filter-form .filter-form-body .filter-group-item .distribution-slider-container .range-slider-wrapper {
+  width: 100%;
+  position: absolute;
+  top: 25px;
+}
+.simulator-main .filter-form .filter-form-body .filter-group-item .distribution-slider-container .range-slider-wrapper .addui-slider.addui-slider-horizontal {
+  margin: 0 !important;
+  width: 100% !important;
+}
+.simulator-main .cs-btn-img {
+  width: 191px;
+}
+.simulator-main table thead tr {
+  background-color: #7abbfc;
+}
+.simulator-main table thead tr th {
+  color: #fff;
+}
+.simulator-main .search-result {
+  position: absolute;
+  color: #1a70c6;
+}
+
+#filterSettingsModal {
+  margin-top: 155px;
+}
+#filterSettingsModal.show .modal-dialog {
+  right: 0 !important;
+  margin: 0 0 0 auto !important;
+  transition: right 0.35s !important;
+}
+#filterSettingsModal .modal-dialog {
+  right: -100% !important;
+  margin: 0 0 0 auto !important;
+  transition: right 0.35s !important;
+}
+#filterSettingsModal .modal-dialog .modal-content {
+  border-right: 0;
+  border-left: solid 16px #7ABBFC;
+}
+#filterSettingsModal .modal-dialog .modal-content .grid-container {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+}
+#filterSettingsModal .modal-dialog .modal-content .grid-item {
+  padding: 10px 0 10px 10px;
+  text-align: center;
+  width: 240px;
+}
+#filterSettingsModal .modal-dialog .modal-content .grid-item .text-title {
+  color: #7ABBFC;
+  text-align: right;
+  margin-bottom: 20px;
+}
+#filterSettingsModal .modal-dialog .modal-content .grid-item .cs-checkbox-container {
+  margin: 3px 10px 0 0;
+  padding-right: 40px;
+}
+#filterSettingsModal .modal-dialog .modal-content .grid-item .cs-checkbox-container [type=checkbox] {
+  width: 20px;
+  height: 20px;
+}
+#filterSettingsModal .modal-dialog .modal-content .grid-item .cs-checkbox-container .checkmark {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+}
+#filterSettingsModal .modal-dialog .modal-content .grid-item .cs-checkbox-container .checkmark:after {
+  right: 5px;
+  top: 2px;
+  width: 6px;
+  height: 10px;
+}
+#filterSettingsModal .modal-dialog .btn-close {
+  opacity: 1;
+}
+#filterSettingsModal .btn-clear {
+  position: absolute;
+  top: 75px;
+  right: 40px;
+  padding: 10px 20px;
+  border-radius: 50px;
+  height: 45px;
+  width: 120px;
+  font-size: 14px;
+}
+#filterSettingsModal .btn-send-green {
+  width: 190px;
+}
+
+/*******************************************************/
+/********** *** Simulator Compare Products *** *********/
+/*******************************************************/
+.simulator-compare-products .filter-app {
+  width: 100% !important;
+}
+.simulator-compare-products .filter-app .app-header {
+  border-bottom: none !important;
+}
+.simulator-compare-products .filter-app .app-header .app-header-top .btn-add-product {
+  width: 190px;
+}
+.simulator-compare-products .filter-app .app-header .app-header-top .cs-btn-group {
+  display: inline-block;
+}
+.simulator-compare-products .filter-app .app-header .app-header-top .cs-btn-group .cs-btn-icon {
+  display: block;
+  margin: 0;
+}
+.simulator-compare-products .filter-app .app-header .app-header-top .cs-btn-group label {
+  display: block;
+  text-align: center;
+  font-size: 12px;
+  margin-top: 5px;
+  font-weight: 600;
+}
+.simulator-compare-products .filter-app .app-body table thead {
+  background-color: #7ABCFF;
+}
+.simulator-compare-products .filter-app .app-body table thead tr th {
+  position: relative;
+  color: #485272;
+}
+.simulator-compare-products .filter-app .app-body table thead tr th .cs-icon {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+.simulator-compare-products .filter-app .app-body table thead tr th .cs-btn-icon {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  opacity: 1;
+}
+.simulator-compare-products .filter-app .app-body table thead tr th a {
+  color: #485272;
+}
+.simulator-compare-products .filter-app .app-body table thead tr th a:hover {
+  color: #001553;
+}
+.simulator-compare-products .filter-app .app-body table thead tr th .ic-check-less {
+  background-image: url(../img/icons/ic_check_less.png);
+}
+.simulator-compare-products .filter-app .app-body table thead tr th .ic-check-less.close {
+  background-image: url(../img/icons/ic_check_plus.png) !important;
+}
+.simulator-compare-products .filter-app .app-body table thead tr th .form-control-mini {
+  border: solid 1px #485272;
+  background-color: transparent;
+  color: #485272;
+  max-height: 24px;
+  max-width: 220px;
+}
+.simulator-compare-products .filter-app .app-body table tbody tr td {
+  position: relative;
+}
+.simulator-compare-products .filter-app .app-body table tbody tr td .cs-icon {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+#addProductModal {
+  padding: 50px !important;
+}
+#addProductModal .modal-dialog {
+  margin: 0;
+  width: 100%;
+  overflow: hidden;
+}
+#addProductModal .modal-dialog .modal-content {
+  position: relative;
+  border-right: none !important;
+  border-top: solid 16px #7ABBFC;
+  display: flex;
+}
+#addProductModal .modal-dialog .modal-content .btn-close {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 30px;
+  height: 30px;
+  opacity: 1;
+}
+#addProductModal .modal-dialog .modal-content .modal-right-bar {
+  border-left: solid 1px #78849E;
+  width: 270px;
+  height: 100%;
+  padding: 20px;
+}
+#addProductModal .modal-dialog .modal-content .modal-right-bar .bar-item {
+  padding: 2px 0;
+}
+#addProductModal .modal-dialog .modal-content .modal-right-bar .bar-divider {
+  width: 100%;
+  height: 1px;
+  background-color: #BFC5D2;
+  margin: 15px 0;
+}
+#addProductModal .modal-dialog .modal-content .modal-left-bar {
+  width: calc(100% - 270px);
+  height: calc(100% - 100px);
+  display: block;
+  padding: 20px 30px;
+  overflow-y: auto;
+  padding-left: 60px;
+}
+#addProductModal .modal-dialog .modal-content .modal-left-bar .list-card {
+  border: solid 1px #A3A0FB;
+  background-color: transparent;
+  -webkit-box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.3);
+  height: 350px;
+  overflow-y: auto;
+}
+#addProductModal .modal-dialog .modal-content .modal-left-bar .list-card .card-header {
+  background: transparent;
+  border-bottom: solid 1px #A3A0FB;
+}
+#addProductModal .modal-dialog .modal-content .modal-left-bar .list-card .card-body ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+#addProductModal .modal-dialog .modal-content .modal-left-bar .list-card .card-body ul li {
+  width: max-content;
+  padding: 0 5px;
+}
+#addProductModal .modal-dialog .modal-content .modal-left-bar .list-card .card-body ul li:hover, #addProductModal .modal-dialog .modal-content .modal-left-bar .list-card .card-body ul li.selected {
+  background-color: #7ABBFC;
+  color: #ffffff;
+  cursor: default;
+}
+#addProductModal .modal-dialog .modal-content .modal-left-bar table thead {
+  background-color: #7abbfc;
+}
+#addProductModal .modal-dialog .modal-content .modal-left-bar table thead tr th {
+  color: #fff;
+}
+#addProductModal .modal-dialog .modal-content .modal-left-bar table thead tr th:first-child {
+  width: 50px;
+}
+#addProductModal .modal-dialog .modal-content .modal-left-bar table tbody tr td {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+#addProductModal .modal-dialog .modal-content .modal-left-bar table tbody tr td:first-child {
+  width: 50px;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+#addProductModal .modal-dialog .modal-content .modal-left-bar table tbody tr td .cs-icon {
+  position: absolute;
+  left: 10px;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+}
+#addProductModal .modal-dialog .modal-content .modal-left-bar .ic-search-blue {
+  position: absolute;
+  top: 12px;
+  left: 28px;
+  width: 15px;
+  height: 15px;
+}
+#addProductModal .modal-dialog .modal-content .cs-checkbox-container {
+  height: 20px;
+  line-height: 20px;
+  margin-top: 3px !important;
+}
+#addProductModal .modal-dialog .modal-content .cs-checkbox-container [type=checkbox] {
+  width: 20px;
+  height: 20px;
+}
+#addProductModal .modal-dialog .modal-content .cs-checkbox-container .checkmark {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+}
+#addProductModal .modal-dialog .modal-content .cs-checkbox-container .checkmark:after {
+  right: 5px;
+  top: 1px;
+  width: 7px;
+  height: 11px;
+}
+#addProductModal .text-primary {
+  color: #1E87F0 !important;
+}
+
+/*******************************************************/
+/*********** *** Simulator Product Detail *** **********/
+/*******************************************************/
+.simulator-product-detail .filter-app {
+  width: 100% !important;
+}
+.simulator-product-detail .app-tab .nav-tabs {
+  border-bottom: solid 16px #7ABBFC;
+}
+.simulator-product-detail .app-tab .nav-tabs .nav-item {
+  background-color: transparent;
+  color: #485272;
+  min-width: 190px;
+  text-align: center;
+}
+.simulator-product-detail .app-tab .nav-tabs .nav-item .cs-icon {
+  position: relative;
+  margin: 0 10px;
+  width: 20px;
+  height: 20px;
+  top: 4px;
+}
+.simulator-product-detail .app-tab .nav-tabs .nav-item .ic-assignment2 {
+  background-image: url(../img/icons/ic_assignment2_blue.png);
+}
+.simulator-product-detail .app-tab .nav-tabs .nav-item .ic-dashboard {
+  background-image: url(../img/icons/ic_dashboard_blue.png);
+}
+.simulator-product-detail .app-tab .nav-tabs .nav-item:hover {
+  border-color: transparent;
+}
+.simulator-product-detail .app-tab .nav-tabs .nav-item.active {
+  background-color: #7ABBFC;
+  color: #FFFFFF;
+  border: 0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  font-weight: bold;
+}
+.simulator-product-detail .app-tab .nav-tabs .nav-item.active .ic-assignment2 {
+  background-image: url(../img/icons/ic_assignment2_white.png);
+}
+.simulator-product-detail .app-tab .nav-tabs .nav-item.active .ic-dashboard {
+  background-image: url(../img/icons/ic_dashboard_white.png);
+}
+.simulator-product-detail .app-tab .tab-pane .pane-body .border-left {
+  border-left: solid 1px #78849E !important;
+}
+.simulator-product-detail .app-tab .tab-pane .pane-body .row-divider {
+  width: 100%;
+  height: 1px;
+  background-color: #78849E;
+  margin: 30px 0;
+}
+.simulator-product-detail .app-tab .tab-pane .pane-body .datepicker-wrapper {
+  width: 220px;
+}
+.simulator-product-detail .app-tab .tab-pane .pane-body .datepicker-wrapper input {
+  border-radius: 8px;
+}
+.simulator-product-detail .app-tab .tab-pane .pane-body .datepicker-wrapper .gj-icon {
+  top: 10px;
+}
+.simulator-product-detail .text-primary {
+  color: #7ABBFC;
+}
+
+.donut-captions {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.donut-captions .dount-caption-icon {
+  position: relative;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border-radius: 10px;
+  margin-left: 20px;
+  top: 3px;
+  background: var(--bgColor);
+}
+.donut-captions .dount-caption-icon::after {
+  content: "";
+  background: #FFFFFF;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  border-radius: 50%;
+  display: block;
+}
+
+/*******************************************************/
+/*************** *** Simulator Top 10  *** *************/
+/*******************************************************/
+.simulator-top10 .filter-app,
+.simulator-top5 .filter-app,
+.simulator-allocation-and-analysis .filter-app,
+.simulator-leverage-results .filter-app,
+.simulator-irr-calculator .filter-app,
+.simulator-adding-integrated-product .filter-app {
+  width: 100% !important;
+}
+.simulator-top10 .filter-app .app-header,
+.simulator-top5 .filter-app .app-header,
+.simulator-allocation-and-analysis .filter-app .app-header,
+.simulator-leverage-results .filter-app .app-header,
+.simulator-irr-calculator .filter-app .app-header,
+.simulator-adding-integrated-product .filter-app .app-header {
+  border-bottom: none !important;
+}
+.simulator-top10 .filter-app .app-header .app-header-top .btn-add-product,
+.simulator-top5 .filter-app .app-header .app-header-top .btn-add-product,
+.simulator-allocation-and-analysis .filter-app .app-header .app-header-top .btn-add-product,
+.simulator-leverage-results .filter-app .app-header .app-header-top .btn-add-product,
+.simulator-irr-calculator .filter-app .app-header .app-header-top .btn-add-product,
+.simulator-adding-integrated-product .filter-app .app-header .app-header-top .btn-add-product {
+  width: 190px;
+}
+.simulator-top10 .filter-app .app-header .app-header-top .cs-btn-group,
+.simulator-top5 .filter-app .app-header .app-header-top .cs-btn-group,
+.simulator-allocation-and-analysis .filter-app .app-header .app-header-top .cs-btn-group,
+.simulator-leverage-results .filter-app .app-header .app-header-top .cs-btn-group,
+.simulator-irr-calculator .filter-app .app-header .app-header-top .cs-btn-group,
+.simulator-adding-integrated-product .filter-app .app-header .app-header-top .cs-btn-group {
+  display: inline-block;
+}
+.simulator-top10 .filter-app .app-header .app-header-top .cs-btn-group .cs-btn-icon,
+.simulator-top5 .filter-app .app-header .app-header-top .cs-btn-group .cs-btn-icon,
+.simulator-allocation-and-analysis .filter-app .app-header .app-header-top .cs-btn-group .cs-btn-icon,
+.simulator-leverage-results .filter-app .app-header .app-header-top .cs-btn-group .cs-btn-icon,
+.simulator-irr-calculator .filter-app .app-header .app-header-top .cs-btn-group .cs-btn-icon,
+.simulator-adding-integrated-product .filter-app .app-header .app-header-top .cs-btn-group .cs-btn-icon {
+  display: block;
+  margin: 0;
+}
+.simulator-top10 .filter-app .app-header .app-header-top .cs-btn-group label,
+.simulator-top5 .filter-app .app-header .app-header-top .cs-btn-group label,
+.simulator-allocation-and-analysis .filter-app .app-header .app-header-top .cs-btn-group label,
+.simulator-leverage-results .filter-app .app-header .app-header-top .cs-btn-group label,
+.simulator-irr-calculator .filter-app .app-header .app-header-top .cs-btn-group label,
+.simulator-adding-integrated-product .filter-app .app-header .app-header-top .cs-btn-group label {
+  display: block;
+  text-align: center;
+  font-size: 12px;
+  margin-top: 5px;
+  font-weight: 600;
+}
+.simulator-top10 .filter-app .app-header .app-header-bottom .btn-show-results,
+.simulator-top5 .filter-app .app-header .app-header-bottom .btn-show-results,
+.simulator-allocation-and-analysis .filter-app .app-header .app-header-bottom .btn-show-results,
+.simulator-leverage-results .filter-app .app-header .app-header-bottom .btn-show-results,
+.simulator-irr-calculator .filter-app .app-header .app-header-bottom .btn-show-results,
+.simulator-adding-integrated-product .filter-app .app-header .app-header-bottom .btn-show-results {
+  width: 190px;
+}
+.simulator-top10 .filter-app .app-header .app-header-bottom .input-group-prepend,
+.simulator-top5 .filter-app .app-header .app-header-bottom .input-group-prepend,
+.simulator-allocation-and-analysis .filter-app .app-header .app-header-bottom .input-group-prepend,
+.simulator-leverage-results .filter-app .app-header .app-header-bottom .input-group-prepend,
+.simulator-irr-calculator .filter-app .app-header .app-header-bottom .input-group-prepend,
+.simulator-adding-integrated-product .filter-app .app-header .app-header-bottom .input-group-prepend {
+  width: 100%;
+}
+.simulator-top10 .filter-app .app-header .app-header-bottom .input-group-prepend:before,
+.simulator-top5 .filter-app .app-header .app-header-bottom .input-group-prepend:before,
+.simulator-allocation-and-analysis .filter-app .app-header .app-header-bottom .input-group-prepend:before,
+.simulator-leverage-results .filter-app .app-header .app-header-bottom .input-group-prepend:before,
+.simulator-irr-calculator .filter-app .app-header .app-header-bottom .input-group-prepend:before,
+.simulator-adding-integrated-product .filter-app .app-header .app-header-bottom .input-group-prepend:before {
+  top: 22px;
+}
+.simulator-top10 .filter-app .app-header .app-header-bottom .input-group-prepend .dropdown-toggle,
+.simulator-top5 .filter-app .app-header .app-header-bottom .input-group-prepend .dropdown-toggle,
+.simulator-allocation-and-analysis .filter-app .app-header .app-header-bottom .input-group-prepend .dropdown-toggle,
+.simulator-leverage-results .filter-app .app-header .app-header-bottom .input-group-prepend .dropdown-toggle,
+.simulator-irr-calculator .filter-app .app-header .app-header-bottom .input-group-prepend .dropdown-toggle,
+.simulator-adding-integrated-product .filter-app .app-header .app-header-bottom .input-group-prepend .dropdown-toggle {
+  width: 100%;
+  height: 45px;
+  font-size: 16px;
+}
+.simulator-top10 .filter-app .app-header .app-header-bottom .input-group-prepend .dropdown-menu,
+.simulator-top5 .filter-app .app-header .app-header-bottom .input-group-prepend .dropdown-menu,
+.simulator-allocation-and-analysis .filter-app .app-header .app-header-bottom .input-group-prepend .dropdown-menu,
+.simulator-leverage-results .filter-app .app-header .app-header-bottom .input-group-prepend .dropdown-menu,
+.simulator-irr-calculator .filter-app .app-header .app-header-bottom .input-group-prepend .dropdown-menu,
+.simulator-adding-integrated-product .filter-app .app-header .app-header-bottom .input-group-prepend .dropdown-menu {
+  width: 100% !important;
+}
+.simulator-top10 .filter-app .app-header .app-header-bottom .input-group-prepend .dropdown-menu .dropdown-item,
+.simulator-top5 .filter-app .app-header .app-header-bottom .input-group-prepend .dropdown-menu .dropdown-item,
+.simulator-allocation-and-analysis .filter-app .app-header .app-header-bottom .input-group-prepend .dropdown-menu .dropdown-item,
+.simulator-leverage-results .filter-app .app-header .app-header-bottom .input-group-prepend .dropdown-menu .dropdown-item,
+.simulator-irr-calculator .filter-app .app-header .app-header-bottom .input-group-prepend .dropdown-menu .dropdown-item,
+.simulator-adding-integrated-product .filter-app .app-header .app-header-bottom .input-group-prepend .dropdown-menu .dropdown-item {
+  width: 100% !important;
+  font-size: 16px;
+  padding-right: 30px;
+}
+.simulator-top10 .filter-app .app-header .app-header-bottom .input-group-prepend .dropdown-menu .dropdown-item .cs-checkbox-container,
+.simulator-top5 .filter-app .app-header .app-header-bottom .input-group-prepend .dropdown-menu .dropdown-item .cs-checkbox-container,
+.simulator-allocation-and-analysis .filter-app .app-header .app-header-bottom .input-group-prepend .dropdown-menu .dropdown-item .cs-checkbox-container,
+.simulator-leverage-results .filter-app .app-header .app-header-bottom .input-group-prepend .dropdown-menu .dropdown-item .cs-checkbox-container,
+.simulator-irr-calculator .filter-app .app-header .app-header-bottom .input-group-prepend .dropdown-menu .dropdown-item .cs-checkbox-container,
+.simulator-adding-integrated-product .filter-app .app-header .app-header-bottom .input-group-prepend .dropdown-menu .dropdown-item .cs-checkbox-container {
+  float: right;
+  width: 18px;
+  height: 18px;
+  top: 3px;
+  right: -10px;
+}
+.simulator-top10 .filter-app .app-header .app-header-bottom .input-group-prepend .dropdown-menu .dropdown-item .cs-checkbox-container [type=checkbox],
+.simulator-top5 .filter-app .app-header .app-header-bottom .input-group-prepend .dropdown-menu .dropdown-item .cs-checkbox-container [type=checkbox],
+.simulator-allocation-and-analysis .filter-app .app-header .app-header-bottom .input-group-prepend .dropdown-menu .dropdown-item .cs-checkbox-container [type=checkbox],
+.simulator-leverage-results .filter-app .app-header .app-header-bottom .input-group-prepend .dropdown-menu .dropdown-item .cs-checkbox-container [type=checkbox],
+.simulator-irr-calculator .filter-app .app-header .app-header-bottom .input-group-prepend .dropdown-menu .dropdown-item .cs-checkbox-container [type=checkbox],
+.simulator-adding-integrated-product .filter-app .app-header .app-header-bottom .input-group-prepend .dropdown-menu .dropdown-item .cs-checkbox-container [type=checkbox] {
+  width: 18px;
+  height: 18px;
+}
+.simulator-top10 .filter-app .app-header .app-header-bottom .input-group-prepend .dropdown-menu .dropdown-item .cs-checkbox-container .checkmark,
+.simulator-top5 .filter-app .app-header .app-header-bottom .input-group-prepend .dropdown-menu .dropdown-item .cs-checkbox-container .checkmark,
+.simulator-allocation-and-analysis .filter-app .app-header .app-header-bottom .input-group-prepend .dropdown-menu .dropdown-item .cs-checkbox-container .checkmark,
+.simulator-leverage-results .filter-app .app-header .app-header-bottom .input-group-prepend .dropdown-menu .dropdown-item .cs-checkbox-container .checkmark,
+.simulator-irr-calculator .filter-app .app-header .app-header-bottom .input-group-prepend .dropdown-menu .dropdown-item .cs-checkbox-container .checkmark,
+.simulator-adding-integrated-product .filter-app .app-header .app-header-bottom .input-group-prepend .dropdown-menu .dropdown-item .cs-checkbox-container .checkmark {
+  width: 18px;
+  height: 18px;
+}
+.simulator-top10 .filter-app .app-header .app-header-bottom .input-group-prepend .dropdown-menu .dropdown-item .cs-checkbox-container .checkmark:after,
+.simulator-top5 .filter-app .app-header .app-header-bottom .input-group-prepend .dropdown-menu .dropdown-item .cs-checkbox-container .checkmark:after,
+.simulator-allocation-and-analysis .filter-app .app-header .app-header-bottom .input-group-prepend .dropdown-menu .dropdown-item .cs-checkbox-container .checkmark:after,
+.simulator-leverage-results .filter-app .app-header .app-header-bottom .input-group-prepend .dropdown-menu .dropdown-item .cs-checkbox-container .checkmark:after,
+.simulator-irr-calculator .filter-app .app-header .app-header-bottom .input-group-prepend .dropdown-menu .dropdown-item .cs-checkbox-container .checkmark:after,
+.simulator-adding-integrated-product .filter-app .app-header .app-header-bottom .input-group-prepend .dropdown-menu .dropdown-item .cs-checkbox-container .checkmark:after {
+  right: 5px;
+  top: 2px;
+  width: 6px;
+  height: 11px;
+}
+.simulator-top10 .filter-app .app-body table thead,
+.simulator-top5 .filter-app .app-body table thead,
+.simulator-allocation-and-analysis .filter-app .app-body table thead,
+.simulator-leverage-results .filter-app .app-body table thead,
+.simulator-irr-calculator .filter-app .app-body table thead,
+.simulator-adding-integrated-product .filter-app .app-body table thead {
+  background-color: #7ABCFF;
+}
+.simulator-top10 .filter-app .app-body table thead tr th,
+.simulator-top5 .filter-app .app-body table thead tr th,
+.simulator-allocation-and-analysis .filter-app .app-body table thead tr th,
+.simulator-leverage-results .filter-app .app-body table thead tr th,
+.simulator-irr-calculator .filter-app .app-body table thead tr th,
+.simulator-adding-integrated-product .filter-app .app-body table thead tr th {
+  position: relative;
+  color: #ffffff;
+}
+.simulator-top10 .filter-app .app-body table thead tr th .cs-icon,
+.simulator-top5 .filter-app .app-body table thead tr th .cs-icon,
+.simulator-allocation-and-analysis .filter-app .app-body table thead tr th .cs-icon,
+.simulator-leverage-results .filter-app .app-body table thead tr th .cs-icon,
+.simulator-irr-calculator .filter-app .app-body table thead tr th .cs-icon,
+.simulator-adding-integrated-product .filter-app .app-body table thead tr th .cs-icon {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+.simulator-top10 .filter-app .app-body table thead tr th .cs-btn-icon,
+.simulator-top5 .filter-app .app-body table thead tr th .cs-btn-icon,
+.simulator-allocation-and-analysis .filter-app .app-body table thead tr th .cs-btn-icon,
+.simulator-leverage-results .filter-app .app-body table thead tr th .cs-btn-icon,
+.simulator-irr-calculator .filter-app .app-body table thead tr th .cs-btn-icon,
+.simulator-adding-integrated-product .filter-app .app-body table thead tr th .cs-btn-icon {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  opacity: 1;
+}
+.simulator-top10 .filter-app .app-body table thead tr th a,
+.simulator-top5 .filter-app .app-body table thead tr th a,
+.simulator-allocation-and-analysis .filter-app .app-body table thead tr th a,
+.simulator-leverage-results .filter-app .app-body table thead tr th a,
+.simulator-irr-calculator .filter-app .app-body table thead tr th a,
+.simulator-adding-integrated-product .filter-app .app-body table thead tr th a {
+  color: #485272;
+}
+.simulator-top10 .filter-app .app-body table thead tr th a:hover,
+.simulator-top5 .filter-app .app-body table thead tr th a:hover,
+.simulator-allocation-and-analysis .filter-app .app-body table thead tr th a:hover,
+.simulator-leverage-results .filter-app .app-body table thead tr th a:hover,
+.simulator-irr-calculator .filter-app .app-body table thead tr th a:hover,
+.simulator-adding-integrated-product .filter-app .app-body table thead tr th a:hover {
+  color: #001553;
+}
+.simulator-top10 .filter-app .app-body table tbody tr td,
+.simulator-top5 .filter-app .app-body table tbody tr td,
+.simulator-allocation-and-analysis .filter-app .app-body table tbody tr td,
+.simulator-leverage-results .filter-app .app-body table tbody tr td,
+.simulator-irr-calculator .filter-app .app-body table tbody tr td,
+.simulator-adding-integrated-product .filter-app .app-body table tbody tr td {
+  position: relative;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.simulator-top10 .filter-app .app-body table tbody tr td:first-child,
+.simulator-top5 .filter-app .app-body table tbody tr td:first-child,
+.simulator-allocation-and-analysis .filter-app .app-body table tbody tr td:first-child,
+.simulator-leverage-results .filter-app .app-body table tbody tr td:first-child,
+.simulator-irr-calculator .filter-app .app-body table tbody tr td:first-child,
+.simulator-adding-integrated-product .filter-app .app-body table tbody tr td:first-child {
+  padding-right: 0;
+  padding-left: 0;
+}
+.simulator-top10 .filter-app .app-body table tbody tr td .cs-icon,
+.simulator-top5 .filter-app .app-body table tbody tr td .cs-icon,
+.simulator-allocation-and-analysis .filter-app .app-body table tbody tr td .cs-icon,
+.simulator-leverage-results .filter-app .app-body table tbody tr td .cs-icon,
+.simulator-irr-calculator .filter-app .app-body table tbody tr td .cs-icon,
+.simulator-adding-integrated-product .filter-app .app-body table tbody tr td .cs-icon {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+.simulator-top10 .filter-app .app-body table tbody tr td .cs-checkbox-container,
+.simulator-top5 .filter-app .app-body table tbody tr td .cs-checkbox-container,
+.simulator-allocation-and-analysis .filter-app .app-body table tbody tr td .cs-checkbox-container,
+.simulator-leverage-results .filter-app .app-body table tbody tr td .cs-checkbox-container,
+.simulator-irr-calculator .filter-app .app-body table tbody tr td .cs-checkbox-container,
+.simulator-adding-integrated-product .filter-app .app-body table tbody tr td .cs-checkbox-container {
+  height: 20px;
+  line-height: 20px;
+}
+.simulator-top10 .filter-app .app-body table tbody tr td .cs-checkbox-container [type=checkbox],
+.simulator-top5 .filter-app .app-body table tbody tr td .cs-checkbox-container [type=checkbox],
+.simulator-allocation-and-analysis .filter-app .app-body table tbody tr td .cs-checkbox-container [type=checkbox],
+.simulator-leverage-results .filter-app .app-body table tbody tr td .cs-checkbox-container [type=checkbox],
+.simulator-irr-calculator .filter-app .app-body table tbody tr td .cs-checkbox-container [type=checkbox],
+.simulator-adding-integrated-product .filter-app .app-body table tbody tr td .cs-checkbox-container [type=checkbox] {
+  width: 20px;
+  height: 20px;
+}
+.simulator-top10 .filter-app .app-body table tbody tr td .cs-checkbox-container .checkmark,
+.simulator-top5 .filter-app .app-body table tbody tr td .cs-checkbox-container .checkmark,
+.simulator-allocation-and-analysis .filter-app .app-body table tbody tr td .cs-checkbox-container .checkmark,
+.simulator-leverage-results .filter-app .app-body table tbody tr td .cs-checkbox-container .checkmark,
+.simulator-irr-calculator .filter-app .app-body table tbody tr td .cs-checkbox-container .checkmark,
+.simulator-adding-integrated-product .filter-app .app-body table tbody tr td .cs-checkbox-container .checkmark {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+}
+.simulator-top10 .filter-app .app-body table tbody tr td .cs-checkbox-container .checkmark:after,
+.simulator-top5 .filter-app .app-body table tbody tr td .cs-checkbox-container .checkmark:after,
+.simulator-allocation-and-analysis .filter-app .app-body table tbody tr td .cs-checkbox-container .checkmark:after,
+.simulator-leverage-results .filter-app .app-body table tbody tr td .cs-checkbox-container .checkmark:after,
+.simulator-irr-calculator .filter-app .app-body table tbody tr td .cs-checkbox-container .checkmark:after,
+.simulator-adding-integrated-product .filter-app .app-body table tbody tr td .cs-checkbox-container .checkmark:after {
+  right: 4px;
+  top: 1px;
+  width: 8px;
+  height: 12px;
+}
+
+/*******************************************************/
+/*************** *** Simulator Trends  *** *************/
+/*******************************************************/
+.simulator-trends .filter-app {
+  width: 100% !important;
+}
+.simulator-trends .filter-app .app-header {
+  border-bottom: none !important;
+  height: 150px !important;
+}
+.simulator-trends .filter-app .app-header .app-header-top .btn-add-product {
+  width: 190px;
+}
+.simulator-trends .filter-app .app-header .app-header-top .cs-btn-group {
+  display: inline-block;
+}
+.simulator-trends .filter-app .app-header .app-header-top .cs-btn-group .cs-btn-icon {
+  display: block;
+  margin: 0;
+}
+.simulator-trends .filter-app .app-header .app-header-top .cs-btn-group label {
+  display: block;
+  text-align: center;
+  font-size: 12px;
+  margin-top: 5px;
+  font-weight: 600;
+}
+.simulator-trends .filter-app .app-body .chart-header .chart-tags-group {
+  border-left: solid 1px #485272;
+  padding-left: 20px;
+}
+.simulator-trends .filter-app .app-body .chart-header .chart-tag {
+  height: 27px !important;
+  border-radius: 27px !important;
+  font-size: 11px !important;
+}
+.simulator-trends .filter-app .app-body .chart-header .cs-btn-img {
+  width: 105px;
+  height: 27px;
+}
+.simulator-trends .filter-app .app-body .chart-header .filter-options .dropdown-wrapper .input-group-prepend {
+  width: 100% !important;
+}
+.simulator-trends .filter-app .app-body .chart-header .filter-options .dropdown-wrapper .input-group-prepend:before {
+  top: 17px !important;
+}
+.simulator-trends .filter-app .app-body .chart-header .filter-options .dropdown-wrapper .input-group-prepend .dropdown-toggle {
+  width: 100% !important;
+  height: 100% !important;
+  font-size: 16px !important;
+}
+.simulator-trends .filter-app .app-body .chart-header .filter-options .dropdown-wrapper .input-group-prepend .dropdown-menu {
+  width: 100% !important;
+}
+.simulator-trends .filter-app .app-body .chart-header .filter-options .dropdown-wrapper .input-group-prepend .dropdown-menu .dropdown-item {
+  width: 100% !important;
+  font-size: 16px;
+}
+.simulator-trends .filter-app .app-body .chart-header .filter-options .dropdown-wrapper .input-group-prepend .dropdown-menu .dropdown-item .cs-checkbox-container {
+  top: 5px;
+  width: 15px !important;
+  height: 15px !important;
+}
+
+/*******************************************************/
+/***** *** Simulator Allocation and Analysis  *** ******/
+/*******************************************************/
+.simulator-allocation-and-analysis .cs-btn-img.btn-send {
+  width: 190px;
+}
+.simulator-allocation-and-analysis .cs-btn-img.btn-save-green {
+  width: 169px;
+}
+.simulator-allocation-and-analysis .cs-btn-img.btn-add-product-for-comparison {
+  width: 239px;
+}
+.simulator-allocation-and-analysis .cs-btn-img.btn-copy-client-file {
+  width: 191px;
+}
+.simulator-allocation-and-analysis .table tr.sub-tr {
+  background-color: #F4F7F8;
+}
+.simulator-allocation-and-analysis .table tr td .bg-danger {
+  background-color: #DE0101 !important;
+  position: relative;
+  display: block;
+  padding: 16px;
+  width: max-content;
+}
+.simulator-allocation-and-analysis .table tr td:first-child {
+  padding-right: 20px !important;
+}
+.simulator-allocation-and-analysis .table tr td:first-child .details-control {
+  display: inline-flex;
+  width: 50px;
+  height: 40px;
+  padding: 10px 15px;
+  border: none !important;
+}
+.simulator-allocation-and-analysis .table tr td:first-child .details-control .cs-icon {
+  width: 15px;
+  height: 15px;
+  top: 25px;
+}
+.simulator-allocation-and-analysis .table tr td:first-child .details-control .cs-icon.ic-collapse-pm {
+  background-image: url(../img/icons/ic_plus_blue.png);
+}
+.simulator-allocation-and-analysis .table tr td:first-child .details-control.shown .ic-collapse-pm {
+  background-image: url(../img/icons/ic_minus_blue.png);
+}
+.simulator-allocation-and-analysis .table tr td:first-child .btn-remove {
+  position: relative;
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-left: solid 1px #BFC5D2;
+}
+.simulator-allocation-and-analysis .table tr td:first-child .btn-remove .cs-icon {
+  position: relative;
+  top: 10px;
+  right: 3px;
+}
+.simulator-allocation-and-analysis .table tfoot tr {
+  background-color: #485272;
+}
+.simulator-allocation-and-analysis .table tfoot tr td {
+  color: #ffffff;
+  font-weight: bold;
+}
+.simulator-allocation-and-analysis .card.card-border-top {
+  border-top: solid 16px #7ABBFC;
+}
+.simulator-allocation-and-analysis .card .border-left {
+  border-left: solid 1px #78849E;
+}
+.simulator-allocation-and-analysis .form-control {
+  max-width: 220px;
+}
+.simulator-allocation-and-analysis #datepicker {
+  width: 220px;
+  height: 45px;
+  border-radius: 8px;
+}
+.simulator-allocation-and-analysis .collapse-item.open .collapse-header .ic-chevron {
+  background-image: url(../img/icons/ic_chevron_up.png);
+  position: relative;
+  top: 8px;
+  right: 10px;
+}
+.simulator-allocation-and-analysis .collapse-item.open .collapse-header .button-group {
+  display: flex;
+}
+.simulator-allocation-and-analysis .collapse-item.open .collapse-body {
+  display: block;
+}
+.simulator-allocation-and-analysis .collapse-item .collapse-header {
+  cursor: pointer;
+  display: flex;
+}
+.simulator-allocation-and-analysis .collapse-item .collapse-header h4 {
+  width: max-content;
+}
+.simulator-allocation-and-analysis .collapse-item .collapse-header .ic-chevron {
+  background-image: url(../img/icons/ic_chevron_down.png);
+  position: relative;
+  top: 6px;
+  right: 10px;
+}
+.simulator-allocation-and-analysis .collapse-item .collapse-header .button-group {
+  display: none;
+}
+.simulator-allocation-and-analysis .collapse-item .collapse-body {
+  display: none;
+}
+
+/*******************************************************/
+/*** *** Simulator Saving For Creating Butcher  *** ****/
+/*******************************************************/
+.simulator-saving-for-creating-butcher .card .card-body,
+.simulator-leverage-results .card .card-body,
+.simulator-irr-calculator .card .card-body {
+  padding: 0;
+}
+.simulator-saving-for-creating-butcher .card .card-body .row,
+.simulator-leverage-results .card .card-body .row,
+.simulator-irr-calculator .card .card-body .row {
+  margin: 0;
+  padding: 10px 20px;
+  border-bottom: solid 2px #BFC5D2;
+}
+.simulator-saving-for-creating-butcher .card .card-body .form-control,
+.simulator-leverage-results .card .card-body .form-control,
+.simulator-irr-calculator .card .card-body .form-control {
+  max-width: 120px;
+}
+.simulator-saving-for-creating-butcher .card .card-footer,
+.simulator-leverage-results .card .card-footer,
+.simulator-irr-calculator .card .card-footer {
+  font-weight: bold;
+  background-color: #485272;
+  color: #ffffff;
+}
+.simulator-saving-for-creating-butcher .btn-accountant,
+.simulator-leverage-results .btn-accountant,
+.simulator-irr-calculator .btn-accountant {
+  width: 191px;
+}
+
+/*******************************************************/
+/********* *** Simulator Leverage Results  *** *********/
+/*******************************************************/
+.simulator-leverage-results .filter-app .app-header,
+.simulator-irr-calculator .filter-app .app-header,
+.simulator-double-leverage .filter-app .app-header,
+.simulator-standard-leverage .filter-app .app-header {
+  height: 120px !important;
+  border-bottom: none !important;
+}
+.simulator-leverage-results .filter-app .app-body .card .last-row,
+.simulator-irr-calculator .filter-app .app-body .card .last-row,
+.simulator-double-leverage .filter-app .app-body .card .last-row,
+.simulator-standard-leverage .filter-app .app-body .card .last-row {
+  background-color: #7ABBFC;
+}
+.simulator-leverage-results .filter-app table th, .simulator-leverage-results .filter-app table td,
+.simulator-irr-calculator .filter-app table th,
+.simulator-irr-calculator .filter-app table td,
+.simulator-double-leverage .filter-app table th,
+.simulator-double-leverage .filter-app table td,
+.simulator-standard-leverage .filter-app table th,
+.simulator-standard-leverage .filter-app table td {
+  padding: 12px 30px !important;
+}
+.simulator-leverage-results .filter-app table tfoot tr,
+.simulator-irr-calculator .filter-app table tfoot tr,
+.simulator-double-leverage .filter-app table tfoot tr,
+.simulator-standard-leverage .filter-app table tfoot tr {
+  background-color: #485272;
+  color: #ffffff;
+}
+
+/*******************************************************/
+/********** *** Simulator IRR Calculator  *** **********/
+/*******************************************************/
+.simulator-irr-calculator .app-body .card {
+  max-width: 700px;
+}
+.simulator-irr-calculator .app-body .card table {
+  max-width: 700px !important;
+}
+.simulator-irr-calculator .app-body .card table .form-control {
+  max-width: 100px;
+}
+.simulator-irr-calculator .app-body .card table tfoot tr td {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+/*******************************************************/
+/********** *** Simulator Double Leverage  *** *********/
+/*******************************************************/
+.simulator-double-leverage .dataTables_wrapper,
+.simulator-standard-leverage .dataTables_wrapper {
+  min-width: 300px !important;
+}
+.simulator-double-leverage table thead tr,
+.simulator-standard-leverage table thead tr {
+  background-color: #7ABBFC;
+}
+.simulator-double-leverage table thead tr th,
+.simulator-standard-leverage table thead tr th {
+  color: #ffffff;
+}
+.simulator-double-leverage table tbody tr td,
+.simulator-standard-leverage table tbody tr td {
+  min-height: 63px;
+  border-left: none;
+  border-right: none;
+}
+.simulator-double-leverage table tbody tr td .form-control,
+.simulator-standard-leverage table tbody tr td .form-control {
+  max-width: 100px !important;
+}
+.simulator-double-leverage .row-foot,
+.simulator-standard-leverage .row-foot {
+  background-color: #485272;
+  height: 60px;
+  color: #ffffff;
+}
+.simulator-double-leverage .row-foot div,
+.simulator-standard-leverage .row-foot div {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 15px 30px;
+}
+.simulator-double-leverage .btn-accountant,
+.simulator-standard-leverage .btn-accountant {
+  width: 191px;
+}
+.simulator-double-leverage .btn-show-leverage-results,
+.simulator-standard-leverage .btn-show-leverage-results {
+  width: 235px;
+}
+
+/*******************************************************/
+/********* *** Simulator Standard Leverage  *** ********/
+/*******************************************************/
+.simulator-standard-leverage table tfoot tr td {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+/*******************************************************/
+/**** *** Simulator Adding Integrated Product  *** *****/
+/*******************************************************/
+.simulator-adding-integrated-product table th, .simulator-adding-integrated-product table td {
+  padding: 12px 30px !important;
+}
+.simulator-adding-integrated-product table th:first-child, .simulator-adding-integrated-product table td:first-child {
+  width: 350px;
+}
+.simulator-adding-integrated-product table .form-control {
+  max-width: 100px;
+}
+.simulator-adding-integrated-product table .slider-wrapper {
+  width: 250px;
+}
+.simulator-adding-integrated-product table .slider-wrapper .addui-slider {
+  margin: 0 !important;
+}
+.simulator-adding-integrated-product table .slider-wrapper .addui-slider .addui-slider-range {
+  left: 0;
+}
+.simulator-adding-integrated-product table .slider-wrapper .slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 5px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.9;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+  padding: 0;
+  margin: 15px;
+}
+.simulator-adding-integrated-product table .slider-wrapper .slider:hover {
+  opacity: 1;
+}
+.simulator-adding-integrated-product table .slider-wrapper .slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 0;
+  background: url("../img/icons/ic_slider_eye.png");
+  background-repeat: none;
+  background-size: 20px 20px;
+  cursor: pointer;
+}
+.simulator-adding-integrated-product table .slider-wrapper .slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border: 0;
+  background: url("../img/icons/ic_slider_eye.png");
+  background-repeat: none;
+  background-size: 20px 20px;
+  cursor: pointer;
+}
+.simulator-adding-integrated-product .border-top {
+  border-top: solid 1px #78849E;
+}
+
+/*******************************************************/
+/********* *** Simulator P2P Foundation  *** ***********/
+/*******************************************************/
+.simulator-p2p-foundation .app-header,
+.simulator-debt-fund .app-header,
+.simulator-hedge-fund .app-header,
+.simulator-real-estate-investments .app-header,
+.simulator-reit-foundation .app-header,
+.simulator-algo-beam .app-header,
+.simulator-insurance-product-risk .app-header {
+  border-bottom: none !important;
+}
+.simulator-p2p-foundation .card,
+.simulator-debt-fund .card,
+.simulator-hedge-fund .card,
+.simulator-real-estate-investments .card,
+.simulator-reit-foundation .card,
+.simulator-algo-beam .card,
+.simulator-insurance-product-risk .card {
+  border-top: solid 16px #7ABBFC;
+}
+.simulator-p2p-foundation .card label,
+.simulator-debt-fund .card label,
+.simulator-hedge-fund .card label,
+.simulator-real-estate-investments .card label,
+.simulator-reit-foundation .card label,
+.simulator-algo-beam .card label,
+.simulator-insurance-product-risk .card label {
+  margin-top: 20px;
+}
+.simulator-p2p-foundation label,
+.simulator-debt-fund label,
+.simulator-hedge-fund label,
+.simulator-real-estate-investments label,
+.simulator-reit-foundation label,
+.simulator-algo-beam label,
+.simulator-insurance-product-risk label {
+  font-weight: bold;
+}
+.simulator-p2p-foundation .text-primary,
+.simulator-debt-fund .text-primary,
+.simulator-hedge-fund .text-primary,
+.simulator-real-estate-investments .text-primary,
+.simulator-reit-foundation .text-primary,
+.simulator-algo-beam .text-primary,
+.simulator-insurance-product-risk .text-primary {
+  color: #7ABBFC;
+}
+.simulator-p2p-foundation .form-control,
+.simulator-debt-fund .form-control,
+.simulator-hedge-fund .form-control,
+.simulator-real-estate-investments .form-control,
+.simulator-reit-foundation .form-control,
+.simulator-algo-beam .form-control,
+.simulator-insurance-product-risk .form-control {
+  height: 50px;
+  border-radius: 10px;
+}
+
+/*# sourceMappingURL=simulator.css.map */

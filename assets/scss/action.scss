@@ -1,0 +1,1549 @@
+.action-page {
+    .filter-app {
+        width: 100% !important;
+        .app-header {
+            border-bottom: none !important;
+            .app-header-top {
+                .btn-product-add, .btn-product-update {
+                    width: 190px;
+                }
+                .cs-btn-group {
+                    display: inline-block;
+                    .cs-btn-icon {
+                        display: block;
+                        margin: 0;
+                    }
+                    label {
+                        display: block;
+                        text-align: center;
+                        font-size: 12px;
+                        margin-top: 5px;
+                        font-weight: 600;
+                    }
+                }
+            }
+            .app-header-bottom {
+                margin: 0;
+                .badge {
+                    position: relative;
+                    display: flex;
+                    width: 200px;
+                    height: 50px;
+                    border-radius: 9px;
+                    color: #ffffff;
+                    padding: 10px;
+                    -webkit-box-shadow: 0px 0px 6px 3px rgba(0,0,0,0.3); 
+                    box-shadow: 0px 0px 6px 3px rgba(0,0,0,0.3);
+                    &.badge-primary {
+                        background-color: #7ABCFF;
+                        .bubble {
+                            color: #7ABCFF;
+                        }
+                    }
+                    &.badge-warnning {
+                        background-color: #DF974F;
+                        .bubble {
+                            color: #DF974F;
+                        }
+                    }
+                    &.badge-danger {
+                        background-color: #C56D6D;
+                        .bubble {
+                            color: #C56D6D;
+                        }
+                    }
+                    &.badge-success {
+                        background-color: #59A44F;
+                        .bubble {
+                            color: #59A44F;
+                        }
+                    }
+                    &.badge-secondary {
+                        background-color: #78849E;
+                        .bubble {
+                            color: #78849E;
+                        }
+                    }
+                    .bubble {
+                        position: relative;
+                        display: block;
+                        width: 30px;
+                        height: 30px;
+                        border-radius: 30px;
+                        background-color: #ffffff;
+                        font-size: 18px;
+                        padding: 5px 0;
+                        text-align: center;
+                    }
+                    .text {
+                        position: relative;
+                        display: block;
+                        width: calc(100% - 30px);
+                        text-align: center;
+                        font-size: 16px;
+                        padding: 5px 0;
+                    }
+                }
+                .dropdown-form {
+                    .form-control {
+                        min-width: 250px;
+                        border-radius: 8px;
+                    }
+                }
+                .searchable-dropdown-form {
+                    &.invalid {
+                        .form-control {
+                            border: 1px solid #ced4da !important;
+                            color: #485272 !important;
+                            &:focus {
+                                color: #485272 !important;
+                                border-color: #80bdff !important;
+                                box-shadow: 0 0 0 0.2rem rgb(0, 123, 255, 0.25) !important;
+                            }
+                            &::-webkit-input-placeholder { /* Edge */
+                                color: #485272 !important;
+                            }
+                            &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+                                color: #485272 !important;
+                            }
+                            &::placeholder {
+                                color: #485272 !important;
+                            }
+                        }
+                    }
+                    .searchable-dropdown {
+                        position: relative;
+                        .ic-search {
+                            position: absolute;
+                            top: 10px;
+                            left: 10px;
+                        }
+                        .form-control {
+                            color: #485272 !important;
+                            min-width: 220px;
+                            border-radius: 8px;
+                        }
+                        .dropdown-content {
+                            position: absolute;
+                            display: block;
+                            width: 220px;
+                            top: 37px;
+                            right: 0px;
+                            background-color: #ffffff;
+                            border: solid 1px #ced4da;
+                            z-index: 1000;
+                            border-bottom-left-radius: 10px;
+                            border-bottom-right-radius: 10px;
+                            .content-item {
+                                position: relative;
+                                display: block;
+                                width: 100%;
+                                padding: 3px 15px;
+                                &:hover, &:active, &.active {
+                                    font-weight: bold;
+                                    cursor: pointer;
+                                }
+                                &:first-child {
+                                    margin-top: 10px;
+                                }
+                                &:last-child {
+                                    margin-bottom: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .btn-adding-product {
+                    width: 190px;
+                }
+                .cs-dropdown {
+                    position: relative;
+                    .dropdown-content {
+                        position: absolute;
+                        display: block;
+                        width: 220px;
+                        top: 50px;
+                        right: 0px;
+                        background-color: #ffffff;
+                        border: solid 1px #ced4da;
+                        z-index: 1000;
+                        border-bottom-left-radius: 10px;
+                        border-bottom-right-radius: 10px;
+                        .content-item {
+                            position: relative;
+                            display: block;
+                            width: 100%;
+                            padding: 3px 15px;
+                            &:hover, &:active, &.active {
+                                font-weight: bold;
+                                cursor: pointer;
+                            }
+                            &:first-child {
+                                margin-top: 10px;
+                            }
+                            &:last-child {
+                                margin-bottom: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .app-body {
+            table {
+                thead {
+                    background-color: #7ABCFF;
+                    tr {
+                        &.bg-dark {
+                            background-color: #78849E !important;
+                            border: solid 1px #707070;
+                            -webkit-box-shadow: 0px 0px 6px 3px rgba(0,0,0,0.16); 
+                            box-shadow: 0px 0px 6px 3px rgba(0,0,0,0.16);
+                            
+                            .action-filter {
+                                position: relative;
+                                display: block;
+                                width: 35px;
+                                height: 35px;
+                                right: 40px;
+                                .cs-icon {
+                                    top: 8px;
+                                    right: 5px;
+                                }
+                            }
+                            .gj-datepicker {
+                                .input-group-append {
+                                    display: block;
+                                    .gj-icon {
+                                        top: 3px !important;
+                                    }
+                                }
+                            }
+                        }
+                        th {
+                            position: relative;
+                            color: #ffffff;
+                            &:first-child {
+                                .cs-checkbox-container {
+                                    margin-top: 0;
+                                    position: relative;
+                                    top: 5px;
+                                }
+                            }
+                            .cs-icon {
+                                position: absolute;
+                                top: 15px;
+                                right: 15px;
+                            }
+                            .cs-btn-icon {
+                                position: absolute;
+                                left: 10px;
+                                top: 10px;
+                                width: 20px;
+                                height: 20px;
+                                margin: 0;
+                                opacity: 1;
+                            }
+                            a {
+                                color: #485272;
+                                &:hover {
+                                    color: #001553;
+                                }
+                            }
+                        }
+                    }
+                }
+                tbody {
+                    tr {
+                        td {
+                            position: relative;
+                            padding: 5px 10px;
+                            .cs-icon {
+                                position: absolute;
+                                top: 10px;
+                                right: 10px;
+                            }
+                            &:first-child {
+                                // padding-right: 0;
+                                // padding-left: 0;
+                                padding-top: 12px;
+                                padding-bottom: 12px;
+                                .action-control {
+                                    position: relative;
+                                    display: block;
+                                    width: 35px;
+                                    height: 35px;
+                                    padding: 10px 10px;
+                                    border: none !important;
+                                    &.lg {
+                                        width: 40px;
+                                        height: 40px;
+                                        .cs-icon {
+                                            top: 12px;
+                                        }
+                                    }
+                                    &.shown {
+                                        .ic-collapse-pm {
+                                            background-image: url(../img/icons/ic_minus_blue.png) !important;
+                                        }
+                                    }
+                                    .cs-icon {
+                                        position: absolute;
+                                        width: 15px;
+                                        height: 15px;
+                                        &.ic-collapse-pm {
+                                            background-image: url(../img/icons/ic_plus_blue.png);
+                                        }
+                                    }
+                                    .cs-checkbox-container {
+                                        margin-top: -2px;
+                                    }
+                                    .bubble {
+                                        position: absolute;
+                                        width: 20px;
+                                        height: 20px;
+                                        top: -3px;
+                                        right: 0px;
+                                        border-radius: 20px;
+                                        line-height: 18px;
+                                        font-size: 14px;
+                                        border: solid 1px #F4F7F8;
+                                        text-align: center;
+                                        &.bubble-gray {
+                                            background-color: #78849E;
+                                            color: #ffffff;
+                                        }
+                                    }
+                                }
+                                .btn-remove {
+                                    position: relative;
+                                    display: block;
+                                    width: 40px;
+                                    height: 40px;
+                                    border-left: solid 1px #BFC5D2;
+                                    .cs-icon {
+                                        position: relative;
+                                        top: 10px;
+                                        right: 3px;
+                                    }
+                                }
+                                .border-left {
+                                    border-left: solid 1px #78849E !important;
+                                }
+                                .border-right {
+                                    border-right: solid 1px #78849E !important;
+                                }
+                                .td-text {
+                                    height: 25px;
+                                    padding: 0 20px;
+                                    margin-top: 8px;
+                                    margin-bottom: 8px;
+                                }
+                                .dropleft {
+                                    padding: 4px 8px;
+                                    .dropdown-toggle {
+                                        position: relative;
+                                        border: none;
+                                        width: 30px;
+                                        height: 30px;
+                                        border-radius: 30px;
+                                        &:before, &:after {
+                                            display: none;
+                                        }
+                                        &:hover {
+                                            background-color: #78849E;
+                                            border: solid 1px #707070;
+                                            .ic-pencil-blue {
+                                                background-image: url(../img/icons/ic_pencil_white.png);
+                                            }
+                                        }
+                                        .cs-icon {
+                                            position: relative;
+                                            top: 2px;
+                                            right: 0px;
+                                        }
+                                    }
+                                    .dropdown-menu {
+                                        padding: 0px;
+                                        border-radius: 10px;
+                                        overflow: hidden;
+                                        height: 350px;
+                                        &.h-auto {
+                                            height: auto !important;
+                                        }
+                                        .dropdown-ul {
+                                            width: 150px;
+                                            height: 330px;
+                                            list-style: none;
+                                            padding: 10px 0px;
+                                            .dropdown-li {
+                                                position: relative;
+                                                padding: 5px 40px 5px 10px;
+                                                text-align: right;
+                                                color: #7ABBFC;
+                                                font-weight: bold;
+                                                &:hover {
+                                                    background-color: #BFC5D2;
+                                                    color: #ffffff;
+                                                    cursor: pointer;
+                                                }
+                                                &.open {
+                                                    .ic-collapse-pm {
+                                                        background-image: url(../img/icons/ic_minus_blue.png) !important;
+                                                    }
+                                                }
+                                                .cs-icon {
+                                                    top: 10px;
+                                                    &.ic-collapse-pm {
+                                                        background-image: url(../img/icons/ic_plus_blue.png);
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        .dropdown-left-menu {
+                                            width: 200px;
+                                            border-right: solid 1px #D7DDE9;
+                                            display: none;
+                                            &.open {
+                                                display: block;
+                                            }
+                                            .search-wrapper {
+                                                .form-control {
+                                                    border-radius: 0px;
+                                                    border-top-left-radius: 10px;
+                                                }
+                                            }
+                                            .dropdown-left-menu-ul {
+                                                list-style: none;
+                                                padding: 0px;
+                                                height: 300px;
+                                                overflow: auto;
+                                                .dropdown-li {
+                                                    position: relative;
+                                                    display: flex;
+                                                    padding: 5px 10px;
+                                                    font-size: 12px;
+                                                    &:hover {
+                                                        background-color: #BFC5D2;
+                                                        color: #ffffff;
+                                                        cursor: pointer;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                    .dropdown-col-2 {
+                                        width: 350px;
+                                        padding: 15px 0px;
+                                        .dropdown-ul {
+                                            border-left: solid 1px #D7DDE9;
+                                            padding: 0px;
+                                            margin: 0px;
+                                            height: auto !important;
+                                            &:last-child {
+                                                border-left: none;
+                                            }
+                                            .dropdown-li {
+                                                font-size: 14px;
+                                                padding: 5px 15px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                
+                .badge {
+                    padding: 10px 20px;
+                    border-radius: 10px;
+                    font-weight: normal;
+                    height: 38px;
+                    border: solid 2px #E9E9E9;
+                }
+                .cs-checkbox-container {
+                    height: 20px;
+                    line-height: 20px;
+                    [type=checkbox] {
+                        width: 20px;
+                        height: 20px;
+                    }
+                    .checkmark {
+                        width: 20px;
+                        height: 20px;
+                        border-radius: 4px;
+                        &:after {
+                            right: 4px;
+                            top: 1px;
+                            width: 8px;
+                            height: 12px;
+                        }
+                    }
+                }
+                th, td {
+                    min-width: 120px;
+                }
+            }
+            .search-result {
+                position: absolute;
+                color: #1a70c6;
+            }
+            .gj-datepicker {
+                .td-datepicker {
+                    min-width: 120px;
+                    padding-left: 5px;
+                    padding-right: 5px;
+                }
+                .input-group-append {
+                    display: block;
+                    .gj-icon {
+                        top: 3px !important;
+                    }
+                }
+            }
+            .td-select {
+                min-width: 110px;
+                padding-left: 5px;
+                padding-right: 5px;
+            }
+        }
+    }
+    .execution-monitoring, 
+    .execution-tracking {
+        .dataTables_wrapper {
+            overflow: inherit;
+        }
+    }
+}
+
+// ================= Shared CSS ================= //
+.app-body {
+    .badge {
+        padding: 10px 20px;
+        border-radius: 10px;
+        font-weight: normal;
+        height: 38px;
+        width: 80px;
+        border: solid 2px #E9E9E9;
+        font-size: 12px;
+        &.badge-red {
+            background-color: #DE0101;
+            color: #ffffff;
+        }
+        &.badge-blue {
+            background-color: #7ABCFF;
+            color: #ffffff;
+        }
+        &.badge-green {
+            background-color: #2CA01C;
+            color: #ffffff;
+        }
+        &.badge-yellow {
+            background-color: #ECC528;
+            color: #ffffff;
+        }
+        &.badge-white {
+            background-color: #F9F9F9;
+            color: #515151;
+        }
+        &.badge-sky {
+            background-color: #7ABBFC;
+            color: #ffffff;
+        }
+        &.badge-blue-accent {
+            background-color: #1A70C6;
+            color: #ffffff;
+        }
+        &.badge-gray {
+            background-color: #BFC5D2;
+            color: #515151;
+        }
+    }
+    .badge-dropdown {
+        .dropdown-toggle {
+            &:after {
+                display: none;
+            }
+            &:focus {
+                box-shadow: none;
+                border: 1px solid rgba(0, 0, 0, 0.15);
+            }
+            padding: 5px;
+        }
+        .dropdown-menu {
+            min-width: 60px;
+            .dropdown-item {
+                padding: 5px;
+            }
+        }
+    }
+    .gj-datepicker {
+        .form-control {
+            border-radius: 8px;
+            border-top-right-radius: 8px !important;
+            border-bottom-right-radius: 8px !important;
+        }
+    }
+    .gj-timepicker {
+        width: 100px;
+        .form-control {
+            border-radius: 8px;
+            border-top-right-radius: 8px !important;
+            border-bottom-right-radius: 8px !important;
+        }
+        .input-group-append {
+            position: absolute;
+            left: 0px;
+            z-index: 5;
+            button {
+                border: none;
+                height: 38px;
+                &:hover, &:active, &:focus, &:active:focus {
+                    background-color: transparent;
+                    outline: none;
+                    border: 0;
+                    box-shadow: none;
+                }
+                .gj-icon {
+                    top: 10px;
+                    color: #7abbfc;
+                }
+            }
+        }
+    }
+}
+// =================== ./Shared CSS ================ //
+
+#CRMreminderModal, 
+#CRMAddTouchModal, 
+#newUserModal, 
+#SMSModal, 
+#EmailModal {
+    .modal-dialog {
+        width: 740px !important;
+        .wysiwyg-editor {
+            width: 100%;
+            .form-control {
+                width: 100%;
+                height: 200px;
+                border-radius: 10px;
+            }
+        }
+        .btn-update-green {
+            display: block;
+            width: 130px;
+        }
+        .attach {
+            display: inline-flex;
+            .ic-attach-file {
+                position: relative;
+                top: 3px;
+            }
+            .dropdown {
+                .dropdown-toggle {
+                    border: none;
+                    background-color: transparent;
+                    color: #7ABCFF;
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 30px;
+                    padding-bottom: 5px;
+                    &:after {
+                        display: none;
+                    }
+                    &:hover {
+                        background-color: #7ABCFF;
+                        color: #ffffff;
+                    }
+                }
+                .dropdown-menu {
+                    .dropdown-item {
+                        text-align: right;
+                    }
+                }
+            }
+        }
+        .text-editor {
+            position: relative;
+            display: block;
+            width: 100%;
+            height: 250px;
+            background-color: #ffffff;
+            .editor-header {
+                position: absolute;
+                z-index: 1000;
+                top: 0px;
+                left: 0px;
+                width: 100%;
+                padding: 20px;
+                display: flex;
+                .dropdown {
+                    .dropdown-toggle {
+                        border: none;
+                        z-index: 10000;
+                        &:after {
+                            display: none;
+                        }
+                    }
+                    .dropdown-menu {
+                        top: -30px !important;
+                        right: 5px;
+                        padding-top: 30px;
+                        padding-bottom: 15px;
+                        border-radius: 10px;
+                        border-top-right-radius: 5px;
+                        min-width: 130px;
+                        .dropdown-item {
+                            display: flex;
+                            padding: 10px 20px;
+                            
+                            .link-text {
+                                margin-right: 30px;
+                            }
+                        }
+                    }
+                }
+            }
+            .textarea-edit {
+                position: absolute;
+                bottom: 0px;
+                left: 0px;
+                border: 1px solid #CCCCCC;
+                border-radius: 10px;
+                width: 100%;
+                height: 250px;
+                background-color: #ffffff;
+                padding: 80px 20px 20px 20px;
+                &:hover, &:focus {
+                    border: 1px solid #CCCCCC;
+                    border-radius: 10px;
+                    width: 100%;
+                    height: 250px;
+                    outline: none;
+                }
+            }
+        }
+        .form-control {
+            height: 45px;
+            &[type=radio] {
+                width: 30px;
+                height: 30px;
+            }
+        }
+        .btn-add-abstainers {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    }
+    .lcs_switch {
+        border-radius: 4px;
+        width: 100px;
+        height: 30px;
+        -webkit-box-shadow: 0px 0px 6px 3px rgba(0,0,0,0.15); 
+        box-shadow: 0px 0px 6px 3px rgba(0,0,0,0.15);
+        &.lcs_off {
+            background-color: #7ABCFF;
+            .lcs_cursor {
+                left: 0px;
+            }
+        }
+        &.lcs_on {
+            background-color: #7ABCFF;
+            .lcs_cursor {
+                left: 50px;
+            }
+        }
+        .lcs_cursor {
+            border-radius: 0px;
+            height: 30px;
+            width: 50px;
+            top: 0px;
+            font-size: 12px;
+            text-align: center;
+            padding: 5px;
+            font-weight: bold;
+        }
+        .lcs_label {
+            top: 0px;
+        }
+    }
+}
+
+.full-modal {
+    .modal-dialog {
+        width: 100%;
+        .modal-body {
+            text-align: right;
+            label {
+                min-width: 100px;
+                font-weight: bold;
+                padding: 5px;
+                margin: 0px;
+            }
+        }
+    }
+}
+
+#newProductModal, 
+#providentEducationCompensationModal, 
+#savingPolicyModal, 
+#managedPortfolioModal, 
+#insurancePolicySavingsModal, 
+#pensionFundModal, 
+#insurancePolicyModal, 
+#IRAModal, 
+#alternativeFundModal, 
+#realEstateInvestmentModal, // end - 
+#financialProductRevenueModal, 
+#alternativeProductRevenueModal, 
+#methodsOfPaymentModal, 
+#appointmentOfOptimizersModal, 
+#fundConsolidationModal, 
+#insuranceProductsModal, 
+#changeOfEmployerModal, 
+#powerOfAttorneyModal, 
+#trackChangeModal, 
+#additionalDepositModal, 
+#allowanceModal, 
+#managementFeeModal, 
+#loanAcceptanceModal, 
+#annuityModal, 
+#repaymentOfLoanModal, 
+#providentMobilizationModal, 
+#alternativeMobilityModal {
+    .lcs_switch {
+        border-radius: 4px;
+        width: 100px;
+        height: 30px;
+        -webkit-box-shadow: 0px 0px 6px 3px rgba(0,0,0,0.15); 
+        box-shadow: 0px 0px 6px 3px rgba(0,0,0,0.15);
+        &.lcs_off {
+            background-color: #7ABCFF;
+            .lcs_cursor {
+                left: 0px;
+            }
+        }
+        &.lcs_on {
+            background-color: #7ABCFF;
+            .lcs_cursor {
+                left: 50px;
+            }
+        }
+        .lcs_cursor {
+            border-radius: 0px;
+            height: 30px;
+            width: 50px;
+            top: 0px;
+            font-size: 12px;
+            text-align: center;
+            padding: 5px;
+            font-weight: bold;
+        }
+        .lcs_label {
+            top: 0px;
+        }
+    }
+    .btn-delete {
+        position: relative;
+        margin-top: 5px !important;
+        width: 30px;
+        height: 30px;
+    }
+    .gj-datepicker {
+        .input-group-append {
+            .gj-icon {
+                top: 10px;
+            }
+        }
+    }
+    .radio-label {
+        padding: 0 10px;
+        font-weight: 600;
+    }
+    input[type=radio] {
+        width: 25px;
+        height: 25px;
+    }
+    .modal-tab {
+        .nav-tabs {
+            border-bottom: solid 17px #7ABBFC;
+            height: 86px;
+            border-top-left-radius: 0.5rem;
+            border-top-right-radius: 0.5rem;
+            @media (min-width: 1600px) and (max-width: 1919px) {
+                height: 70px;
+            }
+            @media (min-width: 1440px) and (max-width: 1599px) {
+                height: 65px;
+            }
+            @media (min-width: 1360px) and (max-width: 1439px) {
+                height: 60px;
+            }
+            @media (max-width: 1359px) {
+                height: 60px;
+            }
+            .nav-link {
+                color: #485272;
+                font-size: 20px;
+                padding: 18px;
+                @media (min-width: 1600px) and (max-width: 1919px) {
+                    font-size: 16px;
+                    padding: 10px 15px;
+                }
+                @media (min-width: 1440px) and (max-width: 1599px) {
+                    font-size: 14px;
+                    padding: 10px 15px;
+                }
+                @media (min-width: 1360px) and (max-width: 1439px) {
+                    font-size: 14px;
+                    padding: 8px 15px;
+                }
+                @media (max-width: 1359px) {
+                    font-size: 12px;
+                    padding: 9px 15px;
+                }
+                &.active {
+                    background-color: #7ABBFC;
+                    border: 0;
+                    color: #FFFFFF;
+                    font-weight: bold;
+                    border-top-left-radius: 0.5rem;
+                    border-top-right-radius: 0.5rem;
+                    
+                }
+                &:hover {
+                    border: 0;
+                }
+            }
+        }
+        .tab-content {
+            .tab-pane {
+                // background-color: #FFFFFF;
+                padding: 25px;
+                // -webkit-box-shadow: 0px 3px 6px rgba(0,0,0,0.16); 
+                // box-shadow: 0px 3px 6px rgba(0,0,0,0.16);
+                overflow-x: auto;
+                padding: 0;
+
+            }
+        }
+    }
+    .btn-add-route-item {
+        margin-top: 10px;
+        margin-right: 40px;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}
+
+
+// =========== DATA Page CSS ============= //
+
+.data-page {
+    h5 {
+        font-weight: bold;
+        &.text-primary {
+            color: #1E87F0 !important;
+        }
+    }
+    label {
+        font-weight: bold;
+    }
+    .form-control-wrapper {
+        max-width: 240px;
+        position: relative;
+    }
+    .form-control {
+        height: 45px;
+        border-radius: 8px !important;
+    }
+    .lcs_switch {
+        border-radius: 4px;
+        width: 100px;
+        height: 30px;
+        -webkit-box-shadow: 0px 0px 6px 3px rgba(0,0,0,0.15) !important; 
+        box-shadow: 0px 0px 6px 3px rgba(0,0,0,0.15) !important;
+        &.lcs_off {
+            background-color: #7ABCFF;
+            .lcs_cursor {
+                left: 0px;
+            }
+        }
+        &.lcs_on {
+            background-color: #7ABCFF;
+            .lcs_cursor {
+                left: 50px;
+            }
+        }
+        .lcs_cursor {
+            border-radius: 0px;
+            height: 30px;
+            width: 50px;
+            top: 0px;
+            font-size: 12px;
+            text-align: center;
+            padding: 5px;
+            font-weight: bold;
+        }
+        .lcs_label {
+            top: 0px;
+        }
+    }
+    .timestamp {
+        font-weight: bold;
+        padding: 5px;
+    }
+    .cs-alert {
+        font-weight: bold;
+        padding: 5px;
+        &.alert-danger {
+            color: #DE0101;
+            background-color: transparent;
+        }
+    }
+    .card-border-top {
+        border-top: solid 16px #1E87F0;
+    }
+    .uploader-wrapper {
+        position: relative;
+        display: block;
+        text-align: center;
+        border: solid 1px #BFC5D2;
+        padding: 20px;
+        .uploader-icon {
+            width: 100px;
+            margin-top: 20px;
+        }
+    }
+    table {
+        &.datatable {
+            td {
+                padding: 10px 15px;
+            }
+            &.lg-table {
+                
+                .bg-dark {
+                    th {
+                        padding-left: 2px !important; 
+                        padding-right: 2px !important;
+                        font-size: 14px !important;
+                    }
+                }
+            }
+            tr:last-child, td:last-child{
+                span {
+                    margin-left: 0px;
+                }
+            } 
+        }
+        thead {
+            background-color: #7ABCFF;
+            tr {
+                &.bg-dark {
+                    background-color: #78849E !important;
+                    border: solid 1px #707070;
+                    -webkit-box-shadow: 0px 0px 6px 3px rgba(0,0,0,0.16); 
+                    box-shadow: 0px 0px 6px 3px rgba(0,0,0,0.16);
+                    th {
+                        padding: 15px;
+                    }
+                    .action-filter {
+                        position: relative;
+                        display: block;
+                        width: 35px;
+                        height: 35px;
+                        right: 35px;
+                        .cs-icon {
+                            top: 8px;
+                            right: 8px;
+                        }
+                    }
+                    .gj-datepicker {
+                        .input-group-append {
+                            .gj-icon {
+                                top: 5px;
+                            }
+                        }
+                    }
+                }
+                th {
+                    position: relative;
+                    color: #ffffff;
+                    &:first-child {
+                        max-width: 90px;
+                        .cs-checkbox-container {
+                            margin-top: 0;
+                            position: relative;
+                            top: 5px;
+                        }
+                    }
+                    &.th-date {
+                        max-width: 90px;
+                    }
+                    .cs-icon {
+                        position: absolute;
+                        top: 15px;
+                        right: 15px;
+                    }
+                    .cs-btn-icon {
+                        position: absolute;
+                        left: 10px;
+                        top: 10px;
+                        width: 20px;
+                        height: 20px;
+                        margin: 0;
+                        opacity: 1;
+                    }
+                    a {
+                        color: #485272;
+                        &:hover {
+                            color: #001553;
+                        }
+                    }
+                }
+            }
+        }
+        tbody {
+            tr {
+                td {
+                    position: relative;
+                    .cs-icon {
+                        position: absolute;
+                        top: 10px;
+                        right: 10px;
+                    }
+                    &:first-child {
+                        .action-control {
+                            position: relative;
+                            display: block;
+                            width: 35px;
+                            height: 35px;
+                            padding: 10px 15px;
+                            border: none !important;
+                            &.shown {
+                                .ic-collapse-pm {
+                                    background-image: url(../img/icons/ic_minus_blue.png) !important;
+                                }
+                            }
+                            .cs-icon {
+                                position: absolute;
+                                width: 15px;
+                                height: 15px;
+                                &.ic-collapse-pm {
+                                    background-image: url(../img/icons/ic_plus_blue.png);
+                                }
+                            }
+                            .cs-checkbox-container {
+                                position: relative;
+                                top: -2px;
+                                left: 7px;
+                                margin-top: 0px;
+                            }
+                            .bubble {
+                                position: absolute;
+                                width: 20px;
+                                height: 20px;
+                                top: -3px;
+                                right: 0px;
+                                border-radius: 20px;
+                                line-height: 18px;
+                                font-size: 14px;
+                                border: solid 1px #F4F7F8;
+                                text-align: center;
+                                &.bubble-gray {
+                                    background-color: #78849E;
+                                    color: #ffffff;
+                                }
+                            }
+                        }
+                        .btn-remove {
+                            position: relative;
+                            display: block;
+                            width: 40px;
+                            height: 40px;
+                            border-left: solid 1px #BFC5D2;
+                            .cs-icon {
+                                position: relative;
+                                top: 10px;
+                                right: 3px;
+                            }
+                        }
+                        .border-left {
+                            border-left: solid 1px #78849E !important;
+                        }
+                        .border-right {
+                            border-right: solid 1px #78849E !important;
+                        }
+                        .td-text {
+                            height: 25px;
+                            padding: 0 20px;
+                            margin-top: 8px;
+                            margin-bottom: 8px;
+                        }
+                        .dropleft {
+                            padding: 4px 8px;
+                            .dropdown-toggle {
+                                border: none;
+                                width: 30px;
+                                height: 30px;
+                                border-radius: 30px;
+                                &:before, &:after {
+                                    display: none;
+                                }
+                                &:hover {
+                                    background-color: #78849E;
+                                    border: solid 1px #707070;
+                                    .ic-pencil-blue {
+                                        background-image: url(../img/icons/ic_pencil_white.png);
+                                    }
+                                }
+                                .cs-icon {
+                                    top: 12px;
+                                }
+                            }
+                            .dropdown-menu {
+                                padding: 0px;
+                                border-radius: 10px;
+                                overflow: hidden;
+                                height: 350px;
+                                &.h-auto {
+                                    height: auto !important;
+                                }
+                                .dropdown-ul {
+                                    width: 150px;
+                                    height: 330px;
+                                    list-style: none;
+                                    padding: 10px 0px;
+                                    .dropdown-li {
+                                        position: relative;
+                                        padding: 5px 40px 5px 10px;
+                                        text-align: right;
+                                        color: #7ABBFC;
+                                        font-weight: bold;
+                                        &:hover {
+                                            background-color: #BFC5D2;
+                                            color: #ffffff;
+                                            cursor: pointer;
+                                        }
+                                        &.open {
+                                            .ic-collapse-pm {
+                                                background-image: url(../img/icons/ic_minus_blue.png) !important;
+                                            }
+                                        }
+                                        .cs-icon {
+                                            top: 10px;
+                                            &.ic-collapse-pm {
+                                                background-image: url(../img/icons/ic_plus_blue.png);
+                                            }
+                                        }
+                                    }
+                                }
+                                .dropdown-left-menu {
+                                    width: 200px;
+                                    border-right: solid 1px #D7DDE9;
+                                    display: none;
+                                    &.open {
+                                        display: block;
+                                    }
+                                    .search-wrapper {
+                                        .form-control {
+                                            border-radius: 0px;
+                                            border-top-left-radius: 10px;
+                                        }
+                                    }
+                                    .dropdown-left-menu-ul {
+                                        list-style: none;
+                                        padding: 0px;
+                                        height: 300px;
+                                        overflow: auto;
+                                        .dropdown-li {
+                                            position: relative;
+                                            display: flex;
+                                            padding: 5px 10px;
+                                            font-size: 12px;
+                                            &:hover {
+                                                background-color: #BFC5D2;
+                                                color: #ffffff;
+                                                cursor: pointer;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            .dropdown-col-2 {
+                                width: 350px;
+                                padding: 15px 0px;
+                                .dropdown-ul {
+                                    border-left: solid 1px #D7DDE9;
+                                    padding: 0px;
+                                    margin: 0px;
+                                    height: auto !important;
+                                    &:last-child {
+                                        border-left: none;
+                                    }
+                                    .dropdown-li {
+                                        font-size: 14px;
+                                        padding: 5px 15px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .gj-datepicker {
+            .input-group-append {
+                display: block;
+                .gj-icon {
+                    top: 10px;
+                }
+            }
+        }
+        .badge {
+            padding: 10px 20px;
+            border-radius: 10px;
+            font-weight: normal;
+            height: 38px;
+            width: 80px;
+            border: solid 2px #E9E9E9;
+            font-size: 12px;
+            &.badge-red {
+                background-color: #DE0101;
+                color: #ffffff;
+            }
+            &.badge-blue {
+                background-color: #7ABCFF;
+                color: #ffffff;
+            }
+            &.badge-green {
+                background-color: #2CA01C;
+                color: #ffffff;
+            }
+            &.badge-yellow {
+                background-color: #ECC528;
+                color: #ffffff;
+            }
+            &.badge-white {
+                background-color: #F9F9F9;
+                color: #515151;
+            }
+        }
+        .cs-checkbox-container {
+            height: 20px;
+            line-height: 20px;
+            [type=checkbox] {
+                width: 20px;
+                height: 20px;
+            }
+            .checkmark {
+                width: 20px;
+                height: 20px;
+                border-radius: 4px;
+                &:after {
+                    right: 4px;
+                    top: 1px;
+                    width: 8px;
+                    height: 12px;
+                }
+            }
+        }
+        td, th {
+            min-width: 90px;
+            width: max-content;
+            &:first-child {
+                min-width: 50px;
+            }
+        }
+        .form-control {
+            min-width: 90px;
+        }
+    }
+    .app-tab {
+        .nav-tabs {
+            height: 50px !important;
+            border-bottom: none !important;
+            .nav-link {
+                padding: 10px 50px !important;
+            }
+        }
+        .tab-content {
+            .tab-pane {
+                .pane-header {
+                    background-color: #D7DDE9;
+                    -webkit-box-shadow: 0px 0px 6px 3px rgba(0,0,0,0.16); 
+                    box-shadow: 0px 0px 6px 3px rgba(0,0,0,0.16);
+                    h5 {
+                        font-size: 16px;
+                        color: #485272;
+                    }
+                }
+                .pane-body {
+                    label {
+                        color: #485272;
+                        margin-top: 5px;
+                        .ic-quiz {
+                            position: relative;
+                            top: 5px;
+                        }
+                    }
+                }
+                .pane-footer {
+                    border-top: solid 1px #78849E;
+                    padding: 20px;
+                }
+            }
+        }
+    }
+    .btn-new-user {
+        width: 190px;
+    }
+    .badge-cell {
+        max-width: 90px;
+    }
+    .datepicker {
+        border-top-right-radius: 8px !important;
+        border-bottom-right-radius: 8px !important;
+    }
+}
+
+// ================= CRM Page ================ //
+.crm-page {
+    table {
+        .gj-datepicker {
+            min-width: 130px !important;
+            // width: 130px !important;
+            .input-group-append {
+                margin-left: 0px;
+            }
+        }
+        th, td {
+            min-width: 120px !important;
+        }
+    }
+}
+
+// =============== Reports Page =============== //
+.btn-produce-pdf, .btn-send-customer {
+    width: 209px;
+}
+
+// ============== Dialog Modal CSS ============ //
+.embed-modal {
+    .btn-close {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        width: 32px;
+        height: 32px;
+    }
+}
+.cs-dialog {
+    max-width: 100%;
+    width: 100%;
+    margin: 0px !important;
+    text-align: right;
+    .modal-content {
+        background-color: #F4F6FC;
+        border-radius: 0px;
+        padding-left: 60px;
+        padding-right: 30px;
+        .modal-header {
+            border-bottom: none;
+        }
+        .modal-footer {
+            border-top: none;
+        }
+        .modal-body {
+            label {
+                font-weight: bold;
+                min-width: 100px;
+            }
+            .btn-add-route-item {
+                margin-top: 10px;
+                margin-right: 40px;
+                text-decoration: underline;
+                cursor: pointer;
+            }
+            .lcs_switch {
+                border-radius: 4px;
+                width: 100px;
+                height: 30px;
+                -webkit-box-shadow: 0px 0px 6px 3px rgba(0,0,0,0.15); 
+                box-shadow: 0px 0px 6px 3px rgba(0,0,0,0.15);
+                &.lcs_off {
+                    background-color: #7ABCFF;
+                    .lcs_cursor {
+                        left: 0px;
+                    }
+                }
+                &.lcs_on {
+                    background-color: #7ABCFF;
+                    .lcs_cursor {
+                        left: 50px;
+                    }
+                }
+                .lcs_cursor {
+                    border-radius: 0px;
+                    height: 30px;
+                    width: 50px;
+                    top: 0px;
+                    font-size: 12px;
+                    text-align: center;
+                    padding: 5px;
+                    font-weight: bold;
+                }
+                .lcs_label {
+                    top: 0px;
+                }
+            }
+            .gj-datepicker {
+                .input-group-append {
+                    position: absolute;
+                    // right: 260px;
+                    left: 0;
+                    top: 0px;
+                    height: 100%;
+                    z-index: 10;
+                    .btn {
+                        border: 0;
+                        color: #7ABBFC;
+                        .gj-icon {
+                            top: 10px;
+                        }
+                    }
+                }
+            }
+            .btn-delete {
+                width: 30px;
+                height: 30px;
+                margin-top: 5px !important;
+            }
+            .modal-tab {
+                .nav-tabs {
+                    height: 60px;
+                    border-bottom: solid 17px #7ABBFC;
+                    border-top-left-radius: 0.5rem;
+                    border-top-right-radius: 0.5rem;
+                    .nav-link {
+                        font-size: 14px;
+                        padding: 8px 15px;
+                        color: #485272;
+                        border: 1px solid transparent;
+                        border-top-left-radius: 0.25rem;
+                        border-top-right-radius: 0.25rem;
+                        &.active {
+                            background-color: #7ABBFC;
+                            border: 0;
+                            color: #FFFFFF;
+                            font-weight: bold;
+                            border-top-left-radius: 0.5rem;
+                            border-top-right-radius: 0.5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,1543 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <title>Admin</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- <link rel="stylesheet" href="../assets/bootstrap-4.3.1-dist/css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="../assets/theme/theme.css">
+  <link rel="stylesheet" href="../assets/scss/simulator.css">
+  <!-- plugin css -->
+  <link rel="stylesheet" type="text/css" href="../assets/plugins/DataTables/datatables.css"/>
+  <link rel='stylesheet' href='../assets/plugins/addSlider/src/addSlider.css' />
+  <link rel="stylesheet" href="../assets/plugins/sliding-toggle-switch/lc_switch.css">
+  <link rel="stylesheet" href="../node_modules/chart.js/dist/Chart.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+  <!-- js -->
+  <script src="../assets/jquery/jquery.min.js"></script>
+  <script src="../assets/plugins/popper/popper.min.js"></script>
+  <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="../node_modules/chart.js/dist/Chart.min.js"></script>
+  <script>
+    function usd(x){
+      if(isNaN(parseInt(x)))
+        return "0$";
+      var dollars = Math.floor(x);
+      return dollars+"$";
+    }
+    function percent(x){
+      if(isNaN(parseInt(x)))
+        return "0%";
+      var percents = Math.floor(x);
+      return percents+"%";
+    }
+  </script>
+</head>
+<body>
+
+<header class="header">
+  <div class="header-top">
+    <div class="dropdown">
+      <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <div class="avatar-container">
+          <img src="../assets/img/icons/ic_account_circle.png" alt="avatar" class="header-avatar" />
+        </div>
+        שם משתמש
+      </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" href="#">Action</a>
+        <a class="dropdown-item" href="#">Another action</a>
+        <a class="dropdown-item" href="#">Something else here</a>
+      </div>
+    </div>
+  </div>
+  <div class="header-nav">
+    <nav class="nav">
+      <div class="header-logo">
+        <a href="#" class="logo-text">LOGO</a>
+      </div>
+      <ul>
+        <li class="">
+          <a href="../Customer/customer-list.html">לקוחות</a>
+        </li>
+        <li class="active">
+          <a class="dropdown-toggle" href="../Simulator/simulator-main.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">סימולטור</a>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <div class="dropdown-block">
+              <h6 class="block-title"><span class="cs-icon ic-assessment ml-2"></span>השוואה וניתוח</h6>
+              <ul>
+                <li><a href="../Simulator/simulator-main.html">סינון מוצרים</a></li>
+                <li><a href="../Simulator/simulator-compare-products.html">השוואת מוצרים</a></li>
+                <li><a href="../Simulator/simulator-trends.html">מגמות</a></li>
+                <li><a href="../Simulator/simulator-allocation-and-analysis.html">אלוקציה וניתוח</a></li>
+              </ul>
+            </div>
+            <div class="dropdown-block">
+              <h6 class="block-title"><span class="cs-icon ic-pan-tool ml-2"></span>מוצרים נבחרים</h6>
+              <ul>
+                <li><a href="../Simulator/simulator-top5.html">TOP 5</a></li>
+                <li><a href="../Simulator/simulator-top10.html">TOP 10</a></li>
+              </ul>
+            </div>
+            <div class="dropdown-block">
+              <h6 class="block-title"><span class="cs-icon ic-library-add ml-2"></span>הוספת מוצר</h6>
+              <ul>
+                <li><a href="../Simulator/simulator-p2p-foundation.html">קרן P2P</a></li>
+                <li><a href="../Simulator/simulator-debt-fund.html">קרן חוב</a></li>
+                <li><a href="../Simulator/simulator-hedge-fund.html">קרן גידור</a></li>
+                <li><a href="../Simulator/simulator-real-estate-investments.html">השקעות נדל"ן</a></li>
+                <li><a href="../Simulator/simulator-reit-foundation.html">קרן רייט</a></li>
+                <li><a href="../Simulator/simulator-algo-beam.html">קרו אלגו</a></li>
+                <li><a href="../Simulator/simulator-insurance-product-risk.html">ביטוח</a></li>
+              </ul>
+            </div>
+            <div class="dropdown-block">
+              <h6 class="block-title"><span class="cs-icon ic-library-books ml-2"></span>מוצר משולב</h6>
+              <ul>
+                <li><a href="../Simulator/simulator-adding-integrated-product.html">הוספת מוצר משולב</a></li>
+              </ul>
+            </div>
+            <div class="dropdown-block">
+              <h6 class="block-title"><span class="cs-icon ic-keyboard ml-2"></span>מחשבונים</h6>
+              <ul>
+                <li><a href="../Simulator/simulator-standard-leverage.html">מינוף רגיל</a></li>
+                <li><a href="../Simulator/simulator-double-leverage.html">מינוף כפול</a></li>
+                <li><a href="../Simulator/simulator-irr-calculator.html">IRR</a></li>
+                <li><a href="../Simulator/simulator-savings-for-creating-butcher.html">חסכון ליצירת קצבח</a></li>
+                <li><a href="../Simulator/simulator-leverage-results.html">תוצאות מינוף</a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="">
+          <a href="../CRM/index.html">CRM</a>
+        </li>
+        <li class="">
+          <a href="../Action/tracking-performance.html">מעקב ביצוע</a>
+        </li>
+        <li class="">
+          <a href="../Data/data-reception.html">ניהול וקליטת נתונים</a>
+        </li>
+        <li class="">
+          <a href="../Reports/index.html">דוחות</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+  
+<div class="main simulator-compare-products">
+  <div class="filter-app">
+    <div class="app-header px-0 m-0">
+      <div class="row app-header-top">
+        <div class="col-xl-7 col-lg-7 col-md-7 col-sm-7 col-7">
+          <span class="title">השוואת מוצרים</span>
+          <button class="cs-btn-img btn-add-product mr-5" style="top: 15px" data-toggle="modal" data-target="#addProductModal"></button>
+        </div>
+        <div class="col-xl-5 col-lg-5 col-md-5 col-sm-5 col-5 text-left">
+          <div class="cs-btn-group ml-3">
+            <a class="cs-btn-icon btn-xls" href="javascript:void(0)"></a>
+            <label>אקסל</label>
+          </div>
+          <div class="cs-btn-group ml-3">
+            <a class="cs-btn-icon btn-print" href="javascript:void(0)"></a>
+            <label>הדפס</label>
+          </div>
+          <div class="cs-btn-group ml-3">
+            <a class="cs-btn-icon btn-email" href="javascript:void(0)"></a>
+            <label>אימייל</label>
+          </div>
+          <div class="cs-btn-group">
+            <a class="cs-btn-icon btn-back-circle ml-0" href="javascript:void(0)"></a>
+            <label>חזור</label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="app-body">
+      <!-- Row 1 -->
+      <div class="row row-section mb-5">
+        <div class="col-7">
+          <div class="card">
+            <table class="table table-bordered m-0">
+              <thead>
+                <tr>
+                  <th class="pr-5"><span class="cs-icon ic-check-less"></span>נתוני מוצר וחברה </th>
+                  <th class="text-center td-col-1">
+                    <a href="simulator-product-detail.html">מוצר 1</a>
+                    <button type="button" class="cs-btn-icon btn-close close dark"></button>
+                  </th>
+                  <th class="text-center td-col-2">
+                    <a href="simulator-product-detail.html">מוצר 2</a>
+                    <button type="button" class="cs-btn-icon btn-close close dark"></button>
+                  </th>
+                  <th class="text-center td-col-3">
+                    <a href="simulator-product-detail.html">מוצר 3</a>
+                    <button type="button" class="cs-btn-icon btn-close close dark"></button>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="font-weight-bold pr-5">סוג מוצר</td>
+                  <td class="text-center td-col-1">TEXT</td>
+                  <td class="text-center td-col-2">TEXT</td>
+                  <td class="text-center td-col-3">TEXT</td>
+                </tr>
+                <tr>
+                  <td class="font-weight-bold pr-5">חברה מנהלת</td>
+                  <td class="text-center td-col-1">TEXT</td>
+                  <td class="text-center td-col-2">TEXT</td>
+                  <td class="text-center td-col-3">TEXT</td>
+                </tr>
+                <tr>
+                  <td class="font-weight-bold pr-5">יתרת נכסים</td>
+                  <td class="text-center td-col-1">TEXT</td>
+                  <td class="text-center td-col-2">TEXT</td>
+                  <td class="text-center td-col-3">TEXT</td>
+                </tr>
+                <tr>
+                  <td class="font-weight-bold pr-5">וותק</td>
+                  <td class="text-center td-col-1">TEXT</td>
+                  <td class="text-center td-col-2">TEXT</td>
+                  <td class="text-center td-col-3">TEXT</td>
+                </tr>
+                <tr>
+                  <td class="font-weight-bold pr-5">מסלול השקעה</td>
+                  <td class="text-center td-col-1">TEXT</td>
+                  <td class="text-center td-col-2">TEXT</td>
+                  <td class="text-center td-col-3">TEXT</td>
+                </tr>
+                <tr>
+                  <td class="font-weight-bold pr-5">התמחות ראשית</td>
+                  <td class="text-center td-col-1">TEXT</td>
+                  <td class="text-center td-col-2">TEXT</td>
+                  <td class="text-center td-col-3">TEXT</td>
+                </tr>
+                <tr>
+                  <td class="font-weight-bold pr-5">רמת סיכון</td>
+                  <td class="text-center td-col-1">TEXT</td>
+                  <td class="text-center td-col-2">TEXT</td>
+                  <td class="text-center td-col-3">TEXT</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="col-5"></div>
+      </div>
+      <!-- Row 2 -->
+      <div class="row row-section mb-5">
+        <div class="col-7">
+          <div class="card">
+            <table class="table table-bordered m-0">
+              <thead>
+                <tr>
+                  <th class="pr-5"><span class="cs-icon ic-check-less"></span>תשואות </th>
+                  <th class="text-center"><a href="#">מוצר 1</a></th>
+                  <th class="text-center"><a href="#">מוצר 2</a></th>
+                  <th class="text-center"><a href="#">מוצר 3</a></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="font-weight-bold pr-5"><span class="cs-icon ic-trending-bar"></span>חודש אחרון</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                </tr>
+                <tr>
+                  <td class="font-weight-bold pr-5"><span class="cs-icon ic-trending-bar"></span>רבעון אחרון</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                </tr>
+                <tr>
+                  <td class="font-weight-bold pr-5"><span class="cs-icon ic-trending-bar"></span>חציון אחרון</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                </tr>
+                <tr>
+                  <td class="font-weight-bold pr-5"><span class="cs-icon ic-trending-bar"></span>12 חודשים</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                </tr>
+                <tr>
+                  <td class="font-weight-bold pr-5"><span class="cs-icon ic-trending-bar"></span>24 חודשים</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                </tr>
+                <tr>
+                  <td class="font-weight-bold pr-5"><span class="cs-icon ic-trending-bar"></span>36 חודשים</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                </tr>
+                <tr>
+                  <td class="font-weight-bold pr-5"><span class="cs-icon ic-trending-bar"></span>60 חודשים</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                </tr>
+                <tr>
+                  <td class="font-weight-bold pr-5"><span class="cs-icon ic-trending-bar"></span>ממוצע 36 חודשים</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                </tr>
+                <tr>
+                  <td class="font-weight-bold pr-5"><span class="cs-icon ic-trending-bar"></span>ממוצע 60 חודשים</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                </tr>
+                <tr>
+                  <td class="font-weight-bold pr-5"><span class="cs-icon ic-trending-bar"></span>בחירה לפי טווח</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                </tr>
+                <tr>
+                  <td class="font-weight-bold pr-5"><span class="cs-icon ic-trending-bar"></span>תשואות לפי שנים</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="col-5">
+          <div class="card chart-card h-100">
+            <h6 class="p-3">
+              מדד אלפא
+            </h6>
+            <div class="card-body">
+              <canvas id="myChart1"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Row 3 -->
+      <div class="row row-section mb-5">
+        <div class="col-7">
+          <div class="card">
+            <table class="table table-bordered m-0">
+              <thead>
+                <tr>
+                  <th class="pr-5 py-1">
+                    <span class="cs-icon ic-check-less"></span>
+                    <div class="th-title">מדדים לתקופה </div>
+                    <input type="text" name="dates" class="form-control-mini" />
+                  </th>
+                  <th class="text-center"><a href="#">מוצר 1</a></th>
+                  <th class="text-center"><a href="#">מוצר 2</a></th>
+                  <th class="text-center"><a href="#">מוצר 3</a></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="font-weight-bold pr-5"><span class="cs-icon ic-trending-bar"></span>תשואה</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                </tr>
+                <tr>
+                  <td class="font-weight-bold pr-5"><span class="cs-icon ic-trending-bar"></span>אלפא</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                </tr>
+                <tr>
+                  <td class="font-weight-bold pr-5"><span class="cs-icon ic-trending-bar"></span>בטה</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                </tr>
+                <tr>
+                  <td class="font-weight-bold pr-5"><span class="cs-icon ic-trending-bar"></span>שארפ</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                </tr>
+                <tr>
+                  <td class="font-weight-bold pr-5"><span class="cs-icon ic-trending-bar"></span>סטיית תקן</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                </tr>
+                <tr>
+                  <td class="font-weight-bold pr-5"><span class="cs-icon ic-trending-bar"></span>חודשים</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                </tr>
+                <tr>
+                  <td class="font-weight-bold pr-5"><span class="cs-icon ic-trending-bar"></span>חיובים</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                </tr>
+                <tr>
+                  <td class="font-weight-bold pr-5"><span class="cs-icon ic-trending-bar"></span>צבירה נטו</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="col-5">
+          <div class="card chart-card h-100">
+            <h6 class="p-3">
+              מדד אלפא
+            </h6>
+            <div class="card-body">
+              <canvas id="myChart2"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Row 4 -->
+      <div class="row row-section mb-5">
+        <div class="col-7">
+          <div class="card">
+            <table class="table table-bordered m-0">
+              <thead>
+                <tr>
+                  <th class="pr-5 py-1">
+                    <span class="cs-icon ic-check-less"></span>
+                    <div class="th-title">מדד תשואה לפי חודשים </div>
+                    <select class="form-control-mini">
+                      <option>12 חודשים</option>
+                      <option>24 חודשים</option>
+                      <option>36 חודשים</option>
+                    </select>
+                  </th>
+                  <th class="text-center"><a href="#">מוצר 1</a></th>
+                  <th class="text-center"><a href="#">מוצר 2</a></th>
+                  <th class="text-center"><a href="#">מוצר 3</a></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="font-weight-bold pr-5">6.2020</td>
+                  <td class="text-center"> </td>
+                  <td class="text-center"> </td>
+                  <td class="text-center"> </td>
+                </tr>
+                <tr>
+                  <td class="font-weight-bold pr-5">5.2020</td>
+                  <td class="text-center"> </td>
+                  <td class="text-center"> </td>
+                  <td class="text-center"> </td>
+                </tr>
+                <tr>
+                  <td class="font-weight-bold pr-5">4.2020</td>
+                  <td class="text-center"> </td>
+                  <td class="text-center"> </td>
+                  <td class="text-center"> </td>
+                </tr>
+                <tr>
+                  <td class="font-weight-bold pr-5">3.2020</td>
+                  <td class="text-center"> </td>
+                  <td class="text-center"> </td>
+                  <td class="text-center"> </td>
+                </tr>
+                <tr>
+                  <td class="font-weight-bold pr-5">2.2020</td>
+                  <td class="text-center"> </td>
+                  <td class="text-center"> </td>
+                  <td class="text-center"> </td>
+                </tr>
+                <tr>
+                  <td class="font-weight-bold pr-5">1.2020</td>
+                  <td class="text-center"> </td>
+                  <td class="text-center"> </td>
+                  <td class="text-center"> </td>
+                </tr>
+                <tr>
+                  <td class="font-weight-bold pr-5">12.2019</td>
+                  <td class="text-center"> </td>
+                  <td class="text-center"> </td>
+                  <td class="text-center"> </td>
+                </tr>
+                <tr>
+                  <td class="font-weight-bold pr-5">11.2019</td>
+                  <td class="text-center"> </td>
+                  <td class="text-center"> </td>
+                  <td class="text-center"> </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="col-5">
+          <div class="card chart-card h-100">
+            <h6 class="p-3">
+              מדד אלפא
+            </h6>
+            <div class="card-body">
+              <canvas id="myChart3"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Row 5 -->
+      <div class="row row-section mb-5">
+        <div class="col-7">
+          <div class="card">
+            <table class="table table-bordered m-0">
+              <thead>
+                <tr>
+                  <th class="pr-5 py-1">
+                    <span class="cs-icon ic-check-less"></span>
+                    <div class="th-title">מדד תשואה לפי שנים</div>
+                    <select class="form-control-mini">
+                      <option>5 שנים אחרונים</option>
+                      <option>10 שנים אחרונים</option>
+                      <option>15 שנים אחרונים</option>
+                    </select>
+                  </th>
+                  <th class="text-center"><a href="#">מוצר 1</a></th>
+                  <th class="text-center"><a href="#">מוצר 2</a></th>
+                  <th class="text-center"><a href="#">מוצר 3</a></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="font-weight-bold pr-5">2020</td>
+                  <td class="text-center"> </td>
+                  <td class="text-center"> </td>
+                  <td class="text-center"> </td>
+                </tr>
+                <tr>
+                  <td class="font-weight-bold pr-5">2019</td>
+                  <td class="text-center"> </td>
+                  <td class="text-center"> </td>
+                  <td class="text-center"> </td>
+                </tr>
+                <tr>
+                  <td class="font-weight-bold pr-5">2018</td>
+                  <td class="text-center"> </td>
+                  <td class="text-center"> </td>
+                  <td class="text-center"> </td>
+                </tr>
+                <tr>
+                  <td class="font-weight-bold pr-5">2017</td>
+                  <td class="text-center"> </td>
+                  <td class="text-center"> </td>
+                  <td class="text-center"> </td>
+                </tr>
+                <tr>
+                  <td class="font-weight-bold pr-5">2016</td>
+                  <td class="text-center"> </td>
+                  <td class="text-center"> </td>
+                  <td class="text-center"> </td>
+                </tr>
+                <tr>
+                  <td class="font-weight-bold pr-5">2015</td>
+                  <td class="text-center"> </td>
+                  <td class="text-center"> </td>
+                  <td class="text-center"> </td>
+                </tr>
+                <tr>
+                  <td class="font-weight-bold pr-5">2014</td>
+                  <td class="text-center"> </td>
+                  <td class="text-center"> </td>
+                  <td class="text-center"> </td>
+                </tr>
+                <tr>
+                  <td class="font-weight-bold pr-5">2013</td>
+                  <td class="text-center"> </td>
+                  <td class="text-center"> </td>
+                  <td class="text-center"> </td>
+                </tr>
+                <tr>
+                  <td class="font-weight-bold pr-5">2012</td>
+                  <td class="text-center"> </td>
+                  <td class="text-center"> </td>
+                  <td class="text-center"> </td>
+                </tr>
+                <tr>
+                  <td class="font-weight-bold pr-5">2011</td>
+                  <td class="text-center"> </td>
+                  <td class="text-center"> </td>
+                  <td class="text-center"> </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="col-5">
+          <div class="card chart-card h-100">
+            <h6 class="p-3">
+              מדד אלפא
+            </h6>
+            <div class="card-body">
+              <canvas id="myChart4"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Row 6 -->
+      <div class="row row-section mb-5">
+        <div class="col-7">
+          <div class="card">
+            <table class="table table-bordered m-0">
+              <thead>
+                <tr>
+                  <th class="pr-5"><span class="cs-icon ic-check-less"></span>אפיקי השקעה עיקריים </th>
+                  <th class="text-center"><a href="#">מוצר 1</a></th>
+                  <th class="text-center"><a href="#">מוצר 2</a></th>
+                  <th class="text-center"><a href="#">מוצר 3</a></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="font-weight-bold pr-5"><span class="cs-icon ic-trending-bar"></span>מזומנים ושווה מזומנים</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                </tr>
+                <tr>
+                  <td class="font-weight-bold pr-5"><span class="cs-icon ic-trending-bar"></span>חשיפה לאגח קונצרני</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                </tr>
+                <tr>
+                  <td class="font-weight-bold pr-5"><span class="cs-icon ic-trending-bar"></span>חשיפה לאגח ממשלתי</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                </tr>
+                <tr>
+                  <td class="font-weight-bold pr-5"><span class="cs-icon ic-trending-bar"></span>חשיפה למניות </td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                </tr>
+                <tr>
+                  <td class="font-weight-bold pr-5"><span class="cs-icon ic-trending-bar"></span>חשיפה לחו"ל</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                </tr>
+                <tr>
+                  <td class="font-weight-bold pr-5"><span class="cs-icon ic-trending-bar"></span>חשיפה למט"ח</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                </tr>
+                <tr>
+                  <td class="font-weight-bold pr-5"><span class="cs-icon ic-trending-bar"></span>חשיפה נטו ( גידור )</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="col-5">
+          <div class="card chart-card h-100">
+            <h6 class="p-3">
+              מדד אלפא
+            </h6>
+            <div class="card-body">
+              <canvas id="myChart5"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Row 7 -->
+      <div class="row row-section mb-5">
+        <div class="col-7">
+          <div class="card">
+            <table class="table table-bordered m-0">
+              <thead>
+                <tr>
+                  <th class="pr-5"><span class="cs-icon ic-check-less"></span>מדדי איכות </th>
+                  <th class="text-center"><a href="#">מוצר 1</a></th>
+                  <th class="text-center"><a href="#">מוצר 2</a></th>
+                  <th class="text-center"><a href="#">מוצר 3</a></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="font-weight-bold pr-5"><span class="cs-icon ic-trending-bar"></span>דירוג </td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                </tr>
+                <tr>
+                  <td class="font-weight-bold pr-5"><span class="cs-icon ic-trending-bar"></span>אלפא</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                </tr>
+                <tr>
+                  <td class="font-weight-bold pr-5"><span class="cs-icon ic-trending-bar"></span>שארפ</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                </tr>
+                <tr>
+                  <td class="font-weight-bold pr-5"><span class="cs-icon ic-trending-bar"></span>RECOVERY</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                </tr>
+                <tr>
+                  <td class="font-weight-bold pr-5"><span class="cs-icon ic-trending-bar"></span>עקביות 36</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                </tr>
+                <tr>
+                  <td class="font-weight-bold pr-5"><span class="cs-icon ic-trending-bar"></span>עקביות 12</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                </tr>
+                <tr>
+                  <td class="font-weight-bold pr-5"><span class="cs-icon ic-trending-bar"></span>צבירה 12</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="col-5">
+          <div class="card chart-card h-100">
+            <h6 class="p-3">
+              מדד אלפא
+            </h6>
+            <div class="card-body">
+              <canvas id="myChart6"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Row 8 -->
+      <div class="row row-section mb-5">
+        <div class="col-7">
+          <div class="card">
+            <table class="table table-bordered m-0">
+              <thead>
+                <tr>
+                  <th class="pr-5"><span class="cs-icon ic-check-less"></span>סטטיסטיקה</th>
+                  <th class="text-center"><a href="#">מוצר 1</a></th>
+                  <th class="text-center"><a href="#">מוצר 2</a></th>
+                  <th class="text-center"><a href="#">מוצר 3</a></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="font-weight-bold pr-5"><span class="cs-icon ic-trending-bar"></span>סטיית תקן</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                </tr>
+                <tr>
+                  <td class="font-weight-bold pr-5"><span class="cs-icon ic-trending-bar"></span>בתא</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                </tr>
+                <tr>
+                  <td class="font-weight-bold pr-5"><span class="cs-icon ic-trending-bar"></span>DOWNTRADE</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                </tr>
+                <tr>
+                  <td class="font-weight-bold pr-5"><span class="cs-icon ic-trending-bar"></span>WORSTRADE</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                </tr>
+                <tr>
+                  <td class="font-weight-bold pr-5"><span class="cs-icon ic-trending-bar"></span>WORSTYEAR</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                </tr>
+                <tr>
+                  <td class="font-weight-bold pr-5"><span class="cs-icon ic-trending-bar"></span>POSITIVE MONTHS</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="col-5">
+          <div class="card chart-card h-100">
+            <h6 class="p-3">
+              מדד אלפא
+            </h6>
+            <div class="card-body">
+              <canvas id="myChart7"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Row 9 -->
+      <div class="row row-section mb-5">
+        <div class="col-7">
+          <div class="card">
+            <table class="table table-bordered m-0">
+              <thead>
+                <tr>
+                  <th class="pr-5"><span class="cs-icon ic-check-less"></span>נכסים לפי קבוצות ראשיות </th>
+                  <th class="text-center"><a href="#">מוצר 1</a></th>
+                  <th class="text-center"><a href="#">מוצר 2</a></th>
+                  <th class="text-center"><a href="#">מוצר 3</a></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="font-weight-bold pr-5"><span class="cs-icon ic-trending-bar"></span>מניות, אופציות ותעודות סל </td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                </tr>
+                <tr>
+                  <td class="font-weight-bold pr-5"><span class="cs-icon ic-trending-bar"></span>מנייתיות</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                </tr>
+                <tr>
+                  <td class="font-weight-bold pr-5"><span class="cs-icon ic-trending-bar"></span>אגח קונצרני סחיר ותעודות סל</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                </tr>
+                <tr>
+                  <td class="font-weight-bold pr-5"><span class="cs-icon ic-trending-bar"></span>אגחיות</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                </tr>
+                <tr>
+                  <td class="font-weight-bold pr-5"><span class="cs-icon ic-trending-bar"></span>אגח ממשלתיות סחירות</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                </tr>
+                <tr>
+                  <td class="font-weight-bold pr-5"><span class="cs-icon ic-trending-bar"></span>מזומנים ושווי מזומנים</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                </tr>
+                <tr>
+                  <td class="font-weight-bold pr-5"><span class="cs-icon ic-trending-bar"></span>נכסים אחרים</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                </tr>
+                <tr>
+                  <td class="font-weight-bold pr-5"><span class="cs-icon ic-trending-bar"></span>קרנות נאמנות</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                </tr>
+                <tr>
+                  <td class="font-weight-bold pr-5"><span class="cs-icon ic-trending-bar"></span>אגח קונצרניות לא סחירות</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                </tr>
+                <tr>
+                  <td class="font-weight-bold pr-5"><span class="cs-icon ic-trending-bar"></span>פיקדונות</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                </tr>
+                <tr>
+                  <td class="font-weight-bold pr-5"><span class="cs-icon ic-trending-bar"></span>הלוואות</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="col-5">
+          <div class="card chart-card h-100">
+            <h6 class="p-3">
+              מדד אלפא
+            </h6>
+            <div class="card-body">
+              <canvas id="myChart8"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Row 10 -->
+      <div class="row row-section mb-5">
+        <div class="col-7">
+          <div class="card">
+            <table class="table table-bordered m-0">
+              <thead>
+                <tr>
+                  <th class="pr-5"><span class="cs-icon ic-check-less"></span>נכסים סחירים / לא סחירים / בארץ ובחו"ל</th>
+                  <th class="text-center"><a href="#">מוצר 1</a></th>
+                  <th class="text-center"><a href="#">מוצר 2</a></th>
+                  <th class="text-center"><a href="#">מוצר 3</a></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="font-weight-bold pr-5"><span class="cs-icon ic-trending-bar"></span>נכסים סחירים ונזילים</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                </tr>
+                <tr>
+                  <td class="font-weight-bold pr-5"><span class="cs-icon ic-trending-bar"></span>נכסים לא סחירים</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                </tr>
+                <tr>
+                  <td class="font-weight-bold pr-5"><span class="cs-icon ic-trending-bar"></span>נכסים בארץ</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                </tr>
+                <tr>
+                  <td class="font-weight-bold pr-5"><span class="cs-icon ic-trending-bar"></span>נכסים בחול ובמטח</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="col-5">
+          <div class="card chart-card h-100">
+            <h6 class="p-3">
+              מדד אלפא
+            </h6>
+            <div class="card-body">
+              <canvas id="myChart9"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Row 11 -->
+      <div class="row row-section mb-5">
+        <div class="col-7">
+          <div class="card">
+            <table class="table table-bordered m-0">
+              <thead>
+                <tr>
+                  <th class="pr-5"><span class="cs-icon ic-check-less"></span>פירוט מלא</th>
+                  <th class="text-center"><a href="#">מוצר 1</a></th>
+                  <th class="text-center"><a href="#">מוצר 2</a></th>
+                  <th class="text-center"><a href="#">מוצר 3</a></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="font-weight-bold pr-5"><span class="cs-icon ic-trending-bar"></span>מניות ניתר</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                </tr>
+                <tr>
+                  <td class="font-weight-bold pr-5"><span class="cs-icon ic-trending-bar"></span>יתרות מזומנים ועוש בשקלים חדשים</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                </tr>
+                <tr>
+                  <td class="font-weight-bold pr-5"><span class="cs-icon ic-trending-bar"></span>מניות השייכות למדד 25/35</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                </tr>
+                <tr>
+                  <td class="font-weight-bold pr-5"><span class="cs-icon ic-trending-bar"></span>מניות השייכות למדד 75/90</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                </tr>
+                <tr>
+                  <td class="font-weight-bold pr-5"><span class="cs-icon ic-trending-bar"></span>אגרות חוב צמודות מדד בדירוג</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                </tr>
+                <tr>
+                  <td class="font-weight-bold pr-5"><span class="cs-icon ic-trending-bar"></span>מניות לא סחירות</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                </tr>
+                <tr>
+                  <td class="font-weight-bold pr-5"><span class="cs-icon ic-trending-bar"></span>אגרות חוב לא צמודות מדד בדירוג</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                </tr>
+                <tr>
+                  <td class="font-weight-bold pr-5"><span class="cs-icon ic-trending-bar"></span>אגח סחירות ממשלתיות לא צמודות</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                </tr>
+                <tr>
+                  <td class="font-weight-bold pr-5"><span class="cs-icon ic-trending-bar"></span>מניות של תאגיד תושב חוץ בשיעור עד 10%</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                </tr>
+                <tr>
+                  <td class="font-weight-bold pr-5"><span class="cs-icon ic-trending-bar"></span>AA לא כולל AA: BBB אגרות חוב</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                </tr>
+                <tr>
+                  <td class="font-weight-bold pr-5"><span class="cs-icon ic-trending-bar"></span>מקמ</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                </tr>
+                <tr>
+                  <td class="font-weight-bold pr-5"><span class="cs-icon ic-trending-bar"></span>AA לא כולל AA: BBB אגרות חוב לא צמודה</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                </tr>
+                <tr>
+                  <td class="font-weight-bold pr-5"><span class="cs-icon ic-trending-bar"></span>Warrants כתבי אופציה לא סחירים מסוג</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                  <td class="text-center">TEXT</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="col-5">
+          <div class="card chart-card h-100">
+            <h6 class="p-3">
+              מדד אלפא
+            </h6>
+            <div class="card-body">
+              <canvas id="myChart10"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Add Product Modal -->
+<div class="modal" id="addProductModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <button type="button" class="cs-btn-icon btn-close close dark mr-auto" data-dismiss="modal"></button>
+      <div class="row mx-0 h-100 text-right">
+        <div class="modal-right-bar">
+          <h6 class="text-primary text-right">רמת סיכון</h6>
+          <div class="bar-item row mx-0">
+            <label class="cs-checkbox-container m-0">
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="mb-0 px-2">1</label>
+          </div>
+          <div class="bar-item row mx-0">
+            <label class="cs-checkbox-container m-0">
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="mb-0 px-2">2</label>
+          </div>
+          <div class="bar-item row mx-0">
+            <label class="cs-checkbox-container m-0">
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="mb-0 px-2">3</label>
+          </div>
+          <div class="bar-divider"></div>
+          <h6 class="text-primary text-right">מסלולים</h6>
+          <div class="bar-item row mx-0">
+            <label class="cs-checkbox-container m-0">
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="mb-0 px-2">לבני 50 ומטה</label>
+          </div>
+          <div class="bar-item row mx-0">
+            <label class="cs-checkbox-container m-0">
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="mb-0 px-2">לבני 50 - 60</label>
+          </div>
+          <div class="bar-item row mx-0">
+            <label class="cs-checkbox-container m-0">
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="mb-0 px-2">לבני 60 ומעלה</label>
+          </div>
+          <div class="bar-divider"></div>
+          <div class="form-group">
+            <div class="tag-container text-right">
+              <h6 class="text-primary">חברה מנהלת</h6>
+              <div class="tag-wrapper">
+                <div class="tag">חברה מנהלת <span class="tag-remove">&times;</span></div>
+              </div>
+              <div class="autocomplete">
+                <input type="text" class="form-control mt-3" name="tag-input" id="_tag_input" placeholder="בחר חברה מנהלת" />
+              </div>
+            </div>
+            <div class="row mx-0 mt-3">
+              <button class="btn btn-primary btn-clear-mana-company mr-auto">נקה חברה מנהלת</button>
+            </div>
+          </div>
+        </div>
+        <div class="modal-left-bar">
+          <h5>בחר מוצר להשוואה</h5>
+          <div class="row mt-4">
+            <div class="col-5">
+              <div class="row">
+                <div class="col-6">
+                  <div class="card list-card">
+                    <div class="card-header text-primary text-right font-weight-bold">נושא ראשי</div>
+                    <div class="card-body">
+                      <ul>
+                        <li>גמל</li>
+                        <li>השתלמות</li>
+                        <li>פיצויים</li>
+                        <li>מדדי השוק</li>
+                        <li>מניות ואגח ישראל</li>
+                        <li>מניות ואגח חו"ל</li>
+                        <li>קרנות נאמנות ישראל</li>
+                        <li>קרנות נאמנות חו"ל</li>
+                        <li>תמהילי מוצרים</li>
+                        <li>פוליסות חיסכון</li>
+                        <li>קרנות פנסיה</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="card list-card">
+                    <div class="card-header text-primary text-right font-weight-bold">תת נושא</div>
+                    <div class="card-body">
+                      <ul>
+                        <li>כל התקופות </li>
+                        <li>קרנות השתלמות</li>
+                        <li>קופות גימל</li>
+                        <li>קופות פיצויים</li>
+                        <li>גמל השקעות</li>
+                        <li>חסכון לכל ילד</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-7">
+              <div class="card list-card">
+                <div class="card-header text-primary text-right font-weight-bold">רשימת מוצרים</div>
+                <div class="card-body">
+                  <ul>
+                    <li>רשימת מוצרים</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-5">
+              <h5 class="my-2">מוצרים שנבחרו להוספה</h5>
+            </div>
+            <div class="col-7">
+              <div class="form-group">
+                <input type="text" class="form-control w-100" placeholder="חפש מוצר ברשימה" />
+                <span class="cs-icon ic-search-blue"></span>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="card">
+                <div class="card-body p-0">
+                  <table class="table datatable w-100 m-0">
+                    <thead>
+                      <tr>
+                        <th></th>
+                        <th>בחר</th>
+                        <th>שם קופה</th>
+                        <th>מספר קופה</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <label class="cs-checkbox-container m-0 mr-3 mt-2">
+                            <input type="checkbox" />
+                            <span class="checkmark"></span>
+                          </label>
+                        </td>
+                        <td class="font-weight-bold">מוצר 1</td>
+                        <td>TEXT</td>
+                        <td>
+                          TEXT
+                          <span class="cs-icon ic-clear"></span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <label class="cs-checkbox-container m-0 mr-3 mt-2">
+                            <input type="checkbox" />
+                            <span class="checkmark"></span>
+                          </label>
+                        </td>
+                        <td class="font-weight-bold">מוצר 2</td>
+                        <td>TEXT</td>
+                        <td>
+                          TEXT
+                          <span class="cs-icon ic-clear"></span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <label class="cs-checkbox-container m-0 mr-3 mt-2">
+                            <input type="checkbox" />
+                            <span class="checkmark"></span>
+                          </label>
+                        </td>
+                        <td class="font-weight-bold">מוצר 3</td>
+                        <td>TEXT</td>
+                        <td>
+                          TEXT
+                          <span class="cs-icon ic-clear"></span>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row my-4 mx-0">
+            <button class="cs-btn-img btn-add-product"></button>
+            <button class="cs-btn-img btn-clear-selection"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- plugin js -->
+<script type="text/javascript" src="../assets/plugins/DataTables/datatables.min.js"></script>
+<script src="../assets/plugins/bar-rating/jquery.barrating.js"></script>
+<script src='../assets/plugins/addSlider/res/Obj.min.js'></script>
+<script src='../assets/plugins/addSlider/src/addSlider.js'></script>
+<script src="../assets/plugins/sliding-toggle-switch/lc_switch.js" type="text/javascript"></script>
+<script src="../assets/js/autocomplete.js" type="text/javascript"></script>
+<script src="../assets/js/form-validation.js" type="text/javascript"></script>
+<script src="../assets/js/common.js" type="text/javascript"></script>
+<script src="../assets/custom/square-rater/square-rater.js" type="text/javascript"></script>
+<script src="../assets/custom/rate-color-bar/rate-color-bar.js" type="text/javascript"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+
+<!-- ./plugin js -->
+<script>
+
+  // date range picker init
+  $('input[name="dates"]').daterangepicker({
+    opens: 'left'
+  });
+  // datatable init
+  $(document).ready(function() {
+    $('.datatable').DataTable({
+      paging: false,
+      // scrollY: 400,
+      searching: false
+      // ordering:  false
+    });
+  } );
+  // autocomplete form-control proximity
+  autocomplete(document.getElementById("_f_name"), countries);
+  autocomplete(document.getElementById("_l_name"), countries);
+  autocomplete(document.getElementById("_id_num"), countries);
+  autocomplete(document.getElementById("_type_deals"), countries);
+  autocomplete(document.getElementById("_gender"), countries);
+  autocomplete(document.getElementById("_status"), countries);
+  autocomplete(document.getElementById("_address"), countries);
+  autocomplete(document.getElementById("_settlement"), countries);
+  autocomplete(document.getElementById("_settlement"), countries);
+  autocomplete(document.getElementById("_phone_num"), countries);
+  autocomplete(document.getElementById("_email"), countries);
+  autocomplete(document.getElementById("_caring_staff"), countries);
+  autocomplete(document.getElementById("_agent"), countries);
+  autocomplete(document.getElementById("_phone_num_2"), countries);
+  // tag input
+  var tags = ["tag1", "tag2", "tag3", "tag4", "tag5"];
+  autocomplete(document.getElementById("_tag_input"), tags);
+</script>
+<script type="text/javascript">
+  $(document).ready(function(e) {
+      $('input.lcs_check').lc_switch('פעיל', 'deactive');
+  
+      // triggered each time a field changes status
+      $(document).on('lcs-statuschange', '.lcs_check', function() {
+          var status 	= ($(this).is(':checked')) ? 'checked' : 'unchecked',
+      subj 	= ($(this).attr('type') == 'radio') ? 'radio #' : 'checkbox #',
+      num		= $(this).val(); 
+          
+    $('#third_div ul').prepend('<li><em>[lcs-statuschange]</em>'+ subj + num +' changed status: '+ status +'</li>');
+      });
+      
+      
+      // triggered each time a field is checked
+      $(document).on('lcs-on', '.lcs_check', function() {
+    var subj 	= ($(this).attr('type') == 'radio') ? 'radio #' : 'checkbox #',
+      num		= $(this).val(); 
+    
+    $('#third_div ul').prepend('<li><em>[lcs-on]</em>'+ subj + num +' is checked</li>');
+      });
+      
+      
+      // triggered each time a is unchecked
+      $(document).on('lcs-off', '.lcs_check', function() {
+          var subj 	= ($(this).attr('type') == 'radio') ? 'radio #' : 'checkbox #',
+      num		= $(this).val(); 
+    
+    $('#third_div ul').prepend('<li><em>[lcs-off]</em>'+ subj + num +' is unchecked</li>');
+      });
+  });
+
+
+  // clean events log
+  $('#third_div small').click(function() {
+    $('#third_div ul').empty();
+  });
+</script>
+<!-- script -->
+<script>
+  $(function() {
+    $('.filter-variable-reset').hide();
+    $('.filter-variable-mana').hide();
+  });
+  $(document).on('click', '.filter-toggle', function() {
+    $('.main').addClass('open-filter');
+    $('.settings-form').removeClass('open');
+    $('.filter-form').addClass('open');
+    $('.filter-toggle').hide();
+    $('.filter-variable-reset').show();
+    $('.filter-variable-mana').show();
+  });
+  $(document).on('click', '.filter-variable-reset', function() {
+    $('.main').addClass('open-filter');
+    $('.settings-form').removeClass('open');
+    $('.filter-form').addClass('open');
+  });
+  // $(document).on('click', '.filter-variable-mana', function() {
+  //   $('.main').addClass('open-filter');
+  //   $('.filter-form').removeClass('open');
+  //   $('.settings-form').addClass('open');
+  // });
+  $(document).on('click', '.filter-close', function() {
+    $('.main').removeClass('open-filter');
+    $('.filter-toggle').show();
+    $('.filter-variable-reset').hide();
+    $('.filter-variable-mana').hide();
+  });
+</script>
+<script>
+  // mana company tag
+  $(document).on('keyup', 'input[name=tag-input]', function(e) {
+    if($(this).val() != '' && e.keyCode == 13) {
+      $('.tag-wrapper').append('<div class="tag">' + e.target.value + '<span class="tag-remove">&times;</span></div>');
+      $(this).val('');
+    }
+  });
+  $(document).on('click', '.tag-remove', function() {
+    $(this).closest('.tag').remove();
+  });
+  $(document).on('click', '.btn-clear-mana-company', function() {
+    $('.tag-wrapper').empty();
+    $('input[name=tag-input]').val('');
+  });
+</script>
+<script>
+  // Our labels along the x-axis
+  var years = [1500,1600,1700,1750,1800,1850,1900,1950,1999,2050];
+  // For drawing the lines
+  var africa = [86,114,106,106,107,111,133,221,783,2478];
+  // === Chart 1
+  var data1 = {
+      labels: ["מוצר 3", "מוצר 2", "מוצר 1"],
+      datasets: [
+        {
+          label: 'Dataset 1', 
+          data: [28, 0, 0],
+          backgroundColor: '#F37A00'
+        },{ 
+          label: 'Dataset 2', 
+          data: [0, -32, 0],
+          backgroundColor: '#1A70C6'
+        },{ 
+          label: 'Dataset 3', 
+          data: [0, 0, 12],
+          backgroundColor: '#3ACCE1'
+        }
+      ]
+    }
+  var configChart1 = {
+    type: 'bar',
+    data: data1,
+    options: {
+      responsive: true,
+      legend: {
+        display: false
+      },
+      plugins: {
+        legend: {
+          position: 'top',
+        },
+        title: {
+          display: false,
+          text: ''
+        }
+      }
+    },
+  };
+  // ---
+  var data2 = {
+      labels: ["יולי", "ספטמבר", "נובמבר", "יוני", "מרץ", "מאי"],
+      datasets: [
+        {
+          label: ' הפועלים -   15.58% ', 
+          data: [20, -5, 22, -8, 8, 6, 12],
+          borderColor: '#F37A00',
+          backgroundColor: '#ffffff00',
+          tension: 0,
+          pointRadius: 0
+        },{ 
+          label: ' לאומי - 21.17%', 
+          data: [12, -8, 15, -2, 0, 9, 22],
+          borderColor: '#1A70C6',
+          backgroundColor: '#ffffff00',
+          tension: 0,
+          pointRadius: 0
+        },{ 
+          label: ' דיסקונט - 22.92%', 
+          data: [0, -15, 12, -18, 18, 16, 2],
+          borderColor: '#2CA01C',
+          backgroundColor: '#ffffff00',
+          tension: 0,
+          pointRadius: 0
+        },{ 
+          label: 'בנלאומי - 11.20%', 
+          data: [2, -25, 7, 9, 15, -6, -12],
+          borderColor: '#3ACCE1',
+          backgroundColor: '#ffffff00',
+          tension: 0,
+          pointRadius: 0
+        }
+      ]
+    }
+  var configChart2 = {
+    type: 'line',
+    data: data2,
+    options: {
+      responsive: true,
+      plugins: {
+        legend: {
+          position: 'top',
+        },
+        title: {
+          display: false,
+          text: ''
+        }
+      }
+    },
+  };
+  // === ./Chart 1
+  // === Chart 2
+  //
+  drawCharts();
+  //
+  function drawCharts() {
+    var ctx = document.getElementById("myChart1");
+    ctx.height = $(ctx).closest('.card-body').height() / 2;
+    var myChart1 = new Chart(ctx, configChart1);
+    var ctx = document.getElementById("myChart2");
+    ctx.height = $(ctx).closest('.card-body').height() / 2;
+    var myChart2 = new Chart(ctx, configChart1);
+    var ctx = document.getElementById("myChart3");
+    ctx.height = $(ctx).closest('.card-body').height() / 2;
+    var myChart3 = new Chart(ctx, configChart2);
+    var ctx = document.getElementById("myChart4");
+    ctx.height = $(ctx).closest('.card-body').height() / 2;
+    var myChart4 = new Chart(ctx, configChart2);
+    var ctx = document.getElementById("myChart5");
+    ctx.height = $(ctx).closest('.card-body').height() / 2;
+    var myChart5 = new Chart(ctx, configChart1);
+    var ctx = document.getElementById("myChart6");
+    ctx.height = $(ctx).closest('.card-body').height() / 2;
+    var myChart6 = new Chart(ctx, configChart1);
+    var ctx = document.getElementById("myChart7");
+    ctx.height = $(ctx).closest('.card-body').height() / 2;
+    var myChart7 = new Chart(ctx, configChart1);
+    var ctx = document.getElementById("myChart8");
+    ctx.height = $(ctx).closest('.card-body').height() / 2;
+    var myChart8 = new Chart(ctx, configChart1);
+    var ctx = document.getElementById("myChart9");
+    ctx.height = $(ctx).closest('.card-body').height() / 2;
+    var myChart9 = new Chart(ctx, configChart1);
+    var ctx = document.getElementById("myChart10");
+    ctx.height = $(ctx).closest('.card-body').height() / 2;
+    var myChart10 = new Chart(ctx, configChart1);
+  }
+  // === ./Chart 2
+  $(document).on('click', 'table thead .btn-close', function() {
+    var className = $(this).closest('th').attr('class').replace('text-center ', '.');
+    $(className).remove();
+  });
+  //
+  $(document).on('click', '.ic-check-less', function() {
+    $(this).toggleClass('close');
+    $(this).closest('table').find('tbody').fadeToggle();
+    $(this).closest('.row-section').find('.chart-card').fadeToggle();
+  });
+  //
+  $(document).on('click', '.list-card .card-body ul li', function() {
+    if($(this).hasClass('selected')) {
+      $(this).removeClass('selected');
+    } else {
+      $(this).closest('.card-body').find('li').removeClass('selected');
+      $(this).addClass('selected');
+    }
+  });
+</script>
+<!-- ./script -->
+</body>
+</html>

@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <title>Admin</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- <link rel="stylesheet" href="../assets/bootstrap-4.3.1-dist/css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="../assets/theme/theme.css">
+  <link rel="stylesheet" href="../assets/scss/simulator.css">
+  <!-- plugin css -->
+  <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" type="text/css" href="../assets/plugins/DataTables/datatables.css"/>
+  <link rel='stylesheet' href='../assets/plugins/addSlider/src/addSlider.css' />
+  <link rel="stylesheet" href="../assets/plugins/sliding-toggle-switch/lc_switch.css">
+  <!-- js -->
+  <script src="../assets/jquery/jquery.min.js"></script>
+  <script src="../assets/plugins/popper/popper.min.js"></script>
+  <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<header class="header">
+  <div class="header-top">
+    <div class="dropdown">
+      <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <div class="avatar-container">
+          <img src="../assets/img/icons/ic_account_circle.png" alt="avatar" class="header-avatar" />
+        </div>
+        שם משתמש
+      </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" href="#">Action</a>
+        <a class="dropdown-item" href="#">Another action</a>
+        <a class="dropdown-item" href="#">Something else here</a>
+      </div>
+    </div>
+  </div>
+  <div class="header-nav">
+    <nav class="nav">
+      <div class="header-logo">
+        <a href="#" class="logo-text">LOGO</a>
+      </div>
+      <ul>
+        <li class="">
+          <a href="../Customer/customer-list.html">לקוחות</a>
+        </li>
+        <li class="active">
+          <a class="dropdown-toggle" href="../Simulator/simulator-main.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">סימולטור</a>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <div class="dropdown-block">
+              <h6 class="block-title"><span class="cs-icon ic-assessment ml-2"></span>השוואה וניתוח</h6>
+              <ul>
+                <li><a href="../Simulator/simulator-main.html">סינון מוצרים</a></li>
+                <li><a href="../Simulator/simulator-compare-products.html">השוואת מוצרים</a></li>
+                <li><a href="../Simulator/simulator-trends.html">מגמות</a></li>
+                <li><a href="../Simulator/simulator-allocation-and-analysis.html">אלוקציה וניתוח</a></li>
+              </ul>
+            </div>
+            <div class="dropdown-block">
+              <h6 class="block-title"><span class="cs-icon ic-pan-tool ml-2"></span>מוצרים נבחרים</h6>
+              <ul>
+                <li><a href="../Simulator/simulator-top5.html">TOP 5</a></li>
+                <li><a href="../Simulator/simulator-top10.html">TOP 10</a></li>
+              </ul>
+            </div>
+            <div class="dropdown-block">
+              <h6 class="block-title"><span class="cs-icon ic-library-add ml-2"></span>הוספת מוצר</h6>
+              <ul>
+                <li><a href="../Simulator/simulator-p2p-foundation.html">קרן P2P</a></li>
+                <li><a href="../Simulator/simulator-debt-fund.html">קרן חוב</a></li>
+                <li><a href="../Simulator/simulator-hedge-fund.html">קרן גידור</a></li>
+                <li><a href="../Simulator/simulator-real-estate-investments.html">השקעות נדל"ן</a></li>
+                <li><a href="../Simulator/simulator-reit-foundation.html">קרן רייט</a></li>
+                <li><a href="../Simulator/simulator-algo-beam.html">קרו אלגו</a></li>
+                <li><a href="../Simulator/simulator-insurance-product-risk.html">ביטוח</a></li>
+              </ul>
+            </div>
+            <div class="dropdown-block">
+              <h6 class="block-title"><span class="cs-icon ic-library-books ml-2"></span>מוצר משולב</h6>
+              <ul>
+                <li><a href="../Simulator/simulator-adding-integrated-product.html">הוספת מוצר משולב</a></li>
+              </ul>
+            </div>
+            <div class="dropdown-block">
+              <h6 class="block-title"><span class="cs-icon ic-keyboard ml-2"></span>מחשבונים</h6>
+              <ul>
+                <li><a href="../Simulator/simulator-standard-leverage.html">מינוף רגיל</a></li>
+                <li><a href="../Simulator/simulator-double-leverage.html">מינוף כפול</a></li>
+                <li><a href="../Simulator/simulator-irr-calculator.html">IRR</a></li>
+                <li><a href="../Simulator/simulator-savings-for-creating-butcher.html">חסכון ליצירת קצבח</a></li>
+                <li><a href="../Simulator/simulator-leverage-results.html">תוצאות מינוף</a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="">
+          <a href="../CRM/index.html">CRM</a>
+        </li>
+        <li class="">
+          <a href="../Action/tracking-performance.html">מעקב ביצוע</a>
+        </li>
+        <li class="">
+          <a href="../Data/data-reception.html">ניהול וקליטת נתונים</a>
+        </li>
+        <li class="">
+          <a href="../Reports/index.html">דוחות</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+  
+<div class="main simulator-debt-fund">
+  <div class="filter-app">
+    <div class="app-header px-0 m-0">
+      <div class="row app-header-top">
+        <span class="title">הוספת מוצר קרן חוב</span>
+      </div>
+      <div class="row app-header-bottom">
+        <div class="col-8">
+            <div class="row">
+                <div class="col-4">
+                    <div class="form-group">
+                        <label class="text-primary">שם מוצר</label>
+                        <input type="text" class="form-control" />
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="app-body my-5">
+        <div class="card">
+            <div class="card-body">
+                <!-- 1 -->
+                <div class="row">
+                    <div class="col-3">
+                        <div class="form-group">
+                            <label class="text-primary">שם חברה</label>
+                            <input type="text" class="form-control" placeholder="TEXT" />
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="form-group">
+                            <label class="text-primary">שם המנהל </label>
+                            <input type="text" class="form-control" placeholder="TEXT" />
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="form-group">
+                            <label class="text-primary">שם הקרן</label>
+                            <input type="text" class="form-control" placeholder="TEXT" />
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="form-group">
+                            <label class="text-primary">אסטרטגיית הקרן</label>
+                            <input type="text" class="form-control" placeholder="TEXT" />
+                        </div>
+                    </div>
+                </div>
+                <!-- 2 -->
+                <div class="row">
+                    <div class="col-3">
+                        <div class="form-group">
+                            <label class="text-primary">רמת סיכון </label>
+                            <input type="text" class="form-control" placeholder="TEXT" />
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="form-group">
+                            <label class="text-primary">מטבע </label>
+                            <select class="form-control">
+                                <option>ILS</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="form-group">
+                            <label class="text-primary">מסלול / קלאס</label>
+                            <input type="text" class="form-control" placeholder="TEXT" />
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="form-group">
+                            <label class="text-primary">ISIN</label>
+                            <input type="text" class="form-control" placeholder="NUM" />
+                        </div>
+                    </div>
+                </div>
+                <!-- 3 -->
+                <div class="row">
+                    <div class="col-3">
+                        <div class="form-group">
+                            <label class="text-primary">מספר אוצר</label>
+                            <input type="text" class="form-control" placeholder="NUM" />
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="form-group">
+                            <label class="text-primary">וותק השנים </label>
+                            <input type="text" class="form-control" placeholder="NUM" />
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="form-group">
+                            <label class="text-primary">היקף נכסי הקרן</label>
+                            <input type="text" class="form-control" placeholder="NUM" />
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="form-group">
+                            <label class="text-primary">איזור פעילות</label>
+                            <input type="text" class="form-control" placeholder="TEXT" />
+                        </div>
+                    </div>
+                </div>
+                <!-- 4 -->
+                <div class="row">
+                    <div class="col-3">
+                        <div class="form-group">
+                            <label class="text-primary">מפקח על פעילות הקרן </label>
+                            <input type="text" class="form-control" placeholder="TEXT" />
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="form-group">
+                            <label class="text-primary">היכן רשומה הקרן </label>
+                            <input type="text" class="form-control" placeholder="TEXT" />
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="form-group">
+                            <label class="text-primary">רו"ח מבקר</label>
+                            <input type="text" class="form-control" placeholder="TEXT" />
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="form-group">
+                            <label class="text-primary">נאמן</label>
+                            <input type="text" class="form-control" placeholder="TEXT" />
+                        </div>
+                    </div>
+                </div>
+                <!-- 5 -->
+                <div class="row">
+                    <div class="col-3">
+                        <div class="form-group">
+                            <label class="text-primary">אדמיניסטרטור</label>
+                            <input type="text" class="form-control" placeholder="TEXT" />
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="form-group">
+                            <label class="text-primary">סכום מינימום </label>
+                            <input type="text" class="form-control" placeholder="NUM" />
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="form-group">
+                            <label class="text-primary">מדד ייחוס לקרן </label>
+                            <input type="text" class="form-control" placeholder="NUM" />
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="form-group">
+                            <label class="text-primary">חשיפה נטו</label>
+                            <input type="text" class="form-control" placeholder="NUM" />
+                        </div>
+                    </div>
+                </div>
+                <!-- 6 -->
+                <div class="row">
+                    <div class="col-3">
+                        <div class="form-group">
+                            <label class="text-primary">דמי ניהול קבועים</label>
+                            <input type="text" class="form-control" placeholder="NUM" />
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="form-group">
+                            <label class="text-primary">דמי הצלחה</label>
+                            <input type="text" class="form-control" placeholder="NUM" />
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="form-group">
+                            <label class="text-primary">HWM</label>
+                            <input type="text" class="form-control" placeholder="NUM" />
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="form-group">
+                            <label class="text-primary">HURDLE</label>
+                            <input type="text" class="form-control" placeholder="NUM" />
+                        </div>
+                    </div>
+                </div>
+                <!-- 7 -->
+                <div class="row">
+                    <div class="col-3">
+                        <div class="form-group">
+                            <label class="text-primary">גובה HURDLE</label>
+                            <input type="text" class="form-control" placeholder="NUM" />
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="form-group">
+                            <label class="text-primary">תקופת נעילה</label>
+                            <input type="text" class="form-control" placeholder="NUM" />
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="form-group">
+                            <label class="text-primary">משך תקופת נעילה</label>
+                            <input type="text" class="form-control" placeholder="NUM" />
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="form-group">
+                            <label class="text-primary">אתר החברה</label>
+                            <input type="text" class="form-control" placeholder="NUM" />
+                        </div>
+                    </div>
+                </div>
+                <!-- 8 -->
+                <div class="row">
+                    <div class="col-12">
+                        <div class="form-group w-100">
+                            <label class="text-primary">הערות</label>
+                            <input type="text" class="form-control w-100" placeholder="TEXT" />
+                        </div>
+                    </div>
+                </div>
+                <div class="row mx-0 mt-5 border-top">
+                    <button class="cs-btn-img btn-save-green ml-auto mr-0 mt-4"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+<!-- plugin js -->
+<script type="text/javascript" src="../assets/plugins/DataTables/datatables.min.js"></script>
+<script src="../assets/plugins/bar-rating/jquery.barrating.js"></script>
+<script src='../assets/plugins/addSlider/res/Obj.min.js'></script>
+<script src='../assets/plugins/addSlider/src/addSlider.js'></script>
+<script src="../assets/plugins/sliding-toggle-switch/lc_switch.js" type="text/javascript"></script>
+<script src="../assets/js/autocomplete.js" type="text/javascript"></script>
+<script src="../assets/js/form-validation.js" type="text/javascript"></script>
+<script src="../assets/js/common.js" type="text/javascript"></script>
+<script src="../assets/custom/square-rater/square-rater.js" type="text/javascript"></script>
+<script src="../assets/custom/rate-color-bar/rate-color-bar.js" type="text/javascript"></script>
+<script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+
+<!-- ./plugin js -->
+<!-- script -->
+<script>
+    // datatable init
+  $(document).ready(function() {
+    $('.datatable').DataTable({
+      paging: false,
+      // scrollY: 400,
+      searching: false
+      // ordering:  false
+    });
+  } );
+</script>
+<!-- ./script -->
+</body>
+</html>

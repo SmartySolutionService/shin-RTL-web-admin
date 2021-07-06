@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <title>Admin</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- <link rel="stylesheet" href="../../assets/bootstrap-4.3.1-dist/css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="../../assets/theme/theme.css">
+  <link rel="stylesheet" href="../../assets/scss/action.css">
+  <!-- plugin css -->
+  <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" type="text/css" href="../../assets/plugins/DataTables/datatables.css"/>
+  <link rel='stylesheet' href='../../assets/plugins/addSlider/src/addSlider.css' />
+  <link rel="stylesheet" href="../../assets/plugins/sliding-toggle-switch/lc_switch.css">
+  <!-- js -->
+  <script src="../../assets/jquery/jquery.min.js"></script>
+  <script src="../../assets/plugins/popper/popper.min.js"></script>
+  <script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+  <div class="modal-dialog cs-dialog">
+    <div class="modal-content">
+      <!-- Modal Header -->
+      <div class="modal-header mt-4 pr-5">
+        <h2 class="title">
+          <span class="">הוספת מוצר מסוג - </span>
+          <span class="text-primary">קרן אלטרנטיבית</span>
+        </h2>
+      </div>
+      <!-- Modal body -->
+      <div class="modal-body pt-2">
+        <div class="row">
+          <div class="col-2 d-flex">
+            <label class="text-primary">לקוח</label>
+            <label class="text-value">אוטומאטי</label>
+          </div>
+          <div class="col-4 d-flex">
+            <label class="text-primary">שם מוצר</label>
+            <div class="autocomplete w-100">
+              <input type="text" class="form-control" placeholder="קומבו (השלמה אוטומאטית) תצוגה מספר + שם" />
+            </div>
+            <!-- <select class="form-control">
+              <option>קומבו (השלמה אוטומאטית) תצוגה מספר + שם</option>
+            </select> -->
+          </div>
+          <div class="col-3 d-flex">
+            <label class="text-primary">גורם מטפל</label>
+            <select class="form-control">
+              <option>גורם מטפל</option>
+            </select>
+          </div>
+        </div>
+        <hr style="border-color: #78849E;" />
+        <!--  -->
+        <div class="row">
+          <div class="col-4">
+            <label class="text-primary">חברה מנהלת</label>
+            <input type="text" class="form-control" placeholder="TEXT" />
+          </div>
+          <div class="col-2">
+            <label class="text-primary">מספר רשיון בחברה מנהלת</label>
+            <input type="text" class="form-control" placeholder="TEXT" />
+          </div>
+          <div class="col-3">
+            <label class="text-primary">בעל רשיון</label>
+            <select class="form-control">
+              <option>TEXT</option>
+            </select>
+          </div>
+        </div>
+        <!--  -->
+        <div class="row">
+          <div class="col-4">
+            <label class="text-primary">מועמד במוצר</label>
+            <input type="text" class="form-control" placeholder="TEXT" />
+          </div>
+          <div class="col-2">
+            <label class="text-primary">ISN</label>
+            <input type="text" class="form-control" placeholder="TEXT" />
+          </div>
+          <div class="col-3">
+            <label class="text-primary">מעמד מספר</label>
+            <select class="form-control">
+              <option>NUM</option>
+            </select>
+          </div>
+        </div>
+        <!--  -->
+        <div class="row">
+          <div class="col-2">
+            <label class="text-primary">שער מטבע הרכישה </label>
+            <input type="type" class="form-control" placeholder="NUM" />
+          </div>
+          <div class="col-2">
+            <label class="text-primary">מטבע הרכישה</label>
+            <select class="form-control">
+              <option>NUM</option>
+            </select>
+          </div>
+        </div>
+        <!--  -->
+        <div class="row">
+          <div class="col-2">
+            <label class="text-primary">הפקדה חד פעמית </label>
+            <input type="checkbox" name="status" value="1" class="lcs_check" autocomplete="off" checked />
+          </div>
+          <div class="col-2">
+            <label class="text-primary">סכום הפקדה ח"פ</label>
+            <input type="text" class="form-control" placeholder="NUM" />
+          </div>
+          <div class="col-2">
+            <label class="text-primary">מועד הפקדה ח"פ</label>
+            <input class="form-control datepicker" placeholder="DATE" />
+          </div>
+          <div class="col-2">
+            <label class="text-primary">מקור הכספים</label>
+            <input type="text" class="form-control" placeholder="TEXT" />
+          </div>
+        </div>
+        <!--  -->
+        <div class="row">
+          <div class="col-2">
+            <label class="text-primary">הפקדות שוטפות </label>
+            <input type="checkbox" name="status" value="1" class="lcs_check" autocomplete="off" checked />
+          </div>
+          <div class="col-2">
+            <label class="text-primary">גובה הפקדה שוטפת</label>
+            <input type="text" class="form-control" placeholder="NUM" />
+          </div>
+        </div>
+        <!--  -->
+        <div class="row">
+          <div class="col-2">
+            <label class="text-primary">אנונה מהמוצר</label>
+            <input type="checkbox" name="status" value="1" class="lcs_check" autocomplete="off" checked />
+          </div>
+          <div class="col-2">
+            <label class="text-primary">סכום אנונה</label>
+            <input type="text" class="form-control" placeholder="NUM" />
+          </div>
+        </div>
+        <!--  -->
+        <div class="row">
+          <div class="col-2">
+            <label class="text-primary">מינוף למוצר</label>
+            <input type="checkbox" name="status" value="1" class="lcs_check" autocomplete="off" checked />
+          </div>
+          <div class="col-2">
+            <label class="text-primary">סכום המינוף </label>
+            <input type="text" class="form-control" placeholder="NUM" />
+          </div>
+          <div class="col-2">
+            <label class="text-primary">מוצר ממונף </label>
+            <select class="form-control">
+              <option>NUM</option>
+            </select>
+          </div>
+          <div class="col-2">
+            <label class="text-primary">חשבון מוצר ממונף</label>
+            <input type="text" class="form-control" placeholder="NUM" />
+          </div>
+        </div>
+        <!--  -->
+        <div class="row">
+          <div class="col-2">
+            <label class="text-primary">ריבית חודשית</label>
+            <input type="checkbox" name="status" value="1" class="lcs_check" autocomplete="off" checked />
+          </div>
+          <div class="col-2">
+            <label class="text-primary">תאריך מינוף</label>
+            <input class="form-control datepicker" placeholder="DATE" />
+          </div>
+        </div>
+        <!--  -->
+        <div class="row">
+          <div class="col-2">
+            <label class="text-primary">אמצעי תשלום </label>
+            <select class="form-control">
+              <option>TEXT</option>
+            </select>
+          </div>
+          <div class="col-2">
+            <label class="text-primary">תאריך הפקדה </label>
+            <input class="form-control datepicker" placeholder="DATE" />
+          </div>
+          <div class="col-2">
+            <label class="text-primary">חודש הצטרפות </label>
+            <input class="form-control datepicker" placeholder="DATE" />
+          </div>
+        </div>
+        <hr style="border-color: #78849E;" />
+        <!--  -->
+        <h5 class="mt-4">:בקרות</h5>
+        <div class="row">
+          <div class="col-2">
+            <label class="text-primary">תאריך הקמה / משלוח </label>
+            <input class="form-control datepicker" placeholder="DATE" />
+          </div>
+          <div class="col-2">
+            <label class="text-primary">פתיחת חשבון </label>
+            <input type="checkbox" name="status" value="1" class="lcs_check" autocomplete="off" checked />
+          </div>
+          <div class="col-2">
+            <label class="text-primary">סכום הפקדה בפועל</label>
+            <input type="text" class="form-control" placeholder="NUM" />
+          </div>
+          <div class="col-2">
+            <label class="text-primary">בקרת חיוב ראשון </label>
+            <input type="checkbox" name="status" value="1" class="lcs_check" autocomplete="off" checked />
+          </div>
+          <div class="col-2">
+            <label class="text-primary">בקרת קבלת אסמכתא</label>
+            <input type="checkbox" name="status" value="1" class="lcs_check" autocomplete="off" checked />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-2">
+            <label class="text-primary">בקרת אנונה / ריבית</label>
+            <input type="checkbox" name="status" value="1" class="lcs_check" autocomplete="off" checked />
+          </div>
+          <div class="col-2">
+            <label class="text-primary">בקרת שיוך לקוח </label>
+            <input type="checkbox" name="status" value="1" class="lcs_check" autocomplete="off" checked />
+          </div>
+          <div class="col-2">
+            <label class="text-primary">מועד סיום משוער</label>
+            <input class="form-control datepicker" placeholder="DATE" />
+          </div>
+          <div class="col-2">
+            <label class="text-primary">סטטוס טיפול</label>
+            <select class="form-control">
+              <option>TEXT</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-2">
+            <label class="text-primary">תאריך שליחת המסמכים ללקוח</label>
+            <input class="form-control datepicker" placeholder="DATE" />
+          </div>
+          <div class="col-2">
+            <label class="text-primary">תאריך חתימה הלקוח על המסמכים</label>
+            <input class="form-control datepicker" placeholder="DATE" />
+          </div>
+          <div class="col-2">
+            <label class="text-primary">תאריך העברה לאדמיניסטרור</label>
+            <input class="form-control datepicker" placeholder="DATE" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-2">
+            <label class="text-primary">תאריך הפקדה</label>
+            <input class="form-control datepicker" placeholder="DATE" />
+          </div>
+          <div class="col-2">
+            <label class="text-primary">תאריך אישור הפקדה ללקוח</label>
+            <input class="form-control datepicker" placeholder="DATE" />
+          </div>
+        </div>
+        <hr style="border-color: #78849E;" />
+        <!--  -->
+      </div>
+      <div class="modal-footer pt-0">
+        <button class="cs-btn-img btn-save-green float-right ml-auto" data-dismiss="modal"></button>
+        <div class="timestamp font-weight-bold mr-auto">משתמש מבצע, 20/01/2020</div>
+      </div>
+    </div>
+  </div>
+
+<!-- plugin js -->
+<script type="text/javascript" src="../../assets/plugins/DataTables/datatables.min.js"></script>
+<script src="../../assets/plugins/bar-rating/jquery.barrating.js"></script>
+<script src='../../assets/plugins/addSlider/res/Obj.min.js'></script>
+<script src='../../assets/plugins/addSlider/src/addSlider.js'></script>
+<script src="../../assets/plugins/sliding-toggle-switch/lc_switch.js" type="text/javascript"></script>
+<script src="../../assets/js/autocomplete.js" type="text/javascript"></script>
+<script src="../../assets/js/form-validation.js" type="text/javascript"></script>
+<script src="../../assets/js/common.js" type="text/javascript"></script>
+<script src="../../assets/custom/square-rater/square-rater.js" type="text/javascript"></script>
+<script src="../../assets/custom/rate-color-bar/rate-color-bar.js" type="text/javascript"></script>
+<script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+<!-- ./plugin js -->
+<!-- script -->
+<script>
+  // autocomplete form-control proximity
+  function initAutoCompleteEles() {
+    var eles = $('.autocomplete .form-control');
+    for(var i = 0; i < eles.length; i++) {
+      autocomplete(eles[i], countries); // countries is string array. it is changable param. ex. ["hello", "world"]
+    }
+  }
+  initAutoCompleteEles();
+  // datepicker init
+  function initDatepicker() {
+    var datepickers = $('.cs-dialog .datepicker');
+    for(var i = 0; i < datepickers.length; i++) {
+      $(datepickers[i]).datepicker({ uiLibrary: 'bootstrap4' });
+    }
+  }
+  initDatepicker();
+</script>
+<script type="text/javascript">
+  function initLCSSwitches() {
+    // rerender lcs switches
+    $('input.lcs_check').lc_switch('כן', 'לא');
+    var lcs_switches = $('.lcs_switch');
+    for(var i = 0; i < lcs_switches.length; i++) {
+      if($(lcs_switches[i]).hasClass('lcs_on')) {
+        $(lcs_switches[i]).find('.lcs_cursor').text($(lcs_switches[i]).find('.lcs_label_off').text());
+      } else {
+        $(lcs_switches[i]).find('.lcs_cursor').text($(lcs_switches[i]).find('.lcs_label_on').text());
+      }
+    }
+  }
+  //
+  $(document).ready(function(e) {
+    $('input.lcs_check').lc_switch('כן', 'לא');
+    // rerender lcs switches
+    var lcs_switches = $('.lcs_switch');
+    for(var i = 0; i < lcs_switches.length; i++) {
+      if($(lcs_switches[i]).hasClass('lcs_on')) {
+        $(lcs_switches[i]).find('.lcs_cursor').text($(lcs_switches[i]).find('.lcs_label_off').text());
+      } else {
+        $(lcs_switches[i]).find('.lcs_cursor').text($(lcs_switches[i]).find('.lcs_label_on').text());
+      }
+    }
+
+    // triggered each time a field changes status
+    $(document).on('lcs-statuschange', '.lcs_check', function() {
+      var status 	= ($(this).is(':checked')) ? 'checked' : 'unchecked',
+      subj 	= ($(this).attr('type') == 'radio') ? 'radio #' : 'checkbox #',
+      num		= $(this).val(); 
+          
+      $('#third_div ul').prepend('<li><em>[lcs-statuschange]</em>'+ subj + num +' changed status: '+ status +'</li>');
+    });
+    
+    // triggered each time a field is checked
+    $(document).on('lcs-on', '.lcs_check', function() {
+      var subj 	= ($(this).attr('type') == 'radio') ? 'radio #' : 'checkbox #',
+        num		= $(this).val(); 
+      $('#third_div ul').prepend('<li><em>[lcs-on]</em>'+ subj + num +' is checked</li>');
+      $(this).closest('.lcs_wrap').find('.lcs_cursor').text($(this).closest('.lcs_wrap').find('.lcs_label_off').text());
+    });
+    
+    
+    // triggered each time a is unchecked
+    $(document).on('lcs-off', '.lcs_check', function() {
+      var subj 	= ($(this).attr('type') == 'radio') ? 'radio #' : 'checkbox #',
+      num		= $(this).val(); 
+      $('#third_div ul').prepend('<li><em>[lcs-off]</em>'+ subj + num +' is unchecked</li>');
+      $(this).closest('.lcs_wrap').find('.lcs_cursor').text($(this).closest('.lcs_wrap').find('.lcs_label_on').text());
+    });
+  });
+</script>
+<!-- ./script -->
+</body>
+</html>
